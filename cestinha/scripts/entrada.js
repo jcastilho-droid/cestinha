@@ -1,7 +1,7 @@
 // Monta a ENTRADA que o Cestinha lê antes de escrever (formato do prompt: tipo, dados, contexto).
 // Uso: node scripts/entrada.js jogo 401909990
 //      node scripts/entrada.js rodada 2026-11-15
-import { acharJogo, entradaJogo, entradaRodada, lerRodada } from './lib/dados.js';
+import { acharJogo, entradaJogo, entradaRodada, lerRodada, entradaPower } from './lib/dados.js';
 
 const [modo, ref] = process.argv.slice(2);
 let entrada;
@@ -12,8 +12,10 @@ if (modo === 'jogo') {
 } else if (modo === 'rodada') {
   if (!lerRodada(ref)) throw new Error(`Rodada ${ref} não encontrada em data/raw/`);
   entrada = entradaRodada(ref);
+} else if (modo === 'power') {
+  entrada = entradaPower();
 } else {
-  console.error('Uso: node scripts/entrada.js jogo <id> | rodada <AAAA-MM-DD>');
+  console.error('Uso: node scripts/entrada.js jogo <id> | rodada <AAAA-MM-DD> | power');
   process.exit(1);
 }
 console.log(JSON.stringify(entrada, null, 2));

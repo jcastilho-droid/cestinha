@@ -36,11 +36,19 @@ for (const dia of listarDiasRaw().filter((d) => d >= limite)) {
   else aguardando.push({ data_rodada: dia, motivo: 'ainda há jogo em andamento ou sem box score' });
 }
 
+// Power ranking: um por semana (segunda-feira no horário de Brasília, ou se o último tiver mais de 7 dias)
+const ultimoPower = Object.keys(feito.power || {}).sort().at(-1);
+const hojeBR = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(new Date());
+const segunda = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo', weekday: 'short' }).format(new Date()) === 'Mon';
+const diasDesde = ultimoPower ? (Date.parse(hojeBR) - Date.parse(ultimoPower)) / 86400000 : 99;
+const power = (segunda && diasDesde >= 1) || diasDesde >= 7 ? { data: hojeBR } : null;
+
 const saida = {
   jogos: jogos.slice(0, MAX_JOGOS_POR_EXECUCAO),
   jogos_ficaram_para_depois: Math.max(0, jogos.length - MAX_JOGOS_POR_EXECUCAO),
   rodadas,
   rodadas_aguardando: aguardando,
-  nada_novo: jogos.length === 0 && rodadas.length === 0,
+  power_ranking: power,
+  nada_novo: jogos.length === 0 && rodadas.length === 0 && !power,
 };
 console.log(JSON.stringify(saida, null, 2));

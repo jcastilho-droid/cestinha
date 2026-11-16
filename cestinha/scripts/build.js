@@ -6,6 +6,9 @@ import path from 'node:path';
 import { P, RAIZ, lerJson, listarDiasRaw, horaBrasilia, dataPorExtenso, dataCurta, dataHoraBrasilia, agoraIso, dataHoraCurta, dataCurtaIso } from './lib/util.js';
 import { lerRodada, lerJogo, selosDoJogo, lideresDaRodada, linhaEstatistica } from './lib/dados.js';
 import { icone, comIcones, LOGO_ARO } from './lib/icones.js';
+import { gerarCartoes } from './cartoes.js';
+
+const MENU = [['rodada', 'index.html', 'bola', 'Rodada'], ['agenda', 'agenda.html', 'calendario', 'Agenda'], ['classificacao', 'classificacao.html', 'trofeu', 'Tabela'], ['times', 'times/index.html', 'escudo', 'Times']];
 
 // muda a cada publicação: força o navegador a baixar o visual novo
 const VERSAO = Date.now().toString(36);
@@ -14,7 +17,7 @@ const SITE = {
   nome: 'Cestinha',
   slogan: 'A NBA pra quem dormiu',
   bordao: 'E aí, aqui é o Cestinha',
-  url: process.env.SITE_URL || '',
+  url: (process.env.SITE_URL || 'https://jcastilho-droid.github.io/cestinha').replace(/\/$/, ''),
 };
 
 // ---------- utilitários de HTML ----------
@@ -81,7 +84,7 @@ function trilhoEscudos(raiz) {
   </aside>`;
 }
 
-function pagina({ titulo, descricao, corpo, raiz = '.', canonical = '', faixa = '', tema = '', ativo = '' }) {
+function pagina({ titulo, descricao, corpo, raiz = '.', canonical = '', faixa = '', tema = '', ativo = '', imagem = '' }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -93,6 +96,9 @@ function pagina({ titulo, descricao, corpo, raiz = '.', canonical = '', faixa = 
 <meta property="og:title" content="${esc(titulo)}">
 <meta property="og:description" content="${esc(descricao)}">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="website">
+${canonical ? `<meta property="og:url" content="${esc(SITE.url + canonical)}">` : ''}
+${imagem ? `<meta property="og:image" content="${esc(imagem)}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${esc(imagem)}">` : ''}
 ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonical)}">` : ''}
 <link rel="icon" href="${raiz}/assets/icone.svg?v=${VERSAO}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,31 +111,31 @@ ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonica
 <div class="fundo-deco" aria-hidden="true">
   <span class="brilho b1"></span><span class="brilho b2"></span><span class="brilho b3"></span>
 </div>
-<aside class="trilho trilho-esq" aria-hidden="true">
-  <span class="vertical">CESTINHA</span>
-  <span class="trilho-bola">${icone('bola', 'ic')}</span>
-  <span class="vertical pequeno">A NBA PRA QUEM DORMIU</span>
-</aside>
+
 ${trilhoEscudos(raiz)}
 <header class="topo">
   <div class="topo-dentro">
     <a class="marca logo" href="${raiz}/index.html" aria-label="Cestinha, página inicial">${LOGO_ARO}<span class="logo-texto">CESTINHA</span></a>
-    <nav class="menu" aria-label="Seções">
-      <a href="${raiz}/index.html"${ativo === 'rodada' ? ' class="ativo"' : ''}>${icone('bola')}<span>Rodada</span></a>
-      <a href="${raiz}/times/index.html"${ativo === 'times' ? ' class="ativo"' : ''}>${icone('escudo')}<span>Times</span></a>
-    </nav>
+    <div class="topo-acoes">
+      <nav class="menu" aria-label="Seções">${MENU.map(([id, href, ic, rot]) => `<a href="${raiz}/${href}"${ativo === id ? ' class="ativo"' : ''}>${icone(ic)}<span>${rot}</span></a>`).join('')}</nav>
+      <a class="meu-time-atalho" href="#" hidden aria-label="Meu time"></a>
+      <button class="botao-spoiler" type="button" aria-pressed="false" title="Modo sem spoiler: esconde placares e resultados">${icone('olho')}<span>Sem spoiler</span></button>
+    </div>
   </div>
   ${faixa}
 </header>
 <main>
 ${comIcones(corpo)}
 </main>
+<nav class="barra-inferior" aria-label="Seções">${MENU.map(([id, href, ic, rot]) => `<a href="${raiz}/${href}"${ativo === id ? ' class="ativo"' : ''}>${icone(ic)}<span>${rot}</span></a>`).join('')}</nav>
+<div class="aviso-spoiler" hidden>${icone('olho')} Modo sem spoiler ligado: toque num bloco borrado para revelar.</div>
 <footer class="rodape">
   <div class="rodape-dentro">
     <div class="rodape-topo">
       <p class="rodape-marca logo">${LOGO_ARO}<span class="logo-texto">CESTINHA</span></p>
       <p class="rodape-bordao">${esc(SITE.bordao)}</p>
     </div>
+    <p class="rodape-links"><a href="${raiz}/agenda.html">Agenda</a><a href="${raiz}/classificacao.html">Classificação</a><a href="${raiz}/times/index.html">Times</a><a href="${raiz}/brasileiros.html">Brasileiros na NBA</a>${powerRankings.length ? `<a href="${raiz}/power-ranking.html">Power ranking</a>` : ''}</p>
     <p>${icone('grafico')} Placar e estatísticas: ESPN. ${icone('raio')} Textos: o Cestinha (IA), com checagem automática dos números.</p>
     <p>${icone('relogio')} Horários de Brasília. Atualizado em ${esc(dataHoraBrasilia(agoraIso()))}. Logos dos times exibidos só para identificação.</p>
   </div>
@@ -203,7 +209,7 @@ function cardJogo(j, raiz) {
   const tag = temPagina ? 'a' : 'div';
   const href = temPagina ? ` href="${raiz}/jogo/${j.id}.html"` : '';
   const epico = selos.some((s) => s.epico);
-  return `<${tag} class="card-jogo${epico ? ' epico' : ''}"${href} data-luz style="--c1:${cor(j.visitante)};--c2:${cor(j.casa)}">
+  return `<${tag} class="card-jogo${epico ? ' epico' : ''}"${href} data-luz data-times="${esc(j.visitante.sigla)} ${esc(j.casa.sigla)}" style="--c1:${cor(j.visitante)};--c2:${cor(j.casa)}">
     ${j.arena?.foto ? `<div class="card-arena" style="--foto:url('${esc(j.arena.foto)}')"><span>${icone('arena')} ${esc(j.arena.nome)}</span></div>` : ''}
     <div class="card-topo"><span class="situacao">${esc(situacao(j))}<em>${esc(dataHoraCurta(j.inicio_utc))}</em></span><span class="tags">${selosEpicos(selos, 2)}</span></div>
     ${linhaTime(j.visitante, final)}
@@ -246,7 +252,7 @@ function camisaSvg(cor1, cor2, numero) {
 
 function blocoDecisivos(lideres, raiz) {
   if (!lideres?.decisivos?.length) return '';
-  return `<section class="decisivos">
+  return `<section class="decisivos sec-decisivos">
   <h2 class="titulo-secao"><span>Os decisivos da noite</span><small>as melhores atuações pelo Game Score</small></h2>
   <div class="grade-cartas">
     ${lideres.decisivos.map((p, i) => {
@@ -271,7 +277,7 @@ function blocoDecisivos(lideres, raiz) {
 }
 
 function blocoLideres(lideres, raiz) {
-  return `<section class="lideres">
+  return `<section class="lideres sec-lideres">
   <h2 class="titulo-secao"><span>Líderes da noite</span></h2>
   <div class="grade-lideres">
     ${lideres.categorias.map((c) => `<a class="lider" href="${raiz}/jogo/${c.p.jogo}.html" style="--c1:${cor(c.p.time)}">
@@ -286,7 +292,7 @@ function blocoLideres(lideres, raiz) {
 function blocoEpicos(jogos, raiz) {
   const epicos = jogos.filter((j) => selosDoJogo(j).some((s) => s.epico));
   if (!epicos.length) return '';
-  return `<section class="epicos">
+  return `<section class="epicos sec-epicos">
   <h2 class="titulo-secao"><span>Jogos épicos</span><small>prorrogação, virada, decisão no detalhe, 40+ pontos, triplo-duplo</small></h2>
   <div class="trilho-epicos">
     ${epicos.map((j) => {
@@ -342,12 +348,20 @@ function blocoRodada(dia, rodada, raiz) {
         <h1>${finalizados === jogos.length ? 'O resumo da rodada sai daqui a pouco' : 'Rodada em andamento'}</h1>
         <p class="subtitulo">${esc(SITE.bordao)} ${finalizados} de ${jogos.length} jogos finalizados.</p>
       </article>`;
+  const top3 = ordem.filter((j) => textosJogo.get(j.id)).slice(0, 3);
+  const trintaSeg = top3.length ? `<section class="sec-30s em-30s">
+    <p class="em-30s-rot">${icone('relogio')} Em 30 segundos</p>
+    <ul>${top3.map((j) => `<li><a href="${raiz}/jogo/${j.id}.html">${esc(textosJogo.get(j.id).titulo)}</a></li>`).join('')}
+    ${lideres ? `<li class="em-30s-dest">Destaque: <b>${esc(lideres.destaque.nome)}</b>, ${esc(linhaEstatistica(lideres.destaque))}</li>` : ''}</ul>
+  </section>` : '';
   return `
 <section class="rodada">
   ${hero}
-  <div class="duas-colunas">
+  ${trintaSeg}
+  ${blocoHojeANoite(raiz)}
+  <div class="duas-colunas sec-resumo">
     <div class="coluna-principal">
-      ${resumo ? `<article class="resumo-rodada"><h2 class="titulo-secao"><span>Acordei e perdi</span><small>o resumo da noite</small></h2><div class="texto">${markdown(resumo.corpo)}</div></article>` : ''}
+      ${resumo ? `<article class="resumo-rodada"><h2 class="titulo-secao"><span>Acordei e perdi</span><small>o resumo da noite</small></h2><div class="texto">${comGlossario(markdown(resumo.corpo))}</div></article>` : ''}
     </div>
     <aside class="coluna-lateral">
       ${lideres ? cardDestaque(lideres, raiz) : ''}
@@ -355,10 +369,12 @@ function blocoRodada(dia, rodada, raiz) {
   </div>
   ${lideres ? blocoDecisivos(lideres, raiz) : ''}
   ${blocoEpicos(jogos, raiz)}
-  <h2 class="titulo-secao"><span>Todos os jogos</span></h2>
-  <div class="grade-jogos">
-    ${ordem.map((j) => cardJogo(j, raiz)).join('\n')}
-  </div>
+  <section class="sec-jogos">
+    <h2 class="titulo-secao"><span>Todos os jogos</span></h2>
+    <div class="grade-jogos">
+      ${ordem.map((j) => cardJogo(j, raiz)).join('\n')}
+    </div>
+  </section>
   ${lideres ? blocoLideres(lideres, raiz) : ''}
 </section>`;
 }
@@ -418,7 +434,7 @@ function comparativo(j) {
 </section>`;
 }
 
-function paginaJogo(j, faixa) {
+function paginaJogo(j, faixa, temCartao = false) {
   const texto = textosJogo.get(j.id);
   const raiz = '..';
   const selos = selosDoJogo(j);
@@ -450,16 +466,30 @@ ${texto ? `<article class="resenha">
   <div class="selos">${selo(texto.status)}</div>
   <h1>${esc(texto.titulo)}</h1>
   ${texto.subtitulo ? `<p class="subtitulo">${esc(texto.subtitulo)}</p>` : ''}
-  <div class="texto">${markdown(texto.corpo)}</div>
+  <div class="texto">${comGlossario(markdown(texto.corpo))}</div>
 </article>` : `<article class="resenha vazio"><h1>${esc(titulo)}</h1><p class="subtitulo">A resenha do Cestinha chega em breve. Enquanto isso, os números:</p></article>`}
+${blocoExtrasTexto(texto)}
 ${destaquesDoJogo(j)}
+${graficoJogo(j)}
+${mapaArremessos(j)}
 ${comparativo(j)}
 <h2 class="titulo-secao"><span>Box score</span></h2>
 ${tabelaBox(j.visitante)}
 ${tabelaBox(j.casa)}
 <p class="legenda">AR: arremessos de quadra · 3P: bolas de três · LL: lances livres · RB: roubos de bola · TOC: tocos · ERR: erros. Titulares em negrito.</p>
+${temCartao ? `<section class="compartilhar">
+  <h2 class="titulo-secao"><span>Compartilhar</span><small>leve a resenha pro grupo</small></h2>
+  <div class="comp-caixa">
+    <img src="${raiz}/cartoes/${j.id}.png" alt="Cartão do jogo ${esc(j.visitante.nome_curto)} x ${esc(j.casa.nome_curto)}" loading="lazy" width="1200" height="630">
+    <div class="comp-botoes">
+      <a class="btn btn-whats" href="https://wa.me/?text=${encodeURIComponent(`${titulo} ${SITE.url}/jogo/${j.id}.html`)}" target="_blank" rel="noopener">${icone('compartilhar')} WhatsApp</a>
+      <button class="btn btn-compartilhar" type="button" data-titulo="${esc(titulo)}" data-url="${esc(`${SITE.url}/jogo/${j.id}.html`)}">${icone('link')} Compartilhar link</button>
+      <a class="btn" href="${raiz}/cartoes/${j.id}-story.png" download="cestinha-${j.id}-story.png">${icone('baixar')} Imagem para stories</a>
+    </div>
+  </div>
+</section>` : ''}
 <section class="fontes"><h2 class="titulo-secao"><span>Fontes</span></h2><ul>${fontes.map((f) => `<li>${f}</li>`).join('')}</ul></section>`;
-  return pagina({ titulo: `${titulo} | Cestinha`, descricao: texto?.subtitulo || `${j.visitante.nome} x ${j.casa.nome}: placar e box score.`, corpo, raiz, canonical: `/jogo/${j.id}.html`, faixa });
+  return pagina({ titulo: `${titulo} | Cestinha`, descricao: texto?.subtitulo || `${j.visitante.nome} x ${j.casa.nome}: placar e box score.`, corpo, raiz, canonical: `/jogo/${j.id}.html`, faixa, imagem: temCartao ? `${SITE.url}/cartoes/${j.id}.png` : '' });
 }
 
 // ---------- times ----------
@@ -564,6 +594,7 @@ function paginaListaTimes() {
   
   <p class="sobretitulo">${icone('trofeu')} Temporada ${esc(temporadaTexto())}</p>
   <h1>Escolha seu time</h1>
+  <div class="atalhos-times"><a href="${raiz}/classificacao.html">${icone('trofeu')} Classificação</a><a href="${raiz}/brasileiros.html">${icone('bandeira')} Brasileiros na NBA</a>${powerRankings.length ? `<a href="${raiz}/power-ranking.html">${icone('coroa')} Power ranking</a>` : ''}</div>
   <p class="subtitulo">Os 30 times da NBA, separados por conferência e divisão. Clique no escudo para ver elenco, estatísticas, últimos resultados e próximos jogos.</p>
   <div class="hero-escudos" aria-hidden="true">${[...times.values()].slice(0, 30).map((t) => logoTime(t, 30)).join('')}</div>
 </section>
@@ -635,6 +666,7 @@ function paginaTime(t) {
       <p class="ht-campanha"><b>${c.v ?? '-'}-${c.d ?? '-'}</b>${c.posicao ? ` · ${ordinal(c.posicao)} no ${esc(t.conferencia)}` : ''}${t.divisao ? ` · ${ordinal(t.divisao.posicao)} na divisão` : ''}</p>
     </div>
   </div>
+  <button class="botao-meu-time" type="button" data-sigla="${esc(t.sigla)}" data-logo="${esc(logoEscuro(t.logo))}" data-href="${slugTime(t)}.html" data-nome="${esc(t.nome_curto)}">${icone('estrela')}<span>Seguir como meu time</span></button>
   <div class="chips">
     ${forma ? `<span class="chip forma">${icone('fogo')}Últimos 5 ${forma}</span>` : ''}
     ${c.sequencia ? `<span class="chip">${icone('sequencia')}Sequência <b>${esc(sequenciaPt(c.sequencia))}</b></span>` : ''}
@@ -684,6 +716,299 @@ function acharDiaDoJogo(id) {
   return mapaJogoDia.get(String(id)) || null;
 }
 
+// ---------- glossário (dicas ao passar o mouse ou tocar) ----------
+const GLOSSARIO = [
+  ['play-in', 'Repescagem antes dos playoffs: do 7º ao 10º de cada conferência disputam as duas últimas vagas.'],
+  ['playoffs', 'Mata-mata que define o campeão: 16 times, séries de melhor de 7 jogos.'],
+  ['triplo-duplo', 'Quando o jogador chega a 10 ou mais em três estatísticas no mesmo jogo (ex.: pontos, rebotes e assistências).'],
+  ['duplo-duplo', 'Quando o jogador chega a 10 ou mais em duas estatísticas no mesmo jogo.'],
+  ['Game Score', 'Nota de desempenho criada por John Hollinger: soma o que o jogador produziu e desconta erros e arremessos perdidos.'],
+  ['garrafão', 'A área pintada embaixo da cesta.'],
+  ['bola de três', 'Arremesso de trás da linha dos 3 pontos (7,24 m da cesta).'],
+  ['prorrogação', 'Tempo extra de 5 minutos quando o jogo termina empatado.'],
+  ['tocos', 'Quando o defensor bloqueia o arremesso do adversário.'],
+  ['back-to-back', 'Dois jogos em dias seguidos.'],
+];
+function comGlossario(html) {
+  let saida = html;
+  for (const [termo, def] of GLOSSARIO) {
+    const re = new RegExp(`(^|[^\\p{L}>-])(${termo})(?![\\p{L}-])(?![^<]*>)`, 'iu');
+    saida = saida.replace(re, (m, antes, achado) => `${antes}<span class="termo" tabindex="0" data-def="${esc(def)}">${achado}</span>`);
+  }
+  return saida;
+}
+
+// ---------- agenda ----------
+const agenda = lerJson(path.join(RAIZ, 'data', 'agenda.json'));
+const TZ_BR = 'America/Sao_Paulo';
+const diaBR = (iso) => new Intl.DateTimeFormat('en-CA', { timeZone: TZ_BR }).format(new Date(iso));
+const hojeBR = () => diaBR(new Date().toISOString());
+function rotuloDia(diaIso) {
+  const hoje = hojeBR();
+  const amanha = diaBR(new Date(Date.now() + 86400000).toISOString());
+  if (diaIso === hoje) return 'Hoje';
+  if (diaIso === amanha) return 'Amanhã';
+  return new Intl.DateTimeFormat('pt-BR', { timeZone: 'UTC', weekday: 'long', day: 'numeric', month: 'long' }).format(new Date(`${diaIso}T12:00:00Z`));
+}
+function linhaAgenda(j, raiz) {
+  const t = (x) => times.get(String(x.id)) || x;
+  const v = t(j.visitante); const c = t(j.casa);
+  const vivo = j.status === 'em_andamento';
+  const fim = j.status === 'final';
+  const temPagina = fim && acharDiaDoJogo(j.id);
+  const tag = temPagina ? 'a' : 'div';
+  const href = temPagina ? ` href="${raiz}/jogo/${j.id}.html"` : '';
+  return `<${tag} class="jogo-agenda${vivo ? ' vivo' : ''}" data-times="${esc(j.visitante.sigla)} ${esc(j.casa.sigla)}"${href} style="--c1:${v.cor || '#ff7a1a'};--c2:${c.cor || '#ff7a1a'}">
+    <span class="ja-hora">${fim ? 'Final' : vivo ? 'Ao vivo' : esc(horaBrasilia(j.inicio_utc))}${!fim && !vivo ? `<small class="contagem" data-inicio="${esc(j.inicio_utc)}"></small>` : ''}</span>
+    <span class="ja-time">${logo({ logo: v.logo, sigla: v.sigla, nome_curto: v.nome_curto }, 30)}<b>${esc(v.nome_curto)}</b><small>${esc(j.visitante.campanha || '')}</small>${fim || vivo ? `<em class="pontos-ag">${j.visitante.placar ?? ''}</em>` : ''}</span>
+    <span class="ja-x">@</span>
+    <span class="ja-time">${logo({ logo: c.logo, sigla: c.sigla, nome_curto: c.nome_curto }, 30)}<b>${esc(c.nome_curto)}</b><small>${esc(j.casa.campanha || '')}</small>${fim || vivo ? `<em class="pontos-ag">${j.casa.placar ?? ''}</em>` : ''}</span>
+    ${j.tv_eua?.length ? `<span class="ja-tv">${icone('tv')} ${esc(j.tv_eua.slice(0, 2).join(' · '))} <small>(EUA)</small></span>` : '<span class="ja-tv"></span>'}
+  </${tag}>`;
+}
+function blocoHojeANoite(raiz) {
+  if (!agenda?.jogos?.length) return '';
+  const agora = Date.now();
+  const proximos = agenda.jogos.filter((j) => j.status !== 'final' && Date.parse(j.inicio_utc) > agora - 4 * 3600e3)
+    .sort((a, b) => a.inicio_utc.localeCompare(b.inicio_utc));
+  if (!proximos.length) return '';
+  const dia = diaBR(proximos[0].inicio_utc);
+  const doDia = proximos.filter((j) => diaBR(j.inicio_utc) === dia);
+  return `<section class="sec-hoje hoje-a-noite">
+    <h2 class="titulo-secao"><span>${rotuloDia(dia) === 'Hoje' ? 'Hoje à noite' : `Próxima rodada: ${esc(rotuloDia(dia))}`}</span><small>${doDia.length} jogos · horário de Brasília</small></h2>
+    <div class="trilho-hoje">${doDia.map((j) => {
+      const v = times.get(String(j.visitante.id)) || j.visitante; const c = times.get(String(j.casa.id)) || j.casa;
+      return `<a class="mini-agenda" href="${raiz}/agenda.html" data-times="${esc(j.visitante.sigla)} ${esc(j.casa.sigla)}">
+        <span class="ma-hora">${esc(horaBrasilia(j.inicio_utc))}</span>
+        <span class="ma-logos">${logo({ logo: v.logo, sigla: v.sigla, nome_curto: v.nome_curto }, 28)}<i>@</i>${logo({ logo: c.logo, sigla: c.sigla, nome_curto: c.nome_curto }, 28)}</span>
+        <span class="ma-nomes">${esc(j.visitante.sigla)} x ${esc(j.casa.sigla)}</span>
+        <small class="contagem" data-inicio="${esc(j.inicio_utc)}"></small>
+      </a>`;
+    }).join('')}</div>
+  </section>`;
+}
+function paginaAgenda() {
+  const raiz = '.';
+  if (!agenda?.jogos?.length) {
+    return pagina({ titulo: 'Agenda | Cestinha', descricao: 'Jogos da NBA em horário de Brasília.', raiz, ativo: 'agenda', corpo: '<section class="hero"><p class="sobretitulo">Agenda</p><h1>A agenda aparece depois da próxima coleta</h1></section>' });
+  }
+  const porDia = new Map();
+  for (const j of [...agenda.jogos].sort((a, b) => a.inicio_utc.localeCompare(b.inicio_utc))) {
+    const d = diaBR(j.inicio_utc);
+    if (d < hojeBR()) continue;
+    if (!porDia.has(d)) porDia.set(d, []);
+    porDia.get(d).push(j);
+  }
+  const corpo = `
+<section class="hero hero-agenda">
+  <p class="sobretitulo">${icone('calendario')} Próximos 7 dias</p>
+  <h1>Agenda da NBA em horário de Brasília</h1>
+  <p class="subtitulo">Todos os jogos com horário de Brasília e contagem regressiva. Marque o seu time na página dele e os jogos dele ficam em destaque aqui.</p>
+</section>
+${[...porDia].map(([d, js]) => `<section class="dia-agenda">
+  <h2 class="titulo-secao"><span>${esc(rotuloDia(d))}</span><small>${js.length} ${js.length === 1 ? 'jogo' : 'jogos'}</small></h2>
+  <div class="lista-agenda">${js.map((j) => linhaAgenda(j, raiz)).join('')}</div>
+</section>`).join('')}
+<p class="legenda">TV: transmissão nos Estados Unidos, segundo a ESPN. Fonte: ESPN, atualizado em ${esc(dataHoraBrasilia(agenda.atualizado_em))}.</p>`;
+  return pagina({ titulo: 'Agenda da NBA em horário de Brasília | Cestinha', descricao: 'Todos os jogos da NBA dos próximos 7 dias, em horário de Brasília.', corpo, raiz, canonical: '/agenda.html', ativo: 'agenda' });
+}
+
+// ---------- classificação ----------
+function paginaClassificacao() {
+  const raiz = '.';
+  const conf = indiceTimes?.classificacao || {};
+  const tabela = (nome) => `<section class="tabela-conf">
+    <h2 class="titulo-secao"><span>${conferenciaNome(nome)}</span></h2>
+    <div class="rolagem"><table class="classif">
+      <thead><tr><th scope="col">#</th><th scope="col" class="esq">Time</th><th>V</th><th>D</th><th>%</th><th>Atrás</th><th>Casa</th><th>Fora</th><th>Últ. 10</th><th>Seq.</th></tr></thead>
+      <tbody>${(conf[nome] || []).map((l) => {
+        const t = times.get(l.id);
+        if (!t) return '';
+        const zona = l.posicao <= 6 ? 'z-playoff' : l.posicao <= 10 ? 'z-playin' : 'z-fora';
+        return `<tr class="${zona}" data-times="${esc(t.sigla)}"><td class="pos">${l.posicao ?? ''}</td>
+          <th scope="row" class="esq"><a href="${raiz}/times/${slugTime(t)}.html">${logoTime(t, 22)}<span>${esc(t.nome_curto)}</span></a></th>
+          <td class="forte">${l.v}</td><td>${l.d}</td><td>${esc(l.pct)}</td><td>${esc(l.atras)}</td><td>${esc(l.casa)}</td><td>${esc(l.fora)}</td><td>${esc(l.ultimos10)}</td><td class="seq ${String(l.sequencia).startsWith('W') ? 'sv' : 'sd'}">${esc(sequenciaPt(l.sequencia))}</td></tr>`;
+      }).join('')}</tbody>
+    </table></div>
+  </section>`;
+  const corpo = `
+<section class="hero hero-tabela">
+  <p class="sobretitulo">${icone('trofeu')} Temporada ${esc(temporadaTexto())}</p>
+  <h1>Classificação</h1>
+  <p class="subtitulo">Do 1º ao 6º vai direto para os playoffs. Do 7º ao 10º disputa o play-in. Do 11º para baixo, só no ano que vem.</p>
+  <div class="legenda-zonas"><span class="z z-playoff">Playoffs</span><span class="z z-playin">Play-in</span><span class="z z-fora">Fora</span></div>
+</section>
+<div class="conferencias">${tabela('Leste')}${tabela('Oeste')}</div>
+<p class="legenda">Atrás: jogos de distância para o líder da conferência. Seq.: V = vitórias seguidas, D = derrotas seguidas. Fonte: ESPN, atualizado em ${esc(dataHoraBrasilia(indiceTimes.atualizado_em))}.</p>`;
+  return pagina({ titulo: 'Classificação da NBA | Cestinha', descricao: 'Classificação das conferências Leste e Oeste, com zonas de playoffs e play-in.', corpo: comGlossarioSeguro(corpo), raiz, canonical: '/classificacao.html', ativo: 'classificacao' });
+}
+function comGlossarioSeguro(html) {
+  // aplica o glossário só nos parágrafos de texto
+  return html.replace(/<p class="subtitulo">([\s\S]*?)<\/p>/g, (m, txt) => `<p class="subtitulo">${comGlossario(txt)}</p>`);
+}
+
+// ---------- brasileiros ----------
+function paginaBrasileiros() {
+  const raiz = '.';
+  const lista = [];
+  for (const t of times.values()) for (const p of t.elenco || []) if (/bra[sz]il/i.test(p.pais || '')) lista.push({ p, t });
+  const jogosDe = (nome) => {
+    const out = [];
+    for (const d of listarDiasRaw().reverse()) {
+      for (const f of fs.readdirSync(path.join(P.raw, d)).filter((x) => /^\d+\.json$/.test(x))) {
+        const j = lerJson(path.join(P.raw, d, f));
+        for (const lado of ['casa', 'visitante']) {
+          const pl = (j?.[lado]?.jogadores || []).find((x) => x.nome === nome);
+          if (pl) out.push({ j, pl, lado });
+        }
+      }
+    }
+    return out.slice(0, 10);
+  };
+  const corpo = `
+<section class="hero hero-br">
+  <p class="sobretitulo">${icone('bandeira')} Torcida brasileira</p>
+  <h1>Brasileiros na NBA</h1>
+  <p class="subtitulo">Quem nasceu no Brasil e está num elenco da NBA nesta temporada, segundo a ESPN, com médias e os últimos jogos.</p>
+</section>
+${lista.length ? lista.map(({ p, t }) => {
+    const m = p.medias;
+    const jogos = jogosDe(p.nome);
+    return `<section class="brasileiro" style="--t1:${t.cor || '#009c3b'};--t2:${t.cor_alt || '#ffdf00'}">
+      <div class="br-topo">
+        ${camisaSvg(t.cor || '#009c3b', t.cor_alt || '#ffdf00', p.numero ?? '')}
+        <div><h2>${esc(p.nome)}</h2><p><a href="${raiz}/times/${slugTime(t)}.html">${logoTime(t, 22)} ${esc(t.nome)}</a> · ${esc(p.posicao || '')}${p.idade ? ` · ${p.idade} anos` : ''}${p.altura_m ? ` · ${p.altura_m.replace('.', ',')} m` : ''}</p>
+        ${p.lesao?.status ? `<span class="lesao">${esc(STATUS_LESAO[p.lesao.status] || p.lesao.status)}</span>` : ''}</div>
+      </div>
+      ${m && m.jogos > 0 ? `<div class="numeros-time br-medias">
+        <div><b>${m.jogos}</b><span>jogos</span></div><div><b>${esc(m.min)}</b><span>minutos</span></div><div><b>${esc(m.pts)}</b><span>pontos</span></div><div><b>${esc(m.reb)}</b><span>rebotes</span></div>
+      </div>` : '<p class="legenda">Ainda não entrou em quadra nesta temporada.</p>'}
+      ${jogos.length ? `<h3 class="divisao-nome"><span>Últimos jogos que coletamos</span></h3><div class="lista-jogos-time">${jogos.map(({ j, pl, lado }) => {
+        const adv = lado === 'casa' ? j.visitante : j.casa;
+        const meu = j[lado];
+        return `<a class="jogo-time res-${meu.vencedor ? 'V' : 'D'}" href="${raiz}/jogo/${j.id}.html"><span class="jt-data">${esc(dataCurtaIso(j.inicio_utc))}</span><span class="jt-res">${meu.vencedor ? 'V' : 'D'}</span><span class="jt-adv"><small>${lado === 'casa' ? 'vs' : '@'}</small><b>${esc(adv.nome_curto)}</b></span><span class="jt-placar">${esc(linhaEstatistica(pl))}</span></a>`;
+      }).join('')}</div>` : ''}
+    </section>`;
+  }).join('') : '<p class="legenda">Nenhum brasileiro encontrado nos elencos coletados.</p>'}
+<p class="legenda">Lista montada a partir do local de nascimento informado pela ESPN.</p>`;
+  return pagina({ titulo: 'Brasileiros na NBA | Cestinha', descricao: 'Os brasileiros na NBA: médias e últimos jogos.', corpo, raiz, canonical: '/brasileiros.html', ativo: 'times' });
+}
+
+// ---------- gráfico do jogo e mapa de arremessos ----------
+function graficoJogo(j) {
+  if (!j.fluxo || j.fluxo.length < 3) return '';
+  const T = 2880 + 300 * (j.prorrogacoes || 0);
+  const maxAbs = Math.max(8, ...j.fluxo.map(([, d]) => Math.abs(d)));
+  const W = 1000; const H = 300; const L = 44; const R = 12; const meio = H / 2; const esc_y = (meio - 22) / maxAbs;
+  const X = (t) => L + (Math.min(t, T) / T) * (W - L - R);
+  const Y = (d) => meio - d * esc_y;
+  let caminho = `M${X(0)},${meio}`;
+  let ult = 0;
+  for (const [t, d] of j.fluxo) { caminho += ` L${X(t).toFixed(1)},${Y(ult).toFixed(1)} L${X(t).toFixed(1)},${Y(d).toFixed(1)}`; ult = d; }
+  caminho += ` L${X(T)},${Y(ult).toFixed(1)}`;
+  const area = `${caminho} L${X(T)},${meio} Z`;
+  const maxCasa = j.fluxo.reduce((m, [, d]) => Math.max(m, d), 0);
+  const maxFora = j.fluxo.reduce((m, [, d]) => Math.min(m, d), 0);
+  const ptoCasa = j.fluxo.find(([, d]) => d === maxCasa);
+  const ptoFora = j.fluxo.find(([, d]) => d === maxFora);
+  const divisoes = [720, 1440, 2160, 2880, ...Array.from({ length: j.prorrogacoes || 0 }, (_, i) => 2880 + 300 * (i + 1))].filter((t) => t < T);
+  const rotulos = ['1º', '2º', '3º', '4º', ...Array.from({ length: j.prorrogacoes || 0 }, (_, i) => `P${i + 1}`)];
+  const inicios = [0, ...divisoes];
+  const cC = cor(j.casa); const cV = cor(j.visitante);
+  return `<section class="grafico-jogo">
+  <h2 class="titulo-secao"><span>O jogo em um gráfico</span><small>vantagem no placar ao longo da partida</small></h2>
+  <div class="gj-caixa">
+    <div class="gj-leg"><span style="--c:${cC}">${logo(j.casa, 20)} ${esc(j.casa.nome_curto)} na frente</span><span style="--c:${cV}">${logo(j.visitante, 20)} ${esc(j.visitante.nome_curto)} na frente</span></div>
+    <svg viewBox="0 0 ${W} ${H}" class="gj-svg" role="img" aria-label="Gráfico da vantagem no placar ao longo do jogo">
+      <defs>
+        <clipPath id="acima-${j.id}"><rect x="0" y="0" width="${W}" height="${meio}"/></clipPath>
+        <clipPath id="abaixo-${j.id}"><rect x="0" y="${meio}" width="${W}" height="${meio}"/></clipPath>
+      </defs>
+      ${[-20, -10, 10, 20].filter((v) => Math.abs(v) <= maxAbs).map((v) => `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" class="gj-grade"/><text x="${L - 8}" y="${Y(v) + 4}" class="gj-eixo" text-anchor="end">${Math.abs(v)}</text>`).join('')}
+      ${divisoes.map((t) => `<line x1="${X(t)}" x2="${X(t)}" y1="10" y2="${H - 10}" class="gj-quarto"/>`).join('')}
+      ${inicios.map((t, i) => `<text x="${(X(t) + X(divisoes[i] ?? T)) / 2}" y="${H - 4}" class="gj-eixo" text-anchor="middle">${rotulos[i]}</text>`).join('')}
+      <path d="${area}" fill="${cC}" fill-opacity=".55" clip-path="url(#acima-${j.id})"/>
+      <path d="${area}" fill="${cV}" fill-opacity=".55" clip-path="url(#abaixo-${j.id})"/>
+      <path d="${caminho}" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" opacity=".9"/>
+      <line x1="${L}" x2="${W - R}" y1="${meio}" y2="${meio}" class="gj-zero"/>
+      ${maxCasa > 0 ? `<circle cx="${X(ptoCasa[0])}" cy="${Y(maxCasa)}" r="5" fill="#fff"/><text x="${Math.min(X(ptoCasa[0]) + 8, W - 120)}" y="${Y(maxCasa) - 6}" class="gj-nota">+${maxCasa} ${esc(j.casa.sigla)}</text>` : ''}
+      ${maxFora < 0 ? `<circle cx="${X(ptoFora[0])}" cy="${Y(maxFora)}" r="5" fill="#fff"/><text x="${Math.min(X(ptoFora[0]) + 8, W - 120)}" y="${Y(maxFora) + 18}" class="gj-nota">+${-maxFora} ${esc(j.visitante.sigla)}</text>` : ''}
+    </svg>
+    <p class="legenda">Acima da linha do meio: ${esc(j.casa.nome_curto)} vencendo. Abaixo: ${esc(j.visitante.nome_curto)} vencendo. Quanto mais longe da linha, maior a vantagem.</p>
+  </div>
+</section>`;
+}
+
+function quadraSvg(conteudo, titulo) {
+  return `<svg viewBox="0 0 500 470" class="quadra-svg" role="img" aria-label="${esc(titulo)}">
+    <rect x="0" y="0" width="500" height="470" class="q-piso"/>
+    <g class="q-linhas">
+      <rect x="0" y="0" width="500" height="470"/>
+      <rect x="170" y="0" width="160" height="190"/>
+      <circle cx="250" cy="190" r="60"/>
+      <path d="M30 0 V140 A237.5 237.5 0 0 0 470 140 V0"/>
+      <path d="M210 52 A40 40 0 0 0 290 52"/>
+      <line x1="220" y1="40" x2="280" y2="40"/>
+      <path d="M190 470 A60 60 0 0 1 310 470"/>
+    </g>
+    <circle cx="250" cy="52" r="7.5" class="q-aro"/>
+    ${conteudo}
+  </svg>`;
+}
+function mapaArremessos(j) {
+  if (!j.arremessos || j.arremessos.length < 10) return '';
+  const painel = (lado) => {
+    const t = j[lado];
+    const ar = j.arremessos.filter((a) => a[3] === (lado === 'casa' ? 'c' : 'v'));
+    const acertos = ar.filter((a) => a[2]).length;
+    const tres = ar.filter((a) => a[4] === 3);
+    const pontos = ar.map(([x, y, ok]) => {
+      const cx = (x * 10).toFixed(0); const cy = Math.max(4, (y + 5.2) * 10).toFixed(0); // a cesta fica em y=0 na ESPN
+      return ok ? `<circle cx="${cx}" cy="${cy}" r="7" class="a-ok" style="fill:${cor(t)}"/>` : `<path d="M${cx - 5} ${cy - 5}l10 10M${cx - 5} ${+cy + 5}l10 -10" class="a-erro"/>`;
+    }).join('');
+    return `<div class="painel-arremessos" style="--c1:${cor(t)}">
+      <p class="pa-topo">${logo(t, 24)}<b>${esc(t.nome_curto)}</b><span>${acertos}/${ar.length} (${ar.length ? Math.round((acertos / ar.length) * 100) : 0}%) · 3P ${tres.filter((a) => a[2]).length}/${tres.length}</span></p>
+      ${quadraSvg(pontos, `Mapa de arremessos do ${t.nome_curto}`)}
+    </div>`;
+  };
+  return `<section class="mapa-arremessos">
+  <h2 class="titulo-secao"><span>Mapa de arremessos</span><small>bolinha cheia: cesta · x: erro (sem lances livres)</small></h2>
+  <div class="paineis-arremessos">${painel('visitante')}${painel('casa')}</div>
+</section>`;
+}
+
+// ---------- notas e "por que importa" (quando o Cestinha escrever) ----------
+function blocoExtrasTexto(texto) {
+  if (!texto) return '';
+  const pq = texto.por_que_importa ? `<div class="por-que">${icone('alvo')}<div><b>Por que importa</b><p>${esc(texto.por_que_importa)}</p></div></div>` : '';
+  const notas = Array.isArray(texto.notas) && texto.notas.length ? `<section class="notas">
+    <h2 class="titulo-secao"><span>Notas do Cestinha</span><small>opinião, de 0 a 10</small></h2>
+    <div class="lista-notas">${texto.notas.map((n) => `<div class="nota-jog"><span class="nota-valor ${Number(n.nota) >= 8 ? 'alta' : Number(n.nota) < 5 ? 'baixa' : ''}">${esc(n.nota)}</span><div><b>${esc(n.jogador)}</b><p>${esc(n.comentario || '')}</p></div></div>`).join('')}</div>
+  </section>` : '';
+  return pq + notas;
+}
+
+// ---------- power ranking ----------
+const PASTA_POWER = path.join(RAIZ, 'content', 'power-ranking');
+const powerRankings = fs.existsSync(PASTA_POWER) ? fs.readdirSync(PASTA_POWER).filter((f) => f.endsWith('.json')).sort().map((f) => lerJson(path.join(PASTA_POWER, f))).filter((x) => x && !(x.alertas || []).length) : [];
+function paginaPower(pr) {
+  const raiz = '.';
+  const corpo = `
+<section class="hero hero-power">
+  <p class="sobretitulo">${icone('coroa')} Power ranking · opinião do Cestinha</p>
+  <h1>${esc(pr.titulo)}</h1>
+  ${pr.subtitulo ? `<p class="subtitulo">${esc(pr.subtitulo)}</p>` : ''}
+</section>
+${pr.corpo ? `<div class="texto power-intro">${comGlossario(markdown(pr.corpo))}</div>` : ''}
+<ol class="power-lista">${(pr.ranking || []).map((r) => {
+    const t = [...times.values()].find((x) => x.sigla === r.time || x.nome_curto === r.time);
+    const seta = r.tendencia === 'sobe' ? '▲' : r.tendencia === 'desce' ? '▼' : '•';
+    return `<li class="power-item" style="--t1:${t?.cor || '#ff7a1a'}"><span class="pw-pos">${r.posicao}</span><span class="pw-seta ${r.tendencia || ''}">${seta}</span>${t ? logoTime(t, 40) : ''}<div><b>${esc(t?.nome_curto || r.time)}</b>${t?.classificacao ? `<small>${t.classificacao.v}-${t.classificacao.d}</small>` : ''}<p>${esc(r.comentario || '')}</p></div></li>`;
+  }).join('')}</ol>
+<p class="legenda">Ranking de opinião do Cestinha. Campanhas: ESPN.</p>`;
+  return pagina({ titulo: `${pr.titulo} | Cestinha`, descricao: pr.subtitulo || 'Power ranking do Cestinha.', corpo, raiz, canonical: '/power-ranking.html', ativo: 'times' });
+}
+
 // ---------- gerar ----------
 fs.rmSync(P.site, { recursive: true, force: true });
 fs.mkdirSync(path.join(P.site, 'jogo'), { recursive: true });
@@ -693,6 +1018,18 @@ if (fs.existsSync(path.join(RAIZ, 'site', 'CNAME'))) fs.copyFileSync(path.join(R
 fs.writeFileSync(path.join(P.site, '.nojekyll'), '');
 
 let nJogos = 0;
+const recentes = new Set(dias.slice(-3).map((d) => d.dia));
+const paraCartao = [];
+for (const { dia, rodada } of dias) {
+  if (!recentes.has(dia)) continue;
+  for (const b of rodada.jogos) {
+    const j = jogoDoDia(dia, b);
+    if (!j.casa.jogadores) continue;
+    const top = [...j.casa.jogadores.map((p) => ({ ...p, t: j.casa })), ...j.visitante.jogadores.map((p) => ({ ...p, t: j.visitante }))].sort((a, x) => x.pts - a.pts)[0];
+    paraCartao.push({ jogo: j, texto: textosJogo.get(j.id), destaque: top ? `${top.nome} (${top.t.sigla}): ${linhaEstatistica(top)}` : '', dataTxt: dataPorExtenso(dia) });
+  }
+}
+const comCartao = await gerarCartoes(paraCartao, P.site);
 for (const { dia, rodada } of dias) {
   const jogos = rodada.jogos.map((b) => jogoDoDia(dia, b));
   fs.writeFileSync(path.join(P.site, 'rodada', `${dia}.html`), pagina({
@@ -705,7 +1042,7 @@ for (const { dia, rodada } of dias) {
     ativo: 'rodada',
   }));
   for (const j of jogos.filter((x) => x.casa.jogadores)) {
-    fs.writeFileSync(path.join(P.site, 'jogo', `${j.id}.html`), paginaJogo(j, faixaPlacares(jogos, '..')));
+    fs.writeFileSync(path.join(P.site, 'jogo', `${j.id}.html`), paginaJogo(j, faixaPlacares(jogos, '..'), comCartao.has(j.id)));
     nJogos++;
   }
 }
@@ -733,6 +1070,12 @@ if (indiceTimes && times.size) {
   fs.writeFileSync(path.join(P.site, 'times', 'index.html'), pagina({ titulo: 'Times | Cestinha', descricao: 'Times da NBA.', raiz: '..', ativo: 'times',
     corpo: '<section class="hero"><p class="sobretitulo">Times</p><h1>Chegando já já</h1><p class="subtitulo">Os dados dos times aparecem depois da próxima coleta.</p></section>' }));
 }
+fs.writeFileSync(path.join(P.site, 'agenda.html'), paginaAgenda());
+if (indiceTimes && times.size) {
+  fs.writeFileSync(path.join(P.site, 'classificacao.html'), paginaClassificacao());
+  fs.writeFileSync(path.join(P.site, 'brasileiros.html'), paginaBrasileiros());
+}
+if (powerRankings.length) fs.writeFileSync(path.join(P.site, 'power-ranking.html'), paginaPower(powerRankings.at(-1)));
 fs.writeFileSync(path.join(P.site, '404.html'), pagina({
   titulo: 'Não achei | Cestinha', descricao: 'Página não encontrada.',
   corpo: '<section class="rodada"><article class="hero"><p class="sobretitulo">Erro 404</p><h1>Airball!</h1><p class="subtitulo">Essa página não existe. Volte para a página inicial pelo logo lá em cima.</p></article></section>',

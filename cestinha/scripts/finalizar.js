@@ -9,9 +9,9 @@ import path from 'node:path';
 import { P, lerJson, gravarJson, listarArquivos, agoraIso } from './lib/util.js';
 import { acharJogo, lerRodada, lerJogo } from './lib/dados.js';
 
-const TIPOS = { jogo: 'resumo_jogo', rodada: 'resumo_rodada' };
+const TIPOS = { jogo: 'resumo_jogo', rodada: 'resumo_rodada', power: 'power_ranking' };
 const STATUS = ['CONFIRMADO', 'REPORTADO', 'RUMOR', 'N/A'];
-const LIMITE_PALAVRAS = { jogo: [50, 200], rodada: [80, 380] };
+const LIMITE_PALAVRAS = { jogo: [50, 200], rodada: [80, 380], power: [10, 160] };
 
 const semAcento = (s) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 const palavras = (s) => String(s).split(/\s+/).filter(Boolean).length;
@@ -57,6 +57,11 @@ function conferirDados(t, jogos) {
 
   const foraDeQuadra = jogos.flatMap((j) => [...(j.casa.nao_jogaram || []), ...(j.visitante.nao_jogaram || [])]);
   const nomes = new Set([...jogadores, ...foraDeQuadra].map((p) => semAcento(p.nome)));
+  for (const n of Array.isArray(t.notas) ? t.notas : []) {
+    if (!nomes.has(semAcento(n.jogador))) a.push(`Nota para "${n.jogador}", que não aparece no box score.`);
+    const v = Number(n.nota);
+    if (!(v >= 0 && v <= 10)) a.push(`Nota inválida para "${n.jogador}" (precisa ser de 0 a 10).`);
+  }
   for (const nome of t.jogadores || []) {
     if (!nomes.has(semAcento(nome))) a.push(`Jogador "${nome}" não aparece no box score.`);
   }
@@ -66,11 +71,25 @@ function conferirDados(t, jogos) {
 const feito = lerJson(P.processados, { jogos: {}, rodadas: {} });
 const relatorio = { publicados: [], revisao: [], erros: [] };
 
+const SIGLAS = new Set((lerJson(path.join(P.raw, '..', 'times', 'index.json'))?.times || []).map((t) => t.sigla));
+function conferirPower(t) {
+  const a = [];
+  const r = Array.isArray(t.ranking) ? t.ranking : [];
+  if (r.length < 10) a.push('Ranking com menos de 10 times.');
+  const vistos = new Set();
+  for (const item of r) {
+    if (SIGLAS.size && !SIGLAS.has(item.time)) a.push(`Time "${item.time}" não existe (use a sigla da entrada).`);
+    if (vistos.has(item.time)) a.push(`Time "${item.time}" repetido no ranking.`);
+    vistos.add(item.time);
+  }
+  return a;
+}
+
 for (const arq of listarArquivos(P.rascunhos)) {
-  const m = arq.match(/^(jogo|rodada)-(.+)\.json$/);
+  const m = arq.match(/^(jogo|rodada|power)-(.+)\.json$/);
   const caminho = path.join(P.rascunhos, arq);
   if (!m) {
-    relatorio.erros.push(`${arq}: nome fora do padrão (use jogo-<id>.json ou rodada-<AAAA-MM-DD>.json)`);
+    relatorio.erros.push(`${arq}: nome fora do padrão (use jogo-<id>.json, rodada-<AAAA-MM-DD>.json ou power-<AAAA-MM-DD>.json)`);
     continue;
   }
   const [, modo, ref] = m;
@@ -82,6 +101,17 @@ for (const arq of listarArquivos(P.rascunhos)) {
     continue;
   }
 
+  if (modo === 'power') {
+    const alertasP = [...(Array.isArray(texto.alertas) ? texto.alertas : []), ...[...conferirEstrutura(texto, modo), ...conferirPower(texto)].map((x) => `[checagem automática] ${x}`)];
+    const finalP = { ...texto, alertas: alertasP, ref: { tipo: 'power', data: ref }, escrito_em: agoraIso() };
+    const destinoP = alertasP.length ? path.join(P.revisao, `power-${ref}.json`) : path.join(P.content, 'power-ranking', `${ref}.json`);
+    gravarJson(destinoP, finalP);
+    fs.unlinkSync(caminho);
+    (alertasP.length ? relatorio.revisao : relatorio.publicados).push(alertasP.length ? { arquivo: path.relative(P.content, destinoP), alertas: alertasP } : path.relative(P.content, destinoP));
+    feito.power = feito.power || {};
+    feito.power[ref] = { em: finalP.escrito_em, destino: alertasP.length ? 'revisao' : 'publicado' };
+    continue;
+  }
   let jogos = [];
   let dataRodada = ref;
   if (modo === 'jogo') {
