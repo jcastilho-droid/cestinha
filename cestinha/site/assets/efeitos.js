@@ -59,3 +59,85 @@
     el.addEventListener('pointerleave', () => { el.style.transform = ''; });
   });
 })();
+
+// ---------- Preferências do visitante (ficam só neste navegador) ----------
+(() => {
+  const ler = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+  const gravar = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch { /* sem armazenamento */ } };
+  const raiz = (document.querySelector('.marca')?.getAttribute('href') || './index.html').replace(/index\.html$/, '');
+
+  // Modo sem spoiler
+  const botao = document.querySelector('.botao-spoiler');
+  const aviso = document.querySelector('.aviso-spoiler');
+  const aplicarSpoiler = (on) => {
+    document.body.classList.toggle('sem-spoiler', on);
+    botao?.setAttribute('aria-pressed', String(on));
+    if (aviso) aviso.hidden = !on;
+  };
+  aplicarSpoiler(ler('cestinha-sem-spoiler') === '1');
+  botao?.addEventListener('click', () => {
+    const on = !document.body.classList.contains('sem-spoiler');
+    gravar('cestinha-sem-spoiler', on ? '1' : null);
+    document.querySelectorAll('.revelado').forEach((el) => el.classList.remove('revelado'));
+    aplicarSpoiler(on);
+  });
+  const SEL = '.pontos, .fx-time b, .ep-placar, .card-titulo, .hero h1, .hero .subtitulo, .em-30s ul, .resumo-rodada .texto, .carta-stats, .carta-gs, .lider-valor, .dn-numeros, .numeros, .resenha, .tags, .comparativo, .box, .parciais, .grafico-jogo .gj-caixa, .paineis-arremessos, .jt-placar, .jt-res, .card-epico p, .mini-destaques, .pontos-ag';
+  document.addEventListener('click', (ev) => {
+    if (!document.body.classList.contains('sem-spoiler')) return;
+    const el = ev.target.closest(SEL);
+    if (el && !el.classList.contains('revelado')) { ev.preventDefault(); el.classList.add('revelado'); }
+  }, true);
+
+  // Meu time
+  const meu = (() => { try { return JSON.parse(ler('cestinha-meu-time') || 'null'); } catch { return null; } })();
+  const atalho = document.querySelector('.meu-time-atalho');
+  if (meu && atalho) {
+    atalho.hidden = false;
+    atalho.href = `${raiz}times/${meu.href}`;
+    atalho.title = `Meu time: ${meu.nome}`;
+    atalho.innerHTML = `<img src="${meu.logo}" alt="${meu.nome}">`;
+  }
+  if (meu) {
+    document.querySelectorAll('[data-times]').forEach((el) => {
+      if (!el.dataset.times.split(' ').includes(meu.sigla)) return;
+      el.classList.add('meu-time');
+      const grade = el.parentElement;
+      if (grade && (grade.classList.contains('grade-jogos') || grade.classList.contains('trilho-hoje'))) grade.prepend(el);
+    });
+  }
+  const bMeu = document.querySelector('.botao-meu-time');
+  if (bMeu) {
+    const marcar = (on) => { bMeu.setAttribute('aria-pressed', String(on)); bMeu.querySelector('span').textContent = on ? 'Meu time (toque para deixar de seguir)' : 'Seguir como meu time'; };
+    marcar(meu?.sigla === bMeu.dataset.sigla);
+    bMeu.addEventListener('click', () => {
+      const on = bMeu.getAttribute('aria-pressed') !== 'true';
+      gravar('cestinha-meu-time', on ? JSON.stringify({ sigla: bMeu.dataset.sigla, logo: bMeu.dataset.logo, href: bMeu.dataset.href, nome: bMeu.dataset.nome }) : null);
+      marcar(on);
+    });
+  }
+
+  // Contagem regressiva (agenda e "hoje à noite")
+  const contar = () => {
+    const agora = Date.now();
+    document.querySelectorAll('.contagem[data-inicio]').forEach((el) => {
+      const ms = Date.parse(el.dataset.inicio) - agora;
+      if (ms <= 0) { el.textContent = ms > -3 * 3600e3 ? 'em andamento' : ''; return; }
+      const h = Math.floor(ms / 3600e3); const m = Math.floor((ms % 3600e3) / 60e3);
+      el.textContent = h >= 24 ? '' : `começa em ${h ? `${h}h ` : ''}${m}min`;
+    });
+  };
+  contar();
+  setInterval(contar, 30000);
+})();
+
+// ---------- Compartilhar ----------
+document.querySelectorAll('.btn-compartilhar').forEach((b) => {
+  b.addEventListener('click', async () => {
+    const dados = { title: b.dataset.titulo, text: `${b.dataset.titulo} | Cestinha`, url: b.dataset.url };
+    try {
+      if (navigator.share) { await navigator.share(dados); return; }
+      await navigator.clipboard.writeText(b.dataset.url);
+      const antes = b.innerHTML; b.textContent = 'Link copiado!'; setTimeout(() => { b.innerHTML = antes; }, 2000);
+    } catch { /* usuário cancelou */ }
+  });
+});
