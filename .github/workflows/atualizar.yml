@@ -2,6 +2,7 @@
 # 1) De hora em hora: coleta os jogos na ESPN e salva em data/raw/ (sem IA).
 # 2) Sempre: monta o site e publica no GitHub Pages.
 # Ele também roda quando o Cestinha envia textos novos (push na main).
+# O projeto fica dentro da pasta cestinha/ do repositório.
 name: Atualizar Cestinha
 
 on:
@@ -9,7 +10,7 @@ on:
     - cron: '17 * * * *'   # minuto 17 de toda hora (UTC)
   push:
     branches: [main]
-    paths: ['content/**', 'scripts/**', 'site/**', 'data/**', '.github/workflows/**']
+    paths: ['cestinha/**', '.github/workflows/**']
   workflow_dispatch: {}      # botão "Run workflow" para rodar na mão
 
 permissions:
@@ -25,6 +26,9 @@ jobs:
   atualizar:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: cestinha
     environment:
       name: github-pages
       url: ${{ steps.publicar.outputs.page_url }}
@@ -63,6 +67,6 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: cestinha/_site
       - id: publicar
         uses: actions/deploy-pages@v4
