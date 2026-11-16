@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { P, RAIZ, lerJson, listarDiasRaw, horaBrasilia, dataPorExtenso, dataCurta, dataHoraBrasilia, agoraIso, dataHoraCurta, dataCurtaIso } from './lib/util.js';
 import { lerRodada, lerJogo, selosDoJogo, lideresDaRodada, linhaEstatistica } from './lib/dados.js';
-import { icone, comIcones, BOLA_GRANDE } from './lib/icones.js';
+import { icone, comIcones, LOGO_ARO } from './lib/icones.js';
 
 const SITE = {
   nome: 'Cestinha',
@@ -94,7 +94,7 @@ ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonica
 <link rel="icon" href="${raiz}/assets/icone.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${raiz}/assets/estilo.css">
 <script src="${raiz}/assets/efeitos.js" defer></script>
 </head>
@@ -110,7 +110,7 @@ ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonica
 ${trilhoEscudos(raiz)}
 <header class="topo">
   <div class="topo-dentro">
-    <a class="marca" href="${raiz}/index.html" aria-label="Cestinha, página inicial"><img src="${raiz}/assets/icone.svg" alt="" width="40" height="40"><span class="marca-placa"><span class="marca-texto">CESTINHA</span></span></a>
+    <a class="marca logo" href="${raiz}/index.html" aria-label="Cestinha, página inicial">${LOGO_ARO}<span class="logo-texto">CESTINHA</span></a>
     <nav class="menu" aria-label="Seções">
       <a href="${raiz}/index.html"${ativo === 'rodada' ? ' class="ativo"' : ''}>${icone('bola')}<span>Rodada</span></a>
       <a href="${raiz}/times/index.html"${ativo === 'times' ? ' class="ativo"' : ''}>${icone('escudo')}<span>Times</span></a>
@@ -124,7 +124,7 @@ ${comIcones(corpo)}
 <footer class="rodape">
   <div class="rodape-dentro">
     <div class="rodape-topo">
-      <p class="rodape-marca marca"><img src="${raiz}/assets/icone.svg" alt="" width="32" height="32"><span class="marca-placa"><span class="marca-texto">CESTINHA</span></span></p>
+      <p class="rodape-marca logo">${LOGO_ARO}<span class="logo-texto">CESTINHA</span></p>
       <p class="rodape-bordao">${esc(SITE.bordao)}</p>
     </div>
     <p>${icone('grafico')} Placar e estatísticas: ESPN. ${icone('raio')} Textos: o Cestinha (IA), com checagem automática dos números.</p>
@@ -286,14 +286,14 @@ function blocoRodada(dia, rodada, raiz) {
   const creditoHero = palco ? `<span class="credito-foto">${icone('arena')} ${esc(palco.arena.nome)} · foto ESPN</span>` : '';
   const hero = resumo
     ? `<article class="hero com-foto"${fotoHero}>${creditoHero}
-        ${BOLA_GRANDE}
+        
         <p class="sobretitulo">${icone('calendario')} Rodada de ${esc(dataPorExtenso(dia))}</p>
         <div class="selos">${selo(resumo.status)}</div>
         <h1>${esc(resumo.titulo)}</h1>
         ${resumo.subtitulo ? `<p class="subtitulo">${esc(resumo.subtitulo)}</p>` : ''}
       </article>`
     : `<article class="hero com-foto"${fotoHero}>${creditoHero}
-        ${BOLA_GRANDE}
+        
         <p class="sobretitulo">${icone('calendario')} Rodada de ${esc(dataPorExtenso(dia))}</p>
         <h1>${finalizados === jogos.length ? 'O resumo da rodada sai daqui a pouco' : 'Rodada em andamento'}</h1>
         <p class="subtitulo">${esc(SITE.bordao)} ${finalizados} de ${jogos.length} jogos finalizados.</p>
@@ -516,7 +516,7 @@ function paginaListaTimes() {
   </section>`;
   const corpo = `
 <section class="hero hero-times">
-  ${BOLA_GRANDE}
+  
   <p class="sobretitulo">${icone('trofeu')} Temporada ${esc(temporadaTexto())}</p>
   <h1>Escolha seu time</h1>
   <p class="subtitulo">Os 30 times da NBA, separados por conferência e divisão. Clique no escudo para ver elenco, estatísticas, últimos resultados e próximos jogos.</p>
