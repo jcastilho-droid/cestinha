@@ -544,3 +544,108 @@ body::before { /* granulado fino, dá textura de papel/quadra */
 .rodape-marca { display: flex; align-items: center; gap: 8px; }
 .rodape-bordao { font: 800 italic 20px/1 var(--titulo) !important; color: var(--laranja-2); text-transform: uppercase; }
 .rodape p .ic { color: var(--suave); margin-right: 2px; }
+
+/* =====================================================================
+   VISUAL 3.0: clima de videogame de basquete (placas inclinadas,
+   cortes nos cantos, fotos das arenas)
+   ===================================================================== */
+
+/* ---------- marca: placa inclinada com brilho ---------- */
+.marca { gap: 0; font: inherit; }
+.marca img { position: relative; z-index: 2; width: 40px; height: 40px; margin-right: -12px; filter: drop-shadow(0 3px 6px rgba(0,0,0,.6)); }
+.marca-placa {
+  position: relative; overflow: hidden; display: inline-block;
+  padding: 6px 16px 6px 22px;
+  transform: skewX(-14deg);
+  background: linear-gradient(120deg, #ffb347 0%, #ff7a1a 38%, #e8430f 70%, #b3125a 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, calc(100% - 10px) 100%, 0 100%);
+  box-shadow: 0 0 24px rgba(255, 106, 26, .45);
+  border-left: 3px solid #fff;
+}
+.marca-placa::after { /* brilho que passa pela placa */
+  content: ''; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent);
+  animation: brilho-placa 4.5s ease-in-out infinite;
+}
+@keyframes brilho-placa { 0%, 60% { left: -60%; } 100% { left: 130%; } }
+.marca-texto {
+  display: block; transform: skewX(4deg);
+  font: 900 italic 28px/1 var(--titulo); letter-spacing: 1.5px; color: #fff;
+  text-shadow: 2px 2px 0 #7a1f00, 0 0 14px rgba(255,255,255,.25);
+}
+.marca:hover .marca-placa { box-shadow: 0 0 34px rgba(255, 106, 26, .75); }
+.marca:hover span { text-shadow: 2px 2px 0 #7a1f00, 0 0 14px rgba(255,255,255,.25); }
+@media (max-width: 479px) { .marca-texto { font-size: 21px; } .marca img { width: 32px; height: 32px; } .marca-placa { padding: 5px 11px 5px 18px; } }
+.rodape-marca .marca-texto { font-size: 24px; }
+
+/* ---------- menu em placas inclinadas ---------- */
+.menu { gap: 8px; }
+.menu a { border-radius: 0; transform: skewX(-14deg); padding: 8px 14px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); }
+.menu a > * { transform: skewX(14deg); }
+.menu a.ativo { background: linear-gradient(120deg, #ffb347, #ff7a1a 50%, #e8430f); color: #160a02; border-color: transparent; box-shadow: 0 0 18px rgba(255,122,26,.45); }
+.menu a:hover:not(.ativo) { background: rgba(255,255,255,.1); border-color: rgba(255,122,26,.5); }
+
+/* ---------- títulos de seção com faixa inclinada ---------- */
+.titulo-secao span { position: relative; z-index: 0; }
+.titulo-secao span::after { content: ''; position: absolute; z-index: -1; left: -6px; right: -10px; bottom: 2px; height: 10px; transform: skewX(-14deg); background: linear-gradient(90deg, color-mix(in srgb, var(--acento, var(--laranja)) 45%, transparent), transparent); }
+.ic-titulo { border-radius: 4px; transform: skewX(-10deg); }
+
+/* ---------- cantos cortados (estilo menu de game) ---------- */
+.hero, .hero-time, .placar-grande { border-radius: 6px; clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 28px 100%, 0 calc(100% - 28px)); }
+
+/* ---------- fotos das arenas ---------- */
+.credito-foto { position: absolute; right: 34px; bottom: 10px; z-index: 3; display: inline-flex; align-items: center; gap: 5px; font-size: 10.5px; letter-spacing: .4px; color: rgba(255,255,255,.65); background: rgba(0,0,0,.45); padding: 3px 8px; border-radius: 4px; }
+.credito-foto .ic { width: 12px; height: 12px; }
+.hero.com-foto {
+  background:
+    linear-gradient(90deg, rgba(10,13,18,.96) 0%, rgba(10,13,18,.82) 45%, rgba(10,13,18,.35) 100%),
+    radial-gradient(120% 140% at 0% 0%, rgba(255, 122, 26, .35), transparent 55%),
+    var(--foto) center / cover no-repeat,
+    #121820;
+}
+.hero.com-foto .bola-deco { opacity: .16; }
+@media (max-width: 719px) { .hero.com-foto { background: linear-gradient(180deg, rgba(10,13,18,.78), rgba(10,13,18,.95) 60%), var(--foto) center / cover no-repeat, #121820; } }
+
+.placar-grande.com-foto {
+  position: relative;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--c1) 75%, transparent) 0%, rgba(8,10,14,.82) 38%, rgba(8,10,14,.82) 62%, color-mix(in srgb, var(--c2) 75%, transparent) 100%),
+    var(--foto) center / cover no-repeat, #0f141b;
+}
+
+.hero-time.com-foto {
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--t1) 92%, transparent) 0%, color-mix(in srgb, var(--t1) 60%, rgba(10,13,18,.9)) 45%, rgba(10,13,18,.75) 100%),
+    var(--foto) center / cover no-repeat, #0f141b;
+}
+
+.card-arena {
+  position: relative; height: 74px; margin: -16px -14px 12px; overflow: hidden;
+  background: linear-gradient(180deg, rgba(18,24,32,.1), var(--painel) 96%), var(--foto) center 40% / cover no-repeat;
+  filter: saturate(.9);
+}
+.card-arena span { position: absolute; left: 12px; bottom: 6px; display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,.85); text-shadow: 0 1px 4px #000; }
+.card-arena span .ic { width: 12px; height: 12px; }
+.card-jogo .card-arena + .card-topo { margin-top: -2px; }
+a.card-jogo:hover .card-arena { filter: saturate(1.15) brightness(1.1); }
+.card-arena { transition: filter .3s; }
+
+.escudo-time { background:
+    radial-gradient(120% 70% at 50% 0%, color-mix(in srgb, var(--t1) 60%, transparent), transparent 70%),
+    linear-gradient(180deg, rgba(21,28,38,.86), rgba(15,20,27,.97)),
+    var(--foto, none) center / cover no-repeat, #0f141b; }
+
+/* ---------- cards de jogo com canto cortado no topo ---------- */
+.card-jogo { border-radius: 10px; }
+.card-jogo .tags .tag, .tag { border-radius: 2px; transform: skewX(-10deg); }
+@media (max-width: 479px) {
+  .menu { gap: 5px; }
+  .menu a { padding: 6px 9px; font-size: 13px; letter-spacing: .5px; }
+  .menu .ic { display: none; }
+  .marca-texto { font-size: 19px; letter-spacing: 1px; }
+  .marca-placa { padding: 5px 10px 5px 16px; }
+  .marca img { width: 30px; height: 30px; margin-right: -10px; }
+}
+.hero.com-foto, .hero-time.com-foto { padding-bottom: 48px; }
+@media (min-width: 720px) { .hero.com-foto, .hero-time.com-foto { padding-bottom: 52px; } }
+.placar-grande.com-foto { padding-bottom: 40px; }
