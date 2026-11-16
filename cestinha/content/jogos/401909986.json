@@ -27,5 +27,23 @@
     "id_jogo": "401909986",
     "data_rodada": "2026-11-15"
   },
-  "escrito_em": "2026-11-16T18:08:11.857Z"
+  "escrito_em": "2026-11-16T18:08:11.857Z",
+  "por_que_importa": "Oito vitórias seguidas: os Lakers vão a 12-2 e lideram a Divisão Pacífico.",
+  "notas": [
+    {
+      "jogador": "Luka Doncic",
+      "nota": 9.5,
+      "comentario": "43 pts e 9 ast, jogo de MVP"
+    },
+    {
+      "jogador": "Quentin Grimes",
+      "nota": 8,
+      "comentario": "22 pts com 5 de 6 de três"
+    },
+    {
+      "jogador": "Devin Booker",
+      "nota": 5,
+      "comentario": "17 pts, mas 4 de 14 nos arremessos"
+    }
+  ]
 }

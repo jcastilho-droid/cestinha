@@ -27,5 +27,23 @@
     "id_jogo": "401909991",
     "data_rodada": "2026-11-15"
   },
-  "escrito_em": "2026-11-16T18:08:11.860Z"
+  "escrito_em": "2026-11-16T18:08:11.860Z",
+  "por_que_importa": "Quarta vitória seguida deixa os Rockets a um jogo dos Spurs na Divisão Sudoeste.",
+  "notas": [
+    {
+      "jogador": "Amen Thompson",
+      "nota": 9,
+      "comentario": "26 pts com 9 de 11 nos arremessos"
+    },
+    {
+      "jogador": "Kevin Durant",
+      "nota": 8,
+      "comentario": "25 pts em 13 arremessos"
+    },
+    {
+      "jogador": "Alex Sarr",
+      "nota": 7,
+      "comentario": "25 pts e 9 reb pelo Wizards"
+    }
+  ]
 }

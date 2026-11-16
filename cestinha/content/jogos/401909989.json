@@ -25,5 +25,23 @@
     "id_jogo": "401909989",
     "data_rodada": "2026-11-15"
   },
-  "escrito_em": "2026-11-16T18:08:11.858Z"
+  "escrito_em": "2026-11-16T18:08:11.858Z",
+  "por_que_importa": "Sexta vitória seguida e liderança da Divisão Atlântico para o Celtics, agora 11-2.",
+  "notas": [
+    {
+      "jogador": "Jayson Tatum",
+      "nota": 9,
+      "comentario": "32 pts em 30 minutos, 5 de 8 de três"
+    },
+    {
+      "jogador": "Derrick White",
+      "nota": 7.5,
+      "comentario": "16 pts e 4 bolas de três"
+    },
+    {
+      "jogador": "Cooper Flagg",
+      "nota": 5.5,
+      "comentario": "17 pts, mas 5 de 15 nos arremessos"
+    }
+  ]
 }

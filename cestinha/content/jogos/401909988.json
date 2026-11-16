@@ -25,5 +25,23 @@
     "id_jogo": "401909988",
     "data_rodada": "2026-11-15"
   },
-  "escrito_em": "2026-11-16T18:08:11.858Z"
+  "escrito_em": "2026-11-16T18:08:11.858Z",
+  "por_que_importa": "A 12ª vitória seguida mantém os Spurs no topo da Divisão Sudoeste, com 12-2.",
+  "notas": [
+    {
+      "jogador": "Dylan Harper",
+      "nota": 9,
+      "comentario": "31 pts e 9 reb, o cestinha da noite"
+    },
+    {
+      "jogador": "Victor Wembanyama",
+      "nota": 8.5,
+      "comentario": "26 pts, 10 reb e 5 tocos"
+    },
+    {
+      "jogador": "Mo Bamba",
+      "nota": 8,
+      "comentario": "6 de 6 de três, mas não bastou"
+    }
+  ]
 }

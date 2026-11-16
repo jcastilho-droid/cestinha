@@ -27,5 +27,23 @@
     "id_jogo": "401909993",
     "data_rodada": "2026-11-15"
   },
-  "escrito_em": "2026-11-16T18:08:21.661Z"
+  "escrito_em": "2026-11-16T18:08:21.661Z",
+  "por_que_importa": "O Thunder quebra uma série de três derrotas e volta a 9-5.",
+  "notas": [
+    {
+      "jogador": "Shai Gilgeous-Alexander",
+      "nota": 9,
+      "comentario": "37 pts com 13 de 20 em três quartos"
+    },
+    {
+      "jogador": "Aday Mara",
+      "nota": 8,
+      "comentario": "16 pts e 13 reb do banco"
+    },
+    {
+      "jogador": "Darius Acuff Jr.",
+      "nota": 6.5,
+      "comentario": "26 pts, mas 10 de 25"
+    }
+  ]
 }

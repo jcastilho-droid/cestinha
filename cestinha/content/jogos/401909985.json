@@ -26,5 +26,23 @@
     "id_jogo": "401909985",
     "data_rodada": "2026-11-15"
   },
-  "escrito_em": "2026-11-16T18:08:11.853Z"
+  "escrito_em": "2026-11-16T18:08:11.853Z",
+  "por_que_importa": "Os 76ers vão a 11-3 e seguem meio jogo atrás do Celtics no Leste.",
+  "notas": [
+    {
+      "jogador": "Jaylen Brown",
+      "nota": 8.5,
+      "comentario": "31 pts com 12 de 18"
+    },
+    {
+      "jogador": "LeBron James",
+      "nota": 8,
+      "comentario": "15 pts, 7 reb e 11 ast"
+    },
+    {
+      "jogador": "Pascal Siakam",
+      "nota": 7.5,
+      "comentario": "31 pts pelo Pacers"
+    }
+  ]
 }

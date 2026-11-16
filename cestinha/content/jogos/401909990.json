@@ -25,5 +25,23 @@
     "id_jogo": "401909990",
     "data_rodada": "2026-11-15"
   },
-  "escrito_em": "2026-11-16T18:08:11.859Z"
+  "escrito_em": "2026-11-16T18:08:11.859Z",
+  "por_que_importa": "Os Knicks chegam a 7-6 e estendem para 14 a sequência de vitórias sobre o Raptors, segundo a ESPN.",
+  "notas": [
+    {
+      "jogador": "Jalen Brunson",
+      "nota": 8.5,
+      "comentario": "28 pts, 9 ast e a bola de três que decidiu"
+    },
+    {
+      "jogador": "Karl-Anthony Towns",
+      "nota": 8.5,
+      "comentario": "28 pts e 17 reb, dono do garrafão"
+    },
+    {
+      "jogador": "Scottie Barnes",
+      "nota": 7.5,
+      "comentario": "30 pts, mas faltou ajuda no fim"
+    }
+  ]
 }
