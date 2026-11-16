@@ -1,0 +1,1675 @@
+{
+  "id": "18",
+  "sigla": "NY",
+  "nome": "New York Knicks",
+  "nome_curto": "Knicks",
+  "cidade": "New York",
+  "slug": "new-york-knicks",
+  "cor": "#1d428a",
+  "cor_alt": "#f58426",
+  "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+  "logo_escuro": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/ny.png",
+  "conferencia": "Leste",
+  "classificacao": {
+    "id": "18",
+    "sigla": "NY",
+    "posicao": 6,
+    "v": 7,
+    "d": 6,
+    "pct": ".538",
+    "atras": "4",
+    "sequencia": "W1",
+    "casa": "4-3",
+    "fora": "3-3",
+    "ultimos10": "7-3",
+    "pontos_pro": "109.9",
+    "pontos_contra": "104.0",
+    "saldo": "+5.9"
+  },
+  "divisao": {
+    "nome": "Atlântico",
+    "posicao": 3
+  },
+  "tecnico": "Mike Brown",
+  "arena": "Madison Square Garden",
+  "estatisticas": {
+    "pts": "109.9",
+    "reb": "47.8",
+    "ast": "26.8",
+    "rb": "7.5",
+    "toco": "4.2",
+    "err": "13.2",
+    "fg_pct": "43.6",
+    "tres_pct": "36.1",
+    "ll_pct": "79.7"
+  },
+  "elenco": [
+    {
+      "id": "3934672",
+      "nome": "Jalen Brunson",
+      "numero": "11",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 30,
+      "altura_m": "1.88",
+      "peso_kg": 86,
+      "experiencia": 9,
+      "universidade": "Villanova",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 13,
+        "min": "34.3",
+        "pts": "26.7",
+        "reb": "2.8",
+        "ast": "5.9",
+        "rb": "0.8",
+        "toco": "0.3",
+        "fg_pct": "43.4",
+        "tres_pct": "38.3",
+        "ll_pct": "79.8",
+        "duplos_duplos": 1,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "3136195",
+      "nome": "Karl-Anthony Towns",
+      "numero": "32",
+      "posicao": "Pivô",
+      "posicao_sigla": "C",
+      "idade": 31,
+      "altura_m": "2.13",
+      "peso_kg": 112,
+      "experiencia": 12,
+      "universidade": "Kentucky",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 13,
+        "min": "32.5",
+        "pts": "21.6",
+        "reb": "13.9",
+        "ast": "3.6",
+        "rb": "0.9",
+        "toco": "0.5",
+        "fg_pct": "53.4",
+        "tres_pct": "39.7",
+        "ll_pct": "76.5",
+        "duplos_duplos": 13,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "3934719",
+      "nome": "OG Anunoby",
+      "numero": "8",
+      "posicao": "Ala",
+      "posicao_sigla": "F",
+      "idade": 29,
+      "altura_m": "2.01",
+      "peso_kg": 109,
+      "experiencia": 10,
+      "universidade": "Indiana",
+      "pais": "England",
+      "lesao": null,
+      "medias": {
+        "jogos": 13,
+        "min": "33.7",
+        "pts": "16.4",
+        "reb": "5.4",
+        "ast": "2.2",
+        "rb": "1.1",
+        "toco": "0.7",
+        "fg_pct": "39.0",
+        "tres_pct": "32.6",
+        "ll_pct": "87.8",
+        "duplos_duplos": 1,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "3914044",
+      "nome": "Landry Shamet",
+      "numero": "44",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 29,
+      "altura_m": "1.96",
+      "peso_kg": 86,
+      "experiencia": 9,
+      "universidade": "Wichita State",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 13,
+        "min": "25.8",
+        "pts": "10.3",
+        "reb": "1.8",
+        "ast": "1.8",
+        "rb": "0.4",
+        "toco": "0.2",
+        "fg_pct": "47.9",
+        "tres_pct": "42.0",
+        "ll_pct": "76.5",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "4431823",
+      "nome": "Miles McBride",
+      "numero": "2",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 26,
+      "altura_m": "1.88",
+      "peso_kg": 88,
+      "experiencia": 6,
+      "universidade": "West Virginia",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 13,
+        "min": "18.8",
+        "pts": "7.6",
+        "reb": "1.5",
+        "ast": "1.1",
+        "rb": "0.8",
+        "toco": "0.3",
+        "fg_pct": "43.6",
+        "tres_pct": "43.5",
+        "ll_pct": "80.0",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "3147657",
+      "nome": "Mikal Bridges",
+      "numero": "25",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 30,
+      "altura_m": "1.98",
+      "peso_kg": 95,
+      "experiencia": 9,
+      "universidade": "Villanova",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 13,
+        "min": "25.3",
+        "pts": "6.8",
+        "reb": "3.5",
+        "ast": "2.2",
+        "rb": "1.1",
+        "toco": "0.5",
+        "fg_pct": "37.5",
+        "tres_pct": "27.5",
+        "ll_pct": "83.3",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "3062679",
+      "nome": "Josh Hart",
+      "numero": "3",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 31,
+      "altura_m": "1.96",
+      "peso_kg": 98,
+      "experiencia": 10,
+      "universidade": "Villanova",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 10,
+        "min": "29.7",
+        "pts": "6.6",
+        "reb": "6.5",
+        "ast": "3.6",
+        "rb": "1.7",
+        "toco": "0.2",
+        "fg_pct": "33.8",
+        "tres_pct": "28.9",
+        "ll_pct": "60.0",
+        "duplos_duplos": 1,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "2528426",
+      "nome": "Jordan Clarkson",
+      "numero": "00",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 34,
+      "altura_m": "1.96",
+      "peso_kg": 88,
+      "experiencia": 13,
+      "universidade": "Missouri",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 11,
+        "min": "10.0",
+        "pts": "5.1",
+        "reb": "1.7",
+        "ast": "0.5",
+        "rb": "0.2",
+        "toco": "0.2",
+        "fg_pct": "51.1",
+        "tres_pct": "54.5",
+        "ll_pct": "66.7",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "4897943",
+      "nome": "Dalton Knecht",
+      "numero": "1",
+      "posicao": "Ala",
+      "posicao_sigla": "F",
+      "idade": 25,
+      "altura_m": "1.98",
+      "peso_kg": 98,
+      "experiencia": 3,
+      "universidade": "Tennessee",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 3,
+        "min": "9.7",
+        "pts": "4.3",
+        "reb": "2.3",
+        "ast": "0.3",
+        "rb": "0.0",
+        "toco": "0.3",
+        "fg_pct": "62.5",
+        "tres_pct": "50.0",
+        "ll_pct": "0.0",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "6585",
+      "nome": "Andre Drummond",
+      "numero": "0",
+      "posicao": "Pivô",
+      "posicao_sigla": "C",
+      "idade": 33,
+      "altura_m": "2.11",
+      "peso_kg": 127,
+      "experiencia": 15,
+      "universidade": "UConn",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 13,
+        "min": "13.1",
+        "pts": "3.8",
+        "reb": "7.5",
+        "ast": "1.2",
+        "rb": "0.3",
+        "toco": "0.6",
+        "fg_pct": "42.0",
+        "tres_pct": "0.0",
+        "ll_pct": "58.3",
+        "duplos_duplos": 1,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "4433225",
+      "nome": "Tyler Kolek",
+      "numero": "13",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 25,
+      "altura_m": "1.88",
+      "peso_kg": 88,
+      "experiencia": 3,
+      "universidade": "Marquette",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 11,
+        "min": "13.5",
+        "pts": "3.3",
+        "reb": "2.0",
+        "ast": "4.8",
+        "rb": "0.5",
+        "toco": "0.1",
+        "fg_pct": "40.0",
+        "tres_pct": "30.0",
+        "ll_pct": "100.0",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "5211983",
+      "nome": "Pacome Dadiet",
+      "numero": "4",
+      "posicao": "Ala",
+      "posicao_sigla": "F",
+      "idade": 21,
+      "altura_m": "2.06",
+      "peso_kg": 95,
+      "experiencia": 3,
+      "universidade": null,
+      "pais": "France",
+      "lesao": null,
+      "medias": {
+        "jogos": 4,
+        "min": "4.3",
+        "pts": "3.0",
+        "reb": "0.8",
+        "ast": "0.0",
+        "rb": "0.0",
+        "toco": "0.0",
+        "fg_pct": "55.6",
+        "tres_pct": "25.0",
+        "ll_pct": "100.0",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "5289900",
+      "nome": "Mohamed Diawara",
+      "numero": "51",
+      "posicao": "Ala",
+      "posicao_sigla": "F",
+      "idade": 21,
+      "altura_m": "2.06",
+      "peso_kg": 102,
+      "experiencia": 2,
+      "universidade": null,
+      "pais": "France",
+      "lesao": null,
+      "medias": {
+        "jogos": 6,
+        "min": "12.0",
+        "pts": "2.8",
+        "reb": "2.2",
+        "ast": "1.7",
+        "rb": "0.0",
+        "toco": "0.3",
+        "fg_pct": "31.6",
+        "tres_pct": "14.3",
+        "ll_pct": "75.0",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "4277869",
+      "nome": "Jose Alvarado",
+      "numero": "5",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 28,
+      "altura_m": "1.83",
+      "peso_kg": 81,
+      "experiencia": 6,
+      "universidade": "Georgia Tech",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 6,
+        "min": "9.0",
+        "pts": "1.7",
+        "reb": "1.0",
+        "ast": "1.5",
+        "rb": "0.5",
+        "toco": "0.2",
+        "fg_pct": "23.5",
+        "tres_pct": "22.2",
+        "ll_pct": "0.0",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "4432808",
+      "nome": "James Wiseman",
+      "numero": "35",
+      "posicao": "Pivô",
+      "posicao_sigla": "C",
+      "idade": 25,
+      "altura_m": "2.11",
+      "peso_kg": 109,
+      "experiencia": 7,
+      "universidade": "Memphis",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 6,
+        "min": "4.8",
+        "pts": "1.3",
+        "reb": "2.5",
+        "ast": "0.0",
+        "rb": "0.2",
+        "toco": "0.7",
+        "fg_pct": "40.0",
+        "tres_pct": "0.0",
+        "ll_pct": "0.0",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "4683730",
+      "nome": "Jaden Akins",
+      "numero": "14",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 23,
+      "altura_m": "1.93",
+      "peso_kg": 88,
+      "experiencia": 0,
+      "universidade": "Michigan State",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 2,
+        "min": "1.0",
+        "pts": "0.0",
+        "reb": "0.0",
+        "ast": "0.0",
+        "rb": "0.0",
+        "toco": "0.0",
+        "fg_pct": "0.0",
+        "tres_pct": "0.0",
+        "ll_pct": "0.0",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "4838721",
+      "nome": "Tyler Nickel",
+      "numero": "55",
+      "posicao": "Ala",
+      "posicao_sigla": "F",
+      "idade": 23,
+      "altura_m": "2.03",
+      "peso_kg": 98,
+      "experiencia": 0,
+      "universidade": "Vanderbilt",
+      "pais": "USA",
+      "lesao": null,
+      "medias": null
+    }
+  ],
+  "jogos": [
+    {
+      "id": "401909089",
+      "data_utc": "2026-10-20T23:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "20",
+        "sigla": "PHI",
+        "nome_curto": "76ers"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 100,
+        "adversario": 106
+      },
+      "resultado": "D"
+    },
+    {
+      "id": "401909095",
+      "data_utc": "2026-10-23T23:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "2",
+        "sigla": "BOS",
+        "nome_curto": "Celtics"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 103,
+        "adversario": 107
+      },
+      "resultado": "D"
+    },
+    {
+      "id": "401909863",
+      "data_utc": "2026-10-25T23:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "19",
+        "sigla": "ORL",
+        "nome_curto": "Magic"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 102,
+        "adversario": 111
+      },
+      "resultado": "D"
+    },
+    {
+      "id": "401909878",
+      "data_utc": "2026-10-28T00:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "8",
+        "sigla": "DET",
+        "nome_curto": "Pistons"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 97
+      },
+      "resultado": "V"
+    },
+    {
+      "id": "401909886",
+      "data_utc": "2026-10-29T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "4",
+        "sigla": "CHI",
+        "nome_curto": "Bulls"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 133,
+        "adversario": 127
+      },
+      "resultado": "V"
+    },
+    {
+      "id": "401909280",
+      "data_utc": "2026-10-30T23:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "20",
+        "sigla": "PHI",
+        "nome_curto": "76ers"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 93,
+        "adversario": 98
+      },
+      "resultado": "D"
+    },
+    {
+      "id": "401909910",
+      "data_utc": "2026-11-03T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "17",
+        "sigla": "BKN",
+        "nome_curto": "Nets"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 103,
+        "adversario": 90
+      },
+      "resultado": "V"
+    },
+    {
+      "id": "401909926",
+      "data_utc": "2026-11-05T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "4",
+        "sigla": "CHI",
+        "nome_curto": "Bulls"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 135,
+        "adversario": 105
+      },
+      "resultado": "V"
+    },
+    {
+      "id": "401909940",
+      "data_utc": "2026-11-08T01:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "5",
+        "sigla": "CLE",
+        "nome_curto": "Cavaliers"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 109,
+        "adversario": 97
+      },
+      "resultado": "V"
+    },
+    {
+      "id": "401909960",
+      "data_utc": "2026-11-11T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "15",
+        "sigla": "MIL",
+        "nome_curto": "Bucks"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 117,
+        "adversario": 85
+      },
+      "resultado": "V"
+    },
+    {
+      "id": "401909967",
+      "data_utc": "2026-11-12T00:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "5",
+        "sigla": "CLE",
+        "nome_curto": "Cavaliers"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 107,
+        "adversario": 115
+      },
+      "resultado": "D"
+    },
+    {
+      "id": "401909296",
+      "data_utc": "2026-11-14T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "11",
+        "sigla": "IND",
+        "nome_curto": "Pacers"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 104,
+        "adversario": 106
+      },
+      "resultado": "D"
+    },
+    {
+      "id": "401909990",
+      "data_utc": "2026-11-15T23:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "28",
+        "sigla": "TOR",
+        "nome_curto": "Raptors"
+      },
+      "finalizado": true,
+      "placar": {
+        "time": 112,
+        "adversario": 108
+      },
+      "resultado": "V"
+    },
+    {
+      "id": "401910002",
+      "data_utc": "2026-11-18T00:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "28",
+        "sigla": "TOR",
+        "nome_curto": "Raptors"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910021",
+      "data_utc": "2026-11-20T01:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "16",
+        "sigla": "MIN",
+        "nome_curto": "Timberwolves"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910024",
+      "data_utc": "2026-11-22T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "22",
+        "sigla": "POR",
+        "nome_curto": "Trail Blazers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910034",
+      "data_utc": "2026-11-23T01:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "11",
+        "sigla": "IND",
+        "nome_curto": "Pacers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401909319",
+      "data_utc": "2026-11-26T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "5",
+        "sigla": "CLE",
+        "nome_curto": "Cavaliers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401909326",
+      "data_utc": "2026-11-28T00:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "14",
+        "sigla": "MIA",
+        "nome_curto": "Heat"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910056",
+      "data_utc": "2026-11-29T23:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "1",
+        "sigla": "ATL",
+        "nome_curto": "Hawks"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910071",
+      "data_utc": "2026-12-02T01:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "4",
+        "sigla": "CHI",
+        "nome_curto": "Bulls"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910080",
+      "data_utc": "2026-12-03T01:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "15",
+        "sigla": "MIL",
+        "nome_curto": "Bucks"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910094",
+      "data_utc": "2026-12-13T01:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "14",
+        "sigla": "MIA",
+        "nome_curto": "Heat"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910111",
+      "data_utc": "2026-12-15T01:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "10",
+        "sigla": "HOU",
+        "nome_curto": "Rockets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910126",
+      "data_utc": "2026-12-17T01:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "3",
+        "sigla": "NO",
+        "nome_curto": "Pelicans"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910135",
+      "data_utc": "2026-12-19T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "27",
+        "sigla": "WSH",
+        "nome_curto": "Wizards"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910160",
+      "data_utc": "2026-12-22T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "5",
+        "sigla": "CLE",
+        "nome_curto": "Cavaliers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910178",
+      "data_utc": "2026-12-24T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "26",
+        "sigla": "UTAH",
+        "nome_curto": "Jazz"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401909097",
+      "data_utc": "2026-12-25T17:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "24",
+        "sigla": "SA",
+        "nome_curto": "Spurs"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910198",
+      "data_utc": "2026-12-27T23:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "17",
+        "sigla": "BKN",
+        "nome_curto": "Nets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910224",
+      "data_utc": "2026-12-31T02:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "26",
+        "sigla": "UTAH",
+        "nome_curto": "Jazz"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910234",
+      "data_utc": "2027-01-01T02:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "21",
+        "sigla": "PHX",
+        "nome_curto": "Suns"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910242",
+      "data_utc": "2027-01-02T22:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "7",
+        "sigla": "DEN",
+        "nome_curto": "Nuggets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910264",
+      "data_utc": "2027-01-05T03:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "22",
+        "sigla": "POR",
+        "nome_curto": "Trail Blazers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910278",
+      "data_utc": "2027-01-07T03:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "9",
+        "sigla": "GS",
+        "nome_curto": "Warriors"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910298",
+      "data_utc": "2027-01-09T03:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "23",
+        "sigla": "SAC",
+        "nome_curto": "Kings"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910316",
+      "data_utc": "2027-01-12T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "7",
+        "sigla": "DEN",
+        "nome_curto": "Nuggets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910328",
+      "data_utc": "2027-01-14T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "2",
+        "sigla": "BOS",
+        "nome_curto": "Celtics"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910337",
+      "data_utc": "2027-01-15T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "14",
+        "sigla": "MIA",
+        "nome_curto": "Heat"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910353",
+      "data_utc": "2027-01-17T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "6",
+        "sigla": "DAL",
+        "nome_curto": "Mavericks"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401909475",
+      "data_utc": "2027-01-18T22:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "16",
+        "sigla": "MIN",
+        "nome_curto": "Timberwolves"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910378",
+      "data_utc": "2027-01-21T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "28",
+        "sigla": "TOR",
+        "nome_curto": "Raptors"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910389",
+      "data_utc": "2027-01-23T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "1",
+        "sigla": "ATL",
+        "nome_curto": "Hawks"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910411",
+      "data_utc": "2027-01-25T00:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "12",
+        "sigla": "LAC",
+        "nome_curto": "Clippers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910423",
+      "data_utc": "2027-01-27T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "21",
+        "sigla": "PHX",
+        "nome_curto": "Suns"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910438",
+      "data_utc": "2027-01-29T00:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "1",
+        "sigla": "ATL",
+        "nome_curto": "Hawks"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910457",
+      "data_utc": "2027-01-31T01:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "13",
+        "sigla": "LAL",
+        "nome_curto": "Lakers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910469",
+      "data_utc": "2027-02-02T00:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "17",
+        "sigla": "BKN",
+        "nome_curto": "Nets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910482",
+      "data_utc": "2027-02-04T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "8",
+        "sigla": "DET",
+        "nome_curto": "Pistons"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910492",
+      "data_utc": "2027-02-05T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "28",
+        "sigla": "TOR",
+        "nome_curto": "Raptors"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910519",
+      "data_utc": "2027-02-08T02:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "25",
+        "sigla": "OKC",
+        "nome_curto": "Thunder"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910531",
+      "data_utc": "2027-02-10T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "30",
+        "sigla": "CHA",
+        "nome_curto": "Hornets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910547",
+      "data_utc": "2027-02-12T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "20",
+        "sigla": "PHI",
+        "nome_curto": "76ers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910566",
+      "data_utc": "2027-02-14T01:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "9",
+        "sigla": "GS",
+        "nome_curto": "Warriors"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910575",
+      "data_utc": "2027-02-16T01:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "29",
+        "sigla": "MEM",
+        "nome_curto": "Grizzlies"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910585",
+      "data_utc": "2027-02-18T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "8",
+        "sigla": "DET",
+        "nome_curto": "Pistons"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910604",
+      "data_utc": "2027-02-26T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "25",
+        "sigla": "OKC",
+        "nome_curto": "Thunder"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910621",
+      "data_utc": "2027-02-28T01:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "20",
+        "sigla": "PHI",
+        "nome_curto": "76ers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910629",
+      "data_utc": "2027-03-01T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "15",
+        "sigla": "MIL",
+        "nome_curto": "Bucks"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910641",
+      "data_utc": "2027-03-03T00:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "29",
+        "sigla": "MEM",
+        "nome_curto": "Grizzlies"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910658",
+      "data_utc": "2027-03-05T02:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "6",
+        "sigla": "DAL",
+        "nome_curto": "Mavericks"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910678",
+      "data_utc": "2027-03-08T00:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "24",
+        "sigla": "SA",
+        "nome_curto": "Spurs"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910703",
+      "data_utc": "2027-03-11T03:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "12",
+        "sigla": "LAC",
+        "nome_curto": "Clippers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910711",
+      "data_utc": "2027-03-12T03:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "13",
+        "sigla": "LAL",
+        "nome_curto": "Lakers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910727",
+      "data_utc": "2027-03-14T16:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "2",
+        "sigla": "BOS",
+        "nome_curto": "Celtics"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910739",
+      "data_utc": "2027-03-16T23:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "27",
+        "sigla": "WSH",
+        "nome_curto": "Wizards"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910750",
+      "data_utc": "2027-03-17T23:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "23",
+        "sigla": "SAC",
+        "nome_curto": "Kings"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910772",
+      "data_utc": "2027-03-20T17:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "27",
+        "sigla": "WSH",
+        "nome_curto": "Wizards"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910795",
+      "data_utc": "2027-03-23T23:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "3",
+        "sigla": "NO",
+        "nome_curto": "Pelicans"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910804",
+      "data_utc": "2027-03-24T23:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "10",
+        "sigla": "HOU",
+        "nome_curto": "Rockets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910818",
+      "data_utc": "2027-03-26T23:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "30",
+        "sigla": "CHA",
+        "nome_curto": "Hornets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910831",
+      "data_utc": "2027-03-28T16:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "19",
+        "sigla": "ORL",
+        "nome_curto": "Magic"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910850",
+      "data_utc": "2027-03-31T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "19",
+        "sigla": "ORL",
+        "nome_curto": "Magic"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910866",
+      "data_utc": "2027-04-01T23:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "30",
+        "sigla": "CHA",
+        "nome_curto": "Hornets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910870",
+      "data_utc": "2027-04-02T23:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "17",
+        "sigla": "BKN",
+        "nome_curto": "Nets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910893",
+      "data_utc": "2027-04-04T23:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "2",
+        "sigla": "BOS",
+        "nome_curto": "Celtics"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910900",
+      "data_utc": "2027-04-07T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "1",
+        "sigla": "ATL",
+        "nome_curto": "Hawks"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910919",
+      "data_utc": "2027-04-09T00:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "15",
+        "sigla": "MIL",
+        "nome_curto": "Bucks"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910926",
+      "data_utc": "2027-04-09T23:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "8",
+        "sigla": "DET",
+        "nome_curto": "Pistons"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401910941",
+      "data_utc": "2027-04-11T22:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "11",
+        "sigla": "IND",
+        "nome_curto": "Pacers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    }
+  ],
+  "fonte": "ESPN",
+  "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
+  "atualizado_em": "2026-11-16T18:43:33.313Z"
+}
