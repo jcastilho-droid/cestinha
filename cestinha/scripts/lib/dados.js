@@ -206,3 +206,20 @@ export function lideresDaRodada(jogos) {
     ],
   };
 }
+
+// Entrada do power ranking semanal: classificação + últimos 5 resultados de cada time
+export function entradaPower() {
+  const idx = lerJson(path.join(RAIZ, 'data', 'times', 'index.json'));
+  const pasta = path.join(RAIZ, 'content', 'power-ranking');
+  const anteriores = fs.existsSync(pasta) ? fs.readdirSync(pasta).filter((f) => f.endsWith('.json')).sort() : [];
+  const anterior = anteriores.length ? lerJson(path.join(pasta, anteriores.at(-1))) : null;
+  const times = [];
+  for (const conf of ['Leste', 'Oeste']) {
+    for (const l of idx?.classificacao?.[conf] || []) {
+      const t = lerJson(path.join(RAIZ, 'data', 'times', `${l.sigla}.json`));
+      const ult = (t?.jogos || []).filter((j) => j.finalizado).slice(-5).map((j) => `${j.resultado} ${j.placar.time}-${j.placar.adversario} ${j.em_casa ? 'vs' : '@'} ${j.adversario?.sigla}`);
+      times.push({ sigla: l.sigla, time: t?.nome_curto, conferencia: conf, posicao_conferencia: l.posicao, campanha: `${l.v}-${l.d}`, sequencia: l.sequencia, ultimos_10: l.ultimos10, saldo_por_jogo: l.saldo, ultimos_5_jogos: ult, posicao_no_ranking_anterior: anterior?.ranking?.find((r) => r.time === l.sigla)?.posicao ?? null });
+    }
+  }
+  return { tipo: 'power_ranking', dados: { times, fonte: 'ESPN' }, contexto: { ranking_anterior_em: anterior?.escrito_em || null } };
+}

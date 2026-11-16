@@ -19,6 +19,12 @@ const P = {
   casa: '<path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/>',
   aviao: '<path d="M2 16l20-8-6 12-3-5-5-1-6 2z"/>',
   sequencia: '<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>',
+  olho: '<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  estrela: '<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/>',
+  tv: '<rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/>',
+  bandeira: '<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>',
+  compartilhar: '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/>',
+  baixar: '<path d="M12 3v12M7 10l5 5 5-5M4 21h16"/>',
   cesta: '<path d="M4 6h16"/><path d="M6 6l2 13h8l2-13"/><path d="M9 6l1.2 13M15 6l-1.2 13M7 11h10M7.7 15h8.6"/>',
 };
 
@@ -32,7 +38,7 @@ const PARA_TITULO = [
   [/acordei/i, 'relogio'], [/épicos/i, 'fogo'], [/todos os jogos/i, 'bola'], [/líderes/i, 'coroa'],
   [/anteriores/i, 'calendario'], [/duelo|números/i, 'grafico'], [/box score/i, 'lista'], [/fonte/i, 'link'],
   [/conferência/i, 'escudo'], [/últimos/i, 'relogio'], [/próximos/i, 'calendario'], [/elenco/i, 'camisa'],
-  [/escolha/i, 'escudo'], [/classificação/i, 'trofeu'], [/destaque/i, 'coroa'],
+  [/escolha/i, 'escudo'], [/hoje|amanhã|segunda|terça|quarta|quinta|sexta|sábado|domingo|próxima/i, 'calendario'], [/gráfico/i, 'grafico'], [/arremessos/i, 'alvo'], [/notas/i, 'estrela'], [/decisivos/i, 'coroa'], [/classificação/i, 'trofeu'], [/destaque/i, 'coroa'],
 ];
 export function comIcones(html) {
   return html.replace(/<h2 class="titulo-secao"><span>([^<]+)<\/span>/g, (m, texto) => {
