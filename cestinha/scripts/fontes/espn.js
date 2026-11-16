@@ -150,6 +150,7 @@ export function normalizarJogo(jogoBase, detalhe, dataRodada) {
   // Local
   const v = detalhe.gameInfo?.venue;
   jogo.local = v ? [v.fullName, v.address?.city].filter(Boolean).join(', ') : null;
+  jogo.arena = v ? { id: v.id ? String(v.id) : null, nome: v.fullName || null, cidade: v.address?.city || null, foto: v.images?.[0]?.href || null } : null;
 
   // Série (temporada regular ou playoffs)
   const serie = (detalhe.seasonseries || [])[0];
@@ -323,7 +324,7 @@ export function normalizarTime(base, brutoTime, brutoElenco, brutoCalendario, br
     classificacao: linha,
     divisao: m ? { nome: DIVISOES[m[2]] || m[2], posicao: Number(m[1]) } : null,
     tecnico: (brutoElenco.coach || [])[0] ? `${brutoElenco.coach[0].firstName} ${brutoElenco.coach[0].lastName}` : null,
-    arena: t.franchise?.venue?.fullName || null,
+    // A arena do time vem dos jogos em casa coletados (o cadastro da franquia na ESPN está desatualizado em alguns times).
     estatisticas: {
       pts: est.avgPoints ?? null, reb: est.avgRebounds ?? null, ast: est.avgAssists ?? null, rb: est.avgSteals ?? null,
       toco: est.avgBlocks ?? null, err: est.avgTurnovers ?? null,
