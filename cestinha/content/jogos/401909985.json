@@ -1,0 +1,30 @@
+{
+  "titulo": "76ers seguram o Pacers com dupla Brown e Maxey em noite de 18 bolas de três",
+  "subtitulo": "Jaylen Brown fez 31 pts; LeBron James deu 11 ast; Siakam também anotou 31 pelo Pacers",
+  "corpo": "Jogo de pontaria em Philadelphia. Os 76ers venceram o Pacers por 131 a 124, com 18 bolas de três convertidas, num duelo com 14 trocas de liderança.\n\nJaylen Brown e Tyrese Maxey comandaram o ataque: Brown fez 31 pts, com 12 de 18 nos arremessos, e Maxey somou 27 pts e 6 ast. LeBron James organizou o jogo, com 15 pts, 7 reb e 11 ast. Do banco, Dean Wade acertou 3 de 4 de três.\n\nPelo Pacers, Pascal Siakam também fez 31 pts, e Quenton Jackson contribuiu com 15 pts e 8 ast.\n\n**E agora?** Os 76ers vão a 11-3, meio jogo atrás do Celtics na Divisão Atlântico. O Pacers cai para 5-9.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "76ers",
+    "Pacers"
+  ],
+  "jogadores": [
+    "Jaylen Brown",
+    "Tyrese Maxey",
+    "LeBron James",
+    "Dean Wade",
+    "Pascal Siakam",
+    "Quenton Jackson"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909985",
+    "data_rodada": "2026-11-15"
+  },
+  "escrito_em": "2026-11-16T18:08:11.853Z"
+}

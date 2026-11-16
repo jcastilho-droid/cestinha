@@ -1,0 +1,29 @@
+{
+  "titulo": "Spurs chegam a 12 vitórias seguidas e mandam o Jazz para a 12ª derrota",
+  "subtitulo": "Dylan Harper fez 31 pts; Wembanyama somou 26 pts, 10 reb e 5 tocos",
+  "corpo": "Duas sequências de 12, em sentidos opostos. Os Spurs venceram o Jazz por 110 a 102, em Salt Lake City, e chegaram à 12ª vitória seguida. O Jazz chegou à 12ª derrota seguida.\n\nO cestinha foi Dylan Harper, com 31 pts e 9 reb. Victor Wembanyama fez o pacote completo: 26 pts, 10 reb, 6 ast e 5 tocos. Stephon Castle completou com 20 pts e 9 ast.\n\nO jogo foi brigado, com 14 trocas de liderança. Pelo Jazz, Mo Bamba teve noite perfeita da linha de três (6 de 6) e terminou com 26 pts.\n\n**E agora?** Os Spurs vão a 12-2 e lideram a Divisão Sudoeste. O Jazz, com 1-13, é o lanterna da Divisão Noroeste.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Spurs",
+    "Jazz"
+  ],
+  "jogadores": [
+    "Dylan Harper",
+    "Victor Wembanyama",
+    "Stephon Castle",
+    "Mo Bamba"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)",
+    "ESPN (matéria do jogo)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909988",
+    "data_rodada": "2026-11-15"
+  },
+  "escrito_em": "2026-11-16T18:08:11.858Z"
+}

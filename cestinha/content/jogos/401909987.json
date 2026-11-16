@@ -1,0 +1,30 @@
+{
+  "titulo": "Garland comanda e Clippers vencem o Hornets pela 17ª vez seguida",
+  "subtitulo": "Darius Garland fez 27 pts; Max Strus acertou 4 de 5 de três vindo do banco",
+  "corpo": "Freguesia confirmada no Intuit Dome. Os Clippers venceram o Hornets por 113 a 105 e, segundo a ESPN, chegaram a 17 vitórias seguidas no confronto.\n\nDarius Garland foi o cestinha, com 27 pts, 6 reb e 7 ast. Max Strus saiu do banco com 14 pts e 4 de 5 de três, e Derrick Jones Jr. não errou: 5 de 5 nos arremessos, para 13 pts.\n\nPelo Hornets, Coby White fez 21 pts, e Moussa Diabate fez duplo-duplo, com 12 pts e 12 reb. O time arriscou 52 bolas de três e acertou 17.\n\n**E agora?** Os Clippers vão a 4-8, com a segunda vitória seguida. O Hornets cai para 4-9.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Clippers",
+    "Hornets"
+  ],
+  "jogadores": [
+    "Darius Garland",
+    "Max Strus",
+    "Derrick Jones Jr.",
+    "Coby White",
+    "Moussa Diabate"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)",
+    "ESPN (matéria do jogo)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909987",
+    "data_rodada": "2026-11-15"
+  },
+  "escrito_em": "2026-11-16T18:08:11.857Z"
+}

@@ -55,7 +55,8 @@ function conferirDados(t, jogos) {
     if (!valores[k].has(Number(m[1]))) a.push(`Número "${m[0]}" não aparece no box score de nenhum jogador.`);
   }
 
-  const nomes = new Set(jogadores.map((p) => semAcento(p.nome)));
+  const foraDeQuadra = jogos.flatMap((j) => [...(j.casa.nao_jogaram || []), ...(j.visitante.nao_jogaram || [])]);
+  const nomes = new Set([...jogadores, ...foraDeQuadra].map((p) => semAcento(p.nome)));
   for (const nome of t.jogadores || []) {
     if (!nomes.has(semAcento(nome))) a.push(`Jogador "${nome}" não aparece no box score.`);
   }

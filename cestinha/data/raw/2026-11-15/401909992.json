@@ -1,0 +1,627 @@
+{
+  "id": "401909992",
+  "inicio_utc": "2026-11-16T01:00Z",
+  "status": "final",
+  "periodo": 4,
+  "casa": {
+    "id": "15",
+    "sigla": "MIL",
+    "nome": "Milwaukee Bucks",
+    "nome_curto": "Bucks",
+    "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+    "cor": "#00471b",
+    "placar": 106,
+    "campanha": "1-13",
+    "jogadores": [
+      {
+        "nome": "Kyle Kuzma",
+        "titular": true,
+        "min": 22,
+        "pts": 14,
+        "fg": "5-11",
+        "tres": "3-6",
+        "ll": "1-2",
+        "reb": 6,
+        "ast": 2,
+        "err": 2,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 5,
+        "faltas": 0,
+        "mais_menos": 0
+      },
+      {
+        "nome": "Myles Turner",
+        "titular": true,
+        "min": 23,
+        "pts": 8,
+        "fg": "3-6",
+        "tres": "1-3",
+        "ll": "1-1",
+        "reb": 7,
+        "ast": 1,
+        "err": 0,
+        "rb": 0,
+        "toco": 1,
+        "reb_of": 3,
+        "reb_def": 4,
+        "faltas": 5,
+        "mais_menos": -12
+      },
+      {
+        "nome": "Jericho Sims",
+        "titular": true,
+        "min": 11,
+        "pts": 4,
+        "fg": "2-3",
+        "tres": "0-0",
+        "ll": "0-0",
+        "reb": 2,
+        "ast": 0,
+        "err": 2,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 1,
+        "faltas": 2,
+        "mais_menos": -4
+      },
+      {
+        "nome": "Tyler Herro",
+        "titular": true,
+        "min": 20,
+        "pts": 5,
+        "fg": "2-13",
+        "tres": "0-5",
+        "ll": "1-1",
+        "reb": 5,
+        "ast": 3,
+        "err": 5,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 2,
+        "reb_def": 3,
+        "faltas": 0,
+        "mais_menos": -12
+      },
+      {
+        "nome": "Brayden Burries",
+        "titular": true,
+        "min": 29,
+        "pts": 13,
+        "fg": "3-9",
+        "tres": "2-5",
+        "ll": "5-6",
+        "reb": 8,
+        "ast": 4,
+        "err": 2,
+        "rb": 2,
+        "toco": 0,
+        "reb_of": 2,
+        "reb_def": 6,
+        "faltas": 4,
+        "mais_menos": -13
+      },
+      {
+        "nome": "Jaime Jaquez Jr.",
+        "titular": false,
+        "min": 30,
+        "pts": 6,
+        "fg": "2-7",
+        "tres": "2-4",
+        "ll": "0-0",
+        "reb": 5,
+        "ast": 4,
+        "err": 5,
+        "rb": 2,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 4,
+        "faltas": 2,
+        "mais_menos": 3
+      },
+      {
+        "nome": "Nate Ament",
+        "titular": false,
+        "min": 17,
+        "pts": 5,
+        "fg": "2-5",
+        "tres": "1-3",
+        "ll": "0-0",
+        "reb": 2,
+        "ast": 1,
+        "err": 1,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 2,
+        "faltas": 3,
+        "mais_menos": -9
+      },
+      {
+        "nome": "Kel'el Ware",
+        "titular": false,
+        "min": 25,
+        "pts": 8,
+        "fg": "2-7",
+        "tres": "1-3",
+        "ll": "3-4",
+        "reb": 11,
+        "ast": 2,
+        "err": 1,
+        "rb": 0,
+        "toco": 3,
+        "reb_of": 3,
+        "reb_def": 8,
+        "faltas": 1,
+        "mais_menos": 5
+      },
+      {
+        "nome": "Gary Trent Jr.",
+        "titular": false,
+        "min": 30,
+        "pts": 18,
+        "fg": "7-16",
+        "tres": "4-12",
+        "ll": "0-1",
+        "reb": 2,
+        "ast": 1,
+        "err": 0,
+        "rb": 3,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 2,
+        "faltas": 3,
+        "mais_menos": -3
+      },
+      {
+        "nome": "AJ Green",
+        "titular": false,
+        "min": 6,
+        "pts": 0,
+        "fg": "0-3",
+        "tres": "0-3",
+        "ll": "0-0",
+        "reb": 0,
+        "ast": 0,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 0,
+        "faltas": 2,
+        "mais_menos": 3
+      },
+      {
+        "nome": "Kasparas Jakucionis",
+        "titular": false,
+        "min": 26,
+        "pts": 25,
+        "fg": "9-16",
+        "tres": "4-10",
+        "ll": "3-3",
+        "reb": 5,
+        "ast": 5,
+        "err": 2,
+        "rb": 3,
+        "toco": 0,
+        "reb_of": 4,
+        "reb_def": 1,
+        "faltas": 2,
+        "mais_menos": 7
+      }
+    ],
+    "nao_jogaram": [
+      {
+        "nome": "Caris LeVert",
+        "motivo": "COACH'S DECISION"
+      }
+    ],
+    "estatisticas": {
+      "fg": "37-96",
+      "fg_pct": "39",
+      "tres": "18-54",
+      "tres_pct": "33",
+      "ll": "14-18",
+      "reb": "53",
+      "ast": "23",
+      "err": "20",
+      "pontos_garrafao": "32",
+      "pontos_contra_ataque": "14",
+      "maior_vantagem": "22"
+    },
+    "parciais": [
+      37,
+      16,
+      27,
+      26
+    ],
+    "vencedor": false
+  },
+  "visitante": {
+    "id": "1",
+    "sigla": "ATL",
+    "nome": "Atlanta Hawks",
+    "nome_curto": "Hawks",
+    "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+    "cor": "#c8102e",
+    "placar": 113,
+    "campanha": "8-6",
+    "jogadores": [
+      {
+        "nome": "Onyeka Okongwu",
+        "titular": true,
+        "min": 36,
+        "pts": 16,
+        "fg": "6-12",
+        "tres": "3-8",
+        "ll": "1-2",
+        "reb": 11,
+        "ast": 0,
+        "err": 2,
+        "rb": 2,
+        "toco": 1,
+        "reb_of": 1,
+        "reb_def": 10,
+        "faltas": 2,
+        "mais_menos": 18
+      },
+      {
+        "nome": "Jalen Johnson",
+        "titular": true,
+        "min": 35,
+        "pts": 14,
+        "fg": "5-13",
+        "tres": "0-2",
+        "ll": "4-8",
+        "reb": 11,
+        "ast": 5,
+        "err": 4,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 2,
+        "reb_def": 9,
+        "faltas": 4,
+        "mais_menos": 10
+      },
+      {
+        "nome": "CJ McCollum",
+        "titular": true,
+        "min": 30,
+        "pts": 20,
+        "fg": "5-10",
+        "tres": "1-3",
+        "ll": "9-9",
+        "reb": 4,
+        "ast": 2,
+        "err": 0,
+        "rb": 4,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 3,
+        "faltas": 0,
+        "mais_menos": 16
+      },
+      {
+        "nome": "Nickeil Alexander-Walker",
+        "titular": true,
+        "min": 33,
+        "pts": 20,
+        "fg": "7-15",
+        "tres": "2-8",
+        "ll": "4-5",
+        "reb": 5,
+        "ast": 4,
+        "err": 2,
+        "rb": 1,
+        "toco": 1,
+        "reb_of": 1,
+        "reb_def": 4,
+        "faltas": 2,
+        "mais_menos": 19
+      },
+      {
+        "nome": "Dyson Daniels",
+        "titular": true,
+        "min": 27,
+        "pts": 9,
+        "fg": "4-9",
+        "tres": "0-1",
+        "ll": "1-2",
+        "reb": 10,
+        "ast": 5,
+        "err": 3,
+        "rb": 2,
+        "toco": 0,
+        "reb_of": 4,
+        "reb_def": 6,
+        "faltas": 4,
+        "mais_menos": 5
+      },
+      {
+        "nome": "Corey Kispert",
+        "titular": false,
+        "min": 16,
+        "pts": 14,
+        "fg": "4-8",
+        "tres": "3-6",
+        "ll": "3-3",
+        "reb": 3,
+        "ast": 1,
+        "err": 0,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 2,
+        "faltas": 1,
+        "mais_menos": -6
+      },
+      {
+        "nome": "Zuby Ejiofor",
+        "titular": false,
+        "min": 12,
+        "pts": 4,
+        "fg": "1-3",
+        "tres": "1-1",
+        "ll": "1-2",
+        "reb": 3,
+        "ast": 0,
+        "err": 0,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 2,
+        "reb_def": 1,
+        "faltas": 2,
+        "mais_menos": -11
+      },
+      {
+        "nome": "Luguentz Dort",
+        "titular": false,
+        "min": 18,
+        "pts": 3,
+        "fg": "1-4",
+        "tres": "0-3",
+        "ll": "1-2",
+        "reb": 4,
+        "ast": 0,
+        "err": 2,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 2,
+        "reb_def": 2,
+        "faltas": 1,
+        "mais_menos": -17
+      },
+      {
+        "nome": "Aaron Wiggins",
+        "titular": false,
+        "min": 24,
+        "pts": 7,
+        "fg": "3-7",
+        "tres": "1-5",
+        "ll": "0-0",
+        "reb": 3,
+        "ast": 3,
+        "err": 4,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 3,
+        "faltas": 1,
+        "mais_menos": -5
+      },
+      {
+        "nome": "RayJ Dennis",
+        "titular": false,
+        "min": 10,
+        "pts": 6,
+        "fg": "2-6",
+        "tres": "1-3",
+        "ll": "1-1",
+        "reb": 1,
+        "ast": 3,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 1,
+        "faltas": 3,
+        "mais_menos": 6
+      }
+    ],
+    "nao_jogaram": [
+      {
+        "nome": "Dorian Finney-Smith",
+        "motivo": "COACH'S DECISION"
+      },
+      {
+        "nome": "Kingston Flemings",
+        "motivo": "LUMBAR STRAIN"
+      }
+    ],
+    "estatisticas": {
+      "fg": "38-87",
+      "fg_pct": "44",
+      "tres": "12-40",
+      "tres_pct": "30",
+      "ll": "25-34",
+      "reb": "55",
+      "ast": "23",
+      "err": "17",
+      "pontos_garrafao": "38",
+      "pontos_contra_ataque": "25",
+      "maior_vantagem": "13"
+    },
+    "parciais": [
+      18,
+      37,
+      32,
+      26
+    ],
+    "vencedor": true
+  },
+  "fonte": "ESPN",
+  "link_fonte": "https://www.espn.com/nba/game/_/gameId/401909992",
+  "data_rodada": "2026-11-15",
+  "prorrogacoes": 0,
+  "local": "Fiserv Forum, Milwaukee",
+  "serie": {
+    "tipo": "season",
+    "resumo_en": "ATL leads series 1-0"
+  },
+  "temporada": {
+    "ano": 2027,
+    "tipo": 2
+  },
+  "lances_finais": [
+    {
+      "periodo": 4,
+      "relogio": "4:02",
+      "lance_en": "CJ McCollum makes free throw 1 of 2",
+      "placar": "105-97"
+    },
+    {
+      "periodo": 4,
+      "relogio": "4:02",
+      "lance_en": "CJ McCollum makes free throw 2 of 2",
+      "placar": "106-97"
+    },
+    {
+      "periodo": 4,
+      "relogio": "3:52",
+      "lance_en": "Kel'el Ware makes 23-foot three point jumper (Kasparas Jakucionis assists)",
+      "placar": "106-100"
+    },
+    {
+      "periodo": 4,
+      "relogio": "3:20",
+      "lance_en": "Kasparas Jakucionis makes running layup",
+      "placar": "106-102"
+    },
+    {
+      "periodo": 4,
+      "relogio": "2:25",
+      "lance_en": "Brayden Burries makes free throw 2 of 2",
+      "placar": "106-103"
+    },
+    {
+      "periodo": 4,
+      "relogio": "2:12",
+      "lance_en": "CJ McCollum makes 25-foot three point step back jumpshot",
+      "placar": "109-103"
+    },
+    {
+      "periodo": 4,
+      "relogio": "1:57",
+      "lance_en": "Kasparas Jakucionis makes 25-foot three pointer",
+      "placar": "109-106"
+    },
+    {
+      "periodo": 4,
+      "relogio": "17.5",
+      "lance_en": "CJ McCollum makes 10-foot step back jumpshot",
+      "placar": "111-106"
+    },
+    {
+      "periodo": 4,
+      "relogio": "8.0",
+      "lance_en": "CJ McCollum makes free throw 1 of 2",
+      "placar": "112-106"
+    },
+    {
+      "periodo": 4,
+      "relogio": "8.0",
+      "lance_en": "CJ McCollum makes free throw 2 of 2",
+      "placar": "113-106"
+    }
+  ],
+  "trocas_de_lideranca": "3",
+  "classificacao_divisao": [
+    {
+      "grupo_en": "2026-27 Southeast Standings",
+      "times": [
+        {
+          "time": "Atlanta",
+          "v": "8",
+          "d": "6",
+          "atras": "-",
+          "sequencia": "W1"
+        },
+        {
+          "time": "Miami",
+          "v": "7",
+          "d": "6",
+          "atras": "0.5",
+          "sequencia": "W4"
+        },
+        {
+          "time": "Orlando",
+          "v": "5",
+          "d": "7",
+          "atras": "2",
+          "sequencia": "W3"
+        },
+        {
+          "time": "Charlotte",
+          "v": "4",
+          "d": "9",
+          "atras": "3.5",
+          "sequencia": "L2"
+        },
+        {
+          "time": "Washington",
+          "v": "4",
+          "d": "10",
+          "atras": "4",
+          "sequencia": "L7"
+        }
+      ]
+    },
+    {
+      "grupo_en": "2026-27 Central Standings",
+      "times": [
+        {
+          "time": "Detroit",
+          "v": "8",
+          "d": "4",
+          "atras": "-",
+          "sequencia": "L1"
+        },
+        {
+          "time": "Cleveland",
+          "v": "7",
+          "d": "7",
+          "atras": "2",
+          "sequencia": "W1"
+        },
+        {
+          "time": "Indiana",
+          "v": "5",
+          "d": "9",
+          "atras": "4",
+          "sequencia": "L1"
+        },
+        {
+          "time": "Chicago",
+          "v": "3",
+          "d": "9",
+          "atras": "5",
+          "sequencia": "W2"
+        },
+        {
+          "time": "Milwaukee",
+          "v": "1",
+          "d": "13",
+          "atras": "8",
+          "sequencia": "L10"
+        }
+      ]
+    }
+  ],
+  "materia_fonte": {
+    "titulo_en": "Hawks erase 22-point second quarter deficit to hand Bucks 10th consecutive loss",
+    "resumo_en": "Nickeil Alexander-Walker and CJ McCollum each scored 20 points and Onyeka Okongwu had 16 and 11 rebounds as the Atlanta Hawks erased a 22-point second-quarter deficit to defeat the Milwaukee Bucks 113-106 on Sunday night.",
+    "link": "http://www.espn.com/nba/recap?gameId=401909992"
+  }
+}

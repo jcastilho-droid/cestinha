@@ -79,7 +79,7 @@ export function entradaJogo(jogo) {
       visitante: resumoTime(jogo.visitante),
       trocas_de_lideranca: jogo.trocas_de_lideranca,
       ultimas_cestas_em_ingles: jogo.lances_finais,
-      fonte: { nome: jogo.fonte, link: jogo.link_fonte, manchete_em_ingles: jogo.materia_fonte?.titulo_en || null },
+      fonte: { nome: jogo.fonte, link: jogo.link_fonte, manchete_em_ingles: jogo.materia_fonte?.titulo_en || null, resumo_da_materia_em_ingles: jogo.materia_fonte?.resumo_en || null },
     },
     contexto: {
       serie_na_temporada_em_ingles: jogo.serie?.resumo_en || null,
@@ -141,3 +141,54 @@ export function existe(arq) {
   return fs.existsSync(arq);
 }
 export { listarArquivos };
+
+// ---------- Selos de "jogo épico" e líderes da noite (calculados só com números da fonte) ----------
+
+export function selosDoJogo(j) {
+  if (j.status !== 'final' || !j.casa?.jogadores) return [];
+  const venc = j.casa.vencedor ? j.casa : j.visitante;
+  const perd = j.casa.vencedor ? j.visitante : j.casa;
+  const margem = venc.placar - perd.placar;
+  const selos = [];
+  if (j.prorrogacoes > 0) selos.push({ id: 'prorrogacao', rotulo: j.prorrogacoes > 1 ? `${j.prorrogacoes} PRORROGAÇÕES` : 'PRORROGAÇÃO', epico: true });
+  const vantPerdedor = Number(perd.estatisticas?.maior_vantagem || 0);
+  if (vantPerdedor >= 15) selos.push({ id: 'virada', rotulo: `VIRADA DE ${vantPerdedor}`, epico: true });
+  if (margem <= 5 && j.prorrogacoes === 0) selos.push({ id: 'detalhe', rotulo: 'NO DETALHE', epico: true });
+  const todos = [...j.casa.jogadores, ...j.visitante.jogadores];
+  for (const p of todos) {
+    if (p.pts >= 40) selos.push({ id: 'quarenta', rotulo: `${p.pts} DE ${sobrenome(p.nome)}`, epico: true });
+    if ([p.pts, p.reb, p.ast, p.rb, p.toco].filter((x) => x >= 10).length >= 3) selos.push({ id: 'triplo', rotulo: `TRIPLO-DUPLO DE ${sobrenome(p.nome)}`, epico: true });
+  }
+  if (margem >= 25) selos.push({ id: 'atropelo', rotulo: 'ATROPELO', epico: false });
+  return selos;
+}
+
+function sobrenome(nome) {
+  const partes = String(nome).split(' ').filter((x) => !/^(Jr\.?|Sr\.?|II|III|IV)$/i.test(x));
+  return (partes.at(-1) || nome).toUpperCase();
+}
+
+const feitas = (s) => Number(String(s || '0-0').split('-')[0]) || 0;
+
+export function lideresDaRodada(jogos) {
+  const todos = [];
+  for (const j of jogos) {
+    for (const lado of ['casa', 'visitante']) {
+      for (const p of j[lado].jogadores || []) todos.push({ ...p, time: j[lado], jogo: j.id, tres_feitas: feitas(p.tres) });
+    }
+  }
+  if (!todos.length) return null;
+  const top = (k) => [...todos].sort((a, b) => b[k] - a[k] || b.pts - a.pts)[0];
+  const destaque = [...todos].sort((a, b) => b.pts + b.reb + b.ast + b.rb + b.toco - (a.pts + a.reb + a.ast + a.rb + a.toco))[0];
+  return {
+    destaque,
+    categorias: [
+      { rotulo: 'Pontos', sigla: 'PTS', p: top('pts'), valor: (p) => p.pts },
+      { rotulo: 'Rebotes', sigla: 'REB', p: top('reb'), valor: (p) => p.reb },
+      { rotulo: 'Assistências', sigla: 'AST', p: top('ast'), valor: (p) => p.ast },
+      { rotulo: 'Bolas de três', sigla: '3P', p: top('tres_feitas'), valor: (p) => p.tres },
+      { rotulo: 'Tocos', sigla: 'TOC', p: top('toco'), valor: (p) => p.toco },
+      { rotulo: 'Roubos', sigla: 'RB', p: top('rb'), valor: (p) => p.rb },
+    ],
+  };
+}

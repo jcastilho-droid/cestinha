@@ -1,0 +1,31 @@
+{
+  "titulo": "Rockets passeiam em Washington e seguram Trae Young sem pontos",
+  "subtitulo": "Amen Thompson fez 26 pts com 9 de 11; Durant e Tari Eason somaram 25 cada",
+  "corpo": "Atropelo em Washington. Os Rockets venceram o Wizards por 147 a 119, com vantagem que chegou a 37 pontos, e somaram a quarta vitória seguida.\n\nAmen Thompson foi o cestinha, com 26 pts e um aproveitamento absurdo: 9 de 11. Kevin Durant fez 25 pts, e Tari Eason, do banco, também anotou 25 pts. Alperen Sengun distribuiu o jogo: 19 pts, 8 reb e 8 ast.\n\nO dado que chamou atenção: segundo a ESPN, a defesa dos Rockets segurou Trae Young sem pontos pela primeira vez na carreira dele. Pelo Wizards, Alex Sarr foi o destaque, com 25 pts e 9 reb.\n\n**E agora?** Os Rockets vão a 11-3, a um jogo dos líderes Spurs na Divisão Sudoeste. O Wizards cai para 4-10, com sete derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Rockets",
+    "Wizards"
+  ],
+  "jogadores": [
+    "Amen Thompson",
+    "Kevin Durant",
+    "Tari Eason",
+    "Alperen Sengun",
+    "Trae Young",
+    "Alex Sarr"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)",
+    "ESPN (matéria do jogo)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909991",
+    "data_rodada": "2026-11-15"
+  },
+  "escrito_em": "2026-11-16T18:08:11.860Z"
+}

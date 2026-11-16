@@ -1,0 +1,29 @@
+{
+  "titulo": "Brunson decide na prorrogação e Knicks seguram o Raptors em Toronto",
+  "subtitulo": "Bola de três de Brunson desempatou o jogo no tempo extra; Towns fez 28 pts e 17 reb",
+  "corpo": "Que isso, jogo nervoso! Os Knicks venceram o Raptors por 112 a 108, na prorrogação, em Toronto. Foram 9 trocas de liderança até o tempo extra decidir a parada.\n\nO nome da noite foi Jalen Brunson, com 28 pts e 9 ast, incluindo a bola de três que desempatou o jogo a 33 segundos do fim da prorrogação. Karl-Anthony Towns também foi brabo: 28 pts e 17 reb. Do banco, Landry Shamet entrou quente, com 23 pts e 4 de 7 de três.\n\nDo lado canadense, Scottie Barnes jogou muito (30 pts, 9 reb), mas não foi suficiente. Segundo a ESPN, é a 14ª vitória seguida dos Knicks sobre o Raptors.\n\n**E agora?** Os Knicks chegam a 7-6 e estão em terceiro na Divisão Atlântico. O Raptors cai para 5-8 e soma quatro derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Knicks",
+    "Raptors"
+  ],
+  "jogadores": [
+    "Jalen Brunson",
+    "Karl-Anthony Towns",
+    "Landry Shamet",
+    "Scottie Barnes"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)",
+    "ESPN (matéria do jogo)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909990",
+    "data_rodada": "2026-11-15"
+  },
+  "escrito_em": "2026-11-16T18:08:11.859Z"
+}

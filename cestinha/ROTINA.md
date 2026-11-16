@@ -2,21 +2,21 @@
 
 Você é a tarefa agendada do Cestinha. Ninguém está olhando: não faça perguntas,
 siga os passos na ordem e, se algo der errado, pare no passo indicado e registre o motivo
-no relatório final. **Nunca** mostre, imprima, salve em arquivo ou faça commit do token.
+no relatório final.
 
 A coleta de dados NÃO é sua: o GitHub Actions busca os jogos na ESPN de hora em hora
 e salva em `data/raw/`. Você só **escreve** os textos.
 
 ## 1. Preparar
+O repositório `jcastilho-droid/cestinha` já vem clonado pela tarefa (não precisa de token).
+Entre na pasta dele, traga a versão mais nova da branch `main` e entre na subpasta `cestinha/`,
+onde fica o projeto. **Todos os comandos abaixo rodam dentro de `cestinha/`.**
 ```bash
-cd ~ && rm -rf cestinha
-git clone --depth 50 "https://x-access-token:${TOKEN}@github.com/jcastilho-droid/cestinha.git" cestinha
+git checkout main && git pull --rebase origin main
 cd cestinha
-git config user.name "Cestinha (Claude)"
-git config user.email "cestinha-bot@users.noreply.github.com"
 ```
-`TOKEN` é o token informado na mensagem da tarefa (defina com `export TOKEN=...`
-no mesmo comando, sem ecoar). Se o clone falhar, pare e relate "falha no clone".
+Trabalhe e envie SEMPRE na branch `main` (nunca crie branch `claude/...`):
+o site só é publicado a partir da `main`. Se o pull falhar, pare e relate "falha ao atualizar o repositório".
 
 ## 2. Ver o que é novo
 ```bash
@@ -74,7 +74,7 @@ Se o build falhar, pare sem enviar e relate o erro.
 ```bash
 git add content data/processed.json
 git commit -m "cestinha: textos de $(date -u +%Y-%m-%dT%H:%MZ)"
-for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 10; done
+for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 10; done
 ```
 O envio dispara o GitHub Actions, que monta e publica o site sozinho em 1 a 2 minutos.
 

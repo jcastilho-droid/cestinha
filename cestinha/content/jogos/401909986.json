@@ -1,0 +1,31 @@
+{
+  "titulo": "Luka faz 43 e Lakers chegam a oito vitórias seguidas em Phoenix",
+  "subtitulo": "Doncic comandou o 131 a 123 sobre o Suns; Lakers abriram até 31 pontos de vantagem",
+  "corpo": "Papo reto: Luka Doncic está voando. O esloveno fez 43 pts e 9 ast, e os Lakers venceram o Suns por 131 a 123, em Phoenix. É a oitava vitória seguida do time.\n\nOs Lakers chegaram a abrir 31 pontos de frente. O Suns ainda tentou uma reação com 43 pontos no último quarto, puxada pelo banco: Collin Gillespie fez 26 pts e Luke Kennard, 18 pts. Não deu tempo.\n\nQuentin Grimes foi o parceiro ideal, com 22 pts e 5 de 6 de três. Walker Kessler fez duplo-duplo: 14 pts e 12 reb. Devin Booker não achou o aro: 17 pts, com 4 de 14 nos arremessos.\n\n**E agora?** Os Lakers vão a 12-2 e lideram a Divisão Pacífico. O Suns cai para 5-7.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Lakers",
+    "Suns"
+  ],
+  "jogadores": [
+    "Luka Doncic",
+    "Quentin Grimes",
+    "Walker Kessler",
+    "Collin Gillespie",
+    "Luke Kennard",
+    "Devin Booker"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)",
+    "ESPN (matéria do jogo)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909986",
+    "data_rodada": "2026-11-15"
+  },
+  "escrito_em": "2026-11-16T18:08:11.857Z"
+}

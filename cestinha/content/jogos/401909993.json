@@ -1,0 +1,31 @@
+{
+  "titulo": "Shai faz 37 em três quartos e Thunder quebra jejum em Sacramento",
+  "subtitulo": "Thunder vence o Kings por 125 a 103 e encerra sequência de três derrotas",
+  "corpo": "O Thunder voltou a sorrir. Com Shai Gilgeous-Alexander inspirado, o time venceu o Kings por 125 a 103, em Sacramento, e encerrou uma sequência de três derrotas.\n\nShai fez 37 pts com 13 de 20 nos arremessos e, segundo a ESPN, em apenas três quartos. Do banco, Aday Mara fez duplo-duplo, com 16 pts e 13 reb. A vantagem chegou a 27 pontos.\n\nPelo Kings, Darius Acuff Jr. foi o cestinha, com 26 pts, e Malik Monk deu 10 ast. O time ficou sem De'Andre Hunter e Zach LaVine.\n\n**E agora?** O Thunder vai a 9-5, terceiro da Divisão Noroeste. O Kings, com 1-12, soma seis derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Thunder",
+    "Kings"
+  ],
+  "jogadores": [
+    "Shai Gilgeous-Alexander",
+    "Aday Mara",
+    "Darius Acuff Jr.",
+    "Malik Monk",
+    "De'Andre Hunter",
+    "Zach LaVine"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)",
+    "ESPN (matéria do jogo)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909993",
+    "data_rodada": "2026-11-15"
+  },
+  "escrito_em": "2026-11-16T18:08:21.661Z"
+}

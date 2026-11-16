@@ -1,0 +1,30 @@
+{
+  "titulo": "Hawks apagam desvantagem de 22 pontos e afundam o Bucks",
+  "subtitulo": "McCollum e Alexander-Walker fizeram 20 pts cada; Bucks perdem a décima seguida",
+  "corpo": "Virada das boas em Milwaukee! O Bucks chegou a abrir 22 pontos no segundo quarto, mas os Hawks reagiram e venceram por 113 a 106.\n\nCJ McCollum e Nickeil Alexander-Walker fizeram 20 pts cada. McCollum ainda fechou o jogo: cesta de meia distância e dois lances livres nos últimos 18 segundos. Onyeka Okongwu (16 pts, 11 reb) e Jalen Johnson (14 pts, 11 reb, 5 ast) fizeram duplo-duplo.\n\nPelo Bucks, o melhor foi Kasparas Jakucionis, que saiu do banco com 25 pts. O time chutou 54 bolas de três e acertou 18.\n\n**E agora?** Os Hawks vão a 8-6 e lideram a Divisão Sudeste. O Bucks, com 1-13, soma dez derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Hawks",
+    "Bucks"
+  ],
+  "jogadores": [
+    "CJ McCollum",
+    "Nickeil Alexander-Walker",
+    "Onyeka Okongwu",
+    "Jalen Johnson",
+    "Kasparas Jakucionis"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)",
+    "ESPN (matéria do jogo)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909992",
+    "data_rodada": "2026-11-15"
+  },
+  "escrito_em": "2026-11-16T18:08:11.860Z"
+}

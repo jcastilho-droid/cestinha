@@ -61,13 +61,14 @@ Domínio próprio (`cestinha.livemode.space`): quando o domínio for liberado, c
 
 ## Tarefa agendada (quem escreve os textos)
 
-Ela roda no Claude, segue o `ROTINA.md` e envia os textos com um token do GitHub
-restrito a este repositório. O token fica só na tarefa, nunca no código.
+Ela roda na nuvem do Claude (claude.ai/code/routines), segue o `ROTINA.md` e envia os
+textos para a `main`. O acesso ao repositório vem do app "Claude" instalado no GitHub,
+sem token nem senha em lugar nenhum.
 
-- **Pausar:** no Claude, abra a lista de tarefas agendadas e desative a do Cestinha.
+- **Pausar:** em claude.ai/code/routines, abra a tarefa do Cestinha e desative.
   O GitHub Actions continua coletando e o site continua no ar, só param os textos novos.
 - **Pausar a coleta também:** no GitHub, **Actions > Atualizar Cestinha > ⋯ > Disable workflow**.
-- **Token vencido:** crie um novo (mesmas permissões) e atualize a mensagem da tarefa.
+- **Cortar o acesso do Claude:** no GitHub, **Settings > Applications > Claude > Configure** e remova o repositório.
 
 ## Trocar o prompt
 

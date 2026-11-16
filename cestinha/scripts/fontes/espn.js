@@ -185,6 +185,7 @@ export function normalizarJogo(jogoBase, detalhe, dataRodada) {
   if (detalhe.article?.headline) {
     jogo.materia_fonte = {
       titulo_en: detalhe.article.headline,
+      resumo_en: (detalhe.article.description || '').replace(/^[—\s-]+/, '').slice(0, 600) || null,
       link: detalhe.article.links?.web?.href || null,
     };
   }

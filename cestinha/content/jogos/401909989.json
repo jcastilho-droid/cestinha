@@ -1,0 +1,29 @@
+{
+  "titulo": "Celtics abrem 42 a 9 no primeiro quarto e atropelam o Mavericks",
+  "subtitulo": "Tatum fez 32 pts em 30 minutos; Boston chega a seis vitórias seguidas",
+  "corpo": "Tá maluco! O Celtics fez 42 a 9 no primeiro quarto e o jogo acabou ali. Final em Boston: 131 a 94 sobre o Mavericks, com vantagem que chegou a 41 pontos. Segundo a ESPN, foi a maior vantagem da história da franquia ao fim de um primeiro quarto.\n\nJayson Tatum comandou o passeio com 32 pts, 6 reb e 6 ast, acertando 5 de 8 de três, em só 30 minutos. Derrick White ajudou com 16 pts, e o time matou 23 bolas de três.\n\nNo Mavericks, Zaccharie Risacher saiu do banco com 18 pts (8 de 9 nos arremessos) e Cooper Flagg fez 17 pts.\n\n**E agora?** O Celtics vai a 11-2, sexta vitória seguida, e lidera a Divisão Atlântico. O Mavericks fica em 7-7 e perdeu as últimas três.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Celtics",
+    "Mavericks"
+  ],
+  "jogadores": [
+    "Jayson Tatum",
+    "Derrick White",
+    "Zaccharie Risacher",
+    "Cooper Flagg"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)",
+    "ESPN (matéria do jogo)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909989",
+    "data_rodada": "2026-11-15"
+  },
+  "escrito_em": "2026-11-16T18:08:11.858Z"
+}
