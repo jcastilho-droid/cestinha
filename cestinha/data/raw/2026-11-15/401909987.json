@@ -497,6 +497,12 @@
   "data_rodada": "2026-11-15",
   "prorrogacoes": 0,
   "local": "Intuit Dome, Inglewood",
+  "arena": {
+    "id": "10642",
+    "nome": "Intuit Dome",
+    "cidade": "Inglewood",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/10642.jpg"
+  },
   "serie": {
     "tipo": "season",
     "resumo_en": "LAC lead series 1-0"

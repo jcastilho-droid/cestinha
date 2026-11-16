@@ -515,6 +515,12 @@
   "data_rodada": "2026-11-15",
   "prorrogacoes": 0,
   "local": "Capital One Arena, Washington",
+  "arena": {
+    "id": "1823",
+    "nome": "Capital One Arena",
+    "cidade": "Washington",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/1823.jpg"
+  },
   "serie": {
     "tipo": "season",
     "resumo_en": "HOU leads series 1-0"

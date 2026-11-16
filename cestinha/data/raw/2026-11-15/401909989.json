@@ -547,6 +547,12 @@
   "data_rodada": "2026-11-15",
   "prorrogacoes": 0,
   "local": "TD Garden, Boston",
+  "arena": {
+    "id": "1824",
+    "nome": "TD Garden",
+    "cidade": "Boston",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/1824.jpg"
+  },
   "serie": {
     "tipo": "season",
     "resumo_en": "BOS leads series 1-0"

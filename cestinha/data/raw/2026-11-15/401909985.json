@@ -484,6 +484,12 @@
   "data_rodada": "2026-11-15",
   "prorrogacoes": 0,
   "local": "Xfinity Mobile Arena, Philadelphia",
+  "arena": {
+    "id": "1845",
+    "nome": "Xfinity Mobile Arena",
+    "cidade": "Philadelphia",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/1845.jpg"
+  },
   "serie": {
     "tipo": "season",
     "resumo_en": "PHI leads series 2-0"

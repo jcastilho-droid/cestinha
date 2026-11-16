@@ -479,6 +479,12 @@
   "data_rodada": "2026-11-15",
   "prorrogacoes": 0,
   "local": "Golden 1 Center, Sacramento",
+  "arena": {
+    "id": "5310",
+    "nome": "Golden 1 Center",
+    "cidade": "Sacramento",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/5310.jpg"
+  },
   "serie": {
     "tipo": "season",
     "resumo_en": "OKC leads series 1-0"

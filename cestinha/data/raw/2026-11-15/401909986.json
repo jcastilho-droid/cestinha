@@ -472,6 +472,12 @@
   "data_rodada": "2026-11-15",
   "prorrogacoes": 0,
   "local": "Mortgage Matchup Center, Phoenix",
+  "arena": {
+    "id": "1949",
+    "nome": "Mortgage Matchup Center",
+    "cidade": "Phoenix",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/1949.jpg"
+  },
   "serie": {
     "tipo": "season",
     "resumo_en": "LAL lead series 1-0"

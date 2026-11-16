@@ -438,6 +438,12 @@
   "data_rodada": "2026-11-15",
   "prorrogacoes": 0,
   "local": "Delta Center, Salt Lake City",
+  "arena": {
+    "id": "3093",
+    "nome": "Delta Center",
+    "cidade": "Salt Lake City",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/3093.jpg"
+  },
   "serie": {
     "tipo": "season",
     "resumo_en": "SA wins series 3-0"

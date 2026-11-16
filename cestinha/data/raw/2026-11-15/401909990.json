@@ -494,6 +494,12 @@
   "data_rodada": "2026-11-15",
   "prorrogacoes": 1,
   "local": "Scotiabank Arena, Toronto",
+  "arena": {
+    "id": "1838",
+    "nome": "Scotiabank Arena",
+    "cidade": "Toronto",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/1838.jpg"
+  },
   "serie": {
     "tipo": "season",
     "resumo_en": "NY leads series 1-0"

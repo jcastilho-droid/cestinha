@@ -466,6 +466,12 @@
   "data_rodada": "2026-11-15",
   "prorrogacoes": 0,
   "local": "Fiserv Forum, Milwaukee",
+  "arena": {
+    "id": "5777",
+    "nome": "Fiserv Forum",
+    "cidade": "Milwaukee",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/5777.jpg"
+  },
   "serie": {
     "tipo": "season",
     "resumo_en": "ATL leads series 1-0"
