@@ -4,11 +4,16 @@
   "private": true,
   "description": "Cestinha: a NBA para quem dormiu. Site estático com resumos no tom de resenha.",
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "coletar": "node scripts/coletar.js",
     "pendentes": "node scripts/pendentes.js",
     "finalizar": "node scripts/finalizar.js",
     "build": "node scripts/build.js"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2"
   }
 }

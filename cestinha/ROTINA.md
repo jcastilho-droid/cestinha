@@ -25,6 +25,7 @@ node scripts/pendentes.js
 - Se `nada_novo` for `true`: pare aqui e relate "nada novo". (Isso economiza o limite do plano.)
 - `jogos`: cada jogo finalizado que ainda não tem resumo.
 - `rodadas`: rodadas com todos os jogos finalizados e ainda sem resumo da rodada.
+- `power_ranking`: quando não for `null`, é dia de escrever o power ranking semanal (passo 5b).
 
 ## 3. Ler o prompt (uma vez por execução)
 Leia `prompts/cestinha.md` inteiro. Ele define persona, regras de ouro e formato.
@@ -45,6 +46,8 @@ node scripts/entrada.js jogo <id>
 ```
 Escreva o texto no modo `resumo_jogo` usando SOMENTE essa entrada e salve em
 `content/rascunhos/jogo-<id>.json` (com a ferramenta de escrever arquivos).
+Inclua os campos `por_que_importa` (1 frase) e `notas` (2 a 4 jogadores, nota de 0 a 10
+baseada nos números, nomes escritos como na entrada).
 
 ## 5. Escrever o resumo da rodada
 Só depois de terminar os jogos. Se `jogos_ficaram_para_depois` for maior que 0, pule este passo.
@@ -54,6 +57,13 @@ node scripts/entrada.js rodada <AAAA-MM-DD>
 ```
 Escreva no modo `resumo_rodada` e salve em `content/rascunhos/rodada-<AAAA-MM-DD>.json`.
 Ordem: os 3 jogos mais importantes primeiro (use `importancia_do_resumo` e o contexto).
+
+## 5b. Power ranking semanal (só quando `power_ranking` não for `null`)
+```bash
+node scripts/entrada.js power
+```
+Escreva no modo `power_ranking` (30 times, siglas como na entrada) e salve em
+`content/rascunhos/power-<data>.json`, usando a `data` que veio em `power_ranking`.
 
 ## 6. Conferir e organizar
 ```bash
