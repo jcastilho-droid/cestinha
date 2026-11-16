@@ -7,10 +7,13 @@ import { P, RAIZ, lerJson, listarDiasRaw, horaBrasilia, dataPorExtenso, dataCurt
 import { lerRodada, lerJogo, selosDoJogo, lideresDaRodada, linhaEstatistica } from './lib/dados.js';
 import { icone, comIcones, LOGO_ARO } from './lib/icones.js';
 
+// muda a cada publicação: força o navegador a baixar o visual novo
+const VERSAO = Date.now().toString(36);
+
 const SITE = {
   nome: 'Cestinha',
   slogan: 'A NBA pra quem dormiu',
-  bordao: 'Eae, aqui é o Cestinha!',
+  bordao: 'E aí, aqui é o Cestinha',
   url: process.env.SITE_URL || '',
 };
 
@@ -91,12 +94,12 @@ function pagina({ titulo, descricao, corpo, raiz = '.', canonical = '', faixa = 
 <meta property="og:description" content="${esc(descricao)}">
 <meta property="og:locale" content="pt_BR">
 ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonical)}">` : ''}
-<link rel="icon" href="${raiz}/assets/icone.svg" type="image/svg+xml">
+<link rel="icon" href="${raiz}/assets/icone.svg?v=${VERSAO}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${raiz}/assets/estilo.css">
-<script src="${raiz}/assets/efeitos.js" defer></script>
+<link rel="stylesheet" href="${raiz}/assets/estilo.css?v=${VERSAO}">
+<script src="${raiz}/assets/efeitos.js?v=${VERSAO}" defer></script>
 </head>
 <body${tema ? ` style="${tema}"` : ''}>
 <div class="fundo-deco" aria-hidden="true">
@@ -226,6 +229,47 @@ function cardDestaque(lideres, raiz) {
   </a>`;
 }
 
+function numeroDaCamisa(timeId, nome) {
+  const t = typeof times !== 'undefined' ? times.get(String(timeId)) : null;
+  const semAc = (x) => String(x).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  return t?.elenco?.find((p) => semAc(p.nome) === semAc(nome))?.numero ?? '';
+}
+
+function camisaSvg(cor1, cor2, numero) {
+  return `<svg class="camisa-svg" viewBox="0 0 120 130" aria-hidden="true">
+    <path d="M38 6h44c0 10 8 18 18 18l14 8-6 26-14-4v72H26V54l-14 4-6-26 14-8C30 24 38 16 38 6z" fill="${cor1}" stroke="${cor2}" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M38 6c2 12 10 20 22 20s20-8 22-20" fill="none" stroke="${cor2}" stroke-width="5"/>
+    <path d="M26 54v72M94 54v72" stroke="${cor2}" stroke-width="3" opacity=".5"/>
+    <text x="60" y="98" text-anchor="middle" font-family="Anton, Barlow Condensed, sans-serif" font-size="44" fill="#fff" stroke="${cor2}" stroke-width="1.5">${esc(numero)}</text>
+  </svg>`;
+}
+
+function blocoDecisivos(lideres, raiz) {
+  if (!lideres?.decisivos?.length) return '';
+  return `<section class="decisivos">
+  <h2 class="titulo-secao"><span>Os decisivos da noite</span><small>as melhores atuações pelo Game Score</small></h2>
+  <div class="grade-cartas">
+    ${lideres.decisivos.map((p, i) => {
+      const t = p.time;
+      const tc = typeof times !== 'undefined' ? times.get(String(t.id)) : null;
+      const c1 = t.cor || '#ff7a1a';
+      const c2 = tc?.cor_alt || '#ffffff';
+      return `<a class="carta" href="${raiz}/jogo/${p.jogo}.html" style="--c1:${c1};--c2:${c2}" data-tilt>
+        <span class="carta-pos">#${i + 1}</span>
+        <span class="carta-gs"><b>${p.gs.toFixed(1)}</b><small>GAME SCORE</small></span>
+        <div class="carta-arte">${camisaSvg(c1, c2, numeroDaCamisa(t.id, p.nome))}<span class="carta-logo">${logo(t, 34)}</span></div>
+        <div class="carta-info">
+          <b class="carta-nome">${esc(p.nome)}</b>
+          <span class="carta-time">${esc(t.nome_curto)}</span>
+          <div class="carta-stats"><div><b>${p.pts}</b><small>PTS</small></div><div><b>${p.reb}</b><small>REB</small></div><div><b>${p.ast}</b><small>AST</small></div><div><b>${esc(p.fg)}</b><small>ARR</small></div></div>
+        </div>
+      </a>`;
+    }).join('')}
+  </div>
+  <p class="legenda">Game Score: índice criado pelo analista John Hollinger que soma pontos, rebotes, assistências, roubos e tocos e desconta arremessos errados, erros e faltas.</p>
+</section>`;
+}
+
 function blocoLideres(lideres, raiz) {
   return `<section class="lideres">
   <h2 class="titulo-secao"><span>Líderes da noite</span></h2>
@@ -309,6 +353,7 @@ function blocoRodada(dia, rodada, raiz) {
       ${lideres ? cardDestaque(lideres, raiz) : ''}
     </aside>
   </div>
+  ${lideres ? blocoDecisivos(lideres, raiz) : ''}
   ${blocoEpicos(jogos, raiz)}
   <h2 class="titulo-secao"><span>Todos os jogos</span></h2>
   <div class="grade-jogos">
