@@ -170,6 +170,15 @@ function sobrenome(nome) {
 
 const feitas = (s) => Number(String(s || '0-0').split('-')[0]) || 0;
 
+// Game Score (John Hollinger): resume a atuação de um jogador num número só.
+export function gameScore(p) {
+  const [fgm, fga] = String(p.fg || '0-0').split('-').map(Number);
+  const [ftm, fta] = String(p.ll || '0-0').split('-').map(Number);
+  const v = (x) => Number(x) || 0;
+  return v(p.pts) + 0.4 * v(fgm) - 0.7 * v(fga) - 0.4 * (v(fta) - v(ftm)) + 0.7 * v(p.reb_of) + 0.3 * v(p.reb_def ?? p.reb)
+    + v(p.rb) + 0.7 * v(p.ast) + 0.7 * v(p.toco) - 0.4 * v(p.faltas) - v(p.err);
+}
+
 export function lideresDaRodada(jogos) {
   const todos = [];
   for (const j of jogos) {
@@ -180,8 +189,13 @@ export function lideresDaRodada(jogos) {
   if (!todos.length) return null;
   const top = (k) => [...todos].sort((a, b) => b[k] - a[k] || b.pts - a.pts)[0];
   const destaque = [...todos].sort((a, b) => b.pts + b.reb + b.ast + b.rb + b.toco - (a.pts + a.reb + a.ast + a.rb + a.toco))[0];
+  const decisivos = [...todos]
+    .map((p) => ({ ...p, gs: gameScore(p) }))
+    .sort((a, b) => b.gs - a.gs)
+    .slice(0, 6);
   return {
     destaque,
+    decisivos,
     categorias: [
       { rotulo: 'Pontos', sigla: 'PTS', p: top('pts'), valor: (p) => p.pts },
       { rotulo: 'Rebotes', sigla: 'REB', p: top('reb'), valor: (p) => p.reb },
