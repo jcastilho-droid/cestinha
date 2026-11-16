@@ -40,7 +40,8 @@ jobs:
           node-version: 22
 
       - name: Instalar dependências (cartões de compartilhamento)
-        run: npm install --no-audit --no-fund --omit=dev || echo "sem dependências: o site sai sem os cartões"
+        run: |
+          npm install --no-audit --no-fund --omit=dev || echo "sem dependencias, o site sai sem os cartoes"
 
       - name: Arrumar arquivos enviados na pasta errada
         run: |
