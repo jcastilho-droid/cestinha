@@ -9,7 +9,7 @@ async function pegarJson(url, tentativas = 3) {
   let ultimoErro;
   for (let i = 0; i < tentativas; i++) {
     try {
-      const r = await fetch(url, { headers: { 'User-Agent': 'cestinha-bot (site de fas)' } });
+      const r = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36', Accept: 'application/json' } });
       if (!r.ok) throw new Error(`HTTP ${r.status} em ${url}`);
       return await r.json();
     } catch (e) {
