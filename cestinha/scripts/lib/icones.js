@@ -54,3 +54,14 @@ export const BOLA_GRANDE = `<svg class="bola-deco" viewBox="0 0 200 200" aria-hi
   </g>
   <ellipse cx="70" cy="58" rx="26" ry="14" fill="#fff" opacity=".18" transform="rotate(-30 70 58)"/>
 </svg>`;
+
+// Logo do Cestinha: bola caindo no aro com rede
+export const LOGO_ARO = `<svg class="logo-aro" viewBox="0 0 96 120" aria-hidden="true">
+  <g class="logo-bola">
+    <circle cx="58" cy="22" r="18" fill="#ff7a1a"/>
+    <g fill="none" stroke="#3a1a05" stroke-width="2.4"><path d="M40 22h36M58 4v36M47 9c5 4 6 8 6 13s-1 9-6 13M69 9c-5 4-6 8-6 13s1 9 6 13"/></g>
+  </g>
+  <path class="logo-rastro" d="M30 18c-6 2-10 6-12 12M24 12c-6 2-10 6-12 12" stroke="#ff9a4a" stroke-width="3" fill="none" stroke-linecap="round" opacity=".5"/>
+  <ellipse cx="48" cy="58" rx="40" ry="9" fill="none" stroke="#ff7a1a" stroke-width="6"/>
+  <g class="logo-rede" stroke="#fff" stroke-width="2.4" fill="none"><path d="M10 60l12 50M30 66l6 44M48 67v43M66 66l-6 44M86 60l-12 50M16 80h64M20 96h56"/></g>
+</svg>`;
