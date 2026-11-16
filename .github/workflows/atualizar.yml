@@ -39,6 +39,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: Instalar dependências (cartões de compartilhamento)
+        run: npm install --no-audit --no-fund --omit=dev || echo "sem dependências: o site sai sem os cartões"
+
       - name: Arrumar arquivos enviados na pasta errada
         run: |
           git config user.name "cestinha-bot"
