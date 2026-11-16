@@ -168,6 +168,21 @@ export function normalizarJogo(jogoBase, detalhe, dataRodada) {
       lance_en: p.text,
       placar: `${p.awayScore}-${p.homeScore}`,
     }));
+  // Fluxo do placar (para o gráfico do jogo): [segundos de jogo, casa - visitante]
+  const segundos = (per, rel) => {
+    const [m, sec] = String(rel || '0').includes(':') ? String(rel).split(':').map(Number) : [0, Number(rel) || 0];
+    const antes = per <= 4 ? (per - 1) * 720 : 2880 + (per - 5) * 300;
+    return Math.round(antes + (per <= 4 ? 720 : 300) - (m * 60 + sec));
+  };
+  jogo.fluxo = [[0, 0]];
+  for (const p of plays) {
+    if (!p.scoringPlay) continue;
+    jogo.fluxo.push([segundos(p.period?.number || 1, p.clock?.displayValue), (p.homeScore ?? 0) - (p.awayScore ?? 0)]);
+  }
+  // Arremessos de quadra com posição (para o mapa): [x, y, acertou, lado, valor]
+  jogo.arremessos = plays
+    .filter((p) => p.shootingPlay && p.coordinate && p.coordinate.x >= 0 && p.coordinate.x <= 50 && p.coordinate.y > -5 && p.coordinate.y < 60 && (p.pointsAttempted ?? 2) >= 2)
+    .map((p) => [p.coordinate.x, p.coordinate.y, p.scoringPlay ? 1 : 0, String(p.team?.id) === String(jogo.casa.id) ? 'c' : 'v', p.pointsAttempted ?? 2]);
   jogo.trocas_de_lideranca = (box.teams || [])
     .map((t) => (t.statistics || []).find((s) => s.name === 'leadChanges')?.displayValue)
     .find((x) => x != null) ?? null;
@@ -335,4 +350,17 @@ export function normalizarTime(base, brutoTime, brutoElenco, brutoCalendario, br
     fonte: 'ESPN',
     link_fonte: `https://www.espn.com/nba/team/_/name/${String(base.sigla).toLowerCase()}`,
   };
+}
+
+// ---------- Agenda (próximos jogos) ----------
+export function normalizarAgenda(placares) {
+  const jogos = [];
+  for (const [dia, bruto] of placares) {
+    for (const j of listarJogos(bruto)) {
+      const ev = (bruto.events || []).find((e) => String(e.id) === j.id);
+      const tv = (ev?.competitions?.[0]?.broadcasts || []).flatMap((b) => b.names || []);
+      jogos.push({ ...j, data_rodada: dia, tv_eua: tv });
+    }
+  }
+  return jogos;
 }
