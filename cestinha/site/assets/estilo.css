@@ -674,3 +674,40 @@ a.card-jogo:hover .card-arena { filter: saturate(1.15) brightness(1.1); }
 .topo .logo-aro { width: 40px; height: 50px; margin: -4px 0; }
 .trilho-bola { animation: none; }
 @media (max-width: 479px) { .topo .logo-aro { width: 30px; height: 38px; } }
+
+/* ---------- coluna de escudos: começa abaixo do topo, não fica escondida ---------- */
+.trilho { top: 150px; bottom: 0; }
+.trilho-dir { align-content: start; padding-top: 14px; gap: 4px; overflow-y: auto; scrollbar-width: none; }
+.trilho-dir::-webkit-scrollbar { display: none; }
+.trilho-dir a { width: 32px; height: 32px; }
+.trilho-rot { margin: 4px 0 2px; }
+
+/* ---------- cartas dos decisivos (estilo carta de game) ---------- */
+.grade-cartas { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+@media (min-width: 720px) { .grade-cartas { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1000px) { .grade-cartas { grid-template-columns: repeat(6, 1fr); } }
+.carta {
+  position: relative; display: flex; flex-direction: column; overflow: hidden; color: var(--texto);
+  border-radius: 14px; border: 1px solid color-mix(in srgb, var(--c1) 60%, var(--borda));
+  background:
+    repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 2px, transparent 2px 9px),
+    linear-gradient(170deg, color-mix(in srgb, var(--c1) 70%, #0f141b) 0%, #121820 58%, #0b0f15 100%);
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
+}
+.carta:hover { text-decoration: none; border-color: var(--laranja); }
+.carta-pos { position: absolute; left: 10px; top: 8px; z-index: 2; font: 400 22px/1 'Anton', var(--titulo); color: rgba(255,255,255,.9); text-shadow: 0 2px 6px rgba(0,0,0,.6); }
+.carta-gs { position: absolute; right: 8px; top: 8px; z-index: 2; display: flex; flex-direction: column; align-items: center; padding: 5px 7px; border-radius: 8px; background: rgba(0,0,0,.45); border: 1px solid rgba(255,255,255,.15); }
+.carta-gs b { font: 400 22px/1 'Anton', var(--titulo); color: #ffd27a; }
+.carta-gs small { font-size: 7.5px; letter-spacing: 1px; color: rgba(255,255,255,.7); }
+.carta-arte { position: relative; display: grid; place-items: center; padding: 30px 10px 6px; }
+.camisa-svg { width: 92px; height: 100px; filter: drop-shadow(0 10px 16px rgba(0,0,0,.55)); transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+.carta:hover .camisa-svg { transform: translateY(-4px) scale(1.06) rotate(-3deg); }
+.carta-logo { position: absolute; right: 12px; bottom: 4px; }
+.carta-logo img.logo, .carta-logo .sigla { width: 34px; height: 34px; }
+.carta-info { padding: 8px 10px 12px; text-align: center; border-top: 1px solid rgba(255,255,255,.08); background: rgba(0,0,0,.25); }
+.carta-nome { display: block; font: 400 17px/1.05 'Anton', var(--titulo); text-transform: uppercase; letter-spacing: .5px; }
+.carta-time { font-size: 11px; color: var(--suave); }
+.carta-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin-top: 8px; }
+.carta-stats b { display: block; font: 800 16px/1 var(--titulo); }
+.carta-stats small { font-size: 9px; color: var(--suave); letter-spacing: .5px; }
+.carta-stats div:last-child b { font-size: 12.5px; line-height: 16px; white-space: nowrap; }
