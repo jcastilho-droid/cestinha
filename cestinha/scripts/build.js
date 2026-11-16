@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { P, RAIZ, lerJson, listarDiasRaw, horaBrasilia, dataPorExtenso, dataCurta, dataHoraBrasilia, agoraIso, dataHoraCurta, dataCurtaIso } from './lib/util.js';
 import { lerRodada, lerJogo, selosDoJogo, lideresDaRodada, linhaEstatistica } from './lib/dados.js';
+import { icone, comIcones, BOLA_GRANDE } from './lib/icones.js';
 
 const SITE = {
   nome: 'Cestinha',
@@ -68,6 +69,15 @@ function logo(t, tam = 32) {
 }
 const cor = (t) => (t?.cor && /^#[0-9a-f]{6}$/i.test(t.cor) ? t.cor : '#ff7a1a');
 
+function trilhoEscudos(raiz) {
+  if (typeof times === 'undefined' || !times.size || !indiceTimes?.classificacao) return '';
+  const grupo = (conf) => (indiceTimes.classificacao[conf] || []).map((l) => times.get(l.id)).filter(Boolean)
+    .map((t) => `<a href="${raiz}/times/${slugTime(t)}.html" title="${esc(t.nome)}" style="--t1:${t.cor || '#ff7a1a'}">${logo({ logo: t.logo, sigla: t.sigla, nome_curto: t.nome_curto }, 26)}</a>`).join('');
+  return `<aside class="trilho trilho-dir" aria-label="Times">
+    <span class="trilho-rot">Leste</span>${grupo('Leste')}<span class="trilho-rot">Oeste</span>${grupo('Oeste')}
+  </aside>`;
+}
+
 function pagina({ titulo, descricao, corpo, raiz = '.', canonical = '', faixa = '', tema = '', ativo = '' }) {
   return `<!doctype html>
 <html lang="pt-BR">
@@ -84,28 +94,41 @@ ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonica
 <link rel="icon" href="${raiz}/assets/icone.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${raiz}/assets/estilo.css">
+<script src="${raiz}/assets/efeitos.js" defer></script>
 </head>
 <body${tema ? ` style="${tema}"` : ''}>
+<div class="fundo-deco" aria-hidden="true">
+  <span class="brilho b1"></span><span class="brilho b2"></span><span class="brilho b3"></span>
+</div>
+<aside class="trilho trilho-esq" aria-hidden="true">
+  <span class="vertical">CESTINHA</span>
+  <span class="trilho-bola">${icone('bola', 'ic')}</span>
+  <span class="vertical pequeno">A NBA PRA QUEM DORMIU</span>
+</aside>
+${trilhoEscudos(raiz)}
 <header class="topo">
   <div class="topo-dentro">
-    <a class="marca" href="${raiz}/index.html"><img src="${raiz}/assets/icone.svg" alt="" width="34" height="34"><span>Cesti<b>nha</b></span></a>
+    <a class="marca" href="${raiz}/index.html" aria-label="Cestinha, página inicial"><img src="${raiz}/assets/icone.svg" alt="" width="40" height="40"><span class="marca-placa"><span class="marca-texto">CESTINHA</span></span></a>
     <nav class="menu" aria-label="Seções">
-      <a href="${raiz}/index.html"${ativo === 'rodada' ? ' class="ativo"' : ''}>Rodada</a>
-      <a href="${raiz}/times/index.html"${ativo === 'times' ? ' class="ativo"' : ''}>Times</a>
+      <a href="${raiz}/index.html"${ativo === 'rodada' ? ' class="ativo"' : ''}>${icone('bola')}<span>Rodada</span></a>
+      <a href="${raiz}/times/index.html"${ativo === 'times' ? ' class="ativo"' : ''}>${icone('escudo')}<span>Times</span></a>
     </nav>
   </div>
   ${faixa}
 </header>
 <main>
-${corpo}
+${comIcones(corpo)}
 </main>
 <footer class="rodape">
   <div class="rodape-dentro">
-    <p class="rodape-marca">Cesti<b>nha</b></p>
-    <p>Placar e estatísticas: ESPN. Textos: o Cestinha (IA), com checagem automática dos números. Logos dos times exibidos só para identificação.</p>
-    <p>Horários de Brasília. Atualizado em ${esc(dataHoraBrasilia(agoraIso()))}.</p>
+    <div class="rodape-topo">
+      <p class="rodape-marca marca"><img src="${raiz}/assets/icone.svg" alt="" width="32" height="32"><span class="marca-placa"><span class="marca-texto">CESTINHA</span></span></p>
+      <p class="rodape-bordao">${esc(SITE.bordao)}</p>
+    </div>
+    <p>${icone('grafico')} Placar e estatísticas: ESPN. ${icone('raio')} Textos: o Cestinha (IA), com checagem automática dos números.</p>
+    <p>${icone('relogio')} Horários de Brasília. Atualizado em ${esc(dataHoraBrasilia(agoraIso()))}. Logos dos times exibidos só para identificação.</p>
   </div>
 </footer>
 </body>
@@ -177,7 +200,8 @@ function cardJogo(j, raiz) {
   const tag = temPagina ? 'a' : 'div';
   const href = temPagina ? ` href="${raiz}/jogo/${j.id}.html"` : '';
   const epico = selos.some((s) => s.epico);
-  return `<${tag} class="card-jogo${epico ? ' epico' : ''}"${href} style="--c1:${cor(j.visitante)};--c2:${cor(j.casa)}">
+  return `<${tag} class="card-jogo${epico ? ' epico' : ''}"${href} data-luz style="--c1:${cor(j.visitante)};--c2:${cor(j.casa)}">
+    ${j.arena?.foto ? `<div class="card-arena" style="--foto:url('${esc(j.arena.foto)}')"><span>${icone('arena')} ${esc(j.arena.nome)}</span></div>` : ''}
     <div class="card-topo"><span class="situacao">${esc(situacao(j))}<em>${esc(dataHoraCurta(j.inicio_utc))}</em></span><span class="tags">${selosEpicos(selos, 2)}</span></div>
     ${linhaTime(j.visitante, final)}
     ${linhaTime(j.casa, final)}
@@ -187,8 +211,8 @@ function cardJogo(j, raiz) {
 
 function cardDestaque(lideres, raiz) {
   const p = lideres.destaque;
-  return `<a class="destaque-noite" href="${raiz}/jogo/${p.jogo}.html" style="--c1:${cor(p.time)}">
-    <div class="dn-rotulo">Destaque da noite</div>
+  return `<a class="destaque-noite" data-tilt href="${raiz}/jogo/${p.jogo}.html" style="--c1:${cor(p.time)}">
+    <div class="dn-rotulo">${icone('coroa')} Destaque da noite</div>
     <div class="dn-corpo">
       ${logo(p.time, 56)}
       <div><p class="dn-nome">${esc(p.nome)}</p><p class="dn-time">${esc(p.time.nome)}</p></div>
@@ -225,7 +249,7 @@ function blocoEpicos(jogos, raiz) {
       const texto = textosJogo.get(j.id);
       const venc = j.casa.vencedor ? j.casa : j.visitante;
       const perd = j.casa.vencedor ? j.visitante : j.casa;
-      return `<a class="card-epico" href="${raiz}/jogo/${j.id}.html" style="--c1:${cor(venc)};--c2:${cor(perd)}">
+      return `<a class="card-epico" data-tilt href="${raiz}/jogo/${j.id}.html" style="--c1:${cor(venc)};--c2:${cor(perd)}">
         <span class="tags">${selosEpicos(selosDoJogo(j).filter((s) => s.epico))}</span>
         <span class="ep-data">${esc(dataHoraCurta(j.inicio_utc))}</span>
         <div class="ep-placar">${logo(venc, 40)}<b>${venc.placar}</b><span>x</span><b class="perdeu">${perd.placar}</b>${logo(perd, 40)}</div>
@@ -243,10 +267,10 @@ function numerosDaRodada(jogos) {
   const maior = finais.reduce((m, j) => Math.max(m, j.casa.placar, j.visitante.placar), 0);
   const ot = finais.filter((j) => j.periodo > 4).length;
   return `<div class="numeros-rodada">
-    <div><b>${finais.length}</b><span>jogos</span></div>
-    <div><b>${pontos}</b><span>pontos</span></div>
-    <div><b>${maior}</b><span>maior placar</span></div>
-    <div><b>${ot}</b><span>${ot === 1 ? 'prorrogação' : 'prorrogações'}</span></div>
+    <div>${icone('bola')}<b data-contar="${finais.length}">${finais.length}</b><span>jogos</span></div>
+    <div>${icone('cesta')}<b data-contar="${pontos}">${pontos}</b><span>pontos</span></div>
+    <div>${icone('raio')}<b data-contar="${maior}">${maior}</b><span>maior placar</span></div>
+    <div>${icone('relogio')}<b data-contar="${ot}">${ot}</b><span>${ot === 1 ? 'prorrogação' : 'prorrogações'}</span></div>
   </div>`;
 }
 
@@ -257,19 +281,22 @@ function blocoRodada(dia, rodada, raiz) {
   const finalizados = jogos.filter((j) => j.status === 'final').length;
   const completos = jogos.filter((j) => j.casa.jogadores);
   const lideres = lideresDaRodada(completos);
+  const palco = [...jogos].filter((j) => j.arena?.foto).sort((a, b) => (textosJogo.get(b.id)?.importancia || 0) - (textosJogo.get(a.id)?.importancia || 0))[0];
+  const fotoHero = palco ? ` style="--foto:url('${esc(palco.arena.foto)}')"` : '';
+  const creditoHero = palco ? `<span class="credito-foto">${icone('arena')} ${esc(palco.arena.nome)} · foto ESPN</span>` : '';
   const hero = resumo
-    ? `<article class="hero">
-        <p class="sobretitulo">Rodada de ${esc(dataPorExtenso(dia))}</p>
+    ? `<article class="hero com-foto"${fotoHero}>${creditoHero}
+        ${BOLA_GRANDE}
+        <p class="sobretitulo">${icone('calendario')} Rodada de ${esc(dataPorExtenso(dia))}</p>
         <div class="selos">${selo(resumo.status)}</div>
         <h1>${esc(resumo.titulo)}</h1>
         ${resumo.subtitulo ? `<p class="subtitulo">${esc(resumo.subtitulo)}</p>` : ''}
-        ${numerosDaRodada(jogos)}
       </article>`
-    : `<article class="hero">
-        <p class="sobretitulo">Rodada de ${esc(dataPorExtenso(dia))}</p>
+    : `<article class="hero com-foto"${fotoHero}>${creditoHero}
+        ${BOLA_GRANDE}
+        <p class="sobretitulo">${icone('calendario')} Rodada de ${esc(dataPorExtenso(dia))}</p>
         <h1>${finalizados === jogos.length ? 'O resumo da rodada sai daqui a pouco' : 'Rodada em andamento'}</h1>
         <p class="subtitulo">${esc(SITE.bordao)} ${finalizados} de ${jogos.length} jogos finalizados.</p>
-        ${numerosDaRodada(jogos)}
       </article>`;
   return `
 <section class="rodada">
@@ -366,7 +393,7 @@ function paginaJogo(j, faixa) {
   };
   const corpo = `
 <nav class="voltar"><a href="${raiz}/rodada/${j.data_rodada}.html">← Rodada de ${esc(dataCurta(j.data_rodada))}</a></nav>
-<section class="placar-grande" style="--c1:${cor(j.visitante)};--c2:${cor(j.casa)}">
+<section class="placar-grande${j.arena?.foto ? ' com-foto' : ''}" style="--c1:${cor(j.visitante)};--c2:${cor(j.casa)}${j.arena?.foto ? `;--foto:url('${esc(j.arena.foto)}')` : ''}">${j.arena?.foto ? `<span class="credito-foto">${icone('arena')} ${esc(j.arena.nome)} · foto ESPN</span>` : ''}
   ${time(j.visitante)}
   <div class="numeros"><span class="${j.visitante.vencedor ? 'venceu' : ''}">${j.visitante.placar}</span><span class="x">x</span><span class="${j.casa.vencedor ? 'venceu' : ''}">${j.casa.placar}</span><small>${esc(situacao(j))}</small></div>
   ${time(j.casa)}
@@ -392,12 +419,25 @@ ${tabelaBox(j.casa)}
 
 // ---------- times ----------
 const PASTA_TIMES = path.join(RAIZ, 'data', 'times');
+// Arena de cada time: a do jogo em casa mais recente que coletamos
+const arenaDoTime = new Map();
+for (const d of listarDiasRaw()) {
+  for (const f of fs.readdirSync(path.join(P.raw, d)).filter((x) => /^\d+\.json$/.test(x))) {
+    const j = lerJson(path.join(P.raw, d, f));
+    if (j?.arena?.nome && j.casa?.id) arenaDoTime.set(String(j.casa.id), j.arena);
+  }
+}
 const indiceTimes = lerJson(path.join(PASTA_TIMES, 'index.json'));
 const times = new Map();
 if (indiceTimes) {
   for (const b of indiceTimes.times) {
     const t = lerJson(path.join(PASTA_TIMES, `${b.sigla}.json`));
-    if (t) times.set(String(t.id), t);
+    if (t) {
+      const ar = arenaDoTime.get(String(t.id));
+      t.arena = ar?.nome || null;
+      t.arena_foto = ar?.foto || null;
+      times.set(String(t.id), t);
+    }
   }
 }
 const slugTime = (t) => String(t.sigla).toLowerCase();
@@ -433,11 +473,33 @@ function logoTime(t, tam) {
   return logo({ logo: t.logo, sigla: t.sigla, nome_curto: t.nome_curto }, tam);
 }
 
+const DIVISOES_ORDEM = { Leste: ['Atlântico', 'Central', 'Sudeste'], Oeste: ['Noroeste', 'Pacífico', 'Sudoeste'] };
+
 function paginaListaTimes() {
   const raiz = '..';
   const conf = indiceTimes.classificacao || {};
-  const coluna = (nome) => `<section class="conferencia">
-    <h2 class="titulo-secao"><span>${conferenciaNome(nome)}</span></h2>
+  const linhaDe = (id) => [...(conf.Leste || []), ...(conf.Oeste || [])].find((l) => l.id === id) || {};
+  const escudo = (t) => {
+    const l = linhaDe(t.id);
+    return `<a class="escudo-time" href="${raiz}/times/${slugTime(t)}.html" style="--t1:${t.cor || '#ff7a1a'};--t2:${t.cor_alt || t.cor || '#ff7a1a'};--acento:${corDestaque(t)}${t.arena_foto ? `;--foto:url('${esc(t.arena_foto)}')` : ''}" data-tilt>
+      <span class="et-luz"></span>
+      <span class="et-logo">${logoTime(t, 120)}</span>
+      <span class="et-nome">${esc(t.nome_curto)}</span>
+      <span class="et-cidade">${esc(t.cidade || '')}</span>
+      <span class="et-camp"><b>${l.v ?? '-'}-${l.d ?? '-'}</b>${l.posicao ? `<em>${ordinal(l.posicao)} no ${t.conferencia}</em>` : ''}</span>
+    </a>`;
+  };
+  const galeria = (nomeConf) => `<section class="bloco-conf conf-${nomeConf === 'Leste' ? 'leste' : 'oeste'}">
+    <h2 class="titulo-secao"><span>${conferenciaNome(nomeConf)}</span><small>escolha seu time</small></h2>
+    ${DIVISOES_ORDEM[nomeConf].map((div) => {
+      const lista = [...times.values()].filter((t) => t.conferencia === nomeConf && t.divisao?.nome === div)
+        .sort((a, b) => (a.divisao?.posicao || 9) - (b.divisao?.posicao || 9));
+      if (!lista.length) return '';
+      return `<div class="divisao"><h3 class="divisao-nome"><span>Divisão ${esc(div)}</span></h3><div class="grade-escudos">${lista.map(escudo).join('')}</div></div>`;
+    }).join('')}
+  </section>`;
+  const tabela = (nome) => `<section class="conferencia">
+    <h3 class="divisao-nome"><span>${conferenciaNome(nome)}</span></h3>
     <ol class="lista-times">
       ${(conf[nome] || []).map((linha) => {
         const t = times.get(linha.id);
@@ -447,19 +509,24 @@ function paginaListaTimes() {
           ${logoTime(t, 34)}
           <span class="lc-nome"><b>${esc(t.nome_curto)}</b><small>${esc(t.cidade || '')}</small></span>
           <span class="lc-camp"><b>${linha.v}-${linha.d}</b><small>${esc(sequenciaPt(linha.sequencia))}</small></span>
-          <span class="lc-seta">→</span>
+          <span class="lc-seta">${icone('seta')}</span>
         </a></li>`;
       }).join('')}
     </ol>
   </section>`;
   const corpo = `
 <section class="hero hero-times">
-  <p class="sobretitulo">Temporada ${esc(temporadaTexto())}</p>
-  <h1>Os 30 times da NBA</h1>
-  <p class="subtitulo">Clique no seu time para ver elenco, estatísticas, últimos resultados e os próximos jogos. A ordem segue a classificação de cada conferência.</p>
+  ${BOLA_GRANDE}
+  <p class="sobretitulo">${icone('trofeu')} Temporada ${esc(temporadaTexto())}</p>
+  <h1>Escolha seu time</h1>
+  <p class="subtitulo">Os 30 times da NBA, separados por conferência e divisão. Clique no escudo para ver elenco, estatísticas, últimos resultados e próximos jogos.</p>
+  <div class="hero-escudos" aria-hidden="true">${[...times.values()].slice(0, 30).map((t) => logoTime(t, 30)).join('')}</div>
 </section>
-<div class="conferencias">${coluna('Leste')}${coluna('Oeste')}</div>
-<p class="legenda">Do 1º ao 6º: vaga direta nos playoffs. Do 7º ao 10º: play-in. V: vitórias seguidas · D: derrotas seguidas. Fonte: ESPN, atualizado em ${esc(dataHoraBrasilia(indiceTimes.atualizado_em))}.</p>`;
+${galeria('Leste')}
+${galeria('Oeste')}
+<h2 class="titulo-secao"><span>Classificação</span><small>do 1º ao 6º vai direto aos playoffs; do 7º ao 10º, play-in</small></h2>
+<div class="conferencias">${tabela('Leste')}${tabela('Oeste')}</div>
+<p class="legenda">V: vitórias seguidas · D: derrotas seguidas. Fonte: ESPN, atualizado em ${esc(dataHoraBrasilia(indiceTimes.atualizado_em))}.</p>`;
   return pagina({ titulo: 'Times da NBA | Cestinha', descricao: 'Os 30 times da NBA: classificação, elenco, estatísticas e jogos.', corpo, raiz, canonical: '/times/', ativo: 'times' });
 }
 
@@ -482,7 +549,7 @@ function paginaTime(t) {
   const temStats = t.elenco.some((p) => p.medias);
   const lider = (k, rot) => {
     const p = [...t.elenco].filter((x) => x.medias && x.medias.jogos > 0).sort((a, b) => Number(b.medias[k]) - Number(a.medias[k]))[0];
-    return p ? `<div class="lider-time"><span class="lider-cat">${rot}</span><b>${esc(p.medias[k])}</b><span>${esc(p.nome)}</span></div>` : '';
+    return p ? `<div class="lider-time" data-luz><span class="lider-cat">${rot}</span><b>${esc(p.medias[k])}</b><span>${esc(p.nome)}</span></div>` : '';
   };
   const linhaJogo = (j) => {
     const adv = times.get(j.adversario?.id) || j.adversario || {};
@@ -499,7 +566,7 @@ function paginaTime(t) {
   const elenco = t.elenco.map((p) => {
     const m = p.medias;
     const les = p.lesao?.status ? `<span class="lesao">${esc(STATUS_LESAO[p.lesao.status] || p.lesao.status)}</span>` : '';
-    return `<div class="atleta">
+    return `<div class="atleta" data-luz>
       <span class="camisa">${esc(p.numero ?? '–')}</span>
       <div class="at-info">
         <b>${esc(p.nome)}</b>
@@ -512,7 +579,8 @@ function paginaTime(t) {
     </div>`;
   }).join('');
   const corpo = `
-<section class="hero-time">
+<section class="hero-time${t.arena_foto ? ' com-foto' : ''}"${t.arena_foto ? ` style="--foto:url('${esc(t.arena_foto)}')"` : ''}>${t.arena_foto ? `<span class="credito-foto">${icone('arena')} ${esc(t.arena)} · foto ESPN</span>` : ''}
+  <span class="hero-time-faixas" aria-hidden="true"></span>
   <img class="marca-dagua" src="${esc(logoEscuro(t.logo))}" alt="" aria-hidden="true">
   <div class="ht-topo">
     ${logoTime(t, 96)}
@@ -523,25 +591,25 @@ function paginaTime(t) {
     </div>
   </div>
   <div class="chips">
-    ${forma ? `<span class="chip forma">Últimos 5 ${forma}</span>` : ''}
-    ${c.sequencia ? `<span class="chip">Sequência <b>${esc(sequenciaPt(c.sequencia))}</b></span>` : ''}
-    ${c.casa ? `<span class="chip">Em casa <b>${esc(c.casa)}</b></span>` : ''}
-    ${c.fora ? `<span class="chip">Fora <b>${esc(c.fora)}</b></span>` : ''}
-    ${t.tecnico ? `<span class="chip">Técnico <b>${esc(t.tecnico)}</b></span>` : ''}
-    ${t.arena ? `<span class="chip">Arena <b>${esc(t.arena)}</b></span>` : ''}
+    ${forma ? `<span class="chip forma">${icone('fogo')}Últimos 5 ${forma}</span>` : ''}
+    ${c.sequencia ? `<span class="chip">${icone('sequencia')}Sequência <b>${esc(sequenciaPt(c.sequencia))}</b></span>` : ''}
+    ${c.casa ? `<span class="chip">${icone('casa')}Em casa <b>${esc(c.casa)}</b></span>` : ''}
+    ${c.fora ? `<span class="chip">${icone('aviao')}Fora <b>${esc(c.fora)}</b></span>` : ''}
+    ${t.tecnico ? `<span class="chip">${icone('apito')}Técnico <b>${esc(t.tecnico)}</b></span>` : ''}
+    ${t.arena ? `<span class="chip">${icone('arena')}Arena <b>${esc(t.arena)}</b></span>` : ''}
   </div>
 </section>
 
 <h2 class="titulo-secao"><span>Números do time</span><small>médias por jogo na temporada</small></h2>
 <div class="numeros-time">
-  <div><b>${esc(c.pontos_pro ?? est.pts ?? '-')}</b><span>pontos feitos</span></div>
-  <div><b>${esc(c.pontos_contra ?? '-')}</b><span>pontos sofridos</span></div>
-  <div><b>${esc(c.saldo ?? '-')}</b><span>saldo</span></div>
-  <div><b>${esc(est.reb ?? '-')}</b><span>rebotes</span></div>
-  <div><b>${esc(est.ast ?? '-')}</b><span>assistências</span></div>
-  <div><b>${esc(est.fg_pct ?? '-')}%</b><span>arremessos</span></div>
-  <div><b>${esc(est.tres_pct ?? '-')}%</b><span>bolas de três</span></div>
-  <div><b>${esc(est.ll_pct ?? '-')}%</b><span>lances livres</span></div>
+  <div>${icone('cesta')}<b>${esc(c.pontos_pro ?? est.pts ?? '-')}</b><span>pontos feitos</span></div>
+  <div>${icone('escudo')}<b>${esc(c.pontos_contra ?? '-')}</b><span>pontos sofridos</span></div>
+  <div>${icone('sequencia')}<b>${esc(c.saldo ?? '-')}</b><span>saldo</span></div>
+  <div>${icone('alvo')}<b>${esc(est.reb ?? '-')}</b><span>rebotes</span></div>
+  <div>${icone('raio')}<b>${esc(est.ast ?? '-')}</b><span>assistências</span></div>
+  <div>${icone('bola')}<b>${esc(est.fg_pct ?? '-')}%</b><span>arremessos</span></div>
+  <div>${icone('alvo')}<b>${esc(est.tres_pct ?? '-')}%</b><span>bolas de três</span></div>
+  <div>${icone('grafico')}<b>${esc(est.ll_pct ?? '-')}%</b><span>lances livres</span></div>
 </div>
 
 ${temStats ? `<h2 class="titulo-secao"><span>Líderes do time</span></h2>
