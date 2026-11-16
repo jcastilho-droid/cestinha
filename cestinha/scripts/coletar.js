@@ -52,3 +52,11 @@ for (const dia of dias) {
 
 if (erros) console.error(`Terminou com ${erros} erro(s).`);
 // Não falha o workflow por erro de uma fonte: o site continua sendo publicado.
+
+// Dados dos times (elenco, estatísticas, calendário): no máximo de 6 em 6 horas.
+try {
+  const { coletarTimes } = await import('./coletar-times.js');
+  await coletarTimes();
+} catch (e) {
+  console.error(`[times] falha: ${e.message}`);
+}

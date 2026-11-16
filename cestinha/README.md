@@ -28,12 +28,13 @@ ESPN ──(GitHub Actions, de hora em hora)──> data/raw/        números: p
 | `prompts/cestinha.md` | O prompt do Cestinha (persona, regras, formato). |
 | `ROTINA.md` | Passo a passo que a tarefa agendada segue. |
 | `scripts/fontes/espn.js` | Único arquivo que conhece a ESPN. Se a fonte quebrar, troque só ele. |
-| `scripts/coletar.js` | Coleta (roda no GitHub Actions). |
+| `scripts/coletar.js` | Coleta dos jogos (roda no GitHub Actions). |
+| `scripts/coletar-times.js` | Coleta dos 30 times: elenco, médias, calendário e classificação (de 6 em 6 horas). |
 | `scripts/pendentes.js` | Lista o que falta escrever. |
 | `scripts/entrada.js` | Monta os dados que o Cestinha lê antes de escrever. |
 | `scripts/finalizar.js` | Confere os textos e decide: site ou revisão. |
 | `scripts/aprovar.js` | Aprova um texto da revisão. |
-| `scripts/build.js` | Gera o site em `_site/`. |
+| `scripts/build.js` | Gera o site em `_site/` (rodada, jogos e páginas dos times). |
 | `site/assets/` | Visual do site (cores, ícone). |
 | `config/brasileiros.json` | Brasileiros na NBA (ganham +1 de importância). Atualize a cada temporada. |
 | `.github/workflows/atualizar.yml` | O robô do GitHub (coleta + publicação). |

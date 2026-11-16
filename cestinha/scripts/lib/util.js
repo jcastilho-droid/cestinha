@@ -67,3 +67,12 @@ export function dataCurta(aaaammdd) {
 export function agoraIso() {
   return new Date().toISOString();
 }
+// "dom, 15/11 · 20h00" (horário de Brasília)
+export function dataHoraCurta(iso) {
+  const d = new Date(iso);
+  const dia = new Intl.DateTimeFormat('pt-BR', { timeZone: TZ, weekday: 'short', day: '2-digit', month: '2-digit' }).format(d).replace('.', '');
+  return `${dia} · ${horaBrasilia(iso)}`;
+}
+export function dataCurtaIso(iso) {
+  return new Intl.DateTimeFormat('pt-BR', { timeZone: TZ, day: '2-digit', month: '2-digit' }).format(new Date(iso));
+}

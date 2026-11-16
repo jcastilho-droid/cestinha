@@ -191,3 +191,147 @@ export function normalizarJogo(jogoBase, detalhe, dataRodada) {
   }
   return jogo;
 }
+
+// ---------- Times (elenco, estatísticas, calendário, classificação) ----------
+const BASE_WEB = 'https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba';
+
+export async function buscarListaTimes() {
+  return pegarJson(`${BASE}/teams`);
+}
+export async function buscarTime(id) {
+  return pegarJson(`${BASE}/teams/${id}`);
+}
+export async function buscarElenco(id) {
+  return pegarJson(`${BASE}/teams/${id}/roster`);
+}
+export async function buscarCalendario(id) {
+  return pegarJson(`${BASE}/teams/${id}/schedule`);
+}
+export async function buscarEstatisticasTime(id) {
+  return pegarJson(`${BASE}/teams/${id}/statistics`);
+}
+export async function buscarClassificacao() {
+  return pegarJson('https://site.api.espn.com/apis/v2/sports/basketball/nba/standings');
+}
+export async function buscarEstatisticasJogadores() {
+  return pegarJson(`${BASE_WEB}/statistics/byathlete?region=us&lang=en&contentorigin=espn&isqualified=false&page=1&limit=1000&sort=offensive.avgPoints:desc`);
+}
+
+const DIVISOES = { Atlantic: 'Atlântico', Central: 'Central', Southeast: 'Sudeste', Northwest: 'Noroeste', Pacific: 'Pacífico', Southwest: 'Sudoeste' };
+const POSICOES = { PG: 'Armador', SG: 'Ala-armador', G: 'Armador', SF: 'Ala', F: 'Ala', PF: 'Ala-pivô', C: 'Pivô', 'G-F': 'Armador/ala', 'F-G': 'Ala/armador', 'F-C': 'Ala/pivô', 'C-F': 'Pivô/ala' };
+
+function mapaStats(lista) {
+  const m = {};
+  for (const s of lista || []) m[s.name] = s.displayValue ?? s.summary ?? s.value;
+  return m;
+}
+
+export function normalizarListaTimes(bruto) {
+  return (bruto.sports?.[0]?.leagues?.[0]?.teams || []).map(({ team: t }) => {
+    const logos = t.logos || [];
+    const achar = (tem, naoTem = []) => logos.find((l) => tem.every((r) => (l.rel || []).includes(r)) && !naoTem.some((r) => (l.rel || []).includes(r)))?.href || null;
+    return {
+      id: String(t.id), sigla: t.abbreviation, nome: t.displayName, nome_curto: t.shortDisplayName || t.name,
+      cidade: t.location, slug: t.slug,
+      cor: t.color ? `#${t.color}` : null, cor_alt: t.alternateColor ? `#${t.alternateColor}` : null,
+      logo: achar(['scoreboard'], ['dark']) || achar(['default']),
+      logo_escuro: achar(['scoreboard', 'dark']) || achar(['dark']) || achar(['default']),
+    };
+  });
+}
+
+export function normalizarClassificacao(bruto) {
+  const conf = {};
+  for (const c of bruto.children || []) {
+    const nome = /East/i.test(c.name) ? 'Leste' : 'Oeste';
+    conf[nome] = (c.standings?.entries || []).map((e) => {
+      const m = mapaStats(e.stats);
+      return {
+        id: String(e.team.id), sigla: e.team.abbreviation,
+        posicao: Number(m.playoffSeed) || null, v: Number(m.wins), d: Number(m.losses),
+        pct: m.winPercent, atras: m.gamesBehind, sequencia: m.streak,
+        casa: m.Home, fora: m.Road, ultimos10: m['Last Ten Games'],
+        pontos_pro: m.avgPointsFor, pontos_contra: m.avgPointsAgainst, saldo: m.differential,
+      };
+    }).sort((a, b) => (a.posicao ?? 99) - (b.posicao ?? 99));
+  }
+  return conf;
+}
+
+export function normalizarEstatisticasJogadores(bruto) {
+  const cats = bruto.categories || [];
+  const mapa = {};
+  for (const a of bruto.athletes || []) {
+    const v = {};
+    for (const c of a.categories || []) {
+      const nomes = cats.find((x) => x.name === c.name)?.names || [];
+      nomes.forEach((n, i) => { v[n] = c.totals?.[i]; });
+    }
+    mapa[String(a.athlete.id)] = {
+      jogos: Number(v.gamesPlayed) || 0, min: v.avgMinutes, pts: v.avgPoints, reb: v.avgRebounds, ast: v.avgAssists,
+      rb: v.avgSteals, toco: v.avgBlocks, fg_pct: v.fieldGoalPct, tres_pct: v.threePointFieldGoalPct, ll_pct: v.freeThrowPct,
+      duplos_duplos: Number(v.doubleDouble) || 0, triplos_duplos: Number(v.tripleDouble) || 0,
+    };
+  }
+  return mapa;
+}
+
+export function normalizarTime(base, brutoTime, brutoElenco, brutoCalendario, brutoEstat, statsJogadores, classif) {
+  const t = brutoTime.team || {};
+  const m = /^(\d+)\w* in (\w+) Division/.exec(t.standingSummary || '');
+  const elenco = (brutoElenco.athletes || []).map((a) => {
+    const lesao = (a.injuries || [])[0];
+    return {
+      id: String(a.id), nome: a.displayName, numero: a.jersey ?? null,
+      posicao: POSICOES[a.position?.abbreviation] || a.position?.displayName || null, posicao_sigla: a.position?.abbreviation || null,
+      idade: a.age ?? null,
+      altura_m: a.height ? (a.height * 0.0254).toFixed(2) : null,
+      peso_kg: a.weight ? Math.round(a.weight * 0.4536) : null,
+      experiencia: a.experience?.years ?? null,
+      universidade: a.college?.name || null,
+      pais: a.birthPlace?.country || null,
+      lesao: lesao ? { status: lesao.status || null, tipo: lesao.details?.type || lesao.type?.description || null } : null,
+      medias: statsJogadores[String(a.id)] || null,
+    };
+  }).sort((a, b) => (Number(b.medias?.pts) || 0) - (Number(a.medias?.pts) || 0));
+
+  const jogos = (brutoCalendario.events || []).map((e) => {
+    const c = e.competitions?.[0] || {};
+    const eu = (c.competitors || []).find((x) => String(x.team?.id) === base.id);
+    const adv = (c.competitors || []).find((x) => String(x.team?.id) !== base.id);
+    const st = c.status?.type || {};
+    const pl = (x) => (x?.score?.value ?? (x?.score != null && x.score !== '' ? Number(x.score) : null));
+    return {
+      id: String(e.id), data_utc: e.date,
+      tipo: e.seasonType?.type ?? null,
+      em_casa: eu?.homeAway === 'home',
+      adversario: adv ? { id: String(adv.team.id), sigla: adv.team.abbreviation, nome_curto: adv.team.shortDisplayName || adv.team.name } : null,
+      finalizado: !!st.completed,
+      placar: st.completed ? { time: pl(eu), adversario: pl(adv) } : null,
+      resultado: st.completed ? (eu?.winner ? 'V' : 'D') : null,
+    };
+  }).sort((a, b) => a.data_utc.localeCompare(b.data_utc));
+
+  const est = {};
+  for (const cat of brutoEstat.results?.stats?.categories || []) for (const s of cat.stats || []) est[s.name] = s.displayValue;
+  const linha = [...(classif.Leste || []), ...(classif.Oeste || [])].find((x) => x.id === base.id) || null;
+  const conferencia = (classif.Leste || []).some((x) => x.id === base.id) ? 'Leste' : 'Oeste';
+
+  return {
+    ...base,
+    conferencia,
+    classificacao: linha,
+    divisao: m ? { nome: DIVISOES[m[2]] || m[2], posicao: Number(m[1]) } : null,
+    tecnico: (brutoElenco.coach || [])[0] ? `${brutoElenco.coach[0].firstName} ${brutoElenco.coach[0].lastName}` : null,
+    arena: t.franchise?.venue?.fullName || null,
+    estatisticas: {
+      pts: est.avgPoints ?? null, reb: est.avgRebounds ?? null, ast: est.avgAssists ?? null, rb: est.avgSteals ?? null,
+      toco: est.avgBlocks ?? null, err: est.avgTurnovers ?? null,
+      fg_pct: est.fieldGoalPct ?? null, tres_pct: est.threePointFieldGoalPct ?? null, ll_pct: est.freeThrowPct ?? null,
+    },
+    elenco,
+    jogos,
+    fonte: 'ESPN',
+    link_fonte: `https://www.espn.com/nba/team/_/name/${String(base.sigla).toLowerCase()}`,
+  };
+}

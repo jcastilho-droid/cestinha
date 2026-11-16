@@ -3,7 +3,7 @@
 // Regras: números SEMPRE vêm de data/raw; content/revisao/ NUNCA é publicado.
 import fs from 'node:fs';
 import path from 'node:path';
-import { P, RAIZ, lerJson, listarDiasRaw, horaBrasilia, dataPorExtenso, dataCurta, dataHoraBrasilia, agoraIso } from './lib/util.js';
+import { P, RAIZ, lerJson, listarDiasRaw, horaBrasilia, dataPorExtenso, dataCurta, dataHoraBrasilia, agoraIso, dataHoraCurta, dataCurtaIso } from './lib/util.js';
 import { lerRodada, lerJogo, selosDoJogo, lideresDaRodada, linhaEstatistica } from './lib/dados.js';
 
 const SITE = {
@@ -68,7 +68,7 @@ function logo(t, tam = 32) {
 }
 const cor = (t) => (t?.cor && /^#[0-9a-f]{6}$/i.test(t.cor) ? t.cor : '#ff7a1a');
 
-function pagina({ titulo, descricao, corpo, raiz = '.', canonical = '', faixa = '' }) {
+function pagina({ titulo, descricao, corpo, raiz = '.', canonical = '', faixa = '', tema = '', ativo = '' }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -87,11 +87,14 @@ ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonica
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${raiz}/assets/estilo.css">
 </head>
-<body>
+<body${tema ? ` style="${tema}"` : ''}>
 <header class="topo">
   <div class="topo-dentro">
     <a class="marca" href="${raiz}/index.html"><img src="${raiz}/assets/icone.svg" alt="" width="34" height="34"><span>Cesti<b>nha</b></span></a>
-    <span class="slogan">${esc(SITE.slogan)}</span>
+    <nav class="menu" aria-label="Seções">
+      <a href="${raiz}/index.html"${ativo === 'rodada' ? ' class="ativo"' : ''}>Rodada</a>
+      <a href="${raiz}/times/index.html"${ativo === 'times' ? ' class="ativo"' : ''}>Times</a>
+    </nav>
   </div>
   ${faixa}
 </header>
@@ -175,7 +178,7 @@ function cardJogo(j, raiz) {
   const href = temPagina ? ` href="${raiz}/jogo/${j.id}.html"` : '';
   const epico = selos.some((s) => s.epico);
   return `<${tag} class="card-jogo${epico ? ' epico' : ''}"${href} style="--c1:${cor(j.visitante)};--c2:${cor(j.casa)}">
-    <div class="card-topo"><span class="situacao">${esc(situacao(j))}</span><span class="tags">${selosEpicos(selos, 2)}</span></div>
+    <div class="card-topo"><span class="situacao">${esc(situacao(j))}<em>${esc(dataHoraCurta(j.inicio_utc))}</em></span><span class="tags">${selosEpicos(selos, 2)}</span></div>
     ${linhaTime(j.visitante, final)}
     ${linhaTime(j.casa, final)}
     ${texto ? `<p class="card-titulo">${esc(texto.titulo)}</p>` : final ? '<p class="card-titulo espera">Resenha chegando…</p>' : ''}
@@ -224,6 +227,7 @@ function blocoEpicos(jogos, raiz) {
       const perd = j.casa.vencedor ? j.visitante : j.casa;
       return `<a class="card-epico" href="${raiz}/jogo/${j.id}.html" style="--c1:${cor(venc)};--c2:${cor(perd)}">
         <span class="tags">${selosEpicos(selosDoJogo(j).filter((s) => s.epico))}</span>
+        <span class="ep-data">${esc(dataHoraCurta(j.inicio_utc))}</span>
         <div class="ep-placar">${logo(venc, 40)}<b>${venc.placar}</b><span>x</span><b class="perdeu">${perd.placar}</b>${logo(perd, 40)}</div>
         <p>${esc(texto?.titulo || `${venc.nome_curto} vence ${perd.nome_curto}`)}</p>
       </a>`;
@@ -303,7 +307,7 @@ function tabelaBox(t) {
   const e = t.estatisticas || {};
   const ausentes = (t.nao_jogaram || []).map((x) => x.nome).join(', ');
   return `<section class="box" style="--c1:${cor(t)}">
-  <h3>${logo(t, 28)}${esc(t.nome)}</h3>
+  <h3>${logo(t, 28)}${paginaDoTime(t.id, '..') ? `<a href="${paginaDoTime(t.id, '..')}">${esc(t.nome)}</a>` : esc(t.nome)}</h3>
   <div class="rolagem"><table>
     <thead><tr><th scope="col">Jogador</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th><th>AR</th><th>3P</th><th>LL</th><th>RB</th><th>TOC</th><th>ERR</th><th>+/-</th></tr></thead>
     <tbody>${linhas}</tbody>
@@ -355,7 +359,11 @@ function paginaJogo(j, faixa) {
   const fontes = [`<a href="${esc(j.link_fonte)}" rel="noopener" target="_blank">ESPN: placar e box score</a>`];
   if (j.materia_fonte?.link) fontes.push(`<a href="${esc(j.materia_fonte.link)}" rel="noopener" target="_blank">ESPN: matéria do jogo (em inglês)</a>`);
   const titulo = texto?.titulo || `${j.visitante.nome_curto} ${j.visitante.placar} x ${j.casa.placar} ${j.casa.nome_curto}`;
-  const time = (t) => `<div class="time-grande${t.vencedor ? ' venceu' : ''}">${logo(t, 72)}<span>${esc(t.nome_curto)}</span><small>${esc(t.campanha || '')}</small></div>`;
+  const time = (t) => {
+    const pag = paginaDoTime(t.id, raiz);
+    const tag = pag ? 'a' : 'div';
+    return `<${tag} class="time-grande${t.vencedor ? ' venceu' : ''}"${pag ? ` href="${pag}"` : ''}>${logo(t, 72)}<span>${esc(t.nome_curto)}</span><small>${esc(t.campanha || '')}</small></${tag}>`;
+  };
   const corpo = `
 <nav class="voltar"><a href="${raiz}/rodada/${j.data_rodada}.html">← Rodada de ${esc(dataCurta(j.data_rodada))}</a></nav>
 <section class="placar-grande" style="--c1:${cor(j.visitante)};--c2:${cor(j.casa)}">
@@ -382,6 +390,187 @@ ${tabelaBox(j.casa)}
   return pagina({ titulo: `${titulo} | Cestinha`, descricao: texto?.subtitulo || `${j.visitante.nome} x ${j.casa.nome}: placar e box score.`, corpo, raiz, canonical: `/jogo/${j.id}.html`, faixa });
 }
 
+// ---------- times ----------
+const PASTA_TIMES = path.join(RAIZ, 'data', 'times');
+const indiceTimes = lerJson(path.join(PASTA_TIMES, 'index.json'));
+const times = new Map();
+if (indiceTimes) {
+  for (const b of indiceTimes.times) {
+    const t = lerJson(path.join(PASTA_TIMES, `${b.sigla}.json`));
+    if (t) times.set(String(t.id), t);
+  }
+}
+const slugTime = (t) => String(t.sigla).toLowerCase();
+function paginaDoTime(id, raiz) {
+  const t = times.get(String(id));
+  return t ? `${raiz}/times/${slugTime(t)}.html` : null;
+}
+
+// Cor de destaque legível no fundo escuro: usa a cor principal ou a alternativa do time
+function luminancia(hex) {
+  const n = parseInt(String(hex || '').replace('#', ''), 16);
+  if (Number.isNaN(n)) return 0;
+  const c = [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; });
+  return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+}
+function corDestaque(t) {
+  const ok = (c) => c && luminancia(c) >= 0.09;
+  if (ok(t.cor)) return t.cor;
+  if (ok(t.cor_alt)) return t.cor_alt;
+  return '#ff7a1a';
+}
+function temaDoTime(t) {
+  const base = t.cor && /^#[0-9a-f]{6}$/i.test(t.cor) ? t.cor : '#ff7a1a';
+  return `--acento:${corDestaque(t)};--t1:${base};--t2:${t.cor_alt || base}`;
+}
+
+const STATUS_LESAO = { Out: 'Fora', 'Day-To-Day': 'Dia a dia', Questionable: 'Dúvida', Doubtful: 'Provável desfalque', Probable: 'Provável', Suspension: 'Suspenso' };
+const conferenciaNome = (c) => (c === 'Leste' ? 'Conferência Leste' : 'Conferência Oeste');
+const sequenciaPt = (s) => (s ? String(s).replace(/^W/, 'V').replace(/^L/, 'D') : '');
+const ordinal = (n) => (n ? `${n}º` : '');
+
+function logoTime(t, tam) {
+  return logo({ logo: t.logo, sigla: t.sigla, nome_curto: t.nome_curto }, tam);
+}
+
+function paginaListaTimes() {
+  const raiz = '..';
+  const conf = indiceTimes.classificacao || {};
+  const coluna = (nome) => `<section class="conferencia">
+    <h2 class="titulo-secao"><span>${conferenciaNome(nome)}</span></h2>
+    <ol class="lista-times">
+      ${(conf[nome] || []).map((linha) => {
+        const t = times.get(linha.id);
+        if (!t) return '';
+        return `<li><a class="linha-classif" href="${raiz}/times/${slugTime(t)}.html" style="--t1:${t.cor || '#ff7a1a'};--acento:${corDestaque(t)}">
+          <span class="seed">${linha.posicao ?? ''}</span>
+          ${logoTime(t, 34)}
+          <span class="lc-nome"><b>${esc(t.nome_curto)}</b><small>${esc(t.cidade || '')}</small></span>
+          <span class="lc-camp"><b>${linha.v}-${linha.d}</b><small>${esc(sequenciaPt(linha.sequencia))}</small></span>
+          <span class="lc-seta">→</span>
+        </a></li>`;
+      }).join('')}
+    </ol>
+  </section>`;
+  const corpo = `
+<section class="hero hero-times">
+  <p class="sobretitulo">Temporada ${esc(temporadaTexto())}</p>
+  <h1>Os 30 times da NBA</h1>
+  <p class="subtitulo">Clique no seu time para ver elenco, estatísticas, últimos resultados e os próximos jogos. A ordem segue a classificação de cada conferência.</p>
+</section>
+<div class="conferencias">${coluna('Leste')}${coluna('Oeste')}</div>
+<p class="legenda">Do 1º ao 6º: vaga direta nos playoffs. Do 7º ao 10º: play-in. V: vitórias seguidas · D: derrotas seguidas. Fonte: ESPN, atualizado em ${esc(dataHoraBrasilia(indiceTimes.atualizado_em))}.</p>`;
+  return pagina({ titulo: 'Times da NBA | Cestinha', descricao: 'Os 30 times da NBA: classificação, elenco, estatísticas e jogos.', corpo, raiz, canonical: '/times/', ativo: 'times' });
+}
+
+function temporadaTexto() {
+  const algum = [...times.values()][0];
+  const jogo = algum?.jogos?.[0];
+  if (!jogo) return '';
+  const ano = new Date(jogo.data_utc).getUTCFullYear();
+  return `${ano}-${String(ano + 1).slice(2)}`;
+}
+
+function paginaTime(t) {
+  const raiz = '..';
+  const c = t.classificacao || {};
+  const est = t.estatisticas || {};
+  const finalizados = (t.jogos || []).filter((j) => j.finalizado && j.tipo !== 1);
+  const ultimos = finalizados.slice(-10).reverse();
+  const proximos = (t.jogos || []).filter((j) => !j.finalizado).slice(0, 5);
+  const forma = finalizados.slice(-5).map((j) => `<i class="${j.resultado === 'V' ? 'v' : 'd'}">${j.resultado}</i>`).join('');
+  const temStats = t.elenco.some((p) => p.medias);
+  const lider = (k, rot) => {
+    const p = [...t.elenco].filter((x) => x.medias && x.medias.jogos > 0).sort((a, b) => Number(b.medias[k]) - Number(a.medias[k]))[0];
+    return p ? `<div class="lider-time"><span class="lider-cat">${rot}</span><b>${esc(p.medias[k])}</b><span>${esc(p.nome)}</span></div>` : '';
+  };
+  const linhaJogo = (j) => {
+    const adv = times.get(j.adversario?.id) || j.adversario || {};
+    const temPagina = fs.existsSync(path.join(P.raw)) && acharDiaDoJogo(j.id);
+    const tag = temPagina ? 'a' : 'div';
+    const href = temPagina ? ` href="${raiz}/jogo/${j.id}.html"` : '';
+    return `<${tag} class="jogo-time${j.resultado ? ` res-${j.resultado}` : ''}"${href}>
+      <span class="jt-data">${esc(j.finalizado ? dataCurtaIso(j.data_utc) : dataHoraCurta(j.data_utc))}</span>
+      ${j.resultado ? `<span class="jt-res">${j.resultado}</span>` : '<span class="jt-res prox">•</span>'}
+      <span class="jt-adv"><small>${j.em_casa ? 'vs' : '@'}</small>${adv.logo ? logoTime(adv, 26) : ''}<b>${esc(adv.nome_curto || '')}</b></span>
+      <span class="jt-placar">${j.placar ? `${j.placar.time}-${j.placar.adversario}` : ''}</span>
+    </${tag}>`;
+  };
+  const elenco = t.elenco.map((p) => {
+    const m = p.medias;
+    const les = p.lesao?.status ? `<span class="lesao">${esc(STATUS_LESAO[p.lesao.status] || p.lesao.status)}</span>` : '';
+    return `<div class="atleta">
+      <span class="camisa">${esc(p.numero ?? '–')}</span>
+      <div class="at-info">
+        <b>${esc(p.nome)}</b>
+        <span>${[p.posicao, p.idade ? `${p.idade} anos` : null, p.altura_m ? `${p.altura_m.replace('.', ',')} m` : null].filter(Boolean).map(esc).join(' · ')}</span>
+        ${les}
+      </div>
+      <div class="at-medias">${m && m.jogos > 0
+        ? `<div><b>${esc(m.pts)}</b><small>PTS</small></div><div><b>${esc(m.reb)}</b><small>REB</small></div><div><b>${esc(m.ast)}</b><small>AST</small></div>`
+        : '<span class="sem-jogos">Ainda não jogou</span>'}</div>
+    </div>`;
+  }).join('');
+  const corpo = `
+<section class="hero-time">
+  <img class="marca-dagua" src="${esc(logoEscuro(t.logo))}" alt="" aria-hidden="true">
+  <div class="ht-topo">
+    ${logoTime(t, 96)}
+    <div>
+      <p class="sobretitulo">${esc(conferenciaNome(t.conferencia))}${t.divisao ? ` · Divisão ${esc(t.divisao.nome)}` : ''}</p>
+      <h1>${esc(t.nome)}</h1>
+      <p class="ht-campanha"><b>${c.v ?? '-'}-${c.d ?? '-'}</b>${c.posicao ? ` · ${ordinal(c.posicao)} no ${esc(t.conferencia)}` : ''}${t.divisao ? ` · ${ordinal(t.divisao.posicao)} na divisão` : ''}</p>
+    </div>
+  </div>
+  <div class="chips">
+    ${forma ? `<span class="chip forma">Últimos 5 ${forma}</span>` : ''}
+    ${c.sequencia ? `<span class="chip">Sequência <b>${esc(sequenciaPt(c.sequencia))}</b></span>` : ''}
+    ${c.casa ? `<span class="chip">Em casa <b>${esc(c.casa)}</b></span>` : ''}
+    ${c.fora ? `<span class="chip">Fora <b>${esc(c.fora)}</b></span>` : ''}
+    ${t.tecnico ? `<span class="chip">Técnico <b>${esc(t.tecnico)}</b></span>` : ''}
+    ${t.arena ? `<span class="chip">Arena <b>${esc(t.arena)}</b></span>` : ''}
+  </div>
+</section>
+
+<h2 class="titulo-secao"><span>Números do time</span><small>médias por jogo na temporada</small></h2>
+<div class="numeros-time">
+  <div><b>${esc(c.pontos_pro ?? est.pts ?? '-')}</b><span>pontos feitos</span></div>
+  <div><b>${esc(c.pontos_contra ?? '-')}</b><span>pontos sofridos</span></div>
+  <div><b>${esc(c.saldo ?? '-')}</b><span>saldo</span></div>
+  <div><b>${esc(est.reb ?? '-')}</b><span>rebotes</span></div>
+  <div><b>${esc(est.ast ?? '-')}</b><span>assistências</span></div>
+  <div><b>${esc(est.fg_pct ?? '-')}%</b><span>arremessos</span></div>
+  <div><b>${esc(est.tres_pct ?? '-')}%</b><span>bolas de três</span></div>
+  <div><b>${esc(est.ll_pct ?? '-')}%</b><span>lances livres</span></div>
+</div>
+
+${temStats ? `<h2 class="titulo-secao"><span>Líderes do time</span></h2>
+<div class="lideres-time">${lider('pts', 'Pontos')}${lider('reb', 'Rebotes')}${lider('ast', 'Assistências')}${lider('rb', 'Roubos')}${lider('toco', 'Tocos')}${lider('min', 'Minutos')}</div>` : ''}
+
+<div class="duas-colunas-jogos">
+  <section><h2 class="titulo-secao"><span>Últimos jogos</span></h2><div class="lista-jogos-time">${ultimos.map(linhaJogo).join('') || '<p class="legenda">Sem jogos ainda.</p>'}</div></section>
+  <section><h2 class="titulo-secao"><span>Próximos jogos</span><small>horário de Brasília</small></h2><div class="lista-jogos-time">${proximos.map(linhaJogo).join('') || '<p class="legenda">Sem jogos marcados.</p>'}</div></section>
+</div>
+
+<h2 class="titulo-secao"><span>Elenco</span><small>${t.elenco.length} jogadores, ordenados por pontos por jogo</small></h2>
+<div class="elenco">${elenco}</div>
+
+<section class="fontes"><h2 class="titulo-secao"><span>Fonte</span></h2><ul><li><a href="${esc(t.link_fonte)}" rel="noopener" target="_blank">ESPN: página do ${esc(t.nome)}</a></li></ul>
+<p class="legenda">Atualizado em ${esc(dataHoraBrasilia(t.atualizado_em))}. Médias da temporada regular.</p></section>`;
+  return pagina({ titulo: `${t.nome} | Cestinha`, descricao: `${t.nome}: elenco, estatísticas, últimos jogos e próximos jogos.`, corpo, raiz, canonical: `/times/${slugTime(t)}.html`, tema: temaDoTime(t), ativo: 'times' });
+}
+
+let mapaJogoDia = null;
+function acharDiaDoJogo(id) {
+  if (!mapaJogoDia) {
+    mapaJogoDia = new Map();
+    for (const d of listarDiasRaw()) {
+      for (const f of fs.readdirSync(path.join(P.raw, d))) if (/^\d+\.json$/.test(f)) mapaJogoDia.set(f.replace('.json', ''), d);
+    }
+  }
+  return mapaJogoDia.get(String(id)) || null;
+}
+
 // ---------- gerar ----------
 fs.rmSync(P.site, { recursive: true, force: true });
 fs.mkdirSync(path.join(P.site, 'jogo'), { recursive: true });
@@ -400,6 +589,7 @@ for (const { dia, rodada } of dias) {
     raiz: '..',
     canonical: `/rodada/${dia}.html`,
     faixa: faixaPlacares(jogos, '..'),
+    ativo: 'rodada',
   }));
   for (const j of jogos.filter((x) => x.casa.jogadores)) {
     fs.writeFileSync(path.join(P.site, 'jogo', `${j.id}.html`), paginaJogo(j, faixaPlacares(jogos, '..')));
@@ -418,11 +608,21 @@ fs.writeFileSync(path.join(P.site, 'index.html'), pagina({
   descricao: 'Resumo dos jogos da NBA da noite, em português, no tom de resenha.',
   corpo: corpoHome,
   canonical: '/',
+  ativo: 'rodada',
   faixa: atual ? faixaPlacares(atual.rodada.jogos.map((b) => jogoDoDia(atual.dia, b)), '.') : '',
 }));
+if (indiceTimes && times.size) {
+  fs.mkdirSync(path.join(P.site, 'times'), { recursive: true });
+  fs.writeFileSync(path.join(P.site, 'times', 'index.html'), paginaListaTimes());
+  for (const t of times.values()) fs.writeFileSync(path.join(P.site, 'times', `${slugTime(t)}.html`), paginaTime(t));
+} else {
+  fs.mkdirSync(path.join(P.site, 'times'), { recursive: true });
+  fs.writeFileSync(path.join(P.site, 'times', 'index.html'), pagina({ titulo: 'Times | Cestinha', descricao: 'Times da NBA.', raiz: '..', ativo: 'times',
+    corpo: '<section class="hero"><p class="sobretitulo">Times</p><h1>Chegando já já</h1><p class="subtitulo">Os dados dos times aparecem depois da próxima coleta.</p></section>' }));
+}
 fs.writeFileSync(path.join(P.site, '404.html'), pagina({
   titulo: 'Não achei | Cestinha', descricao: 'Página não encontrada.',
   corpo: '<section class="rodada"><article class="hero"><p class="sobretitulo">Erro 404</p><h1>Airball!</h1><p class="subtitulo">Essa página não existe. Volte para a página inicial pelo logo lá em cima.</p></article></section>',
 }));
 
-console.log(`Site gerado em _site/: ${dias.length} rodada(s), ${nJogos} página(s) de jogo, ${textosJogo.size} resenha(s), ${textosRodada.size} resumo(s) de rodada.`);
+console.log(`Site gerado em _site/: ${dias.length} rodada(s), ${nJogos} página(s) de jogo, ${times.size} time(s), ${textosJogo.size} resenha(s), ${textosRodada.size} resumo(s) de rodada.`);
