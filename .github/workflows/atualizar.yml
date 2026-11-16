@@ -39,6 +39,26 @@ jobs:
         with:
           node-version: 22
 
+      - name: Arrumar arquivos enviados na pasta errada
+        run: |
+          git config user.name "cestinha-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mudou=0
+          for d in scripts site content prompts config; do
+            if [ -d "data/$d" ]; then cp -r "data/$d/." "$d/" && git rm -rq "data/$d" && mudou=1; fi
+          done
+          if [ -d data/data ]; then cp -r data/data/. data/ && git rm -rq data/data && mudou=1; fi
+          for f in README.md ROTINA.md package.json; do
+            if [ -f "data/$f" ]; then git mv -f "data/$f" "$f" && mudou=1; fi
+          done
+          if [ "$mudou" = 1 ]; then
+            git add -A .
+            git commit -m "arrumar: move arquivos que foram enviados para dentro de data/"
+            for i in 1 2 3; do git pull --rebase --autostash origin main && git push && break; sleep 5; done
+          else
+            echo "Tudo no lugar."
+          fi
+
       - name: Coletar jogos (ESPN)
         if: github.event_name != 'push'
         run: node scripts/coletar.js
