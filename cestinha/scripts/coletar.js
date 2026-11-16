@@ -37,8 +37,8 @@ for (const dia of dias) {
 
   for (const j of jogos.filter((x) => x.status === 'final')) {
     const arq = path.join(pasta, `${j.id}.json`);
-    // já coletado: jogo final não muda (só recoleta se faltar a foto da arena, campo novo)
-    if (fs.existsSync(arq) && lerJson(arq)?.arena) continue;
+    // já coletado: jogo final não muda (só recoleta se faltar algum campo novo, como o fluxo do placar)
+    if (fs.existsSync(arq) && lerJson(arq)?.fluxo) continue;
     try {
       const completo = fonte.normalizarJogo(j, await fonte.buscarDetalhe(j.id), dia);
       if (!completo.casa.jogadores.length) throw new Error('box score vazio, tento de novo na próxima');
@@ -53,6 +53,24 @@ for (const dia of dias) {
 
 if (erros) console.error(`Terminou com ${erros} erro(s).`);
 // Não falha o workflow por erro de uma fonte: o site continua sendo publicado.
+
+// Agenda: próximos 7 dias (data dos EUA), mostrada em horário de Brasília
+try {
+  const pares = [];
+  for (let i = 0; i < 7; i++) {
+    const dia = dataEUA(i);
+    try { pares.push([dia, await fonte.buscarPlacar(dia)]); } catch (e) { console.error(`[agenda] ${dia}: ${e.message}`); }
+  }
+  const agenda = fonte.normalizarAgenda(pares);
+  const arqAg = path.join(P.raw, '..', 'agenda.json');
+  const antiga = lerJson(arqAg);
+  if (!antiga || JSON.stringify(antiga.jogos) !== JSON.stringify(agenda)) {
+    gravarJson(arqAg, { atualizado_em: agoraIso(), fonte: 'ESPN', jogos: agenda });
+    console.log(`[agenda] ${agenda.length} jogos nos próximos 7 dias.`);
+  }
+} catch (e) {
+  console.error(`[agenda] falha: ${e.message}`);
+}
 
 // Dados dos times (elenco, estatísticas, calendário): no máximo de 6 em 6 horas.
 try {
