@@ -649,3 +649,28 @@ a.card-jogo:hover .card-arena { filter: saturate(1.15) brightness(1.1); }
 .hero.com-foto, .hero-time.com-foto { padding-bottom: 48px; }
 @media (min-width: 720px) { .hero.com-foto, .hero-time.com-foto { padding-bottom: 52px; } }
 .placar-grande.com-foto { padding-bottom: 40px; }
+
+/* =====================================================================
+   LOGO (aro e rede) e ajustes do topo
+   ===================================================================== */
+.logo { display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; }
+.logo:hover { text-decoration: none; }
+.logo-aro { width: 34px; height: 42px; flex: none; overflow: visible; }
+.logo-texto { font: 400 34px/1 'Anton', 'Barlow Condensed', 'Arial Narrow', sans-serif; letter-spacing: 2.5px; color: #fff; text-transform: uppercase; }
+.logo-bola { transition: transform .45s cubic-bezier(.5,0,.3,1.4); transform-origin: 58px 22px; }
+.logo-rede { transition: transform .35s ease .25s; transform-origin: 48px 60px; }
+.logo:hover .logo-bola { transform: translate(-10px, 34px) rotate(40deg); }
+.logo:hover .logo-rede { transform: scaleY(1.12); }
+.logo:hover .logo-rastro { opacity: 0; }
+.logo-rastro { transition: opacity .2s; }
+.rodape-marca.logo { margin: 0; }
+.rodape-marca .logo-texto { font-size: 28px; }
+.rodape-marca .logo-aro { width: 28px; height: 35px; }
+@media (max-width: 479px) {
+  .logo-texto { font-size: 25px; letter-spacing: 1.5px; }
+  .logo-aro { width: 26px; height: 33px; }
+  .logo { gap: 7px; }
+}
+.topo .logo-aro { width: 40px; height: 50px; margin: -4px 0; }
+.trilho-bola { animation: none; }
+@media (max-width: 479px) { .topo .logo-aro { width: 30px; height: 38px; } }
