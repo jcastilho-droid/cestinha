@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "3",
     "sigla": "NO",
-    "posicao": 13,
-    "v": 4,
+    "posicao": 12,
+    "v": 5,
     "d": 10,
-    "pct": ".286",
-    "atras": "8",
-    "sequencia": "L6",
-    "casa": "3-6",
+    "pct": ".333",
+    "atras": "7.5",
+    "sequencia": "W1",
+    "casa": "4-6",
     "fora": "1-4",
     "ultimos10": "4-6",
-    "pontos_pro": "115.9",
-    "pontos_contra": "124.9",
-    "saldo": "-9.0"
+    "pontos_pro": "115.8",
+    "pontos_contra": "122.9",
+    "saldo": "-7.1"
   },
   "divisao": null,
   "tecnico": "Jamahl Mosley",
@@ -398,7 +398,7 @@
       "universidade": "Arizona",
       "pais": "Canada",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -809,9 +809,12 @@
         "sigla": "GS",
         "nome_curto": "Warriors"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 115,
+        "adversario": 94
+      },
+      "resultado": "V"
     },
     {
       "id": "401910013",
@@ -1726,5 +1729,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/no",
-  "atualizado_em": "2026-11-17T01:27:39.672Z"
+  "atualizado_em": "2026-11-17T07:37:39.897Z"
 }

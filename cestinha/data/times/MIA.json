@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "14",
     "sigla": "MIA",
-    "posicao": 5,
-    "v": 7,
+    "posicao": 4,
+    "v": 8,
     "d": 6,
-    "pct": ".538",
-    "atras": "4",
-    "sequencia": "W4",
-    "casa": "3-3",
+    "pct": ".571",
+    "atras": "3.5",
+    "sequencia": "W5",
+    "casa": "4-3",
     "fora": "4-3",
-    "ultimos10": "7-3",
-    "pontos_pro": "118.7",
-    "pontos_contra": "119.8",
-    "saldo": "-1.1"
+    "ultimos10": "8-2",
+    "pontos_pro": "119.4",
+    "pontos_contra": "119.1",
+    "saldo": "+0.3"
   },
   "divisao": null,
   "tecnico": "Erik Spoelstra",
@@ -80,7 +80,10 @@
       "experiencia": 10,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "33.8",
@@ -308,7 +311,7 @@
       "universidade": null,
       "pais": null,
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -742,9 +745,12 @@
         "sigla": "HOU",
         "nome_curto": "Rockets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 128,
+        "adversario": 110
+      },
+      "resultado": "V"
     },
     {
       "id": "401910009",
@@ -1673,5 +1679,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mia",
-  "atualizado_em": "2026-11-17T01:27:37.935Z"
+  "atualizado_em": "2026-11-17T07:37:38.466Z"
 }

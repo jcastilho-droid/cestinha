@@ -13,7 +13,7 @@
   "classificacao": {
     "id": "1",
     "sigla": "ATL",
-    "posicao": 4,
+    "posicao": 5,
     "v": 8,
     "d": 6,
     "pct": ".571",
@@ -1674,5 +1674,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/atl",
-  "atualizado_em": "2026-11-17T01:27:29.086Z"
+  "atualizado_em": "2026-11-17T07:37:31.350Z"
 }

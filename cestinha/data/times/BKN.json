@@ -15,16 +15,16 @@
     "sigla": "BKN",
     "posicao": 13,
     "v": 3,
-    "d": 9,
-    "pct": ".250",
-    "atras": "7.5",
-    "sequencia": "L1",
-    "casa": "1-3",
+    "d": 10,
+    "pct": ".231",
+    "atras": "8",
+    "sequencia": "L2",
+    "casa": "1-4",
     "fora": "2-6",
     "ultimos10": "3-7",
-    "pontos_pro": "110.2",
-    "pontos_contra": "116.4",
-    "saldo": "-6.2"
+    "pontos_pro": "111.2",
+    "pontos_contra": "117.8",
+    "saldo": "-6.6"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -737,9 +737,12 @@
         "sigla": "PHI",
         "nome_curto": "76ers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 123,
+        "adversario": 135
+      },
+      "resultado": "D"
     },
     {
       "id": "401910011",
@@ -1682,5 +1685,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bkn",
-  "atualizado_em": "2026-11-17T01:27:30.191Z"
+  "atualizado_em": "2026-11-17T07:37:32.220Z"
 }

@@ -15,16 +15,16 @@
     "sigla": "GS",
     "posicao": 9,
     "v": 8,
-    "d": 5,
-    "pct": ".615",
-    "atras": "3.5",
-    "sequencia": "L2",
+    "d": 6,
+    "pct": ".571",
+    "atras": "4",
+    "sequencia": "L3",
     "casa": "6-1",
-    "fora": "2-4",
-    "ultimos10": "8-2",
-    "pontos_pro": "116.7",
-    "pontos_contra": "112.4",
-    "saldo": "+4.3"
+    "fora": "2-5",
+    "ultimos10": "7-3",
+    "pontos_pro": "115.1",
+    "pontos_contra": "112.6",
+    "saldo": "+2.5"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -756,9 +756,12 @@
         "sigla": "NO",
         "nome_curto": "Pelicans"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 94,
+        "adversario": 115
+      },
+      "resultado": "D"
     },
     {
       "id": "401910016",
@@ -1687,5 +1690,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-17T01:27:34.711Z"
+  "atualizado_em": "2026-11-17T07:37:35.542Z"
 }

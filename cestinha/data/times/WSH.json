@@ -15,16 +15,16 @@
     "sigla": "WSH",
     "posicao": 12,
     "v": 4,
-    "d": 10,
-    "pct": ".286",
-    "atras": "7.5",
-    "sequencia": "L7",
-    "casa": "2-4",
+    "d": 11,
+    "pct": ".267",
+    "atras": "8",
+    "sequencia": "L8",
+    "casa": "2-5",
     "fora": "2-6",
     "ultimos10": "2-8",
-    "pontos_pro": "110.6",
-    "pontos_contra": "118.0",
-    "saldo": "-7.4"
+    "pontos_pro": "111.3",
+    "pontos_contra": "119.2",
+    "saldo": "-7.9"
   },
   "divisao": null,
   "tecnico": "Brian Keefe",
@@ -780,9 +780,12 @@
         "sigla": "MEM",
         "nome_curto": "Grizzlies"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 120,
+        "adversario": 136
+      },
+      "resultado": "D"
     },
     {
       "id": "401910012",
@@ -1697,5 +1700,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/wsh",
-  "atualizado_em": "2026-11-17T01:27:46.437Z"
+  "atualizado_em": "2026-11-17T07:37:44.860Z"
 }

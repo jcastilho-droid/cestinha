@@ -15,16 +15,16 @@
     "sigla": "HOU",
     "posicao": 3,
     "v": 11,
-    "d": 3,
-    "pct": ".786",
-    "atras": "1",
-    "sequencia": "W4",
+    "d": 4,
+    "pct": ".733",
+    "atras": "1.5",
+    "sequencia": "L1",
     "casa": "7-1",
-    "fora": "4-2",
-    "ultimos10": "7-3",
-    "pontos_pro": "118.4",
-    "pontos_contra": "108.2",
-    "saldo": "+10.2"
+    "fora": "4-3",
+    "ultimos10": "6-4",
+    "pontos_pro": "117.8",
+    "pontos_contra": "109.5",
+    "saldo": "+8.3"
   },
   "divisao": null,
   "tecnico": "Ime Udoka",
@@ -109,7 +109,7 @@
       "universidade": null,
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -252,7 +252,7 @@
       "universidade": "Oklahoma State",
       "pais": "USA",
       "lesao": {
-        "status": "Suspension",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -311,7 +311,7 @@
       "universidade": "Pittsburgh",
       "pais": "New Zealand",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -755,9 +755,12 @@
         "sigla": "MIA",
         "nome_curto": "Heat"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 110,
+        "adversario": 128
+      },
+      "resultado": "D"
     },
     {
       "id": "401910008",
@@ -1672,5 +1675,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-17T01:27:35.241Z"
+  "atualizado_em": "2026-11-17T07:37:36.116Z"
 }

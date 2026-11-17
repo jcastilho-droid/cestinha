@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "16",
     "sigla": "MIN",
-    "posicao": 5,
-    "v": 9,
+    "posicao": 4,
+    "v": 10,
     "d": 4,
-    "pct": ".692",
-    "atras": "2.5",
-    "sequencia": "L1",
-    "casa": "5-2",
+    "pct": ".714",
+    "atras": "2",
+    "sequencia": "W1",
+    "casa": "6-2",
     "fora": "4-2",
-    "ultimos10": "6-4",
-    "pontos_pro": "118.3",
-    "pontos_contra": "106.8",
-    "saldo": "+11.5"
+    "ultimos10": "7-3",
+    "pontos_pro": "117.4",
+    "pontos_contra": "106.1",
+    "saldo": "+11.3"
   },
   "divisao": null,
   "tecnico": "Chris Finch",
@@ -167,7 +167,10 @@
       "experiencia": 6,
       "universidade": null,
       "pais": "Democratic Republic of Congo",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "30.6",
@@ -732,9 +735,12 @@
         "sigla": "POR",
         "nome_curto": "Trail Blazers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 106,
+        "adversario": 98
+      },
+      "resultado": "V"
     },
     {
       "id": "401910003",
@@ -1663,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-17T01:27:39.135Z"
+  "atualizado_em": "2026-11-17T07:37:39.448Z"
 }

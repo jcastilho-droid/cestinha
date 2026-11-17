@@ -14,17 +14,17 @@
     "id": "19",
     "sigla": "ORL",
     "posicao": 8,
-    "v": 5,
+    "v": 6,
     "d": 7,
-    "pct": ".417",
-    "atras": "5.5",
-    "sequencia": "W3",
+    "pct": ".462",
+    "atras": "5",
+    "sequencia": "W4",
     "casa": "1-4",
-    "fora": "4-3",
+    "fora": "5-3",
     "ultimos10": "5-5",
-    "pontos_pro": "108.3",
-    "pontos_contra": "112.8",
-    "saldo": "-4.5"
+    "pontos_pro": "108.8",
+    "pontos_contra": "112.2",
+    "saldo": "-3.4"
   },
   "divisao": null,
   "tecnico": "Sean Sweeney",
@@ -705,9 +705,12 @@
         "sigla": "BOS",
         "nome_curto": "Celtics"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 115,
+        "adversario": 105
+      },
+      "resultado": "V"
     },
     {
       "id": "401910010",
@@ -1650,5 +1653,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/orl",
-  "atualizado_em": "2026-11-17T01:27:41.713Z"
+  "atualizado_em": "2026-11-17T07:37:41.316Z"
 }

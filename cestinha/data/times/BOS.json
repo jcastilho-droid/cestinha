@@ -13,22 +13,22 @@
   "classificacao": {
     "id": "2",
     "sigla": "BOS",
-    "posicao": 1,
+    "posicao": 2,
     "v": 11,
-    "d": 2,
-    "pct": ".846",
-    "atras": "-",
-    "sequencia": "W6",
-    "casa": "6-0",
+    "d": 3,
+    "pct": ".786",
+    "atras": "0.5",
+    "sequencia": "L1",
+    "casa": "6-1",
     "fora": "5-2",
-    "ultimos10": "9-1",
-    "pontos_pro": "115.5",
-    "pontos_contra": "102.4",
-    "saldo": "+13.1"
+    "ultimos10": "8-2",
+    "pontos_pro": "114.8",
+    "pontos_contra": "103.3",
+    "saldo": "+11.5"
   },
   "divisao": {
     "nome": "Atlântico",
-    "posicao": 1
+    "posicao": 2
   },
   "tecnico": "Joe Mazzulla",
   "estatisticas": {
@@ -168,7 +168,7 @@
       "universidade": "Utah State",
       "pais": "Portugal",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -742,9 +742,12 @@
         "sigla": "ORL",
         "nome_curto": "Magic"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 105,
+        "adversario": 115
+      },
+      "resultado": "D"
     },
     {
       "id": "401910015",
@@ -1673,5 +1676,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-17T01:27:29.600Z"
+  "atualizado_em": "2026-11-17T07:37:31.785Z"
 }

@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "29",
     "sigla": "MEM",
-    "posicao": 6,
-    "v": 9,
+    "posicao": 5,
+    "v": 10,
     "d": 4,
-    "pct": ".692",
-    "atras": "2.5",
-    "sequencia": "W2",
+    "pct": ".714",
+    "atras": "2",
+    "sequencia": "W3",
     "casa": "3-4",
-    "fora": "6-0",
+    "fora": "7-0",
     "ultimos10": "6-4",
-    "pontos_pro": "120.6",
-    "pontos_contra": "111.7",
-    "saldo": "+8.9"
+    "pontos_pro": "121.7",
+    "pontos_contra": "112.3",
+    "saldo": "+9.4"
   },
   "divisao": null,
   "tecnico": "Tuomas Iisalo",
@@ -53,7 +53,7 @@
       "universidade": "Virginia",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -196,7 +196,7 @@
       "universidade": "Washington",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -779,9 +779,12 @@
         "sigla": "WSH",
         "nome_curto": "Wizards"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 136,
+        "adversario": 120
+      },
+      "resultado": "V"
     },
     {
       "id": "401910007",
@@ -1710,5 +1713,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-17T01:27:37.421Z"
+  "atualizado_em": "2026-11-17T07:37:38.007Z"
 }

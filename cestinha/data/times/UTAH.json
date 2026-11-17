@@ -442,24 +442,6 @@
       }
     },
     {
-      "id": "4433268",
-      "nome": "Trey Alexander",
-      "numero": "15",
-      "posicao": "Armador",
-      "posicao_sigla": "G",
-      "idade": 23,
-      "altura_m": "1.96",
-      "peso_kg": 84,
-      "experiencia": 3,
-      "universidade": "Creighton",
-      "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
-      "medias": null
-    },
-    {
       "id": "4683736",
       "nome": "Kobe Bufkin",
       "numero": "0",
@@ -1674,5 +1656,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/utah",
-  "atualizado_em": "2026-11-17T01:27:45.852Z"
+  "atualizado_em": "2026-11-17T07:37:44.447Z"
 }

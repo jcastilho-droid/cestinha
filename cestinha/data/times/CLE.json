@@ -14,17 +14,17 @@
     "id": "5",
     "sigla": "CLE",
     "posicao": 7,
-    "v": 7,
+    "v": 8,
     "d": 7,
-    "pct": ".500",
-    "atras": "4.5",
-    "sequencia": "W1",
-    "casa": "5-2",
+    "pct": ".533",
+    "atras": "4",
+    "sequencia": "W2",
+    "casa": "6-2",
     "fora": "2-5",
-    "ultimos10": "4-6",
-    "pontos_pro": "117.5",
-    "pontos_contra": "115.9",
-    "saldo": "+1.6"
+    "ultimos10": "5-5",
+    "pontos_pro": "118.1",
+    "pontos_contra": "115.8",
+    "saldo": "+2.3"
   },
   "divisao": {
     "nome": "Central",
@@ -198,7 +198,10 @@
       "experiencia": 5,
       "universidade": "UCLA",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 11,
         "min": "28.2",
@@ -255,7 +258,7 @@
       "universidade": "California",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -742,9 +745,12 @@
         "sigla": "CHI",
         "nome_curto": "Bulls"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 126,
+        "adversario": 115
+      },
+      "resultado": "V"
     },
     {
       "id": "401910007",
@@ -1659,5 +1665,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cle",
-  "atualizado_em": "2026-11-17T01:27:32.340Z"
+  "atualizado_em": "2026-11-17T07:37:33.549Z"
 }
