@@ -335,7 +335,7 @@
       "numero": "5",
       "posicao": "Armador",
       "posicao_sigla": "G",
-      "idade": 25,
+      "idade": 26,
       "altura_m": "1.98",
       "peso_kg": 91,
       "experiencia": 7,
@@ -1656,5 +1656,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/utah",
-  "atualizado_em": "2026-11-17T07:37:44.447Z"
+  "atualizado_em": "2026-11-17T15:05:34.073Z"
 }

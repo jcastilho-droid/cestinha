@@ -34,7 +34,7 @@
     "ast": "21.8",
     "rb": "7.0",
     "toco": "4.6",
-    "err": "18.1",
+    "err": "18.0",
     "fg_pct": "40.0",
     "tres_pct": "31.3",
     "ll_pct": "82.8"
@@ -1688,5 +1688,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cha",
-  "atualizado_em": "2026-11-17T07:37:32.667Z"
+  "atualizado_em": "2026-11-17T15:05:22.359Z"
 }
