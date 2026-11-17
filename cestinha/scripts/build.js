@@ -140,6 +140,7 @@ ${comIcones(corpo)}
     <p class="rodape-links"><a href="${raiz}/agenda.html">Agenda</a><a href="${raiz}/classificacao.html">Classificação</a><a href="${raiz}/times/index.html">Times</a><a href="${raiz}/brasileiros.html">Brasileiros na NBA</a><a href="${raiz}/aprenda.html">Me explica essa NBA</a>${powerRankings.length ? `<a href="${raiz}/power-ranking.html">Power ranking</a>` : ''}</p>
     <p>${icone('grafico')} Placar e estatísticas: ESPN. ${icone('raio')} Textos: o Cestinha (IA), com checagem automática dos números.</p>
     <p>${icone('relogio')} Horários de Brasília. Atualizado em ${esc(dataHoraBrasilia(agoraIso()))}. Logos dos times exibidos só para identificação.</p>
+    <p class="rodape-autor">Desenvolvido por <b>Jonathan Castilho</b> · <span>LiveMode</span></p>
   </div>
 </footer>
 </body>
