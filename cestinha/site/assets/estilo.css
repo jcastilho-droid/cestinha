@@ -934,3 +934,21 @@ html, body { overflow-x: clip; }
 .btn:hover { border-color: var(--laranja); text-decoration: none; transform: translateY(-1px); }
 .btn .ic { width: 18px; height: 18px; }
 .btn-whats { background: #1f8f4e; border-color: #1f8f4e; color: #fff; }
+
+/* ---------- seletor de times (página Times) ---------- */
+.hero-escudos { display: none; }
+.seletor-times { position: relative; display: grid; gap: 14px; margin-top: 22px; }
+@media (min-width: 900px) { .seletor-times { grid-template-columns: 1fr 1fr; gap: 18px; } }
+.st-conf { padding: 12px 14px 14px; border-radius: 14px; background: rgba(0,0,0,.35); border: 1px solid rgba(255,255,255,.08); }
+.st-conf-nome { display: block; margin-bottom: 8px; font: 700 12px/1 var(--corpo); letter-spacing: 3px; text-transform: uppercase; color: var(--laranja-2); }
+.st-divisoes { display: grid; gap: 10px; }
+.st-div { display: grid; grid-template-columns: 82px 1fr; align-items: center; gap: 8px; }
+.st-div-nome { font: 600 11px/1.2 var(--corpo); letter-spacing: 1px; text-transform: uppercase; color: var(--suave); }
+.st-escudos { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.st-escudo { position: relative; display: grid; place-items: center; aspect-ratio: 1; border-radius: 12px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.06); transition: transform .25s cubic-bezier(.2,.8,.2,1), background .25s, box-shadow .25s, border-color .25s; z-index: 1; }
+.st-escudo img.logo, .st-escudo .sigla { width: 70%; height: 70%; max-width: 44px; max-height: 44px; transition: transform .25s cubic-bezier(.2,.8,.2,1); }
+.st-escudo:hover, .st-escudo:focus-visible { z-index: 3; transform: scale(1.28); background: color-mix(in srgb, var(--t1) 45%, #121820); border-color: color-mix(in srgb, var(--t1) 80%, #fff); box-shadow: 0 10px 26px -8px color-mix(in srgb, var(--t1) 90%, transparent); text-decoration: none; }
+.st-escudo:hover img.logo { transform: scale(1.12); }
+.st-escudo::after { content: attr(data-nome); position: absolute; left: 50%; bottom: calc(100% + 6px); transform: translateX(-50%); padding: 4px 8px; border-radius: 6px; background: #0b0f15; border: 1px solid var(--borda); color: #fff; font: 700 10px/1 var(--corpo); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .15s; }
+.st-escudo:hover::after, .st-escudo:focus-visible::after { opacity: 1; }
+@media (max-width: 519px) { .st-div { grid-template-columns: 1fr; gap: 4px; } }
