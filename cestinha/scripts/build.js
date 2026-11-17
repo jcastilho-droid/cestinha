@@ -494,6 +494,15 @@ ${temCartao ? `<section class="compartilhar">
 
 // ---------- times ----------
 const PASTA_TIMES = path.join(RAIZ, 'data', 'times');
+// Divisões da NBA (fixas): não dependem do texto da ESPN, que às vezes vem num formato diferente
+const DIVISAO_DO_TIME = {
+  BOS: 'Atlântico', BKN: 'Atlântico', NY: 'Atlântico', PHI: 'Atlântico', TOR: 'Atlântico',
+  CHI: 'Central', CLE: 'Central', DET: 'Central', IND: 'Central', MIL: 'Central',
+  ATL: 'Sudeste', CHA: 'Sudeste', MIA: 'Sudeste', ORL: 'Sudeste', WSH: 'Sudeste',
+  DEN: 'Noroeste', MIN: 'Noroeste', OKC: 'Noroeste', POR: 'Noroeste', UTAH: 'Noroeste', UTA: 'Noroeste',
+  GS: 'Pacífico', LAC: 'Pacífico', LAL: 'Pacífico', PHX: 'Pacífico', SAC: 'Pacífico',
+  DAL: 'Sudoeste', HOU: 'Sudoeste', MEM: 'Sudoeste', NO: 'Sudoeste', SA: 'Sudoeste',
+};
 // Arena de cada time: a do jogo em casa mais recente que coletamos
 const arenaDoTime = new Map();
 for (const d of listarDiasRaw()) {
@@ -511,8 +520,21 @@ if (indiceTimes) {
       const ar = arenaDoTime.get(String(t.id));
       t.arena = ar?.nome || null;
       t.arena_foto = ar?.foto || null;
+      t.divisao = { nome: DIVISAO_DO_TIME[t.sigla] || t.divisao?.nome || null, posicao: null };
       times.set(String(t.id), t);
     }
+  }
+}
+{
+  const porDiv = new Map();
+  for (const t of times.values()) {
+    const d = t.divisao?.nome; if (!d) continue;
+    if (!porDiv.has(d)) porDiv.set(d, []);
+    porDiv.get(d).push(t);
+  }
+  for (const lista of porDiv.values()) {
+    lista.sort((a, b) => (b.classificacao?.v ?? 0) / Math.max(1, (b.classificacao?.v ?? 0) + (b.classificacao?.d ?? 0)) - (a.classificacao?.v ?? 0) / Math.max(1, (a.classificacao?.v ?? 0) + (a.classificacao?.d ?? 0)) || (a.classificacao?.posicao ?? 99) - (b.classificacao?.posicao ?? 99));
+    lista.forEach((t, i) => { t.divisao.posicao = i + 1; });
   }
 }
 const slugTime = (t) => String(t.sigla).toLowerCase();
@@ -596,7 +618,15 @@ function paginaListaTimes() {
   <h1>Escolha seu time</h1>
   <div class="atalhos-times"><a href="${raiz}/classificacao.html">${icone('trofeu')} Classificação</a><a href="${raiz}/brasileiros.html">${icone('bandeira')} Brasileiros na NBA</a>${powerRankings.length ? `<a href="${raiz}/power-ranking.html">${icone('coroa')} Power ranking</a>` : ''}</div>
   <p class="subtitulo">Os 30 times da NBA, separados por conferência e divisão. Clique no escudo para ver elenco, estatísticas, últimos resultados e próximos jogos.</p>
-  <div class="hero-escudos" aria-hidden="true">${[...times.values()].slice(0, 30).map((t) => logoTime(t, 30)).join('')}</div>
+  <nav class="seletor-times" aria-label="Escolha um time">
+    ${['Leste', 'Oeste'].map((conf) => `<div class="st-conf">
+      <span class="st-conf-nome">${conf}</span>
+      <div class="st-divisoes">${DIVISOES_ORDEM[conf].map((div) => `<div class="st-div">
+        <span class="st-div-nome">${esc(div)}</span>
+        <div class="st-escudos">${[...times.values()].filter((t) => t.divisao?.nome === div).sort((a, b) => a.nome_curto.localeCompare(b.nome_curto)).map((t) => `<a class="st-escudo" href="${raiz}/times/${slugTime(t)}.html" style="--t1:${t.cor || '#ff7a1a'}" data-nome="${esc(t.nome_curto)}" aria-label="${esc(t.nome)}">${logoTime(t, 40)}</a>`).join('')}</div>
+      </div>`).join('')}</div>
+    </div>`).join('')}
+  </nav>
 </section>
 ${galeria('Leste')}
 ${galeria('Oeste')}
