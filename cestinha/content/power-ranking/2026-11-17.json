@@ -1,0 +1,208 @@
+{
+  "titulo": "Power Ranking do Cestinha: Spurs voa com 12 seguidas e Bucks afunda",
+  "subtitulo": "Primeira edição: 12 vitórias seguidas em San Antonio, 76ers no topo do Leste e Jazz e Bucks lá embaixo",
+  "corpo": "E aí, aqui é o Cestinha, estreando o power ranking semanal. No Oeste, o Spurs tem 12 vitórias seguidas e saldo de +12.9 por jogo, e o Lakers vem colado com oito vitórias em sequência. No Leste, o 76ers lidera com 12-3, mas o Celtics tem o melhor saldo da conferência (+11.5) e por isso fica na frente aqui. Lá embaixo, Jazz e Bucks somam uma vitória cada: é ladeira abaixo, papo reto.\n\nComo é a primeira edição, todo mundo começa com tendência \"igual\".",
+  "tipo": "power_ranking",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Spurs",
+    "Lakers",
+    "Celtics",
+    "76ers",
+    "Bucks",
+    "Jazz"
+  ],
+  "jogadores": [],
+  "fontes": [
+    "ESPN"
+  ],
+  "alertas": [],
+  "ranking": [
+    {
+      "posicao": 1,
+      "time": "SA",
+      "tendencia": "igual",
+      "comentario": "12-2, 12 vitórias seguidas e 10-0 nos últimos 10. Atropelou o Warriors por 123 a 85."
+    },
+    {
+      "posicao": 2,
+      "time": "LAL",
+      "tendencia": "igual",
+      "comentario": "Oito vitórias seguidas, com quatro dos últimos cinco jogos fora de casa. Foi brabo."
+    },
+    {
+      "posicao": 3,
+      "time": "BOS",
+      "tendencia": "igual",
+      "comentario": "Saldo de +11.5 é o melhor do Leste. A derrota para o Magic em casa não apaga isso."
+    },
+    {
+      "posicao": 4,
+      "time": "MIN",
+      "tendencia": "igual",
+      "comentario": "10-4 e saldo de +11.3. Passou o rodo no Mavericks por 133 a 94."
+    },
+    {
+      "posicao": 5,
+      "time": "HOU",
+      "tendencia": "igual",
+      "comentario": "11-4 e saldo de +8.3, mas tomou 18 de diferença do Heat no último jogo."
+    },
+    {
+      "posicao": 6,
+      "time": "PHI",
+      "tendencia": "igual",
+      "comentario": "Melhor campanha do Leste (12-3), três vitórias seguidas. O saldo de +2.8 pede atenção."
+    },
+    {
+      "posicao": 7,
+      "time": "MEM",
+      "tendencia": "igual",
+      "comentario": "Três vitórias seguidas e saldo de +9.4. Fez 129 pontos ou mais nos últimos três."
+    },
+    {
+      "posicao": 8,
+      "time": "POR",
+      "tendencia": "igual",
+      "comentario": "9-4 e duas vitórias sobre o Thunder na semana. Que isso, Portland."
+    },
+    {
+      "posicao": 9,
+      "time": "DET",
+      "tendencia": "igual",
+      "comentario": "8-4 e saldo de +5.4, mas levou 20 de diferença do Heat no último jogo."
+    },
+    {
+      "posicao": 10,
+      "time": "NY",
+      "tendencia": "igual",
+      "comentario": "7-6 engana: 7-3 nos últimos 10 e saldo de +5.9."
+    },
+    {
+      "posicao": 11,
+      "time": "OKC",
+      "tendencia": "igual",
+      "comentario": "Três derrotas seguidas antes de reagir em Sacramento. Campanha de 9-5 ainda é boa."
+    },
+    {
+      "posicao": 12,
+      "time": "MIA",
+      "tendencia": "igual",
+      "comentario": "Cinco vitórias seguidas, com Pistons e Rockets na conta. Time mais quente do Leste."
+    },
+    {
+      "posicao": 13,
+      "time": "ATL",
+      "tendencia": "igual",
+      "comentario": "8-6 e saldo positivo. Voltou a vencer em Milwaukee depois de duas derrotas."
+    },
+    {
+      "posicao": 14,
+      "time": "CLE",
+      "tendencia": "igual",
+      "comentario": "Duas vitórias seguidas, 8-7. Ainda oscilando demais: 5-5 nos últimos 10."
+    },
+    {
+      "posicao": 15,
+      "time": "GS",
+      "tendencia": "igual",
+      "comentario": "Três derrotas seguidas, incluindo 123 a 85 para o Spurs. Semana para esquecer."
+    },
+    {
+      "posicao": 16,
+      "time": "DEN",
+      "tendencia": "igual",
+      "comentario": "7-5, mas saldo de só +0.6 e derrota em casa para o Suns."
+    },
+    {
+      "posicao": 17,
+      "time": "ORL",
+      "tendencia": "igual",
+      "comentario": "Quatro vitórias seguidas e foi a Boston vencer. Sobe se o saldo melhorar."
+    },
+    {
+      "posicao": 18,
+      "time": "TOR",
+      "tendencia": "igual",
+      "comentario": "Quatro derrotas seguidas, duas delas por cinco pontos ou menos. Saldo ainda positivo."
+    },
+    {
+      "posicao": 19,
+      "time": "DAL",
+      "tendencia": "igual",
+      "comentario": "Três derrotas seguidas, duas por mais de 35 pontos. Defesa sumiu."
+    },
+    {
+      "posicao": 20,
+      "time": "PHX",
+      "tendencia": "igual",
+      "comentario": "6-7 e vitória em Denver. Venceu três dos últimos cinco."
+    },
+    {
+      "posicao": 21,
+      "time": "IND",
+      "tendencia": "igual",
+      "comentario": "5-9 e 3-7 nos últimos 10. Pelo menos derrubou o Knicks."
+    },
+    {
+      "posicao": 22,
+      "time": "LAC",
+      "tendencia": "igual",
+      "comentario": "4-8, mas duas vitórias seguidas, uma delas sobre o Thunder por um ponto."
+    },
+    {
+      "posicao": 23,
+      "time": "NO",
+      "tendencia": "igual",
+      "comentario": "Quebrou o jejum contra o Warriors, mas antes tomou de 51 e de 34."
+    },
+    {
+      "posicao": 24,
+      "time": "CHA",
+      "tendencia": "igual",
+      "comentario": "Saldo de -10.7 e 2-8 nos últimos 10. Perdeu de 119 a 80 para o Celtics."
+    },
+    {
+      "posicao": 25,
+      "time": "BKN",
+      "tendencia": "igual",
+      "comentario": "3-10. A vitória por 145 a 111 em New Orleans foi ponto fora da curva."
+    },
+    {
+      "posicao": 26,
+      "time": "WSH",
+      "tendencia": "igual",
+      "comentario": "Oito derrotas seguidas. Defesa levando mais de 120 em quatro dos últimos cinco."
+    },
+    {
+      "posicao": 27,
+      "time": "CHI",
+      "tendencia": "igual",
+      "comentario": "3-10 e pior saldo do Leste depois do Bucks (-11.3)."
+    },
+    {
+      "posicao": 28,
+      "time": "SAC",
+      "tendencia": "igual",
+      "comentario": "1-12 e seis derrotas seguidas. As últimas cinco foram em casa."
+    },
+    {
+      "posicao": 29,
+      "time": "UTAH",
+      "tendencia": "igual",
+      "comentario": "1-13 e 12 derrotas seguidas. Pelo menos perdeu por 8 para o Spurs."
+    },
+    {
+      "posicao": 30,
+      "time": "MIL",
+      "tendencia": "igual",
+      "comentario": "1-13, dez derrotas seguidas e pior saldo da liga (-13.6). Lanterna merecida."
+    }
+  ],
+  "ref": {
+    "tipo": "power",
+    "data": "2026-11-17"
+  },
+  "escrito_em": "2026-11-17T17:59:42.661Z"
+}
