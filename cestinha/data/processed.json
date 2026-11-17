@@ -84,5 +84,12 @@
       "em": "2026-11-17T17:59:42.661Z",
       "destino": "publicado"
     }
+  },
+  "jogo_da_noite": {
+    "2026-11-17": {
+      "em": "2026-11-17T18:24:43.029Z",
+      "destino": "publicado",
+      "id_jogo": "401910004"
+    }
   }
 }
