@@ -217,3 +217,31 @@ document.querySelectorAll('.btn-compartilhar').forEach((b) => {
     } catch { /* usuário cancelou */ }
   });
 });
+
+// ---------- Me explica essa NBA: busca e filtro ----------
+(() => {
+  const busca = document.getElementById('busca-verbete');
+  if (!busca) return;
+  const verbetes = [...document.querySelectorAll('.verbete')];
+  const grupos = [...document.querySelectorAll('.ap-grupo')];
+  const vazio = document.querySelector('.ap-vazio');
+  let cat = '';
+  const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const filtrar = () => {
+    const q = norm(busca.value.trim());
+    let n = 0;
+    verbetes.forEach((v) => {
+      const ok = (!cat || v.dataset.cat === cat) && (!q || norm(v.dataset.busca).includes(q));
+      v.hidden = !ok;
+      if (ok) n++;
+    });
+    grupos.forEach((g) => { g.hidden = !g.querySelector('.verbete:not([hidden])'); });
+    vazio.hidden = n > 0;
+  };
+  busca.addEventListener('input', filtrar);
+  document.querySelectorAll('.ap-cat').forEach((b) => b.addEventListener('click', () => {
+    cat = b.dataset.cat;
+    document.querySelectorAll('.ap-cat').forEach((x) => x.classList.toggle('ativo', x === b));
+    filtrar();
+  }));
+})();
