@@ -1,0 +1,47 @@
+{
+  "titulo": "76ers assumem a ponta, Magic derruba o Celtics e Pelicans quebram o jejum",
+  "subtitulo": "Oito jogos na segunda-feira: Embiid fez 37, Mitchell fez 39 e Fears teve o primeiro triplo-duplo",
+  "corpo": "E aí, aqui é o Cestinha. A segunda-feira mexeu no topo do Leste: o Celtics perdeu em casa e o 76ers passou para a liderança da Divisão Atlântico.\n\n**Os jogos que importaram**\n- **Magic 115 x 105 Celtics**: virada no último quarto (40 a 28) e quarta vitória seguida do Magic. Desmond Bane fez 24 pts.\n- **76ers 135 x 123 Nets**: Joel Embiid fez 37 pts e Jaylen Brown, 31 pts. O 76ers vai a 12-3 e lidera o Atlântico.\n- **Timberwolves 106 x 98 Trail Blazers**: Terrence Shannon Jr. fez 34 pts, recorde da carreira, e o Wolves assume a ponta do Noroeste.\n\n**O resto da noite**\n- **Heat 128 x 110 Rockets**: o Heat liderou do começo ao fim e chegou a cinco vitórias seguidas. Giannis fez duplo-duplo.\n- **Grizzlies 136 x 120 Wizards**: Cameron Boozer fez 29 pts no duelo de calouros. Oitava derrota seguida do Wizards.\n- **Cavaliers 126 x 115 Bulls**: Donovan Mitchell anotou 39 pts e o Cavaliers vai a 8-7.\n- **Pelicans 115 x 94 Warriors**: 35 a 11 no primeiro quarto e fim da sequência de seis derrotas. O brasileiro Gui Santos fez 12 pts pelo Warriors.\n- **Suns 117 x 105 Nuggets**: primeira vitória do Suns fora de casa na temporada, com Devin Booker fazendo 20 pts.\n\n**Destaque da noite**: Jeremiah Fears, do Pelicans, com o primeiro triplo-duplo da carreira: 19 pts, 10 reb, 10 ast. Menção honrosa para Donovan Mitchell, cestinha da rodada com 39 pts.",
+  "tipo": "resumo_rodada",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "76ers",
+    "Celtics",
+    "Magic",
+    "Timberwolves",
+    "Trail Blazers",
+    "Heat",
+    "Rockets",
+    "Grizzlies",
+    "Wizards",
+    "Cavaliers",
+    "Bulls",
+    "Pelicans",
+    "Warriors",
+    "Suns",
+    "Nuggets",
+    "Nets"
+  ],
+  "jogadores": [
+    "Joel Embiid",
+    "Jaylen Brown",
+    "Desmond Bane",
+    "Terrence Shannon Jr.",
+    "Giannis Antetokounmpo",
+    "Cameron Boozer",
+    "Donovan Mitchell",
+    "Gui Santos",
+    "Devin Booker",
+    "Jeremiah Fears"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "rodada",
+    "data_rodada": "2026-11-16"
+  },
+  "escrito_em": "2026-11-17T17:43:35.886Z"
+}
