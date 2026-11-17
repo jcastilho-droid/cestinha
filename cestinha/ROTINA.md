@@ -26,6 +26,7 @@ node scripts/pendentes.js
 - `jogos`: cada jogo finalizado que ainda não tem resumo.
 - `rodadas`: rodadas com todos os jogos finalizados e ainda sem resumo da rodada.
 - `power_ranking`: quando não for `null`, é dia de escrever o power ranking semanal (passo 5b).
+- `jogo_da_noite`: quando não for `null`, escreva a recomendação do jogo da noite (passo 5c).
 
 ## 3. Ler o prompt (uma vez por execução)
 Leia `prompts/cestinha.md` inteiro. Ele define persona, regras de ouro e formato.
@@ -65,12 +66,20 @@ node scripts/entrada.js power
 Escreva no modo `power_ranking` (30 times, siglas como na entrada) e salve em
 `content/rascunhos/power-<data>.json`, usando a `data` que veio em `power_ranking`.
 
+## 5c. Jogo da noite (só quando `jogo_da_noite` não for `null`)
+```bash
+node scripts/entrada.js noite <data>
+```
+Use a `data` que veio em `jogo_da_noite`. Escreva no modo `jogo_da_noite`: escolha UM dos
+`candidatos`, explique por que vale a pena assistir e salve em `content/rascunhos/noite-<data>.json`.
+`motivos` só com selos de `motivos_possiveis` do jogo escolhido; números só se estiverem na entrada.
+
 ## 6. Conferir e organizar
 ```bash
 node scripts/finalizar.js
 ```
 Esse script confere cada rascunho (formato, tamanho, placares, números `pts/reb/ast`
-e nomes contra os dados). Sem alertas, o texto vai para `content/jogos/` ou `content/rodadas/`;
+e nomes contra os dados). Sem alertas, o texto vai para `content/jogos/`, `content/rodadas/`, `content/power-ranking/` ou `content/jogo-da-noite/`;
 com alertas, vai para `content/revisao/` e **não** é publicado. Ele também atualiza
 `data/processed.json`. Não corrija nem mova arquivos de `content/revisao/` por conta própria.
 
