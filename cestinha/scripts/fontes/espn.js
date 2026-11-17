@@ -294,7 +294,7 @@ export function normalizarEstatisticasJogadores(bruto) {
 
 export function normalizarTime(base, brutoTime, brutoElenco, brutoCalendario, brutoEstat, statsJogadores, classif) {
   const t = brutoTime.team || {};
-  const m = /^(\d+)\w* in (\w+) Division/.exec(t.standingSummary || '');
+  const m = /(\d+)\w* in (\w+) Division/i.exec(t.standingSummary || '');
   const elenco = (brutoElenco.athletes || []).map((a) => {
     const lesao = (a.injuries || [])[0];
     return {
