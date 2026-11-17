@@ -1,6 +1,6 @@
 {
   "data_rodada": "2026-11-16",
-  "coletado_em": "2026-11-17T02:59:51.116Z",
+  "coletado_em": "2026-11-17T04:07:09.390Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -84,7 +84,7 @@
     {
       "id": "401909997",
       "inicio_utc": "2026-11-17T00:30Z",
-      "status": "em_andamento",
+      "status": "final",
       "periodo": 4,
       "casa": {
         "id": "17",
@@ -93,8 +93,8 @@
         "nome_curto": "Nets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
         "cor": "#000000",
-        "placar": 111,
-        "campanha": "3-9"
+        "placar": 123,
+        "campanha": "3-10"
       },
       "visitante": {
         "id": "20",
@@ -103,8 +103,8 @@
         "nome_curto": "76ers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "cor": "#1d428a",
-        "placar": 122,
-        "campanha": "11-3"
+        "placar": 135,
+        "campanha": "12-3"
       }
     },
     {
@@ -136,7 +136,7 @@
     {
       "id": "401909999",
       "inicio_utc": "2026-11-17T01:00Z",
-      "status": "em_andamento",
+      "status": "final",
       "periodo": 4,
       "casa": {
         "id": "16",
@@ -145,8 +145,8 @@
         "nome_curto": "Timberwolves",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
         "cor": "#266092",
-        "placar": 87,
-        "campanha": "9-4"
+        "placar": 106,
+        "campanha": "10-4"
       },
       "visitante": {
         "id": "22",
@@ -155,15 +155,15 @@
         "nome_curto": "Trail Blazers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
         "cor": "#e03a3e",
-        "placar": 75,
-        "campanha": "9-3"
+        "placar": 98,
+        "campanha": "9-4"
       }
     },
     {
       "id": "401910000",
       "inicio_utc": "2026-11-17T01:00Z",
-      "status": "em_andamento",
-      "periodo": 3,
+      "status": "final",
+      "periodo": 4,
       "casa": {
         "id": "3",
         "sigla": "NO",
@@ -171,8 +171,8 @@
         "nome_curto": "Pelicans",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
         "cor": "#0a2240",
-        "placar": 93,
-        "campanha": "4-10"
+        "placar": 115,
+        "campanha": "5-10"
       },
       "visitante": {
         "id": "9",
@@ -181,15 +181,15 @@
         "nome_curto": "Warriors",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
         "cor": "#fdb927",
-        "placar": 65,
-        "campanha": "8-5"
+        "placar": 94,
+        "campanha": "8-6"
       }
     },
     {
       "id": "401910001",
       "inicio_utc": "2026-11-17T02:00Z",
       "status": "em_andamento",
-      "periodo": 2,
+      "periodo": 4,
       "casa": {
         "id": "7",
         "sigla": "DEN",
@@ -197,7 +197,7 @@
         "nome_curto": "Nuggets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
         "cor": "#0e2240",
-        "placar": 47,
+        "placar": 88,
         "campanha": "7-4"
       },
       "visitante": {
@@ -207,7 +207,7 @@
         "nome_curto": "Suns",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
         "cor": "#29127a",
-        "placar": 48,
+        "placar": 102,
         "campanha": "5-7"
       }
     }
