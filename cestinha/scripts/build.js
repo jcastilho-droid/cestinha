@@ -7,8 +7,9 @@ import { P, RAIZ, lerJson, listarDiasRaw, horaBrasilia, dataPorExtenso, dataCurt
 import { lerRodada, lerJogo, selosDoJogo, lideresDaRodada, linhaEstatistica } from './lib/dados.js';
 import { icone, comIcones, LOGO_ARO } from './lib/icones.js';
 import { gerarCartoes } from './cartoes.js';
+import { VERBETES, CATEGORIAS, exemplosReais } from './lib/verbetes.js';
 
-const MENU = [['rodada', 'index.html', 'bola', 'Rodada'], ['agenda', 'agenda.html', 'calendario', 'Agenda'], ['classificacao', 'classificacao.html', 'trofeu', 'Tabela'], ['times', 'times/index.html', 'escudo', 'Times']];
+const MENU = [['rodada', 'index.html', 'bola', 'Rodada'], ['agenda', 'agenda.html', 'calendario', 'Agenda'], ['classificacao', 'classificacao.html', 'trofeu', 'Tabela'], ['times', 'times/index.html', 'escudo', 'Times'], ['aprenda', 'aprenda.html', 'cesta', 'Aprenda']];
 
 // muda a cada publicação: força o navegador a baixar o visual novo
 const VERSAO = Date.now().toString(36);
@@ -84,7 +85,8 @@ function trilhoEscudos(raiz) {
   </aside>`;
 }
 
-function pagina({ titulo, descricao, corpo, raiz = '.', canonical = '', faixa = '', tema = '', ativo = '', imagem = '' }) {
+function pagina(o) { return paginaBruta(o).replace(/@@RAIZ@@/g, o.raiz || '.'); }
+function paginaBruta({ titulo, descricao, corpo, raiz = '.', canonical = '', faixa = '', tema = '', ativo = '', imagem = '' }) {
   return `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -135,7 +137,7 @@ ${comIcones(corpo)}
       <p class="rodape-marca logo">${LOGO_ARO}<span class="logo-texto">CESTINHA</span></p>
       <p class="rodape-bordao">${esc(SITE.bordao)}</p>
     </div>
-    <p class="rodape-links"><a href="${raiz}/agenda.html">Agenda</a><a href="${raiz}/classificacao.html">Classificação</a><a href="${raiz}/times/index.html">Times</a><a href="${raiz}/brasileiros.html">Brasileiros na NBA</a>${powerRankings.length ? `<a href="${raiz}/power-ranking.html">Power ranking</a>` : ''}</p>
+    <p class="rodape-links"><a href="${raiz}/agenda.html">Agenda</a><a href="${raiz}/classificacao.html">Classificação</a><a href="${raiz}/times/index.html">Times</a><a href="${raiz}/brasileiros.html">Brasileiros na NBA</a><a href="${raiz}/aprenda.html">Me explica essa NBA</a>${powerRankings.length ? `<a href="${raiz}/power-ranking.html">Power ranking</a>` : ''}</p>
     <p>${icone('grafico')} Placar e estatísticas: ESPN. ${icone('raio')} Textos: o Cestinha (IA), com checagem automática dos números.</p>
     <p>${icone('relogio')} Horários de Brasília. Atualizado em ${esc(dataHoraBrasilia(agoraIso()))}. Logos dos times exibidos só para identificação.</p>
   </div>
@@ -761,11 +763,19 @@ const GLOSSARIO = [
   ['tocos', 'Quando o defensor bloqueia o arremesso do adversário.'],
   ['back-to-back', 'Dois jogos em dias seguidos.'],
 ];
+// Cada verbete do "Me explica essa NBA" vira link (com dica) na primeira vez que aparece no texto.
+// @@RAIZ@@ é trocado pelo caminho certo da página em pagina().
+const ALIAS_VERBETES = VERBETES.flatMap((v) => v.alias.map((a) => ({ a, v }))).sort((x, y) => y.a.length - x.a.length);
 function comGlossario(html) {
   let saida = html;
-  for (const [termo, def] of GLOSSARIO) {
-    const re = new RegExp(`(^|[^\\p{L}>-])(${termo})(?![\\p{L}-])(?![^<]*>)`, 'iu');
-    saida = saida.replace(re, (m, antes, achado) => `${antes}<span class="termo" tabindex="0" data-def="${esc(def)}">${achado}</span>`);
+  const usados = new Set();
+  for (const { a, v } of ALIAS_VERBETES) {
+    if (usados.has(v.id)) continue;
+    const termo = a.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&');
+    const re = new RegExp(`(^|[^\\p{L}>-])(${termo})(?![\\p{L}-])(?![^<]*>)(?![^<]*</a>)`, 'iu');
+    if (!re.test(saida)) continue;
+    saida = saida.replace(re, (m, antes, achado) => `${antes}<a class="termo" href="@@RAIZ@@/aprenda.html#${v.id}" data-def="${esc(v.curta)}">${achado}</a>`);
+    usados.add(v.id);
   }
   return saida;
 }
@@ -898,6 +908,35 @@ function dadosMeuTime() {
     };
   }
   return out;
+}
+
+// ---------- Me explica essa NBA ----------
+function paginaAprenda() {
+  const raiz = '.';
+  const ex = exemplosReais();
+  const porId = new Map(VERBETES.map((v) => [v.id, v]));
+  const cartao = (v) => `<article class="verbete" id="${v.id}" data-cat="${esc(v.cat)}" data-busca="${esc(`${v.termo} ${v.alias.join(' ')} ${v.curta}`.toLowerCase())}">
+    <h3><a href="#${v.id}">${esc(v.termo)}</a></h3>
+    <p class="vb-curta">${esc(v.curta)}</p>
+    <div class="texto">${markdown(v.texto)}</div>
+    ${ex[v.id] ? `<div class="vb-pratica"><span>${icone('alvo')} Na prática</span><p>${inline(ex[v.id])}</p></div>` : ''}
+    ${v.veja?.length ? `<p class="vb-veja">Veja também: ${v.veja.map((id) => porId.get(id)).filter(Boolean).map((x) => `<a href="#${x.id}">${esc(x.termo)}</a>`).join('')}</p>` : ''}
+  </article>`;
+  const corpo = `
+<section class="hero hero-aprenda">
+  <p class="sobretitulo">${icone('cesta')} Aprenda com o Cestinha</p>
+  <h1>Me explica essa NBA</h1>
+  <p class="subtitulo">Os termos que aparecem nos jogos e nas resenhas, explicados sem complicação. Os exemplos são reais e se atualizam com os jogos.</p>
+  <div class="ap-busca"><input type="search" id="busca-verbete" placeholder="Procure um termo: triplo-duplo, play-in, teto salarial..." aria-label="Procurar termo" autocomplete="off"></div>
+  <div class="ap-cats" role="group" aria-label="Filtrar por assunto"><button type="button" class="ap-cat ativo" data-cat="">Tudo</button>${CATEGORIAS.map((c) => `<button type="button" class="ap-cat" data-cat="${esc(c)}">${esc(c)}</button>`).join('')}</div>
+</section>
+${CATEGORIAS.map((c) => `<section class="ap-grupo" data-grupo="${esc(c)}">
+  <h2 class="titulo-secao"><span>${esc(c)}</span></h2>
+  <div class="ap-grade">${VERBETES.filter((v) => v.cat === c).map(cartao).join('')}</div>
+</section>`).join('')}
+<p class="ap-vazio" hidden>Não achei esse termo. Tente outra palavra.</p>
+<p class="legenda">Exemplos calculados automaticamente com dados da ESPN. Atualizado em ${esc(dataHoraBrasilia(agoraIso()))}.</p>`;
+  return pagina({ titulo: 'Me explica essa NBA | Cestinha', descricao: 'Glossário da NBA em português: triplo-duplo, play-in, Game Score, teto salarial e mais, com exemplos reais.', corpo, raiz, canonical: '/aprenda.html', ativo: 'aprenda' });
 }
 
 function paginaAgenda() {
@@ -1184,6 +1223,7 @@ if (indiceTimes && times.size) {
     corpo: '<section class="hero"><p class="sobretitulo">Times</p><h1>Chegando já já</h1><p class="subtitulo">Os dados dos times aparecem depois da próxima coleta.</p></section>' }));
 }
 fs.writeFileSync(path.join(P.site, 'agenda.html'), paginaAgenda());
+fs.writeFileSync(path.join(P.site, 'aprenda.html'), paginaAprenda());
 if (times.size) fs.writeFileSync(path.join(P.site, 'assets', 'meu-time.json'), JSON.stringify(dadosMeuTime()));
 if (indiceTimes && times.size) {
   fs.writeFileSync(path.join(P.site, 'classificacao.html'), paginaClassificacao());
