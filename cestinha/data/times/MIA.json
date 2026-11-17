@@ -167,10 +167,7 @@
       "experiencia": 3,
       "universidade": "Arizona",
       "pais": "Sweden",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 11,
         "min": "29.5",
@@ -310,7 +307,10 @@
       "experiencia": 2,
       "universidade": "Little Rock",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 9,
         "min": "10.0",
@@ -1679,5 +1679,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mia",
-  "atualizado_em": "2026-11-17T15:05:28.019Z"
+  "atualizado_em": "2026-11-17T22:04:46.305Z"
 }

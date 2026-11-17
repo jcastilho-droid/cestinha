@@ -52,7 +52,10 @@
       "experiencia": 7,
       "universidade": null,
       "pais": "Israel",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "32.5",
@@ -1679,5 +1682,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/por",
-  "atualizado_em": "2026-11-17T15:05:32.062Z"
+  "atualizado_em": "2026-11-17T22:04:50.847Z"
 }

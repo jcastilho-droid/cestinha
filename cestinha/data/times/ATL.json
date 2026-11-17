@@ -108,7 +108,10 @@
       "experiencia": 14,
       "universidade": "Lehigh",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "26.4",
@@ -1674,5 +1677,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/atl",
-  "atualizado_em": "2026-11-17T15:05:20.996Z"
+  "atualizado_em": "2026-11-17T22:04:39.076Z"
 }

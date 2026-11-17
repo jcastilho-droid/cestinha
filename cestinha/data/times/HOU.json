@@ -251,10 +251,7 @@
       "experiencia": 13,
       "universidade": "Oklahoma State",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 9,
         "min": "21.3",
@@ -310,10 +307,7 @@
       "experiencia": 14,
       "universidade": "Pittsburgh",
       "pais": "New Zealand",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 2,
         "min": "10.5",
@@ -1675,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-17T15:05:25.669Z"
+  "atualizado_em": "2026-11-17T22:04:44.052Z"
 }

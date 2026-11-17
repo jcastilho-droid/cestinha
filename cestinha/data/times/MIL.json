@@ -139,10 +139,7 @@
       "experiencia": 5,
       "universidade": "Toledo",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 13,
         "min": "23.8",
@@ -1681,5 +1678,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mil",
-  "atualizado_em": "2026-11-17T15:05:28.446Z"
+  "atualizado_em": "2026-11-17T22:04:46.848Z"
 }
