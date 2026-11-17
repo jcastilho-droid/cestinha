@@ -1,6 +1,7 @@
 // Monta a ENTRADA que o Cestinha lê antes de escrever (formato do prompt: tipo, dados, contexto).
 // Uso: node scripts/entrada.js jogo 401909990
 //      node scripts/entrada.js rodada 2026-11-15
+import { entradaNoite, hojeBR } from './lib/noite.js';
 import { acharJogo, entradaJogo, entradaRodada, lerRodada, entradaPower } from './lib/dados.js';
 
 const [modo, ref] = process.argv.slice(2);
@@ -14,8 +15,10 @@ if (modo === 'jogo') {
   entrada = entradaRodada(ref);
 } else if (modo === 'power') {
   entrada = entradaPower();
+} else if (modo === 'noite') {
+  entrada = entradaNoite(ref || hojeBR());
 } else {
-  console.error('Uso: node scripts/entrada.js jogo <id> | rodada <AAAA-MM-DD> | power');
+  console.error('Uso: node scripts/entrada.js jogo <id> | rodada <AAAA-MM-DD> | power | noite [AAAA-MM-DD]');
   process.exit(1);
 }
 console.log(JSON.stringify(entrada, null, 2));

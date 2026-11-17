@@ -2,6 +2,7 @@
 // Uso: node scripts/pendentes.js
 import { P, lerJson, listarDiasRaw, dataEUA } from './lib/util.js';
 import { lerRodada, lerJogo } from './lib/dados.js';
+import { candidatosDaNoite, hojeBR as hojeNoite } from './lib/noite.js';
 
 const JANELA_DIAS = 3; // só olha rodadas recentes (não escreve sobre jogo velho)
 const MAX_JOGOS_POR_EXECUCAO = 15;
@@ -43,12 +44,20 @@ const segunda = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo'
 const diasDesde = ultimoPower ? (Date.parse(hojeBR) - Date.parse(ultimoPower)) / 86400000 : 99;
 const power = (segunda && diasDesde >= 1) || diasDesde >= 7 ? { data: hojeBR } : null;
 
+// Jogo da noite: um por dia, escrito antes do primeiro jogo começar
+const diaNoite = hojeNoite();
+const candNoite = candidatosDaNoite(diaNoite);
+const primeiroJogo = candNoite.map((c) => Date.parse(c.inicio_utc)).sort((a, b) => a - b)[0];
+const noite = candNoite.length > 0 && !(feito.jogo_da_noite || {})[diaNoite] && Date.now() < primeiroJogo
+  ? { data: diaNoite, jogos: candNoite.length } : null;
+
 const saida = {
   jogos: jogos.slice(0, MAX_JOGOS_POR_EXECUCAO),
   jogos_ficaram_para_depois: Math.max(0, jogos.length - MAX_JOGOS_POR_EXECUCAO),
   rodadas,
   rodadas_aguardando: aguardando,
   power_ranking: power,
-  nada_novo: jogos.length === 0 && rodadas.length === 0 && !power,
+  jogo_da_noite: noite,
+  nada_novo: jogos.length === 0 && rodadas.length === 0 && !power && !noite,
 };
 console.log(JSON.stringify(saida, null, 2));

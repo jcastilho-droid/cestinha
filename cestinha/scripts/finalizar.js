@@ -8,10 +8,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { P, lerJson, gravarJson, listarArquivos, agoraIso } from './lib/util.js';
 import { acharJogo, lerRodada, lerJogo } from './lib/dados.js';
+import { entradaNoite, MOTIVOS, PASTA_NOITE } from './lib/noite.js';
 
-const TIPOS = { jogo: 'resumo_jogo', rodada: 'resumo_rodada', power: 'power_ranking' };
+const TIPOS = { jogo: 'resumo_jogo', rodada: 'resumo_rodada', power: 'power_ranking', noite: 'jogo_da_noite' };
 const STATUS = ['CONFIRMADO', 'REPORTADO', 'RUMOR', 'N/A'];
-const LIMITE_PALAVRAS = { jogo: [50, 200], rodada: [80, 380], power: [10, 160] };
+const LIMITE_PALAVRAS = { jogo: [50, 200], rodada: [80, 380], power: [10, 160], noite: [40, 150] };
 
 const semAcento = (s) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 const palavras = (s) => String(s).split(/\s+/).filter(Boolean).length;
@@ -85,11 +86,35 @@ function conferirPower(t) {
   return a;
 }
 
+// Jogo da noite: o escolhido precisa ser um dos candidatos, com selos e números que existem na entrada.
+function conferirNoite(t, data) {
+  const a = [];
+  const entrada = entradaNoite(data);
+  const cand = entrada.dados.candidatos.find((c) => String(c.id_jogo) === String(t.id_jogo));
+  if (!cand) return [`"id_jogo" ${t.id_jogo} não está entre os candidatos do dia ${data}.`];
+  const motivos = Array.isArray(t.motivos) ? t.motivos : [];
+  if (!motivos.length || motivos.length > 3) a.push('Campo "motivos" precisa ter de 1 a 3 selos.');
+  for (const mo of motivos) {
+    if (!MOTIVOS.includes(mo)) a.push(`Selo "${mo}" não existe (use: ${MOTIVOS.join(', ')}).`);
+    else if (!cand.motivos_possiveis.includes(mo)) a.push(`Selo "${mo}" não vale para este jogo (possíveis: ${cand.motivos_possiveis.join(', ') || 'nenhum'}).`);
+  }
+  if (typeof t.ficar_de_olho !== 'string' || !t.ficar_de_olho.trim()) a.push('Campo "ficar_de_olho" vazio.');
+  const fatos = JSON.stringify(cand);
+  const texto = `${t.titulo}\n${t.subtitulo}\n${t.corpo}\n${t.ficar_de_olho || ''}`;
+  for (const m of texto.matchAll(/\d+(?:[.,]\d+)?/g)) {
+    const n = m[0].replace(',', '.');
+    if (!fatos.includes(n)) a.push(`Número "${m[0]}" não aparece nos dados do jogo.`);
+  }
+  const nomes = new Set([cand.visitante, cand.mandante].flatMap((x) => [x.estrela?.nome, ...x.desfalques.map((d) => d.nome), ...x.brasileiros]).filter(Boolean).map(semAcento));
+  for (const nome of t.jogadores || []) if (!nomes.has(semAcento(nome))) a.push(`Jogador "${nome}" não aparece nos dados do jogo.`);
+  return a;
+}
+
 for (const arq of listarArquivos(P.rascunhos)) {
-  const m = arq.match(/^(jogo|rodada|power)-(.+)\.json$/);
+  const m = arq.match(/^(jogo|rodada|power|noite)-(.+)\.json$/);
   const caminho = path.join(P.rascunhos, arq);
   if (!m) {
-    relatorio.erros.push(`${arq}: nome fora do padrão (use jogo-<id>.json, rodada-<AAAA-MM-DD>.json ou power-<AAAA-MM-DD>.json)`);
+    relatorio.erros.push(`${arq}: nome fora do padrão (use jogo-<id>.json, rodada-<AAAA-MM-DD>.json ou power-<AAAA-MM-DD>.json ou noite-<AAAA-MM-DD>.json)`);
     continue;
   }
   const [, modo, ref] = m;
@@ -101,6 +126,17 @@ for (const arq of listarArquivos(P.rascunhos)) {
     continue;
   }
 
+  if (modo === 'noite') {
+    const alertasN = [...(Array.isArray(texto.alertas) ? texto.alertas : []), ...[...conferirEstrutura(texto, modo), ...conferirNoite(texto, ref)].map((x) => `[checagem automática] ${x}`)];
+    const finalN = { ...texto, alertas: alertasN, ref: { tipo: 'noite', data: ref }, escrito_em: agoraIso() };
+    const destinoN = alertasN.length ? path.join(P.revisao, `noite-${ref}.json`) : path.join(PASTA_NOITE, `${ref}.json`);
+    gravarJson(destinoN, finalN);
+    fs.unlinkSync(caminho);
+    (alertasN.length ? relatorio.revisao : relatorio.publicados).push(alertasN.length ? { arquivo: path.relative(P.content, destinoN), alertas: alertasN } : path.relative(P.content, destinoN));
+    feito.jogo_da_noite = feito.jogo_da_noite || {};
+    feito.jogo_da_noite[ref] = { em: finalN.escrito_em, destino: alertasN.length ? 'revisao' : 'publicado', id_jogo: texto.id_jogo };
+    continue;
+  }
   if (modo === 'power') {
     const alertasP = [...(Array.isArray(texto.alertas) ? texto.alertas : []), ...[...conferirEstrutura(texto, modo), ...conferirPower(texto)].map((x) => `[checagem automática] ${x}`)];
     const finalP = { ...texto, alertas: alertasP, ref: { tipo: 'power', data: ref }, escrito_em: agoraIso() };

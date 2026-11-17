@@ -324,7 +324,7 @@ function numerosDaRodada(jogos) {
   </div>`;
 }
 
-function blocoRodada(dia, rodada, raiz) {
+function blocoRodada(dia, rodada, raiz, home = false) {
   const resumo = textosRodada.get(dia);
   const jogos = rodada.jogos.map((b) => jogoDoDia(dia, b));
   const ordem = [...jogos].sort((a, b) => (textosJogo.get(b.id)?.importancia || 0) - (textosJogo.get(a.id)?.importancia || 0) || a.inicio_utc.localeCompare(b.inicio_utc));
@@ -356,8 +356,10 @@ function blocoRodada(dia, rodada, raiz) {
   </section>` : '';
   return `
 <section class="rodada">
+  ${home ? `<section class="meu-cestinha" hidden data-v="${VERSAO}"></section>` : ''}
   ${hero}
   ${trintaSeg}
+  ${home ? blocoJogoDaNoite(raiz) : ''}
   ${blocoHojeANoite(raiz)}
   <div class="duas-colunas sec-resumo">
     <div class="coluna-principal">
@@ -808,8 +810,9 @@ function blocoHojeANoite(raiz) {
     <h2 class="titulo-secao"><span>${rotuloDia(dia) === 'Hoje' ? 'Hoje à noite' : `Próxima rodada: ${esc(rotuloDia(dia))}`}</span><small>${doDia.length} jogos · horário de Brasília</small></h2>
     <div class="trilho-hoje">${doDia.map((j) => {
       const v = times.get(String(j.visitante.id)) || j.visitante; const c = times.get(String(j.casa.id)) || j.casa;
-      return `<a class="mini-agenda" href="${raiz}/agenda.html" data-times="${esc(j.visitante.sigla)} ${esc(j.casa.sigla)}">
-        <span class="ma-hora">${esc(horaBrasilia(j.inicio_utc))}</span>
+      const rec = String(jogoDaNoite?.id_jogo) === String(j.id);
+      return `<a class="mini-agenda${rec ? ' recomendado' : ''}" href="${raiz}/agenda.html"${rec ? ' title="Jogo recomendado pelo Cestinha"' : ''} data-times="${esc(j.visitante.sigla)} ${esc(j.casa.sigla)}">
+        <span class="ma-hora">${rec ? icone('estrela') : ''}${esc(horaBrasilia(j.inicio_utc))}</span>
         <span class="ma-logos">${logo({ logo: v.logo, sigla: v.sigla, nome_curto: v.nome_curto }, 28)}<i>@</i>${logo({ logo: c.logo, sigla: c.sigla, nome_curto: c.nome_curto }, 28)}</span>
         <span class="ma-nomes">${esc(j.visitante.sigla)} x ${esc(j.casa.sigla)}</span>
         <small class="contagem" data-inicio="${esc(j.inicio_utc)}"></small>
@@ -817,6 +820,86 @@ function blocoHojeANoite(raiz) {
     }).join('')}</div>
   </section>`;
 }
+// ---------- O Cestinha escolhe o jogo da noite ----------
+const jogoDaNoite = (() => {
+  const arq = path.join(RAIZ, 'content', 'jogo-da-noite', `${diaBR(new Date().toISOString())}.json`);
+  const t = fs.existsSync(arq) ? lerJson(arq) : null;
+  return t && !(t.alertas || []).length ? t : null;
+})();
+function blocoJogoDaNoite(raiz) {
+  const t = jogoDaNoite;
+  if (!t) return '';
+  const j = agenda?.jogos?.find((x) => String(x.id) === String(t.id_jogo));
+  if (!j) return '';
+  const v = times.get(String(j.visitante.id)) || j.visitante;
+  const c = times.get(String(j.casa.id)) || j.casa;
+  const fim = j.status === 'final';
+  const vivo = j.status === 'em_andamento';
+  const ficha = (tm, base) => {
+    const cl = tm.classificacao;
+    const href = paginaDoTime(tm.id, raiz);
+    return `<a class="jn-time" ${href ? `href="${href}"` : ''}>${logo({ logo: tm.logo, sigla: tm.sigla, nome_curto: tm.nome_curto }, 84)}<b>${esc(tm.nome_curto)}</b><small>${esc(base.campanha || (cl ? `${cl.v}-${cl.d}` : ''))}${cl?.posicao ? ` · ${cl.posicao}º no ${esc(tm.conferencia || '')}` : ''}</small>${fim || vivo ? `<em class="jn-pontos pontos">${base.placar ?? ''}</em>` : ''}</a>`;
+  };
+  const temPagina = fim && acharDiaDoJogo(j.id);
+  return `<section class="jogo-da-noite" style="--c1:${v.cor || '#ff7a1a'};--c2:${c.cor || '#ff7a1a'}" data-times="${esc(j.visitante.sigla)} ${esc(j.casa.sigla)}">
+  <p class="jn-rot">${icone('estrela')} Se você só puder assistir a um jogo hoje...</p>
+  <div class="jn-grade">
+    <div class="jn-confronto">
+      ${ficha(v, j.visitante)}
+      <div class="jn-meio"><span class="jn-at">@</span><b class="jn-hora">${fim ? 'Final' : vivo ? 'Ao vivo' : esc(horaBrasilia(j.inicio_utc))}</b>${!fim && !vivo ? '<small>horário de Brasília</small>' : ''}<small class="contagem" data-inicio="${esc(j.inicio_utc)}"></small>${j.tv_eua?.length ? `<small class="jn-tv">${icone('tv')} ${esc(j.tv_eua.slice(0, 2).join(' · '))} (EUA)</small>` : ''}</div>
+      ${ficha(c, j.casa)}
+    </div>
+    <div class="jn-texto">
+      <div class="jn-motivos">${(t.motivos || []).map((m) => `<span class="jn-motivo">${esc(m)}</span>`).join('')}</div>
+      <h2>${esc(t.titulo)}</h2>
+      ${t.subtitulo ? `<p class="jn-sub">${esc(t.subtitulo)}</p>` : ''}
+      <div class="texto">${comGlossario(markdown(t.corpo))}</div>
+      ${t.ficar_de_olho ? `<p class="jn-olho">${icone('olho')} <b>Fique de olho:</b> ${esc(t.ficar_de_olho)}</p>` : ''}
+      ${temPagina ? `<a class="jn-link" href="${raiz}/jogo/${j.id}.html">${icone('lista')} Veja como foi</a>` : ''}
+      <small class="jn-nota">Recomendação do Cestinha (opinião), com dados da ESPN.</small>
+    </div>
+  </div>
+</section>`;
+}
+
+// ---------- Meu Cestinha: dados do time favorito (a home monta no navegador) ----------
+function sequenciaTxt(s) {
+  const m = /^([WL])(\d+)$/.exec(s || '');
+  if (!m) return '';
+  const n = Number(m[2]);
+  return m[1] === 'W' ? (n === 1 ? '1 vitória' : `${n} vitórias seguidas`) : (n === 1 ? '1 derrota' : `${n} derrotas seguidas`);
+}
+function dadosMeuTime() {
+  const out = {};
+  const adv = (x) => {
+    const a = times.get(String(x.adversario?.id));
+    return { sigla: a?.sigla || x.adversario?.sigla, nome: a?.nome_curto || x.adversario?.nome_curto, logo: a ? logoEscuro(a.logo) : '', href: a ? `times/${slugTime(a)}.html` : null };
+  };
+  for (const t of times.values()) {
+    const c = t.classificacao || {};
+    const jogos = t.jogos || [];
+    const fin = jogos.filter((j) => j.finalizado && j.placar);
+    const ult = fin.at(-1);
+    const prox = jogos.filter((j) => !j.finalizado && Date.parse(j.data_utc) > Date.now() - 3 * 3600e3).sort((a, b) => a.data_utc.localeCompare(b.data_utc))[0];
+    const textos = [...fin].reverse().filter((j) => textosJogo.has(String(j.id))).slice(0, 3)
+      .map((j) => ({ titulo: textosJogo.get(String(j.id)).titulo, href: `jogo/${j.id}.html`, data: dataCurtaIso(j.data_utc) }));
+    const destaques = (t.elenco || []).filter((p) => p.medias && p.medias.jogos >= 3)
+      .sort((a, b) => Number(b.medias.pts) - Number(a.medias.pts)).slice(0, 3)
+      .map((p) => ({ nome: p.nome, numero: p.numero || '', posicao: p.posicao || '', linha: `${p.medias.pts} pts, ${p.medias.reb} reb, ${p.medias.ast} ast`, lesao: p.lesao?.status === 'Out' ? 'fora' : p.lesao ? 'dúvida' : null }));
+    out[t.sigla] = {
+      sigla: t.sigla, nome: t.nome, nome_curto: t.nome_curto, cor: t.cor, cor2: t.cor_alt, acento: corDestaque(t),
+      logo: logoEscuro(t.logo), href: `times/${slugTime(t)}.html`, conferencia: t.conferencia || '',
+      posicao: c.posicao ?? null, campanha: `${c.v ?? 0}-${c.d ?? 0}`, sequencia: sequenciaTxt(c.sequencia), ultimos10: c.ultimos10 || '',
+      divisao: t.divisao?.nome ? { nome: t.divisao.nome, posicao: t.divisao.posicao } : null,
+      ultimo: ult ? { ...adv(ult), em_casa: ult.em_casa, pts: ult.placar.time, pts_adv: ult.placar.adversario, resultado: ult.resultado, data: dataCurtaIso(ult.data_utc), jogo: acharDiaDoJogo(ult.id) ? `jogo/${ult.id}.html` : null } : null,
+      proximo: prox ? { ...adv(prox), em_casa: prox.em_casa, inicio_utc: prox.data_utc } : null,
+      destaques, textos,
+      recomendado: jogoDaNoite && prox && String(prox.id) === String(jogoDaNoite.id_jogo) ? jogoDaNoite.titulo : null,
+    };
+  }
+  return out;
+}
+
 function paginaAgenda() {
   const raiz = '.';
   if (!agenda?.jogos?.length) {
@@ -1081,7 +1164,7 @@ for (const { dia, rodada } of dias) {
 const comFinal = dias.filter((d) => d.rodada.jogos.some((j) => j.status === 'final'));
 const atual = (comFinal.length ? comFinal : dias).at(-1);
 const corpoHome = atual
-  ? blocoRodada(atual.dia, atual.rodada, '.') + listaAnteriores(atual.dia, '.')
+  ? blocoRodada(atual.dia, atual.rodada, '.', true) + listaAnteriores(atual.dia, '.')
   : `<section class="rodada"><article class="hero"><p class="sobretitulo">${esc(SITE.slogan)}</p><h1>${esc(SITE.bordao)}</h1><p class="subtitulo">Assim que rolar jogo, os resumos aparecem aqui.</p></article></section>`;
 fs.writeFileSync(path.join(P.site, 'index.html'), pagina({
   titulo: 'Cestinha | A NBA pra quem dormiu',
@@ -1101,6 +1184,7 @@ if (indiceTimes && times.size) {
     corpo: '<section class="hero"><p class="sobretitulo">Times</p><h1>Chegando já já</h1><p class="subtitulo">Os dados dos times aparecem depois da próxima coleta.</p></section>' }));
 }
 fs.writeFileSync(path.join(P.site, 'agenda.html'), paginaAgenda());
+if (times.size) fs.writeFileSync(path.join(P.site, 'assets', 'meu-time.json'), JSON.stringify(dadosMeuTime()));
 if (indiceTimes && times.size) {
   fs.writeFileSync(path.join(P.site, 'classificacao.html'), paginaClassificacao());
   fs.writeFileSync(path.join(P.site, 'brasileiros.html'), paginaBrasileiros());
