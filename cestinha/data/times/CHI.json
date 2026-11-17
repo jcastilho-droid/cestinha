@@ -31,7 +31,6 @@
     "posicao": 4
   },
   "tecnico": "Tiago Splitter",
-  "arena": "United Center",
   "estatisticas": {
     "pts": "114.6",
     "reb": "44.3",
@@ -143,10 +142,7 @@
       "experiencia": 7,
       "universidade": "Maryland",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 11,
         "min": "24.7",
@@ -1705,5 +1701,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-16T18:43:29.544Z"
+  "atualizado_em": "2026-11-17T01:27:31.824Z"
 }

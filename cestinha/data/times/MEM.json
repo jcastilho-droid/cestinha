@@ -28,7 +28,6 @@
   },
   "divisao": null,
   "tecnico": "Tuomas Iisalo",
-  "arena": "FedExForum",
   "estatisticas": {
     "pts": "120.6",
     "reb": "47.4",
@@ -283,10 +282,7 @@
       "experiencia": 3,
       "universidade": "Purdue",
       "pais": "Canada",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 10,
         "min": "20.7",
@@ -404,10 +400,7 @@
       "experiencia": 3,
       "universidade": "Boston College",
       "pais": "Netherlands",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 8,
         "min": "13.0",
@@ -1717,5 +1710,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-16T18:43:32.056Z"
+  "atualizado_em": "2026-11-17T01:27:37.421Z"
 }

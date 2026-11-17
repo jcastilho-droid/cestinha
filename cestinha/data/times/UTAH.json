@@ -28,7 +28,6 @@
   },
   "divisao": null,
   "tecnico": "Will Hardy",
-  "arena": "Delta Center",
   "estatisticas": {
     "pts": "107.1",
     "reb": "44.1",
@@ -228,7 +227,7 @@
       "universidade": "Texas",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1675,5 +1674,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/utah",
-  "atualizado_em": "2026-11-16T18:43:35.574Z"
+  "atualizado_em": "2026-11-17T01:27:45.852Z"
 }

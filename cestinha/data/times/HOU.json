@@ -28,7 +28,6 @@
   },
   "divisao": null,
   "tecnico": "Ime Udoka",
-  "arena": "Toyota Center (Houston)",
   "estatisticas": {
     "pts": "118.4",
     "reb": "45.2",
@@ -110,7 +109,7 @@
       "universidade": null,
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1673,5 +1672,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-16T18:43:31.051Z"
+  "atualizado_em": "2026-11-17T01:27:35.241Z"
 }

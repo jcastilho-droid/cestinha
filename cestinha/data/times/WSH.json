@@ -28,7 +28,6 @@
   },
   "divisao": null,
   "tecnico": "Brian Keefe",
-  "arena": "Capital One Arena",
   "estatisticas": {
     "pts": "110.6",
     "reb": "42.5",
@@ -193,10 +192,7 @@
       "experiencia": 2,
       "universidade": "Texas",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "23.5",
@@ -1701,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/wsh",
-  "atualizado_em": "2026-11-16T18:43:35.825Z"
+  "atualizado_em": "2026-11-17T01:27:46.437Z"
 }

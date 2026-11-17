@@ -28,7 +28,6 @@
   },
   "divisao": null,
   "tecnico": "Erik Spoelstra",
-  "arena": "Kaseya Center",
   "estatisticas": {
     "pts": "118.7",
     "reb": "42.8",
@@ -166,7 +165,7 @@
       "universidade": "Arizona",
       "pais": "Sweden",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -309,7 +308,7 @@
       "universidade": null,
       "pais": null,
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1674,5 +1673,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mia",
-  "atualizado_em": "2026-11-16T18:43:32.308Z"
+  "atualizado_em": "2026-11-17T01:27:37.935Z"
 }

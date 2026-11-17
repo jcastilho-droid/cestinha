@@ -31,7 +31,6 @@
     "posicao": 1
   },
   "tecnico": "J.B. Bickerstaff",
-  "arena": "Little Caesars Arena",
   "estatisticas": {
     "pts": "115.7",
     "reb": "44.4",
@@ -85,7 +84,7 @@
       "universidade": "Michigan",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -345,7 +344,10 @@
       "experiencia": 3,
       "universidade": null,
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 12,
         "min": "15.9",
@@ -401,7 +403,10 @@
       "experiencia": 11,
       "universidade": "Baylor",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 3,
         "min": "7.3",
@@ -1677,5 +1682,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/det",
-  "atualizado_em": "2026-11-16T18:43:30.548Z"
+  "atualizado_em": "2026-11-17T01:27:34.088Z"
 }

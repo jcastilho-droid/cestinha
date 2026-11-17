@@ -28,7 +28,6 @@
   },
   "divisao": null,
   "tecnico": "Mitch Johnson",
-  "arena": "Frost Bank Center",
   "estatisticas": {
     "pts": "118.8",
     "reb": "48.6",
@@ -137,10 +136,7 @@
       "experiencia": 10,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 13,
         "min": "28.5",
@@ -1667,5 +1663,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sa",
-  "atualizado_em": "2026-11-16T18:43:35.072Z"
+  "atualizado_em": "2026-11-17T01:27:44.449Z"
 }

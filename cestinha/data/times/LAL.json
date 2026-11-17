@@ -31,7 +31,6 @@
     "posicao": 1
   },
   "tecnico": "JJ Redick",
-  "arena": "crypto.com Arena",
   "estatisticas": {
     "pts": "122.8",
     "reb": "40.8",
@@ -85,7 +84,7 @@
       "universidade": "Oklahoma",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -115,7 +114,10 @@
       "experiencia": 5,
       "universidade": "Auburn",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "30.9",
@@ -1720,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lal",
-  "atualizado_em": "2026-11-16T18:43:31.805Z"
+  "atualizado_em": "2026-11-17T01:27:36.818Z"
 }

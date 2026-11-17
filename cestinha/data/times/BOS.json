@@ -31,7 +31,6 @@
     "posicao": 1
   },
   "tecnico": "Joe Mazzulla",
-  "arena": "TD Garden",
   "estatisticas": {
     "pts": "115.5",
     "reb": "45.3",
@@ -169,7 +168,7 @@
       "universidade": "Utah State",
       "pais": "Portugal",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1674,5 +1673,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-16T18:43:28.789Z"
+  "atualizado_em": "2026-11-17T01:27:29.600Z"
 }

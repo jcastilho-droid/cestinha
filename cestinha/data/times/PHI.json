@@ -31,7 +31,6 @@
     "posicao": 2
   },
   "tecnico": "Nick Nurse",
-  "arena": "Xfinity Mobile Arena",
   "estatisticas": {
     "pts": "112.6",
     "reb": "42.9",
@@ -112,10 +111,7 @@
       "experiencia": 11,
       "universidade": "Kansas",
       "pais": "Cameroon",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 11,
         "min": "31.5",
@@ -1676,5 +1672,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-16T18:43:34.067Z"
+  "atualizado_em": "2026-11-17T01:27:42.196Z"
 }
