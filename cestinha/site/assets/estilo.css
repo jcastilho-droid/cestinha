@@ -1084,3 +1084,8 @@ a.termo:hover { color: var(--laranja-2); text-decoration: none; }
   .menu a { padding: 7px 10px; font-size: 13px; letter-spacing: .5px; }
   .botao-spoiler span { display: none; }
 }
+
+/* assinatura no rodapé */
+.rodape-autor { margin-top: 14px !important; padding-top: 12px; border-top: 1px solid var(--borda); font-size: 13px; color: var(--suave); }
+.rodape-autor b { color: var(--texto); font-weight: 700; }
+.rodape-autor span { color: var(--laranja); font-weight: 800; letter-spacing: .3px; }
