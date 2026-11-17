@@ -81,7 +81,7 @@
     document.querySelectorAll('.revelado').forEach((el) => el.classList.remove('revelado'));
     aplicarSpoiler(on);
   });
-  const SEL = '.pontos, .fx-time b, .ep-placar, .card-titulo, .hero h1, .hero .subtitulo, .em-30s ul, .resumo-rodada .texto, .carta-stats, .carta-gs, .lider-valor, .dn-numeros, .numeros, .resenha, .tags, .comparativo, .box, .parciais, .grafico-jogo .gj-caixa, .paineis-arremessos, .jt-placar, .jt-res, .card-epico p, .mini-destaques, .pontos-ag';
+  const SEL = '.pontos, .fx-time b, .ep-placar, .card-titulo, .hero h1, .hero .subtitulo, .em-30s ul, .resumo-rodada .texto, .carta-stats, .carta-gs, .lider-valor, .dn-numeros, .numeros, .resenha, .tags, .comparativo, .box, .parciais, .grafico-jogo .gj-caixa, .paineis-arremessos, .jt-placar, .jt-res, .card-epico p, .mini-destaques, .pontos-ag, .mc-placar, .mc-res, .mc-textos';
   document.addEventListener('click', (ev) => {
     if (!document.body.classList.contains('sem-spoiler')) return;
     const el = ev.target.closest(SEL);
@@ -116,8 +116,84 @@
     });
   }
 
+  // Meu Cestinha: a home começa pelo time favorito
+  const caixa = document.querySelector('.meu-cestinha');
+  if (caixa) {
+    const h = (x) => String(x ?? '').replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+    const tz = { timeZone: 'America/Sao_Paulo' };
+    const diaTxt = (iso) => {
+      const f = (d) => new Intl.DateTimeFormat('en-CA', tz).format(d);
+      const d = new Date(iso);
+      if (f(d) === f(new Date())) return 'Hoje';
+      if (f(d) === f(new Date(Date.now() + 864e5))) return 'Amanhã';
+      return new Intl.DateTimeFormat('pt-BR', { ...tz, weekday: 'short', day: '2-digit', month: '2-digit' }).format(d).replace('.', '');
+    };
+    const horaTxt = (iso) => new Intl.DateTimeFormat('pt-BR', { ...tz, hour: '2-digit', minute: '2-digit' }).format(new Date(iso)).replace(':', 'h');
+    const img = (src, alt, tam) => (src ? `<img src="${h(src)}" alt="${h(alt)}" width="${tam}" height="${tam}" loading="lazy">` : `<span class="mc-sigla">${h(alt)}</span>`);
+    const seletor = (dados, comCancelar) => {
+      const lista = Object.values(dados).sort((a, b) => a.nome_curto.localeCompare(b.nome_curto));
+      return `<details class="mc-escolha"${comCancelar ? ' open' : ''}>
+        <summary><span class="mc-estrela">★</span><b>Monte o seu Cestinha</b><small>Escolha seu time e a página inicial passa a começar por ele.</small></summary>
+        <div class="mc-escudos">${lista.map((t) => `<button type="button" class="mc-escudo" data-escolher="${h(t.sigla)}" style="--t1:${h(t.cor || '#ff7a1a')}" title="${h(t.nome)}">${img(t.logo, t.sigla, 40)}<span>${h(t.nome_curto)}</span></button>`).join('')}</div>
+        <p class="mc-aviso">Fica salvo só neste navegador. Não precisa de cadastro.${comCancelar ? ' <button type="button" class="mc-link" data-cancelar>Cancelar</button>' : ''}</p>
+      </details>`;
+    };
+    const cartao = (t) => {
+      const u = t.ultimo; const p = t.proximo;
+      const colocacao = [t.posicao ? `${t.posicao}º no ${h(t.conferencia)}` : '', t.campanha, t.sequencia].filter(Boolean).join(' · ');
+      const blocoUlt = u ? `<div class="mc-bloco">
+          <p class="mc-rot">Último jogo · ${h(u.data)}</p>
+          <div class="mc-jogo"><span class="mc-res ${u.resultado === 'V' ? 'v' : 'd'}">${u.resultado === 'V' ? 'Vitória' : 'Derrota'}</span>
+          <span class="mc-placar">${u.pts} a ${u.pts_adv}</span></div>
+          <p class="mc-adv">${u.em_casa ? 'contra' : 'na casa do'} ${img(u.logo, u.sigla, 22)} <b>${h(u.nome)}</b></p>
+          ${u.jogo ? `<a class="mc-link" href="${raiz}${h(u.jogo)}">Ler a resenha do Cestinha →</a>` : ''}
+        </div>` : '';
+      const blocoProx = p ? `<div class="mc-bloco">
+          <p class="mc-rot">Próximo jogo</p>
+          <div class="mc-jogo"><span class="mc-quando">${h(diaTxt(p.inicio_utc))}</span><span class="mc-hora">${h(horaTxt(p.inicio_utc))}</span></div>
+          <p class="mc-adv">${p.em_casa ? 'recebe o' : 'visita o'} ${img(p.logo, p.sigla, 22)} <b>${h(p.nome)}</b></p>
+          <small class="contagem" data-inicio="${h(p.inicio_utc)}"></small>
+          ${t.recomendado ? '<p class="mc-rec">★ É o jogo recomendado pelo Cestinha hoje!</p>' : ''}
+        </div>` : '';
+      const blocoJog = t.destaques.length ? `<div class="mc-bloco">
+          <p class="mc-rot">Quem carrega o time</p>
+          <ol class="mc-jogadores">${t.destaques.map((d) => `<li><span class="mc-num">${h(d.numero)}</span><div><b>${h(d.nome)}</b>${d.lesao ? ` <em class="mc-lesao">${h(d.lesao)}</em>` : ''}<small>${h(d.linha)} por jogo</small></div></li>`).join('')}</ol>
+        </div>` : '';
+      const textos = t.textos.length ? `<div class="mc-textos"><p class="mc-rot">O Cestinha escreveu</p><ul>${t.textos.map((x) => `<li><a href="${raiz}${h(x.href)}"><small>${h(x.data)}</small> ${h(x.titulo)}</a></li>`).join('')}</ul></div>` : '';
+      return `<div class="mc-cartao" style="--t1:${h(t.cor || '#ff7a1a')};--t2:${h(t.cor2 || t.cor || '#ff7a1a')};--acento:${h(t.acento || '#ff7a1a')}">
+        <img class="mc-marca" src="${h(t.logo)}" alt="" aria-hidden="true">
+        <header class="mc-topo">${img(t.logo, t.sigla, 64)}
+          <div><p class="mc-sobre">★ Meu Cestinha</p><h2>${h(t.nome)}</h2><p class="mc-col">${colocacao}${t.divisao ? ` · ${t.divisao.posicao}º na divisão ${h(t.divisao.nome)}` : ''}</p></div>
+          <div class="mc-acoes"><a class="mc-botao" href="${raiz}${h(t.href)}">Página do time</a><button type="button" class="mc-link" data-trocar>Trocar de time</button></div>
+        </header>
+        <div class="mc-grade">${blocoUlt}${blocoProx}${blocoJog}</div>
+        ${textos}
+      </div>`;
+    };
+    fetch(`${raiz}assets/meu-time.json?v=${caixa.dataset.v || ''}`).then((r) => r.json()).then((dados) => {
+      const desenhar = (trocando) => {
+        const atual = (() => { try { return JSON.parse(ler('cestinha-meu-time') || 'null'); } catch { return null; } })();
+        caixa.innerHTML = !trocando && atual && dados[atual.sigla] ? cartao(dados[atual.sigla]) : seletor(dados, trocando);
+        caixa.hidden = false;
+        contar();
+      };
+      caixa.addEventListener('click', (ev) => {
+        const esc1 = ev.target.closest('[data-escolher]');
+        if (esc1) {
+          const t = dados[esc1.dataset.escolher];
+          gravar('cestinha-meu-time', JSON.stringify({ sigla: t.sigla, logo: t.logo, href: t.href.replace(/^times\//, ''), nome: t.nome_curto }));
+          location.reload();
+          return;
+        }
+        if (ev.target.closest('[data-trocar]')) desenhar(true);
+        if (ev.target.closest('[data-cancelar]')) desenhar(false);
+      });
+      desenhar(false);
+    }).catch(() => { /* sem dados: a home segue normal */ });
+  }
+
   // Contagem regressiva (agenda e "hoje à noite")
-  const contar = () => {
+  function contar() {
     const agora = Date.now();
     document.querySelectorAll('.contagem[data-inicio]').forEach((el) => {
       const ms = Date.parse(el.dataset.inicio) - agora;
