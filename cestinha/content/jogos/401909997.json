@@ -1,0 +1,48 @@
+{
+  "titulo": "Embiid faz 37, Brown faz 31 e 76ers assumem a ponta do Atlântico",
+  "subtitulo": "76ers chegaram a abrir 24 pontos e seguraram a reação do Nets",
+  "corpo": "O 76ers venceu o Nets por 135 a 123 no Brooklyn e assumiu a liderança da Divisão Atlântico.\n\nJoel Embiid teve sua melhor noite na temporada: 37 pts, 5 reb, 1 ast, incluindo a bola de três que deu respiro a 52 segundos do fim. Jaylen Brown fez duplo-duplo com 31 pts, 13 reb, 4 ast, e Tyrese Maxey somou 24 pts e 9 ast. O segundo quarto foi de 45 pontos e decidiu o jogo.\n\nPelo Nets, Julius Randle fez 33 pts, Michael Porter Jr. anotou 25 pts e Nolan Traore, 23 pts.\n\n**E agora?** O 76ers vai a 12-3, com três vitórias seguidas, meio jogo à frente do Celtics. O Nets cai para 3-10.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "76ers",
+    "Nets"
+  ],
+  "jogadores": [
+    "Joel Embiid",
+    "Jaylen Brown",
+    "Tyrese Maxey",
+    "Julius Randle",
+    "Michael Porter Jr.",
+    "Nolan Traore"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O 76ers (12-3) passa o Celtics e lidera a Divisão Atlântico.",
+  "notas": [
+    {
+      "jogador": "Joel Embiid",
+      "nota": 9,
+      "comentario": "37 pts, melhor jogo na temporada"
+    },
+    {
+      "jogador": "Jaylen Brown",
+      "nota": 8.5,
+      "comentario": "31 pts e 13 reb"
+    },
+    {
+      "jogador": "Julius Randle",
+      "nota": 7,
+      "comentario": "33 pts na derrota"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909997",
+    "data_rodada": "2026-11-16"
+  },
+  "escrito_em": "2026-11-17T17:43:35.878Z"
+}

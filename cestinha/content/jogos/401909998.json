@@ -1,0 +1,49 @@
+{
+  "titulo": "Heat atropela o Rockets e chega a cinco vitórias seguidas",
+  "subtitulo": "Giannis fez duplo-duplo; Klay Thompson acertou 5 bolas de três em 22 minutos",
+  "corpo": "O Heat não perdeu a liderança em nenhum momento e venceu o Rockets por 128 a 110 em Miami. O primeiro quarto (29 a 15) já deixou o tom do jogo.\n\nGiannis Antetokounmpo comandou com 20 pts, 13 reb, 6 ast e 3 tocos. Klay Thompson saiu do banco com 17 pts e 5 de 8 de três, Andrew Wiggins também fez 17 pts e Davion Mitchell deu 10 ast.\n\nPelo Rockets, que jogou sem Amen Thompson (dor no joelho esquerdo), Alperen Sengun fez 23 pts e Kevin Durant somou 22 pts.\n\n**E agora?** O Heat vai a 8-6, com cinco vitórias seguidas, e divide a ponta da Divisão Sudeste com o Hawks. O Rockets cai para 11-4.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Heat",
+    "Rockets"
+  ],
+  "jogadores": [
+    "Giannis Antetokounmpo",
+    "Klay Thompson",
+    "Andrew Wiggins",
+    "Davion Mitchell",
+    "Alperen Sengun",
+    "Kevin Durant",
+    "Amen Thompson"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Quinta vitória seguida do Heat, que divide a liderança da Divisão Sudeste.",
+  "notas": [
+    {
+      "jogador": "Giannis Antetokounmpo",
+      "nota": 8.5,
+      "comentario": "20 pts, 13 reb e 3 tocos"
+    },
+    {
+      "jogador": "Klay Thompson",
+      "nota": 8,
+      "comentario": "5 de 8 de três em 22 minutos"
+    },
+    {
+      "jogador": "Alperen Sengun",
+      "nota": 6.5,
+      "comentario": "23 pts, pouco para segurar"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909998",
+    "data_rodada": "2026-11-16"
+  },
+  "escrito_em": "2026-11-17T17:43:35.878Z"
+}

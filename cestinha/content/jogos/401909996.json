@@ -1,0 +1,53 @@
+{
+  "titulo": "Cameron Boozer faz 29 no duelo de calouros e Grizzlies afundam o Wizards",
+  "subtitulo": "Grizzlies tiraram 12 pontos de desvantagem; Wizards perdem a oitava seguida",
+  "corpo": "Duelo de calouros em Washington, e deu Memphis. O Grizzlies chegou a perder por 12, mas venceu o Wizards por 136 a 120, com um terceiro quarto de 42 a 18.\n\nCameron Boozer fez sua maior pontuação na temporada: 29 pts, 7 reb, 7 ast, com 7 bolas de três. Zach Edey somou 23 pts e 10 reb em 21 minutos, e Javon Small distribuiu 12 ast. Foram 42 assistências do Grizzlies, um passe atrás do outro.\n\nPelo Wizards, Anthony Davis fez 23 pts e o calouro AJ Dybantsa anotou 21 pts. Trae Young deu 12 ast.\n\n**E agora?** O Grizzlies vai a 10-4, com três vitórias seguidas. O Wizards cai para 4-11 e perde a oitava seguida.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Grizzlies",
+    "Wizards"
+  ],
+  "jogadores": [
+    "Cameron Boozer",
+    "Zach Edey",
+    "Javon Small",
+    "Anthony Davis",
+    "AJ Dybantsa",
+    "Trae Young"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Terceira vitória seguida do Grizzlies (10-4) e oitava derrota seguida do Wizards.",
+  "notas": [
+    {
+      "jogador": "Cameron Boozer",
+      "nota": 9,
+      "comentario": "29 pts e 7 bolas de três"
+    },
+    {
+      "jogador": "Zach Edey",
+      "nota": 8,
+      "comentario": "23 pts e 10 reb em 21 minutos"
+    },
+    {
+      "jogador": "Javon Small",
+      "nota": 7.5,
+      "comentario": "12 ast"
+    },
+    {
+      "jogador": "AJ Dybantsa",
+      "nota": 6.5,
+      "comentario": "21 pts, mas 1 de 7 de três"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909996",
+    "data_rodada": "2026-11-16"
+  },
+  "escrito_em": "2026-11-17T17:43:35.877Z"
+}

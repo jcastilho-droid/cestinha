@@ -1,0 +1,46 @@
+{
+  "titulo": "Terrence Shannon Jr. faz 34, recorde da carreira, e Wolves seguram o Blazers",
+  "subtitulo": "Gobert pegou 15 rebotes; Deni Avdija fez 27 pelo Portland",
+  "corpo": "O Timberwolves venceu o Trail Blazers por 106 a 98 em Minneapolis, num duelo direto pela liderança da Divisão Noroeste.\n\nO nome do jogo foi Terrence Shannon Jr.: 34 pts, 3 reb, 6 ast, sua maior pontuação na carreira, com 15 de 16 nos lances livres. Rudy Gobert fez duplo-duplo com 18 pts, 15 reb, 3 ast.\n\nPelo Blazers, Deni Avdija fez 27 pts sem errar de três (3 de 3) e Donovan Clingan teve 10 pts, 10 reb e 5 tocos.\n\n**E agora?** O Wolves vai a 10-4 e lidera o Noroeste, meio jogo à frente do Blazers (9-4). Os dois voltam a se enfrentar na sequência.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Timberwolves",
+    "Trail Blazers"
+  ],
+  "jogadores": [
+    "Terrence Shannon Jr.",
+    "Rudy Gobert",
+    "Deni Avdija",
+    "Donovan Clingan"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Wolves (10-4) assume a ponta da Divisão Noroeste.",
+  "notas": [
+    {
+      "jogador": "Terrence Shannon Jr.",
+      "nota": 9,
+      "comentario": "34 pts, recorde da carreira"
+    },
+    {
+      "jogador": "Rudy Gobert",
+      "nota": 7.5,
+      "comentario": "18 pts e 15 reb"
+    },
+    {
+      "jogador": "Deni Avdija",
+      "nota": 7,
+      "comentario": "27 pts na derrota"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909999",
+    "data_rodada": "2026-11-16"
+  },
+  "escrito_em": "2026-11-17T17:43:35.881Z"
+}

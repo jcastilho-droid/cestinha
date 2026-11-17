@@ -1,0 +1,52 @@
+{
+  "titulo": "Jeremiah Fears faz o primeiro triplo-duplo e Pelicans quebram jejum contra o Warriors",
+  "subtitulo": "Pelicans encerram sequência de seis derrotas; Gui Santos fez 12 pts pelo Warriors",
+  "corpo": "O Pelicans venceu o Warriors por 115 a 94 em New Orleans e acabou com uma sequência de seis derrotas. O jogo foi decidido cedo: 35 a 11 no primeiro quarto, e o Pelicans nunca saiu da frente.\n\nJeremiah Fears teve o primeiro triplo-duplo da carreira, com 19 pts, 10 reb, 10 ast. Saddiq Bey foi o cestinha do time com 23 pts e 5 bolas de três, e Derik Queen fez duplo-duplo (17 pts, 10 reb).\n\nPelo Warriors, Yaxel Lendeborg fez 28 pts. O brasileiro Gui Santos saiu do banco com 12 pts, 7 reb, 2 ast em 19 minutos.\n\n**E agora?** O Pelicans vai a 5-10. O Warriors cai para 8-6, com três derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Pelicans",
+    "Warriors"
+  ],
+  "jogadores": [
+    "Jeremiah Fears",
+    "Saddiq Bey",
+    "Derik Queen",
+    "Yaxel Lendeborg",
+    "Gui Santos"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Pelicans encerra a sequência de seis derrotas, e o Warriors perde a terceira seguida.",
+  "notas": [
+    {
+      "jogador": "Jeremiah Fears",
+      "nota": 9,
+      "comentario": "primeiro triplo-duplo da carreira"
+    },
+    {
+      "jogador": "Saddiq Bey",
+      "nota": 8,
+      "comentario": "23 pts e 5 bolas de três"
+    },
+    {
+      "jogador": "Gui Santos",
+      "nota": 6.5,
+      "comentario": "12 pts e 7 reb do banco"
+    },
+    {
+      "jogador": "Yaxel Lendeborg",
+      "nota": 6.5,
+      "comentario": "28 pts, mas -30 em quadra"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910000",
+    "data_rodada": "2026-11-16"
+  },
+  "escrito_em": "2026-11-17T17:43:35.882Z"
+}

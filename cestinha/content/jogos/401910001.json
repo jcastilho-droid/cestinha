@@ -1,0 +1,48 @@
+{
+  "titulo": "Suns ganham do Nuggets e enfim vencem fora de casa",
+  "subtitulo": "Booker fez 20 pts e 8 ast; Jokic e Murray fizeram 28 cada",
+  "corpo": "O Suns venceu o Nuggets por 117 a 105 em Denver, a primeira vitória do time fora de casa na temporada.\n\nDevin Booker liderou com 20 pts, 4 reb, 8 ast, num jogo em que sete jogadores do Suns chegaram a dois dígitos. Miles Bridges e Jalen Green fizeram 16 pts cada, e Luke Kennard acertou as 4 bolas de três que tentou.\n\nDo outro lado, Nikola Jokic fez o de sempre (28 pts, 15 reb, 7 ast) e Jamal Murray também anotou 28 pts. Não foi suficiente.\n\n**E agora?** O Suns vai a 6-7. O Nuggets cai para 7-5 e fica a 2 jogos do Wolves no Noroeste.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Suns",
+    "Nuggets"
+  ],
+  "jogadores": [
+    "Devin Booker",
+    "Miles Bridges",
+    "Jalen Green",
+    "Luke Kennard",
+    "Nikola Jokic",
+    "Jamal Murray"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Primeira vitória do Suns fora de casa na temporada.",
+  "notas": [
+    {
+      "jogador": "Devin Booker",
+      "nota": 8,
+      "comentario": "20 pts e 8 ast"
+    },
+    {
+      "jogador": "Luke Kennard",
+      "nota": 7.5,
+      "comentario": "4 de 4 de três"
+    },
+    {
+      "jogador": "Nikola Jokic",
+      "nota": 7.5,
+      "comentario": "28 pts, 15 reb e 7 ast"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910001",
+    "data_rodada": "2026-11-16"
+  },
+  "escrito_em": "2026-11-17T17:43:35.883Z"
+}

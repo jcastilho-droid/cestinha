@@ -1,0 +1,47 @@
+{
+  "titulo": "Donovan Mitchell faz 39 e Cavaliers despacham o Bulls",
+  "subtitulo": "Jarrett Allen pegou 14 rebotes; Norman Powell fez 27 pelo Bulls",
+  "corpo": "O Cavaliers saiu atrás no primeiro quarto, mas venceu o Bulls por 126 a 115 em Cleveland, com 68 pontos no garrafão.\n\nDonovan Mitchell foi o dono da noite: 39 pts, 4 reb, 4 ast, com 5 de 5 nos lances livres. Jarrett Allen fez duplo-duplo (13 pts, 14 reb, 3 ast) e Tyrese Proctor ajudou com 17 pts.\n\nNo Bulls, Norman Powell fez 27 pts e Matas Buzelis anotou 23 pts. O time errou 32 das 44 bolas de três, e aí fica difícil.\n\n**E agora?** O Cavaliers vai a 8-7, com duas vitórias seguidas, a 1,5 jogo do Pistons na Divisão Central. O Bulls cai para 3-10.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Cavaliers",
+    "Bulls"
+  ],
+  "jogadores": [
+    "Donovan Mitchell",
+    "Jarrett Allen",
+    "Tyrese Proctor",
+    "Norman Powell",
+    "Matas Buzelis"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Segunda vitória seguida do Cavaliers, que passa a ter campanha positiva (8-7).",
+  "notas": [
+    {
+      "jogador": "Donovan Mitchell",
+      "nota": 9,
+      "comentario": "39 pts, noite de cestinha"
+    },
+    {
+      "jogador": "Jarrett Allen",
+      "nota": 7.5,
+      "comentario": "13 pts e 14 reb no garrafão"
+    },
+    {
+      "jogador": "Norman Powell",
+      "nota": 6.5,
+      "comentario": "27 pts, mas 0 de 6 de três"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909995",
+    "data_rodada": "2026-11-16"
+  },
+  "escrito_em": "2026-11-17T17:43:35.876Z"
+}

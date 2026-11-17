@@ -1,0 +1,47 @@
+{
+  "titulo": "Magic vira no último quarto em Boston e chega a 4 vitórias seguidas",
+  "subtitulo": "Desmond Bane fez 24 pts; Franz Wagner quase teve triplo-duplo; Tatum fez duplo-duplo na derrota",
+  "corpo": "O Magic foi ao TD Garden e venceu o Celtics por 115 a 105, numa virada construída no último quarto: 40 a 28 no período final.\n\nDesmond Bane foi o cestinha, com 24 pts, 8 reb, 5 ast, e fechou o jogo com dois arremessos de meia distância nos minutos finais. Franz Wagner encostou no triplo-duplo (21 pts, 8 reb, 9 ast) e Anthony Black somou 20 pts. O Magic dominou o garrafão: 54 pontos lá dentro contra 32.\n\nPelo Celtics, Jayson Tatum fez 24 pts, 12 reb, 4 ast, e Paul George anotou 22 pts. Foram 56 bolas de três tentadas, mas só 20 caíram.\n\n**E agora?** O Magic vai a 6-7. O Celtics cai para 11-3 e perde a liderança da Divisão Atlântico para o 76ers.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Magic",
+    "Celtics"
+  ],
+  "jogadores": [
+    "Desmond Bane",
+    "Franz Wagner",
+    "Anthony Black",
+    "Jayson Tatum",
+    "Paul George"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Quarta vitória seguida do Magic, e o Celtics perde a ponta da Divisão Atlântico.",
+  "notas": [
+    {
+      "jogador": "Desmond Bane",
+      "nota": 8,
+      "comentario": "24 pts e decidiu no fim"
+    },
+    {
+      "jogador": "Franz Wagner",
+      "nota": 8,
+      "comentario": "21 pts e 9 ast, quase triplo-duplo"
+    },
+    {
+      "jogador": "Jayson Tatum",
+      "nota": 7,
+      "comentario": "duplo-duplo, mas sem força no fim"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909994",
+    "data_rodada": "2026-11-16"
+  },
+  "escrito_em": "2026-11-17T17:43:35.873Z"
+}
