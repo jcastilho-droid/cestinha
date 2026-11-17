@@ -1,0 +1,33 @@
+{
+  "titulo": "Spurs embalado com 12 seguidas encara o Pistons de Cade",
+  "subtitulo": "Pistons x Spurs, 22h00 (horário de Brasília)",
+  "corpo": "O melhor time do Oeste está voando. O Spurs chega com 12 vitórias seguidas, 12-2 na temporada e 10-0 nos últimos 10 jogos, com saldo de +12.9 pontos por jogo.\n\nDo outro lado, não é qualquer um: o Pistons é o 3º do Leste, com 8-4, mesmo jogando sem Duncan Robinson e Jalen Duren, ambos fora por lesão.\n\nÉ o teste mais sério da sequência do Spurs, e ainda tem o duelo entre Victor Wembanyama e Cade Cunningham. Papo reto: se for para ver um jogo só, é esse.",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Pistons",
+    "Spurs"
+  ],
+  "jogadores": [
+    "Victor Wembanyama",
+    "Cade Cunningham",
+    "Duncan Robinson",
+    "Jalen Duren"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401910004",
+  "motivos": [
+    "Boa fase",
+    "Duelo de estrelas"
+  ],
+  "ficar_de_olho": "Victor Wembanyama (28.6 pts, 11.6 reb por jogo) contra Cade Cunningham (25.7 pts, 7.9 ast por jogo).",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-17"
+  },
+  "escrito_em": "2026-11-17T18:24:43.029Z"
+}
