@@ -1,6 +1,6 @@
 {
   "data_rodada": "2026-11-17",
-  "coletado_em": "2026-11-18T06:22:49.518Z",
+  "coletado_em": "2026-11-18T08:29:00.256Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -110,8 +110,8 @@
     {
       "id": "401910005",
       "inicio_utc": "2026-11-18T04:00Z",
-      "status": "em_andamento",
-      "periodo": 4,
+      "status": "final",
+      "periodo": 5,
       "casa": {
         "id": "13",
         "sigla": "LAL",
@@ -119,8 +119,8 @@
         "nome_curto": "Lakers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "cor": "#552583",
-        "placar": 98,
-        "campanha": "12-2"
+        "placar": 118,
+        "campanha": "13-2"
       },
       "visitante": {
         "id": "30",
@@ -129,8 +129,8 @@
         "nome_curto": "Hornets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
         "cor": "#008ca8",
-        "placar": 102,
-        "campanha": "4-9"
+        "placar": 114,
+        "campanha": "4-10"
       }
     }
   ]

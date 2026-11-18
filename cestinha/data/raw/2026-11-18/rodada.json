@@ -1,6 +1,6 @@
 {
   "data_rodada": "2026-11-18",
-  "coletado_em": "2026-11-18T06:22:49.575Z",
+  "coletado_em": "2026-11-18T08:29:00.306Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -276,7 +276,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "cor": "#552583",
         "placar": 0,
-        "campanha": "12-2"
+        "campanha": "13-2"
       },
       "visitante": {
         "id": "26",
