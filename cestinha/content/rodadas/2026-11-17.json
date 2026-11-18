@@ -1,0 +1,41 @@
+{
+  "titulo": "Grimes faz 47 na prorrogação e Wolves vencem no estouro",
+  "subtitulo": "Lakers chegam a nove vitórias seguidas; Pistons derrubam o Spurs; Sensabaugh faz 40 pelo Jazz",
+  "corpo": "E aí, aqui é o Cestinha. Noite de cinco jogos com prorrogação, vitória por um ponto e duas atuações de 40 ou mais. Bora.\n\n- **Lakers 118 a 114 Hornets (prorrogação):** Quentin Grimes empatou com bola de três a 2,4 segundos do fim e terminou com 47 pts. Nona vitória seguida do Lakers, agora 13-2.\n- **Timberwolves 106 a 105 Trail Blazers:** Jaden McDaniels virou de bandeja a 2,6 segundos do fim, com passe de Ayo Dosunmu (30 pts). Wolves vão a 11-4 na ponta do Noroeste.\n- **Pistons 105 a 93 Spurs:** Cade Cunningham fez 27 pts e Ausar Thompson deu 12 ast em San Antonio. Victor Wembanyama teve 25 pts e 18 reb, mas o Spurs caiu para 12-3.\n- **Knicks 111 a 102 Raptors:** Jalen Brunson (31 pts) decidiu no último minuto e meio, e Karl-Anthony Towns encheu a planilha com 16 pts, 16 reb, 8 ast.\n- **Jazz 132 a 107 Clippers:** Keyonte George somou 30 pts e 11 ast, e o Jazz marcou 44 pontos no último quarto para chegar à segunda vitória na temporada.\n\n**Destaque da noite:** Quentin Grimes, com 47 pts, 6 reb, 3 ast e 10 de 14 de três, incluindo a bola que levou o jogo para a prorrogação. Menção honrosa para Brice Sensabaugh, do Jazz: 40 pts, 11 reb, 5 ast.",
+  "tipo": "resumo_rodada",
+  "status": "CONFIRMADO",
+  "importancia": 4,
+  "times": [
+    "Lakers",
+    "Hornets",
+    "Timberwolves",
+    "Trail Blazers",
+    "Pistons",
+    "Spurs",
+    "Knicks",
+    "Raptors",
+    "Jazz",
+    "Clippers"
+  ],
+  "jogadores": [
+    "Quentin Grimes",
+    "Jaden McDaniels",
+    "Ayo Dosunmu",
+    "Cade Cunningham",
+    "Ausar Thompson",
+    "Victor Wembanyama",
+    "Jalen Brunson",
+    "Karl-Anthony Towns",
+    "Keyonte George",
+    "Brice Sensabaugh"
+  ],
+  "fontes": [
+    "ESPN"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "rodada",
+    "data_rodada": "2026-11-17"
+  },
+  "escrito_em": "2026-11-18T11:49:56.371Z"
+}

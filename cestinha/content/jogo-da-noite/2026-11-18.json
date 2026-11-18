@@ -1,0 +1,33 @@
+{
+  "titulo": "Warriors e Mavericks se encontram para acabar com a má fase, com Gui Santos em quadra",
+  "subtitulo": "Warriors x Mavericks, 22h00",
+  "corpo": "Se você só puder ver um jogo hoje, fique com Warriors x Mavericks. É briga direta no Oeste: o Warriors chega em 9º, com 8-6, e o Mavericks vem logo atrás, em 10º, com 7-7. Os dois carregam 3 derrotas seguidas, então alguém sai da noite aliviado.\n\nO Warriors segue sem Stephen Curry, e a bola fica com Yaxel Lendeborg, que tem média de 20.8 pts. Do outro lado, Cooper Flagg chega com 23.5 pts, 6.7 reb e 6.2 ast por jogo.\n\nE tem brasileiro: Gui Santos está no elenco do Warriors.",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Warriors",
+    "Mavericks"
+  ],
+  "jogadores": [
+    "Yaxel Lendeborg",
+    "Cooper Flagg",
+    "Stephen Curry",
+    "Gui Santos"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401910016",
+  "motivos": [
+    "Briga na tabela",
+    "Brasileiro em quadra"
+  ],
+  "ficar_de_olho": "Cooper Flagg contra Yaxel Lendeborg, as duas referências de times que precisam parar de perder.",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-18"
+  },
+  "escrito_em": "2026-11-18T11:49:56.370Z"
+}

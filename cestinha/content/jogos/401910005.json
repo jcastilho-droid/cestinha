@@ -1,0 +1,47 @@
+{
+  "titulo": "Grimes faz 47, empata no fim e Lakers vencem o Hornets na prorrogação",
+  "subtitulo": "Quentin Grimes acertou 10 bolas de três; Luka Doncic somou 36 pts e 7 ast",
+  "corpo": "Foi brabo. O Lakers venceu o Hornets por 118 a 114 na prorrogação, em Los Angeles, e chegou à nona vitória seguida.\n\nO Hornets liderava por três nos segundos finais do tempo normal quando Quentin Grimes, com passe de Luka Doncic, acertou uma bola de três a 2,4 segundos do fim para empatar. Na prorrogação, Doncic virou com um arremesso de média distância e Grimes fechou nos lances livres.\n\nGrimes teve uma noite de gala: 47 pts, 6 reb, 3 ast, com 10 de 14 de três. Doncic somou 36 pts, 6 reb, 7 ast.\n\nPelo Hornets, que não teve Dennis Schroder, Brandon Miller anotou 28 pts e Naz Reid fez 23 pts e 11 reb.\n\n**E agora?** O Lakers vai a 13-2 e segue líder do Pacífico. O Hornets cai para 4-10, com três derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 4,
+  "times": [
+    "Lakers",
+    "Hornets"
+  ],
+  "jogadores": [
+    "Quentin Grimes",
+    "Luka Doncic",
+    "Brandon Miller",
+    "Naz Reid",
+    "Dennis Schroder"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Nona vitória seguida do Lakers, que chega a 13-2 na liderança do Pacífico.",
+  "notas": [
+    {
+      "jogador": "Quentin Grimes",
+      "nota": 10,
+      "comentario": "47 pts, 10 de 14 de três e o empate"
+    },
+    {
+      "jogador": "Luka Doncic",
+      "nota": 8,
+      "comentario": "36 pts, 7 ast e a cesta da virada"
+    },
+    {
+      "jogador": "Brandon Miller",
+      "nota": 7.5,
+      "comentario": "28 pts com 5 bolas de três"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910005",
+    "data_rodada": "2026-11-17"
+  },
+  "escrito_em": "2026-11-18T11:49:56.344Z"
+}

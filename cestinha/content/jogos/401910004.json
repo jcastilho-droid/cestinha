@@ -1,0 +1,52 @@
+{
+  "titulo": "Pistons seguram Wembanyama e vencem o Spurs em San Antonio",
+  "subtitulo": "Cade Cunningham fez 27 pts; Ausar Thompson teve 12 ast e 5 roubos",
+  "corpo": "O Pistons venceu o Spurs por 105 a 93 em San Antonio e derrubou o líder do Sudoeste.\n\nO Spurs começou melhor e venceu o primeiro quarto por sete, mas o Pistons controlou o resto do jogo. No fim, Daniss Jenkins acertou uma bola de três a 42 segundos do estouro para matar qualquer reação.\n\nCade Cunningham foi o cestinha, com 27 pts, 5 reb, 6 ast. Jenkins somou 25 pts, e Ausar Thompson fez um jogo completo: 14 pts, 9 reb, 12 ast e 5 roubos de bola.\n\nDo outro lado, Victor Wembanyama teve 25 pts, 18 reb, 4 ast, e Dylan Harper anotou 20 pts. O Spurs acertou só 9 de 40 bolas de três.\n\n**E agora?** O Pistons vai a 9-4 e segue líder da Central. O Spurs cai para 12-3, mas continua na ponta do Sudoeste.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Pistons",
+    "Spurs"
+  ],
+  "jogadores": [
+    "Cade Cunningham",
+    "Daniss Jenkins",
+    "Ausar Thompson",
+    "Victor Wembanyama",
+    "Dylan Harper"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Pistons segue líder da Central e impõe ao Spurs só a terceira derrota na temporada.",
+  "notas": [
+    {
+      "jogador": "Cade Cunningham",
+      "nota": 8.5,
+      "comentario": "27 pts e 6 ast comandando o ataque"
+    },
+    {
+      "jogador": "Ausar Thompson",
+      "nota": 8.5,
+      "comentario": "12 ast e 5 roubos de bola"
+    },
+    {
+      "jogador": "Daniss Jenkins",
+      "nota": 8,
+      "comentario": "25 pts e a bola de três final"
+    },
+    {
+      "jogador": "Victor Wembanyama",
+      "nota": 7.5,
+      "comentario": "25 pts e 18 reb, mas 1 de 8 de três"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910004",
+    "data_rodada": "2026-11-17"
+  },
+  "escrito_em": "2026-11-18T11:49:56.343Z"
+}

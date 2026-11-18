@@ -1,0 +1,48 @@
+{
+  "titulo": "McDaniels acha a bandeja a 2,6s do fim e Wolves batem o Blazers",
+  "subtitulo": "Dosunmu fez 30 pts e deu a assistência da vitória; Lillard marcou 25 pts",
+  "corpo": "Que isso. O Timberwolves venceu o Trail Blazers por 106 a 105 em Minneapolis, num jogo com 14 trocas de liderança.\n\nO Blazers chegou a abrir quatro pontos a menos de um minuto do fim, com bola de três de Jrue Holiday. Ayo Dosunmu respondeu também de três e, depois, achou Jaden McDaniels, que entrou de bandeja a 2,6 segundos do estouro para virar o jogo.\n\nDosunmu foi o cestinha, com 30 pts, 4 reb, 5 ast e 7 bolas de três. McDaniels somou 22 pts e LaMelo Ball fez 18 pts e 9 reb.\n\nPelo Blazers, Damian Lillard anotou 25 pts e Holiday, 23 pts. Deni Avdija desfalcou o time.\n\n**E agora?** O Wolves vai a 11-4 e abre 1,5 jogo de vantagem na liderança do Noroeste. O Blazers cai para 9-5.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Timberwolves",
+    "Trail Blazers"
+  ],
+  "jogadores": [
+    "Jaden McDaniels",
+    "Ayo Dosunmu",
+    "LaMelo Ball",
+    "Damian Lillard",
+    "Jrue Holiday",
+    "Deni Avdija"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Vitória no confronto direto mantém o Wolves na ponta do Noroeste, 1,5 jogo à frente do Blazers.",
+  "notas": [
+    {
+      "jogador": "Ayo Dosunmu",
+      "nota": 9,
+      "comentario": "30 pts, 7 bolas de três e a assistência final"
+    },
+    {
+      "jogador": "Jaden McDaniels",
+      "nota": 8,
+      "comentario": "22 pts e a bandeja da vitória"
+    },
+    {
+      "jogador": "Damian Lillard",
+      "nota": 7.5,
+      "comentario": "25 pts, mas saiu de quadra derrotado"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910003",
+    "data_rodada": "2026-11-17"
+  },
+  "escrito_em": "2026-11-18T11:49:56.341Z"
+}

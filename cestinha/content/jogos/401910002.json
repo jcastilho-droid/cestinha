@@ -1,0 +1,47 @@
+{
+  "titulo": "Brunson decide no fim e Knicks vencem o Raptors em Toronto",
+  "subtitulo": "Brunson fez 31 pts; Towns ficou perto do triplo-duplo com 16 pts, 16 reb, 8 ast",
+  "corpo": "O Knicks venceu o Raptors por 111 a 102 em Toronto, num jogo com 10 trocas de liderança que só se resolveu no último minuto e meio.\n\nJalen Brunson foi o cestinha, com 31 pts, 5 reb, 5 ast e 7 de 7 nos lances livres. Com tudo empatado, ele acertou um arremesso de média distância e, logo depois, uma bola de três, somando ainda o lance livre de uma falta flagrante. Mikal Bridges ainda fechou a conta com outra bola de três a 36 segundos do fim.\n\nKarl-Anthony Towns fez de tudo um pouco: 16 pts, 16 reb, 8 ast, acertando 7 dos 9 arremessos. O Knicks dominou os rebotes (44 contra 23).\n\nPelo Raptors, Ja'Kobe Walter fez 25 pts com 7 bolas de três, e RJ Barrett somou 22 pts.\n\n**E agora?** O Knicks já lidera o confronto da temporada contra o Raptors por 2 a 0.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Knicks",
+    "Raptors"
+  ],
+  "jogadores": [
+    "Jalen Brunson",
+    "Karl-Anthony Towns",
+    "Mikal Bridges",
+    "Ja'Kobe Walter",
+    "RJ Barrett"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Knicks fecha mais um confronto direto da divisão e já vence o Raptors por 2 a 0 na temporada.",
+  "notas": [
+    {
+      "jogador": "Jalen Brunson",
+      "nota": 8.5,
+      "comentario": "31 pts e as cestas que decidiram"
+    },
+    {
+      "jogador": "Karl-Anthony Towns",
+      "nota": 8.5,
+      "comentario": "16 pts, 16 reb, 8 ast e 7 de 9"
+    },
+    {
+      "jogador": "Ja'Kobe Walter",
+      "nota": 7.5,
+      "comentario": "25 pts com 7 bolas de três"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910002",
+    "data_rodada": "2026-11-17"
+  },
+  "escrito_em": "2026-11-18T11:49:56.340Z"
+}

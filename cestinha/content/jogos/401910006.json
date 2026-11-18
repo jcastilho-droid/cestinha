@@ -1,0 +1,48 @@
+{
+  "titulo": "Sensabaugh faz 40 e Jazz atropela o Clippers em Los Angeles",
+  "subtitulo": "Brice Sensabaugh teve 40 pts e 11 reb; Keyonte George somou 30 pts e 11 ast",
+  "corpo": "O Jazz venceu o Clippers por 132 a 107 no Intuit Dome e conquistou só a segunda vitória da temporada.\n\nO jogo foi equilibrado até o terceiro quarto, mas o Jazz disparou no último período, quando marcou 44 pontos, e chegou a abrir 26 de vantagem.\n\nO nome da noite foi Brice Sensabaugh: 40 pts, 11 reb, 5 ast, com 16 de 21 nos arremessos e 8 de 11 de três. Tá maluco. Keyonte George fez 30 pts e 11 ast, e Mo Bamba fechou um duplo-duplo com 15 pts e 10 reb.\n\nPelo Clippers, Brook Lopez anotou 23 pts, e Darius Garland e Rui Hachimura fizeram 20 pts cada.\n\n**E agora?** O Jazz vai a 2-13 e segue na lanterna do Noroeste. O Clippers cai para 4-9.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Jazz",
+    "Clippers"
+  ],
+  "jogadores": [
+    "Brice Sensabaugh",
+    "Keyonte George",
+    "Mo Bamba",
+    "Brook Lopez",
+    "Darius Garland",
+    "Rui Hachimura"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Só a segunda vitória do Jazz na temporada, com uma noite de 40 pts de Sensabaugh.",
+  "notas": [
+    {
+      "jogador": "Brice Sensabaugh",
+      "nota": 10,
+      "comentario": "40 pts, 11 reb e 8 de 11 de três"
+    },
+    {
+      "jogador": "Keyonte George",
+      "nota": 8.5,
+      "comentario": "30 pts e 11 ast"
+    },
+    {
+      "jogador": "Brook Lopez",
+      "nota": 6.5,
+      "comentario": "23 pts num Clippers que sumiu no fim"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910006",
+    "data_rodada": "2026-11-17"
+  },
+  "escrito_em": "2026-11-18T11:49:56.345Z"
+}
