@@ -448,6 +448,21 @@
       }
     },
     {
+      "id": "4702099",
+      "nome": "Zack Austin",
+      "numero": "55",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 25,
+      "altura_m": "1.96",
+      "peso_kg": 98,
+      "experiencia": 1,
+      "universidade": "Pittsburgh",
+      "pais": "USA",
+      "lesao": null,
+      "medias": null
+    },
+    {
       "id": "4997530",
       "nome": "Khalifa Diop",
       "numero": "18",
@@ -1665,5 +1680,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cle",
-  "atualizado_em": "2026-11-18T10:19:16.995Z"
+  "atualizado_em": "2026-11-18T17:22:03.066Z"
 }

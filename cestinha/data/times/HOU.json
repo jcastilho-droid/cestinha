@@ -493,10 +493,7 @@
       "experiencia": 4,
       "universidade": "Tennessee",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": null
     }
   ],
@@ -1669,5 +1666,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-18T10:19:23.064Z"
+  "atualizado_em": "2026-11-18T17:22:05.091Z"
 }

@@ -29,15 +29,15 @@
   "divisao": null,
   "tecnico": "Chris Finch",
   "estatisticas": {
-    "pts": "117.4",
-    "reb": "48.8",
-    "ast": "25.6",
+    "pts": "116.7",
+    "reb": "48.6",
+    "ast": "25.4",
     "rb": "8.9",
     "toco": "5.1",
-    "err": "15.1",
+    "err": "15.4",
     "fg_pct": "47.0",
-    "tres_pct": "36.4",
-    "ll_pct": "69.0"
+    "tres_pct": "37.0",
+    "ll_pct": "67.8"
   },
   "elenco": [
     {
@@ -85,16 +85,16 @@
       "pais": "USA",
       "lesao": null,
       "medias": {
-        "jogos": 14,
-        "min": "31.0",
-        "pts": "17.8",
+        "jogos": 15,
+        "min": "31.6",
+        "pts": "18.6",
         "reb": "4.6",
-        "ast": "3.4",
+        "ast": "3.5",
         "rb": "1.3",
         "toco": "0.4",
-        "fg_pct": "51.6",
-        "tres_pct": "43.1",
-        "ll_pct": "90.9",
+        "fg_pct": "52.2",
+        "tres_pct": "46.4",
+        "ll_pct": "88.6",
         "duplos_duplos": 2,
         "triplos_duplos": 0
       }
@@ -113,16 +113,16 @@
       "pais": "USA",
       "lesao": null,
       "medias": {
-        "jogos": 14,
-        "min": "27.4",
+        "jogos": 15,
+        "min": "27.7",
         "pts": "17.7",
-        "reb": "3.7",
-        "ast": "5.8",
+        "reb": "4.1",
+        "ast": "5.5",
         "rb": "1.9",
         "toco": "0.1",
         "fg_pct": "41.8",
         "tres_pct": "36.6",
-        "ll_pct": "75.8",
+        "ll_pct": "76.5",
         "duplos_duplos": 0,
         "triplos_duplos": 0
       }
@@ -141,15 +141,15 @@
       "pais": "USA",
       "lesao": null,
       "medias": {
-        "jogos": 14,
-        "min": "33.2",
-        "pts": "16.7",
-        "reb": "6.2",
+        "jogos": 15,
+        "min": "33.5",
+        "pts": "17.1",
+        "reb": "6.1",
         "ast": "3.7",
-        "rb": "1.0",
+        "rb": "1.1",
         "toco": "0.9",
-        "fg_pct": "52.2",
-        "tres_pct": "30.5",
+        "fg_pct": "53.0",
+        "tres_pct": "31.3",
         "ll_pct": "85.7",
         "duplos_duplos": 0,
         "triplos_duplos": 0
@@ -169,16 +169,16 @@
       "pais": "USA",
       "lesao": null,
       "medias": {
-        "jogos": 11,
-        "min": "22.7",
-        "pts": "13.0",
-        "reb": "3.5",
-        "ast": "2.8",
-        "rb": "0.5",
+        "jogos": 12,
+        "min": "22.9",
+        "pts": "12.9",
+        "reb": "3.3",
+        "ast": "2.9",
+        "rb": "0.4",
         "toco": "0.1",
-        "fg_pct": "45.7",
-        "tres_pct": "38.1",
-        "ll_pct": "78.8",
+        "fg_pct": "45.5",
+        "tres_pct": "37.8",
+        "ll_pct": "79.3",
         "duplos_duplos": 0,
         "triplos_duplos": 0
       }
@@ -196,7 +196,7 @@
       "universidade": null,
       "pais": "Democratic Republic of Congo",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -228,16 +228,16 @@
       "pais": "USA",
       "lesao": null,
       "medias": {
-        "jogos": 14,
-        "min": "13.6",
-        "pts": "9.6",
+        "jogos": 15,
+        "min": "13.9",
+        "pts": "9.9",
         "reb": "1.4",
-        "ast": "3.0",
-        "rb": "0.8",
-        "toco": "0.4",
-        "fg_pct": "44.6",
-        "tres_pct": "38.1",
-        "ll_pct": "84.0",
+        "ast": "2.9",
+        "rb": "0.9",
+        "toco": "0.3",
+        "fg_pct": "44.5",
+        "tres_pct": "39.1",
+        "ll_pct": "82.1",
         "duplos_duplos": 0,
         "triplos_duplos": 0
       }
@@ -256,16 +256,16 @@
       "pais": "France",
       "lesao": null,
       "medias": {
-        "jogos": 13,
-        "min": "29.3",
-        "pts": "8.2",
-        "reb": "11.7",
+        "jogos": 14,
+        "min": "28.8",
+        "pts": "7.6",
+        "reb": "11.1",
         "ast": "1.7",
         "rb": "0.3",
-        "toco": "1.1",
-        "fg_pct": "46.8",
+        "toco": "1.0",
+        "fg_pct": "45.1",
         "tres_pct": "0.0",
-        "ll_pct": "45.7",
+        "ll_pct": "44.4",
         "duplos_duplos": 3,
         "triplos_duplos": 0
       }
@@ -284,16 +284,16 @@
       "pais": "USA",
       "lesao": null,
       "medias": {
-        "jogos": 14,
-        "min": "18.3",
-        "pts": "6.1",
-        "reb": "3.6",
-        "ast": "0.9",
+        "jogos": 15,
+        "min": "19.1",
+        "pts": "6.3",
+        "reb": "3.9",
+        "ast": "1.1",
         "rb": "0.4",
         "toco": "0.3",
-        "fg_pct": "47.5",
-        "tres_pct": "32.5",
-        "ll_pct": "62.5",
+        "fg_pct": "47.0",
+        "tres_pct": "33.3",
+        "ll_pct": "60.7",
         "duplos_duplos": 0,
         "triplos_duplos": 0
       }
@@ -312,16 +312,16 @@
       "pais": "France",
       "lesao": null,
       "medias": {
-        "jogos": 14,
-        "min": "16.5",
-        "pts": "5.5",
-        "reb": "6.1",
+        "jogos": 15,
+        "min": "17.1",
+        "pts": "5.3",
+        "reb": "6.6",
         "ast": "0.5",
         "rb": "0.3",
-        "toco": "0.9",
-        "fg_pct": "60.0",
+        "toco": "1.1",
+        "fg_pct": "58.5",
         "tres_pct": "0.0",
-        "ll_pct": "65.4",
+        "ll_pct": "56.3",
         "duplos_duplos": 0,
         "triplos_duplos": 0
       }
@@ -370,7 +370,7 @@
       "universidade": "Florida",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -463,12 +463,12 @@
       "pais": "USA",
       "lesao": null,
       "medias": {
-        "jogos": 8,
-        "min": "4.0",
+        "jogos": 9,
+        "min": "5.0",
         "pts": "0.0",
         "reb": "0.4",
         "ast": "0.0",
-        "rb": "0.1",
+        "rb": "0.2",
         "toco": "0.0",
         "fg_pct": "0.0",
         "tres_pct": "0.0",
@@ -1675,5 +1675,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-18T10:19:29.024Z"
+  "atualizado_em": "2026-11-18T17:22:08.556Z"
 }
