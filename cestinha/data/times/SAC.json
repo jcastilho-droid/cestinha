@@ -13,11 +13,11 @@
   "classificacao": {
     "id": "23",
     "sigla": "SAC",
-    "posicao": 14,
+    "posicao": 15,
     "v": 1,
     "d": 12,
     "pct": ".077",
-    "atras": "10.5",
+    "atras": "11",
     "sequencia": "L6",
     "casa": "0-8",
     "fora": "1-4",
@@ -1656,5 +1656,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sac",
-  "atualizado_em": "2026-11-18T04:09:58.859Z"
+  "atualizado_em": "2026-11-18T10:19:33.815Z"
 }

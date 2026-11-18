@@ -14,17 +14,17 @@
     "id": "13",
     "sigla": "LAL",
     "posicao": 1,
-    "v": 12,
+    "v": 13,
     "d": 2,
-    "pct": ".857",
+    "pct": ".867",
     "atras": "-",
-    "sequencia": "W8",
-    "casa": "5-1",
+    "sequencia": "W9",
+    "casa": "6-1",
     "fora": "7-1",
     "ultimos10": "9-1",
-    "pontos_pro": "122.8",
-    "pontos_contra": "114.9",
-    "saldo": "+7.9"
+    "pontos_pro": "122.5",
+    "pontos_contra": "114.8",
+    "saldo": "+7.7"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -805,9 +805,12 @@
         "sigla": "CHA",
         "nome_curto": "Hornets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 118,
+        "adversario": 114
+      },
+      "resultado": "V"
     },
     {
       "id": "401910017",
@@ -1722,5 +1725,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lal",
-  "atualizado_em": "2026-11-18T04:09:53.494Z"
+  "atualizado_em": "2026-11-18T10:19:24.329Z"
 }

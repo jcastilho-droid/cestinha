@@ -17,7 +17,7 @@
     "v": 8,
     "d": 6,
     "pct": ".571",
-    "atras": "4",
+    "atras": "4.5",
     "sequencia": "L3",
     "casa": "6-1",
     "fora": "2-5",
@@ -428,7 +428,10 @@
       "experiencia": 15,
       "universidade": "Michigan State",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 12,
         "min": "25.8",
@@ -1693,5 +1696,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-18T04:09:51.704Z"
+  "atualizado_em": "2026-11-18T10:19:20.939Z"
 }

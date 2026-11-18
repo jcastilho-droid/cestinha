@@ -15,16 +15,16 @@
     "sigla": "LAC",
     "posicao": 13,
     "v": 4,
-    "d": 8,
-    "pct": ".333",
-    "atras": "7",
-    "sequencia": "W2",
-    "casa": "4-3",
+    "d": 9,
+    "pct": ".308",
+    "atras": "8",
+    "sequencia": "L1",
+    "casa": "4-4",
     "fora": "0-5",
     "ultimos10": "3-7",
-    "pontos_pro": "112.3",
-    "pontos_contra": "116.5",
-    "saldo": "-4.2"
+    "pontos_pro": "111.9",
+    "pontos_contra": "117.7",
+    "saldo": "-5.8"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -751,9 +751,12 @@
         "sigla": "UTAH",
         "nome_curto": "Jazz"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 107,
+        "adversario": 132
+      },
+      "resultado": "D"
     },
     {
       "id": "401910022",
@@ -1696,5 +1699,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lac",
-  "atualizado_em": "2026-11-18T04:09:53.101Z"
+  "atualizado_em": "2026-11-18T10:19:23.933Z"
 }
