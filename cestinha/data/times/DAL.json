@@ -80,10 +80,7 @@
       "experiencia": 15,
       "universidade": "Duke",
       "pais": "Australia",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 11,
         "min": "30.7",
@@ -254,7 +251,10 @@
       "experiencia": 2,
       "universidade": "Florida",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "17.1",
@@ -484,7 +484,10 @@
       "experiencia": 0,
       "universidade": "Virginia Tech",
       "pais": "England",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 8,
         "min": "4.5",
@@ -1703,5 +1706,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/dal",
-  "atualizado_em": "2026-11-17T22:04:42.071Z"
+  "atualizado_em": "2026-11-18T04:09:50.271Z"
 }

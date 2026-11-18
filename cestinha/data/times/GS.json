@@ -397,7 +397,10 @@
       "experiencia": 20,
       "universidade": "Florida",
       "pais": "Dominican Republic",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 12,
         "min": "17.0",
@@ -1690,5 +1693,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-17T22:04:43.590Z"
+  "atualizado_em": "2026-11-18T04:09:51.704Z"
 }

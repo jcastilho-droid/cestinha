@@ -280,7 +280,7 @@
       "universidade": "Houston",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -311,7 +311,7 @@
       "universidade": "Saint Mary's",
       "pais": "Australia",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1677,5 +1677,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/atl",
-  "atualizado_em": "2026-11-17T22:04:39.076Z"
+  "atualizado_em": "2026-11-18T04:09:47.577Z"
 }

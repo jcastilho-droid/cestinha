@@ -442,6 +442,21 @@
       }
     },
     {
+      "id": "4684682",
+      "nome": "Jonas Aidoo",
+      "numero": "13",
+      "posicao": "Pivô",
+      "posicao_sigla": "C",
+      "idade": 23,
+      "altura_m": "2.11",
+      "peso_kg": 109,
+      "experiencia": 0,
+      "universidade": "Arkansas",
+      "pais": "USA",
+      "lesao": null,
+      "medias": null
+    },
+    {
       "id": "4683736",
       "nome": "Kobe Bufkin",
       "numero": "0",
@@ -1656,5 +1671,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/utah",
-  "atualizado_em": "2026-11-17T22:04:53.093Z"
+  "atualizado_em": "2026-11-18T04:10:00.251Z"
 }

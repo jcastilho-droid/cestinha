@@ -313,7 +313,10 @@
       "experiencia": 12,
       "universidade": "Arizona",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 5,
         "min": "13.4",
@@ -1685,5 +1688,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-17T22:04:44.502Z"
+  "atualizado_em": "2026-11-18T04:09:52.682Z"
 }

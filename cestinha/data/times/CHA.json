@@ -108,7 +108,10 @@
       "experiencia": 9,
       "universidade": "Duke",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "27.1",
@@ -1688,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cha",
-  "atualizado_em": "2026-11-17T22:04:40.654Z"
+  "atualizado_em": "2026-11-18T04:09:48.878Z"
 }

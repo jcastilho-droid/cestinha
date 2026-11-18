@@ -14,17 +14,17 @@
     "id": "8",
     "sigla": "DET",
     "posicao": 3,
-    "v": 8,
+    "v": 9,
     "d": 4,
-    "pct": ".667",
-    "atras": "2.5",
-    "sequencia": "L1",
+    "pct": ".692",
+    "atras": "2",
+    "sequencia": "W1",
     "casa": "3-2",
-    "fora": "5-2",
+    "fora": "6-2",
     "ultimos10": "6-4",
-    "pontos_pro": "115.7",
-    "pontos_contra": "110.3",
-    "saldo": "+5.4"
+    "pontos_pro": "114.8",
+    "pontos_contra": "108.9",
+    "saldo": "+5.9"
   },
   "divisao": {
     "nome": "Central",
@@ -359,6 +359,34 @@
         "fg_pct": "34.4",
         "tres_pct": "30.8",
         "ll_pct": "69.2",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "4700852",
+      "nome": "Chaz Lanier",
+      "numero": "8",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 24,
+      "altura_m": "1.91",
+      "peso_kg": 93,
+      "experiencia": 2,
+      "universidade": "Tennessee",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 4,
+        "min": "3.3",
+        "pts": "3.3",
+        "reb": "0.0",
+        "ast": "0.0",
+        "rb": "0.0",
+        "toco": "0.0",
+        "fg_pct": "71.4",
+        "tres_pct": "60.0",
+        "ll_pct": "0.0",
         "duplos_duplos": 0,
         "triplos_duplos": 0
       }
@@ -737,9 +765,12 @@
         "sigla": "SA",
         "nome_curto": "Spurs"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 105,
+        "adversario": 93
+      },
+      "resultado": "V"
     },
     {
       "id": "401910013",
@@ -1682,5 +1713,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/det",
-  "atualizado_em": "2026-11-17T22:04:43.137Z"
+  "atualizado_em": "2026-11-18T04:09:51.206Z"
 }

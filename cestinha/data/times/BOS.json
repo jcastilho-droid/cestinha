@@ -167,10 +167,7 @@
       "experiencia": 6,
       "universidade": "Utah State",
       "pais": "Portugal",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 13,
         "min": "22.0",
@@ -1676,5 +1673,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-17T22:04:39.701Z"
+  "atualizado_em": "2026-11-18T04:09:47.967Z"
 }

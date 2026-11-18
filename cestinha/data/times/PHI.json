@@ -84,7 +84,7 @@
       "universidade": "California",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -142,10 +142,7 @@
       "experiencia": 24,
       "universidade": null,
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 11,
         "min": "32.5",
@@ -1678,5 +1675,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-17T22:04:49.705Z"
+  "atualizado_em": "2026-11-18T04:09:57.568Z"
 }

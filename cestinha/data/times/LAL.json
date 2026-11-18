@@ -13,7 +13,7 @@
   "classificacao": {
     "id": "13",
     "sigla": "LAL",
-    "posicao": 2,
+    "posicao": 1,
     "v": 12,
     "d": 2,
     "pct": ".857",
@@ -1722,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lal",
-  "atualizado_em": "2026-11-17T22:04:45.446Z"
+  "atualizado_em": "2026-11-18T04:09:53.494Z"
 }

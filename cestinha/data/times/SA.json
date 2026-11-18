@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "24",
     "sigla": "SA",
-    "posicao": 1,
+    "posicao": 2,
     "v": 12,
-    "d": 2,
-    "pct": ".857",
-    "atras": "-",
-    "sequencia": "W12",
-    "casa": "5-2",
+    "d": 3,
+    "pct": ".800",
+    "atras": "0.5",
+    "sequencia": "L1",
+    "casa": "5-3",
     "fora": "7-0",
-    "ultimos10": "10-0",
-    "pontos_pro": "118.8",
+    "ultimos10": "9-1",
+    "pontos_pro": "117.1",
     "pontos_contra": "105.9",
-    "saldo": "+12.9"
+    "saldo": "+11.2"
   },
   "divisao": null,
   "tecnico": "Mitch Johnson",
@@ -80,7 +80,10 @@
       "experiencia": 2,
       "universidade": "Rutgers",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "31.5",
@@ -746,9 +749,12 @@
         "sigla": "DET",
         "nome_curto": "Pistons"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 93,
+        "adversario": 105
+      },
+      "resultado": "D"
     },
     {
       "id": "401910022",
@@ -1663,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sa",
-  "atualizado_em": "2026-11-17T22:04:52.114Z"
+  "atualizado_em": "2026-11-18T04:09:59.349Z"
 }

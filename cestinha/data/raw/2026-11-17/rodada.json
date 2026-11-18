@@ -1,6 +1,6 @@
 {
   "data_rodada": "2026-11-17",
-  "coletado_em": "2026-11-18T03:02:48.532Z",
+  "coletado_em": "2026-11-18T04:09:46.414Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -32,8 +32,8 @@
     {
       "id": "401910003",
       "inicio_utc": "2026-11-18T01:00Z",
-      "status": "em_andamento",
-      "periodo": 3,
+      "status": "final",
+      "periodo": 4,
       "casa": {
         "id": "16",
         "sigla": "MIN",
@@ -41,8 +41,8 @@
         "nome_curto": "Timberwolves",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
         "cor": "#266092",
-        "placar": 79,
-        "campanha": "10-4"
+        "placar": 106,
+        "campanha": "11-4"
       },
       "visitante": {
         "id": "22",
@@ -51,14 +51,14 @@
         "nome_curto": "Trail Blazers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
         "cor": "#e03a3e",
-        "placar": 79,
-        "campanha": "9-4"
+        "placar": 105,
+        "campanha": "9-5"
       }
     },
     {
       "id": "401910004",
       "inicio_utc": "2026-11-18T01:00Z",
-      "status": "em_andamento",
+      "status": "final",
       "periodo": 4,
       "casa": {
         "id": "24",
@@ -67,8 +67,8 @@
         "nome_curto": "Spurs",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
         "cor": "#000000",
-        "placar": 72,
-        "campanha": "12-2"
+        "placar": 93,
+        "campanha": "12-3"
       },
       "visitante": {
         "id": "8",
@@ -77,15 +77,15 @@
         "nome_curto": "Pistons",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
         "cor": "#1d428a",
-        "placar": 82,
-        "campanha": "8-4"
+        "placar": 105,
+        "campanha": "9-4"
       }
     },
     {
       "id": "401910006",
       "inicio_utc": "2026-11-18T03:30Z",
-      "status": "agendado",
-      "periodo": 0,
+      "status": "em_andamento",
+      "periodo": 2,
       "casa": {
         "id": "12",
         "sigla": "LAC",
@@ -93,7 +93,7 @@
         "nome_curto": "Clippers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
         "cor": "#12173f",
-        "placar": 0,
+        "placar": 29,
         "campanha": "4-8"
       },
       "visitante": {
@@ -103,7 +103,7 @@
         "nome_curto": "Jazz",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
         "cor": "#4e008e",
-        "placar": 0,
+        "placar": 38,
         "campanha": "1-13"
       }
     },

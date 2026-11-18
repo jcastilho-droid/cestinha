@@ -83,10 +83,7 @@
       "experiencia": 13,
       "universidade": "UCLA",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "33.0",
@@ -1659,5 +1656,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sac",
-  "atualizado_em": "2026-11-17T22:04:51.355Z"
+  "atualizado_em": "2026-11-18T04:09:58.859Z"
 }

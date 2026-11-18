@@ -15,16 +15,16 @@
     "sigla": "TOR",
     "posicao": 9,
     "v": 5,
-    "d": 8,
-    "pct": ".385",
-    "atras": "6",
-    "sequencia": "L4",
-    "casa": "2-4",
+    "d": 9,
+    "pct": ".357",
+    "atras": "6.5",
+    "sequencia": "L5",
+    "casa": "2-5",
     "fora": "3-4",
-    "ultimos10": "3-7",
-    "pontos_pro": "113.8",
-    "pontos_contra": "112.8",
-    "saldo": "+1.0"
+    "ultimos10": "2-8",
+    "pontos_pro": "112.9",
+    "pontos_contra": "112.6",
+    "saldo": "+0.3"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -55,10 +55,7 @@
       "experiencia": 6,
       "universidade": "Florida State",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 9,
         "min": "33.7",
@@ -738,9 +735,12 @@
         "sigla": "NY",
         "nome_curto": "Knicks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 102,
+        "adversario": 111
+      },
+      "resultado": "D"
     },
     {
       "id": "401910012",
@@ -1669,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/tor",
-  "atualizado_em": "2026-11-17T22:04:52.566Z"
+  "atualizado_em": "2026-11-18T04:09:59.849Z"
 }

@@ -53,7 +53,7 @@
       "universidade": "Virginia",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -196,7 +196,7 @@
       "universidade": "Washington",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1713,5 +1713,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-17T22:04:45.864Z"
+  "atualizado_em": "2026-11-18T04:09:53.965Z"
 }

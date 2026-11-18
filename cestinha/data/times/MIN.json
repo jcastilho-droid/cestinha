@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "16",
     "sigla": "MIN",
-    "posicao": 4,
-    "v": 10,
+    "posicao": 3,
+    "v": 11,
     "d": 4,
-    "pct": ".714",
-    "atras": "2",
-    "sequencia": "W1",
-    "casa": "6-2",
+    "pct": ".733",
+    "atras": "1.5",
+    "sequencia": "W2",
+    "casa": "7-2",
     "fora": "4-2",
-    "ultimos10": "7-3",
-    "pontos_pro": "117.4",
+    "ultimos10": "8-2",
+    "pontos_pro": "116.7",
     "pontos_contra": "106.1",
-    "saldo": "+11.3"
+    "saldo": "+10.6"
   },
   "divisao": null,
   "tecnico": "Chris Finch",
@@ -755,9 +755,12 @@
         "sigla": "POR",
         "nome_curto": "Trail Blazers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 106,
+        "adversario": 105
+      },
+      "resultado": "V"
     },
     {
       "id": "401910021",
@@ -1672,5 +1675,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-17T22:04:47.334Z"
+  "atualizado_em": "2026-11-18T04:09:55.214Z"
 }

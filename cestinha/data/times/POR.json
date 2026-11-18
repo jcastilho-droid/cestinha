@@ -15,16 +15,16 @@
     "sigla": "POR",
     "posicao": 6,
     "v": 9,
-    "d": 4,
-    "pct": ".692",
-    "atras": "2.5",
-    "sequencia": "L1",
+    "d": 5,
+    "pct": ".643",
+    "atras": "3",
+    "sequencia": "L2",
     "casa": "3-2",
-    "fora": "6-2",
+    "fora": "6-3",
     "ultimos10": "6-4",
-    "pontos_pro": "117.9",
-    "pontos_contra": "111.4",
-    "saldo": "+6.5"
+    "pontos_pro": "117.0",
+    "pontos_contra": "111.0",
+    "saldo": "+6.0"
   },
   "divisao": null,
   "tecnico": "Micah Nori",
@@ -53,7 +53,7 @@
       "universidade": null,
       "pais": "Israel",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -751,9 +751,12 @@
         "sigla": "MIN",
         "nome_curto": "Timberwolves"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 105,
+        "adversario": 106
+      },
+      "resultado": "D"
     },
     {
       "id": "401910020",
@@ -1682,5 +1685,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/por",
-  "atualizado_em": "2026-11-17T22:04:50.847Z"
+  "atualizado_em": "2026-11-18T04:09:58.423Z"
 }

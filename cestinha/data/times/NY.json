@@ -14,17 +14,17 @@
     "id": "18",
     "sigla": "NY",
     "posicao": 6,
-    "v": 7,
+    "v": 8,
     "d": 6,
-    "pct": ".538",
-    "atras": "4",
-    "sequencia": "W1",
+    "pct": ".571",
+    "atras": "3.5",
+    "sequencia": "W2",
     "casa": "4-3",
-    "fora": "3-3",
+    "fora": "4-3",
     "ultimos10": "7-3",
-    "pontos_pro": "109.9",
-    "pontos_contra": "104.0",
-    "saldo": "+5.9"
+    "pontos_pro": "110.0",
+    "pontos_contra": "103.9",
+    "saldo": "+6.1"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -739,9 +739,12 @@
         "sigla": "TOR",
         "nome_curto": "Raptors"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 102
+      },
+      "resultado": "V"
     },
     {
       "id": "401910021",
@@ -1670,5 +1673,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-17T22:04:48.312Z"
+  "atualizado_em": "2026-11-18T04:09:56.177Z"
 }
