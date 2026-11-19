@@ -807,7 +807,7 @@
     },
     {
       "id": "401910054",
-      "data_utc": "2026-11-29T23:00Z",
+      "data_utc": "2026-11-29T20:30Z",
       "tipo": 2,
       "em_casa": false,
       "adversario": {
@@ -1676,5 +1676,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mia",
-  "atualizado_em": "2026-11-19T15:12:34.010Z"
+  "atualizado_em": "2026-11-19T22:02:16.853Z"
 }

@@ -55,10 +55,7 @@
       "experiencia": 6,
       "universidade": "Florida State",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 10,
         "min": "33.7",
@@ -87,7 +84,7 @@
       "universidade": "Duke",
       "pais": "Canada",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -205,7 +202,7 @@
       "universidade": "South Carolina",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1678,5 +1675,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/tor",
-  "atualizado_em": "2026-11-19T15:12:43.208Z"
+  "atualizado_em": "2026-11-19T22:02:24.665Z"
 }

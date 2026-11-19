@@ -345,7 +345,7 @@
       "universidade": null,
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -403,7 +403,10 @@
       "experiencia": 0,
       "universidade": "Stanford",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 5,
         "min": "4.0",
@@ -460,7 +463,7 @@
       "universidade": "Baylor",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -546,7 +549,10 @@
       "experiencia": 0,
       "universidade": "Virginia",
       "pais": "Nigeria",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": null
     }
   ],
@@ -1716,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/det",
-  "atualizado_em": "2026-11-19T15:12:28.993Z"
+  "atualizado_em": "2026-11-19T22:02:12.480Z"
 }

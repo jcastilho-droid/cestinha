@@ -254,7 +254,10 @@
       "experiencia": 3,
       "universidade": "Purdue",
       "pais": "Canada",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 12,
         "min": "20.8",
@@ -1716,5 +1719,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-19T15:12:33.202Z"
+  "atualizado_em": "2026-11-19T22:02:15.994Z"
 }

@@ -369,10 +369,7 @@
       "experiencia": 3,
       "universidade": "Florida",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 3,
         "min": "3.3",
@@ -1675,5 +1672,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-19T15:12:35.748Z"
+  "atualizado_em": "2026-11-19T22:02:18.137Z"
 }

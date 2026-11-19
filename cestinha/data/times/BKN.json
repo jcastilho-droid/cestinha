@@ -518,7 +518,10 @@
       "experiencia": 2,
       "universidade": "Alabama",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": null
     }
   ],
@@ -1688,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bkn",
-  "atualizado_em": "2026-11-19T15:12:24.680Z"
+  "atualizado_em": "2026-11-19T22:02:09.202Z"
 }
