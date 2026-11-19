@@ -1,0 +1,52 @@
+{
+  "titulo": "Suns passeiam em Sacramento e Kings chegam a sete derrotas seguidas",
+  "subtitulo": "Dillon Brooks e Devin Booker fizeram 29 pts cada; Darius Acuff Jr. anotou 36 pelo Kings",
+  "corpo": "O Suns venceu o Kings por 128 a 107 em Sacramento, com 57% de aproveitamento nos arremessos e vantagem que chegou a 27 pontos.\n\nDillon Brooks e Devin Booker dividiram o protagonismo, com 29 pts cada. Brooks acertou 12 de 18 arremessos, e Booker somou 6 ast. Jalen Green completou com 18 pts, 7 reb, 7 ast.\n\nDo lado do Kings, Darius Acuff Jr. foi o cestinha da partida, com 36 pts, 4 reb, 6 ast e seis bolas de três. Domantas Sabonis teve 13 reb e 8 ast, mas não foi suficiente.\n\n**E agora?** O Suns chega a 7-7, com duas vitórias seguidas. O Kings cai para 1-13 e soma sete derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Suns",
+    "Kings"
+  ],
+  "jogadores": [
+    "Dillon Brooks",
+    "Devin Booker",
+    "Jalen Green",
+    "Darius Acuff Jr.",
+    "Domantas Sabonis"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Suns volta a 50% de aproveitamento, e o Kings chega a sete derrotas seguidas.",
+  "notas": [
+    {
+      "jogador": "Dillon Brooks",
+      "nota": 8.5,
+      "comentario": "29 pts com 12 de 18 nos arremessos"
+    },
+    {
+      "jogador": "Devin Booker",
+      "nota": 8.5,
+      "comentario": "29 pts, 6 ast e saldo de +31"
+    },
+    {
+      "jogador": "Darius Acuff Jr.",
+      "nota": 8,
+      "comentario": "36 pts e seis bolas de três na derrota"
+    },
+    {
+      "jogador": "Jalen Green",
+      "nota": 7.5,
+      "comentario": "18 pts, 7 reb e 7 ast"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910018",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.950Z"
+}

@@ -1,0 +1,52 @@
+{
+  "titulo": "Grizzlies vencem o Cavaliers em Cleveland e batem recorde fora de casa",
+  "subtitulo": "Cam Spencer fez 26 pts; Taylor Hendricks decidiu nos lances livres",
+  "corpo": "E aí, aqui é o Cestinha. O Grizzlies venceu o Cavaliers por 124 a 121 em Cleveland, num jogo com 22 trocas de liderança. Segundo a ESPN, foi a oitava vitória seguida do time fora de casa, recorde da franquia.\n\nCam Spencer comandou o ataque com 26 pts, 1 reb, 7 ast e errou só dois dos 11 arremessos (5 de 6 de três). Taylor Hendricks somou 20 pts e foi frio no fim: dois lances livres a 21 segundos e mais dois a 2,3 segundos do estouro.\n\nPelo Cavaliers, Donovan Mitchell foi o cestinha da partida, com 34 pts, 4 reb, 3 ast, e James Harden deu 9 ast.\n\n**E agora?** O Grizzlies chega a 11-4, com quatro vitórias seguidas, a um jogo do líder Spurs no Sudoeste. O Cavaliers cai para 8-8.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Grizzlies",
+    "Cavaliers"
+  ],
+  "jogadores": [
+    "Cam Spencer",
+    "Taylor Hendricks",
+    "Donovan Mitchell",
+    "James Harden",
+    "Cameron Boozer"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Oitava vitória seguida do Grizzlies fora de casa, recorde da franquia segundo a ESPN, e o time fica a um jogo da ponta do Sudoeste.",
+  "notas": [
+    {
+      "jogador": "Cam Spencer",
+      "nota": 8.5,
+      "comentario": "26 pts errando só dois arremessos"
+    },
+    {
+      "jogador": "Taylor Hendricks",
+      "nota": 8,
+      "comentario": "20 pts e quatro lances livres decisivos no fim"
+    },
+    {
+      "jogador": "Donovan Mitchell",
+      "nota": 7.5,
+      "comentario": "34 pts, mas 2 de 9 de três"
+    },
+    {
+      "jogador": "Cameron Boozer",
+      "nota": 7.5,
+      "comentario": "18 pts, 8 reb e 4 roubos de bola"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910007",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.937Z"
+}

@@ -1,0 +1,54 @@
+{
+  "titulo": "Sem Cade, Pistons espalham pontos e vencem o Pelicans",
+  "subtitulo": "John Collins fez 20 pts e Detroit acertou 17 bolas de três",
+  "corpo": "O Pistons venceu o Pelicans por 122 a 109 em Nova Orleans, mesmo sem Cade Cunningham, fora por dores no joelho direito. Sem a estrela, o time dividiu a bola: segundo a ESPN, sete jogadores terminaram com dois dígitos, e foram 17 bolas de três em 32 tentativas.\n\nJohn Collins liderou com 20 pts, 7 reb, 2 ast e 4 de 6 de três. Javonte Green fez 18 pts, e Daniss Jenkins somou 17 pts e 9 ast. Paul Reed acertou 7 de 9 arremessos e também anotou 17 pts.\n\nPelo Pelicans, Zion Williamson fez 24 pts e Jordan Poole, 22 pts.\n\n**E agora?** O Pistons vai a 10-4, com duas vitórias seguidas, e abre três jogos na ponta da Central. O Pelicans cai para 5-11.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Pistons",
+    "Pelicans"
+  ],
+  "jogadores": [
+    "Cade Cunningham",
+    "John Collins",
+    "Javonte Green",
+    "Daniss Jenkins",
+    "Paul Reed",
+    "Zion Williamson",
+    "Jordan Poole"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Mesmo sem Cade Cunningham, o Pistons abre três jogos de vantagem na liderança da Central.",
+  "notas": [
+    {
+      "jogador": "John Collins",
+      "nota": 8,
+      "comentario": "20 pts e 4 de 6 de três"
+    },
+    {
+      "jogador": "Daniss Jenkins",
+      "nota": 7.5,
+      "comentario": "17 pts e 9 ast sem Cade"
+    },
+    {
+      "jogador": "Paul Reed",
+      "nota": 7.5,
+      "comentario": "17 pts em 20 minutos, 7 de 9"
+    },
+    {
+      "jogador": "Zion Williamson",
+      "nota": 7,
+      "comentario": "24 pts com 9 de 14 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910013",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.946Z"
+}

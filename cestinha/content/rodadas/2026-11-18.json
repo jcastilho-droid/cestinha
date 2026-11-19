@@ -1,0 +1,61 @@
+{
+  "titulo": "Jazz derrubam o Lakers e Murray decide contra o Celtics",
+  "subtitulo": "Fim da sequência de nove vitórias em Los Angeles; Grizzlies batem recorde fora de casa; Cooper Flagg faz 33",
+  "corpo": "E aí, aqui é o Cestinha. Noite de 12 jogos, com zebra em Los Angeles e virada em Denver. Bora.\n\n- **Jazz 109 a 97 Lakers:** Keyonte George fez 30 pts e 10 ast, e o Jazz encerrou a sequência de nove vitórias do Lakers, agora 13-3.\n- **Nuggets 105 a 101 Celtics:** o Nuggets tirou 17 de desvantagem e Jamal Murray decidiu a 7 segundos do fim.\n- **Grizzlies 124 a 121 Cavaliers:** Taylor Hendricks fechou nos lances livres e o time bateu o recorde da franquia de vitórias seguidas fora de casa, segundo a ESPN.\n- **76ers 121 a 116 Magic:** virada no último minuto e meio, com VJ Edgecombe e LeBron James.\n- **Hawks 117 a 112 Thunder:** Onyeka Okongwu fez 28 pts e Jalen Johnson teve triplo-duplo.\n- **Mavericks 116 a 94 Warriors:** Cooper Flagg fez 33 pts e o Warriors chegou a quatro derrotas seguidas.\n- **Heat 137 a 130 Bucks:** o Heat abriu 30, tirou o pé e venceu a sexta seguida. Bucks com 11 derrotas seguidas.\n- **Pistons 122 a 109 Pelicans:** mesmo sem Cade Cunningham, sete jogadores com dois dígitos.\n- **Rockets 119 a 104 Pacers:** 19 bolas de três e Reed Sheppard com 6 de 7.\n- **Wizards 103 a 99 Raptors:** Anthony Davis fez 25 pts e 14 reb. Raptors com seis derrotas seguidas.\n- **Suns 128 a 107 Kings:** Dillon Brooks e Devin Booker com 29 pts cada. Kings com sete derrotas seguidas.\n- **Bulls 137 a 107 Nets:** passeio no Brooklyn, com Matas Buzelis fazendo 25 pts.\n\n**Destaque da noite:** Cooper Flagg, com 33 pts, 5 reb, 9 ast, 4 roubos de bola. Menção honrosa para Giannis Antetokounmpo (27 pts, 13 reb, 9 ast) e Darius Acuff Jr., que fez 36 pts na derrota do Kings.",
+  "tipo": "resumo_rodada",
+  "status": "CONFIRMADO",
+  "importancia": 4,
+  "times": [
+    "Jazz",
+    "Lakers",
+    "Nuggets",
+    "Celtics",
+    "Grizzlies",
+    "Cavaliers",
+    "76ers",
+    "Magic",
+    "Hawks",
+    "Thunder",
+    "Mavericks",
+    "Warriors",
+    "Heat",
+    "Bucks",
+    "Pistons",
+    "Pelicans",
+    "Rockets",
+    "Pacers",
+    "Wizards",
+    "Raptors",
+    "Suns",
+    "Kings",
+    "Bulls",
+    "Nets"
+  ],
+  "jogadores": [
+    "Keyonte George",
+    "Jamal Murray",
+    "Taylor Hendricks",
+    "VJ Edgecombe",
+    "LeBron James",
+    "Onyeka Okongwu",
+    "Jalen Johnson",
+    "Cooper Flagg",
+    "Cade Cunningham",
+    "Reed Sheppard",
+    "Anthony Davis",
+    "Dillon Brooks",
+    "Devin Booker",
+    "Matas Buzelis",
+    "Giannis Antetokounmpo",
+    "Darius Acuff Jr."
+  ],
+  "fontes": [
+    "ESPN"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "rodada",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.983Z"
+}

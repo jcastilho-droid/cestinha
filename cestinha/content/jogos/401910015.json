@@ -1,0 +1,52 @@
+{
+  "titulo": "Nuggets tiram 17 de desvantagem e Jamal Murray decide contra o Celtics",
+  "subtitulo": "Nikola Jokic fez 24 pts, 8 reb, 9 ast; Murray acertou o arremesso final a 7 segundos do fim",
+  "corpo": "O Nuggets venceu o Celtics por 105 a 101 em Denver, depois de estar 17 pontos atrás. O Celtics ganhou o primeiro tempo, mas parou no segundo: fez só 40 pontos nos dois últimos quartos e acertou 11 de 44 bolas de três no jogo.\n\nO fim foi tenso, num jogo com 15 trocas de liderança. DeMar DeRozan virou na linha do lance livre a 49 segundos, e Jamal Murray matou com arremesso de meia distância a 7 segundos do fim, ainda somando um lance livre técnico.\n\nNikola Jokic teve 24 pts, 8 reb, 9 ast, e Murray fez 21 pts. Pelo Celtics, Jayson Tatum somou 24 pts e 8 reb, e Neemias Queta fez duplo-duplo.\n\n**E agora?** O Nuggets vai a 8-5. O Celtics cai para 11-4, com duas derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Nuggets",
+    "Celtics"
+  ],
+  "jogadores": [
+    "Nikola Jokic",
+    "Jamal Murray",
+    "DeMar DeRozan",
+    "Jayson Tatum",
+    "Neemias Queta"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Celtics perde a segunda seguida e fica um jogo e meio atrás do 76ers no Atlântico.",
+  "notas": [
+    {
+      "jogador": "Jamal Murray",
+      "nota": 8.5,
+      "comentario": "21 pts e o arremesso que decidiu"
+    },
+    {
+      "jogador": "Nikola Jokic",
+      "nota": 8.5,
+      "comentario": "24 pts, 8 reb e 9 ast"
+    },
+    {
+      "jogador": "DeMar DeRozan",
+      "nota": 7.5,
+      "comentario": "18 pts e a virada no lance livre"
+    },
+    {
+      "jogador": "Jayson Tatum",
+      "nota": 7,
+      "comentario": "24 pts, mas 10 de 23 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910015",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.948Z"
+}

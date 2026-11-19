@@ -1,0 +1,51 @@
+{
+  "titulo": "Jazz encerram a sequência de nove vitórias do Lakers",
+  "subtitulo": "Keyonte George fez 30 pts e 10 ast em Los Angeles",
+  "corpo": "Zebra em Los Angeles. O Jazz, que tinha só duas vitórias na temporada, venceu o Lakers por 109 a 97 e encerrou a sequência de nove vitórias seguidas dos donos da casa.\n\nKeyonte George comandou com 30 pts, 1 reb, 10 ast e cinco bolas de três. Ace Bailey somou 19 pts e 8 reb, e Svi Mykhailiuk fez 15 pts. O Jazz chegou a abrir 18 pontos e fechou com 31 no último quarto.\n\nPelo Lakers, Luka Doncic fez 29 pts, 5 reb, 7 ast, mas acertou só 10 de 28 arremessos e 2 de 12 de três. O time inteiro arremessou 38%.\n\n**E agora?** O Lakers cai para 13-3, mas segue líder do Pacífico. O Jazz vai a 3-13, com duas vitórias seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Jazz",
+    "Lakers"
+  ],
+  "jogadores": [
+    "Keyonte George",
+    "Ace Bailey",
+    "Svi Mykhailiuk",
+    "Luka Doncic"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Jazz, lanterna do Noroeste, encerra a sequência de nove vitórias do Lakers.",
+  "notas": [
+    {
+      "jogador": "Keyonte George",
+      "nota": 9,
+      "comentario": "30 pts e 10 ast derrubando o líder"
+    },
+    {
+      "jogador": "Ace Bailey",
+      "nota": 7.5,
+      "comentario": "19 pts e 8 reb"
+    },
+    {
+      "jogador": "Svi Mykhailiuk",
+      "nota": 7,
+      "comentario": "15 pts e saldo de +16"
+    },
+    {
+      "jogador": "Luka Doncic",
+      "nota": 6,
+      "comentario": "29 pts, mas 2 de 12 de três"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910017",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.950Z"
+}

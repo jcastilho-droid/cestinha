@@ -1,0 +1,51 @@
+{
+  "titulo": "Bulls atropelam o Nets no Brooklyn",
+  "subtitulo": "Matas Buzelis fez 25 pts; Josh Giddey ficou perto do triplo-duplo",
+  "corpo": "Jogo resolvido cedo. O Bulls venceu o Nets por 137 a 107 no Brooklyn, chegou a abrir 37 pontos e já tinha 111 no placar ao fim do terceiro quarto.\n\nMatas Buzelis foi o cestinha, com 25 pts, 5 reb, 4 ast e cinco bolas de três. Josh Giddey ficou perto do triplo-duplo: 18 pts, 14 reb, 9 ast. Norman Powell somou 17 pts. O Bulls deu 36 assistências e marcou 62 pontos no garrafão.\n\nPelo Nets, Egor Demin fez 22 pts, mas precisou de 22 arremessos. O time ainda desperdiçou a bola 22 vezes.\n\n**E agora?** O Bulls vai a 4-10. O Nets cai para 3-11, com três derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Bulls",
+    "Nets"
+  ],
+  "jogadores": [
+    "Matas Buzelis",
+    "Josh Giddey",
+    "Norman Powell",
+    "Egor Demin"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Bulls interrompe a má fase com a maior vitória da noite, e o Nets soma a terceira derrota seguida.",
+  "notas": [
+    {
+      "jogador": "Matas Buzelis",
+      "nota": 8.5,
+      "comentario": "25 pts e 5 de 9 de três"
+    },
+    {
+      "jogador": "Josh Giddey",
+      "nota": 8.5,
+      "comentario": "18 pts, 14 reb e 9 ast"
+    },
+    {
+      "jogador": "Norman Powell",
+      "nota": 7,
+      "comentario": "17 pts com cinco bolas de três"
+    },
+    {
+      "jogador": "Egor Demin",
+      "nota": 5.5,
+      "comentario": "22 pts, mas 9 de 22 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910011",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.944Z"
+}

@@ -1,0 +1,52 @@
+{
+  "titulo": "Wizards seguram reação no fim e afundam o Raptors",
+  "subtitulo": "Anthony Davis fez 25 pts e 14 reb; Raptors chegam a seis derrotas seguidas",
+  "corpo": "O Wizards venceu o Raptors por 103 a 99 em Toronto. Foi jogo pegado, com 14 trocas de liderança, e o Wizards levou a melhor no rebote: 51 contra 42.\n\nNo fim, o Wizards abriu 10 pontos a menos de quatro minutos do fim, mas o Raptors encostou para três com bandeja de Ja'Kobe Walter a 27 segundos. Anthony Davis fechou com lance livre a 0,6 segundo do estouro.\n\nDavis foi o cestinha, com 25 pts, 14 reb, 2 ast. AJ Dybantsa fez duplo-duplo, com 23 pts e 12 reb, e Kyshawn George somou 20 pts. Pelo Raptors, Immanuel Quickley fez 24 pts.\n\n**E agora?** O Wizards vai a 5-11. O Raptors cai para 5-10 e soma seis derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Wizards",
+    "Raptors"
+  ],
+  "jogadores": [
+    "Anthony Davis",
+    "AJ Dybantsa",
+    "Kyshawn George",
+    "Immanuel Quickley",
+    "Ja'Kobe Walter"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Raptors chega a seis derrotas seguidas e o Wizards conquista só a quinta vitória na temporada.",
+  "notas": [
+    {
+      "jogador": "Anthony Davis",
+      "nota": 8.5,
+      "comentario": "25 pts, 14 reb e o lance livre final"
+    },
+    {
+      "jogador": "AJ Dybantsa",
+      "nota": 8,
+      "comentario": "Duplo-duplo com 23 pts e 12 reb"
+    },
+    {
+      "jogador": "Kyshawn George",
+      "nota": 7,
+      "comentario": "20 pts e quatro bolas de três"
+    },
+    {
+      "jogador": "Immanuel Quickley",
+      "nota": 6.5,
+      "comentario": "24 pts, mas 9 de 21 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910012",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.945Z"
+}

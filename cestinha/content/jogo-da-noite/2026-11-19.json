@@ -1,0 +1,34 @@
+{
+  "titulo": "Grizzlies embalados recebem um Warriors que precisa parar de perder, com Gui Santos no elenco",
+  "subtitulo": "Warriors x Grizzlies, 22h00",
+  "corpo": "Se você só puder ver um jogo hoje, fique com Warriors x Grizzlies. São dois times do Oeste em momentos opostos: o Grizzlies chega com 4 vitórias seguidas, 11-4 e a 5ª posição na conferência. O Warriors vem com 4 derrotas seguidas, 8-7 e em 10º.\n\nOs dois jogam desfalcados. O Warriors segue sem Stephen Curry, e a bola fica com Yaxel Lendeborg, que tem média de 20.8 pts. O Grizzlies não terá Ty Jerome e aposta em Cameron Boozer, com 16.5 pts e 9.5 reb por jogo.\n\nE tem brasileiro: Gui Santos está no elenco do Warriors.",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Warriors",
+    "Grizzlies"
+  ],
+  "jogadores": [
+    "Yaxel Lendeborg",
+    "Cameron Boozer",
+    "Stephen Curry",
+    "Ty Jerome",
+    "Gui Santos"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401910019",
+  "motivos": [
+    "Boa fase",
+    "Brasileiro em quadra"
+  ],
+  "ficar_de_olho": "Cameron Boozer contra Yaxel Lendeborg, as referências de dois times desfalcados.",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-19"
+  },
+  "escrito_em": "2026-11-19T11:52:06.981Z"
+}

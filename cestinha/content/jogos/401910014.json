@@ -1,0 +1,52 @@
+{
+  "titulo": "Hawks resistem no fim e derrubam o Thunder em Oklahoma City",
+  "subtitulo": "Onyeka Okongwu fez 28 pts e Jalen Johnson teve triplo-duplo",
+  "corpo": "O Hawks venceu o Thunder por 117 a 112 em Oklahoma City. O time acertou 20 bolas de três e abriu 11 pontos a dois minutos do fim, mas viu o Thunder encostar para quatro antes de Onyeka Okongwu fechar a conta no lance livre, a 2,4 segundos do estouro.\n\nOkongwu foi o cestinha do Hawks, com 28 pts, 9 reb, 2 ast e cinco bolas de três. Jalen Johnson fez triplo-duplo: 16 pts, 12 reb, 11 ast. Segundo a ESPN, Luguentz Dort (16 pts) e Aaron Wiggins (14 pts) venceram na volta a Oklahoma City.\n\nShai Gilgeous-Alexander fez 34 pts pelo Thunder, mas acertou só 5 de 10 lances livres.\n\n**E agora?** O Hawks vai a 9-6, com duas vitórias seguidas, e divide a ponta do Sudeste. O Thunder cai para 9-6.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Hawks",
+    "Thunder"
+  ],
+  "jogadores": [
+    "Onyeka Okongwu",
+    "Jalen Johnson",
+    "Luguentz Dort",
+    "Aaron Wiggins",
+    "Shai Gilgeous-Alexander"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Com a segunda vitória seguida, o Hawks alcança o Heat na liderança do Sudeste.",
+  "notas": [
+    {
+      "jogador": "Onyeka Okongwu",
+      "nota": 8.5,
+      "comentario": "28 pts e cinco bolas de três"
+    },
+    {
+      "jogador": "Jalen Johnson",
+      "nota": 8.5,
+      "comentario": "Triplo-duplo com 16 pts, 12 reb e 11 ast"
+    },
+    {
+      "jogador": "Shai Gilgeous-Alexander",
+      "nota": 7.5,
+      "comentario": "34 pts, mas só 5 de 10 nos lances livres"
+    },
+    {
+      "jogador": "Luguentz Dort",
+      "nota": 7,
+      "comentario": "16 pts na volta a Oklahoma City"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910014",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.947Z"
+}

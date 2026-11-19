@@ -1,0 +1,53 @@
+{
+  "titulo": "Cooper Flagg faz 33 e Mavericks atropelam o Warriors",
+  "subtitulo": "Mavs encerram sequência de três derrotas; Warriors seguem sem vencer desde a lesão de Stephen Curry",
+  "corpo": "O Mavericks venceu o Warriors por 116 a 94 em Dallas e encerrou a sequência de três derrotas. O jogo foi decidido cedo: a vantagem chegou a 29 pontos, e o Warriors acertou só 9 de 38 bolas de três.\n\nCooper Flagg comandou com 33 pts, 5 reb, 9 ast e 4 roubos de bola, errando só quatro dos 15 arremessos. P.J. Washington somou 21 pts e 3 tocos, e Kyrie Irving fez 17 pts.\n\nPelo Warriors, Will Richard foi o cestinha, com 20 pts. O brasileiro Gui Santos esteve em quadra pelo time. Segundo a ESPN, o Warriors ainda não venceu desde a lesão de Stephen Curry.\n\n**E agora?** O Mavericks vai a 8-7. O Warriors também fica com 8-7, agora com quatro derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Mavericks",
+    "Warriors"
+  ],
+  "jogadores": [
+    "Cooper Flagg",
+    "P.J. Washington",
+    "Kyrie Irving",
+    "Will Richard",
+    "Yaxel Lendeborg",
+    "Gui Santos"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Mavericks para de perder e alcança o Warriors, que chega a quatro derrotas seguidas, com 8-7.",
+  "notas": [
+    {
+      "jogador": "Cooper Flagg",
+      "nota": 9,
+      "comentario": "33 pts, 9 ast e 11 de 15 nos arremessos"
+    },
+    {
+      "jogador": "P.J. Washington",
+      "nota": 8,
+      "comentario": "21 pts, 5 de 7 de três e 3 tocos"
+    },
+    {
+      "jogador": "Kyrie Irving",
+      "nota": 7,
+      "comentario": "17 pts, 6 reb e 5 ast"
+    },
+    {
+      "jogador": "Yaxel Lendeborg",
+      "nota": 4.5,
+      "comentario": "13 pts, mas 6 de 18 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910016",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.949Z"
+}

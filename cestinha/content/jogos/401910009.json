@@ -1,0 +1,53 @@
+{
+  "titulo": "Heat abre 30, quase deixa escapar e vence o Bucks",
+  "subtitulo": "Giannis Antetokounmpo ficou perto do triplo-duplo: 27 pts, 13 reb, 9 ast",
+  "corpo": "O Heat venceu o Bucks por 137 a 130 em Miami e chegou à sexta vitória seguida. O time liderou o jogo inteiro e chegou a abrir 30 pontos, mas tirou o pé: o Bucks fez 44 pontos no último quarto e deixou o placar apertado no fim.\n\nGiannis Antetokounmpo ficou perto do triplo-duplo, com 27 pts, 13 reb, 9 ast e 13 de 16 nos lances livres. Bam Adebayo somou 26 pts, e Davion Mitchell fez 24 pts com 6 de 7 de três. O Heat acertou 22 bolas de três.\n\nPelo Bucks, Kyle Kuzma fez 26 pts, e Brayden Burries e Kasparas Jakucionis anotaram 20 pts cada.\n\n**E agora?** O Heat vai a 9-6 e divide a ponta do Sudeste com o Hawks. O Bucks cai para 1-14, com 11 derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Heat",
+    "Bucks"
+  ],
+  "jogadores": [
+    "Giannis Antetokounmpo",
+    "Bam Adebayo",
+    "Davion Mitchell",
+    "Kyle Kuzma",
+    "Brayden Burries",
+    "Kasparas Jakucionis"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Sexta vitória seguida do Heat, que divide a ponta do Sudeste; o Bucks chega a 11 derrotas seguidas.",
+  "notas": [
+    {
+      "jogador": "Giannis Antetokounmpo",
+      "nota": 9,
+      "comentario": "27 pts, 13 reb e 9 ast em 32 minutos"
+    },
+    {
+      "jogador": "Davion Mitchell",
+      "nota": 8.5,
+      "comentario": "24 pts e 6 de 7 de três"
+    },
+    {
+      "jogador": "Bam Adebayo",
+      "nota": 8,
+      "comentario": "26 pts e saldo de +17"
+    },
+    {
+      "jogador": "Kyle Kuzma",
+      "nota": 6.5,
+      "comentario": "26 pts numa reação que veio tarde"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910009",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.942Z"
+}

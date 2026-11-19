@@ -1,0 +1,53 @@
+{
+  "titulo": "76ers tiram 17 de desvantagem e vencem o Magic no fim",
+  "subtitulo": "Joel Embiid fez 26 pts; VJ Edgecombe e LeBron James decidiram o último minuto e meio",
+  "corpo": "O 76ers venceu o Magic por 121 a 116 em Orlando, depois de ficar 17 pontos atrás. O Magic fez 40 pontos no primeiro quarto, mas o 76ers ganhou os outros três.\n\nO jogo virou no fim: Jalen Suggs colocou o Magic na frente com bola de três a dois minutos do fim, mas VJ Edgecombe respondeu de três, LeBron James acertou de meia distância e Anfernee Simons matou o jogo com outra bola de três a 15 segundos.\n\nJoel Embiid foi o cestinha do 76ers, com 26 pts, 6 reb, 7 ast e 3 tocos. Edgecombe fez 24 pts, e LeBron somou 22 pts e 6 ast. Pelo Magic, Franz Wagner teve 27 pts, 8 reb, 11 ast.\n\n**E agora?** O 76ers chega a 13-3, com quatro vitórias seguidas, e lidera o Atlântico. O Magic cai para 6-8.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "76ers",
+    "Magic"
+  ],
+  "jogadores": [
+    "Joel Embiid",
+    "VJ Edgecombe",
+    "LeBron James",
+    "Anfernee Simons",
+    "Jalen Suggs",
+    "Franz Wagner"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "Quarta vitória seguida do 76ers, que segue líder da Divisão do Atlântico com 13-3.",
+  "notas": [
+    {
+      "jogador": "VJ Edgecombe",
+      "nota": 8.5,
+      "comentario": "24 pts, 8 reb e a bola de três da virada"
+    },
+    {
+      "jogador": "Joel Embiid",
+      "nota": 8,
+      "comentario": "26 pts, 7 ast e 3 tocos"
+    },
+    {
+      "jogador": "Franz Wagner",
+      "nota": 8,
+      "comentario": "27 pts e 11 ast, mas saiu derrotado"
+    },
+    {
+      "jogador": "LeBron James",
+      "nota": 7.5,
+      "comentario": "22 pts e assistências decisivas no fim"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910010",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.943Z"
+}

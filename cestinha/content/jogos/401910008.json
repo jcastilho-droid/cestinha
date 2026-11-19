@@ -1,0 +1,51 @@
+{
+  "titulo": "Rockets chovem de três e passam pelo Pacers em Indianápolis",
+  "subtitulo": "Kevin Durant fez 21 pts e Reed Sheppard acertou 6 de 7 de três",
+  "corpo": "O Rockets venceu o Pacers por 119 a 104 fora de casa e não deixou dúvida. Foram 19 bolas de três em 35 tentativas, e a vantagem chegou a 21 pontos. O primeiro quarto, 39 a 28, já deu o tom. Segundo a ESPN, o time ainda perdeu Sengun por lesão durante a partida.\n\nKevin Durant liderou com 21 pts, 2 reb, 3 ast, acertando 7 de 9 arremessos. Reed Sheppard fez 20 pts com 6 de 7 de três, e Amen Thompson somou 15 pts e 9 reb.\n\nPelo Pacers, Pascal Siakam foi o cestinha da partida, com 24 pts, 4 reb, 3 ast.\n\n**E agora?** O Rockets vai a 12-4, meio jogo atrás do Spurs no Sudoeste. O Pacers cai para 5-10, com duas derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Rockets",
+    "Pacers"
+  ],
+  "jogadores": [
+    "Kevin Durant",
+    "Reed Sheppard",
+    "Amen Thompson",
+    "Pascal Siakam"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Rockets segue meio jogo atrás do Spurs na briga pela ponta do Sudoeste.",
+  "notas": [
+    {
+      "jogador": "Reed Sheppard",
+      "nota": 8.5,
+      "comentario": "20 pts e 6 de 7 de três"
+    },
+    {
+      "jogador": "Kevin Durant",
+      "nota": 8,
+      "comentario": "21 pts com 7 de 9 nos arremessos"
+    },
+    {
+      "jogador": "Amen Thompson",
+      "nota": 7.5,
+      "comentario": "15 pts, 9 reb e melhor saldo do jogo"
+    },
+    {
+      "jogador": "Pascal Siakam",
+      "nota": 7,
+      "comentario": "24 pts eficientes, mas sem ajuda"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910008",
+    "data_rodada": "2026-11-18"
+  },
+  "escrito_em": "2026-11-19T11:52:06.940Z"
+}
