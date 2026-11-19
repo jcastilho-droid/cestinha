@@ -170,7 +170,10 @@
       "experiencia": 4,
       "universidade": "Dayton",
       "pais": "Belgium",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "29.1",
@@ -282,7 +285,10 @@
       "experiencia": 9,
       "universidade": "Texas A&M",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 12,
         "min": "16.3",
@@ -1685,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/por",
-  "atualizado_em": "2026-11-18T17:22:11.794Z"
+  "atualizado_em": "2026-11-19T00:00:07.648Z"
 }

@@ -80,10 +80,7 @@
       "experiencia": 10,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "32.4",
@@ -308,7 +305,7 @@
       "universidade": "Little Rock",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -366,10 +363,7 @@
       "experiencia": 5,
       "universidade": null,
       "pais": null,
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 8,
         "min": "12.1",
@@ -1679,5 +1673,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mia",
-  "atualizado_em": "2026-11-18T17:22:07.382Z"
+  "atualizado_em": "2026-11-19T00:00:02.731Z"
 }

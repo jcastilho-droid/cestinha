@@ -199,7 +199,7 @@
       "universidade": "UCLA",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -286,7 +286,7 @@
       "universidade": "California",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -344,10 +344,7 @@
       "experiencia": 7,
       "universidade": "Utah State",
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 9,
         "min": "23.1",
@@ -1680,5 +1677,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cle",
-  "atualizado_em": "2026-11-18T17:22:03.066Z"
+  "atualizado_em": "2026-11-18T23:59:57.263Z"
 }

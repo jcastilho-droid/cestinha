@@ -398,7 +398,7 @@
       "universidade": "Florida",
       "pais": "Dominican Republic",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -428,10 +428,7 @@
       "experiencia": 15,
       "universidade": "Michigan State",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "25.8",
@@ -1696,5 +1693,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-18T17:22:04.703Z"
+  "atualizado_em": "2026-11-18T23:59:59.423Z"
 }

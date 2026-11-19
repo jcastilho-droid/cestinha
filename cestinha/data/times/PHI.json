@@ -55,7 +55,10 @@
       "experiencia": 7,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "36.1",
@@ -282,7 +285,10 @@
       "experiencia": 8,
       "universidade": "Kansas State",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "26.5",
@@ -1675,5 +1681,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-18T17:22:11.016Z"
+  "atualizado_em": "2026-11-19T00:00:06.647Z"
 }

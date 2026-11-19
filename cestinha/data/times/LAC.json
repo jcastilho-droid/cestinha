@@ -529,10 +529,7 @@
       "experiencia": 2,
       "universidade": "Penn State",
       "pais": "Switzerland",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": null
     }
   ],
@@ -1699,5 +1696,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lac",
-  "atualizado_em": "2026-11-18T17:22:06.078Z"
+  "atualizado_em": "2026-11-19T00:00:01.020Z"
 }

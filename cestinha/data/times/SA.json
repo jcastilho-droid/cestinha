@@ -81,7 +81,7 @@
       "universidade": "Rutgers",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1669,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sa",
-  "atualizado_em": "2026-11-18T17:22:12.583Z"
+  "atualizado_em": "2026-11-19T00:00:08.619Z"
 }

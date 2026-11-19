@@ -425,10 +425,7 @@
       "experiencia": 5,
       "universidade": "Arkansas",
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 7,
         "min": "18.4",
@@ -1713,5 +1710,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-18T17:22:10.108Z"
+  "atualizado_em": "2026-11-19T00:00:05.574Z"
 }

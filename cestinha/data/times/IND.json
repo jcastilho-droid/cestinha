@@ -115,7 +115,7 @@
       "universidade": "Gonzaga",
       "pais": "Canada",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -313,10 +313,7 @@
       "experiencia": 12,
       "universidade": "Arizona",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 5,
         "min": "13.4",
@@ -1688,5 +1685,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-18T17:22:05.498Z"
+  "atualizado_em": "2026-11-19T00:00:00.517Z"
 }
