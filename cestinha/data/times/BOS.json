@@ -15,16 +15,16 @@
     "sigla": "BOS",
     "posicao": 2,
     "v": 11,
-    "d": 3,
-    "pct": ".786",
-    "atras": "0.5",
-    "sequencia": "L1",
+    "d": 4,
+    "pct": ".733",
+    "atras": "1.5",
+    "sequencia": "L2",
     "casa": "6-1",
-    "fora": "5-2",
-    "ultimos10": "8-2",
-    "pontos_pro": "114.8",
-    "pontos_contra": "103.3",
-    "saldo": "+11.5"
+    "fora": "5-3",
+    "ultimos10": "7-3",
+    "pontos_pro": "113.9",
+    "pontos_contra": "103.4",
+    "saldo": "+10.5"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -756,9 +756,12 @@
         "sigla": "DEN",
         "nome_curto": "Nuggets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 101,
+        "adversario": 105
+      },
+      "resultado": "D"
     },
     {
       "id": "401910028",
@@ -1673,5 +1676,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-18T23:59:53.561Z"
+  "atualizado_em": "2026-11-19T07:34:06.285Z"
 }

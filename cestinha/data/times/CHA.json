@@ -13,11 +13,11 @@
   "classificacao": {
     "id": "30",
     "sigla": "CHA",
-    "posicao": 11,
+    "posicao": 12,
     "v": 4,
     "d": 10,
     "pct": ".286",
-    "atras": "7.5",
+    "atras": "8",
     "sequencia": "L3",
     "casa": "3-4",
     "fora": "1-6",
@@ -1694,5 +1694,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cha",
-  "atualizado_em": "2026-11-18T23:59:54.724Z"
+  "atualizado_em": "2026-11-19T07:34:07.069Z"
 }

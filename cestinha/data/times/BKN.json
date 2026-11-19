@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "17",
     "sigla": "BKN",
-    "posicao": 13,
+    "posicao": 14,
     "v": 3,
-    "d": 10,
-    "pct": ".231",
-    "atras": "8",
-    "sequencia": "L2",
-    "casa": "1-4",
+    "d": 11,
+    "pct": ".214",
+    "atras": "9",
+    "sequencia": "L3",
+    "casa": "1-5",
     "fora": "2-6",
     "ultimos10": "3-7",
-    "pontos_pro": "111.2",
-    "pontos_contra": "117.8",
-    "saldo": "-6.6"
+    "pontos_pro": "110.9",
+    "pontos_contra": "119.2",
+    "saldo": "-8.3"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -754,9 +754,12 @@
         "sigla": "CHI",
         "nome_curto": "Bulls"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 107,
+        "adversario": 137
+      },
+      "resultado": "D"
     },
     {
       "id": "401909306",
@@ -1685,5 +1688,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bkn",
-  "atualizado_em": "2026-11-18T23:59:54.221Z"
+  "atualizado_em": "2026-11-19T07:34:06.714Z"
 }

@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "27",
     "sigla": "WSH",
-    "posicao": 12,
-    "v": 4,
+    "posicao": 11,
+    "v": 5,
     "d": 11,
-    "pct": ".267",
+    "pct": ".313",
     "atras": "8",
-    "sequencia": "L8",
+    "sequencia": "W1",
     "casa": "2-5",
-    "fora": "2-6",
+    "fora": "3-6",
     "ultimos10": "2-8",
-    "pontos_pro": "111.3",
-    "pontos_contra": "119.2",
-    "saldo": "-7.9"
+    "pontos_pro": "110.8",
+    "pontos_contra": "117.9",
+    "saldo": "-7.1"
   },
   "divisao": null,
   "tecnico": "Brian Keefe",
@@ -800,9 +800,12 @@
         "sigla": "TOR",
         "nome_curto": "Raptors"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 103,
+        "adversario": 99
+      },
+      "resultado": "V"
     },
     {
       "id": "401909309",
@@ -1703,5 +1706,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/wsh",
-  "atualizado_em": "2026-11-19T00:00:10.279Z"
+  "atualizado_em": "2026-11-19T07:34:17.053Z"
 }

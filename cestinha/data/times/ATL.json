@@ -14,17 +14,17 @@
     "id": "1",
     "sigla": "ATL",
     "posicao": 5,
-    "v": 8,
+    "v": 9,
     "d": 6,
-    "pct": ".571",
+    "pct": ".600",
     "atras": "3.5",
-    "sequencia": "W1",
+    "sequencia": "W2",
     "casa": "3-3",
-    "fora": "5-3",
-    "ultimos10": "6-4",
-    "pontos_pro": "117.8",
-    "pontos_contra": "116.1",
-    "saldo": "+1.7"
+    "fora": "6-3",
+    "ultimos10": "7-3",
+    "pontos_pro": "117.7",
+    "pontos_contra": "115.8",
+    "saldo": "+1.9"
   },
   "divisao": null,
   "tecnico": "Quin Snyder",
@@ -760,9 +760,12 @@
         "sigla": "OKC",
         "nome_curto": "Thunder"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 117,
+        "adversario": 112
+      },
+      "resultado": "V"
     },
     {
       "id": "401909305",
@@ -1677,5 +1680,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/atl",
-  "atualizado_em": "2026-11-18T23:59:53.090Z"
+  "atualizado_em": "2026-11-19T07:34:05.906Z"
 }

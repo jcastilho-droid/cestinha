@@ -13,11 +13,11 @@
   "classificacao": {
     "id": "16",
     "sigla": "MIN",
-    "posicao": 3,
+    "posicao": 4,
     "v": 11,
     "d": 4,
     "pct": ".733",
-    "atras": "2",
+    "atras": "1.5",
     "sequencia": "W2",
     "casa": "7-2",
     "fora": "4-2",
@@ -1675,5 +1675,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-19T00:00:04.099Z"
+  "atualizado_em": "2026-11-19T07:34:12.461Z"
 }

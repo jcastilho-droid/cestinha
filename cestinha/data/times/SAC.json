@@ -15,16 +15,16 @@
     "sigla": "SAC",
     "posicao": 15,
     "v": 1,
-    "d": 12,
-    "pct": ".077",
+    "d": 13,
+    "pct": ".071",
     "atras": "11",
-    "sequencia": "L6",
-    "casa": "0-8",
+    "sequencia": "L7",
+    "casa": "0-9",
     "fora": "1-4",
     "ultimos10": "1-9",
-    "pontos_pro": "107.8",
-    "pontos_contra": "121.2",
-    "saldo": "-13.4"
+    "pontos_pro": "107.7",
+    "pontos_contra": "121.7",
+    "saldo": "-14.0"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -719,9 +719,12 @@
         "sigla": "PHX",
         "nome_curto": "Suns"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 107,
+        "adversario": 128
+      },
+      "resultado": "D"
     },
     {
       "id": "401909313",
@@ -1650,5 +1653,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sac",
-  "atualizado_em": "2026-11-19T00:00:08.148Z"
+  "atualizado_em": "2026-11-19T07:34:15.541Z"
 }

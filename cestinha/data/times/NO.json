@@ -15,16 +15,16 @@
     "sigla": "NO",
     "posicao": 12,
     "v": 5,
-    "d": 10,
-    "pct": ".333",
+    "d": 11,
+    "pct": ".313",
     "atras": "8",
-    "sequencia": "W1",
-    "casa": "4-6",
+    "sequencia": "L1",
+    "casa": "4-7",
     "fora": "1-4",
-    "ultimos10": "4-6",
-    "pontos_pro": "115.8",
-    "pontos_contra": "122.9",
-    "saldo": "-7.1"
+    "ultimos10": "3-7",
+    "pontos_pro": "115.4",
+    "pontos_contra": "122.8",
+    "saldo": "-7.4"
   },
   "divisao": null,
   "tecnico": "Jamahl Mosley",
@@ -826,9 +826,12 @@
         "sigla": "DET",
         "nome_curto": "Pistons"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 109,
+        "adversario": 122
+      },
+      "resultado": "D"
     },
     {
       "id": "401909310",
@@ -1729,5 +1732,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/no",
-  "atualizado_em": "2026-11-19T00:00:04.600Z"
+  "atualizado_em": "2026-11-19T07:34:12.816Z"
 }

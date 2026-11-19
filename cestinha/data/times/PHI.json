@@ -14,17 +14,17 @@
     "id": "20",
     "sigla": "PHI",
     "posicao": 1,
-    "v": 12,
+    "v": 13,
     "d": 3,
-    "pct": ".800",
+    "pct": ".813",
     "atras": "-",
-    "sequencia": "W3",
+    "sequencia": "W4",
     "casa": "6-2",
-    "fora": "6-1",
+    "fora": "7-1",
     "ultimos10": "8-2",
-    "pontos_pro": "114.1",
-    "pontos_contra": "111.3",
-    "saldo": "+2.8"
+    "pontos_pro": "114.5",
+    "pontos_contra": "111.6",
+    "saldo": "+2.9"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -778,9 +778,12 @@
         "sigla": "ORL",
         "nome_curto": "Magic"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 121,
+        "adversario": 116
+      },
+      "resultado": "V"
     },
     {
       "id": "401910023",
@@ -1681,5 +1684,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-19T00:00:06.647Z"
+  "atualizado_em": "2026-11-19T07:34:14.376Z"
 }

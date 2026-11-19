@@ -14,17 +14,17 @@
     "id": "14",
     "sigla": "MIA",
     "posicao": 4,
-    "v": 8,
+    "v": 9,
     "d": 6,
-    "pct": ".571",
+    "pct": ".600",
     "atras": "3.5",
-    "sequencia": "W5",
-    "casa": "4-3",
+    "sequencia": "W6",
+    "casa": "5-3",
     "fora": "4-3",
     "ultimos10": "8-2",
-    "pontos_pro": "119.4",
-    "pontos_contra": "119.1",
-    "saldo": "+0.3"
+    "pontos_pro": "120.5",
+    "pontos_contra": "119.9",
+    "saldo": "+0.6"
   },
   "divisao": null,
   "tecnico": "Erik Spoelstra",
@@ -756,9 +756,12 @@
         "sigla": "MIL",
         "nome_curto": "Bucks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 137,
+        "adversario": 130
+      },
+      "resultado": "V"
     },
     {
       "id": "401910030",
@@ -1673,5 +1676,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mia",
-  "atualizado_em": "2026-11-19T00:00:02.731Z"
+  "atualizado_em": "2026-11-19T07:34:11.756Z"
 }

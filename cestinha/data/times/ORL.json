@@ -15,15 +15,15 @@
     "sigla": "ORL",
     "posicao": 8,
     "v": 6,
-    "d": 7,
-    "pct": ".462",
-    "atras": "5",
-    "sequencia": "W4",
-    "casa": "1-4",
+    "d": 8,
+    "pct": ".429",
+    "atras": "6",
+    "sequencia": "L1",
+    "casa": "1-5",
     "fora": "5-3",
     "ultimos10": "5-5",
-    "pontos_pro": "108.8",
-    "pontos_contra": "112.2",
+    "pontos_pro": "109.4",
+    "pontos_contra": "112.8",
     "saldo": "-3.4"
   },
   "divisao": null,
@@ -722,9 +722,12 @@
         "sigla": "PHI",
         "nome_curto": "76ers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 116,
+        "adversario": 121
+      },
+      "resultado": "D"
     },
     {
       "id": "401909306",
@@ -1653,5 +1656,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/orl",
-  "atualizado_em": "2026-11-19T00:00:06.102Z"
+  "atualizado_em": "2026-11-19T07:34:14.001Z"
 }

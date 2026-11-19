@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "4",
     "sigla": "CHI",
-    "posicao": 14,
-    "v": 3,
+    "posicao": 13,
+    "v": 4,
     "d": 10,
-    "pct": ".231",
+    "pct": ".286",
     "atras": "8",
-    "sequencia": "L1",
+    "sequencia": "W1",
     "casa": "1-4",
-    "fora": "2-6",
-    "ultimos10": "2-8",
-    "pontos_pro": "114.6",
-    "pontos_contra": "125.9",
-    "saldo": "-11.3"
+    "fora": "3-6",
+    "ultimos10": "3-7",
+    "pontos_pro": "116.2",
+    "pontos_contra": "124.6",
+    "saldo": "-8.4"
   },
   "divisao": {
     "nome": "Central",
@@ -773,9 +773,12 @@
         "sigla": "BKN",
         "nome_curto": "Nets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 137,
+        "adversario": 107
+      },
+      "resultado": "V"
     },
     {
       "id": "401909309",
@@ -1704,5 +1707,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-18T23:59:55.260Z"
+  "atualizado_em": "2026-11-19T07:34:07.486Z"
 }

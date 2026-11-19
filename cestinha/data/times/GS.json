@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "9",
     "sigla": "GS",
-    "posicao": 9,
+    "posicao": 10,
     "v": 8,
-    "d": 6,
-    "pct": ".571",
+    "d": 7,
+    "pct": ".533",
     "atras": "4.5",
-    "sequencia": "L3",
+    "sequencia": "L4",
     "casa": "6-1",
-    "fora": "2-5",
-    "ultimos10": "7-3",
-    "pontos_pro": "115.1",
-    "pontos_contra": "112.6",
-    "saldo": "+2.5"
+    "fora": "2-6",
+    "ultimos10": "6-4",
+    "pontos_pro": "113.7",
+    "pontos_contra": "112.8",
+    "saldo": "+0.9"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -776,9 +776,12 @@
         "sigla": "DAL",
         "nome_curto": "Mavericks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 94,
+        "adversario": 116
+      },
+      "resultado": "D"
     },
     {
       "id": "401910019",
@@ -1693,5 +1696,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-18T23:59:59.423Z"
+  "atualizado_em": "2026-11-19T07:34:09.354Z"
 }

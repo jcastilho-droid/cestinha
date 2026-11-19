@@ -15,16 +15,16 @@
     "sigla": "TOR",
     "posicao": 9,
     "v": 5,
-    "d": 9,
-    "pct": ".357",
-    "atras": "6.5",
-    "sequencia": "L5",
-    "casa": "2-5",
+    "d": 10,
+    "pct": ".333",
+    "atras": "7.5",
+    "sequencia": "L6",
+    "casa": "2-6",
     "fora": "3-4",
     "ultimos10": "2-8",
-    "pontos_pro": "112.9",
-    "pontos_contra": "112.6",
-    "saldo": "+0.3"
+    "pontos_pro": "112.0",
+    "pontos_contra": "112.0",
+    "saldo": "0.0"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -204,7 +204,10 @@
       "experiencia": 2,
       "universidade": "South Carolina",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "24.9",
@@ -755,9 +758,12 @@
         "sigla": "WSH",
         "nome_curto": "Wizards"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 99,
+        "adversario": 103
+      },
+      "resultado": "D"
     },
     {
       "id": "401909308",
@@ -1672,5 +1678,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/tor",
-  "atualizado_em": "2026-11-19T00:00:09.176Z"
+  "atualizado_em": "2026-11-19T07:34:16.287Z"
 }

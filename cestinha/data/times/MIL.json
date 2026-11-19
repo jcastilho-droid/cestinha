@@ -15,16 +15,16 @@
     "sigla": "MIL",
     "posicao": 15,
     "v": 1,
-    "d": 13,
-    "pct": ".071",
-    "atras": "10.5",
-    "sequencia": "L10",
+    "d": 14,
+    "pct": ".067",
+    "atras": "11.5",
+    "sequencia": "L11",
     "casa": "1-7",
-    "fora": "0-6",
+    "fora": "0-7",
     "ultimos10": "0-10",
-    "pontos_pro": "106.1",
-    "pontos_contra": "119.7",
-    "saldo": "-13.6"
+    "pontos_pro": "107.7",
+    "pontos_contra": "120.9",
+    "saldo": "-13.2"
   },
   "divisao": {
     "nome": "Central",
@@ -764,9 +764,12 @@
         "sigla": "MIA",
         "nome_curto": "Heat"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 130,
+        "adversario": 137
+      },
+      "resultado": "D"
     },
     {
       "id": "401910020",
@@ -1681,5 +1684,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mil",
-  "atualizado_em": "2026-11-19T00:00:03.526Z"
+  "atualizado_em": "2026-11-19T07:34:12.117Z"
 }

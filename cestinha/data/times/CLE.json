@@ -15,16 +15,16 @@
     "sigla": "CLE",
     "posicao": 7,
     "v": 8,
-    "d": 7,
-    "pct": ".533",
-    "atras": "4",
-    "sequencia": "W2",
-    "casa": "6-2",
+    "d": 8,
+    "pct": ".500",
+    "atras": "5",
+    "sequencia": "L1",
+    "casa": "6-3",
     "fora": "2-5",
-    "ultimos10": "5-5",
-    "pontos_pro": "118.1",
-    "pontos_contra": "115.8",
-    "saldo": "+2.3"
+    "ultimos10": "4-6",
+    "pontos_pro": "118.3",
+    "pontos_contra": "116.3",
+    "saldo": "+2.0"
   },
   "divisao": {
     "nome": "Central",
@@ -774,9 +774,12 @@
         "sigla": "MEM",
         "nome_curto": "Grizzlies"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 121,
+        "adversario": 124
+      },
+      "resultado": "D"
     },
     {
       "id": "401909307",
@@ -1677,5 +1680,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cle",
-  "atualizado_em": "2026-11-18T23:59:57.263Z"
+  "atualizado_em": "2026-11-19T07:34:07.849Z"
 }

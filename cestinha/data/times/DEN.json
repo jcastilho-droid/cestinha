@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "7",
     "sigla": "DEN",
-    "posicao": 8,
-    "v": 7,
+    "posicao": 7,
+    "v": 8,
     "d": 5,
-    "pct": ".583",
-    "atras": "4.5",
-    "sequencia": "L1",
-    "casa": "2-3",
+    "pct": ".615",
+    "atras": "3.5",
+    "sequencia": "W1",
+    "casa": "3-3",
     "fora": "4-2",
-    "ultimos10": "6-4",
-    "pontos_pro": "113.8",
-    "pontos_contra": "113.2",
-    "saldo": "+0.6"
+    "ultimos10": "7-3",
+    "pontos_pro": "113.2",
+    "pontos_contra": "112.2",
+    "saldo": "+1.0"
   },
   "divisao": null,
   "tecnico": "David Adelman",
@@ -722,9 +722,12 @@
         "sigla": "BOS",
         "nome_curto": "Celtics"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 105,
+        "adversario": 101
+      },
+      "resultado": "V"
     },
     {
       "id": "401909312",
@@ -1667,5 +1670,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/den",
-  "atualizado_em": "2026-11-18T23:59:58.351Z"
+  "atualizado_em": "2026-11-19T07:34:08.620Z"
 }

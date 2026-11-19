@@ -17,7 +17,7 @@
     "v": 12,
     "d": 3,
     "pct": ".800",
-    "atras": "1",
+    "atras": "0.5",
     "sequencia": "L1",
     "casa": "5-3",
     "fora": "7-0",
@@ -1669,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sa",
-  "atualizado_em": "2026-11-19T00:00:08.619Z"
+  "atualizado_em": "2026-11-19T07:34:15.931Z"
 }

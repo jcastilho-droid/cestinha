@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-19T05:19:57.063Z",
+  "atualizado_em": "2026-11-19T07:34:05.600Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -322,7 +322,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
         "cor": "#4e008e",
         "placar": 0,
-        "campanha": "2-13"
+        "campanha": "3-13"
       },
       "visitante": {
         "id": "21",
@@ -385,7 +385,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "cor": "#552583",
         "placar": 0,
-        "campanha": "13-2"
+        "campanha": "13-3"
       },
       "visitante": {
         "id": "23",
@@ -721,7 +721,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
         "cor": "#4e008e",
         "placar": 0,
-        "campanha": "2-13"
+        "campanha": "3-13"
       },
       "visitante": {
         "id": "6",
@@ -1059,7 +1059,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "cor": "#552583",
         "placar": 0,
-        "campanha": "13-2"
+        "campanha": "13-3"
       },
       "visitante": {
         "id": "26",
@@ -1069,7 +1069,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
         "cor": "#4e008e",
         "placar": 0,
-        "campanha": "2-13"
+        "campanha": "3-13"
       },
       "data_rodada": "2026-11-23",
       "tv_eua": [

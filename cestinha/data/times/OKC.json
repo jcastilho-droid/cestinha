@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "25",
     "sigla": "OKC",
-    "posicao": 7,
+    "posicao": 8,
     "v": 9,
-    "d": 5,
-    "pct": ".643",
+    "d": 6,
+    "pct": ".600",
     "atras": "3.5",
-    "sequencia": "W1",
-    "casa": "5-0",
+    "sequencia": "L1",
+    "casa": "5-1",
     "fora": "4-5",
     "ultimos10": "5-5",
     "pontos_pro": "112.1",
-    "pontos_contra": "107.1",
-    "saldo": "+5.0"
+    "pontos_contra": "107.7",
+    "saldo": "+4.4"
   },
   "divisao": null,
   "tecnico": "Mark Daigneault",
@@ -254,7 +254,10 @@
       "experiencia": 10,
       "universidade": "Texas A&M",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 11,
         "min": "20.2",
@@ -444,7 +447,7 @@
     {
       "id": "4702384",
       "nome": "Nique Clifford",
-      "numero": null,
+      "numero": "18",
       "posicao": "Armador",
       "posicao_sigla": "G",
       "idade": 24,
@@ -793,9 +796,12 @@
         "sigla": "ATL",
         "nome_curto": "Hawks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 112,
+        "adversario": 117
+      },
+      "resultado": "D"
     },
     {
       "id": "401909310",
@@ -1710,5 +1716,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-19T00:00:05.574Z"
+  "atualizado_em": "2026-11-19T07:34:13.628Z"
 }

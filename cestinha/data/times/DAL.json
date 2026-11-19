@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "6",
     "sigla": "DAL",
-    "posicao": 10,
-    "v": 7,
+    "posicao": 9,
+    "v": 8,
     "d": 7,
-    "pct": ".500",
-    "atras": "5.5",
-    "sequencia": "L3",
-    "casa": "5-2",
+    "pct": ".533",
+    "atras": "4.5",
+    "sequencia": "W1",
+    "casa": "6-2",
     "fora": "2-5",
     "ultimos10": "5-5",
-    "pontos_pro": "112.1",
-    "pontos_contra": "114.6",
-    "saldo": "-2.5"
+    "pontos_pro": "112.3",
+    "pontos_contra": "113.2",
+    "saldo": "-0.9"
   },
   "divisao": null,
   "tecnico": "Dusty May",
@@ -220,10 +220,7 @@
       "experiencia": 6,
       "universidade": "Loyola Maryland",
       "pais": "Spain",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 5,
         "min": "14.6",
@@ -251,10 +248,7 @@
       "experiencia": 2,
       "universidade": "Florida",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 13,
         "min": "17.1",
@@ -482,7 +476,7 @@
       "universidade": "Virginia Tech",
       "pais": "England",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -786,9 +780,12 @@
         "sigla": "GS",
         "nome_curto": "Warriors"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 116,
+        "adversario": 94
+      },
+      "resultado": "V"
     },
     {
       "id": "401910025",
@@ -1703,5 +1700,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/dal",
-  "atualizado_em": "2026-11-18T23:59:57.775Z"
+  "atualizado_em": "2026-11-19T07:34:08.235Z"
 }

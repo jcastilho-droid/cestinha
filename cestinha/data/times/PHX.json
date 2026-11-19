@@ -14,17 +14,17 @@
     "id": "21",
     "sigla": "PHX",
     "posicao": 11,
-    "v": 6,
+    "v": 7,
     "d": 7,
-    "pct": ".462",
-    "atras": "6",
-    "sequencia": "W1",
+    "pct": ".500",
+    "atras": "5",
+    "sequencia": "W2",
     "casa": "5-4",
-    "fora": "1-3",
-    "ultimos10": "5-5",
-    "pontos_pro": "113.0",
-    "pontos_contra": "116.4",
-    "saldo": "-3.4"
+    "fora": "2-3",
+    "ultimos10": "6-4",
+    "pontos_pro": "114.1",
+    "pontos_contra": "115.7",
+    "saldo": "-1.6"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -729,9 +729,12 @@
         "sigla": "SAC",
         "nome_curto": "Kings"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 128,
+        "adversario": 107
+      },
+      "resultado": "V"
     },
     {
       "id": "401909311",
@@ -1660,5 +1663,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phx",
-  "atualizado_em": "2026-11-19T00:00:07.117Z"
+  "atualizado_em": "2026-11-19T07:34:14.776Z"
 }

@@ -15,16 +15,16 @@
     "sigla": "IND",
     "posicao": 10,
     "v": 5,
-    "d": 9,
-    "pct": ".357",
-    "atras": "6.5",
-    "sequencia": "L1",
-    "casa": "2-4",
+    "d": 10,
+    "pct": ".333",
+    "atras": "7.5",
+    "sequencia": "L2",
+    "casa": "2-5",
     "fora": "3-4",
     "ultimos10": "3-7",
-    "pontos_pro": "112.1",
-    "pontos_contra": "114.5",
-    "saldo": "-2.4"
+    "pontos_pro": "111.5",
+    "pontos_contra": "114.8",
+    "saldo": "-3.3"
   },
   "divisao": {
     "nome": "Central",
@@ -453,7 +453,10 @@
       "experiencia": 0,
       "universidade": "Purdue",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 8,
         "min": "13.3",
@@ -768,9 +771,12 @@
         "sigla": "HOU",
         "nome_curto": "Rockets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 104,
+        "adversario": 119
+      },
+      "resultado": "D"
     },
     {
       "id": "401909307",
@@ -1685,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-19T00:00:00.517Z"
+  "atualizado_em": "2026-11-19T07:34:10.101Z"
 }
