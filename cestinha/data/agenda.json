@@ -1,12 +1,12 @@
 {
-  "atualizado_em": "2026-11-19T01:28:19.130Z",
+  "atualizado_em": "2026-11-19T03:04:02.132Z",
   "fonte": "ESPN",
   "jogos": [
     {
       "id": "401910007",
       "inicio_utc": "2026-11-19T00:00Z",
-      "status": "em_andamento",
-      "periodo": 2,
+      "status": "final",
+      "periodo": 4,
       "casa": {
         "id": "5",
         "sigla": "CLE",
@@ -14,8 +14,8 @@
         "nome_curto": "Cavaliers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
         "cor": "#860038",
-        "placar": 72,
-        "campanha": "8-7"
+        "placar": 121,
+        "campanha": "8-8"
       },
       "visitante": {
         "id": "29",
@@ -24,8 +24,8 @@
         "nome_curto": "Grizzlies",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
         "cor": "#5d76a9",
-        "placar": 71,
-        "campanha": "10-4"
+        "placar": 124,
+        "campanha": "11-4"
       },
       "data_rodada": "2026-11-18",
       "tv_eua": [
@@ -36,8 +36,8 @@
     {
       "id": "401910008",
       "inicio_utc": "2026-11-19T00:00Z",
-      "status": "em_andamento",
-      "periodo": 3,
+      "status": "final",
+      "periodo": 4,
       "casa": {
         "id": "11",
         "sigla": "IND",
@@ -45,8 +45,8 @@
         "nome_curto": "Pacers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
         "cor": "#0c2340",
-        "placar": 56,
-        "campanha": "5-9"
+        "placar": 104,
+        "campanha": "5-10"
       },
       "visitante": {
         "id": "10",
@@ -55,8 +55,8 @@
         "nome_curto": "Rockets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
         "cor": "#ce0e2d",
-        "placar": 72,
-        "campanha": "11-4"
+        "placar": 119,
+        "campanha": "12-4"
       },
       "data_rodada": "2026-11-18",
       "tv_eua": [
@@ -66,8 +66,8 @@
     {
       "id": "401910009",
       "inicio_utc": "2026-11-19T00:00Z",
-      "status": "em_andamento",
-      "periodo": 2,
+      "status": "final",
+      "periodo": 4,
       "casa": {
         "id": "14",
         "sigla": "MIA",
@@ -75,8 +75,8 @@
         "nome_curto": "Heat",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
         "cor": "#98002e",
-        "placar": 72,
-        "campanha": "8-6"
+        "placar": 137,
+        "campanha": "9-6"
       },
       "visitante": {
         "id": "15",
@@ -85,8 +85,8 @@
         "nome_curto": "Bucks",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
         "cor": "#00471b",
-        "placar": 47,
-        "campanha": "1-13"
+        "placar": 130,
+        "campanha": "1-14"
       },
       "data_rodada": "2026-11-18",
       "tv_eua": [
@@ -98,8 +98,8 @@
     {
       "id": "401910010",
       "inicio_utc": "2026-11-19T00:00Z",
-      "status": "em_andamento",
-      "periodo": 3,
+      "status": "final",
+      "periodo": 4,
       "casa": {
         "id": "19",
         "sigla": "ORL",
@@ -107,8 +107,8 @@
         "nome_curto": "Magic",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
         "cor": "#0150b5",
-        "placar": 69,
-        "campanha": "6-7"
+        "placar": 116,
+        "campanha": "6-8"
       },
       "visitante": {
         "id": "20",
@@ -117,8 +117,8 @@
         "nome_curto": "76ers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "cor": "#1d428a",
-        "placar": 64,
-        "campanha": "12-3"
+        "placar": 121,
+        "campanha": "13-3"
       },
       "data_rodada": "2026-11-18",
       "tv_eua": []
@@ -126,8 +126,8 @@
     {
       "id": "401910011",
       "inicio_utc": "2026-11-19T00:30Z",
-      "status": "em_andamento",
-      "periodo": 2,
+      "status": "final",
+      "periodo": 4,
       "casa": {
         "id": "17",
         "sigla": "BKN",
@@ -135,8 +135,8 @@
         "nome_curto": "Nets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
         "cor": "#000000",
-        "placar": 42,
-        "campanha": "3-10"
+        "placar": 107,
+        "campanha": "3-11"
       },
       "visitante": {
         "id": "4",
@@ -145,8 +145,8 @@
         "nome_curto": "Bulls",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
         "cor": "#ce1141",
-        "placar": 67,
-        "campanha": "3-10"
+        "placar": 137,
+        "campanha": "4-10"
       },
       "data_rodada": "2026-11-18",
       "tv_eua": [
@@ -156,8 +156,8 @@
     {
       "id": "401910012",
       "inicio_utc": "2026-11-19T00:30Z",
-      "status": "em_andamento",
-      "periodo": 2,
+      "status": "final",
+      "periodo": 4,
       "casa": {
         "id": "28",
         "sigla": "TOR",
@@ -165,8 +165,8 @@
         "nome_curto": "Raptors",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
         "cor": "#d91244",
-        "placar": 42,
-        "campanha": "5-9"
+        "placar": 99,
+        "campanha": "5-10"
       },
       "visitante": {
         "id": "27",
@@ -175,8 +175,8 @@
         "nome_curto": "Wizards",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
         "cor": "#e31837",
-        "placar": 48,
-        "campanha": "4-11"
+        "placar": 103,
+        "campanha": "5-11"
       },
       "data_rodada": "2026-11-18",
       "tv_eua": [
@@ -187,7 +187,7 @@
       "id": "401910013",
       "inicio_utc": "2026-11-19T01:00Z",
       "status": "em_andamento",
-      "periodo": 1,
+      "periodo": 4,
       "casa": {
         "id": "3",
         "sigla": "NO",
@@ -195,7 +195,7 @@
         "nome_curto": "Pelicans",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
         "cor": "#0a2240",
-        "placar": 18,
+        "placar": 88,
         "campanha": "5-10"
       },
       "visitante": {
@@ -205,7 +205,7 @@
         "nome_curto": "Pistons",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
         "cor": "#1d428a",
-        "placar": 15,
+        "placar": 101,
         "campanha": "9-4"
       },
       "data_rodada": "2026-11-18",
@@ -218,7 +218,7 @@
       "id": "401910014",
       "inicio_utc": "2026-11-19T01:00Z",
       "status": "em_andamento",
-      "periodo": 1,
+      "periodo": 4,
       "casa": {
         "id": "25",
         "sigla": "OKC",
@@ -226,7 +226,7 @@
         "nome_curto": "Thunder",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
         "cor": "#007ac1",
-        "placar": 19,
+        "placar": 97,
         "campanha": "9-5"
       },
       "visitante": {
@@ -236,7 +236,7 @@
         "nome_curto": "Hawks",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
         "cor": "#c8102e",
-        "placar": 20,
+        "placar": 106,
         "campanha": "8-6"
       },
       "data_rodada": "2026-11-18",
@@ -249,7 +249,7 @@
       "id": "401910016",
       "inicio_utc": "2026-11-19T01:00Z",
       "status": "em_andamento",
-      "periodo": 1,
+      "periodo": 4,
       "casa": {
         "id": "6",
         "sigla": "DAL",
@@ -257,7 +257,7 @@
         "nome_curto": "Mavericks",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
         "cor": "#0064b1",
-        "placar": 25,
+        "placar": 97,
         "campanha": "7-7"
       },
       "visitante": {
@@ -267,7 +267,7 @@
         "nome_curto": "Warriors",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
         "cor": "#fdb927",
-        "placar": 9,
+        "placar": 76,
         "campanha": "8-6"
       },
       "data_rodada": "2026-11-18",
@@ -279,8 +279,8 @@
     {
       "id": "401910015",
       "inicio_utc": "2026-11-19T02:30Z",
-      "status": "agendado",
-      "periodo": 0,
+      "status": "em_andamento",
+      "periodo": 1,
       "casa": {
         "id": "7",
         "sigla": "DEN",
@@ -288,7 +288,7 @@
         "nome_curto": "Nuggets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
         "cor": "#0e2240",
-        "placar": 0,
+        "placar": 14,
         "campanha": "7-5"
       },
       "visitante": {
@@ -298,7 +298,7 @@
         "nome_curto": "Celtics",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
         "cor": "#008348",
-        "placar": 0,
+        "placar": 20,
         "campanha": "11-3"
       },
       "data_rodada": "2026-11-18",
@@ -383,7 +383,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
         "cor": "#5d76a9",
         "placar": 0,
-        "campanha": "10-4"
+        "campanha": "11-4"
       },
       "visitante": {
         "id": "9",
@@ -413,7 +413,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
         "cor": "#00471b",
         "placar": 0,
-        "campanha": "1-13"
+        "campanha": "1-14"
       },
       "visitante": {
         "id": "22",
@@ -537,7 +537,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
         "cor": "#000000",
         "placar": 0,
-        "campanha": "3-10"
+        "campanha": "3-11"
       },
       "visitante": {
         "id": "19",
@@ -547,7 +547,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
         "cor": "#0150b5",
         "placar": 0,
-        "campanha": "6-7"
+        "campanha": "6-8"
       },
       "data_rodada": "2026-11-20",
       "tv_eua": [
@@ -567,7 +567,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
         "cor": "#860038",
         "placar": 0,
-        "campanha": "8-7"
+        "campanha": "8-8"
       },
       "visitante": {
         "id": "11",
@@ -577,7 +577,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
         "cor": "#0c2340",
         "placar": 0,
-        "campanha": "5-9"
+        "campanha": "5-10"
       },
       "data_rodada": "2026-11-20",
       "tv_eua": [
@@ -607,7 +607,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
         "cor": "#d91244",
         "placar": 0,
-        "campanha": "5-9"
+        "campanha": "5-10"
       },
       "data_rodada": "2026-11-20",
       "tv_eua": [
@@ -627,7 +627,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
         "cor": "#ce1141",
         "placar": 0,
-        "campanha": "3-10"
+        "campanha": "4-10"
       },
       "visitante": {
         "id": "27",
@@ -637,7 +637,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
         "cor": "#e31837",
         "placar": 0,
-        "campanha": "4-11"
+        "campanha": "5-11"
       },
       "data_rodada": "2026-11-20",
       "tv_eua": [
@@ -733,7 +733,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
         "cor": "#ce0e2d",
         "placar": 0,
-        "campanha": "11-4"
+        "campanha": "12-4"
       },
       "data_rodada": "2026-11-20",
       "tv_eua": [
@@ -784,7 +784,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "cor": "#1d428a",
         "placar": 0,
-        "campanha": "12-3"
+        "campanha": "13-3"
       },
       "visitante": {
         "id": "15",
@@ -794,7 +794,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
         "cor": "#00471b",
         "placar": 0,
-        "campanha": "1-13"
+        "campanha": "1-14"
       },
       "data_rodada": "2026-11-21",
       "tv_eua": [
@@ -889,7 +889,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
         "cor": "#5d76a9",
         "placar": 0,
-        "campanha": "10-4"
+        "campanha": "11-4"
       },
       "data_rodada": "2026-11-21",
       "tv_eua": [
@@ -1000,7 +1000,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
         "cor": "#98002e",
         "placar": 0,
-        "campanha": "8-6"
+        "campanha": "9-6"
       },
       "visitante": {
         "id": "25",
@@ -1031,7 +1031,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
         "cor": "#e31837",
         "placar": 0,
-        "campanha": "4-11"
+        "campanha": "5-11"
       },
       "visitante": {
         "id": "19",
@@ -1041,7 +1041,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
         "cor": "#0150b5",
         "placar": 0,
-        "campanha": "6-7"
+        "campanha": "6-8"
       },
       "data_rodada": "2026-11-22",
       "tv_eua": [
@@ -1061,7 +1061,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
         "cor": "#ce1141",
         "placar": 0,
-        "campanha": "3-10"
+        "campanha": "4-10"
       },
       "visitante": {
         "id": "7",
@@ -1132,7 +1132,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
         "cor": "#0c2340",
         "placar": 0,
-        "campanha": "5-9"
+        "campanha": "5-10"
       },
       "data_rodada": "2026-11-22",
       "tv_eua": [
@@ -1190,7 +1190,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
         "cor": "#5d76a9",
         "placar": 0,
-        "campanha": "10-4"
+        "campanha": "11-4"
       },
       "data_rodada": "2026-11-23",
       "tv_eua": [
@@ -1210,7 +1210,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "cor": "#1d428a",
         "placar": 0,
-        "campanha": "12-3"
+        "campanha": "13-3"
       },
       "visitante": {
         "id": "22",
@@ -1240,7 +1240,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
         "cor": "#0c2340",
         "placar": 0,
-        "campanha": "5-9"
+        "campanha": "5-10"
       },
       "visitante": {
         "id": "25",
@@ -1272,7 +1272,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
         "cor": "#d91244",
         "placar": 0,
-        "campanha": "5-9"
+        "campanha": "5-10"
       },
       "visitante": {
         "id": "15",
@@ -1282,7 +1282,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
         "cor": "#00471b",
         "placar": 0,
-        "campanha": "1-13"
+        "campanha": "1-14"
       },
       "data_rodada": "2026-11-23",
       "tv_eua": [
@@ -1313,7 +1313,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
         "cor": "#000000",
         "placar": 0,
-        "campanha": "3-10"
+        "campanha": "3-11"
       },
       "data_rodada": "2026-11-23",
       "tv_eua": [
@@ -1334,7 +1334,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
         "cor": "#ce1141",
         "placar": 0,
-        "campanha": "3-10"
+        "campanha": "4-10"
       },
       "visitante": {
         "id": "5",
@@ -1344,7 +1344,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
         "cor": "#860038",
         "placar": 0,
-        "campanha": "8-7"
+        "campanha": "8-8"
       },
       "data_rodada": "2026-11-23",
       "tv_eua": [
@@ -1397,7 +1397,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
         "cor": "#ce0e2d",
         "placar": 0,
-        "campanha": "11-4"
+        "campanha": "12-4"
       },
       "visitante": {
         "id": "12",
@@ -1491,7 +1491,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
         "cor": "#0150b5",
         "placar": 0,
-        "campanha": "6-7"
+        "campanha": "6-8"
       },
       "visitante": {
         "id": "8",
@@ -1519,7 +1519,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
         "cor": "#e31837",
         "placar": 0,
-        "campanha": "4-11"
+        "campanha": "5-11"
       },
       "visitante": {
         "id": "2",
