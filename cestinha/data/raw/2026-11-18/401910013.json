@@ -1,0 +1,2251 @@
+{
+  "id": "401910013",
+  "inicio_utc": "2026-11-19T01:00Z",
+  "status": "final",
+  "periodo": 4,
+  "casa": {
+    "id": "3",
+    "sigla": "NO",
+    "nome": "New Orleans Pelicans",
+    "nome_curto": "Pelicans",
+    "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+    "cor": "#0a2240",
+    "placar": 109,
+    "campanha": "5-11",
+    "jogadores": [
+      {
+        "nome": "Herbert Jones",
+        "titular": true,
+        "min": 32,
+        "pts": 9,
+        "fg": "3-7",
+        "tres": "3-5",
+        "ll": "0-0",
+        "reb": 1,
+        "ast": 3,
+        "err": 1,
+        "rb": 0,
+        "toco": 1,
+        "reb_of": 0,
+        "reb_def": 1,
+        "faltas": 3,
+        "mais_menos": -4
+      },
+      {
+        "nome": "Zion Williamson",
+        "titular": true,
+        "min": 32,
+        "pts": 24,
+        "fg": "9-14",
+        "tres": "0-0",
+        "ll": "6-9",
+        "reb": 7,
+        "ast": 1,
+        "err": 3,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 4,
+        "reb_def": 3,
+        "faltas": 2,
+        "mais_menos": -10
+      },
+      {
+        "nome": "Saddiq Bey",
+        "titular": true,
+        "min": 42,
+        "pts": 10,
+        "fg": "3-13",
+        "tres": "2-7",
+        "ll": "2-2",
+        "reb": 8,
+        "ast": 6,
+        "err": 2,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 7,
+        "faltas": 0,
+        "mais_menos": -10
+      },
+      {
+        "nome": "Yves Missi",
+        "titular": true,
+        "min": 17,
+        "pts": 4,
+        "fg": "2-3",
+        "tres": "0-0",
+        "ll": "0-0",
+        "reb": 5,
+        "ast": 2,
+        "err": 1,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 4,
+        "faltas": 3,
+        "mais_menos": -1
+      },
+      {
+        "nome": "Jeremiah Fears",
+        "titular": true,
+        "min": 31,
+        "pts": 16,
+        "fg": "6-12",
+        "tres": "2-5",
+        "ll": "2-2",
+        "reb": 5,
+        "ast": 4,
+        "err": 4,
+        "rb": 1,
+        "toco": 1,
+        "reb_of": 0,
+        "reb_def": 5,
+        "faltas": 6,
+        "mais_menos": -13
+      },
+      {
+        "nome": "Karlo Matkovic",
+        "titular": false,
+        "min": 10,
+        "pts": 0,
+        "fg": "0-3",
+        "tres": "0-2",
+        "ll": "0-0",
+        "reb": 2,
+        "ast": 0,
+        "err": 0,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 2,
+        "faltas": 1,
+        "mais_menos": -7
+      },
+      {
+        "nome": "DeAndre Jordan",
+        "titular": false,
+        "min": 10,
+        "pts": 8,
+        "fg": "2-3",
+        "tres": "0-0",
+        "ll": "4-5",
+        "reb": 2,
+        "ast": 1,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 1,
+        "faltas": 1,
+        "mais_menos": -3
+      },
+      {
+        "nome": "Derik Queen",
+        "titular": false,
+        "min": 19,
+        "pts": 9,
+        "fg": "4-6",
+        "tres": "0-1",
+        "ll": "1-1",
+        "reb": 5,
+        "ast": 0,
+        "err": 2,
+        "rb": 1,
+        "toco": 1,
+        "reb_of": 2,
+        "reb_def": 3,
+        "faltas": 1,
+        "mais_menos": -10
+      },
+      {
+        "nome": "Jordan Poole",
+        "titular": false,
+        "min": 30,
+        "pts": 22,
+        "fg": "5-11",
+        "tres": "3-5",
+        "ll": "9-9",
+        "reb": 1,
+        "ast": 5,
+        "err": 1,
+        "rb": 2,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 0,
+        "faltas": 2,
+        "mais_menos": -9
+      },
+      {
+        "nome": "Jaron Pierre Jr.",
+        "titular": false,
+        "min": 17,
+        "pts": 7,
+        "fg": "3-9",
+        "tres": "1-3",
+        "ll": "0-0",
+        "reb": 1,
+        "ast": 1,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 0,
+        "faltas": 2,
+        "mais_menos": 2
+      }
+    ],
+    "nao_jogaram": [
+      {
+        "nome": "Julian Reese",
+        "motivo": "COACH'S DECISION"
+      },
+      {
+        "nome": "Malik Dia",
+        "motivo": "COACH'S DECISION"
+      },
+      {
+        "nome": "AJ Johnson",
+        "motivo": "COACH'S DECISION"
+      }
+    ],
+    "estatisticas": {
+      "fg": "37-81",
+      "fg_pct": "46",
+      "tres": "11-28",
+      "tres_pct": "39",
+      "ll": "24-28",
+      "reb": "37",
+      "ast": "23",
+      "err": "16",
+      "pontos_garrafao": "52",
+      "pontos_contra_ataque": "9",
+      "maior_vantagem": "5"
+    },
+    "parciais": [
+      31,
+      29,
+      26,
+      23
+    ],
+    "vencedor": false
+  },
+  "visitante": {
+    "id": "8",
+    "sigla": "DET",
+    "nome": "Detroit Pistons",
+    "nome_curto": "Pistons",
+    "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+    "cor": "#1d428a",
+    "placar": 122,
+    "campanha": "10-4",
+    "jogadores": [
+      {
+        "nome": "John Collins",
+        "titular": true,
+        "min": 30,
+        "pts": 20,
+        "fg": "6-10",
+        "tres": "4-6",
+        "ll": "4-4",
+        "reb": 7,
+        "ast": 2,
+        "err": 2,
+        "rb": 0,
+        "toco": 1,
+        "reb_of": 2,
+        "reb_def": 5,
+        "faltas": 2,
+        "mais_menos": 11
+      },
+      {
+        "nome": "Javonte Green",
+        "titular": true,
+        "min": 35,
+        "pts": 18,
+        "fg": "7-12",
+        "tres": "3-7",
+        "ll": "1-1",
+        "reb": 7,
+        "ast": 0,
+        "err": 0,
+        "rb": 2,
+        "toco": 1,
+        "reb_of": 1,
+        "reb_def": 6,
+        "faltas": 4,
+        "mais_menos": 10
+      },
+      {
+        "nome": "Kevin Huerter",
+        "titular": true,
+        "min": 36,
+        "pts": 11,
+        "fg": "2-9",
+        "tres": "1-4",
+        "ll": "6-7",
+        "reb": 1,
+        "ast": 7,
+        "err": 2,
+        "rb": 1,
+        "toco": 1,
+        "reb_of": 0,
+        "reb_def": 1,
+        "faltas": 0,
+        "mais_menos": 7
+      },
+      {
+        "nome": "Ausar Thompson",
+        "titular": true,
+        "min": 34,
+        "pts": 10,
+        "fg": "4-6",
+        "tres": "0-0",
+        "ll": "2-2",
+        "reb": 7,
+        "ast": 4,
+        "err": 4,
+        "rb": 2,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 6,
+        "faltas": 5,
+        "mais_menos": 3
+      },
+      {
+        "nome": "Daniss Jenkins",
+        "titular": true,
+        "min": 36,
+        "pts": 17,
+        "fg": "7-16",
+        "tres": "3-5",
+        "ll": "0-0",
+        "reb": 4,
+        "ast": 9,
+        "err": 4,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 3,
+        "reb_def": 1,
+        "faltas": 3,
+        "mais_menos": 12
+      },
+      {
+        "nome": "Paul Reed",
+        "titular": false,
+        "min": 20,
+        "pts": 17,
+        "fg": "7-9",
+        "tres": "0-0",
+        "ll": "3-4",
+        "reb": 7,
+        "ast": 1,
+        "err": 2,
+        "rb": 0,
+        "toco": 2,
+        "reb_of": 2,
+        "reb_def": 5,
+        "faltas": 3,
+        "mais_menos": 5
+      },
+      {
+        "nome": "Tolu Smith",
+        "titular": false,
+        "min": 3,
+        "pts": 3,
+        "fg": "1-1",
+        "tres": "0-0",
+        "ll": "1-2",
+        "reb": 0,
+        "ast": 0,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 0,
+        "faltas": 0,
+        "mais_menos": 1
+      },
+      {
+        "nome": "Isaac Jones",
+        "titular": false,
+        "min": 0,
+        "pts": 0,
+        "fg": "0-0",
+        "tres": "0-0",
+        "ll": "0-0",
+        "reb": 0,
+        "ast": 0,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 0,
+        "faltas": 0,
+        "mais_menos": 0
+      },
+      {
+        "nome": "Isaiah Joe",
+        "titular": false,
+        "min": 16,
+        "pts": 11,
+        "fg": "3-6",
+        "tres": "3-5",
+        "ll": "2-3",
+        "reb": 2,
+        "ast": 2,
+        "err": 0,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 2,
+        "faltas": 2,
+        "mais_menos": 3
+      },
+      {
+        "nome": "Elijah Harkless",
+        "titular": false,
+        "min": 14,
+        "pts": 6,
+        "fg": "1-2",
+        "tres": "0-0",
+        "ll": "4-4",
+        "reb": 2,
+        "ast": 4,
+        "err": 1,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 2,
+        "faltas": 3,
+        "mais_menos": 5
+      },
+      {
+        "nome": "Chaz Lanier",
+        "titular": false,
+        "min": 16,
+        "pts": 9,
+        "fg": "3-6",
+        "tres": "3-5",
+        "ll": "0-0",
+        "reb": 1,
+        "ast": 0,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 1,
+        "faltas": 3,
+        "mais_menos": 8
+      }
+    ],
+    "nao_jogaram": [
+      {
+        "nome": "Cade Cunningham",
+        "motivo": "RIGHT KNEE SORENESS"
+      }
+    ],
+    "estatisticas": {
+      "fg": "41-77",
+      "fg_pct": "53",
+      "tres": "17-32",
+      "tres_pct": "53",
+      "ll": "23-27",
+      "reb": "38",
+      "ast": "29",
+      "err": "17",
+      "pontos_garrafao": "48",
+      "pontos_contra_ataque": "21",
+      "maior_vantagem": "19"
+    },
+    "parciais": [
+      31,
+      36,
+      25,
+      30
+    ],
+    "vencedor": true
+  },
+  "fonte": "ESPN",
+  "link_fonte": "https://www.espn.com/nba/game/_/gameId/401910013",
+  "data_rodada": "2026-11-18",
+  "prorrogacoes": 0,
+  "local": "Smoothie King Center, New Orleans",
+  "arena": {
+    "id": "985",
+    "nome": "Smoothie King Center",
+    "cidade": "New Orleans",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/985.jpg"
+  },
+  "serie": {
+    "tipo": "season",
+    "resumo_en": "DET leads series 1-0"
+  },
+  "temporada": {
+    "ano": 2027,
+    "tipo": 2
+  },
+  "lances_finais": [
+    {
+      "periodo": 4,
+      "relogio": "4:59",
+      "lance_en": "Saddiq Bey makes 23-foot three point jumper (Herbert Jones assists)",
+      "placar": "117-101"
+    },
+    {
+      "periodo": 4,
+      "relogio": "4:24",
+      "lance_en": "Jordan Poole makes technical free throw",
+      "placar": "117-102"
+    },
+    {
+      "periodo": 4,
+      "relogio": "4:24",
+      "lance_en": "Zion Williamson makes free throw 2 of 2",
+      "placar": "117-103"
+    },
+    {
+      "periodo": 4,
+      "relogio": "4:12",
+      "lance_en": "Kevin Huerter makes free throw 1 of 2",
+      "placar": "118-103"
+    },
+    {
+      "periodo": 4,
+      "relogio": "3:33",
+      "lance_en": "Zion Williamson makes free throw 1 of 2",
+      "placar": "118-104"
+    },
+    {
+      "periodo": 4,
+      "relogio": "3:19",
+      "lance_en": "John Collins makes free throw 1 of 2",
+      "placar": "119-104"
+    },
+    {
+      "periodo": 4,
+      "relogio": "3:19",
+      "lance_en": "John Collins makes free throw 2 of 2",
+      "placar": "120-104"
+    },
+    {
+      "periodo": 4,
+      "relogio": "3:00",
+      "lance_en": "Jordan Poole makes tip shot",
+      "placar": "120-106"
+    },
+    {
+      "periodo": 4,
+      "relogio": "1:24",
+      "lance_en": "Daniss Jenkins makes 3-foot two point shot",
+      "placar": "122-106"
+    },
+    {
+      "periodo": 4,
+      "relogio": "1:07",
+      "lance_en": "Herbert Jones makes 23-foot three point jumper (Jordan Poole assists)",
+      "placar": "122-109"
+    }
+  ],
+  "fluxo": [
+    [
+      0,
+      0
+    ],
+    [
+      32,
+      -3
+    ],
+    [
+      95,
+      -1
+    ],
+    [
+      107,
+      -3
+    ],
+    [
+      155,
+      0
+    ],
+    [
+      179,
+      2
+    ],
+    [
+      206,
+      -1
+    ],
+    [
+      238,
+      1
+    ],
+    [
+      286,
+      2
+    ],
+    [
+      286,
+      3
+    ],
+    [
+      309,
+      0
+    ],
+    [
+      330,
+      2
+    ],
+    [
+      337,
+      1
+    ],
+    [
+      337,
+      0
+    ],
+    [
+      342,
+      2
+    ],
+    [
+      399,
+      5
+    ],
+    [
+      413,
+      4
+    ],
+    [
+      413,
+      3
+    ],
+    [
+      442,
+      0
+    ],
+    [
+      483,
+      3
+    ],
+    [
+      513,
+      0
+    ],
+    [
+      536,
+      2
+    ],
+    [
+      548,
+      0
+    ],
+    [
+      557,
+      1
+    ],
+    [
+      557,
+      2
+    ],
+    [
+      576,
+      0
+    ],
+    [
+      597,
+      -2
+    ],
+    [
+      620,
+      -4
+    ],
+    [
+      631,
+      -3
+    ],
+    [
+      631,
+      -2
+    ],
+    [
+      647,
+      -4
+    ],
+    [
+      656,
+      -3
+    ],
+    [
+      656,
+      -2
+    ],
+    [
+      720,
+      0
+    ],
+    [
+      739,
+      2
+    ],
+    [
+      757,
+      0
+    ],
+    [
+      784,
+      3
+    ],
+    [
+      809,
+      0
+    ],
+    [
+      825,
+      2
+    ],
+    [
+      866,
+      0
+    ],
+    [
+      926,
+      3
+    ],
+    [
+      938,
+      1
+    ],
+    [
+      954,
+      2
+    ],
+    [
+      969,
+      0
+    ],
+    [
+      993,
+      -2
+    ],
+    [
+      1013,
+      0
+    ],
+    [
+      1044,
+      -2
+    ],
+    [
+      1054,
+      -1
+    ],
+    [
+      1054,
+      0
+    ],
+    [
+      1064,
+      -3
+    ],
+    [
+      1078,
+      -1
+    ],
+    [
+      1089,
+      -4
+    ],
+    [
+      1207,
+      -7
+    ],
+    [
+      1239,
+      -9
+    ],
+    [
+      1258,
+      -6
+    ],
+    [
+      1283,
+      -7
+    ],
+    [
+      1304,
+      -5
+    ],
+    [
+      1355,
+      -3
+    ],
+    [
+      1372,
+      -5
+    ],
+    [
+      1372,
+      -6
+    ],
+    [
+      1383,
+      -4
+    ],
+    [
+      1383,
+      -3
+    ],
+    [
+      1403,
+      -6
+    ],
+    [
+      1411,
+      -8
+    ],
+    [
+      1411,
+      -9
+    ],
+    [
+      1431,
+      -7
+    ],
+    [
+      1507,
+      -4
+    ],
+    [
+      1528,
+      -6
+    ],
+    [
+      1539,
+      -4
+    ],
+    [
+      1557,
+      -6
+    ],
+    [
+      1584,
+      -9
+    ],
+    [
+      1628,
+      -6
+    ],
+    [
+      1713,
+      -8
+    ],
+    [
+      1736,
+      -6
+    ],
+    [
+      1758,
+      -9
+    ],
+    [
+      1819,
+      -7
+    ],
+    [
+      1834,
+      -9
+    ],
+    [
+      1906,
+      -10
+    ],
+    [
+      1926,
+      -8
+    ],
+    [
+      1926,
+      -7
+    ],
+    [
+      1957,
+      -5
+    ],
+    [
+      1978,
+      -8
+    ],
+    [
+      1996,
+      -7
+    ],
+    [
+      2017,
+      -9
+    ],
+    [
+      2030,
+      -8
+    ],
+    [
+      2030,
+      -7
+    ],
+    [
+      2062,
+      -10
+    ],
+    [
+      2078,
+      -7
+    ],
+    [
+      2094,
+      -9
+    ],
+    [
+      2105,
+      -7
+    ],
+    [
+      2105,
+      -6
+    ],
+    [
+      2209,
+      -9
+    ],
+    [
+      2243,
+      -10
+    ],
+    [
+      2243,
+      -11
+    ],
+    [
+      2255,
+      -10
+    ],
+    [
+      2255,
+      -9
+    ],
+    [
+      2278,
+      -11
+    ],
+    [
+      2330,
+      -13
+    ],
+    [
+      2394,
+      -16
+    ],
+    [
+      2419,
+      -14
+    ],
+    [
+      2438,
+      -15
+    ],
+    [
+      2438,
+      -16
+    ],
+    [
+      2447,
+      -14
+    ],
+    [
+      2460,
+      -15
+    ],
+    [
+      2460,
+      -16
+    ],
+    [
+      2477,
+      -15
+    ],
+    [
+      2477,
+      -14
+    ],
+    [
+      2499,
+      -15
+    ],
+    [
+      2499,
+      -16
+    ],
+    [
+      2499,
+      -17
+    ],
+    [
+      2514,
+      -15
+    ],
+    [
+      2524,
+      -16
+    ],
+    [
+      2524,
+      -17
+    ],
+    [
+      2524,
+      -18
+    ],
+    [
+      2552,
+      -16
+    ],
+    [
+      2563,
+      -19
+    ],
+    [
+      2581,
+      -16
+    ],
+    [
+      2616,
+      -15
+    ],
+    [
+      2616,
+      -14
+    ],
+    [
+      2628,
+      -15
+    ],
+    [
+      2667,
+      -14
+    ],
+    [
+      2681,
+      -15
+    ],
+    [
+      2681,
+      -16
+    ],
+    [
+      2700,
+      -14
+    ],
+    [
+      2796,
+      -16
+    ],
+    [
+      2813,
+      -13
+    ]
+  ],
+  "arremessos": [
+    [
+      49,
+      -1,
+      1,
+      "v",
+      3
+    ],
+    [
+      15,
+      24,
+      0,
+      "c",
+      3
+    ],
+    [
+      27,
+      2,
+      0,
+      "v",
+      2
+    ],
+    [
+      23,
+      0,
+      1,
+      "c",
+      2
+    ],
+    [
+      23,
+      2,
+      1,
+      "v",
+      2
+    ],
+    [
+      26,
+      9,
+      0,
+      "v",
+      2
+    ],
+    [
+      2,
+      -1,
+      1,
+      "c",
+      3
+    ],
+    [
+      28,
+      1,
+      0,
+      "v",
+      2
+    ],
+    [
+      20,
+      9,
+      1,
+      "c",
+      2
+    ],
+    [
+      46,
+      15,
+      1,
+      "v",
+      3
+    ],
+    [
+      4,
+      15,
+      0,
+      "v",
+      3
+    ],
+    [
+      24,
+      0,
+      1,
+      "c",
+      2
+    ],
+    [
+      46,
+      15,
+      0,
+      "v",
+      3
+    ],
+    [
+      23,
+      3,
+      0,
+      "v",
+      2
+    ],
+    [
+      26,
+      10,
+      0,
+      "v",
+      2
+    ],
+    [
+      24,
+      1,
+      0,
+      "c",
+      2
+    ],
+    [
+      49,
+      9,
+      0,
+      "v",
+      3
+    ],
+    [
+      18,
+      26,
+      0,
+      "v",
+      3
+    ],
+    [
+      2,
+      -1,
+      1,
+      "v",
+      3
+    ],
+    [
+      25,
+      0,
+      1,
+      "c",
+      2
+    ],
+    [
+      25,
+      3,
+      1,
+      "c",
+      2
+    ],
+    [
+      17,
+      -1,
+      0,
+      "v",
+      2
+    ],
+    [
+      49,
+      -1,
+      0,
+      "c",
+      3
+    ],
+    [
+      24,
+      13,
+      0,
+      "c",
+      2
+    ],
+    [
+      26,
+      17,
+      0,
+      "v",
+      2
+    ],
+    [
+      2,
+      -1,
+      1,
+      "c",
+      3
+    ],
+    [
+      47,
+      14,
+      0,
+      "c",
+      3
+    ],
+    [
+      6,
+      17,
+      1,
+      "v",
+      3
+    ],
+    [
+      42,
+      20,
+      1,
+      "c",
+      3
+    ],
+    [
+      10,
+      20,
+      0,
+      "v",
+      3
+    ],
+    [
+      46,
+      18,
+      1,
+      "v",
+      3
+    ],
+    [
+      23,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      22,
+      1,
+      1,
+      "v",
+      2
+    ],
+    [
+      36,
+      25,
+      0,
+      "v",
+      3
+    ],
+    [
+      25,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      48,
+      0,
+      0,
+      "c",
+      3
+    ],
+    [
+      32,
+      3,
+      1,
+      "v",
+      2
+    ],
+    [
+      25,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      27,
+      1,
+      1,
+      "v",
+      2
+    ],
+    [
+      38,
+      11,
+      0,
+      "v",
+      2
+    ],
+    [
+      10,
+      20,
+      0,
+      "c",
+      3
+    ],
+    [
+      23,
+      1,
+      0,
+      "c",
+      2
+    ],
+    [
+      19,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      27,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      19,
+      5,
+      1,
+      "v",
+      2
+    ],
+    [
+      23,
+      2,
+      0,
+      "c",
+      2
+    ],
+    [
+      5,
+      19,
+      1,
+      "c",
+      3
+    ],
+    [
+      3,
+      15,
+      1,
+      "v",
+      3
+    ],
+    [
+      21,
+      12,
+      1,
+      "c",
+      2
+    ],
+    [
+      6,
+      15,
+      0,
+      "c",
+      3
+    ],
+    [
+      29,
+      2,
+      0,
+      "v",
+      2
+    ],
+    [
+      25,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      18,
+      11,
+      0,
+      "c",
+      2
+    ],
+    [
+      39,
+      25,
+      1,
+      "c",
+      3
+    ],
+    [
+      23,
+      1,
+      1,
+      "v",
+      2
+    ],
+    [
+      27,
+      1,
+      1,
+      "v",
+      2
+    ],
+    [
+      21,
+      7,
+      0,
+      "c",
+      2
+    ],
+    [
+      28,
+      2,
+      1,
+      "v",
+      2
+    ],
+    [
+      27,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      22,
+      6,
+      0,
+      "v",
+      2
+    ],
+    [
+      25,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      48,
+      3,
+      1,
+      "v",
+      3
+    ],
+    [
+      23,
+      2,
+      0,
+      "c",
+      2
+    ],
+    [
+      25,
+      0,
+      1,
+      "c",
+      2
+    ],
+    [
+      11,
+      22,
+      1,
+      "v",
+      3
+    ],
+    [
+      37,
+      24,
+      0,
+      "c",
+      3
+    ],
+    [
+      27,
+      1,
+      0,
+      "c",
+      2
+    ],
+    [
+      2,
+      1,
+      0,
+      "v",
+      3
+    ],
+    [
+      8,
+      23,
+      0,
+      "c",
+      3
+    ],
+    [
+      30,
+      7,
+      0,
+      "c",
+      2
+    ],
+    [
+      27,
+      1,
+      0,
+      "c",
+      2
+    ],
+    [
+      18,
+      11,
+      0,
+      "c",
+      2
+    ],
+    [
+      8,
+      21,
+      1,
+      "v",
+      3
+    ],
+    [
+      40,
+      20,
+      0,
+      "c",
+      3
+    ],
+    [
+      23,
+      1,
+      1,
+      "v",
+      2
+    ],
+    [
+      10,
+      22,
+      1,
+      "c",
+      3
+    ],
+    [
+      18,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      31,
+      14,
+      0,
+      "v",
+      2
+    ],
+    [
+      5,
+      16,
+      0,
+      "v",
+      3
+    ],
+    [
+      24,
+      0,
+      1,
+      "c",
+      2
+    ],
+    [
+      24,
+      1,
+      1,
+      "v",
+      2
+    ],
+    [
+      19,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      9,
+      21,
+      1,
+      "v",
+      3
+    ],
+    [
+      23,
+      2,
+      1,
+      "v",
+      2
+    ],
+    [
+      24,
+      0,
+      1,
+      "c",
+      2
+    ],
+    [
+      32,
+      31,
+      0,
+      "c",
+      3
+    ],
+    [
+      49,
+      3,
+      0,
+      "c",
+      3
+    ],
+    [
+      15,
+      24,
+      0,
+      "v",
+      3
+    ],
+    [
+      9,
+      22,
+      1,
+      "c",
+      3
+    ],
+    [
+      28,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      24,
+      3,
+      1,
+      "c",
+      2
+    ],
+    [
+      24,
+      6,
+      1,
+      "v",
+      2
+    ],
+    [
+      24,
+      7,
+      0,
+      "c",
+      2
+    ],
+    [
+      20,
+      27,
+      1,
+      "v",
+      3
+    ],
+    [
+      27,
+      3,
+      0,
+      "c",
+      2
+    ],
+    [
+      5,
+      16,
+      0,
+      "v",
+      3
+    ],
+    [
+      38,
+      24,
+      1,
+      "c",
+      3
+    ],
+    [
+      18,
+      5,
+      0,
+      "v",
+      2
+    ],
+    [
+      4,
+      15,
+      0,
+      "v",
+      3
+    ],
+    [
+      43,
+      22,
+      0,
+      "c",
+      3
+    ],
+    [
+      28,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      25,
+      2,
+      1,
+      "c",
+      2
+    ],
+    [
+      49,
+      -1,
+      1,
+      "v",
+      3
+    ],
+    [
+      24,
+      14,
+      0,
+      "c",
+      2
+    ],
+    [
+      49,
+      5,
+      0,
+      "v",
+      3
+    ],
+    [
+      27,
+      3,
+      0,
+      "c",
+      2
+    ],
+    [
+      25,
+      0,
+      1,
+      "c",
+      2
+    ],
+    [
+      33,
+      12,
+      1,
+      "v",
+      2
+    ],
+    [
+      4,
+      16,
+      0,
+      "c",
+      3
+    ],
+    [
+      29,
+      4,
+      0,
+      "c",
+      2
+    ],
+    [
+      24,
+      2,
+      1,
+      "c",
+      2
+    ],
+    [
+      39,
+      21,
+      0,
+      "v",
+      3
+    ],
+    [
+      25,
+      13,
+      0,
+      "v",
+      2
+    ],
+    [
+      28,
+      11,
+      0,
+      "c",
+      2
+    ],
+    [
+      28,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      10,
+      20,
+      1,
+      "v",
+      3
+    ],
+    [
+      8,
+      18,
+      0,
+      "v",
+      3
+    ],
+    [
+      24,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      23,
+      1,
+      0,
+      "c",
+      2
+    ],
+    [
+      47,
+      15,
+      1,
+      "v",
+      3
+    ],
+    [
+      49,
+      3,
+      1,
+      "c",
+      3
+    ],
+    [
+      27,
+      5,
+      1,
+      "v",
+      2
+    ],
+    [
+      24,
+      2,
+      1,
+      "c",
+      2
+    ],
+    [
+      25,
+      9,
+      0,
+      "v",
+      2
+    ],
+    [
+      41,
+      1,
+      0,
+      "v",
+      2
+    ],
+    [
+      24,
+      0,
+      0,
+      "v",
+      2
+    ],
+    [
+      24,
+      12,
+      0,
+      "c",
+      2
+    ],
+    [
+      2,
+      -1,
+      1,
+      "v",
+      3
+    ],
+    [
+      47,
+      13,
+      0,
+      "c",
+      3
+    ],
+    [
+      24,
+      3,
+      1,
+      "v",
+      2
+    ],
+    [
+      25,
+      7,
+      0,
+      "c",
+      2
+    ],
+    [
+      25,
+      0,
+      0,
+      "c",
+      2
+    ],
+    [
+      25,
+      0,
+      0,
+      "v",
+      2
+    ],
+    [
+      24,
+      27,
+      0,
+      "c",
+      3
+    ],
+    [
+      26,
+      -1,
+      1,
+      "v",
+      2
+    ],
+    [
+      14,
+      13,
+      0,
+      "c",
+      2
+    ],
+    [
+      36,
+      9,
+      0,
+      "v",
+      2
+    ],
+    [
+      49,
+      -2,
+      1,
+      "v",
+      3
+    ],
+    [
+      22,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      42,
+      18,
+      0,
+      "v",
+      3
+    ],
+    [
+      24,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      24,
+      5,
+      0,
+      "c",
+      2
+    ],
+    [
+      25,
+      0,
+      1,
+      "c",
+      2
+    ],
+    [
+      28,
+      3,
+      0,
+      "v",
+      2
+    ],
+    [
+      23,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      43,
+      19,
+      1,
+      "v",
+      3
+    ],
+    [
+      2,
+      -1,
+      1,
+      "c",
+      3
+    ],
+    [
+      23,
+      3,
+      0,
+      "c",
+      2
+    ],
+    [
+      20,
+      28,
+      0,
+      "c",
+      3
+    ],
+    [
+      28,
+      3,
+      0,
+      "v",
+      2
+    ],
+    [
+      28,
+      3,
+      0,
+      "c",
+      2
+    ],
+    [
+      25,
+      0,
+      1,
+      "c",
+      2
+    ],
+    [
+      29,
+      2,
+      0,
+      "c",
+      2
+    ],
+    [
+      31,
+      14,
+      0,
+      "v",
+      2
+    ],
+    [
+      49,
+      9,
+      0,
+      "c",
+      3
+    ],
+    [
+      22,
+      2,
+      1,
+      "v",
+      2
+    ],
+    [
+      49,
+      1,
+      1,
+      "c",
+      3
+    ],
+    [
+      23,
+      3,
+      0,
+      "c",
+      2
+    ]
+  ],
+  "trocas_de_lideranca": "6",
+  "classificacao_divisao": [
+    {
+      "grupo_en": "2026-27 Central Standings",
+      "times": [
+        {
+          "time": "Detroit",
+          "v": "10",
+          "d": "4",
+          "atras": "-",
+          "sequencia": "W2"
+        },
+        {
+          "time": "Cleveland",
+          "v": "8",
+          "d": "8",
+          "atras": "3",
+          "sequencia": "L1"
+        },
+        {
+          "time": "Indiana",
+          "v": "5",
+          "d": "10",
+          "atras": "5.5",
+          "sequencia": "L2"
+        },
+        {
+          "time": "Chicago",
+          "v": "4",
+          "d": "10",
+          "atras": "6",
+          "sequencia": "W1"
+        },
+        {
+          "time": "Milwaukee",
+          "v": "1",
+          "d": "14",
+          "atras": "9.5",
+          "sequencia": "L11"
+        }
+      ]
+    },
+    {
+      "grupo_en": "2026-27 Southwest Standings",
+      "times": [
+        {
+          "time": "San Antonio",
+          "v": "12",
+          "d": "3",
+          "atras": "-",
+          "sequencia": "L1"
+        },
+        {
+          "time": "Houston",
+          "v": "12",
+          "d": "4",
+          "atras": "0.5",
+          "sequencia": "W1"
+        },
+        {
+          "time": "Memphis",
+          "v": "11",
+          "d": "4",
+          "atras": "1",
+          "sequencia": "W4"
+        },
+        {
+          "time": "Dallas",
+          "v": "8",
+          "d": "7",
+          "atras": "4",
+          "sequencia": "W1"
+        },
+        {
+          "time": "New Orleans",
+          "v": "5",
+          "d": "11",
+          "atras": "7.5",
+          "sequencia": "L1"
+        }
+      ]
+    }
+  ],
+  "materia_fonte": {
+    "titulo_en": "John Collins scores 20 points and Pistons hit 17 3s in 122-109 win over Pelicans",
+    "resumo_en": "John Collins hit four 3-pointers and scored 20 points to lead seven Detroit players in double figures as the Pistons beat the New Orleans Pelicans 122-109 on Wednesday night.",
+    "link": "http://www.espn.com/nba/recap?gameId=401910013"
+  }
+}
