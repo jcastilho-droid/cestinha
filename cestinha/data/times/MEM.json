@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "29",
     "sigla": "MEM",
-    "posicao": 5,
-    "v": 11,
+    "posicao": 4,
+    "v": 12,
     "d": 4,
-    "pct": ".733",
-    "atras": "1.5",
-    "sequencia": "W4",
-    "casa": "3-4",
+    "pct": ".750",
+    "atras": "1",
+    "sequencia": "W5",
+    "casa": "4-4",
     "fora": "8-0",
     "ultimos10": "6-4",
-    "pontos_pro": "121.9",
-    "pontos_contra": "112.9",
-    "saldo": "+9.0"
+    "pontos_pro": "122.1",
+    "pontos_contra": "111.9",
+    "saldo": "+10.2"
   },
   "divisao": null,
   "tecnico": "Tuomas Iisalo",
@@ -167,7 +167,10 @@
       "experiencia": 13,
       "universidade": "Syracuse",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "23.5",
@@ -195,10 +198,7 @@
       "experiencia": 7,
       "universidade": "Washington",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 10,
         "min": "18.2",
@@ -255,7 +255,7 @@
       "universidade": "Purdue",
       "pais": "Canada",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -816,9 +816,12 @@
         "sigla": "GS",
         "nome_curto": "Warriors"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 126,
+        "adversario": 98
+      },
+      "resultado": "V"
     },
     {
       "id": "401910026",
@@ -1719,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-19T22:02:15.994Z"
+  "atualizado_em": "2026-11-20T04:08:11.580Z"
 }

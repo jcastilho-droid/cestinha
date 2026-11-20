@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "16",
     "sigla": "MIN",
-    "posicao": 4,
+    "posicao": 5,
     "v": 11,
-    "d": 4,
-    "pct": ".733",
-    "atras": "1.5",
-    "sequencia": "W2",
-    "casa": "7-2",
+    "d": 5,
+    "pct": ".688",
+    "atras": "2",
+    "sequencia": "L1",
+    "casa": "7-3",
     "fora": "4-2",
-    "ultimos10": "8-2",
-    "pontos_pro": "116.7",
-    "pontos_contra": "106.1",
-    "saldo": "+10.6"
+    "ultimos10": "7-3",
+    "pontos_pro": "115.6",
+    "pontos_contra": "105.8",
+    "saldo": "+9.8"
   },
   "divisao": null,
   "tecnico": "Chris Finch",
@@ -195,10 +195,7 @@
       "experiencia": 6,
       "universidade": null,
       "pais": "Democratic Republic of Congo",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "30.5",
@@ -769,9 +766,12 @@
         "sigla": "NY",
         "nome_curto": "Knicks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 99,
+        "adversario": 102
+      },
+      "resultado": "D"
     },
     {
       "id": "401910026",
@@ -1672,5 +1672,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-19T22:02:18.137Z"
+  "atualizado_em": "2026-11-20T04:08:13.882Z"
 }

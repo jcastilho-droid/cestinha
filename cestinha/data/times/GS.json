@@ -15,16 +15,16 @@
     "sigla": "GS",
     "posicao": 10,
     "v": 8,
-    "d": 7,
-    "pct": ".533",
-    "atras": "4.5",
-    "sequencia": "L4",
+    "d": 8,
+    "pct": ".500",
+    "atras": "5",
+    "sequencia": "L5",
     "casa": "6-1",
-    "fora": "2-6",
-    "ultimos10": "6-4",
-    "pontos_pro": "113.7",
-    "pontos_contra": "112.8",
-    "saldo": "+0.9"
+    "fora": "2-7",
+    "ultimos10": "5-5",
+    "pontos_pro": "112.7",
+    "pontos_contra": "113.6",
+    "saldo": "-0.9"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -285,10 +285,7 @@
       "experiencia": 2,
       "universidade": "Houston",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "11.3",
@@ -429,7 +426,7 @@
       "universidade": "Michigan State",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -796,9 +793,12 @@
         "sigla": "MEM",
         "nome_curto": "Grizzlies"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 98,
+        "adversario": 126
+      },
+      "resultado": "D"
     },
     {
       "id": "401910035",
@@ -1699,5 +1699,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-19T22:02:13.138Z"
+  "atualizado_em": "2026-11-20T04:08:08.390Z"
 }

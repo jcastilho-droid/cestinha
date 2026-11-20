@@ -15,16 +15,16 @@
     "sigla": "MIL",
     "posicao": 15,
     "v": 1,
-    "d": 14,
-    "pct": ".067",
-    "atras": "11.5",
-    "sequencia": "L11",
-    "casa": "1-7",
+    "d": 15,
+    "pct": ".063",
+    "atras": "12",
+    "sequencia": "L12",
+    "casa": "1-8",
     "fora": "0-7",
     "ultimos10": "0-10",
-    "pontos_pro": "107.7",
-    "pontos_contra": "120.9",
-    "saldo": "-13.2"
+    "pontos_pro": "108.1",
+    "pontos_contra": "121.1",
+    "saldo": "-13.0"
   },
   "divisao": {
     "nome": "Central",
@@ -112,7 +112,7 @@
       "universidade": "Utah",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -311,7 +311,7 @@
       "universidade": "Texas",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -797,9 +797,12 @@
         "sigla": "POR",
         "nome_curto": "Trail Blazers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 114,
+        "adversario": 124
+      },
+      "resultado": "D"
     },
     {
       "id": "401910023",
@@ -1700,5 +1703,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mil",
-  "atualizado_em": "2026-11-19T22:02:17.594Z"
+  "atualizado_em": "2026-11-20T04:08:13.147Z"
 }

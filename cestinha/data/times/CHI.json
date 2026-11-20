@@ -366,7 +366,10 @@
       "experiencia": 2,
       "universidade": null,
       "pais": "France",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "12.9",
@@ -1707,5 +1710,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-19T22:02:10.195Z"
+  "atualizado_em": "2026-11-20T04:08:04.966Z"
 }

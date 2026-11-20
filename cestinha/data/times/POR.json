@@ -14,17 +14,17 @@
     "id": "22",
     "sigla": "POR",
     "posicao": 6,
-    "v": 9,
+    "v": 10,
     "d": 5,
-    "pct": ".643",
-    "atras": "3",
-    "sequencia": "L2",
+    "pct": ".667",
+    "atras": "2.5",
+    "sequencia": "W1",
     "casa": "3-2",
-    "fora": "6-3",
+    "fora": "7-3",
     "ultimos10": "6-4",
-    "pontos_pro": "117.0",
-    "pontos_contra": "111.0",
-    "saldo": "+6.0"
+    "pontos_pro": "117.5",
+    "pontos_contra": "111.2",
+    "saldo": "+6.3"
   },
   "divisao": null,
   "tecnico": "Micah Nori",
@@ -170,10 +170,7 @@
       "experiencia": 4,
       "universidade": "Dayton",
       "pais": "Belgium",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "29.1",
@@ -286,7 +283,7 @@
       "universidade": "Texas A&M",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -774,9 +771,12 @@
         "sigla": "MIL",
         "nome_curto": "Bucks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 124,
+        "adversario": 114
+      },
+      "resultado": "V"
     },
     {
       "id": "401910024",
@@ -1691,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/por",
-  "atualizado_em": "2026-11-19T22:02:22.773Z"
+  "atualizado_em": "2026-11-20T04:08:19.580Z"
 }

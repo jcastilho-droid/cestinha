@@ -14,17 +14,17 @@
     "id": "18",
     "sigla": "NY",
     "posicao": 6,
-    "v": 8,
+    "v": 9,
     "d": 6,
-    "pct": ".571",
-    "atras": "4",
-    "sequencia": "W2",
+    "pct": ".600",
+    "atras": "3.5",
+    "sequencia": "W3",
     "casa": "4-3",
-    "fora": "4-3",
+    "fora": "5-3",
     "ultimos10": "7-3",
-    "pontos_pro": "110.0",
-    "pontos_contra": "103.9",
-    "saldo": "+6.1"
+    "pontos_pro": "109.5",
+    "pontos_contra": "103.5",
+    "saldo": "+6.0"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -756,9 +756,12 @@
         "sigla": "MIN",
         "nome_curto": "Timberwolves"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 102,
+        "adversario": 99
+      },
+      "resultado": "V"
     },
     {
       "id": "401910024",
@@ -1673,5 +1676,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-19T22:02:19.362Z"
+  "atualizado_em": "2026-11-20T04:08:15.564Z"
 }
