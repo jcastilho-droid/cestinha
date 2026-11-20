@@ -1,0 +1,35 @@
+{
+  "titulo": "Lillard brilha na volta a Milwaukee, Wembanyama comanda o Spurs e Grizzlies seguem embalados",
+  "subtitulo": "Quinta-feira, 19 de novembro: quatro jogos, e o Bucks chega a 12 derrotas seguidas",
+  "corpo": "E aí, aqui é o Cestinha. Noite curta, só quatro jogos, mas com Lillard de volta a Milwaukee fazendo estrago e o Spurs voltando a vencer.\n\n**Trail Blazers 124 a 114 Bucks:** Damian Lillard fez 33 pts, 6 reb, 0 ast na volta a Milwaukee, sua maior pontuação na temporada. Jogo com 20 trocas de liderança, e o Bucks (1-15) chega a 12 derrotas seguidas.\n\n**Spurs 124 a 112 Clippers:** Victor Wembanyama (32 pts, 11 reb, 3 ast) e Stephon Castle (21 pts, 6 reb, 12 ast) levam o líder do Sudoeste a 13-3.\n\n**Knicks 102 a 99 Timberwolves:** Karl-Anthony Towns fez duplo-duplo contra o ex-time (22 pts, 12 reb, 4 ast). O Knicks chegou a abrir 19, fez só 12 no último quarto, mas segurou a terceira vitória seguida.\n\n**Grizzlies 126 a 98 Warriors:** passeio em Memphis, com Jaylen Wells (22 pts, 7 reb, 0 ast) no comando. O Grizzlies chega a cinco vitórias seguidas; o Warriors, do brasileiro Gui Santos, a cinco derrotas seguidas.\n\n**Destaque da noite:** Damian Lillard. Foram 33 pts, 6 reb, 0 ast, com 8 de 9 nos lances livres, num jogo decidido nos minutos finais, no ginásio onde ele já jogou.",
+  "tipo": "resumo_rodada",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Trail Blazers",
+    "Bucks",
+    "Spurs",
+    "Clippers",
+    "Knicks",
+    "Timberwolves",
+    "Grizzlies",
+    "Warriors"
+  ],
+  "jogadores": [
+    "Damian Lillard",
+    "Victor Wembanyama",
+    "Stephon Castle",
+    "Karl-Anthony Towns",
+    "Jaylen Wells",
+    "Gui Santos"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "rodada",
+    "data_rodada": "2026-11-19"
+  },
+  "escrito_em": "2026-11-20T11:49:35.174Z"
+}

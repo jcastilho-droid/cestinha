@@ -1,0 +1,52 @@
+{
+  "titulo": "Grizzlies atropelam o Warriors e chegam a cinco vitórias seguidas",
+  "subtitulo": "Jaylen Wells fez 22 pts e o Grizzlies não ficou atrás no placar em nenhum momento",
+  "corpo": "Passeio em Memphis. O Grizzlies venceu o Warriors por 126 a 98, liderou o jogo inteiro e chegou a abrir 34 pontos. Fez a diferença no perímetro: 15 de 35 nas bolas de três contra apenas 5 de 29 do Warriors.\n\nJaylen Wells foi o cestinha da partida, com 22 pts, 7 reb, 0 ast em 24 minutos, acertando 8 de 10 arremessos. Cedric Coward somou 19 pts, 4 reb, 4 ast, com cinco bolas de três, e Cameron Boozer foi perfeito: 6 de 6 para 16 pts, 6 reb, 5 ast.\n\nNo Warriors, Charles Bassey fez duplo-duplo (16 pts, 13 reb, 1 ast). O brasileiro Gui Santos esteve em quadra pelo time da Califórnia.\n\n**E agora?** O Grizzlies vai a 12-4, empatado com o Rockets e um jogo atrás do Spurs na Divisão Sudoeste. O Warriors cai para 8-8 e soma cinco derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Grizzlies",
+    "Warriors"
+  ],
+  "jogadores": [
+    "Jaylen Wells",
+    "Cedric Coward",
+    "Cameron Boozer",
+    "Charles Bassey",
+    "Gui Santos"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Grizzlies chega a cinco vitórias seguidas, e o Warriors, a cinco derrotas seguidas.",
+  "notas": [
+    {
+      "jogador": "Jaylen Wells",
+      "nota": 8.5,
+      "comentario": "22 pts com 8 de 10 em só 24 minutos"
+    },
+    {
+      "jogador": "Cedric Coward",
+      "nota": 8,
+      "comentario": "19 pts e cinco bolas de três"
+    },
+    {
+      "jogador": "Cameron Boozer",
+      "nota": 8,
+      "comentario": "Perfeito nos arremessos: 6 de 6"
+    },
+    {
+      "jogador": "Charles Bassey",
+      "nota": 6.5,
+      "comentario": "Duplo-duplo solitário numa noite ruim do Warriors"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910019",
+    "data_rodada": "2026-11-19"
+  },
+  "escrito_em": "2026-11-20T11:49:35.151Z"
+}

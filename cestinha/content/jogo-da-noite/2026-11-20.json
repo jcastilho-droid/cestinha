@@ -1,0 +1,32 @@
+{
+  "titulo": "Pacers e Cavaliers, dois desfalcados brigando por espaço no Leste",
+  "subtitulo": "Pacers x Cavaliers, 21h30",
+  "corpo": "Se você só puder ver um jogo hoje, fique com Pacers x Cavaliers. É confronto direto no Leste: o Cavaliers é o 7º, com 8-8, e o Pacers é o 10º, com 5-10, vindo de 2 derrotas seguidas.\n\nOs dois chegam sem uma peça importante. O Pacers não terá Tyrese Haliburton e depende de Pascal Siakam, que tem médias de 23.1 pts, 6.1 reb e 3.9 ast. O Cavaliers joga sem Evan Mobley e aposta em Donovan Mitchell, com 24.8 pts e 5.3 ast por jogo.\n\nQuem vencer ganha fôlego na briga pela parte de cima da tabela.",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Pacers",
+    "Cavaliers"
+  ],
+  "jogadores": [
+    "Pascal Siakam",
+    "Donovan Mitchell",
+    "Tyrese Haliburton",
+    "Evan Mobley"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401909307",
+  "motivos": [
+    "Briga na tabela"
+  ],
+  "ficar_de_olho": "Pascal Siakam contra Donovan Mitchell, as referências de dois times desfalcados.",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-20"
+  },
+  "escrito_em": "2026-11-20T11:49:35.173Z"
+}

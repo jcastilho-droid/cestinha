@@ -1,0 +1,52 @@
+{
+  "titulo": "Wembanyama e Castle comandam vitória do Spurs sobre o Clippers",
+  "subtitulo": "Spurs vencem por 124 a 112 e se recuperam da derrota para o Pistons",
+  "corpo": "O Spurs voltou a vencer. Depois de perder para o Pistons, bateu o Clippers por 124 a 112 em San Antonio, com 53% nos arremessos e 37 assistências. O jogo teve nove trocas de liderança, mas o time da casa fez 67 pontos no segundo tempo e controlou o fim.\n\nVictor Wembanyama foi o cestinha da partida, com 32 pts, 11 reb, 3 ast, e fez três das últimas quatro cestas de quadra do Spurs. Stephon Castle fez duplo-duplo com 21 pts, 6 reb, 12 ast, e Julian Champagnie somou 20 pts, 4 reb, 1 ast.\n\nNo Clippers, Brook Lopez (8 de 10 nos arremessos) e Darius Garland fizeram 23 pts cada.\n\n**E agora?** O Spurs vai a 13-3 e segue na ponta da Divisão Sudoeste. O Clippers cai para 4-10, com duas derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Spurs",
+    "Clippers"
+  ],
+  "jogadores": [
+    "Victor Wembanyama",
+    "Stephon Castle",
+    "Julian Champagnie",
+    "Brook Lopez",
+    "Darius Garland"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Spurs mantém a liderança da Divisão Sudoeste, um jogo à frente de Rockets e Grizzlies.",
+  "notas": [
+    {
+      "jogador": "Victor Wembanyama",
+      "nota": 9,
+      "comentario": "32 pts, 11 reb e decisivo na reta final"
+    },
+    {
+      "jogador": "Stephon Castle",
+      "nota": 8.5,
+      "comentario": "Duplo-duplo com 12 ast"
+    },
+    {
+      "jogador": "Julian Champagnie",
+      "nota": 7.5,
+      "comentario": "20 pts com quatro bolas de três"
+    },
+    {
+      "jogador": "Brook Lopez",
+      "nota": 7,
+      "comentario": "23 pts com 8 de 10 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910022",
+    "data_rodada": "2026-11-19"
+  },
+  "escrito_em": "2026-11-20T11:49:35.154Z"
+}
