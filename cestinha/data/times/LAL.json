@@ -439,6 +439,34 @@
       }
     },
     {
+      "id": "5113969",
+      "nome": "Cameron Carr",
+      "numero": "43",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 21,
+      "altura_m": "1.96",
+      "peso_kg": 83,
+      "experiencia": 0,
+      "universidade": "Baylor",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 6,
+        "min": "4.3",
+        "pts": "1.2",
+        "reb": "0.8",
+        "ast": "0.2",
+        "rb": "0.0",
+        "toco": "0.0",
+        "fg_pct": "37.5",
+        "tres_pct": "16.7",
+        "ll_pct": "0.0",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
       "id": "4683774",
       "nome": "Bronny James",
       "numero": "9",
@@ -488,34 +516,6 @@
         "rb": "0.0",
         "toco": "0.0",
         "fg_pct": "33.3",
-        "tres_pct": "0.0",
-        "ll_pct": "0.0",
-        "duplos_duplos": 0,
-        "triplos_duplos": 0
-      }
-    },
-    {
-      "id": "5113969",
-      "nome": "Cameron Carr",
-      "numero": "43",
-      "posicao": "Armador",
-      "posicao_sigla": "G",
-      "idade": 21,
-      "altura_m": "1.96",
-      "peso_kg": 83,
-      "experiencia": 0,
-      "universidade": "Baylor",
-      "pais": "USA",
-      "lesao": null,
-      "medias": {
-        "jogos": 5,
-        "min": "4.8",
-        "pts": "0.4",
-        "reb": "1.0",
-        "ast": "0.0",
-        "rb": "0.0",
-        "toco": "0.0",
-        "fg_pct": "16.7",
         "tres_pct": "0.0",
         "ll_pct": "0.0",
         "duplos_duplos": 0,
@@ -1725,5 +1725,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lal",
-  "atualizado_em": "2026-11-20T10:20:10.093Z"
+  "atualizado_em": "2026-11-20T17:11:55.729Z"
 }

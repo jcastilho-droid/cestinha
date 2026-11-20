@@ -456,7 +456,10 @@
       "experiencia": 2,
       "universidade": null,
       "pais": null,
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 3,
         "min": "11.3",
@@ -1716,5 +1719,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-20T10:20:15.717Z"
+  "atualizado_em": "2026-11-20T17:12:00.049Z"
 }
