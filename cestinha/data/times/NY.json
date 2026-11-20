@@ -111,7 +111,10 @@
       "experiencia": 10,
       "universidade": "Indiana",
       "pais": "England",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "33.9",
@@ -251,7 +254,10 @@
       "experiencia": 13,
       "universidade": "Missouri",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 12,
         "min": "9.8",
@@ -1676,5 +1682,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-20T17:11:59.518Z"
+  "atualizado_em": "2026-11-20T23:59:27.791Z"
 }

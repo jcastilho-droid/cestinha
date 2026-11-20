@@ -114,10 +114,7 @@
       "experiencia": 5,
       "universidade": "Gonzaga",
       "pais": "Canada",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 11,
         "min": "33.4",
@@ -285,10 +282,7 @@
       "experiencia": 12,
       "universidade": "Arizona",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 6,
         "min": "14.3",
@@ -400,10 +394,7 @@
       "experiencia": 0,
       "universidade": "Purdue",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 9,
         "min": "13.8",
@@ -1694,5 +1685,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-20T17:11:54.515Z"
+  "atualizado_em": "2026-11-20T23:59:23.971Z"
 }

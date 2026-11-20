@@ -286,7 +286,7 @@
       "universidade": "Kansas State",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1684,5 +1684,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-20T17:12:01.271Z"
+  "atualizado_em": "2026-11-20T23:59:29.166Z"
 }

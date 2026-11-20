@@ -847,7 +847,7 @@
     },
     {
       "id": "401910075",
-      "data_utc": "2026-12-02T04:00Z",
+      "data_utc": "2026-12-02T03:00Z",
       "tipo": 2,
       "em_casa": false,
       "adversario": {
@@ -1674,5 +1674,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/utah",
-  "atualizado_em": "2026-11-20T17:12:04.626Z"
+  "atualizado_em": "2026-11-20T23:59:32.050Z"
 }

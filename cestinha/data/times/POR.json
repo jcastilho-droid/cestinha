@@ -282,10 +282,7 @@
       "experiencia": 9,
       "universidade": "Texas A&M",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "16.3",
@@ -850,7 +847,7 @@
     },
     {
       "id": "401910074",
-      "data_utc": "2026-12-02T03:00Z",
+      "data_utc": "2026-12-02T04:00Z",
       "tipo": 2,
       "em_casa": true,
       "adversario": {
@@ -1691,5 +1688,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/por",
-  "atualizado_em": "2026-11-20T17:12:02.367Z"
+  "atualizado_em": "2026-11-20T23:59:30.102Z"
 }

@@ -198,10 +198,7 @@
       "experiencia": 5,
       "universidade": "UCLA",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "27.7",
@@ -1680,5 +1677,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cle",
-  "atualizado_em": "2026-11-20T17:11:50.672Z"
+  "atualizado_em": "2026-11-20T23:59:21.259Z"
 }

@@ -142,7 +142,10 @@
       "experiencia": 7,
       "universidade": "Maryland",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "24.6",
@@ -366,10 +369,7 @@
       "experiencia": 2,
       "universidade": null,
       "pais": "France",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 13,
         "min": "12.9",
@@ -1710,5 +1710,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-20T17:11:50.028Z"
+  "atualizado_em": "2026-11-20T23:59:20.755Z"
 }

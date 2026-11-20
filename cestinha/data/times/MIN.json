@@ -845,7 +845,7 @@
     },
     {
       "id": "401910074",
-      "data_utc": "2026-12-02T03:00Z",
+      "data_utc": "2026-12-02T04:00Z",
       "tipo": 2,
       "em_casa": false,
       "adversario": {
@@ -1672,5 +1672,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-20T17:11:58.426Z"
+  "atualizado_em": "2026-11-20T23:59:26.829Z"
 }

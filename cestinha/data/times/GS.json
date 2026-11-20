@@ -858,7 +858,7 @@
     },
     {
       "id": "401910075",
-      "data_utc": "2026-12-02T04:00Z",
+      "data_utc": "2026-12-02T03:00Z",
       "tipo": 2,
       "em_casa": true,
       "adversario": {
@@ -1699,5 +1699,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-20T17:11:53.267Z"
+  "atualizado_em": "2026-11-20T23:59:23.079Z"
 }
