@@ -112,7 +112,7 @@
       "universidade": null,
       "pais": "France",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -522,7 +522,7 @@
       "universidade": "Alabama",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": null
@@ -1697,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bkn",
-  "atualizado_em": "2026-11-21T13:13:22.093Z"
+  "atualizado_em": "2026-11-21T19:56:14.543Z"
 }

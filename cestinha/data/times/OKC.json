@@ -283,7 +283,7 @@
       "universidade": "Texas A&M",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -457,7 +457,7 @@
       "universidade": null,
       "pais": null,
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -1722,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-21T13:13:29.769Z"
+  "atualizado_em": "2026-11-21T19:56:24.822Z"
 }

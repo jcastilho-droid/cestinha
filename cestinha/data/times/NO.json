@@ -136,7 +136,10 @@
       "experiencia": 6,
       "universidade": "Virginia",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 10,
         "min": "32.4",
@@ -1732,5 +1735,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/no",
-  "atualizado_em": "2026-11-21T13:13:28.990Z"
+  "atualizado_em": "2026-11-21T19:56:23.756Z"
 }

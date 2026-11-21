@@ -202,7 +202,7 @@
       "universidade": "South Carolina",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -1678,5 +1678,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/tor",
-  "atualizado_em": "2026-11-21T13:13:32.572Z"
+  "atualizado_em": "2026-11-21T19:56:28.488Z"
 }

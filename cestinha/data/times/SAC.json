@@ -196,7 +196,7 @@
       "universidade": "Memphis",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -1659,5 +1659,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sac",
-  "atualizado_em": "2026-11-21T13:13:31.790Z"
+  "atualizado_em": "2026-11-21T19:56:27.418Z"
 }

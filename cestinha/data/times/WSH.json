@@ -447,10 +447,7 @@
       "experiencia": 0,
       "universidade": "Tennessee",
       "pais": "Nigeria",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 3,
         "min": "1.7",
@@ -1709,5 +1706,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/wsh",
-  "atualizado_em": "2026-11-21T13:13:33.393Z"
+  "atualizado_em": "2026-11-21T19:56:29.723Z"
 }

@@ -401,7 +401,7 @@
       "universidade": "Stanford",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -1722,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/det",
-  "atualizado_em": "2026-11-21T13:13:24.675Z"
+  "atualizado_em": "2026-11-21T19:56:18.081Z"
 }

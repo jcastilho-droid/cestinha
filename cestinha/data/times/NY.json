@@ -83,7 +83,10 @@
       "experiencia": 12,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "32.8",
@@ -1682,5 +1685,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-21T13:13:29.369Z"
+  "atualizado_em": "2026-11-21T19:56:24.266Z"
 }

@@ -283,7 +283,7 @@
       "universidade": "Arizona",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -1691,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-21T13:13:25.952Z"
+  "atualizado_em": "2026-11-21T19:56:19.761Z"
 }
