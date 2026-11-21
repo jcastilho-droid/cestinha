@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-11-21T19:56:12.624Z",
+  "atualizado_em": "2026-11-21T20:54:50.962Z",
   "fonte": "ESPN",
   "jogos": [
     {
       "id": "401910023",
       "inicio_utc": "2026-11-21T18:00Z",
-      "status": "em_andamento",
+      "status": "final",
       "periodo": 4,
       "casa": {
         "id": "20",
@@ -14,8 +14,8 @@
         "nome_curto": "76ers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "cor": "#1d428a",
-        "placar": 103,
-        "campanha": "13-3"
+        "placar": 132,
+        "campanha": "14-3"
       },
       "visitante": {
         "id": "15",
@@ -24,8 +24,8 @@
         "nome_curto": "Bucks",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
         "cor": "#00471b",
-        "placar": 92,
-        "campanha": "1-15"
+        "placar": 129,
+        "campanha": "1-16"
       },
       "data_rodada": "2026-11-21",
       "tv_eua": [
@@ -441,7 +441,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "cor": "#1d428a",
         "placar": 0,
-        "campanha": "13-3"
+        "campanha": "14-3"
       },
       "visitante": {
         "id": "22",
@@ -513,7 +513,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
         "cor": "#00471b",
         "placar": 0,
-        "campanha": "1-15"
+        "campanha": "1-16"
       },
       "data_rodada": "2026-11-23",
       "tv_eua": [
@@ -812,7 +812,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "cor": "#1d428a",
         "placar": 0,
-        "campanha": "13-3"
+        "campanha": "14-3"
       },
       "visitante": {
         "id": "14",
@@ -960,7 +960,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
         "cor": "#00471b",
         "placar": 0,
-        "campanha": "1-15"
+        "campanha": "1-16"
       },
       "visitante": {
         "id": "17",
@@ -1123,7 +1123,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
         "cor": "#00471b",
         "placar": 0,
-        "campanha": "1-15"
+        "campanha": "1-16"
       },
       "data_rodada": "2026-11-27",
       "tv_eua": [
@@ -1154,7 +1154,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "cor": "#1d428a",
         "placar": 0,
-        "campanha": "13-3"
+        "campanha": "14-3"
       },
       "data_rodada": "2026-11-27",
       "tv_eua": []
