@@ -1,13 +1,13 @@
 {
   "data_rodada": "2026-11-20",
-  "coletado_em": "2026-11-20T05:15:34.174Z",
+  "coletado_em": "2026-11-21T01:27:14.312Z",
   "fonte": "ESPN",
   "jogos": [
     {
       "id": "401909305",
       "inicio_utc": "2026-11-21T00:00Z",
-      "status": "agendado",
-      "periodo": 0,
+      "status": "em_andamento",
+      "periodo": 3,
       "casa": {
         "id": "1",
         "sigla": "ATL",
@@ -15,7 +15,7 @@
         "nome_curto": "Hawks",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
         "cor": "#c8102e",
-        "placar": 0,
+        "placar": 63,
         "campanha": "9-6"
       },
       "visitante": {
@@ -25,15 +25,15 @@
         "nome_curto": "Hornets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
         "cor": "#008ca8",
-        "placar": 0,
+        "placar": 62,
         "campanha": "4-10"
       }
     },
     {
       "id": "401909306",
       "inicio_utc": "2026-11-21T00:30Z",
-      "status": "agendado",
-      "periodo": 0,
+      "status": "em_andamento",
+      "periodo": 2,
       "casa": {
         "id": "17",
         "sigla": "BKN",
@@ -41,7 +41,7 @@
         "nome_curto": "Nets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
         "cor": "#000000",
-        "placar": 0,
+        "placar": 41,
         "campanha": "3-11"
       },
       "visitante": {
@@ -51,15 +51,15 @@
         "nome_curto": "Magic",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
         "cor": "#0150b5",
-        "placar": 0,
+        "placar": 42,
         "campanha": "6-8"
       }
     },
     {
       "id": "401909307",
       "inicio_utc": "2026-11-21T00:30Z",
-      "status": "agendado",
-      "periodo": 0,
+      "status": "em_andamento",
+      "periodo": 2,
       "casa": {
         "id": "5",
         "sigla": "CLE",
@@ -67,7 +67,7 @@
         "nome_curto": "Cavaliers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
         "cor": "#860038",
-        "placar": 0,
+        "placar": 49,
         "campanha": "8-8"
       },
       "visitante": {
@@ -77,15 +77,15 @@
         "nome_curto": "Pacers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
         "cor": "#0c2340",
-        "placar": 0,
+        "placar": 53,
         "campanha": "5-10"
       }
     },
     {
       "id": "401909308",
       "inicio_utc": "2026-11-21T00:30Z",
-      "status": "agendado",
-      "periodo": 0,
+      "status": "em_andamento",
+      "periodo": 2,
       "casa": {
         "id": "8",
         "sigla": "DET",
@@ -93,7 +93,7 @@
         "nome_curto": "Pistons",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
         "cor": "#1d428a",
-        "placar": 0,
+        "placar": 40,
         "campanha": "10-4"
       },
       "visitante": {
@@ -103,15 +103,15 @@
         "nome_curto": "Raptors",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
         "cor": "#d91244",
-        "placar": 0,
+        "placar": 49,
         "campanha": "5-10"
       }
     },
     {
       "id": "401909309",
       "inicio_utc": "2026-11-21T01:00Z",
-      "status": "agendado",
-      "periodo": 0,
+      "status": "em_andamento",
+      "periodo": 1,
       "casa": {
         "id": "4",
         "sigla": "CHI",
@@ -119,7 +119,7 @@
         "nome_curto": "Bulls",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
         "cor": "#ce1141",
-        "placar": 0,
+        "placar": 17,
         "campanha": "4-10"
       },
       "visitante": {
@@ -129,15 +129,15 @@
         "nome_curto": "Wizards",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
         "cor": "#e31837",
-        "placar": 0,
+        "placar": 18,
         "campanha": "5-11"
       }
     },
     {
       "id": "401909310",
       "inicio_utc": "2026-11-21T01:00Z",
-      "status": "agendado",
-      "periodo": 0,
+      "status": "em_andamento",
+      "periodo": 1,
       "casa": {
         "id": "25",
         "sigla": "OKC",
@@ -145,7 +145,7 @@
         "nome_curto": "Thunder",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
         "cor": "#007ac1",
-        "placar": 0,
+        "placar": 17,
         "campanha": "9-6"
       },
       "visitante": {
@@ -155,7 +155,7 @@
         "nome_curto": "Pelicans",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
         "cor": "#0a2240",
-        "placar": 0,
+        "placar": 25,
         "campanha": "5-11"
       }
     },
