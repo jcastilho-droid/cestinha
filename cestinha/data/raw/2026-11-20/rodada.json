@@ -1,6 +1,6 @@
 {
   "data_rodada": "2026-11-20",
-  "coletado_em": "2026-11-21T05:07:49.491Z",
+  "coletado_em": "2026-11-21T06:07:02.323Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -188,7 +188,7 @@
     {
       "id": "401909312",
       "inicio_utc": "2026-11-21T03:00Z",
-      "status": "em_andamento",
+      "status": "final",
       "periodo": 4,
       "casa": {
         "id": "7",
@@ -197,8 +197,8 @@
         "nome_curto": "Nuggets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
         "cor": "#0e2240",
-        "placar": 106,
-        "campanha": "8-5"
+        "placar": 133,
+        "campanha": "9-5"
       },
       "visitante": {
         "id": "10",
@@ -207,14 +207,14 @@
         "nome_curto": "Rockets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
         "cor": "#ce0e2d",
-        "placar": 108,
-        "campanha": "12-4"
+        "placar": 124,
+        "campanha": "12-5"
       }
     },
     {
       "id": "401909313",
       "inicio_utc": "2026-11-21T03:00Z",
-      "status": "em_andamento",
+      "status": "final",
       "periodo": 4,
       "casa": {
         "id": "13",
@@ -223,8 +223,8 @@
         "nome_curto": "Lakers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "cor": "#552583",
-        "placar": 101,
-        "campanha": "13-3"
+        "placar": 106,
+        "campanha": "14-3"
       },
       "visitante": {
         "id": "23",
@@ -233,8 +233,8 @@
         "nome_curto": "Kings",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
         "cor": "#5a2d81",
-        "placar": 96,
-        "campanha": "1-13"
+        "placar": 104,
+        "campanha": "1-14"
       }
     }
   ]

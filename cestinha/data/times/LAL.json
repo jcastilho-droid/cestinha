@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "13",
     "sigla": "LAL",
-    "posicao": 2,
-    "v": 13,
+    "posicao": 1,
+    "v": 14,
     "d": 3,
-    "pct": ".813",
+    "pct": ".824",
     "atras": "-",
-    "sequencia": "L1",
-    "casa": "6-2",
+    "sequencia": "W1",
+    "casa": "7-2",
     "fora": "7-1",
     "ultimos10": "9-1",
-    "pontos_pro": "120.9",
-    "pontos_contra": "114.4",
-    "saldo": "+6.5"
+    "pontos_pro": "120.0",
+    "pontos_contra": "113.8",
+    "saldo": "+6.2"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -836,9 +836,12 @@
         "sigla": "SAC",
         "nome_curto": "Kings"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 106,
+        "adversario": 104
+      },
+      "resultado": "V"
     },
     {
       "id": "401910044",
@@ -1725,5 +1728,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lal",
-  "atualizado_em": "2026-11-20T23:59:24.862Z"
+  "atualizado_em": "2026-11-21T06:07:08.067Z"
 }

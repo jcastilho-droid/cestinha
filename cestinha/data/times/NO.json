@@ -15,15 +15,15 @@
     "sigla": "NO",
     "posicao": 12,
     "v": 5,
-    "d": 11,
-    "pct": ".313",
-    "atras": "8",
-    "sequencia": "L1",
+    "d": 12,
+    "pct": ".294",
+    "atras": "9",
+    "sequencia": "L2",
     "casa": "4-7",
-    "fora": "1-4",
-    "ultimos10": "3-7",
-    "pontos_pro": "115.4",
-    "pontos_contra": "122.8",
+    "fora": "1-5",
+    "ultimos10": "2-8",
+    "pontos_pro": "115.6",
+    "pontos_contra": "123.0",
     "saldo": "-7.4"
   },
   "divisao": null,
@@ -840,9 +840,12 @@
         "sigla": "OKC",
         "nome_curto": "Thunder"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 120,
+        "adversario": 126
+      },
+      "resultado": "D"
     },
     {
       "id": "401910027",
@@ -1729,5 +1732,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/no",
-  "atualizado_em": "2026-11-20T23:59:27.257Z"
+  "atualizado_em": "2026-11-21T06:07:10.044Z"
 }

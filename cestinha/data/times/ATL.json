@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "1",
     "sigla": "ATL",
-    "posicao": 5,
-    "v": 9,
+    "posicao": 4,
+    "v": 10,
     "d": 6,
-    "pct": ".600",
-    "atras": "3.5",
-    "sequencia": "W2",
-    "casa": "3-3",
+    "pct": ".625",
+    "atras": "3",
+    "sequencia": "W3",
+    "casa": "4-3",
     "fora": "6-3",
     "ultimos10": "7-3",
-    "pontos_pro": "117.7",
-    "pontos_contra": "115.8",
-    "saldo": "+1.9"
+    "pontos_pro": "117.3",
+    "pontos_contra": "114.6",
+    "saldo": "+2.7"
   },
   "divisao": null,
   "tecnico": "Quin Snyder",
@@ -777,9 +777,12 @@
         "sigla": "CHA",
         "nome_curto": "Hornets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 97
+      },
+      "resultado": "V"
     },
     {
       "id": "401910029",
@@ -1680,5 +1683,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/atl",
-  "atualizado_em": "2026-11-20T23:59:19.020Z"
+  "atualizado_em": "2026-11-21T06:07:02.911Z"
 }

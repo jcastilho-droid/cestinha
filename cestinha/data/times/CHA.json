@@ -15,16 +15,16 @@
     "sigla": "CHA",
     "posicao": 12,
     "v": 4,
-    "d": 10,
-    "pct": ".286",
-    "atras": "8",
-    "sequencia": "L3",
+    "d": 11,
+    "pct": ".267",
+    "atras": "8.5",
+    "sequencia": "L4",
     "casa": "3-4",
-    "fora": "1-6",
+    "fora": "1-7",
     "ultimos10": "1-9",
-    "pontos_pro": "100.1",
-    "pontos_contra": "110.4",
-    "saldo": "-10.3"
+    "pontos_pro": "99.9",
+    "pontos_contra": "110.5",
+    "saldo": "-10.6"
   },
   "divisao": null,
   "tecnico": "Charles Lee",
@@ -780,9 +780,12 @@
         "sigla": "ATL",
         "nome_curto": "Hawks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 97,
+        "adversario": 111
+      },
+      "resultado": "D"
     },
     {
       "id": "401910036",
@@ -1697,5 +1700,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cha",
-  "atualizado_em": "2026-11-20T23:59:20.322Z"
+  "atualizado_em": "2026-11-21T06:07:04.152Z"
 }

@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "27",
     "sigla": "WSH",
-    "posicao": 11,
-    "v": 5,
+    "posicao": 10,
+    "v": 6,
     "d": 11,
-    "pct": ".313",
-    "atras": "8",
-    "sequencia": "W1",
+    "pct": ".353",
+    "atras": "7.5",
+    "sequencia": "W2",
     "casa": "2-5",
-    "fora": "3-6",
+    "fora": "4-6",
     "ultimos10": "2-8",
-    "pontos_pro": "110.8",
-    "pontos_contra": "117.9",
-    "saldo": "-7.1"
+    "pontos_pro": "110.0",
+    "pontos_contra": "116.5",
+    "saldo": "-6.5"
   },
   "divisao": null,
   "tecnico": "Brian Keefe",
@@ -448,7 +448,7 @@
       "universidade": "Tennessee",
       "pais": "Nigeria",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -817,9 +817,12 @@
         "sigla": "CHI",
         "nome_curto": "Bulls"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 98,
+        "adversario": 94
+      },
+      "resultado": "V"
     },
     {
       "id": "401910031",
@@ -1706,5 +1709,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/wsh",
-  "atualizado_em": "2026-11-20T23:59:32.536Z"
+  "atualizado_em": "2026-11-21T06:07:14.370Z"
 }

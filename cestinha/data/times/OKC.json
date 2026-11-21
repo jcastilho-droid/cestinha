@@ -14,17 +14,17 @@
     "id": "25",
     "sigla": "OKC",
     "posicao": 8,
-    "v": 9,
+    "v": 10,
     "d": 6,
-    "pct": ".600",
+    "pct": ".625",
     "atras": "3.5",
-    "sequencia": "L1",
-    "casa": "5-1",
+    "sequencia": "W1",
+    "casa": "6-1",
     "fora": "4-5",
-    "ultimos10": "5-5",
-    "pontos_pro": "112.1",
-    "pontos_contra": "107.7",
-    "saldo": "+4.4"
+    "ultimos10": "6-4",
+    "pontos_pro": "113.0",
+    "pontos_contra": "108.5",
+    "saldo": "+4.5"
   },
   "divisao": null,
   "tecnico": "Mark Daigneault",
@@ -816,9 +816,12 @@
         "sigla": "NO",
         "nome_curto": "Pelicans"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 126,
+        "adversario": 120
+      },
+      "resultado": "V"
     },
     {
       "id": "401910030",
@@ -1719,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-20T23:59:28.247Z"
+  "atualizado_em": "2026-11-21T06:07:10.819Z"
 }

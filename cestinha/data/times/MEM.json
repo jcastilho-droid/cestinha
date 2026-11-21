@@ -13,11 +13,11 @@
   "classificacao": {
     "id": "29",
     "sigla": "MEM",
-    "posicao": 4,
+    "posicao": 3,
     "v": 12,
     "d": 4,
     "pct": ".750",
-    "atras": "1",
+    "atras": "1.5",
     "sequencia": "W5",
     "casa": "4-4",
     "fora": "8-0",
@@ -1725,5 +1725,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-20T23:59:25.362Z"
+  "atualizado_em": "2026-11-21T06:07:08.492Z"
 }

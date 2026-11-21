@@ -15,16 +15,16 @@
     "sigla": "BKN",
     "posicao": 14,
     "v": 3,
-    "d": 11,
-    "pct": ".214",
-    "atras": "9",
-    "sequencia": "L3",
-    "casa": "1-5",
+    "d": 12,
+    "pct": ".200",
+    "atras": "9.5",
+    "sequencia": "L4",
+    "casa": "1-6",
     "fora": "2-6",
     "ultimos10": "3-7",
     "pontos_pro": "110.9",
-    "pontos_contra": "119.2",
-    "saldo": "-8.3"
+    "pontos_contra": "118.8",
+    "saldo": "-7.9"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -111,7 +111,10 @@
       "experiencia": 2,
       "universidade": null,
       "pais": "France",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "22.6",
@@ -774,9 +777,12 @@
         "sigla": "ORL",
         "nome_curto": "Magic"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 113
+      },
+      "resultado": "D"
     },
     {
       "id": "401910040",
@@ -1691,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bkn",
-  "atualizado_em": "2026-11-20T23:59:19.892Z"
+  "atualizado_em": "2026-11-21T06:07:03.703Z"
 }

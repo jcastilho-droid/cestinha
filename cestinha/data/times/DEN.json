@@ -14,17 +14,17 @@
     "id": "7",
     "sigla": "DEN",
     "posicao": 7,
-    "v": 8,
+    "v": 9,
     "d": 5,
-    "pct": ".615",
+    "pct": ".643",
     "atras": "3.5",
-    "sequencia": "W1",
-    "casa": "3-3",
+    "sequencia": "W2",
+    "casa": "4-3",
     "fora": "4-2",
     "ultimos10": "7-3",
-    "pontos_pro": "113.2",
-    "pontos_contra": "112.2",
-    "saldo": "+1.0"
+    "pontos_pro": "114.6",
+    "pontos_contra": "113.1",
+    "saldo": "+1.5"
   },
   "divisao": null,
   "tecnico": "David Adelman",
@@ -739,9 +739,12 @@
         "sigla": "HOU",
         "nome_curto": "Rockets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 133,
+        "adversario": 124
+      },
+      "resultado": "V"
     },
     {
       "id": "401910032",
@@ -1670,5 +1673,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/den",
-  "atualizado_em": "2026-11-20T23:59:22.161Z"
+  "atualizado_em": "2026-11-21T06:07:05.705Z"
 }

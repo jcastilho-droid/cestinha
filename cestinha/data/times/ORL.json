@@ -14,17 +14,17 @@
     "id": "19",
     "sigla": "ORL",
     "posicao": 8,
-    "v": 6,
+    "v": 7,
     "d": 8,
-    "pct": ".429",
-    "atras": "6",
-    "sequencia": "L1",
+    "pct": ".467",
+    "atras": "5.5",
+    "sequencia": "W1",
     "casa": "1-5",
-    "fora": "5-3",
+    "fora": "6-3",
     "ultimos10": "5-5",
-    "pontos_pro": "109.4",
-    "pontos_contra": "112.8",
-    "saldo": "-3.4"
+    "pontos_pro": "109.6",
+    "pontos_contra": "112.7",
+    "saldo": "-3.1"
   },
   "divisao": null,
   "tecnico": "Sean Sweeney",
@@ -739,9 +739,12 @@
         "sigla": "BKN",
         "nome_curto": "Nets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 113,
+        "adversario": 111
+      },
+      "resultado": "V"
     },
     {
       "id": "401910031",
@@ -1656,5 +1659,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/orl",
-  "atualizado_em": "2026-11-20T23:59:28.737Z"
+  "atualizado_em": "2026-11-21T06:07:11.169Z"
 }

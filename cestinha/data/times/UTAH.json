@@ -15,16 +15,16 @@
     "sigla": "UTAH",
     "posicao": 14,
     "v": 3,
-    "d": 13,
-    "pct": ".188",
-    "atras": "10",
-    "sequencia": "W2",
-    "casa": "1-7",
+    "d": 14,
+    "pct": ".176",
+    "atras": "11",
+    "sequencia": "L1",
+    "casa": "1-8",
     "fora": "2-6",
     "ultimos10": "2-8",
-    "pontos_pro": "108.8",
-    "pontos_contra": "116.0",
-    "saldo": "-7.2"
+    "pontos_pro": "108.3",
+    "pontos_contra": "115.7",
+    "saldo": "-7.4"
   },
   "divisao": null,
   "tecnico": "Will Hardy",
@@ -785,9 +785,12 @@
         "sigla": "PHX",
         "nome_curto": "Suns"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 101,
+        "adversario": 111
+      },
+      "resultado": "D"
     },
     {
       "id": "401910033",
@@ -1674,5 +1677,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/utah",
-  "atualizado_em": "2026-11-20T23:59:32.050Z"
+  "atualizado_em": "2026-11-21T06:07:13.997Z"
 }

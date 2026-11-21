@@ -14,17 +14,17 @@
     "id": "5",
     "sigla": "CLE",
     "posicao": 7,
-    "v": 8,
+    "v": 9,
     "d": 8,
-    "pct": ".500",
-    "atras": "5",
-    "sequencia": "L1",
-    "casa": "6-3",
+    "pct": ".529",
+    "atras": "4.5",
+    "sequencia": "W1",
+    "casa": "7-3",
     "fora": "2-5",
-    "ultimos10": "4-6",
-    "pontos_pro": "118.3",
-    "pontos_contra": "116.3",
-    "saldo": "+2.0"
+    "ultimos10": "5-5",
+    "pontos_pro": "118.8",
+    "pontos_contra": "116.5",
+    "saldo": "+2.3"
   },
   "divisao": {
     "nome": "Central",
@@ -788,9 +788,12 @@
         "sigla": "IND",
         "nome_curto": "Pacers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 128,
+        "adversario": 119
+      },
+      "resultado": "V"
     },
     {
       "id": "401910041",
@@ -1677,5 +1680,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cle",
-  "atualizado_em": "2026-11-20T23:59:21.259Z"
+  "atualizado_em": "2026-11-21T06:07:04.918Z"
 }

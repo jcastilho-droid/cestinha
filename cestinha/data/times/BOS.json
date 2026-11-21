@@ -55,7 +55,10 @@
       "experiencia": 10,
       "universidade": "Duke",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "34.1",
@@ -139,7 +142,10 @@
       "experiencia": 10,
       "universidade": "Colorado",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "29.9",
@@ -1676,5 +1682,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-20T23:59:19.449Z"
+  "atualizado_em": "2026-11-21T06:07:03.330Z"
 }

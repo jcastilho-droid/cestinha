@@ -15,16 +15,16 @@
     "sigla": "SAC",
     "posicao": 15,
     "v": 1,
-    "d": 13,
-    "pct": ".071",
-    "atras": "11",
-    "sequencia": "L7",
+    "d": 14,
+    "pct": ".067",
+    "atras": "12",
+    "sequencia": "L8",
     "casa": "0-9",
-    "fora": "1-4",
+    "fora": "1-5",
     "ultimos10": "1-9",
-    "pontos_pro": "107.7",
-    "pontos_contra": "121.7",
-    "saldo": "-14.0"
+    "pontos_pro": "107.5",
+    "pontos_contra": "120.7",
+    "saldo": "-13.2"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -111,10 +111,7 @@
       "experiencia": 8,
       "universidade": "Virginia",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "32.7",
@@ -742,9 +739,12 @@
         "sigla": "LAL",
         "nome_curto": "Lakers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 104,
+        "adversario": 106
+      },
+      "resultado": "D"
     },
     {
       "id": "401910028",
@@ -1659,5 +1659,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sac",
-  "atualizado_em": "2026-11-20T23:59:30.548Z"
+  "atualizado_em": "2026-11-21T06:07:12.806Z"
 }

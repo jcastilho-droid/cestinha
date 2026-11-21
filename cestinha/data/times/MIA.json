@@ -13,7 +13,7 @@
   "classificacao": {
     "id": "14",
     "sigla": "MIA",
-    "posicao": 4,
+    "posicao": 5,
     "v": 9,
     "d": 6,
     "pct": ".600",
@@ -1676,5 +1676,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mia",
-  "atualizado_em": "2026-11-20T23:59:25.832Z"
+  "atualizado_em": "2026-11-21T06:07:08.876Z"
 }

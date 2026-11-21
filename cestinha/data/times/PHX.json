@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "21",
     "sigla": "PHX",
-    "posicao": 11,
-    "v": 7,
+    "posicao": 9,
+    "v": 8,
     "d": 7,
-    "pct": ".500",
+    "pct": ".533",
     "atras": "5",
-    "sequencia": "W2",
+    "sequencia": "W3",
     "casa": "5-4",
-    "fora": "2-3",
-    "ultimos10": "6-4",
-    "pontos_pro": "114.1",
-    "pontos_contra": "115.7",
-    "saldo": "-1.6"
+    "fora": "3-3",
+    "ultimos10": "7-3",
+    "pontos_pro": "113.9",
+    "pontos_contra": "114.7",
+    "saldo": "-0.8"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -307,7 +307,10 @@
       "experiencia": 3,
       "universidade": "Virginia",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "16.8",
@@ -746,9 +749,12 @@
         "sigla": "UTAH",
         "nome_curto": "Jazz"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 101
+      },
+      "resultado": "V"
     },
     {
       "id": "401910042",
@@ -1663,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phx",
-  "atualizado_em": "2026-11-20T23:59:29.592Z"
+  "atualizado_em": "2026-11-21T06:07:11.998Z"
 }

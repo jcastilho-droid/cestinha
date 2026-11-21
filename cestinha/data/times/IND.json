@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "11",
     "sigla": "IND",
-    "posicao": 10,
+    "posicao": 11,
     "v": 5,
-    "d": 10,
-    "pct": ".333",
-    "atras": "7.5",
-    "sequencia": "L2",
+    "d": 11,
+    "pct": ".313",
+    "atras": "8",
+    "sequencia": "L3",
     "casa": "2-5",
-    "fora": "3-4",
+    "fora": "3-5",
     "ultimos10": "3-7",
-    "pontos_pro": "111.5",
-    "pontos_contra": "114.8",
-    "saldo": "-3.3"
+    "pontos_pro": "112.0",
+    "pontos_contra": "115.6",
+    "saldo": "-3.6"
   },
   "divisao": {
     "nome": "Central",
@@ -282,7 +282,10 @@
       "experiencia": 12,
       "universidade": "Arizona",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 6,
         "min": "14.3",
@@ -782,9 +785,12 @@
         "sigla": "CLE",
         "nome_curto": "Cavaliers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 119,
+        "adversario": 128
+      },
+      "resultado": "D"
     },
     {
       "id": "401910034",
@@ -1685,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-20T23:59:23.971Z"
+  "atualizado_em": "2026-11-21T06:07:07.293Z"
 }

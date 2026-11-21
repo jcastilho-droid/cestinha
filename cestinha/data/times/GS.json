@@ -13,11 +13,11 @@
   "classificacao": {
     "id": "9",
     "sigla": "GS",
-    "posicao": 10,
+    "posicao": 11,
     "v": 8,
     "d": 8,
     "pct": ".500",
-    "atras": "5",
+    "atras": "5.5",
     "sequencia": "L5",
     "casa": "6-1",
     "fora": "2-7",
@@ -28,7 +28,7 @@
   },
   "divisao": {
     "nome": "Pacífico",
-    "posicao": 2
+    "posicao": 3
   },
   "tecnico": "Steve Kerr",
   "estatisticas": {
@@ -1699,5 +1699,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-20T23:59:23.079Z"
+  "atualizado_em": "2026-11-21T06:07:06.495Z"
 }

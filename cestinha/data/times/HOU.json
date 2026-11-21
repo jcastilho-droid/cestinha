@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "10",
     "sigla": "HOU",
-    "posicao": 3,
+    "posicao": 4,
     "v": 12,
-    "d": 4,
-    "pct": ".750",
-    "atras": "1",
-    "sequencia": "W1",
+    "d": 5,
+    "pct": ".706",
+    "atras": "2",
+    "sequencia": "L1",
     "casa": "7-1",
-    "fora": "5-3",
-    "ultimos10": "7-3",
-    "pontos_pro": "117.9",
-    "pontos_contra": "109.2",
-    "saldo": "+8.7"
+    "fora": "5-4",
+    "ultimos10": "6-4",
+    "pontos_pro": "118.2",
+    "pontos_contra": "110.6",
+    "saldo": "+7.6"
   },
   "divisao": null,
   "tecnico": "Ime Udoka",
@@ -52,10 +52,7 @@
       "experiencia": 6,
       "universidade": null,
       "pais": "Türkiye",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "32.8",
@@ -307,10 +304,7 @@
       "experiencia": 14,
       "universidade": "Pittsburgh",
       "pais": "New Zealand",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 3,
         "min": "12.3",
@@ -783,9 +777,12 @@
         "sigla": "DEN",
         "nome_curto": "Nuggets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 124,
+        "adversario": 133
+      },
+      "resultado": "D"
     },
     {
       "id": "401910043",
@@ -1672,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-20T23:59:23.516Z"
+  "atualizado_em": "2026-11-21T06:07:06.918Z"
 }

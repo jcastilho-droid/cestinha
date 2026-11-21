@@ -13,11 +13,11 @@
   "classificacao": {
     "id": "6",
     "sigla": "DAL",
-    "posicao": 9,
+    "posicao": 10,
     "v": 8,
     "d": 7,
     "pct": ".533",
-    "atras": "4.5",
+    "atras": "5",
     "sequencia": "W1",
     "casa": "6-2",
     "fora": "2-5",
@@ -1706,5 +1706,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/dal",
-  "atualizado_em": "2026-11-20T23:59:21.711Z"
+  "atualizado_em": "2026-11-21T06:07:05.325Z"
 }
