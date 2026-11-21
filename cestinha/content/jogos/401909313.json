@@ -1,0 +1,53 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "titulo": "Grimes acerta de três no fim e Lakers seguram o Kings",
+  "subtitulo": "Lakers vencem por 106 a 104 em Los Angeles e somam 10 vitórias em 11 jogos",
+  "corpo": "Sufoco em Los Angeles. O Lakers venceu o Kings por 106 a 104 graças a uma bola de três de Quentin Grimes a 57 segundos do fim, que desempatou o jogo. Zach LaVine ainda teve a chance de empatar no estouro, mas errou.\n\nLuka Doncic foi o principal nome do Lakers, com 25 pts, 4 reb, 8 ast. Grimes terminou com 13 pts, 5 reb, 7 ast e Walker Kessler fez 15 pts, 7 reb, 2 ast.\n\nO cestinha do jogo, porém, foi De'Andre Hunter, do Kings: 30 pts, 6 reb, 2 ast, com 12 de 16 nos arremessos. Domantas Sabonis somou 19 pts, 16 reb, 1 ast.\n\n**E agora?** O Lakers vai a 14-3 e lidera a Divisão Pacífico com folga. O Kings cai para 1-14, com oito derrotas seguidas.",
+  "importancia": 3,
+  "times": [
+    "Lakers",
+    "Kings"
+  ],
+  "jogadores": [
+    "Quentin Grimes",
+    "Zach LaVine",
+    "Luka Doncic",
+    "Walker Kessler",
+    "De'Andre Hunter",
+    "Domantas Sabonis"
+  ],
+  "por_que_importa": "O Lakers chega a 10 vitórias em 11 jogos e abre 5 jogos na ponta da Divisão Pacífico.",
+  "notas": [
+    {
+      "jogador": "Luka Doncic",
+      "nota": 7.5,
+      "comentario": "25 pts e 8 ast, mas 2 de 9 de três"
+    },
+    {
+      "jogador": "Quentin Grimes",
+      "nota": 8,
+      "comentario": "A bola de três que decidiu o jogo"
+    },
+    {
+      "jogador": "De'Andre Hunter",
+      "nota": 8.5,
+      "comentario": "30 pts com 12 de 16 nos arremessos"
+    },
+    {
+      "jogador": "Domantas Sabonis",
+      "nota": 7.5,
+      "comentario": "Duplo-duplo com 16 reb"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909313",
+    "data_rodada": "2026-11-20"
+  },
+  "escrito_em": "2026-11-21T11:51:00.419Z"
+}

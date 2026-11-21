@@ -1,0 +1,53 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "titulo": "Booker lidera e Suns vencem o Jazz em Salt Lake City",
+  "subtitulo": "Suns ganham por 111 a 101 e chegam à terceira vitória seguida",
+  "corpo": "O Suns controlou o Jazz quase o jogo todo e venceu por 111 a 101 em Salt Lake City. O time de Phoenix chegou a abrir 16 e o Jazz nunca liderou por mais de 2 pontos.\n\nDevin Booker foi o cestinha, com 23 pts, 2 reb, 3 ast. Miles Bridges somou 18 pts, 9 reb, 4 ast e Dillon Brooks, 18 pts, 3 reb, 3 ast. Collin Gillespie ajudou com 16 pts, 4 reb, 5 ast.\n\nNo Jazz, Darryn Peterson fez duplo-duplo com 20 pts, 10 reb, 8 ast, e Jaxson Hayes pegou 14 rebotes (18 pts, 14 reb, 0 ast). O problema foi a mira: 10 de 39 nas bolas de três.\n\n**E agora?** O Suns vai a 8-7, com três vitórias seguidas, segundo da Divisão Pacífico. O Jazz cai para 3-14.",
+  "importancia": 2,
+  "times": [
+    "Suns",
+    "Jazz"
+  ],
+  "jogadores": [
+    "Devin Booker",
+    "Miles Bridges",
+    "Dillon Brooks",
+    "Collin Gillespie",
+    "Darryn Peterson",
+    "Jaxson Hayes"
+  ],
+  "por_que_importa": "O Suns emenda a terceira vitória seguida e volta a ter campanha positiva (8-7).",
+  "notas": [
+    {
+      "jogador": "Devin Booker",
+      "nota": 7.5,
+      "comentario": "23 pts liderando o ataque"
+    },
+    {
+      "jogador": "Miles Bridges",
+      "nota": 7.5,
+      "comentario": "18 pts e 9 reb, eficiente"
+    },
+    {
+      "jogador": "Darryn Peterson",
+      "nota": 7,
+      "comentario": "Duplo-duplo, mas 0 de 7 de três"
+    },
+    {
+      "jogador": "Jaxson Hayes",
+      "nota": 7,
+      "comentario": "7 de 8 nos arremessos e 14 reb"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909311",
+    "data_rodada": "2026-11-20"
+  },
+  "escrito_em": "2026-11-21T11:51:00.417Z"
+}

@@ -1,0 +1,34 @@
+{
+  "titulo": "Grizzlies embalados contra o Timberwolves, dois desfalcados no topo do Oeste",
+  "subtitulo": "Grizzlies x Timberwolves, 22h00",
+  "corpo": "Se você só puder ver um jogo hoje, fique com Grizzlies x Timberwolves. É confronto direto no topo do Oeste: o Grizzlies é o 3º, com 12-4 e 5 vitórias seguidas, e o Timberwolves é o 5º, com 11-5 e 7-3 nos últimos 10 jogos.\n\nOs dois chegam desfalcados. O Timberwolves não terá Anthony Edwards (33.3 pts por jogo) e depende de Ayo Dosunmu, com 17.8 pts. O Grizzlies joga sem Ty Jerome e Cameron Boozer e aposta em Cedric Coward, com 14.8 pts e 8.1 reb por jogo.\n\nOs dois têm saldo positivo de pontos por jogo: +10.2 contra +9.8.",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Grizzlies",
+    "Timberwolves"
+  ],
+  "jogadores": [
+    "Cedric Coward",
+    "Ayo Dosunmu",
+    "Anthony Edwards",
+    "Ty Jerome",
+    "Cameron Boozer"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401910026",
+  "motivos": [
+    "Briga na tabela",
+    "Boa fase"
+  ],
+  "ficar_de_olho": "Ayo Dosunmu contra Cedric Coward, as referências de dois times sem suas principais peças.",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-21"
+  },
+  "escrito_em": "2026-11-21T11:51:00.441Z"
+}

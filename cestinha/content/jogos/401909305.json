@@ -1,0 +1,52 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "titulo": "Jalen Johnson comanda e Hawks viram para cima do Hornets",
+  "subtitulo": "Hawks vencem por 111 a 97 em Atlanta e seguem na ponta da Divisão Sudeste",
+  "corpo": "O Hawks começou mal, chegou a perder por 14, mas virou o jogo e bateu o Hornets por 111 a 97 em Atlanta. A reação veio no segundo e no terceiro quartos (64 a 45 somados), com 56 pontos no garrafão.\n\nJalen Johnson foi o cestinha, com 26 pts, 6 reb, 6 ast e 4 roubos de bola, acertando 10 de 15 arremessos. Aaron Wiggins somou 19 pts, 2 reb, 3 ast, com 4 de 6 de três, e Dyson Daniels fez duplo-duplo: 11 pts, 8 reb, 10 ast.\n\nNo Hornets, Moussa Diabate fez 21 pts, 15 reb, 2 ast e Brandon Miller, 19 pts, 8 reb, 3 ast. O time errou demais de longe: 11 de 45 nas bolas de três.\n\n**E agora?** O Hawks chega a 10-6 e três vitórias seguidas, meio jogo à frente do Heat. O Hornets cai para 4-11, com quatro derrotas seguidas.",
+  "importancia": 3,
+  "times": [
+    "Hawks",
+    "Hornets"
+  ],
+  "jogadores": [
+    "Jalen Johnson",
+    "Aaron Wiggins",
+    "Dyson Daniels",
+    "Moussa Diabate",
+    "Brandon Miller"
+  ],
+  "por_que_importa": "O Hawks mantém a liderança da Divisão Sudeste, meio jogo à frente do Heat.",
+  "notas": [
+    {
+      "jogador": "Jalen Johnson",
+      "nota": 8.5,
+      "comentario": "26 pts, 4 roubos e 10 de 15 nos arremessos"
+    },
+    {
+      "jogador": "Aaron Wiggins",
+      "nota": 7.5,
+      "comentario": "Segurou o perímetro com 4 de 6 de três"
+    },
+    {
+      "jogador": "Dyson Daniels",
+      "nota": 7.5,
+      "comentario": "Duplo-duplo com 10 ast"
+    },
+    {
+      "jogador": "Moussa Diabate",
+      "nota": 7,
+      "comentario": "21 pts e 15 reb, mas faltou ajuda"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909305",
+    "data_rodada": "2026-11-20"
+  },
+  "escrito_em": "2026-11-21T11:51:00.411Z"
+}

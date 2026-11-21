@@ -1,0 +1,52 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "titulo": "Anthony Davis faz 36 e Wizards vencem o Bulls pela NBA Cup",
+  "subtitulo": "Wizards ganham por 98 a 94 em Chicago depois de um terceiro quarto desastroso do Bulls",
+  "corpo": "O Wizards bateu o Bulls por 98 a 94 em Chicago, pela NBA Cup. O Bulls venceu o primeiro tempo por 60 a 52, mas fez só 9 pontos no terceiro quarto e viu o jogo virar.\n\nAnthony Davis foi o cestinha, com 36 pts, 11 reb, 3 ast e 16 de 26 nos arremessos. AJ Dybantsa fez duplo-duplo com 20 pts, 10 reb, 6 ast, e Trae Young somou 16 pts, 2 reb, 5 ast, fechando o jogo com dois lances livres a 3 segundos do fim.\n\nNo Bulls, Norman Powell fez 16 pts, 3 reb, 2 ast e Buddy Hield, 15 pts, 4 reb, 0 ast. O time acertou só 9 de 33 de três.\n\n**E agora?** O Wizards chega a 6-11, com duas vitórias seguidas. O Bulls cai para 4-11.",
+  "importancia": 2,
+  "times": [
+    "Wizards",
+    "Bulls"
+  ],
+  "jogadores": [
+    "Anthony Davis",
+    "AJ Dybantsa",
+    "Trae Young",
+    "Norman Powell",
+    "Buddy Hield"
+  ],
+  "por_que_importa": "O Wizards emenda a segunda vitória seguida e deixa o Bulls com 4-11.",
+  "notas": [
+    {
+      "jogador": "Anthony Davis",
+      "nota": 9,
+      "comentario": "36 pts e 11 reb, dono do garrafão"
+    },
+    {
+      "jogador": "AJ Dybantsa",
+      "nota": 8,
+      "comentario": "Duplo-duplo e +20 em quadra"
+    },
+    {
+      "jogador": "Trae Young",
+      "nota": 6.5,
+      "comentario": "4 de 13, mas seguro nos lances livres finais"
+    },
+    {
+      "jogador": "Norman Powell",
+      "nota": 5.5,
+      "comentario": "16 pts, só 7 de 18 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909309",
+    "data_rodada": "2026-11-20"
+  },
+  "escrito_em": "2026-11-21T11:51:00.416Z"
+}

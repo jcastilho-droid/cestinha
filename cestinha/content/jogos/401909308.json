@@ -1,0 +1,52 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "titulo": "Barnes e Quickley decidem no fim e Raptors surpreendem o Pistons",
+  "subtitulo": "Raptors vencem por 105 a 102 em Detroit num último minuto de loucura",
+  "corpo": "Foi brabo. O Raptors venceu o Pistons por 105 a 102 em Detroit num último minuto eletrizante. Cade Cunningham colocou o Pistons na frente com uma bola de três a 19 segundos do fim, mas Scottie Barnes respondeu com uma bandeja e Immanuel Quickley fechou com dois lances livres.\n\nBarnes foi o cestinha, com 29 pts, 5 reb, 5 ast e 14 de 21 nos arremessos. Quickley fez duplo-duplo com 18 pts, 3 reb, 10 ast, e Allen Graves também, com 20 pts, 10 reb, 1 ast. O Pistons nunca abriu mais que 2 pontos.\n\nCunningham terminou com 23 pts, 5 reb, 9 ast e Kevin Huerter fez 20 pts, 3 reb, 3 ast.\n\n**E agora?** O Pistons (10-5) segue na ponta da Divisão Central, agora dois jogos à frente do Cavaliers. O Raptors vai a 6-10.",
+  "importancia": 3,
+  "times": [
+    "Raptors",
+    "Pistons"
+  ],
+  "jogadores": [
+    "Scottie Barnes",
+    "Immanuel Quickley",
+    "Allen Graves",
+    "Cade Cunningham",
+    "Kevin Huerter"
+  ],
+  "por_que_importa": "A derrota encurta para dois jogos a vantagem do Pistons sobre o Cavaliers na Divisão Central.",
+  "notas": [
+    {
+      "jogador": "Scottie Barnes",
+      "nota": 9,
+      "comentario": "29 pts e a cesta da virada"
+    },
+    {
+      "jogador": "Immanuel Quickley",
+      "nota": 8,
+      "comentario": "Duplo-duplo e lances livres decisivos"
+    },
+    {
+      "jogador": "Allen Graves",
+      "nota": 7.5,
+      "comentario": "20 pts e 10 reb, perfeito nos lances livres"
+    },
+    {
+      "jogador": "Cade Cunningham",
+      "nota": 7,
+      "comentario": "23 pts e 9 ast, mas 10 de 22"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909308",
+    "data_rodada": "2026-11-20"
+  },
+  "escrito_em": "2026-11-21T11:51:00.415Z"
+}

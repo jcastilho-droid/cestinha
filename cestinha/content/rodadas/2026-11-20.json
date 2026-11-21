@@ -1,0 +1,50 @@
+{
+  "titulo": "Harden faz 51, Wagner decide no fim e Lakers sofrem contra o Kings",
+  "subtitulo": "Sexta-feira, 20 de novembro: nove jogos e três decididos nos segundos finais",
+  "corpo": "E aí, aqui é o Cestinha. A sexta teve 51 pontos de James Harden, três jogos decididos no último minuto e o Lakers passando sufoco contra o Kings.\n\n**Cavaliers 128 a 119 Pacers:** James Harden fez 51 pts, 6 reb, 6 ast, com 14 de 14 nos lances livres. O Cavaliers vai a 9-8.\n\n**Lakers 106 a 104 Kings:** Quentin Grimes desempatou de três a 57 segundos do fim e Luka Doncic fez 25 pts, 4 reb, 8 ast. São 10 vitórias em 11 jogos para o Lakers (14-3).\n\n**Magic 113 a 111 Nets:** Franz Wagner fez 35 pts, 5 reb, 7 ast, incluindo a cesta da vitória a menos de três segundos do fim, pela NBA Cup.\n\n**Raptors 105 a 102 Pistons:** Scottie Barnes (29 pts, 5 reb, 5 ast) virou o jogo nos segundos finais em Detroit.\n\n**Nuggets 133 a 124 Rockets:** 32 trocas de liderança, Nikola Jokic com 26 pts, 7 reb, 11 ast e triplo-duplo de Alperen Sengun na derrota.\n\n**Thunder 126 a 120 Pelicans:** Shai Gilgeous-Alexander fez 40 pts, 3 reb, 8 ast na virada do último quarto.\n\n**Wizards 98 a 94 Bulls:** Anthony Davis dominou com 36 pts, 11 reb, 3 ast.\n\n**Hawks 111 a 97 Hornets:** Jalen Johnson (26 pts, 6 reb, 6 ast) mantém o Hawks na ponta do Sudeste.\n\n**Suns 111 a 101 Jazz:** Devin Booker fez 23 pts, 2 reb, 3 ast e o Suns chega a três vitórias seguidas.\n\n**Destaque da noite:** James Harden. Foram 51 pts, 6 reb, 6 ast, com 15 de 26 nos arremessos, 7 de 11 de três e nenhum lance livre perdido.",
+  "tipo": "resumo_rodada",
+  "status": "CONFIRMADO",
+  "importancia": 4,
+  "times": [
+    "Cavaliers",
+    "Pacers",
+    "Lakers",
+    "Kings",
+    "Magic",
+    "Nets",
+    "Raptors",
+    "Pistons",
+    "Nuggets",
+    "Rockets",
+    "Thunder",
+    "Pelicans",
+    "Wizards",
+    "Bulls",
+    "Hawks",
+    "Hornets",
+    "Suns",
+    "Jazz"
+  ],
+  "jogadores": [
+    "James Harden",
+    "Quentin Grimes",
+    "Luka Doncic",
+    "Franz Wagner",
+    "Scottie Barnes",
+    "Nikola Jokic",
+    "Alperen Sengun",
+    "Shai Gilgeous-Alexander",
+    "Anthony Davis",
+    "Jalen Johnson",
+    "Devin Booker"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "rodada",
+    "data_rodada": "2026-11-20"
+  },
+  "escrito_em": "2026-11-21T11:51:00.443Z"
+}

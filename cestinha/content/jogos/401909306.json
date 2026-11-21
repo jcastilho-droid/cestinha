@@ -1,0 +1,52 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "titulo": "Franz Wagner decide no fim e Magic vence o Nets pela NBA Cup",
+  "subtitulo": "Magic ganha por 113 a 111 no Brooklyn com arremesso a menos de três segundos do fim",
+  "corpo": "Que isso, Franz Wagner. Num jogo com 20 trocas de liderança, ele acertou um arremesso de média distância a menos de três segundos do fim e deu ao Magic a vitória por 113 a 111 sobre o Nets, no Brooklyn, pela NBA Cup.\n\nWagner foi o cestinha, com 35 pts, 5 reb, 7 ast. Desmond Bane fez 21 pts, 2 reb, 3 ast, com 7 bolas de três, incluindo a que empatou em 109 a dois minutos do fim. Wendell Carter Jr. empatou de novo em 111 antes da cesta final.\n\nNo Nets, Julius Randle fez 27 pts, 9 reb, 6 ast e Danny Wolf somou 20 pts, 5 reb, 2 ast.\n\n**E agora?** O Magic vai a 7-8. O Nets cai para 3-12, com quatro derrotas seguidas, na lanterna da Divisão Atlântico.",
+  "importancia": 3,
+  "times": [
+    "Magic",
+    "Nets"
+  ],
+  "jogadores": [
+    "Franz Wagner",
+    "Desmond Bane",
+    "Wendell Carter Jr.",
+    "Julius Randle",
+    "Danny Wolf"
+  ],
+  "por_que_importa": "O Magic volta a vencer e chega a 7-8; o Nets soma a quarta derrota seguida.",
+  "notas": [
+    {
+      "jogador": "Franz Wagner",
+      "nota": 9,
+      "comentario": "35 pts e a cesta da vitória"
+    },
+    {
+      "jogador": "Desmond Bane",
+      "nota": 8,
+      "comentario": "7 de 13 de três, chuá atrás de chuá"
+    },
+    {
+      "jogador": "Julius Randle",
+      "nota": 7.5,
+      "comentario": "27 pts, 9 reb e 6 ast na derrota"
+    },
+    {
+      "jogador": "Danny Wolf",
+      "nota": 7,
+      "comentario": "20 pts em 26 minutos, 4 de 6 de três"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909306",
+    "data_rodada": "2026-11-20"
+  },
+  "escrito_em": "2026-11-21T11:51:00.412Z"
+}

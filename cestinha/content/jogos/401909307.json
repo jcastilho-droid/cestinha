@@ -1,0 +1,52 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "titulo": "James Harden faz 51 e Cavaliers derrubam o Pacers",
+  "subtitulo": "Cavaliers vencem por 128 a 119 em Cleveland numa noite de gala do armador",
+  "corpo": "Tá maluco, James Harden. O armador fez 51 pts, 6 reb, 6 ast, com 15 de 26 nos arremessos, 7 de 11 de três e 14 de 14 nos lances livres, e o Cavaliers venceu o Pacers por 128 a 119 em Cleveland.\n\nO jogo foi decidido no terceiro quarto, vencido por 43 a 22. O Cavaliers chegou a abrir 24 e ainda segurou a reação do Pacers, que fez 36 pontos no último período.\n\nDonovan Mitchell somou 20 pts, 3 reb, 3 ast e Mario Hezonja fez duplo-duplo com 10 pts, 10 reb, 3 ast. No Pacers, Ivica Zubac (21 pts, 10 reb, 2 ast) e Pascal Siakam (21 pts, 7 reb, 2 ast) foram os destaques.\n\n**E agora?** O Cavaliers vai a 9-8, segundo da Divisão Central. O Pacers cai para 5-11, com três derrotas seguidas.",
+  "importancia": 4,
+  "times": [
+    "Cavaliers",
+    "Pacers"
+  ],
+  "jogadores": [
+    "James Harden",
+    "Donovan Mitchell",
+    "Mario Hezonja",
+    "Ivica Zubac",
+    "Pascal Siakam"
+  ],
+  "por_que_importa": "Com os 51 pontos de Harden, o Cavaliers volta a ter campanha positiva (9-8) e se firma em segundo na Divisão Central.",
+  "notas": [
+    {
+      "jogador": "James Harden",
+      "nota": 10,
+      "comentario": "51 pts sem errar nenhum lance livre"
+    },
+    {
+      "jogador": "Donovan Mitchell",
+      "nota": 7,
+      "comentario": "20 pts como segunda opção"
+    },
+    {
+      "jogador": "Ivica Zubac",
+      "nota": 7,
+      "comentario": "Duplo-duplo com 8 de 11 nos arremessos"
+    },
+    {
+      "jogador": "Pascal Siakam",
+      "nota": 6.5,
+      "comentario": "21 pts, mas não segurou o terceiro quarto"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909307",
+    "data_rodada": "2026-11-20"
+  },
+  "escrito_em": "2026-11-21T11:51:00.414Z"
+}
