@@ -1,6 +1,6 @@
 {
   "data_rodada": "2026-11-20",
-  "coletado_em": "2026-11-21T04:04:35.678Z",
+  "coletado_em": "2026-11-21T05:07:49.491Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -162,8 +162,8 @@
     {
       "id": "401909311",
       "inicio_utc": "2026-11-21T02:30Z",
-      "status": "em_andamento",
-      "periodo": 3,
+      "status": "final",
+      "periodo": 4,
       "casa": {
         "id": "26",
         "sigla": "UTAH",
@@ -171,8 +171,8 @@
         "nome_curto": "Jazz",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
         "cor": "#4e008e",
-        "placar": 61,
-        "campanha": "3-13"
+        "placar": 101,
+        "campanha": "3-14"
       },
       "visitante": {
         "id": "21",
@@ -181,15 +181,15 @@
         "nome_curto": "Suns",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
         "cor": "#29127a",
-        "placar": 73,
-        "campanha": "7-7"
+        "placar": 111,
+        "campanha": "8-7"
       }
     },
     {
       "id": "401909312",
       "inicio_utc": "2026-11-21T03:00Z",
       "status": "em_andamento",
-      "periodo": 2,
+      "periodo": 4,
       "casa": {
         "id": "7",
         "sigla": "DEN",
@@ -197,7 +197,7 @@
         "nome_curto": "Nuggets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
         "cor": "#0e2240",
-        "placar": 57,
+        "placar": 106,
         "campanha": "8-5"
       },
       "visitante": {
@@ -207,7 +207,7 @@
         "nome_curto": "Rockets",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
         "cor": "#ce0e2d",
-        "placar": 54,
+        "placar": 108,
         "campanha": "12-4"
       }
     },
@@ -215,7 +215,7 @@
       "id": "401909313",
       "inicio_utc": "2026-11-21T03:00Z",
       "status": "em_andamento",
-      "periodo": 2,
+      "periodo": 4,
       "casa": {
         "id": "13",
         "sigla": "LAL",
@@ -223,7 +223,7 @@
         "nome_curto": "Lakers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "cor": "#552583",
-        "placar": 49,
+        "placar": 101,
         "campanha": "13-3"
       },
       "visitante": {
@@ -233,7 +233,7 @@
         "nome_curto": "Kings",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
         "cor": "#5a2d81",
-        "placar": 56,
+        "placar": 96,
         "campanha": "1-13"
       }
     }
