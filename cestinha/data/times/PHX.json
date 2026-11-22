@@ -37,7 +37,7 @@
     "ast": "27.5",
     "rb": "7.8",
     "toco": "3.9",
-    "err": "12.9",
+    "err": "13.0",
     "fg_pct": "47.4",
     "tres_pct": "36.6",
     "ll_pct": "75.8"
@@ -1669,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phx",
-  "atualizado_em": "2026-11-22T09:59:02.707Z"
+  "atualizado_em": "2026-11-22T16:58:37.003Z"
 }

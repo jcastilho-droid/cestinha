@@ -360,7 +360,7 @@
       "numero": "43",
       "posicao": "Armador",
       "posicao_sigla": "G",
-      "idade": 21,
+      "idade": 22,
       "altura_m": "1.96",
       "peso_kg": 83,
       "experiencia": 0,
@@ -1728,5 +1728,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lal",
-  "atualizado_em": "2026-11-22T09:58:59.244Z"
+  "atualizado_em": "2026-11-22T16:58:32.081Z"
 }
