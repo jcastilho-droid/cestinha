@@ -1,6 +1,6 @@
 {
   "data_rodada": "2026-11-21",
-  "coletado_em": "2026-11-22T05:11:19.086Z",
+  "coletado_em": "2026-11-22T06:08:26.698Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -136,7 +136,7 @@
     {
       "id": "401910028",
       "inicio_utc": "2026-11-22T03:00Z",
-      "status": "em_andamento",
+      "status": "final",
       "periodo": 4,
       "casa": {
         "id": "23",
@@ -145,8 +145,8 @@
         "nome_curto": "Kings",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
         "cor": "#5a2d81",
-        "placar": 79,
-        "campanha": "1-14"
+        "placar": 97,
+        "campanha": "2-14"
       },
       "visitante": {
         "id": "2",
@@ -155,8 +155,8 @@
         "nome_curto": "Celtics",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
         "cor": "#008348",
-        "placar": 77,
-        "campanha": "11-4"
+        "placar": 96,
+        "campanha": "11-5"
       }
     }
   ]

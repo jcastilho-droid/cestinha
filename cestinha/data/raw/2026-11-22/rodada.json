@@ -1,6 +1,6 @@
 {
   "data_rodada": "2026-11-22",
-  "coletado_em": "2026-11-22T05:11:19.138Z",
+  "coletado_em": "2026-11-22T06:08:26.757Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -182,7 +182,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
         "cor": "#008348",
         "placar": 0,
-        "campanha": "11-4"
+        "campanha": "11-5"
       }
     }
   ]
