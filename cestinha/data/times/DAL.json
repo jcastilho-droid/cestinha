@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "6",
     "sigla": "DAL",
-    "posicao": 10,
-    "v": 8,
+    "posicao": 9,
+    "v": 9,
     "d": 7,
-    "pct": ".533",
-    "atras": "5",
-    "sequencia": "W1",
-    "casa": "6-2",
+    "pct": ".563",
+    "atras": "4.5",
+    "sequencia": "W2",
+    "casa": "7-2",
     "fora": "2-5",
     "ultimos10": "5-5",
-    "pontos_pro": "112.3",
-    "pontos_contra": "113.2",
-    "saldo": "-0.9"
+    "pontos_pro": "112.2",
+    "pontos_contra": "112.4",
+    "saldo": "-0.2"
   },
   "divisao": null,
   "tecnico": "Dusty May",
@@ -800,9 +800,12 @@
         "sigla": "LAC",
         "nome_curto": "Clippers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 110,
+        "adversario": 100
+      },
+      "resultado": "V"
     },
     {
       "id": "401910033",
@@ -1703,5 +1706,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/dal",
-  "atualizado_em": "2026-11-22T03:00:40.593Z"
+  "atualizado_em": "2026-11-22T09:58:56.788Z"
 }

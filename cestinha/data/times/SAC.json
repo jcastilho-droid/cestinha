@@ -14,17 +14,17 @@
     "id": "23",
     "sigla": "SAC",
     "posicao": 15,
-    "v": 1,
+    "v": 2,
     "d": 14,
-    "pct": ".067",
-    "atras": "12",
-    "sequencia": "L8",
-    "casa": "0-9",
+    "pct": ".125",
+    "atras": "11.5",
+    "sequencia": "W1",
+    "casa": "1-9",
     "fora": "1-5",
-    "ultimos10": "1-9",
-    "pontos_pro": "107.5",
-    "pontos_contra": "120.7",
-    "saldo": "-13.2"
+    "ultimos10": "2-8",
+    "pontos_pro": "106.8",
+    "pontos_contra": "119.1",
+    "saldo": "-12.3"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -753,9 +753,12 @@
         "sigla": "BOS",
         "nome_curto": "Celtics"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 97,
+        "adversario": 96
+      },
+      "resultado": "V"
     },
     {
       "id": "401910045",
@@ -1656,5 +1659,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sac",
-  "atualizado_em": "2026-11-22T03:00:49.632Z"
+  "atualizado_em": "2026-11-22T09:59:03.371Z"
 }

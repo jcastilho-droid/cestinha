@@ -15,16 +15,16 @@
     "sigla": "BOS",
     "posicao": 2,
     "v": 11,
-    "d": 4,
-    "pct": ".733",
-    "atras": "2",
-    "sequencia": "L2",
+    "d": 5,
+    "pct": ".688",
+    "atras": "2.5",
+    "sequencia": "L3",
     "casa": "6-1",
-    "fora": "5-3",
-    "ultimos10": "7-3",
-    "pontos_pro": "113.9",
-    "pontos_contra": "103.4",
-    "saldo": "+10.5"
+    "fora": "5-4",
+    "ultimos10": "6-4",
+    "pontos_pro": "112.8",
+    "pontos_contra": "103.0",
+    "saldo": "+9.8"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -782,9 +782,12 @@
         "sigla": "SAC",
         "nome_curto": "Kings"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 96,
+        "adversario": 97
+      },
+      "resultado": "D"
     },
     {
       "id": "401910035",
@@ -1685,5 +1688,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-22T03:00:38.317Z"
+  "atualizado_em": "2026-11-22T09:58:54.988Z"
 }

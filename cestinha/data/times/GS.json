@@ -425,10 +425,7 @@
       "experiencia": 15,
       "universidade": "Michigan State",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 13,
         "min": "25.5",
@@ -1699,5 +1696,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-22T03:00:41.998Z"
+  "atualizado_em": "2026-11-22T09:58:57.875Z"
 }

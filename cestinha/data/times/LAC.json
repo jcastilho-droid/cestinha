@@ -15,16 +15,16 @@
     "sigla": "LAC",
     "posicao": 13,
     "v": 4,
-    "d": 10,
-    "pct": ".286",
-    "atras": "8.5",
-    "sequencia": "L2",
+    "d": 11,
+    "pct": ".267",
+    "atras": "9",
+    "sequencia": "L3",
     "casa": "4-4",
-    "fora": "0-6",
+    "fora": "0-7",
     "ultimos10": "3-7",
-    "pontos_pro": "111.9",
-    "pontos_contra": "118.1",
-    "saldo": "-6.2"
+    "pontos_pro": "111.1",
+    "pontos_contra": "117.6",
+    "saldo": "-6.5"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -795,9 +795,12 @@
         "sigla": "DAL",
         "nome_curto": "Mavericks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 100,
+        "adversario": 110
+      },
+      "resultado": "D"
     },
     {
       "id": "401910043",
@@ -1712,5 +1715,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lac",
-  "atualizado_em": "2026-11-22T03:00:43.659Z"
+  "atualizado_em": "2026-11-22T09:58:58.905Z"
 }

@@ -316,7 +316,10 @@
       "experiencia": 7,
       "universidade": "Florida State",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 8,
         "min": "21.5",
@@ -1716,5 +1719,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-22T03:00:39.622Z"
+  "atualizado_em": "2026-11-22T09:58:56.066Z"
 }

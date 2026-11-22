@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "16",
     "sigla": "MIN",
-    "posicao": 5,
-    "v": 11,
+    "posicao": 3,
+    "v": 12,
     "d": 5,
-    "pct": ".688",
-    "atras": "2.5",
-    "sequencia": "L1",
-    "casa": "7-3",
+    "pct": ".706",
+    "atras": "2",
+    "sequencia": "W1",
+    "casa": "8-3",
     "fora": "4-2",
-    "ultimos10": "7-3",
-    "pontos_pro": "115.6",
-    "pontos_contra": "105.8",
-    "saldo": "+9.8"
+    "ultimos10": "8-2",
+    "pontos_pro": "114.9",
+    "pontos_contra": "105.2",
+    "saldo": "+9.7"
   },
   "divisao": null,
   "tecnico": "Chris Finch",
@@ -783,9 +783,12 @@
         "sigla": "MEM",
         "nome_curto": "Grizzlies"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 104,
+        "adversario": 95
+      },
+      "resultado": "V"
     },
     {
       "id": "401910040",
@@ -1672,5 +1675,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-22T03:00:45.764Z"
+  "atualizado_em": "2026-11-22T09:59:00.609Z"
 }

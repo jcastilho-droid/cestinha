@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "29",
     "sigla": "MEM",
-    "posicao": 3,
+    "posicao": 5,
     "v": 12,
-    "d": 4,
-    "pct": ".750",
-    "atras": "1.5",
-    "sequencia": "W5",
+    "d": 5,
+    "pct": ".706",
+    "atras": "2",
+    "sequencia": "L1",
     "casa": "4-4",
-    "fora": "8-0",
+    "fora": "8-1",
     "ultimos10": "6-4",
-    "pontos_pro": "122.1",
-    "pontos_contra": "111.9",
-    "saldo": "+10.2"
+    "pontos_pro": "120.5",
+    "pontos_contra": "111.5",
+    "saldo": "+9.0"
   },
   "divisao": null,
   "tecnico": "Tuomas Iisalo",
@@ -833,9 +833,12 @@
         "sigla": "MIN",
         "nome_curto": "Timberwolves"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 95,
+        "adversario": 104
+      },
+      "resultado": "D"
     },
     {
       "id": "401910036",
@@ -1722,5 +1725,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-22T03:00:44.518Z"
+  "atualizado_em": "2026-11-22T09:58:59.594Z"
 }

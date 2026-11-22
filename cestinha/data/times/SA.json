@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "24",
     "sigla": "SA",
-    "posicao": 2,
-    "v": 13,
+    "posicao": 1,
+    "v": 14,
     "d": 3,
-    "pct": ".813",
-    "atras": "0.5",
-    "sequencia": "W1",
-    "casa": "6-3",
+    "pct": ".824",
+    "atras": "-",
+    "sequencia": "W2",
+    "casa": "7-3",
     "fora": "7-0",
     "ultimos10": "9-1",
-    "pontos_pro": "117.5",
-    "pontos_contra": "106.3",
-    "saldo": "+11.2"
+    "pontos_pro": "117.3",
+    "pontos_contra": "105.4",
+    "saldo": "+11.9"
   },
   "divisao": null,
   "tecnico": "Mitch Johnson",
@@ -783,9 +783,12 @@
         "sigla": "NO",
         "nome_curto": "Pelicans"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 114,
+        "adversario": 91
+      },
+      "resultado": "V"
     },
     {
       "id": "401910045",
@@ -1672,5 +1675,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sa",
-  "atualizado_em": "2026-11-22T03:00:50.076Z"
+  "atualizado_em": "2026-11-22T09:59:03.696Z"
 }
