@@ -1,0 +1,52 @@
+{
+  "titulo": "Wembanyama faz 50 pontos e 19 rebotes e Spurs atropelam o Pelicans",
+  "subtitulo": "Spurs 114 a 91 Pelicans: noite histórica de Wemby em San Antonio",
+  "corpo": "Tá maluco. Victor Wembanyama fez 50 pts, 19 reb, 1 ast, com 5 tocos e 4 roubos de bola, e o Spurs passou pelo Pelicans por 114 a 91. Foram 20 de 29 nos arremessos e 5 de 11 de três. Segundo a ESPN, 32 dos 50 pontos saíram no primeiro tempo.\n\nCom Wemby em quadra, o Spurs teve saldo de +35. O time chegou a abrir 29 pontos de vantagem. Stephon Castle ajudou com 19 pts, 3 reb, 6 ast e 5 de 7 de três.\n\nNo Pelicans, que não teve Zion Williamson (contusão na coxa esquerda), Jeremiah Fears fez 29 pts, 5 reb, 4 ast e Jordan Poole somou 25 pts, 3 reb, 2 ast. O time acertou só 23% de três.\n\n**E agora?** O Spurs vai a 14-3 e lidera a Divisão Sudoeste com dois jogos de folga. O Pelicans cai para 5-13, com três derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 4,
+  "times": [
+    "Spurs",
+    "Pelicans"
+  ],
+  "jogadores": [
+    "Victor Wembanyama",
+    "Stephon Castle",
+    "Zion Williamson",
+    "Jeremiah Fears",
+    "Jordan Poole"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Spurs abre dois jogos de vantagem sobre Rockets e Grizzlies na ponta da Divisão Sudoeste.",
+  "notas": [
+    {
+      "jogador": "Victor Wembanyama",
+      "nota": 10,
+      "comentario": "50 pontos, 19 rebotes e 5 tocos: atuação de gala"
+    },
+    {
+      "jogador": "Stephon Castle",
+      "nota": 7.5,
+      "comentario": "19 pts com 5 de 7 de três"
+    },
+    {
+      "jogador": "Jeremiah Fears",
+      "nota": 7,
+      "comentario": "29 pts lutando sozinho"
+    },
+    {
+      "jogador": "Jordan Poole",
+      "nota": 6,
+      "comentario": "25 pts, mas saldo de -18"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910027",
+    "data_rodada": "2026-11-21"
+  },
+  "escrito_em": "2026-11-22T11:49:45.147Z"
+}

@@ -1,0 +1,52 @@
+{
+  "titulo": "Kyrie e Flagg comandam vitória do Mavericks sobre o Clippers",
+  "subtitulo": "Mavericks 110 a 100 Clippers: corrida de 11 a 0 decide em Dallas",
+  "corpo": "O Mavericks venceu o Clippers por 110 a 100 em Dallas, e a diferença foi construída no fim: segundo a ESPN, uma corrida de 11 a 0 na reta final resolveu um jogo que teve oito trocas de liderança. O time da casa fez 32 pontos no último quarto.\n\nKyrie Irving foi o cestinha, com 25 pts, 6 reb, 4 ast, mesmo acertando só 8 de 24 arremessos. Cooper Flagg fez 22 pts e deu a assistência para a bola de três de Kyrie que fechou o placar. Walter Clayton Jr. somou 16 pts, 5 reb, 1 ast saindo do banco.\n\nNo Clippers, Brook Lopez fez 21 pts, 6 reb, 0 ast e Rui Hachimura somou 19 pts, 8 reb, 1 ast, com 4 de 5 de três.\n\n**E agora?** O Mavericks vai a 9-7, com duas vitórias seguidas. O Clippers cai para 4-11 e soma três derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Mavericks",
+    "Clippers"
+  ],
+  "jogadores": [
+    "Kyrie Irving",
+    "Cooper Flagg",
+    "Walter Clayton Jr.",
+    "Brook Lopez",
+    "Rui Hachimura"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Mavericks chega a duas vitórias seguidas e o Clippers afunda na Divisão Pacífico com 4-11.",
+  "notas": [
+    {
+      "jogador": "Kyrie Irving",
+      "nota": 7.5,
+      "comentario": "Cestinha do jogo, apesar do aproveitamento baixo"
+    },
+    {
+      "jogador": "Cooper Flagg",
+      "nota": 7.5,
+      "comentario": "22 pts e protagonismo na corrida final"
+    },
+    {
+      "jogador": "Walter Clayton Jr.",
+      "nota": 7,
+      "comentario": "16 pts eficientes saindo do banco"
+    },
+    {
+      "jogador": "Brook Lopez",
+      "nota": 6.5,
+      "comentario": "21 pts, mas o Clippers sumiu no fim"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910025",
+    "data_rodada": "2026-11-21"
+  },
+  "escrito_em": "2026-11-22T11:49:45.146Z"
+}

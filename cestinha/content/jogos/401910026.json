@@ -1,0 +1,51 @@
+{
+  "titulo": "McDaniels faz 25 e Timberwolves batem o Grizzlies no confronto do Oeste",
+  "subtitulo": "Timberwolves 104 a 95 Grizzlies: Minnesota segura a reação no último quarto",
+  "corpo": "O confronto direto entre dois times do topo do Oeste ficou com o Timberwolves: 104 a 95 em Minneapolis. O Grizzlies começou melhor, com 34 pontos no primeiro quarto, mas fez só 12 no segundo. Minnesota acertou 58% dos arremessos, fez 60 pontos no garrafão e chegou a abrir 23 de vantagem, apesar de 23 desperdícios de bola.\n\nJaden McDaniels foi o cestinha, com 25 pts, 5 reb, 4 ast e 11 de 17 nos arremessos. Ayo Dosunmu somou 19 pts, 2 reb, 2 ast e acertou a bola de três que esfriou a reação a 1min20 do fim.\n\nO Grizzlies fez 33 pontos no último quarto puxado por Cedric Coward, que terminou com 23 pts, 7 reb, 2 ast. Ty Jerome somou 18 pts, 4 reb, 6 ast.\n\n**E agora?** O Timberwolves vai a 12-5 e lidera a Divisão Noroeste. O Grizzlies cai para 12-5.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Timberwolves",
+    "Grizzlies"
+  ],
+  "jogadores": [
+    "Jaden McDaniels",
+    "Ayo Dosunmu",
+    "Cedric Coward",
+    "Ty Jerome"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Timberwolves abre um jogo e meio de vantagem na liderança da Divisão Noroeste.",
+  "notas": [
+    {
+      "jogador": "Jaden McDaniels",
+      "nota": 8.5,
+      "comentario": "25 pts com 11 de 17 e cestas decisivas"
+    },
+    {
+      "jogador": "Ayo Dosunmu",
+      "nota": 7.5,
+      "comentario": "19 pts e a bola de três que matou"
+    },
+    {
+      "jogador": "Cedric Coward",
+      "nota": 7.5,
+      "comentario": "Liderou a reação com 23 pts"
+    },
+    {
+      "jogador": "Ty Jerome",
+      "nota": 6.5,
+      "comentario": "18 pts, mas 7 de 17 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910026",
+    "data_rodada": "2026-11-21"
+  },
+  "escrito_em": "2026-11-22T11:49:45.146Z"
+}

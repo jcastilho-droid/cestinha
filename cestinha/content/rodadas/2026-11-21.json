@@ -1,0 +1,41 @@
+{
+  "titulo": "Wembanyama faz 50, Herro também e Bridges decide no estouro",
+  "subtitulo": "Sábado, 21 de novembro: seis jogos, dois de 50 pontos e três decididos por até 3 pontos",
+  "corpo": "E aí, aqui é o Cestinha. O sábado teve dois jogadores com 50 pontos, uma bola de três no estouro no Garden e o Kings quebrando o jejum contra o Celtics.\n\n**Spurs 114 a 91 Pelicans:** Victor Wembanyama fez 50 pts, 19 reb, 1 ast, com 5 tocos. O Spurs vai a 14-3.\n\n**76ers 132 a 129 Bucks:** Tyler Herro fez 50 pts, 11 reb, 7 ast, mas Joel Embiid (26 pts, 17 reb, 9 ast) fechou nos lances livres. Quinta vitória seguida do 76ers; 13ª derrota seguida do Bucks.\n\n**Knicks 97 a 96 Trail Blazers:** Mikal Bridges acertou de três no estouro do cronômetro. Jalen Brunson fez 30 pts, 7 reb, 5 ast.\n\n**Kings 97 a 96 Celtics:** Keegan Murray decidiu no rebote a 5 segundos do fim e acabou com oito derrotas seguidas do Kings.\n\n**Timberwolves 104 a 95 Grizzlies:** Jaden McDaniels fez 25 pts, 5 reb, 4 ast e Minnesota assume a ponta do Noroeste.\n\n**Mavericks 110 a 100 Clippers:** Kyrie Irving fez 25 pts, 6 reb, 4 ast e o Mavericks resolveu na reta final.\n\n**Destaque da noite:** Victor Wembanyama. Foram 50 pts, 19 reb, 1 ast, 5 tocos e 4 roubos de bola, com 20 de 29 nos arremessos e saldo de +35 em quadra.",
+  "tipo": "resumo_rodada",
+  "status": "CONFIRMADO",
+  "importancia": 4,
+  "times": [
+    "Spurs",
+    "Pelicans",
+    "76ers",
+    "Bucks",
+    "Knicks",
+    "Trail Blazers",
+    "Kings",
+    "Celtics",
+    "Timberwolves",
+    "Grizzlies",
+    "Mavericks",
+    "Clippers"
+  ],
+  "jogadores": [
+    "Victor Wembanyama",
+    "Tyler Herro",
+    "Joel Embiid",
+    "Mikal Bridges",
+    "Jalen Brunson",
+    "Keegan Murray",
+    "Jaden McDaniels",
+    "Kyrie Irving"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "rodada",
+    "data_rodada": "2026-11-21"
+  },
+  "escrito_em": "2026-11-22T11:49:45.166Z"
+}

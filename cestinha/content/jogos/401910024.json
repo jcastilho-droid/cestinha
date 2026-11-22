@@ -1,0 +1,53 @@
+{
+  "titulo": "Bridges acerta de três no estouro e Knicks vencem o Blazers",
+  "subtitulo": "Knicks 97 a 96 Trail Blazers: vantagem de 26 quase vira pó no Garden",
+  "corpo": "Que isso, Mikal Bridges! O Knicks abriu 26 pontos de vantagem, fez 40 pontos só no primeiro quarto e quase jogou tudo fora: somou apenas 15 e 16 nos dois últimos períodos. Damian Lillard empatou de três a 1min04 do fim e Deni Avdija colocou o Blazers na frente com dois lances livres a 3,2 segundos.\n\nNa última posse, Bridges (12 pts, 2 reb, 3 ast) meteu uma bola de três de step back no estouro do cronômetro, com passe de Josh Hart. Knicks 97 a 96.\n\nJalen Brunson foi o cestinha, com 30 pts, 7 reb, 5 ast e 6 de 10 de três. Landry Shamet fez 20 pts, 1 reb, 3 ast, também com seis bolas de três. No Blazers, Donovan Clingan fez 22 pts, 13 reb, 4 ast (9 de 11) e Avdija somou 20 pts, 9 reb, 5 ast.\n\n**E agora?** O Knicks chega a quatro vitórias seguidas e fica com 10-6, mesma campanha do Blazers.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Knicks",
+    "Trail Blazers"
+  ],
+  "jogadores": [
+    "Mikal Bridges",
+    "Damian Lillard",
+    "Deni Avdija",
+    "Jalen Brunson",
+    "Landry Shamet",
+    "Donovan Clingan"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Knicks emenda a quarta vitória seguida e se mantém em terceiro na Divisão Atlântico.",
+  "notas": [
+    {
+      "jogador": "Jalen Brunson",
+      "nota": 8.5,
+      "comentario": "30 pts e 6 de 10 de três"
+    },
+    {
+      "jogador": "Mikal Bridges",
+      "nota": 8,
+      "comentario": "Bola de três da vitória no estouro"
+    },
+    {
+      "jogador": "Donovan Clingan",
+      "nota": 8,
+      "comentario": "Duplo-duplo com 9 de 11 nos arremessos"
+    },
+    {
+      "jogador": "Landry Shamet",
+      "nota": 7.5,
+      "comentario": "Seis bolas de três saindo pra fazer estrago"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910024",
+    "data_rodada": "2026-11-21"
+  },
+  "escrito_em": "2026-11-22T11:49:45.145Z"
+}

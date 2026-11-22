@@ -1,0 +1,55 @@
+{
+  "titulo": "Keegan Murray decide no rebote e Kings encerram sequência de 8 derrotas",
+  "subtitulo": "Kings 97 a 96 Celtics: cesta a 5 segundos do fim em Sacramento",
+  "corpo": "Foi brabo. Depois de 15 trocas de liderança, o Celtics passou à frente com um arremesso de Payton Pritchard a 11,8 segundos do fim. Na resposta, Keegan Murray pegou o rebote ofensivo e completou a cesta a 5 segundos do fim: Kings 97 a 96, e fim de uma sequência de oito derrotas.\n\nMurray terminou com 15 pts, 12 reb, 0 ast. Darius Acuff Jr. foi o cestinha, com 21 pts, 6 reb, 8 ast, apesar de 7 de 23 nos arremessos. De'Andre Hunter fez 20 pts, 6 reb, 2 ast e Domantas Sabonis pegou 17 rebotes.\n\nO Celtics, sem Derrick White (entorse no ombro esquerdo), acertou só 13 de 58 de três. Paul George fez 19 pts, 8 reb, 5 ast, mas com 6 de 21, e Mike Conley somou 19 pts, 4 reb, 2 ast.\n\n**E agora?** O Kings vai a 2-14. O Celtics cai para 11-5, com três derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Kings",
+    "Celtics"
+  ],
+  "jogadores": [
+    "Keegan Murray",
+    "Payton Pritchard",
+    "Darius Acuff Jr.",
+    "De'Andre Hunter",
+    "Domantas Sabonis",
+    "Derrick White",
+    "Paul George",
+    "Mike Conley"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Kings quebra a sequência de oito derrotas e o Celtics perde a terceira seguida, a 2,5 jogos do 76ers no Atlântico.",
+  "notas": [
+    {
+      "jogador": "Keegan Murray",
+      "nota": 8,
+      "comentario": "Duplo-duplo e a cesta da vitória"
+    },
+    {
+      "jogador": "Darius Acuff Jr.",
+      "nota": 7,
+      "comentario": "21 pts e 8 ast, mas 7 de 23"
+    },
+    {
+      "jogador": "Domantas Sabonis",
+      "nota": 7.5,
+      "comentario": "15 pts e 17 rebotes no garrafão"
+    },
+    {
+      "jogador": "Paul George",
+      "nota": 5.5,
+      "comentario": "19 pts com 6 de 21 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910028",
+    "data_rodada": "2026-11-21"
+  },
+  "escrito_em": "2026-11-22T11:49:45.148Z"
+}

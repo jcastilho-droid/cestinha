@@ -1,0 +1,33 @@
+{
+  "titulo": "Giannis embalado recebe Shai: duelo de estrelas em Miami",
+  "subtitulo": "Thunder x Heat, 20h00",
+  "corpo": "Se você só puder ver um jogo hoje, fique com Thunder x Heat. O Heat chega com 6 vitórias seguidas, 8-2 nos últimos 10 jogos e campanha de 9-6, em 6º no Leste.\n\nE tem duelo de estrelas: Giannis Antetokounmpo tem médias de 28.2 pts, 12.6 reb e 5.5 ast por jogo, enquanto Shai Gilgeous-Alexander anota 31.7 pts por jogo.\n\nO Thunder (10-6, 8º no Oeste) vem desfalcado: não terá Jalen Williams nem Chet Holmgren. Vai dar conta de segurar a sequência do Heat fora de casa?",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Thunder",
+    "Heat"
+  ],
+  "jogadores": [
+    "Giannis Antetokounmpo",
+    "Shai Gilgeous-Alexander",
+    "Jalen Williams",
+    "Chet Holmgren"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401910030",
+  "motivos": [
+    "Duelo de estrelas",
+    "Boa fase"
+  ],
+  "ficar_de_olho": "Shai Gilgeous-Alexander contra a defesa do Heat de Giannis Antetokounmpo.",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-22"
+  },
+  "escrito_em": "2026-11-22T11:49:45.165Z"
+}

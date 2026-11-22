@@ -1,0 +1,51 @@
+{
+  "titulo": "Herro faz 50, mas Embiid fecha a conta e o 76ers vence o Bucks",
+  "subtitulo": "76ers 132 a 129 Bucks: quinta vitória seguida em Philadelphia",
+  "corpo": "E aí, aqui é o Cestinha. Tyler Herro fez 50 pts, 11 reb, 7 ast, com 15 de 23 nos arremessos, 7 de 12 de três e 13 de 13 nos lances livres. Não bastou: o 76ers venceu por 132 a 129, num jogo com 14 trocas de liderança.\n\nJoel Embiid foi o cara do lado vencedor, com 26 pts, 17 reb, 9 ast e 12 de 14 nos lances livres. LeBron James somou 21 pts, 6 reb, 6 ast, acertando 9 de 14. O 76ers cobrou 33 de 37 lances livres e fez 64 pontos no garrafão.\n\nNo fim, Brayden Burries (26 pts, 8 reb, 4 ast) acertou uma bola de três a 5,7 segundos do fim e deixou o Bucks a um ponto. Embiid matou os dois lances livres a 1,5 segundo e fechou o jogo.\n\n**E agora?** O 76ers vai a 14-3, com cinco vitórias seguidas, e lidera a Divisão Atlântico. O Bucks cai para 1-16 e já soma 13 derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 4,
+  "times": [
+    "76ers",
+    "Bucks"
+  ],
+  "jogadores": [
+    "Tyler Herro",
+    "Joel Embiid",
+    "LeBron James",
+    "Brayden Burries"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O 76ers segue líder do Atlântico, dois jogos à frente do Celtics, enquanto o Bucks chega a 13 derrotas seguidas.",
+  "notas": [
+    {
+      "jogador": "Joel Embiid",
+      "nota": 9,
+      "comentario": "Quase triplo-duplo e frieza nos lances livres finais"
+    },
+    {
+      "jogador": "Tyler Herro",
+      "nota": 9.5,
+      "comentario": "50 pontos sem errar lance livre, mas saiu derrotado"
+    },
+    {
+      "jogador": "LeBron James",
+      "nota": 7.5,
+      "comentario": "21 pts com 9 de 14 nos arremessos"
+    },
+    {
+      "jogador": "Brayden Burries",
+      "nota": 8,
+      "comentario": "26 pts e a bola de três que assustou"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910023",
+    "data_rodada": "2026-11-21"
+  },
+  "escrito_em": "2026-11-22T11:49:45.144Z"
+}
