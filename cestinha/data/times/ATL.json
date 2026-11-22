@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "1",
     "sigla": "ATL",
-    "posicao": 4,
-    "v": 10,
+    "posicao": 3,
+    "v": 11,
     "d": 6,
-    "pct": ".625",
-    "atras": "3.5",
-    "sequencia": "W3",
-    "casa": "4-3",
+    "pct": ".647",
+    "atras": "3",
+    "sequencia": "W4",
+    "casa": "5-3",
     "fora": "6-3",
-    "ultimos10": "7-3",
-    "pontos_pro": "117.3",
-    "pontos_contra": "114.6",
-    "saldo": "+2.7"
+    "ultimos10": "8-2",
+    "pontos_pro": "116.7",
+    "pontos_contra": "113.6",
+    "saldo": "+3.1"
   },
   "divisao": null,
   "tecnico": "Quin Snyder",
@@ -279,10 +279,7 @@
       "experiencia": 0,
       "universidade": "Houston",
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "21.5",
@@ -794,9 +791,12 @@
         "sigla": "DET",
         "nome_curto": "Pistons"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 107,
+        "adversario": 97
+      },
+      "resultado": "V"
     },
     {
       "id": "401909330",
@@ -1683,5 +1683,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/atl",
-  "atualizado_em": "2026-11-22T16:58:26.188Z"
+  "atualizado_em": "2026-11-22T23:53:58.469Z"
 }

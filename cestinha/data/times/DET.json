@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "8",
     "sigla": "DET",
-    "posicao": 3,
+    "posicao": 5,
     "v": 10,
-    "d": 5,
-    "pct": ".667",
-    "atras": "3",
-    "sequencia": "L1",
+    "d": 6,
+    "pct": ".625",
+    "atras": "3.5",
+    "sequencia": "L2",
     "casa": "3-3",
-    "fora": "7-2",
-    "ultimos10": "6-4",
-    "pontos_pro": "114.5",
-    "pontos_contra": "108.7",
-    "saldo": "+5.8"
+    "fora": "7-3",
+    "ultimos10": "5-5",
+    "pontos_pro": "113.4",
+    "pontos_contra": "108.6",
+    "saldo": "+4.8"
   },
   "divisao": {
     "nome": "Central",
@@ -55,10 +55,7 @@
       "experiencia": 6,
       "universidade": "Oklahoma State",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "34.9",
@@ -344,10 +341,7 @@
       "experiencia": 3,
       "universidade": null,
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "15.9",
@@ -404,7 +398,7 @@
       "universidade": "Stanford",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -549,10 +543,7 @@
       "experiencia": 0,
       "universidade": "Virginia",
       "pais": "Nigeria",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": null
     }
   ],
@@ -822,9 +813,12 @@
         "sigla": "ATL",
         "nome_curto": "Hawks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 97,
+        "adversario": 107
+      },
+      "resultado": "D"
     },
     {
       "id": "401909314",
@@ -1725,5 +1719,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/det",
-  "atualizado_em": "2026-11-22T16:58:29.718Z"
+  "atualizado_em": "2026-11-22T23:54:03.540Z"
 }

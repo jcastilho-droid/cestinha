@@ -13,7 +13,7 @@
   "classificacao": {
     "id": "18",
     "sigla": "NY",
-    "posicao": 5,
+    "posicao": 4,
     "v": 10,
     "d": 6,
     "pct": ".625",
@@ -115,7 +115,7 @@
       "universidade": "Indiana",
       "pais": "England",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -258,7 +258,7 @@
       "universidade": "Missouri",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1688,5 +1688,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-22T16:58:34.984Z"
+  "atualizado_em": "2026-11-22T23:54:10.875Z"
 }

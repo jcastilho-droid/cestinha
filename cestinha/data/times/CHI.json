@@ -145,10 +145,7 @@
       "experiencia": 7,
       "universidade": "Maryland",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 13,
         "min": "24.6",
@@ -232,7 +229,10 @@
       "experiencia": 8,
       "universidade": "Georgia",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 6,
         "min": "20.5",
@@ -316,10 +316,7 @@
       "experiencia": 7,
       "universidade": "Florida State",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 8,
         "min": "21.5",
@@ -487,10 +484,7 @@
       "experiencia": 0,
       "universidade": "Arizona",
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 4,
         "min": "10.3",
@@ -1719,5 +1713,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-22T16:58:27.889Z"
+  "atualizado_em": "2026-11-22T23:54:01.236Z"
 }

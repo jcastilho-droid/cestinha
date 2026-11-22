@@ -52,7 +52,10 @@
       "experiencia": 4,
       "universidade": "Alabama",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 13,
         "min": "30.8",
@@ -109,7 +112,7 @@
       "universidade": "Duke",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -168,7 +171,7 @@
       "universidade": "Tennessee",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1700,5 +1703,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cha",
-  "atualizado_em": "2026-11-22T16:58:27.448Z"
+  "atualizado_em": "2026-11-22T23:54:00.557Z"
 }

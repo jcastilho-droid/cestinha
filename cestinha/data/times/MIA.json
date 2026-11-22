@@ -53,7 +53,7 @@
       "universidade": null,
       "pais": "Greece",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -335,10 +335,7 @@
       "experiencia": 2,
       "universidade": "Little Rock",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 9,
         "min": "10.0",
@@ -1679,5 +1676,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mia",
-  "atualizado_em": "2026-11-22T16:58:33.154Z"
+  "atualizado_em": "2026-11-22T23:54:08.284Z"
 }

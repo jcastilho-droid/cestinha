@@ -112,7 +112,7 @@
       "universidade": null,
       "pais": "France",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1697,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bkn",
-  "atualizado_em": "2026-11-22T16:58:27.005Z"
+  "atualizado_em": "2026-11-22T23:53:59.763Z"
 }

@@ -332,10 +332,7 @@
       "experiencia": 13,
       "universidade": null,
       "pais": "Switzerland",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 6,
         "min": "14.2",
@@ -1669,5 +1666,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-22T16:58:30.660Z"
+  "atualizado_em": "2026-11-22T23:54:05.045Z"
 }

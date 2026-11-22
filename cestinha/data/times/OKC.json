@@ -53,7 +53,7 @@
       "universidade": "Kentucky",
       "pais": "Canada",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -201,7 +201,10 @@
       "experiencia": 0,
       "universidade": "Michigan",
       "pais": "Spain",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 16,
         "min": "22.4",
@@ -1728,5 +1731,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-22T16:58:35.464Z"
+  "atualizado_em": "2026-11-22T23:54:11.472Z"
 }

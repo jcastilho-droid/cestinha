@@ -521,10 +521,7 @@
       "experiencia": 11,
       "universidade": "Duke",
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": null
     },
     {
@@ -1715,5 +1712,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lac",
-  "atualizado_em": "2026-11-22T16:58:31.541Z"
+  "atualizado_em": "2026-11-22T23:54:06.417Z"
 }

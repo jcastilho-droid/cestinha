@@ -55,10 +55,7 @@
       "experiencia": 10,
       "universidade": "Duke",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "34.1",
@@ -86,7 +83,10 @@
       "experiencia": 17,
       "universidade": "Fresno State",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "30.1",
@@ -142,10 +142,7 @@
       "experiencia": 10,
       "universidade": "Colorado",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 15,
         "min": "29.9",
@@ -314,7 +311,7 @@
       "universidade": null,
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1688,5 +1685,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-22T16:58:26.588Z"
+  "atualizado_em": "2026-11-22T23:53:59.113Z"
 }
