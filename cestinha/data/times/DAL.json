@@ -109,7 +109,7 @@
       "universidade": "Kentucky",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -223,10 +223,7 @@
       "experiencia": 2,
       "universidade": "Florida",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "17.8",
@@ -1706,5 +1703,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/dal",
-  "atualizado_em": "2026-11-21T19:56:16.805Z"
+  "atualizado_em": "2026-11-22T03:00:40.593Z"
 }

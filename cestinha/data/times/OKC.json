@@ -52,7 +52,10 @@
       "experiencia": 9,
       "universidade": "Kentucky",
       "pais": "Canada",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 16,
         "min": "33.4",
@@ -283,7 +286,7 @@
       "universidade": "Texas A&M",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -428,7 +431,10 @@
       "experiencia": 5,
       "universidade": "Arkansas",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 9,
         "min": "17.1",
@@ -457,7 +463,7 @@
       "universidade": null,
       "pais": null,
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1722,5 +1728,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-21T19:56:24.822Z"
+  "atualizado_em": "2026-11-22T03:00:47.369Z"
 }

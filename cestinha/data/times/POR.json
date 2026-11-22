@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "22",
     "sigla": "POR",
-    "posicao": 6,
+    "posicao": 7,
     "v": 10,
-    "d": 5,
-    "pct": ".667",
-    "atras": "3",
-    "sequencia": "W1",
+    "d": 6,
+    "pct": ".625",
+    "atras": "3.5",
+    "sequencia": "L1",
     "casa": "3-2",
-    "fora": "7-3",
-    "ultimos10": "6-4",
-    "pontos_pro": "117.5",
-    "pontos_contra": "111.2",
-    "saldo": "+6.3"
+    "fora": "7-4",
+    "ultimos10": "5-5",
+    "pontos_pro": "116.1",
+    "pontos_contra": "110.3",
+    "saldo": "+5.8"
   },
   "divisao": null,
   "tecnico": "Micah Nori",
@@ -52,10 +52,7 @@
       "experiencia": 7,
       "universidade": null,
       "pais": "Israel",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 13,
         "min": "32.5",
@@ -785,9 +782,12 @@
         "sigla": "NY",
         "nome_curto": "Knicks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 96,
+        "adversario": 97
+      },
+      "resultado": "D"
     },
     {
       "id": "401910037",
@@ -1688,5 +1688,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/por",
-  "atualizado_em": "2026-11-21T19:56:26.879Z"
+  "atualizado_em": "2026-11-22T03:00:49.185Z"
 }

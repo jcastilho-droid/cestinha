@@ -17,7 +17,7 @@
     "v": 5,
     "d": 11,
     "pct": ".313",
-    "atras": "8",
+    "atras": "8.5",
     "sequencia": "L3",
     "casa": "2-5",
     "fora": "3-5",
@@ -55,7 +55,10 @@
       "experiencia": 11,
       "universidade": "New Mexico State",
       "pais": "Cameroon",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "32.1",
@@ -283,7 +286,7 @@
       "universidade": "Arizona",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1691,5 +1694,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-21T19:56:19.761Z"
+  "atualizado_em": "2026-11-22T03:00:42.971Z"
 }

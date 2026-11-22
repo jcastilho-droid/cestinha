@@ -52,7 +52,10 @@
       "experiencia": 7,
       "universidade": "Duke",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 16,
         "min": "32.4",
@@ -1735,5 +1738,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/no",
-  "atualizado_em": "2026-11-21T19:56:23.756Z"
+  "atualizado_em": "2026-11-22T03:00:46.170Z"
 }

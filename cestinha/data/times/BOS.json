@@ -17,7 +17,7 @@
     "v": 11,
     "d": 4,
     "pct": ".733",
-    "atras": "1.5",
+    "atras": "2",
     "sequencia": "L2",
     "casa": "6-1",
     "fora": "5-3",
@@ -56,7 +56,7 @@
       "universidade": "Duke",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -143,7 +143,7 @@
       "universidade": "Colorado",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -285,7 +285,10 @@
       "experiencia": 9,
       "universidade": null,
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "17.6",
@@ -1682,5 +1685,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-21T19:56:14.026Z"
+  "atualizado_em": "2026-11-22T03:00:38.317Z"
 }

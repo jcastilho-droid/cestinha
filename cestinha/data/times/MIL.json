@@ -15,16 +15,16 @@
     "sigla": "MIL",
     "posicao": 15,
     "v": 1,
-    "d": 15,
-    "pct": ".063",
-    "atras": "12",
-    "sequencia": "L12",
+    "d": 16,
+    "pct": ".059",
+    "atras": "13",
+    "sequencia": "L13",
     "casa": "1-8",
-    "fora": "0-7",
+    "fora": "0-8",
     "ultimos10": "0-10",
-    "pontos_pro": "108.1",
-    "pontos_contra": "121.1",
-    "saldo": "-13.0"
+    "pontos_pro": "109.4",
+    "pontos_contra": "121.7",
+    "saldo": "-12.3"
   },
   "divisao": {
     "nome": "Central",
@@ -808,9 +808,12 @@
         "sigla": "PHI",
         "nome_curto": "76ers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 129,
+        "adversario": 132
+      },
+      "resultado": "D"
     },
     {
       "id": "401910039",
@@ -1697,5 +1700,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mil",
-  "atualizado_em": "2026-11-21T19:56:22.599Z"
+  "atualizado_em": "2026-11-22T03:00:45.380Z"
 }

@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "18",
     "sigla": "NY",
-    "posicao": 6,
-    "v": 9,
+    "posicao": 5,
+    "v": 10,
     "d": 6,
-    "pct": ".600",
+    "pct": ".625",
     "atras": "3.5",
-    "sequencia": "W3",
-    "casa": "4-3",
+    "sequencia": "W4",
+    "casa": "5-3",
     "fora": "5-3",
-    "ultimos10": "7-3",
-    "pontos_pro": "109.5",
-    "pontos_contra": "103.5",
-    "saldo": "+6.0"
+    "ultimos10": "8-2",
+    "pontos_pro": "108.7",
+    "pontos_contra": "103.1",
+    "saldo": "+5.6"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -84,7 +84,7 @@
       "universidade": "Kentucky",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -115,7 +115,7 @@
       "universidade": "Indiana",
       "pais": "England",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -782,9 +782,12 @@
         "sigla": "POR",
         "nome_curto": "Trail Blazers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 97,
+        "adversario": 96
+      },
+      "resultado": "V"
     },
     {
       "id": "401910034",
@@ -1685,5 +1688,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-21T19:56:24.266Z"
+  "atualizado_em": "2026-11-22T03:00:46.636Z"
 }

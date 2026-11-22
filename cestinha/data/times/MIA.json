@@ -13,11 +13,11 @@
   "classificacao": {
     "id": "14",
     "sigla": "MIA",
-    "posicao": 5,
+    "posicao": 6,
     "v": 9,
     "d": 6,
     "pct": ".600",
-    "atras": "3.5",
+    "atras": "4",
     "sequencia": "W6",
     "casa": "5-3",
     "fora": "4-3",
@@ -52,7 +52,10 @@
       "experiencia": 14,
       "universidade": null,
       "pais": "Greece",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "32.1",
@@ -1676,5 +1679,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mia",
-  "atualizado_em": "2026-11-21T19:56:21.998Z"
+  "atualizado_em": "2026-11-22T03:00:45.007Z"
 }
