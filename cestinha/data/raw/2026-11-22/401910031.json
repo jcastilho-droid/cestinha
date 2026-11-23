@@ -1,0 +1,2212 @@
+{
+  "id": "401910031",
+  "inicio_utc": "2026-11-23T00:00Z",
+  "status": "final",
+  "periodo": 4,
+  "casa": {
+    "id": "27",
+    "sigla": "WSH",
+    "nome": "Washington Wizards",
+    "nome_curto": "Wizards",
+    "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+    "cor": "#e31837",
+    "placar": 116,
+    "campanha": "7-11",
+    "jogadores": [
+      {
+        "nome": "Anthony Davis",
+        "titular": true,
+        "min": 33,
+        "pts": 22,
+        "fg": "8-13",
+        "tres": "2-5",
+        "ll": "4-4",
+        "reb": 7,
+        "ast": 1,
+        "err": 2,
+        "rb": 2,
+        "toco": 1,
+        "reb_of": 1,
+        "reb_def": 6,
+        "faltas": 1,
+        "mais_menos": 20
+      },
+      {
+        "nome": "AJ Dybantsa",
+        "titular": true,
+        "min": 33,
+        "pts": 16,
+        "fg": "4-10",
+        "tres": "0-0",
+        "ll": "8-11",
+        "reb": 8,
+        "ast": 6,
+        "err": 2,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 8,
+        "faltas": 4,
+        "mais_menos": 13
+      },
+      {
+        "nome": "Kyshawn George",
+        "titular": true,
+        "min": 36,
+        "pts": 24,
+        "fg": "9-17",
+        "tres": "6-11",
+        "ll": "0-1",
+        "reb": 3,
+        "ast": 4,
+        "err": 2,
+        "rb": 0,
+        "toco": 1,
+        "reb_of": 0,
+        "reb_def": 3,
+        "faltas": 0,
+        "mais_menos": 21
+      },
+      {
+        "nome": "Alex Sarr",
+        "titular": true,
+        "min": 26,
+        "pts": 10,
+        "fg": "3-5",
+        "tres": "2-3",
+        "ll": "2-2",
+        "reb": 9,
+        "ast": 2,
+        "err": 0,
+        "rb": 2,
+        "toco": 1,
+        "reb_of": 1,
+        "reb_def": 8,
+        "faltas": 0,
+        "mais_menos": -4
+      },
+      {
+        "nome": "Trae Young",
+        "titular": true,
+        "min": 28,
+        "pts": 11,
+        "fg": "3-10",
+        "tres": "3-7",
+        "ll": "2-2",
+        "reb": 4,
+        "ast": 11,
+        "err": 3,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 4,
+        "faltas": 2,
+        "mais_menos": 5
+      },
+      {
+        "nome": "Khris Middleton",
+        "titular": false,
+        "min": 20,
+        "pts": 6,
+        "fg": "2-4",
+        "tres": "2-3",
+        "ll": "0-0",
+        "reb": 2,
+        "ast": 2,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 2,
+        "faltas": 3,
+        "mais_menos": 13
+      },
+      {
+        "nome": "Anthony Gill",
+        "titular": false,
+        "min": 3,
+        "pts": 0,
+        "fg": "0-0",
+        "tres": "0-0",
+        "ll": "0-0",
+        "reb": 2,
+        "ast": 1,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 2,
+        "faltas": 0,
+        "mais_menos": -3
+      },
+      {
+        "nome": "Deandre Ayton",
+        "titular": false,
+        "min": 5,
+        "pts": 0,
+        "fg": "0-0",
+        "tres": "0-0",
+        "ll": "0-0",
+        "reb": 2,
+        "ast": 2,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 1,
+        "faltas": 0,
+        "mais_menos": 8
+      },
+      {
+        "nome": "Tre Mann",
+        "titular": false,
+        "min": 3,
+        "pts": 0,
+        "fg": "0-0",
+        "tres": "0-0",
+        "ll": "0-0",
+        "reb": 0,
+        "ast": 0,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 0,
+        "faltas": 0,
+        "mais_menos": -3
+      },
+      {
+        "nome": "Bub Carrington",
+        "titular": false,
+        "min": 3,
+        "pts": 0,
+        "fg": "0-0",
+        "tres": "0-0",
+        "ll": "0-0",
+        "reb": 0,
+        "ast": 0,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 0,
+        "faltas": 1,
+        "mais_menos": -3
+      },
+      {
+        "nome": "Bilal Coulibaly",
+        "titular": false,
+        "min": 25,
+        "pts": 12,
+        "fg": "4-7",
+        "tres": "4-6",
+        "ll": "0-0",
+        "reb": 3,
+        "ast": 1,
+        "err": 3,
+        "rb": 0,
+        "toco": 1,
+        "reb_of": 1,
+        "reb_def": 2,
+        "faltas": 2,
+        "mais_menos": 20
+      },
+      {
+        "nome": "Will Riley",
+        "titular": false,
+        "min": 9,
+        "pts": 4,
+        "fg": "2-4",
+        "tres": "0-1",
+        "ll": "0-0",
+        "reb": 3,
+        "ast": 1,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 3,
+        "faltas": 3,
+        "mais_menos": 9
+      },
+      {
+        "nome": "Tre Johnson",
+        "titular": false,
+        "min": 15,
+        "pts": 11,
+        "fg": "4-5",
+        "tres": "3-3",
+        "ll": "0-0",
+        "reb": 2,
+        "ast": 0,
+        "err": 1,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 1,
+        "faltas": 1,
+        "mais_menos": 4
+      }
+    ],
+    "nao_jogaram": [],
+    "estatisticas": {
+      "fg": "39-75",
+      "fg_pct": "52",
+      "tres": "22-39",
+      "tres_pct": "56",
+      "ll": "16-20",
+      "reb": "45",
+      "ast": "31",
+      "err": "15",
+      "pontos_garrafao": "24",
+      "pontos_contra_ataque": "18",
+      "maior_vantagem": "25"
+    },
+    "parciais": [
+      38,
+      25,
+      34,
+      19
+    ],
+    "vencedor": true
+  },
+  "visitante": {
+    "id": "19",
+    "sigla": "ORL",
+    "nome": "Orlando Magic",
+    "nome_curto": "Magic",
+    "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+    "cor": "#0150b5",
+    "placar": 96,
+    "campanha": "7-9",
+    "jogadores": [
+      {
+        "nome": "Franz Wagner",
+        "titular": true,
+        "min": 32,
+        "pts": 16,
+        "fg": "7-18",
+        "tres": "0-3",
+        "ll": "2-2",
+        "reb": 8,
+        "ast": 6,
+        "err": 2,
+        "rb": 2,
+        "toco": 0,
+        "reb_of": 2,
+        "reb_def": 6,
+        "faltas": 0,
+        "mais_menos": -24
+      },
+      {
+        "nome": "Wendell Carter Jr.",
+        "titular": true,
+        "min": 26,
+        "pts": 9,
+        "fg": "4-6",
+        "tres": "1-2",
+        "ll": "0-0",
+        "reb": 6,
+        "ast": 3,
+        "err": 2,
+        "rb": 1,
+        "toco": 1,
+        "reb_of": 1,
+        "reb_def": 5,
+        "faltas": 2,
+        "mais_menos": -12
+      },
+      {
+        "nome": "Desmond Bane",
+        "titular": true,
+        "min": 33,
+        "pts": 17,
+        "fg": "7-14",
+        "tres": "3-8",
+        "ll": "0-0",
+        "reb": 1,
+        "ast": 5,
+        "err": 2,
+        "rb": 1,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 0,
+        "faltas": 2,
+        "mais_menos": -5
+      },
+      {
+        "nome": "Jalen Suggs",
+        "titular": true,
+        "min": 22,
+        "pts": 9,
+        "fg": "2-11",
+        "tres": "0-6",
+        "ll": "5-5",
+        "reb": 4,
+        "ast": 2,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 1,
+        "reb_def": 3,
+        "faltas": 4,
+        "mais_menos": -17
+      },
+      {
+        "nome": "Anthony Black",
+        "titular": true,
+        "min": 35,
+        "pts": 14,
+        "fg": "5-12",
+        "tres": "2-4",
+        "ll": "2-2",
+        "reb": 5,
+        "ast": 2,
+        "err": 1,
+        "rb": 2,
+        "toco": 0,
+        "reb_of": 2,
+        "reb_def": 3,
+        "faltas": 4,
+        "mais_menos": -6
+      },
+      {
+        "nome": "Jamal Cain",
+        "titular": false,
+        "min": 9,
+        "pts": 2,
+        "fg": "1-2",
+        "tres": "0-0",
+        "ll": "0-0",
+        "reb": 1,
+        "ast": 0,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 1,
+        "faltas": 0,
+        "mais_menos": 0
+      },
+      {
+        "nome": "Tristan da Silva",
+        "titular": false,
+        "min": 27,
+        "pts": 18,
+        "fg": "6-10",
+        "tres": "4-7",
+        "ll": "2-2",
+        "reb": 3,
+        "ast": 0,
+        "err": 1,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 3,
+        "faltas": 1,
+        "mais_menos": -14
+      },
+      {
+        "nome": "Nikola Vucevic",
+        "titular": false,
+        "min": 17,
+        "pts": 5,
+        "fg": "2-6",
+        "tres": "1-4",
+        "ll": "0-0",
+        "reb": 3,
+        "ast": 3,
+        "err": 0,
+        "rb": 2,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 3,
+        "faltas": 1,
+        "mais_menos": -7
+      },
+      {
+        "nome": "Goga Bitadze",
+        "titular": false,
+        "min": 15,
+        "pts": 1,
+        "fg": "0-0",
+        "tres": "0-0",
+        "ll": "1-2",
+        "reb": 4,
+        "ast": 1,
+        "err": 0,
+        "rb": 0,
+        "toco": 1,
+        "reb_of": 2,
+        "reb_def": 2,
+        "faltas": 2,
+        "mais_menos": -8
+      },
+      {
+        "nome": "Jevon Carter",
+        "titular": false,
+        "min": 14,
+        "pts": 3,
+        "fg": "1-5",
+        "tres": "1-4",
+        "ll": "0-0",
+        "reb": 2,
+        "ast": 2,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 2,
+        "faltas": 1,
+        "mais_menos": -9
+      },
+      {
+        "nome": "Alex Morales",
+        "titular": false,
+        "min": 5,
+        "pts": 0,
+        "fg": "0-1",
+        "tres": "0-1",
+        "ll": "0-0",
+        "reb": 1,
+        "ast": 2,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 1,
+        "faltas": 0,
+        "mais_menos": 1
+      },
+      {
+        "nome": "Jase Richardson",
+        "titular": false,
+        "min": 6,
+        "pts": 2,
+        "fg": "1-3",
+        "tres": "0-0",
+        "ll": "0-0",
+        "reb": 1,
+        "ast": 1,
+        "err": 0,
+        "rb": 0,
+        "toco": 0,
+        "reb_of": 0,
+        "reb_def": 1,
+        "faltas": 0,
+        "mais_menos": 1
+      }
+    ],
+    "nao_jogaram": [],
+    "estatisticas": {
+      "fg": "36-88",
+      "fg_pct": "41",
+      "tres": "12-39",
+      "tres_pct": "31",
+      "ll": "12-13",
+      "reb": "39",
+      "ast": "27",
+      "err": "9",
+      "pontos_garrafao": "42",
+      "pontos_contra_ataque": "12",
+      "maior_vantagem": "0"
+    },
+    "parciais": [
+      21,
+      30,
+      26,
+      19
+    ],
+    "vencedor": false
+  },
+  "fonte": "ESPN",
+  "link_fonte": "https://www.espn.com/nba/game/_/gameId/401910031",
+  "data_rodada": "2026-11-22",
+  "prorrogacoes": 0,
+  "local": "Capital One Arena, Washington",
+  "arena": {
+    "id": "1823",
+    "nome": "Capital One Arena",
+    "cidade": "Washington",
+    "foto": "https://a.espncdn.com/i/venues/nba/day/1823.jpg"
+  },
+  "serie": {
+    "tipo": "season",
+    "resumo_en": "WSH leads series 2-0"
+  },
+  "temporada": {
+    "ano": 2027,
+    "tipo": 2
+  },
+  "lances_finais": [
+    {
+      "periodo": 4,
+      "relogio": "6:34",
+      "lance_en": "Franz Wagner makes 2-foot two point shot",
+      "placar": "87-106"
+    },
+    {
+      "periodo": 4,
+      "relogio": "6:09",
+      "lance_en": "Anthony Davis makes 5-foot driving floating jump shot (AJ Dybantsa assists)",
+      "placar": "87-108"
+    },
+    {
+      "periodo": 4,
+      "relogio": "5:46",
+      "lance_en": "Jamal Cain makes driving layup (Jevon Carter assists)",
+      "placar": "89-108"
+    },
+    {
+      "periodo": 4,
+      "relogio": "5:21",
+      "lance_en": "AJ Dybantsa makes 16-foot pullup jump shot",
+      "placar": "89-110"
+    },
+    {
+      "periodo": 4,
+      "relogio": "4:17",
+      "lance_en": "Jase Richardson makes 7-foot two point shot (Alex Morales assists)",
+      "placar": "91-110"
+    },
+    {
+      "periodo": 4,
+      "relogio": "3:54",
+      "lance_en": "Kyshawn George makes 25-foot three point jumper (Khris Middleton assists)",
+      "placar": "91-113"
+    },
+    {
+      "periodo": 4,
+      "relogio": "3:23",
+      "lance_en": "AJ Dybantsa makes free throw 1 of 2",
+      "placar": "91-114"
+    },
+    {
+      "periodo": 4,
+      "relogio": "2:20",
+      "lance_en": "Will Riley makes 20-foot jumper (Anthony Gill assists)",
+      "placar": "91-116"
+    },
+    {
+      "periodo": 4,
+      "relogio": "59.2",
+      "lance_en": "Jevon Carter makes 26-foot running jump shot (Jase Richardson assists)",
+      "placar": "94-116"
+    },
+    {
+      "periodo": 4,
+      "relogio": "20.7",
+      "lance_en": "Nikola Vucevic makes 1-foot dunk (Alex Morales assists)",
+      "placar": "96-116"
+    }
+  ],
+  "fluxo": [
+    [
+      0,
+      0
+    ],
+    [
+      40,
+      3
+    ],
+    [
+      60,
+      5
+    ],
+    [
+      82,
+      7
+    ],
+    [
+      99,
+      9
+    ],
+    [
+      143,
+      10
+    ],
+    [
+      143,
+      11
+    ],
+    [
+      154,
+      9
+    ],
+    [
+      180,
+      7
+    ],
+    [
+      217,
+      8
+    ],
+    [
+      217,
+      9
+    ],
+    [
+      238,
+      6
+    ],
+    [
+      248,
+      8
+    ],
+    [
+      259,
+      6
+    ],
+    [
+      277,
+      8
+    ],
+    [
+      320,
+      5
+    ],
+    [
+      377,
+      3
+    ],
+    [
+      414,
+      5
+    ],
+    [
+      445,
+      8
+    ],
+    [
+      470,
+      5
+    ],
+    [
+      480,
+      7
+    ],
+    [
+      521,
+      8
+    ],
+    [
+      521,
+      9
+    ],
+    [
+      555,
+      12
+    ],
+    [
+      602,
+      15
+    ],
+    [
+      632,
+      18
+    ],
+    [
+      641,
+      17
+    ],
+    [
+      641,
+      16
+    ],
+    [
+      668,
+      19
+    ],
+    [
+      686,
+      18
+    ],
+    [
+      686,
+      17
+    ],
+    [
+      738,
+      15
+    ],
+    [
+      765,
+      16
+    ],
+    [
+      842,
+      18
+    ],
+    [
+      874,
+      19
+    ],
+    [
+      874,
+      20
+    ],
+    [
+      909,
+      17
+    ],
+    [
+      922,
+      19
+    ],
+    [
+      940,
+      16
+    ],
+    [
+      954,
+      19
+    ],
+    [
+      1004,
+      17
+    ],
+    [
+      1029,
+      14
+    ],
+    [
+      1052,
+      13
+    ],
+    [
+      1052,
+      12
+    ],
+    [
+      1076,
+      11
+    ],
+    [
+      1127,
+      14
+    ],
+    [
+      1144,
+      12
+    ],
+    [
+      1174,
+      9
+    ],
+    [
+      1224,
+      10
+    ],
+    [
+      1224,
+      11
+    ],
+    [
+      1236,
+      10
+    ],
+    [
+      1236,
+      9
+    ],
+    [
+      1259,
+      7
+    ],
+    [
+      1271,
+      9
+    ],
+    [
+      1335,
+      11
+    ],
+    [
+      1360,
+      14
+    ],
+    [
+      1382,
+      17
+    ],
+    [
+      1402,
+      14
+    ],
+    [
+      1435,
+      12
+    ],
+    [
+      1454,
+      13
+    ],
+    [
+      1454,
+      14
+    ],
+    [
+      1470,
+      12
+    ],
+    [
+      1490,
+      10
+    ],
+    [
+      1503,
+      12
+    ],
+    [
+      1517,
+      10
+    ],
+    [
+      1566,
+      8
+    ],
+    [
+      1566,
+      7
+    ],
+    [
+      1624,
+      10
+    ],
+    [
+      1690,
+      13
+    ],
+    [
+      1741,
+      16
+    ],
+    [
+      1776,
+      19
+    ],
+    [
+      1785,
+      16
+    ],
+    [
+      1804,
+      19
+    ],
+    [
+      1821,
+      16
+    ],
+    [
+      1854,
+      19
+    ],
+    [
+      1869,
+      16
+    ],
+    [
+      1892,
+      14
+    ],
+    [
+      1901,
+      17
+    ],
+    [
+      1920,
+      15
+    ],
+    [
+      1947,
+      17
+    ],
+    [
+      1984,
+      18
+    ],
+    [
+      1984,
+      19
+    ],
+    [
+      2023,
+      17
+    ],
+    [
+      2044,
+      19
+    ],
+    [
+      2078,
+      22
+    ],
+    [
+      2092,
+      20
+    ],
+    [
+      2178,
+      19
+    ],
+    [
+      2178,
+      18
+    ],
+    [
+      2234,
+      16
+    ],
+    [
+      2288,
+      19
+    ],
+    [
+      2319,
+      22
+    ],
+    [
+      2410,
+      20
+    ],
+    [
+      2440,
+      18
+    ],
+    [
+      2464,
+      21
+    ],
+    [
+      2486,
+      19
+    ],
+    [
+      2511,
+      21
+    ],
+    [
+      2534,
+      19
+    ],
+    [
+      2559,
+      21
+    ],
+    [
+      2623,
+      19
+    ],
+    [
+      2646,
+      22
+    ],
+    [
+      2677,
+      23
+    ],
+    [
+      2740,
+      25
+    ],
+    [
+      2821,
+      22
+    ],
+    [
+      2859,
+      20
+    ]
+  ],
+  "arremessos": [
+    [
+      10,
+      22,
+      0,
+      "v",
+      3
+    ],
+    [
+      31,
+      25,
+      1,
+      "c",
+      3
+    ],
+    [
+      18,
+      24,
+      0,
+      "v",
+      3
+    ],
+    [
+      20,
+      -1,
+      1,
+      "c",
+      2
+    ],
+    [
+      44,
+      22,
+      0,
+      "v",
+      3
+    ],
+    [
+      19,
+      7,
+      1,
+      "c",
+      2
+    ],
+    [
+      22,
+      0,
+      1,
+      "c",
+      2
+    ],
+    [
+      46,
+      14,
+      0,
+      "v",
+      3
+    ],
+    [
+      29,
+      2,
+      0,
+      "c",
+      2
+    ],
+    [
+      25,
+      0,
+      0,
+      "c",
+      2
+    ],
+    [
+      27,
+      3,
+      1,
+      "v",
+      2
+    ],
+    [
+      31,
+      7,
+      1,
+      "v",
+      2
+    ],
+    [
+      19,
+      13,
+      0,
+      "v",
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      "v",
+      3
+    ],
+    [
+      25,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      35,
+      9,
+      1,
+      "v",
+      2
+    ],
+    [
+      19,
+      6,
+      1,
+      "c",
+      2
+    ],
+    [
+      9,
+      19,
+      0,
+      "v",
+      3
+    ],
+    [
+      1,
+      0,
+      0,
+      "c",
+      3
+    ],
+    [
+      3,
+      14,
+      1,
+      "v",
+      3
+    ],
+    [
+      4,
+      19,
+      0,
+      "c",
+      3
+    ],
+    [
+      40,
+      21,
+      0,
+      "v",
+      3
+    ],
+    [
+      5,
+      17,
+      0,
+      "c",
+      3
+    ],
+    [
+      21,
+      1,
+      1,
+      "v",
+      2
+    ],
+    [
+      22,
+      6,
+      0,
+      "c",
+      2
+    ],
+    [
+      29,
+      5,
+      0,
+      "v",
+      2
+    ],
+    [
+      13,
+      14,
+      1,
+      "c",
+      2
+    ],
+    [
+      1,
+      -2,
+      0,
+      "v",
+      3
+    ],
+    [
+      4,
+      17,
+      1,
+      "c",
+      3
+    ],
+    [
+      1,
+      -1,
+      1,
+      "v",
+      3
+    ],
+    [
+      26,
+      2,
+      1,
+      "c",
+      2
+    ],
+    [
+      26,
+      26,
+      0,
+      "v",
+      3
+    ],
+    [
+      28,
+      6,
+      0,
+      "v",
+      2
+    ],
+    [
+      17,
+      26,
+      0,
+      "v",
+      3
+    ],
+    [
+      0,
+      -1,
+      1,
+      "c",
+      3
+    ],
+    [
+      11,
+      23,
+      0,
+      "v",
+      3
+    ],
+    [
+      48,
+      -3,
+      1,
+      "c",
+      3
+    ],
+    [
+      48,
+      15,
+      0,
+      "v",
+      3
+    ],
+    [
+      7,
+      19,
+      1,
+      "c",
+      3
+    ],
+    [
+      48,
+      1,
+      0,
+      "c",
+      3
+    ],
+    [
+      48,
+      -1,
+      1,
+      "c",
+      3
+    ],
+    [
+      47,
+      -1,
+      0,
+      "c",
+      3
+    ],
+    [
+      44,
+      10,
+      0,
+      "v",
+      2
+    ],
+    [
+      29,
+      2,
+      1,
+      "v",
+      2
+    ],
+    [
+      28,
+      3,
+      0,
+      "v",
+      2
+    ],
+    [
+      20,
+      2,
+      0,
+      "v",
+      2
+    ],
+    [
+      48,
+      11,
+      0,
+      "c",
+      3
+    ],
+    [
+      20,
+      5,
+      0,
+      "c",
+      2
+    ],
+    [
+      42,
+      21,
+      0,
+      "v",
+      3
+    ],
+    [
+      13,
+      24,
+      0,
+      "v",
+      3
+    ],
+    [
+      26,
+      14,
+      1,
+      "c",
+      2
+    ],
+    [
+      17,
+      7,
+      0,
+      "v",
+      2
+    ],
+    [
+      4,
+      15,
+      1,
+      "v",
+      3
+    ],
+    [
+      19,
+      10,
+      1,
+      "c",
+      2
+    ],
+    [
+      4,
+      15,
+      1,
+      "v",
+      3
+    ],
+    [
+      40,
+      20,
+      1,
+      "c",
+      3
+    ],
+    [
+      50,
+      4,
+      0,
+      "v",
+      3
+    ],
+    [
+      24,
+      7,
+      0,
+      "c",
+      2
+    ],
+    [
+      21,
+      5,
+      0,
+      "v",
+      2
+    ],
+    [
+      24,
+      5,
+      1,
+      "v",
+      2
+    ],
+    [
+      2,
+      12,
+      0,
+      "c",
+      3
+    ],
+    [
+      49,
+      3,
+      1,
+      "v",
+      3
+    ],
+    [
+      23,
+      12,
+      0,
+      "c",
+      2
+    ],
+    [
+      21,
+      1,
+      0,
+      "c",
+      2
+    ],
+    [
+      2,
+      -2,
+      0,
+      "v",
+      3
+    ],
+    [
+      40,
+      25,
+      0,
+      "v",
+      3
+    ],
+    [
+      27,
+      26,
+      1,
+      "c",
+      3
+    ],
+    [
+      30,
+      5,
+      1,
+      "v",
+      2
+    ],
+    [
+      47,
+      12,
+      0,
+      "c",
+      3
+    ],
+    [
+      21,
+      29,
+      1,
+      "v",
+      3
+    ],
+    [
+      6,
+      23,
+      0,
+      "c",
+      3
+    ],
+    [
+      2,
+      18,
+      0,
+      "c",
+      3
+    ],
+    [
+      27,
+      4,
+      1,
+      "v",
+      2
+    ],
+    [
+      21,
+      2,
+      1,
+      "c",
+      2
+    ],
+    [
+      40,
+      26,
+      0,
+      "v",
+      3
+    ],
+    [
+      22,
+      2,
+      0,
+      "v",
+      2
+    ],
+    [
+      38,
+      10,
+      1,
+      "c",
+      2
+    ],
+    [
+      1,
+      10,
+      1,
+      "c",
+      3
+    ],
+    [
+      24,
+      7,
+      0,
+      "v",
+      2
+    ],
+    [
+      1,
+      -2,
+      1,
+      "c",
+      3
+    ],
+    [
+      46,
+      17,
+      1,
+      "v",
+      3
+    ],
+    [
+      23,
+      26,
+      0,
+      "c",
+      3
+    ],
+    [
+      44,
+      3,
+      1,
+      "v",
+      2
+    ],
+    [
+      48,
+      -1,
+      0,
+      "c",
+      3
+    ],
+    [
+      25,
+      3,
+      1,
+      "v",
+      2
+    ],
+    [
+      33,
+      13,
+      0,
+      "c",
+      2
+    ],
+    [
+      22,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      24,
+      2,
+      1,
+      "c",
+      2
+    ],
+    [
+      25,
+      9,
+      1,
+      "v",
+      2
+    ],
+    [
+      26,
+      32,
+      0,
+      "c",
+      3
+    ],
+    [
+      13,
+      24,
+      0,
+      "v",
+      3
+    ],
+    [
+      23,
+      1,
+      1,
+      "v",
+      2
+    ],
+    [
+      31,
+      13,
+      0,
+      "c",
+      2
+    ],
+    [
+      47,
+      12,
+      0,
+      "v",
+      3
+    ],
+    [
+      44,
+      23,
+      1,
+      "c",
+      3
+    ],
+    [
+      19,
+      7,
+      0,
+      "v",
+      2
+    ],
+    [
+      20,
+      7,
+      0,
+      "c",
+      2
+    ],
+    [
+      30,
+      3,
+      0,
+      "v",
+      2
+    ],
+    [
+      21,
+      5,
+      0,
+      "v",
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      "c",
+      3
+    ],
+    [
+      21,
+      4,
+      0,
+      "v",
+      2
+    ],
+    [
+      28,
+      1,
+      0,
+      "v",
+      2
+    ],
+    [
+      1,
+      1,
+      1,
+      "c",
+      3
+    ],
+    [
+      20,
+      3,
+      0,
+      "v",
+      2
+    ],
+    [
+      43,
+      24,
+      1,
+      "c",
+      3
+    ],
+    [
+      47,
+      10,
+      1,
+      "v",
+      3
+    ],
+    [
+      50,
+      -1,
+      1,
+      "c",
+      3
+    ],
+    [
+      8,
+      21,
+      1,
+      "v",
+      3
+    ],
+    [
+      8,
+      19,
+      0,
+      "c",
+      3
+    ],
+    [
+      6,
+      21,
+      0,
+      "v",
+      3
+    ],
+    [
+      2,
+      -1,
+      1,
+      "c",
+      3
+    ],
+    [
+      48,
+      10,
+      1,
+      "v",
+      3
+    ],
+    [
+      24,
+      30,
+      0,
+      "c",
+      3
+    ],
+    [
+      27,
+      8,
+      1,
+      "v",
+      2
+    ],
+    [
+      49,
+      2,
+      1,
+      "c",
+      3
+    ],
+    [
+      15,
+      14,
+      1,
+      "v",
+      2
+    ],
+    [
+      19,
+      7,
+      1,
+      "c",
+      2
+    ],
+    [
+      20,
+      2,
+      0,
+      "v",
+      2
+    ],
+    [
+      21,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      15,
+      1,
+      1,
+      "c",
+      2
+    ],
+    [
+      16,
+      3,
+      0,
+      "v",
+      2
+    ],
+    [
+      1,
+      -1,
+      1,
+      "c",
+      3
+    ],
+    [
+      28,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      29,
+      4,
+      0,
+      "c",
+      2
+    ],
+    [
+      1,
+      8,
+      0,
+      "v",
+      3
+    ],
+    [
+      23,
+      28,
+      0,
+      "c",
+      3
+    ],
+    [
+      34,
+      25,
+      0,
+      "v",
+      3
+    ],
+    [
+      24,
+      15,
+      0,
+      "c",
+      2
+    ],
+    [
+      0,
+      -2,
+      0,
+      "v",
+      3
+    ],
+    [
+      27,
+      2,
+      1,
+      "v",
+      2
+    ],
+    [
+      24,
+      12,
+      0,
+      "c",
+      2
+    ],
+    [
+      18,
+      2,
+      0,
+      "v",
+      2
+    ],
+    [
+      46,
+      17,
+      0,
+      "v",
+      3
+    ],
+    [
+      33,
+      25,
+      1,
+      "c",
+      3
+    ],
+    [
+      26,
+      25,
+      0,
+      "v",
+      3
+    ],
+    [
+      46,
+      17,
+      1,
+      "c",
+      3
+    ],
+    [
+      15,
+      24,
+      0,
+      "v",
+      3
+    ],
+    [
+      37,
+      20,
+      0,
+      "c",
+      2
+    ],
+    [
+      32,
+      5,
+      0,
+      "v",
+      2
+    ],
+    [
+      32,
+      13,
+      0,
+      "c",
+      2
+    ],
+    [
+      10,
+      2,
+      0,
+      "c",
+      2
+    ],
+    [
+      24,
+      7,
+      1,
+      "v",
+      2
+    ],
+    [
+      5,
+      18,
+      0,
+      "c",
+      3
+    ],
+    [
+      26,
+      1,
+      1,
+      "v",
+      2
+    ],
+    [
+      45,
+      25,
+      1,
+      "c",
+      3
+    ],
+    [
+      27,
+      0,
+      1,
+      "v",
+      2
+    ],
+    [
+      24,
+      5,
+      1,
+      "c",
+      2
+    ],
+    [
+      22,
+      1,
+      1,
+      "v",
+      2
+    ],
+    [
+      19,
+      15,
+      1,
+      "c",
+      2
+    ],
+    [
+      20,
+      3,
+      0,
+      "v",
+      2
+    ],
+    [
+      18,
+      16,
+      0,
+      "c",
+      2
+    ],
+    [
+      20,
+      6,
+      1,
+      "v",
+      2
+    ],
+    [
+      2,
+      12,
+      1,
+      "c",
+      3
+    ],
+    [
+      20,
+      3,
+      0,
+      "v",
+      2
+    ],
+    [
+      22,
+      16,
+      0,
+      "v",
+      2
+    ],
+    [
+      36,
+      17,
+      0,
+      "c",
+      2
+    ],
+    [
+      18,
+      10,
+      0,
+      "v",
+      2
+    ],
+    [
+      5,
+      6,
+      1,
+      "c",
+      2
+    ],
+    [
+      27,
+      6,
+      0,
+      "v",
+      2
+    ],
+    [
+      22,
+      4,
+      0,
+      "c",
+      2
+    ],
+    [
+      48,
+      1,
+      0,
+      "v",
+      3
+    ],
+    [
+      8,
+      21,
+      1,
+      "v",
+      3
+    ],
+    [
+      26,
+      -1,
+      1,
+      "v",
+      2
+    ]
+  ],
+  "trocas_de_lideranca": "0",
+  "classificacao_divisao": [
+    {
+      "grupo_en": "2026-27 Southeast Standings",
+      "times": [
+        {
+          "time": "Atlanta",
+          "v": "11",
+          "d": "6",
+          "atras": "-",
+          "sequencia": "W4"
+        },
+        {
+          "time": "Miami",
+          "v": "10",
+          "d": "6",
+          "atras": "0.5",
+          "sequencia": "W7"
+        },
+        {
+          "time": "Orlando",
+          "v": "7",
+          "d": "9",
+          "atras": "3.5",
+          "sequencia": "L1"
+        },
+        {
+          "time": "Washington",
+          "v": "7",
+          "d": "11",
+          "atras": "4.5",
+          "sequencia": "W3"
+        },
+        {
+          "time": "Charlotte",
+          "v": "4",
+          "d": "11",
+          "atras": "6",
+          "sequencia": "L4"
+        }
+      ]
+    }
+  ],
+  "materia_fonte": {
+    "titulo_en": "Wizards rout the Magic 116-96 to win their 3rd straight following an 8-game skid",
+    "resumo_en": "Kyshawn George scored 24 points and Anthony Davis added 22 to lead the Washington Wizards to their third straight victory, 116-96 over the Orlando Magic on Sunday night.",
+    "link": "http://www.espn.com/nba/recap?gameId=401910031"
+  }
+}
