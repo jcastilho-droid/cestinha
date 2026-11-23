@@ -400,7 +400,10 @@
       "experiencia": 0,
       "universidade": "Arizona",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 9,
         "min": "4.7",
@@ -1678,5 +1681,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/tor",
-  "atualizado_em": "2026-11-23T13:36:16.194Z"
+  "atualizado_em": "2026-11-23T21:02:44.889Z"
 }

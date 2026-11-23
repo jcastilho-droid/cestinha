@@ -55,7 +55,10 @@
       "experiencia": 11,
       "universidade": "New Mexico State",
       "pais": "Cameroon",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 16,
         "min": "32.2",
@@ -226,7 +229,10 @@
       "experiencia": 7,
       "universidade": "Vanderbilt",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "27.3",
@@ -1694,5 +1700,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-23T13:36:05.899Z"
+  "atualizado_em": "2026-11-23T21:02:37.680Z"
 }

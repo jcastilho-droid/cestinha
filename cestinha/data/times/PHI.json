@@ -114,7 +114,10 @@
       "experiencia": 11,
       "universidade": "Kansas",
       "pais": "Cameroon",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "32.1",
@@ -1694,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-23T13:36:12.917Z"
+  "atualizado_em": "2026-11-23T21:02:42.556Z"
 }

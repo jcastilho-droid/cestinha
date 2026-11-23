@@ -52,10 +52,7 @@
       "experiencia": 9,
       "universidade": "Kentucky",
       "pais": "Canada",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 16,
         "min": "33.4",
@@ -1734,5 +1731,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-23T13:36:11.484Z"
+  "atualizado_em": "2026-11-23T21:02:41.641Z"
 }

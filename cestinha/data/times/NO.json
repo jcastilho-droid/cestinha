@@ -139,10 +139,7 @@
       "experiencia": 6,
       "universidade": "Virginia",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 10,
         "min": "32.4",
@@ -459,10 +456,7 @@
       "experiencia": 5,
       "universidade": "Nebraska",
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 7,
         "min": "10.6",
@@ -1741,5 +1735,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/no",
-  "atualizado_em": "2026-11-23T13:36:10.282Z"
+  "atualizado_em": "2026-11-23T21:02:40.678Z"
 }

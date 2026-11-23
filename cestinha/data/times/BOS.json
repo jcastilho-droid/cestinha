@@ -84,7 +84,7 @@
       "universidade": "Fresno State",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -1688,5 +1688,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-23T13:35:58.315Z"
+  "atualizado_em": "2026-11-23T21:02:32.980Z"
 }

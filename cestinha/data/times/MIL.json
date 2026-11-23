@@ -391,10 +391,7 @@
       "experiencia": 5,
       "universidade": null,
       "pais": "France",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 10,
         "min": "12.2",
@@ -1700,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mil",
-  "atualizado_em": "2026-11-23T13:36:09.009Z"
+  "atualizado_em": "2026-11-23T21:02:39.719Z"
 }
