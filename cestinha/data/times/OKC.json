@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "25",
     "sigla": "OKC",
-    "posicao": 8,
+    "posicao": 9,
     "v": 10,
-    "d": 6,
-    "pct": ".625",
-    "atras": "3.5",
-    "sequencia": "W1",
+    "d": 7,
+    "pct": ".588",
+    "atras": "4",
+    "sequencia": "L1",
     "casa": "6-1",
-    "fora": "4-5",
-    "ultimos10": "6-4",
+    "fora": "4-6",
+    "ultimos10": "5-5",
     "pontos_pro": "113.0",
-    "pontos_contra": "108.5",
-    "saldo": "+4.5"
+    "pontos_contra": "109.4",
+    "saldo": "+3.6"
   },
   "divisao": null,
   "tecnico": "Mark Daigneault",
@@ -842,9 +842,12 @@
         "sigla": "MIA",
         "nome_curto": "Heat"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 113,
+        "adversario": 123
+      },
+      "resultado": "D"
     },
     {
       "id": "401910038",
@@ -1731,5 +1734,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-22T23:54:11.472Z"
+  "atualizado_em": "2026-11-23T06:21:18.667Z"
 }

@@ -15,16 +15,16 @@
     "sigla": "ORL",
     "posicao": 8,
     "v": 7,
-    "d": 8,
-    "pct": ".467",
-    "atras": "6",
-    "sequencia": "W1",
+    "d": 9,
+    "pct": ".438",
+    "atras": "6.5",
+    "sequencia": "L1",
     "casa": "1-5",
-    "fora": "6-3",
+    "fora": "6-4",
     "ultimos10": "5-5",
-    "pontos_pro": "109.6",
-    "pontos_contra": "112.7",
-    "saldo": "-3.1"
+    "pontos_pro": "108.8",
+    "pontos_contra": "112.9",
+    "saldo": "-4.1"
   },
   "divisao": null,
   "tecnico": "Sean Sweeney",
@@ -756,9 +756,12 @@
         "sigla": "WSH",
         "nome_curto": "Wizards"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 96,
+        "adversario": 116
+      },
+      "resultado": "D"
     },
     {
       "id": "401909314",
@@ -1659,5 +1662,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/orl",
-  "atualizado_em": "2026-11-22T23:54:12.077Z"
+  "atualizado_em": "2026-11-23T06:21:19.055Z"
 }

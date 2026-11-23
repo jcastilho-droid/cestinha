@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "6",
     "sigla": "DAL",
-    "posicao": 9,
-    "v": 9,
+    "posicao": 8,
+    "v": 10,
     "d": 7,
-    "pct": ".563",
-    "atras": "4.5",
-    "sequencia": "W2",
+    "pct": ".588",
+    "atras": "4",
+    "sequencia": "W3",
     "casa": "7-2",
-    "fora": "2-5",
-    "ultimos10": "5-5",
-    "pontos_pro": "112.2",
-    "pontos_contra": "112.4",
-    "saldo": "-0.2"
+    "fora": "3-5",
+    "ultimos10": "6-4",
+    "pontos_pro": "112.4",
+    "pontos_contra": "112.5",
+    "saldo": "-0.1"
   },
   "divisao": null,
   "tecnico": "Dusty May",
@@ -817,9 +817,12 @@
         "sigla": "UTAH",
         "nome_curto": "Jazz"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 116,
+        "adversario": 114
+      },
+      "resultado": "V"
     },
     {
       "id": "401909316",
@@ -1706,5 +1709,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/dal",
-  "atualizado_em": "2026-11-22T23:54:02.501Z"
+  "atualizado_em": "2026-11-23T06:21:12.899Z"
 }

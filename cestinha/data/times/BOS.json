@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "2",
     "sigla": "BOS",
-    "posicao": 2,
+    "posicao": 3,
     "v": 11,
-    "d": 5,
-    "pct": ".688",
-    "atras": "2.5",
-    "sequencia": "L3",
+    "d": 6,
+    "pct": ".647",
+    "atras": "3",
+    "sequencia": "L4",
     "casa": "6-1",
-    "fora": "5-4",
+    "fora": "5-5",
     "ultimos10": "6-4",
-    "pontos_pro": "112.8",
-    "pontos_contra": "103.0",
-    "saldo": "+9.8"
+    "pontos_pro": "111.2",
+    "pontos_contra": "102.1",
+    "saldo": "+9.1"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -796,9 +796,12 @@
         "sigla": "GS",
         "nome_curto": "Warriors"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 87,
+        "adversario": 88
+      },
+      "resultado": "D"
     },
     {
       "id": "401909315",
@@ -1685,5 +1688,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-22T23:53:59.113Z"
+  "atualizado_em": "2026-11-23T06:21:10.753Z"
 }

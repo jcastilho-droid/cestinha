@@ -14,17 +14,17 @@
     "id": "7",
     "sigla": "DEN",
     "posicao": 6,
-    "v": 9,
+    "v": 10,
     "d": 5,
-    "pct": ".643",
-    "atras": "3.5",
-    "sequencia": "W2",
+    "pct": ".667",
+    "atras": "3",
+    "sequencia": "W3",
     "casa": "4-3",
-    "fora": "4-2",
+    "fora": "5-2",
     "ultimos10": "7-3",
-    "pontos_pro": "114.6",
-    "pontos_contra": "113.1",
-    "saldo": "+1.5"
+    "pontos_pro": "117.0",
+    "pontos_contra": "115.2",
+    "saldo": "+1.8"
   },
   "divisao": null,
   "tecnico": "David Adelman",
@@ -756,9 +756,12 @@
         "sigla": "CHI",
         "nome_curto": "Bulls"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 151,
+        "adversario": 145
+      },
+      "resultado": "V"
     },
     {
       "id": "401909316",
@@ -1673,5 +1676,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/den",
-  "atualizado_em": "2026-11-22T23:54:03.042Z"
+  "atualizado_em": "2026-11-23T06:21:13.347Z"
 }

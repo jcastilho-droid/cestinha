@@ -15,16 +15,16 @@
     "sigla": "IND",
     "posicao": 11,
     "v": 5,
-    "d": 11,
-    "pct": ".313",
-    "atras": "8.5",
-    "sequencia": "L3",
+    "d": 12,
+    "pct": ".294",
+    "atras": "9",
+    "sequencia": "L4",
     "casa": "2-5",
-    "fora": "3-5",
+    "fora": "3-6",
     "ultimos10": "3-7",
-    "pontos_pro": "112.0",
-    "pontos_contra": "115.6",
-    "saldo": "-3.6"
+    "pontos_pro": "111.6",
+    "pontos_contra": "115.5",
+    "saldo": "-3.9"
   },
   "divisao": {
     "nome": "Central",
@@ -55,10 +55,7 @@
       "experiencia": 11,
       "universidade": "New Mexico State",
       "pais": "Cameroon",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 15,
         "min": "32.1",
@@ -805,9 +802,12 @@
         "sigla": "NY",
         "nome_curto": "Knicks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 106,
+        "adversario": 113
+      },
+      "resultado": "D"
     },
     {
       "id": "401910038",
@@ -1694,5 +1694,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-22T23:54:05.779Z"
+  "atualizado_em": "2026-11-23T06:21:14.990Z"
 }

@@ -52,7 +52,10 @@
       "experiencia": 4,
       "universidade": null,
       "pais": "France",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 17,
         "min": "30.3",
@@ -139,7 +142,10 @@
       "experiencia": 10,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 16,
         "min": "28.9",
@@ -363,7 +369,10 @@
       "experiencia": 8,
       "universidade": "USC",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 11,
         "min": "10.4",
@@ -1675,5 +1684,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sa",
-  "atualizado_em": "2026-11-22T23:54:15.202Z"
+  "atualizado_em": "2026-11-23T06:21:21.104Z"
 }

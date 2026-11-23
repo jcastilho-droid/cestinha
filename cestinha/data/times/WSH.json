@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "27",
     "sigla": "WSH",
-    "posicao": 10,
-    "v": 6,
+    "posicao": 9,
+    "v": 7,
     "d": 11,
-    "pct": ".353",
-    "atras": "8",
-    "sequencia": "W2",
-    "casa": "2-5",
+    "pct": ".389",
+    "atras": "7.5",
+    "sequencia": "W3",
+    "casa": "3-5",
     "fora": "4-6",
-    "ultimos10": "2-8",
-    "pontos_pro": "110.0",
-    "pontos_contra": "116.5",
-    "saldo": "-6.5"
+    "ultimos10": "3-7",
+    "pontos_pro": "110.3",
+    "pontos_contra": "115.4",
+    "saldo": "-5.1"
   },
   "divisao": null,
   "tecnico": "Brian Keefe",
@@ -831,9 +831,12 @@
         "sigla": "ORL",
         "nome_curto": "Magic"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 116,
+        "adversario": 96
+      },
+      "resultado": "V"
     },
     {
       "id": "401909315",
@@ -1706,5 +1709,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/wsh",
-  "atualizado_em": "2026-11-22T23:54:17.112Z"
+  "atualizado_em": "2026-11-23T06:21:22.266Z"
 }

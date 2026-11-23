@@ -15,16 +15,16 @@
     "sigla": "UTAH",
     "posicao": 14,
     "v": 3,
-    "d": 14,
-    "pct": ".176",
-    "atras": "11",
-    "sequencia": "L1",
-    "casa": "1-8",
+    "d": 15,
+    "pct": ".167",
+    "atras": "11.5",
+    "sequencia": "L2",
+    "casa": "1-9",
     "fora": "2-6",
     "ultimos10": "2-8",
-    "pontos_pro": "108.3",
+    "pontos_pro": "108.6",
     "pontos_contra": "115.7",
-    "saldo": "-7.4"
+    "saldo": "-7.1"
   },
   "divisao": null,
   "tecnico": "Will Hardy",
@@ -226,7 +226,10 @@
       "experiencia": 8,
       "universidade": "Texas",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "24.6",
@@ -802,9 +805,12 @@
         "sigla": "DAL",
         "nome_curto": "Mavericks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 114,
+        "adversario": 116
+      },
+      "resultado": "D"
     },
     {
       "id": "401910044",
@@ -1677,5 +1683,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/utah",
-  "atualizado_em": "2026-11-22T23:54:16.538Z"
+  "atualizado_em": "2026-11-23T06:21:21.868Z"
 }

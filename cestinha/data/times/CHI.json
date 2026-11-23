@@ -15,16 +15,16 @@
     "sigla": "CHI",
     "posicao": 13,
     "v": 4,
-    "d": 11,
-    "pct": ".267",
-    "atras": "9",
-    "sequencia": "L1",
-    "casa": "1-5",
+    "d": 12,
+    "pct": ".250",
+    "atras": "9.5",
+    "sequencia": "L2",
+    "casa": "1-6",
     "fora": "3-6",
     "ultimos10": "3-7",
-    "pontos_pro": "114.7",
-    "pontos_contra": "122.8",
-    "saldo": "-8.1"
+    "pontos_pro": "116.6",
+    "pontos_contra": "124.6",
+    "saldo": "-8.0"
   },
   "divisao": {
     "nome": "Central",
@@ -810,9 +810,12 @@
         "sigla": "DEN",
         "nome_curto": "Nuggets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 145,
+        "adversario": 151
+      },
+      "resultado": "D"
     },
     {
       "id": "401910041",
@@ -1713,5 +1716,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-22T23:54:01.236Z"
+  "atualizado_em": "2026-11-23T06:21:12.075Z"
 }

@@ -14,21 +14,21 @@
     "id": "18",
     "sigla": "NY",
     "posicao": 4,
-    "v": 10,
+    "v": 11,
     "d": 6,
-    "pct": ".625",
-    "atras": "3.5",
-    "sequencia": "W4",
-    "casa": "5-3",
+    "pct": ".647",
+    "atras": "3",
+    "sequencia": "W5",
+    "casa": "6-3",
     "fora": "5-3",
     "ultimos10": "8-2",
-    "pontos_pro": "108.7",
-    "pontos_contra": "103.1",
-    "saldo": "+5.6"
+    "pontos_pro": "108.9",
+    "pontos_contra": "103.2",
+    "saldo": "+5.7"
   },
   "divisao": {
     "nome": "Atlântico",
-    "posicao": 3
+    "posicao": 2
   },
   "tecnico": "Mike Brown",
   "estatisticas": {
@@ -83,10 +83,7 @@
       "experiencia": 12,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 15,
         "min": "32.8",
@@ -201,7 +198,10 @@
       "experiencia": 6,
       "universidade": "West Virginia",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 16,
         "min": "17.2",
@@ -799,9 +799,12 @@
         "sigla": "IND",
         "nome_curto": "Pacers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 113,
+        "adversario": 106
+      },
+      "resultado": "V"
     },
     {
       "id": "401909319",
@@ -1688,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-22T23:54:10.875Z"
+  "atualizado_em": "2026-11-23T06:21:18.263Z"
 }

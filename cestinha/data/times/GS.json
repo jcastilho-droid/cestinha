@@ -14,21 +14,21 @@
     "id": "9",
     "sigla": "GS",
     "posicao": 11,
-    "v": 8,
+    "v": 9,
     "d": 8,
-    "pct": ".500",
-    "atras": "5.5",
-    "sequencia": "L5",
-    "casa": "6-1",
+    "pct": ".529",
+    "atras": "5",
+    "sequencia": "W1",
+    "casa": "7-1",
     "fora": "2-7",
     "ultimos10": "5-5",
-    "pontos_pro": "112.7",
-    "pontos_contra": "113.6",
+    "pontos_pro": "111.2",
+    "pontos_contra": "112.1",
     "saldo": "-0.9"
   },
   "divisao": {
     "nome": "Pacífico",
-    "posicao": 3
+    "posicao": 2
   },
   "tecnico": "Steve Kerr",
   "estatisticas": {
@@ -807,9 +807,12 @@
         "sigla": "BOS",
         "nome_curto": "Celtics"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 88,
+        "adversario": 87
+      },
+      "resultado": "V"
     },
     {
       "id": "401909324",
@@ -1696,5 +1699,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-22T23:54:04.080Z"
+  "atualizado_em": "2026-11-23T06:21:14.184Z"
 }

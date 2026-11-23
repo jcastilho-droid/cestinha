@@ -196,7 +196,7 @@
       "universidade": "Syracuse",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1722,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-22T23:54:07.614Z"
+  "atualizado_em": "2026-11-23T06:21:16.161Z"
 }
