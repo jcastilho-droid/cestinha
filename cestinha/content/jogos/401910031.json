@@ -1,0 +1,53 @@
+{
+  "titulo": "Wizards chovem de três e passam por cima do Magic",
+  "subtitulo": "Wizards 116 a 96 Magic: terceira vitória seguida em Washington",
+  "corpo": "Chuá atrás de chuá. O Wizards acertou 22 de 39 bolas de três (56%), abriu 38 a 21 no primeiro quarto, chegou a liderar por 25 e venceu o Magic por 116 a 96 em Washington. É a terceira vitória seguida depois de uma sequência de oito derrotas.\n\nKyshawn George foi o cestinha, com 24 pts, 3 reb, 4 ast e 6 de 11 de três. Anthony Davis fez 22 pts, 7 reb, 1 ast com 8 de 13, e AJ Dybantsa somou 16 pts, 8 reb, 6 ast. Trae Young fez duplo-duplo: 11 pts, 4 reb, 11 ast.\n\nNo Magic, Tristan da Silva fez 18 pts, 3 reb, 0 ast e Franz Wagner, 16 pts, 8 reb, 6 ast.\n\n**E agora?** O Wizards vai a 7-11. O Magic cai para 7-9, terceiro no Sudeste.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Wizards",
+    "Magic"
+  ],
+  "jogadores": [
+    "Kyshawn George",
+    "Anthony Davis",
+    "AJ Dybantsa",
+    "Trae Young",
+    "Tristan da Silva",
+    "Franz Wagner"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Wizards emenda três vitórias seguidas depois de oito derrotas e vence o Magic pela segunda vez na temporada.",
+  "notas": [
+    {
+      "jogador": "Kyshawn George",
+      "nota": 8.5,
+      "comentario": "24 pts e 6 bolas de três"
+    },
+    {
+      "jogador": "Anthony Davis",
+      "nota": 8,
+      "comentario": "22 pts com 8 de 13, eficiente"
+    },
+    {
+      "jogador": "Trae Young",
+      "nota": 7,
+      "comentario": "11 assistências organizando o ataque"
+    },
+    {
+      "jogador": "Franz Wagner",
+      "nota": 5,
+      "comentario": "7 de 18 e -24 em quadra"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910031",
+    "data_rodada": "2026-11-22"
+  },
+  "escrito_em": "2026-11-23T11:50:13.712Z"
+}

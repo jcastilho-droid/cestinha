@@ -1,0 +1,52 @@
+{
+  "titulo": "Jamal Murray faz 45 e Nuggets vencem tiroteio na prorrogação em Chicago",
+  "subtitulo": "Nuggets 151 a 145 Bulls: Giddey tem 22 assistências na derrota",
+  "corpo": "Tá maluco, que jogo. Com 13 trocas de liderança e 25 bolas de três do Bulls, a partida foi para a prorrogação e o Nuggets venceu por 151 a 145 em Chicago, fazendo 20 a 14 no tempo extra.\n\nJamal Murray foi o cestinha, com 45 pts, 5 reb, 7 ast e 6 de 11 de três, e fechou o jogo com dois lances livres a 11 segundos do fim. Nikola Jokic fez triplo-duplo: 37 pts, 18 reb, 11 ast.\n\nDo outro lado, Josh Giddey teve um triplo-duplo absurdo, com 23 pts, 14 reb, 22 ast. Buddy Hield fez 33 pts, 7 reb, 6 ast e Jalen Smith, 26 pts, 4 reb, 1 ast com 6 de 7 de três.\n\n**E agora?** O Nuggets vai a 10-5, com três vitórias seguidas, a um jogo do Timberwolves no Noroeste. O Bulls cai para 4-12.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Nuggets",
+    "Bulls"
+  ],
+  "jogadores": [
+    "Jamal Murray",
+    "Nikola Jokic",
+    "Josh Giddey",
+    "Buddy Hield",
+    "Jalen Smith"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e lances da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Nuggets chega a três vitórias seguidas e fica a um jogo da liderança do Noroeste.",
+  "notas": [
+    {
+      "jogador": "Jamal Murray",
+      "nota": 9.5,
+      "comentario": "45 pts e os lances livres que fecharam"
+    },
+    {
+      "jogador": "Nikola Jokic",
+      "nota": 9.5,
+      "comentario": "Triplo-duplo de 37 pts e 18 rebotes"
+    },
+    {
+      "jogador": "Josh Giddey",
+      "nota": 9,
+      "comentario": "22 assistências num triplo-duplo histórico"
+    },
+    {
+      "jogador": "Buddy Hield",
+      "nota": 8,
+      "comentario": "33 pts com 13 de 19"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910032",
+    "data_rodada": "2026-11-22"
+  },
+  "escrito_em": "2026-11-23T11:50:13.714Z"
+}

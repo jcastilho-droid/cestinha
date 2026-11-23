@@ -1,0 +1,209 @@
+{
+  "titulo": "Power Ranking: Spurs seguem no topo e o Celtics despenca",
+  "subtitulo": "76ers, Knicks e Heat embalados; Celtics perde quatro seguidas",
+  "corpo": "E aí, aqui é o Cestinha. O Spurs continua mandando: 14-3 e o melhor saldo da liga, +11.9 por jogo. A semana foi de sequências: 76ers e Knicks com cinco vitórias seguidas, Heat com sete. Do outro lado, o Celtics perdeu quatro seguidas, três delas por até quatro pontos, e caiu do pódio. E o Bucks... segue procurando a segunda vitória.",
+  "tipo": "power_ranking",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Spurs",
+    "Lakers",
+    "76ers",
+    "Celtics",
+    "Knicks",
+    "Heat",
+    "Bucks"
+  ],
+  "jogadores": [],
+  "fontes": [
+    "ESPN (campanhas, sequências e resultados)"
+  ],
+  "alertas": [],
+  "ranking": [
+    {
+      "posicao": 1,
+      "time": "SA",
+      "tendencia": "igual",
+      "comentario": "14-3, 9-1 nos últimos 10 e saldo de +11.9. Sobra."
+    },
+    {
+      "posicao": 2,
+      "time": "LAL",
+      "tendencia": "igual",
+      "comentario": "14-3 e 9-1 nos últimos 10. Única derrota recente foi para o Jazz."
+    },
+    {
+      "posicao": 3,
+      "time": "PHI",
+      "tendencia": "sobe",
+      "comentario": "Cinco vitórias seguidas e 14-3, melhor campanha do Leste."
+    },
+    {
+      "posicao": 4,
+      "time": "MIN",
+      "tendencia": "igual",
+      "comentario": "12-5, saldo de +9.7 e liderança do Noroeste."
+    },
+    {
+      "posicao": 5,
+      "time": "MEM",
+      "tendencia": "sobe",
+      "comentario": "12-5 e saldo de +9.0, mesmo perdendo em Minnesota."
+    },
+    {
+      "posicao": 6,
+      "time": "NY",
+      "tendencia": "sobe",
+      "comentario": "Cinco vitórias seguidas, quatro delas apertadas. Time que sabe fechar jogo."
+    },
+    {
+      "posicao": 7,
+      "time": "HOU",
+      "tendencia": "desce",
+      "comentario": "12-5, mas perdeu para Heat e Nuggets na semana."
+    },
+    {
+      "posicao": 8,
+      "time": "BOS",
+      "tendencia": "desce",
+      "comentario": "Quatro derrotas seguidas, três por até quatro pontos. Saldo de +9.1 ainda segura."
+    },
+    {
+      "posicao": 9,
+      "time": "ATL",
+      "tendencia": "sobe",
+      "comentario": "Quatro vitórias seguidas, incluindo em Oklahoma City. Lidera o Sudeste."
+    },
+    {
+      "posicao": 10,
+      "time": "MIA",
+      "tendencia": "sobe",
+      "comentario": "Sete vitórias seguidas. O Heat não perde desde antes da semana começar."
+    },
+    {
+      "posicao": 11,
+      "time": "DEN",
+      "tendencia": "sobe",
+      "comentario": "Três vitórias seguidas, com Celtics, Rockets e o tiroteio em Chicago."
+    },
+    {
+      "posicao": 12,
+      "time": "DET",
+      "tendencia": "desce",
+      "comentario": "Ganhou em San Antonio, mas perdeu duas seguidas. Ainda lidera a Central."
+    },
+    {
+      "posicao": 13,
+      "time": "POR",
+      "tendencia": "desce",
+      "comentario": "Três derrotas por um ponto ou quase isso: duas em Minnesota, uma em Nova York."
+    },
+    {
+      "posicao": 14,
+      "time": "OKC",
+      "tendencia": "desce",
+      "comentario": "5-5 nos últimos 10 e derrotas para Clippers, Hawks e Heat."
+    },
+    {
+      "posicao": 15,
+      "time": "DAL",
+      "tendencia": "sobe",
+      "comentario": "Três vitórias seguidas, mas quase entregou uma vantagem de 18 em Utah."
+    },
+    {
+      "posicao": 16,
+      "time": "CLE",
+      "tendencia": "desce",
+      "comentario": "9-8 e alternando vitória e derrota. Falta embalar."
+    },
+    {
+      "posicao": 17,
+      "time": "PHX",
+      "tendencia": "sobe",
+      "comentario": "Três vitórias seguidas e 7-3 nos últimos 10."
+    },
+    {
+      "posicao": 18,
+      "time": "GS",
+      "tendencia": "desce",
+      "comentario": "Quatro derrotas feias até segurar o Celtics por um ponto."
+    },
+    {
+      "posicao": 19,
+      "time": "ORL",
+      "tendencia": "desce",
+      "comentario": "Venceu em Boston, mas levou 20 do Wizards. Saldo negativo."
+    },
+    {
+      "posicao": 20,
+      "time": "TOR",
+      "tendencia": "desce",
+      "comentario": "Quatro derrotas antes de vencer em Detroit. 6-10."
+    },
+    {
+      "posicao": 21,
+      "time": "WSH",
+      "tendencia": "sobe",
+      "comentario": "Três vitórias seguidas depois de oito derrotas. Respirando."
+    },
+    {
+      "posicao": 22,
+      "time": "IND",
+      "tendencia": "desce",
+      "comentario": "Quatro derrotas seguidas e 5-12."
+    },
+    {
+      "posicao": 23,
+      "time": "LAC",
+      "tendencia": "desce",
+      "comentario": "Três derrotas seguidas, incluindo 25 de diferença para o Jazz."
+    },
+    {
+      "posicao": 24,
+      "time": "NO",
+      "tendencia": "desce",
+      "comentario": "1-9 nos últimos 10. Semana para esquecer."
+    },
+    {
+      "posicao": 25,
+      "time": "CHI",
+      "tendencia": "sobe",
+      "comentario": "4-12, mas fez 145 no Nuggets e só perdeu na prorrogação."
+    },
+    {
+      "posicao": 26,
+      "time": "BKN",
+      "tendencia": "desce",
+      "comentario": "Quatro derrotas seguidas e 3-12."
+    },
+    {
+      "posicao": 27,
+      "time": "CHA",
+      "tendencia": "desce",
+      "comentario": "1-9 nos últimos 10 e saldo de -10.6 por jogo."
+    },
+    {
+      "posicao": 28,
+      "time": "UTAH",
+      "tendencia": "sobe",
+      "comentario": "3-15, mas venceu Clippers e Lakers fora e brigou com o Mavericks."
+    },
+    {
+      "posicao": 29,
+      "time": "SAC",
+      "tendencia": "desce",
+      "comentario": "2-14. Pelo menos quebrou a sequência de derrotas contra o Celtics."
+    },
+    {
+      "posicao": 30,
+      "time": "MIL",
+      "tendencia": "igual",
+      "comentario": "1-16, 13 derrotas seguidas e 0-10 nos últimos 10."
+    }
+  ],
+  "ref": {
+    "tipo": "power",
+    "data": "2026-11-23"
+  },
+  "escrito_em": "2026-11-23T11:50:13.748Z"
+}

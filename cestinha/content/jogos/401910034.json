@@ -1,0 +1,52 @@
+{
+  "titulo": "Karl-Anthony Towns faz 30 e Knicks chegam a cinco vitórias seguidas",
+  "subtitulo": "Knicks 113 a 106 Pacers no Madison Square Garden",
+  "corpo": "O Knicks segue embalado. Venceu o Pacers por 113 a 106 em Nova York, chegou a abrir 15 e controlou o fim, mesmo com a reação de Indiana nos últimos minutos.\n\nKarl-Anthony Towns foi o cestinha, com 30 pts, 13 reb, 5 ast e 4 de 4 de três. Jalen Brunson fez 22 pts, 3 reb, 7 ast, e Josh Hart entregou triplo-duplo: 10 pts, 11 reb, 10 ast.\n\nNo Pacers, Pascal Siakam fez 25 pts, 6 reb, 1 ast, e Ivica Zubac somou 10 pts, 14 reb, 1 ast. O time acertou só 6 de 23 de três.\n\n**E agora?** O Knicks vai a 11-6, com cinco vitórias seguidas, empatado com o Celtics e três jogos atrás do 76ers no Atlântico. O Pacers cai para 5-12, com quatro derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Knicks",
+    "Pacers"
+  ],
+  "jogadores": [
+    "Karl-Anthony Towns",
+    "Jalen Brunson",
+    "Josh Hart",
+    "Pascal Siakam",
+    "Ivica Zubac"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Knicks chega a cinco vitórias seguidas e alcança o Celtics no Atlântico; o Pacers perde a quarta seguida.",
+  "notas": [
+    {
+      "jogador": "Karl-Anthony Towns",
+      "nota": 9,
+      "comentario": "30 pts, 13 rebotes e 9 de 14"
+    },
+    {
+      "jogador": "Josh Hart",
+      "nota": 8,
+      "comentario": "Triplo-duplo fazendo o trabalho sujo"
+    },
+    {
+      "jogador": "Jalen Brunson",
+      "nota": 7,
+      "comentario": "22 pts e 7 assistências"
+    },
+    {
+      "jogador": "Pascal Siakam",
+      "nota": 6.5,
+      "comentario": "25 pts, mas 9 de 22"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910034",
+    "data_rodada": "2026-11-22"
+  },
+  "escrito_em": "2026-11-23T11:50:13.716Z"
+}

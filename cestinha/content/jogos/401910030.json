@@ -1,0 +1,52 @@
+{
+  "titulo": "Bam Adebayo faz triplo-duplo e Heat chega a sete vitórias seguidas",
+  "subtitulo": "Heat 123 a 113 Thunder: Miami liderou o jogo inteiro",
+  "corpo": "O Heat não deixou o Thunder respirar. Abriu 36 a 24 no primeiro quarto, chegou a liderar por 20 e venceu por 123 a 113 em Miami, sem que o Thunder ficasse na frente em nenhum momento. Foram 53% nos arremessos e 54 pontos no garrafão.\n\nBam Adebayo foi brabo: triplo-duplo com 24 pts, 15 reb, 12 ast, além de 3 tocos e 8 de 11 nos arremessos. Pelle Larsson fez 21 pts, 3 reb, 5 ast e Nikola Jovic somou 15 pts, 8 reb, 3 ast.\n\nNo Thunder, Bennett Stirtz foi o cestinha com 21 pts, 3 reb, 5 ast, e Jared McCain fez 20 pts, 2 reb, 3 ast.\n\n**E agora?** O Heat vai a 10-6, com sete vitórias seguidas, meio jogo atrás do Hawks no Sudeste. O Thunder cai para 10-7, quarto no Noroeste.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Heat",
+    "Thunder"
+  ],
+  "jogadores": [
+    "Bam Adebayo",
+    "Pelle Larsson",
+    "Nikola Jovic",
+    "Bennett Stirtz",
+    "Jared McCain"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e lances da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Heat chega a sete vitórias seguidas e fica a meio jogo da liderança do Sudeste.",
+  "notas": [
+    {
+      "jogador": "Bam Adebayo",
+      "nota": 9.5,
+      "comentario": "Triplo-duplo com 8 de 11 e 3 tocos"
+    },
+    {
+      "jogador": "Pelle Larsson",
+      "nota": 8,
+      "comentario": "21 pts com 9 de 14 nos arremessos"
+    },
+    {
+      "jogador": "Bennett Stirtz",
+      "nota": 6.5,
+      "comentario": "21 pts e 5 bolas de três"
+    },
+    {
+      "jogador": "Jared McCain",
+      "nota": 5,
+      "comentario": "20 pts, mas 7 de 17 e -22"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910030",
+    "data_rodada": "2026-11-22"
+  },
+  "escrito_em": "2026-11-23T11:50:13.707Z"
+}

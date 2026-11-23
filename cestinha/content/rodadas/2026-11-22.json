@@ -1,0 +1,45 @@
+{
+  "titulo": "Prorrogação de 151 a 145, Celtics em queda e Heat sem parar",
+  "subtitulo": "O resumo dos 7 jogos de domingo, 22 de novembro",
+  "corpo": "E aí, aqui é o Cestinha. Domingo teve tiroteio com prorrogação em Chicago, a quarta derrota seguida do Celtics e o Heat chegando a sete vitórias seguidas.\n\n**Os destaques**\n- **Nuggets 151 a 145 Bulls (prorrogação):** Jamal Murray fez 45 pts, 5 reb, 7 ast e Jokic teve triplo-duplo. Jogaço.\n- **Warriors 88 a 87 Celtics:** jogo travado decidido por Brandin Podziemski, com o brasileiro Gui Santos em quadra. Celtics perde a quarta seguida.\n- **Mavericks 116 a 114 Jazz:** o Mavericks perdeu vantagem de 18, mas Cooper Flagg (28 pts, 3 reb, 4 ast) decidiu nos lances livres. Svi Mykhailiuk fez 39 pts, 5 reb, 3 ast na reação do Jazz.\n\n**O resto da rodada**\n- **Heat 123 a 113 Thunder:** triplo-duplo de Bam Adebayo e sete vitórias seguidas para Miami.\n- **Knicks 113 a 106 Pacers:** Karl-Anthony Towns fez 30 pts, 13 reb, 5 ast; quinta vitória seguida do Knicks.\n- **Hawks 107 a 97 Pistons:** virada com 33 a 12 no último quarto; Nickeil Alexander-Walker fez 27 pts, 2 reb, 1 ast.\n- **Wizards 116 a 96 Magic:** chuva de três e terceira vitória seguida de Washington, com Kyshawn George (24 pts, 3 reb, 4 ast).\n\n**Destaque da noite:** Nikola Jokic, com 37 pts, 18 reb, 11 ast na vitória do Nuggets em Chicago. Murray foi o cestinha, mas o sérvio fez de tudo um pouco.",
+  "tipo": "resumo_rodada",
+  "status": "CONFIRMADO",
+  "importancia": 4,
+  "times": [
+    "Nuggets",
+    "Bulls",
+    "Warriors",
+    "Celtics",
+    "Mavericks",
+    "Jazz",
+    "Heat",
+    "Thunder",
+    "Knicks",
+    "Pacers",
+    "Hawks",
+    "Pistons",
+    "Wizards",
+    "Magic"
+  ],
+  "jogadores": [
+    "Jamal Murray",
+    "Nikola Jokic",
+    "Brandin Podziemski",
+    "Gui Santos",
+    "Cooper Flagg",
+    "Svi Mykhailiuk",
+    "Bam Adebayo",
+    "Karl-Anthony Towns",
+    "Nickeil Alexander-Walker",
+    "Kyshawn George"
+  ],
+  "fontes": [
+    "ESPN"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "rodada",
+    "data_rodada": "2026-11-22"
+  },
+  "escrito_em": "2026-11-23T11:50:13.749Z"
+}

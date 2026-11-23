@@ -1,0 +1,54 @@
+{
+  "titulo": "Hawks atropelam no último quarto e viram sobre o Pistons",
+  "subtitulo": "Hawks 107 a 97 Pistons: 33 a 12 no quarto final em Atlanta",
+  "corpo": "Que isso, quarto período. O Pistons entrou na última parcial vencendo por 85 a 74, mas o Hawks fez 33 a 12 nos 12 minutos finais e fechou 107 a 97 em Atlanta. Foram 62 rebotes do Hawks contra 43, e 20 de 23 nos lances livres.\n\nNickeil Alexander-Walker foi o cestinha, com 27 pts, 2 reb, 1 ast e 6 de 10 de três, incluindo a bola de step back a 1min05 do fim. Corey Kispert saiu do banco com 18 pts, 4 reb, 3 ast, e Jalen Johnson fez duplo-duplo (12 pts, 11 reb, 0 ast).\n\nNo Pistons, Isaiah Joe fez 19 pts, 2 reb, 3 ast e Ausar Thompson somou 18 pts, 11 reb, 5 ast.\n\n**E agora?** O Hawks vai a 11-6, quatro vitórias seguidas e liderança do Sudeste. O Pistons cai para 10-6, com duas derrotas seguidas, mas segue no topo da Central.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Hawks",
+    "Pistons"
+  ],
+  "jogadores": [
+    "Nickeil Alexander-Walker",
+    "Corey Kispert",
+    "Jalen Johnson",
+    "Isaiah Joe",
+    "Ausar Thompson"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e lances da partida)"
+  ],
+  "alertas": [
+    "[checagem automática] Placar \"85 a 74\" não bate com os dados."
+  ],
+  "por_que_importa": "O Hawks chega a quatro vitórias seguidas e lidera o Sudeste; o Pistons perde a segunda seguida.",
+  "notas": [
+    {
+      "jogador": "Nickeil Alexander-Walker",
+      "nota": 8,
+      "comentario": "27 pts e 6 bolas de três"
+    },
+    {
+      "jogador": "Corey Kispert",
+      "nota": 7.5,
+      "comentario": "18 pts em 19 minutos, +21 em quadra"
+    },
+    {
+      "jogador": "Ausar Thompson",
+      "nota": 7,
+      "comentario": "Duplo-duplo com 7 de 10 nos arremessos"
+    },
+    {
+      "jogador": "Isaiah Joe",
+      "nota": 6.5,
+      "comentario": "19 pts, mas o Pistons sumiu no fim"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910029",
+    "data_rodada": "2026-11-22"
+  },
+  "escrito_em": "2026-11-23T11:50:13.704Z"
+}

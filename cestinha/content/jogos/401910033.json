@@ -1,0 +1,52 @@
+{
+  "titulo": "Mavericks perdem vantagem de 18, mas Cooper Flagg salva nos lances livres",
+  "subtitulo": "Mavericks 116 a 114 Jazz: Svi Mykhailiuk faz 39 na reação de Utah",
+  "corpo": "Foi no susto. O Mavericks chegou a liderar por 18, mas o Jazz fez 40 pontos no último quarto e empatou em 114 com bandeja de Isaiah Collier a 4,7 segundos do fim. Na resposta, Cooper Flagg foi para a linha e converteu os dois lances livres a 3,6 segundos: Mavericks 116 a 114 em Salt Lake City.\n\nFlagg foi o cestinha do Mavericks, com 28 pts, 3 reb, 4 ast. Kyrie Irving fez 16 pts, 1 reb, 8 ast e Zaccharie Risacher, 15 pts, 8 reb, 2 ast.\n\nO nome do jogo, porém, foi Svi Mykhailiuk: 39 pts, 5 reb, 3 ast, com 10 de 15 de três, incluindo duas bolas no último minuto.\n\n**E agora?** O Mavericks vai a 10-7, com três vitórias seguidas. O Jazz cai para 3-15.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Mavericks",
+    "Jazz"
+  ],
+  "jogadores": [
+    "Cooper Flagg",
+    "Isaiah Collier",
+    "Kyrie Irving",
+    "Zaccharie Risacher",
+    "Svi Mykhailiuk"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Mavericks chega a três vitórias seguidas, mesmo quase entregando uma vantagem de 18 pontos.",
+  "notas": [
+    {
+      "jogador": "Cooper Flagg",
+      "nota": 8.5,
+      "comentario": "28 pts e os lances livres da vitória"
+    },
+    {
+      "jogador": "Svi Mykhailiuk",
+      "nota": 9,
+      "comentario": "39 pts e 10 bolas de três"
+    },
+    {
+      "jogador": "Kyrie Irving",
+      "nota": 7,
+      "comentario": "16 pts e 8 assistências"
+    },
+    {
+      "jogador": "Isaiah Collier",
+      "nota": 7,
+      "comentario": "10 pts e 7 ast, empatou no fim"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910033",
+    "data_rodada": "2026-11-22"
+  },
+  "escrito_em": "2026-11-23T11:50:13.715Z"
+}

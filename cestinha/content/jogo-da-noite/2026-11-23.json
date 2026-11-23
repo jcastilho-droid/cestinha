@@ -1,0 +1,31 @@
+{
+  "titulo": "O dono do Leste recebe o Blazers: dá para segurar o 76ers?",
+  "subtitulo": "Trail Blazers x 76ers, 21h00",
+  "corpo": "Se você só puder ver um jogo hoje, vá de Filadélfia. O 76ers chega com cinco vitórias seguidas, 14-3 e a melhor campanha do Leste. Tyrese Maxey é o motor, com média de 25,9 pontos por jogo.\n\nDo outro lado, o Trail Blazers é o sétimo do Oeste, com 10-6 e saldo de +5.8 por jogo, melhor que o do próprio 76ers. Deni Avdija vem com 23,9 pontos, 6,4 rebotes e 6 assistências de média. O Blazers não terá Ja Morant, fora por lesão.\n\nÉ o teste para ver se a fase do 76ers é para valer.",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Trail Blazers",
+    "76ers"
+  ],
+  "jogadores": [
+    "Tyrese Maxey",
+    "Deni Avdija",
+    "Ja Morant"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401910037",
+  "motivos": [
+    "Boa fase"
+  ],
+  "ficar_de_olho": "O duelo entre Tyrese Maxey e Deni Avdija, os cestinhas dos dois times.",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-23"
+  },
+  "escrito_em": "2026-11-23T11:50:13.747Z"
+}
