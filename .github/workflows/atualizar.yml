@@ -93,5 +93,31 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: cestinha/_site
-      - id: publicar
+      # Publicar: às vezes o GitHub demora para "enxergar" o pacote do site e a publicação falha.
+      # Por isso tentamos até 3 vezes, com uma pausa entre as tentativas.
+      - id: tentativa1
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 180000
+      - name: Esperar antes de tentar de novo
+        if: steps.tentativa1.outcome == 'failure'
+        run: sleep 45
+      - id: tentativa2
+        if: steps.tentativa1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 180000
+      - name: Esperar mais um pouco
+        if: steps.tentativa1.outcome == 'failure' && steps.tentativa2.outcome == 'failure'
+        run: sleep 90
+      - id: tentativa3
+        if: steps.tentativa1.outcome == 'failure' && steps.tentativa2.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 180000
+      - id: publicar
+        name: Endereço do site
+        working-directory: .
+        run: echo "page_url=${{ steps.tentativa1.outputs.page_url || steps.tentativa2.outputs.page_url || steps.tentativa3.outputs.page_url }}" >> "$GITHUB_OUTPUT"
