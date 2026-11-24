@@ -1,0 +1,85 @@
+{
+  "data_rodada": "2026-11-24",
+  "coletado_em": "2026-11-24T05:24:44.890Z",
+  "fonte": "ESPN",
+  "jogos": [
+    {
+      "id": "401909314",
+      "inicio_utc": "2026-11-25T00:00Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "19",
+        "sigla": "ORL",
+        "nome": "Orlando Magic",
+        "nome_curto": "Magic",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+        "cor": "#0150b5",
+        "placar": 0,
+        "campanha": "7-9"
+      },
+      "visitante": {
+        "id": "8",
+        "sigla": "DET",
+        "nome": "Detroit Pistons",
+        "nome_curto": "Pistons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+        "cor": "#1d428a",
+        "placar": 0,
+        "campanha": "10-6"
+      }
+    },
+    {
+      "id": "401909315",
+      "inicio_utc": "2026-11-25T01:00Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "27",
+        "sigla": "WSH",
+        "nome": "Washington Wizards",
+        "nome_curto": "Wizards",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+        "cor": "#e31837",
+        "placar": 0,
+        "campanha": "7-11"
+      },
+      "visitante": {
+        "id": "2",
+        "sigla": "BOS",
+        "nome": "Boston Celtics",
+        "nome_curto": "Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "cor": "#008348",
+        "placar": 0,
+        "campanha": "11-6"
+      }
+    },
+    {
+      "id": "401909316",
+      "inicio_utc": "2026-11-25T03:00Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "7",
+        "sigla": "DEN",
+        "nome": "Denver Nuggets",
+        "nome_curto": "Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "cor": "#0e2240",
+        "placar": 0,
+        "campanha": "10-5"
+      },
+      "visitante": {
+        "id": "6",
+        "sigla": "DAL",
+        "nome": "Dallas Mavericks",
+        "nome_curto": "Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "cor": "#0064b1",
+        "placar": 0,
+        "campanha": "10-7"
+      }
+    }
+  ]
+}

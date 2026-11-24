@@ -1,6 +1,6 @@
 {
   "data_rodada": "2026-11-23",
-  "coletado_em": "2026-11-24T04:14:43.142Z",
+  "coletado_em": "2026-11-24T05:24:44.859Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -215,7 +215,7 @@
       "id": "401910044",
       "inicio_utc": "2026-11-24T03:00Z",
       "status": "em_andamento",
-      "periodo": 2,
+      "periodo": 4,
       "casa": {
         "id": "13",
         "sigla": "LAL",
@@ -223,7 +223,7 @@
         "nome_curto": "Lakers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "cor": "#552583",
-        "placar": 53,
+        "placar": 99,
         "campanha": "14-3"
       },
       "visitante": {
@@ -233,15 +233,15 @@
         "nome_curto": "Jazz",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
         "cor": "#4e008e",
-        "placar": 42,
+        "placar": 88,
         "campanha": "3-15"
       }
     },
     {
       "id": "401910045",
       "inicio_utc": "2026-11-24T03:00Z",
-      "status": "em_andamento",
-      "periodo": 2,
+      "status": "final",
+      "periodo": 4,
       "casa": {
         "id": "23",
         "sigla": "SAC",
@@ -249,8 +249,8 @@
         "nome_curto": "Kings",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
         "cor": "#5a2d81",
-        "placar": 51,
-        "campanha": "2-14"
+        "placar": 107,
+        "campanha": "2-15"
       },
       "visitante": {
         "id": "24",
@@ -259,8 +259,8 @@
         "nome_curto": "Spurs",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
         "cor": "#000000",
-        "placar": 60,
-        "campanha": "14-3"
+        "placar": 123,
+        "campanha": "15-3"
       }
     }
   ]
