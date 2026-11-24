@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-24T05:24:45.078Z",
+  "atualizado_em": "2026-11-24T07:36:34.089Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -326,7 +326,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
         "cor": "#5a2d81",
         "placar": 0,
-        "campanha": "2-14"
+        "campanha": "2-15"
       },
       "data_rodada": "2026-11-25",
       "tv_eua": []
@@ -354,7 +354,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
         "cor": "#000000",
         "placar": 0,
-        "campanha": "14-3"
+        "campanha": "15-3"
       },
       "data_rodada": "2026-11-25",
       "tv_eua": [
@@ -587,7 +587,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
         "cor": "#000000",
         "placar": 0,
-        "campanha": "14-3"
+        "campanha": "15-3"
       },
       "visitante": {
         "id": "13",
@@ -597,7 +597,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "cor": "#552583",
         "placar": 0,
-        "campanha": "14-3"
+        "campanha": "15-3"
       },
       "data_rodada": "2026-11-27",
       "tv_eua": [
@@ -617,7 +617,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
         "cor": "#4e008e",
         "placar": 0,
-        "campanha": "3-15"
+        "campanha": "3-16"
       },
       "visitante": {
         "id": "7",
@@ -903,7 +903,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "cor": "#552583",
         "placar": 0,
-        "campanha": "14-3"
+        "campanha": "15-3"
       },
       "data_rodada": "2026-11-29",
       "tv_eua": [
@@ -925,7 +925,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
         "cor": "#000000",
         "placar": 0,
-        "campanha": "14-3"
+        "campanha": "15-3"
       },
       "visitante": {
         "id": "2",
@@ -956,7 +956,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
         "cor": "#4e008e",
         "placar": 0,
-        "campanha": "3-15"
+        "campanha": "3-16"
       },
       "visitante": {
         "id": "21",
@@ -1135,7 +1135,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
         "cor": "#5a2d81",
         "placar": 0,
-        "campanha": "2-14"
+        "campanha": "2-15"
       },
       "visitante": {
         "id": "16",
@@ -1265,7 +1265,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "cor": "#552583",
         "placar": 0,
-        "campanha": "14-3"
+        "campanha": "15-3"
       },
       "data_rodada": "2026-11-30",
       "tv_eua": [
@@ -1326,7 +1326,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
         "cor": "#000000",
         "placar": 0,
-        "campanha": "14-3"
+        "campanha": "15-3"
       },
       "data_rodada": "2026-11-30",
       "tv_eua": [
@@ -1348,7 +1348,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
         "cor": "#5a2d81",
         "placar": 0,
-        "campanha": "2-14"
+        "campanha": "2-15"
       },
       "visitante": {
         "id": "3",
