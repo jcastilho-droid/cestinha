@@ -17,7 +17,7 @@
     "v": 6,
     "d": 10,
     "pct": ".375",
-    "atras": "7.5",
+    "atras": "7",
     "sequencia": "W1",
     "casa": "2-6",
     "fora": "4-4",
@@ -201,10 +201,7 @@
       "experiencia": 2,
       "universidade": "South Carolina",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "23.5",
@@ -400,10 +397,7 @@
       "experiencia": 0,
       "universidade": "Arizona",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 9,
         "min": "4.7",
@@ -792,9 +786,12 @@
         "sigla": "MIL",
         "nome_curto": "Bucks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 116
+      },
+      "resultado": "D"
     },
     {
       "id": "401909329",
@@ -1681,5 +1678,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/tor",
-  "atualizado_em": "2026-11-23T21:02:44.889Z"
+  "atualizado_em": "2026-11-24T03:05:15.433Z"
 }

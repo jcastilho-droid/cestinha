@@ -17,7 +17,7 @@
     "v": 4,
     "d": 12,
     "pct": ".250",
-    "atras": "9.5",
+    "atras": "9",
     "sequencia": "L2",
     "casa": "1-6",
     "fora": "3-6",
@@ -145,10 +145,7 @@
       "experiencia": 7,
       "universidade": "Maryland",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "25.3",
@@ -260,10 +257,7 @@
       "experiencia": 8,
       "universidade": "Georgia",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 6,
         "min": "20.5",
@@ -1719,5 +1713,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-23T21:02:34.370Z"
+  "atualizado_em": "2026-11-24T03:04:49.582Z"
 }

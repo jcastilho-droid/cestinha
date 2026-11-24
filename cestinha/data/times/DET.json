@@ -17,7 +17,7 @@
     "v": 10,
     "d": 6,
     "pct": ".625",
-    "atras": "3.5",
+    "atras": "3",
     "sequencia": "L2",
     "casa": "3-3",
     "fora": "7-3",
@@ -55,7 +55,10 @@
       "experiencia": 6,
       "universidade": "Oklahoma State",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "34.8",
@@ -398,7 +401,7 @@
       "universidade": "Stanford",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1719,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/det",
-  "atualizado_em": "2026-11-23T21:02:36.221Z"
+  "atualizado_em": "2026-11-24T03:04:53.443Z"
 }

@@ -167,7 +167,10 @@
       "experiencia": 4,
       "universidade": "Villanova",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "24.4",
@@ -1666,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phx",
-  "atualizado_em": "2026-11-23T21:02:43.049Z"
+  "atualizado_em": "2026-11-24T03:05:10.546Z"
 }

@@ -15,16 +15,16 @@
     "sigla": "OKC",
     "posicao": 9,
     "v": 10,
-    "d": 7,
-    "pct": ".588",
-    "atras": "4",
-    "sequencia": "L1",
+    "d": 8,
+    "pct": ".556",
+    "atras": "4.5",
+    "sequencia": "L2",
     "casa": "6-1",
-    "fora": "4-6",
-    "ultimos10": "5-5",
-    "pontos_pro": "113.0",
-    "pontos_contra": "109.4",
-    "saldo": "+3.6"
+    "fora": "4-7",
+    "ultimos10": "4-6",
+    "pontos_pro": "113.4",
+    "pontos_contra": "110.2",
+    "saldo": "+3.2"
   },
   "divisao": null,
   "tecnico": "Mark Daigneault",
@@ -856,9 +856,12 @@
         "sigla": "IND",
         "nome_curto": "Pacers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 120,
+        "adversario": 125
+      },
+      "resultado": "D"
     },
     {
       "id": "401909320",
@@ -1731,5 +1734,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-23T21:02:41.641Z"
+  "atualizado_em": "2026-11-24T03:05:04.954Z"
 }

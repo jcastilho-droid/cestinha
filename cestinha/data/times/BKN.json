@@ -15,16 +15,16 @@
     "sigla": "BKN",
     "posicao": 14,
     "v": 3,
-    "d": 12,
-    "pct": ".200",
+    "d": 13,
+    "pct": ".188",
     "atras": "10",
-    "sequencia": "L4",
+    "sequencia": "L5",
     "casa": "1-6",
-    "fora": "2-6",
-    "ultimos10": "3-7",
-    "pontos_pro": "110.9",
-    "pontos_contra": "118.8",
-    "saldo": "-7.9"
+    "fora": "2-7",
+    "ultimos10": "2-8",
+    "pontos_pro": "111.2",
+    "pontos_contra": "120.3",
+    "saldo": "-9.1"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -791,9 +791,12 @@
         "sigla": "MIN",
         "nome_curto": "Timberwolves"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 116,
+        "adversario": 142
+      },
+      "resultado": "D"
     },
     {
       "id": "401909322",
@@ -1694,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bkn",
-  "atualizado_em": "2026-11-23T21:02:33.464Z"
+  "atualizado_em": "2026-11-24T03:04:47.653Z"
 }

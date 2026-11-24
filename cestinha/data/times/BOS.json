@@ -17,7 +17,7 @@
     "v": 11,
     "d": 6,
     "pct": ".647",
-    "atras": "3",
+    "atras": "2.5",
     "sequencia": "L4",
     "casa": "6-1",
     "fora": "5-5",
@@ -83,10 +83,7 @@
       "experiencia": 17,
       "universidade": "Fresno State",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "30.1",
@@ -1688,5 +1685,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bos",
-  "atualizado_em": "2026-11-23T21:02:32.980Z"
+  "atualizado_em": "2026-11-24T03:04:46.994Z"
 }

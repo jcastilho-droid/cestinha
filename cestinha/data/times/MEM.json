@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "29",
     "sigla": "MEM",
-    "posicao": 5,
-    "v": 12,
+    "posicao": 4,
+    "v": 13,
     "d": 5,
-    "pct": ".706",
-    "atras": "2",
-    "sequencia": "L1",
+    "pct": ".722",
+    "atras": "1.5",
+    "sequencia": "W1",
     "casa": "4-4",
-    "fora": "8-1",
-    "ultimos10": "6-4",
-    "pontos_pro": "120.5",
-    "pontos_contra": "111.5",
-    "saldo": "+9.0"
+    "fora": "9-1",
+    "ultimos10": "7-3",
+    "pontos_pro": "120.3",
+    "pontos_contra": "111.4",
+    "saldo": "+8.9"
   },
   "divisao": null,
   "tecnico": "Tuomas Iisalo",
@@ -847,9 +847,12 @@
         "sigla": "CHA",
         "nome_curto": "Hornets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 117,
+        "adversario": 111
+      },
+      "resultado": "V"
     },
     {
       "id": "401909321",
@@ -1722,5 +1725,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-23T21:02:38.888Z"
+  "atualizado_em": "2026-11-24T03:04:59.962Z"
 }

@@ -17,7 +17,7 @@
     "v": 1,
     "d": 16,
     "pct": ".059",
-    "atras": "13",
+    "atras": "12.5",
     "sequencia": "L13",
     "casa": "1-8",
     "fora": "0-8",
@@ -822,9 +822,12 @@
         "sigla": "TOR",
         "nome_curto": "Raptors"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 116,
+        "adversario": 111
+      },
+      "resultado": "V"
     },
     {
       "id": "401909322",
@@ -1697,5 +1700,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mil",
-  "atualizado_em": "2026-11-23T21:02:39.719Z"
+  "atualizado_em": "2026-11-24T03:05:01.670Z"
 }

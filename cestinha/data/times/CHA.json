@@ -15,16 +15,16 @@
     "sigla": "CHA",
     "posicao": 12,
     "v": 4,
-    "d": 11,
-    "pct": ".267",
+    "d": 12,
+    "pct": ".250",
     "atras": "9",
-    "sequencia": "L4",
-    "casa": "3-4",
+    "sequencia": "L5",
+    "casa": "3-5",
     "fora": "1-7",
     "ultimos10": "1-9",
-    "pontos_pro": "99.9",
-    "pontos_contra": "110.5",
-    "saldo": "-10.6"
+    "pontos_pro": "100.6",
+    "pontos_contra": "110.9",
+    "saldo": "-10.3"
   },
   "divisao": null,
   "tecnico": "Charles Lee",
@@ -52,10 +52,7 @@
       "experiencia": 4,
       "universidade": "Alabama",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 13,
         "min": "30.8",
@@ -372,7 +369,10 @@
       "experiencia": 2,
       "universidade": "Creighton",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "18.1",
@@ -800,9 +800,12 @@
         "sigla": "MEM",
         "nome_curto": "Grizzlies"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 117
+      },
+      "resultado": "D"
     },
     {
       "id": "401909318",
@@ -1703,5 +1706,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cha",
-  "atualizado_em": "2026-11-23T21:02:33.924Z"
+  "atualizado_em": "2026-11-24T03:04:48.396Z"
 }

@@ -14,17 +14,17 @@
     "id": "11",
     "sigla": "IND",
     "posicao": 11,
-    "v": 5,
+    "v": 6,
     "d": 12,
-    "pct": ".294",
-    "atras": "9",
-    "sequencia": "L4",
-    "casa": "2-5",
+    "pct": ".333",
+    "atras": "8",
+    "sequencia": "W1",
+    "casa": "3-5",
     "fora": "3-6",
-    "ultimos10": "3-7",
-    "pontos_pro": "111.6",
-    "pontos_contra": "115.5",
-    "saldo": "-3.9"
+    "ultimos10": "4-6",
+    "pontos_pro": "112.4",
+    "pontos_contra": "115.7",
+    "saldo": "-3.3"
   },
   "divisao": {
     "nome": "Central",
@@ -55,10 +55,7 @@
       "experiencia": 11,
       "universidade": "New Mexico State",
       "pais": "Cameroon",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 16,
         "min": "32.2",
@@ -375,7 +372,10 @@
       "experiencia": 12,
       "universidade": "Wyoming",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 16,
         "min": "13.3",
@@ -825,9 +825,12 @@
         "sigla": "OKC",
         "nome_curto": "Thunder"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 125,
+        "adversario": 120
+      },
+      "resultado": "V"
     },
     {
       "id": "401909328",
@@ -1700,5 +1703,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-23T21:02:37.680Z"
+  "atualizado_em": "2026-11-24T03:04:57.638Z"
 }

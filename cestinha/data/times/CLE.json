@@ -17,7 +17,7 @@
     "v": 9,
     "d": 8,
     "pct": ".529",
-    "atras": "5",
+    "atras": "4.5",
     "sequencia": "W1",
     "casa": "7-3",
     "fora": "2-5",
@@ -226,10 +226,7 @@
       "experiencia": 3,
       "universidade": "California",
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 8,
         "min": "23.8",
@@ -1680,5 +1677,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cle",
-  "atualizado_em": "2026-11-23T21:02:34.870Z"
+  "atualizado_em": "2026-11-24T03:04:50.509Z"
 }

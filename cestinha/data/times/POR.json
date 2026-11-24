@@ -14,17 +14,17 @@
     "id": "22",
     "sigla": "POR",
     "posicao": 7,
-    "v": 10,
+    "v": 11,
     "d": 6,
-    "pct": ".625",
-    "atras": "3.5",
-    "sequencia": "L1",
+    "pct": ".647",
+    "atras": "3",
+    "sequencia": "W1",
     "casa": "3-2",
-    "fora": "7-4",
+    "fora": "8-4",
     "ultimos10": "5-5",
-    "pontos_pro": "116.1",
-    "pontos_contra": "110.3",
-    "saldo": "+5.8"
+    "pontos_pro": "116.8",
+    "pontos_contra": "110.4",
+    "saldo": "+6.4"
   },
   "divisao": null,
   "tecnico": "Micah Nori",
@@ -799,9 +799,12 @@
         "sigla": "PHI",
         "nome_curto": "76ers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 128,
+        "adversario": 111
+      },
+      "resultado": "V"
     },
     {
       "id": "401909325",
@@ -1688,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/por",
-  "atualizado_em": "2026-11-23T21:02:43.569Z"
+  "atualizado_em": "2026-11-24T03:05:12.239Z"
 }

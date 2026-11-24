@@ -13,7 +13,7 @@
   "classificacao": {
     "id": "10",
     "sigla": "HOU",
-    "posicao": 4,
+    "posicao": 5,
     "v": 12,
     "d": 5,
     "pct": ".706",
@@ -1666,5 +1666,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-23T21:02:37.173Z"
+  "atualizado_em": "2026-11-24T03:04:55.703Z"
 }

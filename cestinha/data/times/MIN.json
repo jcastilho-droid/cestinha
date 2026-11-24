@@ -14,17 +14,17 @@
     "id": "16",
     "sigla": "MIN",
     "posicao": 3,
-    "v": 12,
+    "v": 13,
     "d": 5,
-    "pct": ".706",
-    "atras": "2",
-    "sequencia": "W1",
-    "casa": "8-3",
+    "pct": ".722",
+    "atras": "1.5",
+    "sequencia": "W2",
+    "casa": "9-3",
     "fora": "4-2",
     "ultimos10": "8-2",
-    "pontos_pro": "114.9",
-    "pontos_contra": "105.2",
-    "saldo": "+9.7"
+    "pontos_pro": "116.4",
+    "pontos_contra": "105.8",
+    "saldo": "+10.6"
   },
   "divisao": null,
   "tecnico": "Chris Finch",
@@ -800,9 +800,12 @@
         "sigla": "BKN",
         "nome_curto": "Nets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 142,
+        "adversario": 116
+      },
+      "resultado": "V"
     },
     {
       "id": "401909320",
@@ -1675,5 +1678,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-23T21:02:40.172Z"
+  "atualizado_em": "2026-11-24T03:05:02.563Z"
 }

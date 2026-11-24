@@ -15,16 +15,16 @@
     "sigla": "PHI",
     "posicao": 1,
     "v": 14,
-    "d": 3,
-    "pct": ".824",
+    "d": 4,
+    "pct": ".778",
     "atras": "-",
-    "sequencia": "W5",
-    "casa": "7-2",
+    "sequencia": "L1",
+    "casa": "7-3",
     "fora": "7-1",
-    "ultimos10": "8-2",
-    "pontos_pro": "115.5",
-    "pontos_contra": "112.6",
-    "saldo": "+2.9"
+    "ultimos10": "7-3",
+    "pontos_pro": "115.3",
+    "pontos_contra": "113.4",
+    "saldo": "+1.9"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -83,10 +83,7 @@
       "experiencia": 11,
       "universidade": "California",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "34.6",
@@ -115,7 +112,7 @@
       "universidade": "Kansas",
       "pais": "Cameroon",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -313,10 +310,7 @@
       "experiencia": 8,
       "universidade": "Kansas State",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 13,
         "min": "26.5",
@@ -372,10 +366,7 @@
       "experiencia": 3,
       "universidade": "UCLA",
       "pais": "Nigeria",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 9,
         "min": "14.2",
@@ -822,9 +813,12 @@
         "sigla": "POR",
         "nome_curto": "Trail Blazers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 128
+      },
+      "resultado": "D"
     },
     {
       "id": "401909317",
@@ -1697,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-23T21:02:42.556Z"
+  "atualizado_em": "2026-11-24T03:05:07.139Z"
 }
