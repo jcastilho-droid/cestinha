@@ -17,7 +17,7 @@
     "v": 9,
     "d": 8,
     "pct": ".529",
-    "atras": "5",
+    "atras": "5.5",
     "sequencia": "W1",
     "casa": "7-1",
     "fora": "2-7",
@@ -28,7 +28,7 @@
   },
   "divisao": {
     "nome": "Pacífico",
-    "posicao": 2
+    "posicao": 3
   },
   "tecnico": "Steve Kerr",
   "estatisticas": {
@@ -1699,5 +1699,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-24T03:04:54.792Z"
+  "atualizado_em": "2026-11-24T09:23:22.930Z"
 }

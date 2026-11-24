@@ -14,17 +14,17 @@
     "id": "24",
     "sigla": "SA",
     "posicao": 1,
-    "v": 14,
+    "v": 15,
     "d": 3,
-    "pct": ".824",
+    "pct": ".833",
     "atras": "-",
-    "sequencia": "W2",
+    "sequencia": "W3",
     "casa": "7-3",
-    "fora": "7-0",
+    "fora": "8-0",
     "ultimos10": "9-1",
-    "pontos_pro": "117.3",
+    "pontos_pro": "117.6",
     "pontos_contra": "105.4",
-    "saldo": "+11.9"
+    "saldo": "+12.2"
   },
   "divisao": null,
   "tecnico": "Mitch Johnson",
@@ -53,7 +53,7 @@
       "universidade": null,
       "pais": "France",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -143,7 +143,7 @@
       "universidade": "Kentucky",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -806,9 +806,12 @@
         "sigla": "SAC",
         "nome_curto": "Kings"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 123,
+        "adversario": 107
+      },
+      "resultado": "V"
     },
     {
       "id": "401909325",
@@ -1681,5 +1684,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sa",
-  "atualizado_em": "2026-11-24T03:05:14.498Z"
+  "atualizado_em": "2026-11-24T09:23:29.373Z"
 }

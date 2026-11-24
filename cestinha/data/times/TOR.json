@@ -15,16 +15,16 @@
     "sigla": "TOR",
     "posicao": 10,
     "v": 6,
-    "d": 10,
-    "pct": ".375",
-    "atras": "7",
-    "sequencia": "W1",
-    "casa": "2-6",
+    "d": 11,
+    "pct": ".353",
+    "atras": "7.5",
+    "sequencia": "L1",
+    "casa": "2-7",
     "fora": "4-4",
-    "ultimos10": "3-7",
-    "pontos_pro": "111.6",
-    "pontos_contra": "111.4",
-    "saldo": "+0.2"
+    "ultimos10": "2-8",
+    "pontos_pro": "111.5",
+    "pontos_contra": "111.6",
+    "saldo": "-0.1"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -1678,5 +1678,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/tor",
-  "atualizado_em": "2026-11-24T03:05:15.433Z"
+  "atualizado_em": "2026-11-24T09:23:29.744Z"
 }

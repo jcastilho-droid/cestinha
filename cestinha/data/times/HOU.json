@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "10",
     "sigla": "HOU",
-    "posicao": 5,
-    "v": 12,
+    "posicao": 4,
+    "v": 13,
     "d": 5,
-    "pct": ".706",
+    "pct": ".722",
     "atras": "2",
-    "sequencia": "L1",
-    "casa": "7-1",
+    "sequencia": "W1",
+    "casa": "8-1",
     "fora": "5-4",
     "ultimos10": "6-4",
-    "pontos_pro": "118.2",
-    "pontos_contra": "110.6",
-    "saldo": "+7.6"
+    "pontos_pro": "118.1",
+    "pontos_contra": "110.2",
+    "saldo": "+7.9"
   },
   "divisao": null,
   "tecnico": "Ime Udoka",
@@ -791,9 +791,12 @@
         "sigla": "LAC",
         "nome_curto": "Clippers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 116,
+        "adversario": 104
+      },
+      "resultado": "V"
     },
     {
       "id": "401909323",
@@ -1666,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-24T03:04:55.703Z"
+  "atualizado_em": "2026-11-24T09:23:23.298Z"
 }

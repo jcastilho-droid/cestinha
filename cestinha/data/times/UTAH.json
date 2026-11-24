@@ -15,16 +15,16 @@
     "sigla": "UTAH",
     "posicao": 14,
     "v": 3,
-    "d": 15,
-    "pct": ".167",
-    "atras": "11.5",
-    "sequencia": "L2",
+    "d": 16,
+    "pct": ".158",
+    "atras": "12.5",
+    "sequencia": "L3",
     "casa": "1-9",
-    "fora": "2-6",
+    "fora": "2-7",
     "ultimos10": "2-8",
-    "pontos_pro": "108.6",
-    "pontos_contra": "115.7",
-    "saldo": "-7.1"
+    "pontos_pro": "107.8",
+    "pontos_contra": "115.4",
+    "saldo": "-7.6"
   },
   "divisao": null,
   "tecnico": "Will Hardy",
@@ -227,7 +227,7 @@
       "universidade": "Texas",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -822,9 +822,12 @@
         "sigla": "LAL",
         "nome_curto": "Lakers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 94,
+        "adversario": 109
+      },
+      "resultado": "D"
     },
     {
       "id": "401909334",
@@ -1683,5 +1686,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/utah",
-  "atualizado_em": "2026-11-24T03:05:16.005Z"
+  "atualizado_em": "2026-11-24T09:23:30.099Z"
 }

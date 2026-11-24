@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "21",
     "sigla": "PHX",
-    "posicao": 10,
-    "v": 8,
+    "posicao": 9,
+    "v": 9,
     "d": 7,
-    "pct": ".533",
+    "pct": ".563",
     "atras": "5",
-    "sequencia": "W3",
+    "sequencia": "W4",
     "casa": "5-4",
-    "fora": "3-3",
-    "ultimos10": "7-3",
-    "pontos_pro": "113.9",
-    "pontos_contra": "114.7",
-    "saldo": "-0.8"
+    "fora": "4-3",
+    "ultimos10": "8-2",
+    "pontos_pro": "114.4",
+    "pontos_contra": "115.0",
+    "saldo": "-0.6"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -167,10 +167,7 @@
       "experiencia": 4,
       "universidade": "Villanova",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 15,
         "min": "24.4",
@@ -766,9 +763,12 @@
         "sigla": "NO",
         "nome_curto": "Pelicans"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 123,
+        "adversario": 119
+      },
+      "resultado": "V"
     },
     {
       "id": "401909323",
@@ -1669,5 +1669,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phx",
-  "atualizado_em": "2026-11-24T03:05:10.546Z"
+  "atualizado_em": "2026-11-24T09:23:28.211Z"
 }

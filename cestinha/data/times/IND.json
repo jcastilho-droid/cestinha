@@ -227,7 +227,7 @@
       "universidade": "Vanderbilt",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -286,7 +286,7 @@
       "universidade": "Arizona",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -1703,5 +1703,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-24T03:04:57.638Z"
+  "atualizado_em": "2026-11-24T09:23:23.695Z"
 }

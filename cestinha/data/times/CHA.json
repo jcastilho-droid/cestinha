@@ -13,7 +13,7 @@
   "classificacao": {
     "id": "30",
     "sigla": "CHA",
-    "posicao": 12,
+    "posicao": 13,
     "v": 4,
     "d": 12,
     "pct": ".250",
@@ -168,7 +168,7 @@
       "universidade": "Tennessee",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -1706,5 +1706,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cha",
-  "atualizado_em": "2026-11-24T03:04:48.396Z"
+  "atualizado_em": "2026-11-24T09:23:20.639Z"
 }

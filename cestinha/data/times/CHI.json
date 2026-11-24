@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "4",
     "sigla": "CHI",
-    "posicao": 13,
-    "v": 4,
+    "posicao": 12,
+    "v": 5,
     "d": 12,
-    "pct": ".250",
-    "atras": "9",
-    "sequencia": "L2",
-    "casa": "1-6",
+    "pct": ".294",
+    "atras": "8.5",
+    "sequencia": "W1",
+    "casa": "2-6",
     "fora": "3-6",
-    "ultimos10": "3-7",
-    "pontos_pro": "116.6",
-    "pontos_contra": "124.6",
-    "saldo": "-8.0"
+    "ultimos10": "4-6",
+    "pontos_pro": "116.9",
+    "pontos_contra": "123.6",
+    "saldo": "-6.7"
   },
   "divisao": {
     "nome": "Central",
@@ -824,9 +824,12 @@
         "sigla": "CLE",
         "nome_curto": "Cavaliers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 122,
+        "adversario": 108
+      },
+      "resultado": "V"
     },
     {
       "id": "401909318",
@@ -1713,5 +1716,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-24T03:04:49.582Z"
+  "atualizado_em": "2026-11-24T09:23:21.012Z"
 }

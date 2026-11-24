@@ -13,11 +13,11 @@
   "classificacao": {
     "id": "25",
     "sigla": "OKC",
-    "posicao": 9,
+    "posicao": 10,
     "v": 10,
     "d": 8,
     "pct": ".556",
-    "atras": "4.5",
+    "atras": "5",
     "sequencia": "L2",
     "casa": "6-1",
     "fora": "4-7",
@@ -199,7 +199,7 @@
       "universidade": "Michigan",
       "pais": "Spain",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -460,7 +460,7 @@
       "universidade": "Arkansas",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -1734,5 +1734,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-24T03:05:04.954Z"
+  "atualizado_em": "2026-11-24T09:23:27.025Z"
 }

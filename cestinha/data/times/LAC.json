@@ -15,16 +15,16 @@
     "sigla": "LAC",
     "posicao": 13,
     "v": 4,
-    "d": 11,
-    "pct": ".267",
-    "atras": "9",
-    "sequencia": "L3",
+    "d": 12,
+    "pct": ".250",
+    "atras": "10",
+    "sequencia": "L4",
     "casa": "4-4",
-    "fora": "0-7",
+    "fora": "0-8",
     "ultimos10": "3-7",
-    "pontos_pro": "111.1",
-    "pontos_contra": "117.6",
-    "saldo": "-6.5"
+    "pontos_pro": "110.7",
+    "pontos_contra": "117.5",
+    "saldo": "-6.8"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -809,9 +809,12 @@
         "sigla": "HOU",
         "nome_curto": "Rockets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 104,
+        "adversario": 116
+      },
+      "resultado": "D"
     },
     {
       "id": "401909321",
@@ -1712,5 +1715,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lac",
-  "atualizado_em": "2026-11-24T03:04:58.440Z"
+  "atualizado_em": "2026-11-24T09:23:24.064Z"
 }

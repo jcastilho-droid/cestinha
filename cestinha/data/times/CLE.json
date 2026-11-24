@@ -15,16 +15,16 @@
     "sigla": "CLE",
     "posicao": 7,
     "v": 9,
-    "d": 8,
-    "pct": ".529",
-    "atras": "4.5",
-    "sequencia": "W1",
+    "d": 9,
+    "pct": ".500",
+    "atras": "5",
+    "sequencia": "L1",
     "casa": "7-3",
-    "fora": "2-5",
+    "fora": "2-6",
     "ultimos10": "5-5",
-    "pontos_pro": "118.8",
-    "pontos_contra": "116.5",
-    "saldo": "+2.3"
+    "pontos_pro": "118.2",
+    "pontos_contra": "116.8",
+    "saldo": "+1.4"
   },
   "divisao": {
     "nome": "Central",
@@ -802,9 +802,12 @@
         "sigla": "CHI",
         "nome_curto": "Bulls"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 108,
+        "adversario": 122
+      },
+      "resultado": "D"
     },
     {
       "id": "401909319",
@@ -1677,5 +1680,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cle",
-  "atualizado_em": "2026-11-24T03:04:50.509Z"
+  "atualizado_em": "2026-11-24T09:23:21.386Z"
 }

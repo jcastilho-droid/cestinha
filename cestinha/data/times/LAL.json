@@ -14,17 +14,17 @@
     "id": "13",
     "sigla": "LAL",
     "posicao": 2,
-    "v": 14,
+    "v": 15,
     "d": 3,
-    "pct": ".824",
+    "pct": ".833",
     "atras": "-",
-    "sequencia": "W1",
-    "casa": "7-2",
+    "sequencia": "W2",
+    "casa": "8-2",
     "fora": "7-1",
     "ultimos10": "9-1",
-    "pontos_pro": "120.0",
-    "pontos_contra": "113.8",
-    "saldo": "+6.2"
+    "pontos_pro": "119.4",
+    "pontos_contra": "112.7",
+    "saldo": "+6.7"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -853,9 +853,12 @@
         "sigla": "UTAH",
         "nome_curto": "Jazz"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 109,
+        "adversario": 94
+      },
+      "resultado": "V"
     },
     {
       "id": "401909333",
@@ -1728,5 +1731,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lal",
-  "atualizado_em": "2026-11-24T03:04:59.012Z"
+  "atualizado_em": "2026-11-24T09:23:24.474Z"
 }

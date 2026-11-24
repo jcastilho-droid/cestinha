@@ -15,16 +15,16 @@
     "sigla": "SAC",
     "posicao": 15,
     "v": 2,
-    "d": 14,
-    "pct": ".125",
-    "atras": "11.5",
-    "sequencia": "W1",
-    "casa": "1-9",
+    "d": 15,
+    "pct": ".118",
+    "atras": "12.5",
+    "sequencia": "L1",
+    "casa": "1-10",
     "fora": "1-5",
-    "ultimos10": "2-8",
+    "ultimos10": "1-9",
     "pontos_pro": "106.8",
-    "pontos_contra": "119.1",
-    "saldo": "-12.3"
+    "pontos_contra": "119.4",
+    "saldo": "-12.6"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -785,9 +785,12 @@
         "sigla": "SA",
         "nome_curto": "Spurs"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 107,
+        "adversario": 123
+      },
+      "resultado": "D"
     },
     {
       "id": "401909324",
@@ -1674,5 +1677,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sac",
-  "atualizado_em": "2026-11-24T03:05:13.184Z"
+  "atualizado_em": "2026-11-24T09:23:28.974Z"
 }
