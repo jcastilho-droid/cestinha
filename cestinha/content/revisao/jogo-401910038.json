@@ -1,0 +1,56 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [
+    "[checagem automática] Placar \"120 a 119\" não bate com os dados.",
+    "[checagem automática] Placar \"123 a 119\" não bate com os dados."
+  ],
+  "titulo": "Shai faz 38, mas Pacers seguram o Thunder no fim",
+  "subtitulo": "Pacers 125 a 120 Thunder em Indianápolis",
+  "importancia": 3,
+  "times": [
+    "Pacers",
+    "Thunder"
+  ],
+  "jogadores": [
+    "Pascal Siakam",
+    "Kelly Oubre Jr.",
+    "Jalen Slawson",
+    "Ivica Zubac",
+    "Andrew Nembhard",
+    "Shai Gilgeous-Alexander"
+  ],
+  "corpo": "O Pacers venceu o Thunder por 125 a 120 em Indianápolis, mesmo com uma noite grande de Shai Gilgeous-Alexander.\n\nShai foi o cestinha, com 38 pts, 5 reb, 7 ast, e chegou a colocar o Thunder a um ponto, em 120 a 119, a menos de um minuto do fim. Aí apareceu Pascal Siakam: bola de três para 123 a 119, e Ivica Zubac fechou com uma enterrada a 7 segundos, as duas com passe de Andrew Nembhard.\n\nSiakam terminou com 20 pts, 8 reb, 5 ast, Kelly Oubre Jr. fez 20 pts, 4 reb, 2 ast e Jalen Slawson somou 16 pts, 10 reb, 2 ast e 4 tocos. O Pacers ganhou o rebote por 58 a 49.\n\n**E agora?** O Pacers vai a 6-12. O Thunder cai para 10-8, com duas derrotas seguidas.",
+  "por_que_importa": "O Thunder perde a segunda seguida e cai para 10-8; o Pacers chega a 6-12.",
+  "notas": [
+    {
+      "jogador": "Shai Gilgeous-Alexander",
+      "nota": 8,
+      "comentario": "38 pts, mas precisou de 30 arremessos"
+    },
+    {
+      "jogador": "Pascal Siakam",
+      "nota": 8,
+      "comentario": "Bola de três que decidiu o jogo"
+    },
+    {
+      "jogador": "Jalen Slawson",
+      "nota": 8,
+      "comentario": "Duplo-duplo, 4 tocos e 3 de 3 de fora"
+    },
+    {
+      "jogador": "Kelly Oubre Jr.",
+      "nota": 7,
+      "comentario": "20 pts com 8 de 13"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910038",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-24T11:50:32.721Z"
+}

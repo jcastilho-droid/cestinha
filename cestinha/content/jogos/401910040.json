@@ -1,0 +1,45 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "titulo": "Jaden McDaniels faz 34 e Timberwolves atropelam o Nets",
+  "subtitulo": "Timberwolves 142 a 116 Nets em Minneapolis",
+  "importancia": 2,
+  "times": [
+    "Timberwolves",
+    "Nets"
+  ],
+  "jogadores": [
+    "Jaden McDaniels",
+    "Ayo Dosunmu",
+    "Julius Randle"
+  ],
+  "corpo": "Não teve jogo em Minneapolis. O Timberwolves bateu o Nets por 142 a 116, liderou do começo ao fim e chegou a abrir 30 pontos. Foram 41 pontos já no primeiro quarto.\n\nJaden McDaniels foi o cestinha, com 34 pts, 10 reb, 6 ast, acertando 12 de 16 arremessos e 4 de 4 de três. Tá maluco. Ayo Dosunmu somou 23 pts, 3 reb, 5 ast.\n\nNo Nets, Julius Randle fez 29 pts, 4 reb, 4 ast, com 11 de 16. O problema foram os 21 desperdícios de bola do time.\n\n**E agora?** O Timberwolves vai a 13-5 e segue na liderança da divisão Noroeste. O Nets cai para 3-13, com cinco derrotas seguidas.",
+  "por_que_importa": "O Timberwolves chega a 13-5 na ponta do Noroeste; o Nets perde a quinta seguida.",
+  "notas": [
+    {
+      "jogador": "Jaden McDaniels",
+      "nota": 9.5,
+      "comentario": "34 pts, 10 reb, 12 de 16 e 4 de 4"
+    },
+    {
+      "jogador": "Ayo Dosunmu",
+      "nota": 8,
+      "comentario": "23 pts e saldo de +26"
+    },
+    {
+      "jogador": "Julius Randle",
+      "nota": 7,
+      "comentario": "29 pts eficientes num jogo perdido"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910040",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-24T11:50:32.723Z"
+}

@@ -1,0 +1,51 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "titulo": "Kevin Durant faz 32 e Rockets controlam o Clippers",
+  "subtitulo": "Rockets 116 a 104 Clippers em Houston",
+  "importancia": 2,
+  "times": [
+    "Rockets",
+    "Clippers"
+  ],
+  "jogadores": [
+    "Kevin Durant",
+    "Alperen Sengun",
+    "Amen Thompson",
+    "Darius Garland"
+  ],
+  "corpo": "O Rockets bateu o Clippers por 116 a 104 em Houston. O Clippers fez só 15 pontos no primeiro quarto, ainda reagiu, mas o Rockets resolveu no terceiro, vencido por 38 a 32.\n\nKevin Durant foi o cestinha, com 32 pts, 9 reb, 4 ast e 11 de 19 nos arremessos. Alperen Sengun somou 20 pts, 8 reb, 7 ast, e Amen Thompson fez 20 pts, 4 reb, 5 ast, com 9 de 12.\n\nNo Clippers, Darius Garland teve 26 pts, 1 reb, 8 ast. O time ganhou só 32 rebotes, contra 46 do Rockets.\n\n**E agora?** O Rockets vai a 13-5, colado no topo da divisão Sudoeste. O Clippers cai para 4-12, com quatro derrotas seguidas.",
+  "por_que_importa": "O Rockets chega a 13-5 na briga pelo Sudoeste; o Clippers perde a quarta seguida.",
+  "notas": [
+    {
+      "jogador": "Kevin Durant",
+      "nota": 9,
+      "comentario": "32 pts e 9 reb com eficiência"
+    },
+    {
+      "jogador": "Alperen Sengun",
+      "nota": 8,
+      "comentario": "20 pts, 8 reb e 7 ast"
+    },
+    {
+      "jogador": "Amen Thompson",
+      "nota": 8,
+      "comentario": "20 pts com 9 de 12"
+    },
+    {
+      "jogador": "Darius Garland",
+      "nota": 6.5,
+      "comentario": "26 pts e 8 ast na derrota"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910043",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-24T11:50:32.725Z"
+}

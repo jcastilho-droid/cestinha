@@ -1,0 +1,51 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "titulo": "Stephon Castle comanda e Spurs passam pelo Kings",
+  "subtitulo": "Spurs 123 a 107 Kings em Sacramento",
+  "importancia": 2,
+  "times": [
+    "Spurs",
+    "Kings"
+  ],
+  "jogadores": [
+    "Stephon Castle",
+    "Julian Champagnie",
+    "Luke Kornet",
+    "Domantas Sabonis"
+  ],
+  "corpo": "O Spurs venceu o Kings por 123 a 107 em Sacramento. Perdeu o primeiro quarto, mas virou no segundo, vencido por 41 a 23, e chegou a abrir 22.\n\nStephon Castle foi o cestinha, com 28 pts, 8 reb, 11 ast. Julian Champagnie fez 22 pts, 7 reb, 3 ast, com 6 bolas de três, e Luke Kornet somou 18 pts, 11 reb, 3 ast.\n\nNo Kings, Domantas Sabonis foi quase perfeito, com 8 de 9 nos arremessos: 20 pts, 12 reb, 8 ast.\n\n**E agora?** O Spurs vai a 15-3 e lidera a série da temporada contra o Kings por 3 a 0. O Kings cai para 2-15.",
+  "por_que_importa": "O Spurs chega a 15-3 e segue entre as melhores campanhas da liga; o Kings cai para 2-15.",
+  "notas": [
+    {
+      "jogador": "Stephon Castle",
+      "nota": 9,
+      "comentario": "28 pts e 11 ast, quase triplo-duplo"
+    },
+    {
+      "jogador": "Julian Champagnie",
+      "nota": 8,
+      "comentario": "Seis bolas de três"
+    },
+    {
+      "jogador": "Luke Kornet",
+      "nota": 7.5,
+      "comentario": "Duplo-duplo com 7 de 10"
+    },
+    {
+      "jogador": "Domantas Sabonis",
+      "nota": 7.5,
+      "comentario": "20 pts, 12 reb e 8 ast"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910045",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-24T11:50:32.726Z"
+}

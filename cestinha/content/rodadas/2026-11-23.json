@@ -1,0 +1,52 @@
+{
+  "titulo": "Blazers derrubam o 76ers, Shai faz 38 em vão e Suns vencem na prorrogação",
+  "subtitulo": "O resumo dos 10 jogos de segunda-feira, 23 de novembro",
+  "tipo": "resumo_rodada",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Trail Blazers",
+    "76ers",
+    "Pacers",
+    "Thunder",
+    "Suns",
+    "Pelicans",
+    "Timberwolves",
+    "Nets",
+    "Lakers",
+    "Jazz",
+    "Rockets",
+    "Clippers",
+    "Spurs",
+    "Kings",
+    "Grizzlies",
+    "Hornets",
+    "Bulls",
+    "Cavaliers",
+    "Bucks",
+    "Raptors"
+  ],
+  "jogadores": [
+    "Deni Avdija",
+    "Shai Gilgeous-Alexander",
+    "Pascal Siakam",
+    "Jalen Green",
+    "Jaden McDaniels",
+    "Luka Doncic",
+    "Kevin Durant",
+    "Stephon Castle",
+    "Ty Jerome",
+    "Jordan Hawkins",
+    "Tyler Herro"
+  ],
+  "fontes": [
+    "ESPN"
+  ],
+  "alertas": [],
+  "corpo": "E aí, aqui é o Cestinha. Segunda cheia, com 10 jogos: o 76ers levou uma surra em casa, o Thunder perdeu de novo e o Suns precisou de prorrogação.\n\n**Os destaques**\n- **Trail Blazers 128 a 111 76ers:** empate em 69 no intervalo e passeio do Blazers no segundo tempo. Deni Avdija fez 31 pts, 3 reb, 7 ast. Só a quarta derrota do 76ers (14-4).\n- **Pacers 125 a 120 Thunder:** Shai Gilgeous-Alexander fez 38 pts, 5 reb, 7 ast, mas Pascal Siakam decidiu com bola de três no fim. Thunder em 10-8.\n- **Suns 123 a 119 Pelicans (prorrogação):** 19 trocas de liderança e quarta vitória seguida do Suns, com Jalen Green (25 pts, 3 reb, 0 ast).\n\n**O resto da rodada**\n- **Timberwolves 142 a 116 Nets:** atropelo, com 30 de vantagem no auge.\n- **Lakers 109 a 94 Jazz:** troco dado no Jazz; Luka Doncic fez 28 pts, 4 reb, 8 ast. Lakers em 15-3.\n- **Rockets 116 a 104 Clippers:** Kevin Durant com 32 pts, 9 reb, 4 ast.\n- **Spurs 123 a 107 Kings:** Stephon Castle com 28 pts, 8 reb, 11 ast. Spurs em 15-3.\n- **Grizzlies 117 a 111 Hornets:** Ty Jerome acertou sete de três; quinta derrota seguida do Hornets.\n- **Bulls 122 a 108 Cavaliers:** banco de Chicago fez 63, com Jordan Hawkins em noite de melhor marca na temporada.\n- **Bucks 116 a 111 Raptors:** vitória rara de Milwaukee, com Tyler Herro (32 pts, 6 reb, 8 ast).\n\n**Destaque da noite:** Jaden McDaniels, com 34 pts, 10 reb, 6 ast, acertando 12 de 16 arremessos e 4 de 4 de três na vitória do Timberwolves. Shai fez mais pontos, mas perdeu e precisou de 30 arremessos.",
+  "ref": {
+    "tipo": "rodada",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-24T11:50:32.753Z"
+}

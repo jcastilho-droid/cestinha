@@ -1,0 +1,52 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "titulo": "Ty Jerome acerta sete de três e Grizzlies derrubam o Hornets",
+  "subtitulo": "Grizzlies 117 a 111 Hornets em Charlotte",
+  "importancia": 2,
+  "times": [
+    "Grizzlies",
+    "Hornets"
+  ],
+  "jogadores": [
+    "Ty Jerome",
+    "Cam Spencer",
+    "Christian Anderson",
+    "Naz Reid",
+    "Brandon Miller"
+  ],
+  "corpo": "O Grizzlies venceu o Hornets por 117 a 111 em Charlotte, num jogo com sete trocas de liderança. Memphis chegou a abrir 12 e segurou a reação no fim.\n\nTy Jerome foi o cestinha, com 29 pts, 4 reb, 3 ast e 7 de 12 de três. Cam Spencer somou 24 pts, 1 reb, 5 ast, com 11 de 11 nos lances livres. Pelo Hornets, Christian Anderson fez 25 pts, 2 reb, 3 ast, e Naz Reid teve 24 pts, 6 reb, 3 ast.\n\nO lance que encaminhou: Brandon Miller ainda acertou uma bola de três a 14 segundos do fim, mas Spencer fechou com dois lances livres.\n\n**E agora?** O Grizzlies vai a 13-5. O Hornets cai para 4-12, com cinco derrotas seguidas.",
+  "por_que_importa": "O Grizzlies chega a 13-5 e o Hornets perde a quinta seguida.",
+  "notas": [
+    {
+      "jogador": "Ty Jerome",
+      "nota": 9,
+      "comentario": "29 pts e sete bolas de três"
+    },
+    {
+      "jogador": "Cam Spencer",
+      "nota": 8,
+      "comentario": "24 pts em 21 minutos, perfeito na linha"
+    },
+    {
+      "jogador": "Christian Anderson",
+      "nota": 8,
+      "comentario": "25 pts com 9 de 12 nos arremessos"
+    },
+    {
+      "jogador": "Naz Reid",
+      "nota": 5.5,
+      "comentario": "24 pts, mas 8 de 25"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910036",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-24T11:50:32.719Z"
+}

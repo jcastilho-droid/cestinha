@@ -1,0 +1,52 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "titulo": "Banco do Bulls faz 63 e derruba o Cavaliers",
+  "subtitulo": "Bulls 122 a 108 Cavaliers em Chicago",
+  "importancia": 2,
+  "times": [
+    "Bulls",
+    "Cavaliers"
+  ],
+  "jogadores": [
+    "Jordan Hawkins",
+    "Buddy Hield",
+    "Tre Jones",
+    "Donovan Mitchell",
+    "James Harden"
+  ],
+  "corpo": "O Bulls bateu o Cavaliers por 122 a 108 em Chicago, com 63 pontos vindos do banco, segundo a ESPN. O jogo virou no segundo quarto, vencido por 45 a 20, e o Bulls chegou a abrir 24.\n\nJordan Hawkins foi o cestinha, com 19 pts, 1 reb, 2 ast, sua melhor marca na temporada. Buddy Hield fez 17 pts, 5 reb, 0 ast, e Tre Jones somou 16 pts, 4 reb, 9 ast.\n\nNo Cavaliers, Donovan Mitchell fez 28 pts, 3 reb, 5 ast e James Harden teve 21 pts, 6 reb, 5 ast. O time acertou só 8 de 31 de três e cometeu 18 erros.\n\n**E agora?** O Bulls vai a 5-12. O Cavaliers cai para 9-9.",
+  "por_que_importa": "O Cavaliers volta a ficar com 50% de aproveitamento (9-9); o Bulls chega a 5-12.",
+  "notas": [
+    {
+      "jogador": "Jordan Hawkins",
+      "nota": 8,
+      "comentario": "Melhor marca da temporada saindo do banco"
+    },
+    {
+      "jogador": "Tre Jones",
+      "nota": 7.5,
+      "comentario": "16 pts e 9 ast organizando o time"
+    },
+    {
+      "jogador": "Donovan Mitchell",
+      "nota": 6.5,
+      "comentario": "28 pts, mas 1 de 6 de três"
+    },
+    {
+      "jogador": "James Harden",
+      "nota": 6,
+      "comentario": "21 pts com 5 de 14"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910041",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-24T11:50:32.723Z"
+}

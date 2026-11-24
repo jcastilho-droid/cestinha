@@ -1,0 +1,53 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "titulo": "Suns vencem o Pelicans na prorrogação e chegam a quatro seguidas",
+  "subtitulo": "Suns 123 a 119 Pelicans em Nova Orleans",
+  "importancia": 3,
+  "times": [
+    "Suns",
+    "Pelicans"
+  ],
+  "jogadores": [
+    "Jalen Green",
+    "Devin Booker",
+    "Miles Bridges",
+    "Dillon Brooks",
+    "Jordan Poole",
+    "Zion Williamson"
+  ],
+  "corpo": "Foi brabo. Suns e Pelicans empataram em 109 no tempo normal, trocaram a liderança 19 vezes, e Phoenix venceu por 123 a 119 na prorrogação, em Nova Orleans.\n\nJalen Green foi o cestinha do Suns, com 25 pts, 3 reb, 0 ast. Devin Booker somou 22 pts, 5 reb, 8 ast e Miles Bridges teve 14 pts, 11 reb, 5 ast. Na prorrogação, vencida por 14 a 10, Dillon Brooks fechou com dois lances livres a 2,6 segundos do fim.\n\nNo Pelicans, Jordan Poole foi o cestinha do jogo, com 28 pts, 0 reb, 3 ast e 6 de 8 de três. Zion Williamson fez 25 pts, 4 reb, 0 ast.\n\n**E agora?** O Suns vai a 9-7, com quatro vitórias seguidas. O Pelicans cai para 5-14, com quatro derrotas seguidas.",
+  "por_que_importa": "O Suns chega à quarta vitória seguida (9-7); o Pelicans perde a quarta seguida.",
+  "notas": [
+    {
+      "jogador": "Jalen Green",
+      "nota": 8,
+      "comentario": "25 pts e saldo de +14"
+    },
+    {
+      "jogador": "Devin Booker",
+      "nota": 7.5,
+      "comentario": "22 pts e 8 ast no comando"
+    },
+    {
+      "jogador": "Miles Bridges",
+      "nota": 7.5,
+      "comentario": "Duplo-duplo e saldo de +22"
+    },
+    {
+      "jogador": "Jordan Poole",
+      "nota": 8,
+      "comentario": "28 pts com 9 de 12 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910042",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-24T11:50:32.724Z"
+}

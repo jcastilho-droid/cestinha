@@ -1,0 +1,31 @@
+{
+  "titulo": "Celtics em crise visitam o Wizards embalado",
+  "subtitulo": "Celtics x Wizards, 22h00",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Celtics",
+    "Wizards"
+  ],
+  "jogadores": [
+    "Jayson Tatum",
+    "Anthony Davis"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401909315",
+  "motivos": [
+    "Boa fase",
+    "Duelo de estrelas"
+  ],
+  "ficar_de_olho": "O duelo entre Jayson Tatum e Anthony Davis, as estrelas dos dois times.",
+  "corpo": "Terça tem só dois jogos, e a escolha é Washington. O Celtics chega com quatro derrotas seguidas, mas ainda é o terceiro do Leste, com 11-6 e saldo de +9.1 por jogo. Precisa estancar a sangria.\n\nDo outro lado, o Wizards vem embalado, com três vitórias seguidas, e é o nono do Leste com 7-11. Anthony Davis tem média de 25,1 pontos e 9,9 rebotes por jogo.\n\nPelo Celtics, Jayson Tatum aparece com 26,4 pontos, 6,9 rebotes e 6,7 assistências de média. Crise contra boa fase: quem leva?",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-24"
+  },
+  "escrito_em": "2026-11-24T11:50:32.751Z"
+}

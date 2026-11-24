@@ -1,0 +1,52 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "titulo": "Deni Avdija faz 31 e Blazers atropelam o 76ers no segundo tempo",
+  "subtitulo": "Trail Blazers 128 a 111 76ers na Filadélfia",
+  "importancia": 3,
+  "times": [
+    "Trail Blazers",
+    "76ers"
+  ],
+  "jogadores": [
+    "Deni Avdija",
+    "Donovan Clingan",
+    "Jrue Holiday",
+    "LeBron James",
+    "Tyrese Maxey"
+  ],
+  "corpo": "O jogo da noite não decepcionou para o Trail Blazers. Empatado em 69 no intervalo, o Blazers venceu o segundo tempo por 59 a 42 e bateu o 76ers por 128 a 111, na Filadélfia.\n\nDeni Avdija foi o cestinha, com 31 pts, 3 reb, 7 ast e 5 bolas de três. Donovan Clingan dominou o garrafão: 15 pts, 18 reb, 5 ast, com 7 de 8. Jrue Holiday somou 18 pts, 2 reb, 5 ast. O Blazers acertou 19 de três e ganhou o rebote por 49 a 33.\n\nNo 76ers, LeBron James fez 23 pts, 6 reb, 3 ast e Tyrese Maxey teve 22 pts, 2 reb, 5 ast.\n\n**E agora?** O 76ers sofre só a quarta derrota e fica em 14-4. O Blazers vai a 11-6.",
+  "por_que_importa": "O Blazers chega a 11-6 e impõe só a quarta derrota ao 76ers, dono da melhor campanha do Leste.",
+  "notas": [
+    {
+      "jogador": "Deni Avdija",
+      "nota": 9,
+      "comentario": "31 pts e 7 ast comandando a virada"
+    },
+    {
+      "jogador": "Donovan Clingan",
+      "nota": 9,
+      "comentario": "18 rebotes e 7 de 8 nos arremessos"
+    },
+    {
+      "jogador": "LeBron James",
+      "nota": 6.5,
+      "comentario": "23 pts eficientes, mas sumiu no segundo tempo"
+    },
+    {
+      "jogador": "Tyrese Maxey",
+      "nota": 5.5,
+      "comentario": "22 pts com saldo de -23"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910037",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-24T11:50:32.720Z"
+}

@@ -1,0 +1,51 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "titulo": "Luka Doncic faz 28 e Lakers dão o troco no Jazz",
+  "subtitulo": "Lakers 109 a 94 Jazz em Los Angeles",
+  "importancia": 3,
+  "times": [
+    "Lakers",
+    "Jazz"
+  ],
+  "jogadores": [
+    "Luka Doncic",
+    "Jake LaRavia",
+    "Walker Kessler",
+    "Kyle Filipowski"
+  ],
+  "corpo": "Cinco dias depois de perder para o Jazz em casa, segundo a ESPN, o Lakers deu o troco: 109 a 94 em Los Angeles.\n\nLuka Doncic foi o cestinha, com 28 pts, 4 reb, 8 ast, mesmo errando bastante de fora (3 de 14 de três). Jake LaRavia somou 15 pts, 10 reb, 1 ast, e Walker Kessler fez 10 pts, 12 reb, 0 ast.\n\nNo Jazz, Kyle Filipowski fez 21 pts, 12 reb, 4 ast. O time acertou só 6 de 32 de três e não teve como acompanhar no último quarto, perdido por 31 a 17.\n\n**E agora?** O Lakers vai a 15-3, na liderança da divisão Pacífico, e fecha a série da temporada com 2 a 1. O Jazz cai para 3-16.",
+  "por_que_importa": "O Lakers chega a 15-3, segue no topo do Pacífico e vence a série da temporada contra o Jazz.",
+  "notas": [
+    {
+      "jogador": "Luka Doncic",
+      "nota": 7.5,
+      "comentario": "28 pts e 8 ast, apesar da mira torta"
+    },
+    {
+      "jogador": "Jake LaRavia",
+      "nota": 7.5,
+      "comentario": "Duplo-duplo com 6 de 10"
+    },
+    {
+      "jogador": "Walker Kessler",
+      "nota": 7,
+      "comentario": "12 reb e saldo de +16"
+    },
+    {
+      "jogador": "Kyle Filipowski",
+      "nota": 7,
+      "comentario": "21 pts e 12 reb na derrota"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910044",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-24T11:50:32.726Z"
+}
