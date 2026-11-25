@@ -1,12 +1,12 @@
 {
-  "atualizado_em": "2026-11-25T23:08:13.751Z",
+  "atualizado_em": "2026-11-25T23:59:24.267Z",
   "fonte": "ESPN",
   "jogos": [
     {
       "id": "401909317",
       "inicio_utc": "2026-11-25T22:00Z",
       "status": "em_andamento",
-      "periodo": 2,
+      "periodo": 3,
       "casa": {
         "id": "20",
         "sigla": "PHI",
@@ -14,7 +14,7 @@
         "nome_curto": "76ers",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "cor": "#1d428a",
-        "placar": 53,
+        "placar": 90,
         "campanha": "14-4"
       },
       "visitante": {
@@ -24,7 +24,7 @@
         "nome_curto": "Heat",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
         "cor": "#98002e",
-        "placar": 48,
+        "placar": 81,
         "campanha": "10-6"
       },
       "data_rodada": "2026-11-25",
