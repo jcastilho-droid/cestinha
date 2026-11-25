@@ -1,0 +1,53 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "titulo": "Jokic comanda e Nuggets vencem o Rockets num jogo de 32 trocas de liderança",
+  "subtitulo": "Nuggets ganham por 133 a 124 em Denver, apesar do triplo-duplo de Sengun",
+  "corpo": "Jogão em Denver. Foram 32 trocas de liderança, o Rockets entrou no último quarto vencendo por 102 a 99, mas o Nuggets fez 34 a 22 no período final e venceu por 133 a 124.\n\nNikola Jokic fez duplo-duplo com 26 pts, 7 reb, 11 ast, num time que distribuiu 36 assistências. Cameron Johnson (19 pts, 3 reb, 6 ast) e Christian Braun (19 pts, 5 reb, 3 ast) ajudaram.\n\nNo Rockets, Alperen Sengun fez triplo-duplo com 28 pts, 11 reb, 10 ast. Fred VanVleet somou 25 pts, 1 reb, 9 ast e Kevin Durant, 16 pts, 4 reb, 4 ast.\n\n**E agora?** O Nuggets vai a 9-5, com duas vitórias seguidas. O Rockets cai para 12-5 e fica a um jogo e meio do Spurs na Divisão Sudoeste.",
+  "importancia": 3,
+  "times": [
+    "Nuggets",
+    "Rockets"
+  ],
+  "jogadores": [
+    "Nikola Jokic",
+    "Cameron Johnson",
+    "Christian Braun",
+    "Alperen Sengun",
+    "Fred VanVleet",
+    "Kevin Durant"
+  ],
+  "por_que_importa": "A derrota deixa o Rockets um jogo e meio atrás do Spurs na Divisão Sudoeste.",
+  "notas": [
+    {
+      "jogador": "Nikola Jokic",
+      "nota": 9,
+      "comentario": "Duplo-duplo com 10 de 15 nos arremessos"
+    },
+    {
+      "jogador": "Christian Braun",
+      "nota": 8,
+      "comentario": "19 pts e 4 roubos de bola"
+    },
+    {
+      "jogador": "Alperen Sengun",
+      "nota": 8.5,
+      "comentario": "Triplo-duplo, mas saiu derrotado"
+    },
+    {
+      "jogador": "Fred VanVleet",
+      "nota": 7,
+      "comentario": "25 pts e 9 ast"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909312",
+    "data_rodada": "2026-11-20"
+  },
+  "escrito_em": "2026-11-25T21:28:30.907Z"
+}

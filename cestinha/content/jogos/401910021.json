@@ -1,0 +1,53 @@
+{
+  "titulo": "Towns castiga o ex-time e Knicks seguram reação do Timberwolves",
+  "subtitulo": "Knicks vencem por 102 a 99 fora de casa e chegam a três vitórias seguidas",
+  "corpo": "Foi mais apertado do que precisava. O Knicks chegou a abrir 19 pontos, fez 65 no primeiro tempo, mas marcou só 12 no último quarto e viu o Timberwolves encostar. Venceu por 102 a 99 fora de casa.\n\nKarl-Anthony Towns, contra o ex-time, fez duplo-duplo: 22 pts, 12 reb, 4 ast, com 3 tocos. Jalen Brunson somou 21 pts, 2 reb, 7 ast, e OG Anunoby teve 15 pts, 7 reb, 2 ast. A bola de três de Mikal Bridges a 3min26 do fim, para 102 a 91, acabou sendo a última cesta do Knicks e foi decisiva.\n\nNo Timberwolves, Jonathan Kuminga foi o cestinha da partida, com 23 pts, 3 reb, 3 ast. LaMelo Ball teve 15 pts, 8 reb, 8 ast, mas errou 15 de 21 arremessos.\n\n**E agora?** O Knicks vai a 9-6. O Timberwolves cai para 11-5, mas segue na liderança da Divisão Noroeste.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Knicks",
+    "Timberwolves"
+  ],
+  "jogadores": [
+    "Karl-Anthony Towns",
+    "Jalen Brunson",
+    "OG Anunoby",
+    "Mikal Bridges",
+    "Jonathan Kuminga",
+    "LaMelo Ball"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Knicks chega a três vitórias seguidas, e o Timberwolves vê a vantagem na Divisão Noroeste cair para meio jogo.",
+  "notas": [
+    {
+      "jogador": "Karl-Anthony Towns",
+      "nota": 8.5,
+      "comentario": "Duplo-duplo contra o ex-time, com 3 tocos"
+    },
+    {
+      "jogador": "Jalen Brunson",
+      "nota": 7.5,
+      "comentario": "21 pts e 7 ast, com 4 de 5 de três"
+    },
+    {
+      "jogador": "Jonathan Kuminga",
+      "nota": 7.5,
+      "comentario": "Cestinha do jogo com 23 pts e 3 tocos"
+    },
+    {
+      "jogador": "LaMelo Ball",
+      "nota": 6,
+      "comentario": "Quase triplo-duplo, mas 6 de 21 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910021",
+    "data_rodada": "2026-11-19"
+  },
+  "escrito_em": "2026-11-25T21:28:30.912Z"
+}
