@@ -83,7 +83,10 @@
       "experiencia": 12,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 16,
         "min": "32.6",
@@ -112,7 +115,7 @@
       "universidade": "Indiana",
       "pais": "England",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -229,7 +232,10 @@
       "experiencia": 10,
       "universidade": "Villanova",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "30.8",
@@ -1691,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-24T17:14:40.233Z"
+  "atualizado_em": "2026-11-25T00:01:24.022Z"
 }

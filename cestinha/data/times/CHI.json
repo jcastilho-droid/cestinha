@@ -145,7 +145,10 @@
       "experiencia": 7,
       "universidade": "Maryland",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "25.3",
@@ -1716,5 +1719,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-24T17:14:30.135Z"
+  "atualizado_em": "2026-11-25T00:01:14.545Z"
 }

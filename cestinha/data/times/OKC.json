@@ -199,7 +199,7 @@
       "universidade": "Michigan",
       "pais": "Spain",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -313,10 +313,7 @@
       "experiencia": 10,
       "universidade": "Texas A&M",
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "19.3",
@@ -460,7 +457,7 @@
       "universidade": "Arkansas",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1734,5 +1731,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-24T17:14:40.620Z"
+  "atualizado_em": "2026-11-25T00:01:24.804Z"
 }
