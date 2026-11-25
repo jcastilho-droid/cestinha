@@ -37,14 +37,21 @@ function conferirDados(t, jogos) {
   const texto = `${t.titulo}\n${t.subtitulo}\n${t.corpo}`;
 
   const placares = new Set();
+  const somar = (a, b) => { placares.add(`${a}-${b}`); placares.add(`${b}-${a}`); };
   for (const j of jogos) {
-    placares.add(`${j.casa.placar}-${j.visitante.placar}`);
-    placares.add(`${j.visitante.placar}-${j.casa.placar}`);
+    somar(j.casa.placar, j.visitante.placar);
+    // placares parciais que também vêm dos dados: fim de cada quarto e as últimas cestas do jogo
+    let c = 0; let v = 0;
+    (j.casa.parciais || []).forEach((pc, i) => { c += Number(pc) || 0; v += Number(j.visitante.parciais?.[i]) || 0; somar(c, v); });
+    for (const l of j.lances_finais || []) {
+      const m = /^(\d+)-(\d+)$/.exec(String(l.placar || ''));
+      if (m) somar(Number(m[1]), Number(m[2]));
+    }
   }
   for (const m of texto.matchAll(/\b(\d{2,3})\s*(?:a|x|×|–|-)\s*(\d{2,3})\b/g)) {
     const [x, y] = [Number(m[1]), Number(m[2])];
     if (x < 60 || y < 60) continue; // não é placar de jogo (ex.: campanha 11-13)
-    if (!placares.has(`${x}-${y}`)) a.push(`Placar "${m[0]}" não bate com os dados.`);
+    if (!placares.has(`${x}-${y}`)) a.push(`Placar "${m[0]}" não bate com os dados (nem final, nem fim de quarto, nem últimas cestas).`);
   }
 
   const jogadores = jogos.flatMap((j) => [...j.casa.jogadores, ...j.visitante.jogadores]);
