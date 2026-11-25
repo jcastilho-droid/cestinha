@@ -1,0 +1,51 @@
+{
+  "titulo": "Cooper Flagg dá 12 assistências e Mavericks passeiam em Denver",
+  "subtitulo": "Mavericks 120 a 101 Nuggets em Denver, pela NBA Cup",
+  "corpo": "O Mavericks venceu o Nuggets por 120 a 101 em Denver, num jogo da NBA Cup. Dallas dominou o garrafão, com 68 pontos ali contra 38, e 35 pontos de contra-ataque. Chegou a abrir 22 de vantagem.\n\nCooper Flagg foi o cestinha com 24 pts, 6 reb, 12 ast, igualando seu recorde de assistências na carreira. P.J. Washington somou 14 pts, 6 reb, 0 ast e saldo de +32. Pelo Nuggets, Jamal Murray fez 20 pts, 2 reb, 3 ast, e Nikola Jokic ficou no duplo-duplo com 18 pts, 11 reb, 5 ast.\n\nDenver até reagiu com 38 pontos no terceiro quarto, mas Dallas respondeu com 36 no último e fechou a conta.\n\n**E agora?** O Mavericks vai a 11-7, com quatro vitórias seguidas, e fica bem posicionado no grupo da NBA Cup. O Nuggets cai para 10-6.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Mavericks",
+    "Nuggets"
+  ],
+  "jogadores": [
+    "Cooper Flagg",
+    "P.J. Washington",
+    "Jamal Murray",
+    "Nikola Jokic"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Mavericks emenda a quarta vitória seguida e fica em boa posição no grupo da NBA Cup.",
+  "notas": [
+    {
+      "jogador": "Cooper Flagg",
+      "nota": 9,
+      "comentario": "24 pts e 12 ast, recorde igualado"
+    },
+    {
+      "jogador": "P.J. Washington",
+      "nota": 7.5,
+      "comentario": "14 pts e +32 em quadra"
+    },
+    {
+      "jogador": "Jamal Murray",
+      "nota": 5.5,
+      "comentario": "20 pts, mas 6 de 17"
+    },
+    {
+      "jogador": "Nikola Jokic",
+      "nota": 6.5,
+      "comentario": "Duplo-duplo discreto para o padrão dele"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909316",
+    "data_rodada": "2026-11-24"
+  },
+  "escrito_em": "2026-11-25T11:49:09.537Z"
+}

@@ -1,0 +1,34 @@
+{
+  "titulo": "Tatum faz 41 e tira o Celtics da crise; Flagg e Pistons vencem fora",
+  "subtitulo": "O resumo dos 3 jogos de terça-feira, 24 de novembro",
+  "corpo": "Noite curta, só três jogos, e todos com vitória dos visitantes. O assunto foi Jayson Tatum, que fez 41 pontos e acabou com a sequência de quatro derrotas do Celtics.\n\n- **Celtics 131 a 116 Wizards**: Tatum e Paul George (28 pts, 4 reb, 9 ast) resolveram cedo; Anthony Davis fez 33 pts, 13 reb, 1 ast em vão.\n- **Mavericks 120 a 101 Nuggets**: Cooper Flagg comandou com 24 pts, 6 reb, 12 ast, e Dallas emendou a quarta vitória seguida em Denver.\n- **Pistons 104 a 86 Magic**: mesmo sem Cade Cunningham, Detroit venceu com 21 pts, 4 reb, 0 ast de Isaiah Joe. Desmond Bane também fez 21 pts, 1 reb, 5 ast pelo Magic.\n\n**Destaque da noite:** Jayson Tatum, com 41 pts, 6 reb, 8 ast. Foi brabo: 28 só no primeiro tempo.",
+  "tipo": "resumo_rodada",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Celtics",
+    "Wizards",
+    "Mavericks",
+    "Nuggets",
+    "Pistons",
+    "Magic"
+  ],
+  "jogadores": [
+    "Jayson Tatum",
+    "Paul George",
+    "Anthony Davis",
+    "Cooper Flagg",
+    "Isaiah Joe",
+    "Desmond Bane",
+    "Cade Cunningham"
+  ],
+  "fontes": [
+    "ESPN"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "rodada",
+    "data_rodada": "2026-11-24"
+  },
+  "escrito_em": "2026-11-25T11:49:09.561Z"
+}

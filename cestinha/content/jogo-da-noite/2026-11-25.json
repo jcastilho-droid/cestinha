@@ -1,0 +1,31 @@
+{
+  "titulo": "O Heat de sete vitórias seguidas encara o líder do Leste",
+  "subtitulo": "Heat x 76ers, 19h00",
+  "corpo": "Quarta tem sete jogos, e a escolha é na Filadélfia. O Heat chega voando: sete vitórias seguidas, 8-2 nos últimos dez e 10-6 na campanha, sexto do Leste.\n\nDo outro lado está o 76ers, dono da melhor campanha da conferência, com 14-4, vindo de uma derrota.\n\nE tem duelo de estrelas: Giannis Antetokounmpo aparece com médias de 28.2 pts, 12.6 reb e 5.5 ast por jogo pelo Heat. Tyrese Maxey responde com 25.7 pts, 3.2 reb e 5.6 ast. O Heat segue embalado ou o líder freia a sequência?",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Heat",
+    "76ers"
+  ],
+  "jogadores": [
+    "Giannis Antetokounmpo",
+    "Tyrese Maxey"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401909317",
+  "motivos": [
+    "Boa fase",
+    "Duelo de estrelas"
+  ],
+  "ficar_de_olho": "O duelo entre Giannis Antetokounmpo e Tyrese Maxey, as estrelas dos dois times.",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-25"
+  },
+  "escrito_em": "2026-11-25T11:49:09.561Z"
+}

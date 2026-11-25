@@ -1,0 +1,52 @@
+{
+  "titulo": "Tatum faz 41 e Celtics encerram jejum de quatro derrotas",
+  "subtitulo": "Celtics 131 a 116 Wizards em Washington",
+  "corpo": "E aí, aqui é o Cestinha. O Celtics bateu o Wizards por 131 a 116 em Washington e acabou com a sequência de quatro derrotas. O jogo foi decidido no segundo quarto: 46 a 21 para Boston, que chegou a abrir 34 de vantagem.\n\nJayson Tatum foi o cestinha com 41 pts, 6 reb, 8 ast, 28 deles no primeiro tempo. Paul George somou 28 pts, 4 reb, 9 ast, com 6 de 9 de três, e Neemias Queta fez 21 pts, 5 reb, 2 ast acertando 9 de 11. Pelo Wizards, Anthony Davis teve 33 pts, 13 reb, 1 ast.\n\nO Wizards fez 40 pontos no terceiro quarto e chegou a encostar, mas Baylor Scheierman acertou duas bolas de três no fim.\n\n**E agora?** O Celtics vai a 12-6, segundo da Divisão do Atlântico. O Wizards cai para 7-12.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Celtics",
+    "Wizards"
+  ],
+  "jogadores": [
+    "Jayson Tatum",
+    "Paul George",
+    "Neemias Queta",
+    "Anthony Davis",
+    "Baylor Scheierman"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Celtics encerra a sequência de quatro derrotas e volta a 12-6.",
+  "notas": [
+    {
+      "jogador": "Jayson Tatum",
+      "nota": 9.5,
+      "comentario": "41 pts, 28 só no primeiro tempo"
+    },
+    {
+      "jogador": "Paul George",
+      "nota": 8.5,
+      "comentario": "28 pts, 9 ast e +34 em quadra"
+    },
+    {
+      "jogador": "Neemias Queta",
+      "nota": 8,
+      "comentario": "21 pts com 9 de 11 nos arremessos"
+    },
+    {
+      "jogador": "Anthony Davis",
+      "nota": 7.5,
+      "comentario": "33 pts e 13 reb na derrota"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909315",
+    "data_rodada": "2026-11-24"
+  },
+  "escrito_em": "2026-11-25T11:49:09.535Z"
+}

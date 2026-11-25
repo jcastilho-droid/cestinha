@@ -1,0 +1,52 @@
+{
+  "titulo": "Sem Cade, Pistons atropelam o Magic com Isaiah Joe inspirado",
+  "subtitulo": "Pistons 104 a 86 Magic em Orlando, pela NBA Cup",
+  "corpo": "Mesmo sem Cade Cunningham, fora com dores no joelho direito, o Pistons venceu o Magic por 104 a 86 em Orlando, num jogo da NBA Cup. Detroit virou no segundo quarto (32 a 14 na parcial) e não largou mais, chegando a abrir 18.\n\nIsaiah Joe dividiu o posto de cestinha com 21 pts, 4 reb, 0 ast, acertando 5 bolas de três. Daniss Jenkins fez duplo-duplo com 15 pts, 4 reb, 10 ast. Pelo Magic, Desmond Bane também anotou 21 pts, 1 reb, 5 ast, e Franz Wagner teve 20 pts, 9 reb, 6 ast, mas o time cometeu 20 erros.\n\nO lance que matou: Isaiah Joe meteu duas bolas de três nos últimos quatro minutos e fechou a porta.\n\n**E agora?** O Pistons vai a 11-6 e lidera a Divisão Central. O Magic cai para 7-10, com duas derrotas seguidas.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Pistons",
+    "Magic"
+  ],
+  "jogadores": [
+    "Isaiah Joe",
+    "Daniss Jenkins",
+    "Desmond Bane",
+    "Franz Wagner",
+    "Cade Cunningham"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Pistons chega a 11-6 e segue no topo da Divisão Central mesmo sem Cade Cunningham.",
+  "notas": [
+    {
+      "jogador": "Isaiah Joe",
+      "nota": 8.5,
+      "comentario": "21 pts e cinco bolas de três"
+    },
+    {
+      "jogador": "Daniss Jenkins",
+      "nota": 8,
+      "comentario": "Duplo-duplo com 10 assistências no lugar de Cade"
+    },
+    {
+      "jogador": "Desmond Bane",
+      "nota": 6.5,
+      "comentario": "21 pts com 8 de 13, mas -20"
+    },
+    {
+      "jogador": "Franz Wagner",
+      "nota": 6,
+      "comentario": "Quase triplo-duplo, mas 0 de 5 de três"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909314",
+    "data_rodada": "2026-11-24"
+  },
+  "escrito_em": "2026-11-25T11:49:09.534Z"
+}
