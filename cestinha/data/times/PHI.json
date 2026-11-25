@@ -332,7 +332,7 @@
       "numero": "00",
       "posicao": "Armador",
       "posicao_sigla": "G",
-      "idade": 20,
+      "idade": 21,
       "altura_m": "1.91",
       "peso_kg": 81,
       "experiencia": 0,
@@ -1691,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-25T06:11:25.540Z"
+  "atualizado_em": "2026-11-25T12:17:41.517Z"
 }
