@@ -1,12 +1,12 @@
 {
-  "atualizado_em": "2026-11-24T07:36:34.089Z",
+  "atualizado_em": "2026-11-25T01:32:34.544Z",
   "fonte": "ESPN",
   "jogos": [
     {
       "id": "401909314",
       "inicio_utc": "2026-11-25T00:00Z",
-      "status": "agendado",
-      "periodo": 0,
+      "status": "em_andamento",
+      "periodo": 3,
       "casa": {
         "id": "19",
         "sigla": "ORL",
@@ -14,7 +14,7 @@
         "nome_curto": "Magic",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
         "cor": "#0150b5",
-        "placar": 0,
+        "placar": 45,
         "campanha": "7-9"
       },
       "visitante": {
@@ -24,7 +24,7 @@
         "nome_curto": "Pistons",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
         "cor": "#1d428a",
-        "placar": 0,
+        "placar": 60,
         "campanha": "10-6"
       },
       "data_rodada": "2026-11-24",
@@ -33,8 +33,8 @@
     {
       "id": "401909315",
       "inicio_utc": "2026-11-25T01:00Z",
-      "status": "agendado",
-      "periodo": 0,
+      "status": "em_andamento",
+      "periodo": 1,
       "casa": {
         "id": "27",
         "sigla": "WSH",
@@ -42,7 +42,7 @@
         "nome_curto": "Wizards",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
         "cor": "#e31837",
-        "placar": 0,
+        "placar": 16,
         "campanha": "7-11"
       },
       "visitante": {
@@ -52,7 +52,7 @@
         "nome_curto": "Celtics",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
         "cor": "#008348",
-        "placar": 0,
+        "placar": 22,
         "campanha": "11-6"
       },
       "data_rodada": "2026-11-24",
