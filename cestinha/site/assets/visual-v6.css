@@ -1,0 +1,59 @@
+
+/* Cestinha V6 — camadas visuais responsivas */
+.carta .carta-arte{position:relative;min-height:250px;padding:22px 6px 0;overflow:hidden;background:radial-gradient(ellipse at 50% 86%,color-mix(in srgb,var(--c1) 43%,transparent),transparent 72%);}
+.carta .carta-arte .v6-carta-foto{display:block;position:relative;width:100%;max-width:260px;height:235px;margin:0 auto;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 10px 12px #0009);}
+.carta .carta-logo{z-index:3;}
+.dn-corpo .v6-destaque-foto{width:115px;height:126px;object-fit:contain;object-position:center bottom;flex:none;}
+.lider{position:relative;overflow:hidden;min-height:142px;padding-right:108px;}
+.lider .v6-lider-foto{position:absolute;right:1px;bottom:0;width:104px;height:130px;object-fit:contain;object-position:center bottom;pointer-events:none;}
+.lider .lider-cat,.lider .lider-valor,.lider .lider-nome{position:relative;z-index:2;text-shadow:0 2px 7px #070d18;}
+.atleta:has(.v6-elenco-foto){grid-template-columns:60px 52px minmax(0,1fr) auto;}
+.atleta .v6-elenco-foto{width:60px;height:65px;object-fit:contain;object-position:center bottom;flex:none;align-self:end;}
+.card-jogo .card-arena{height:186px;position:relative;overflow:hidden;}
+.card-jogo .card-arena .v6-jogo-foto{position:absolute;right:0;bottom:0;width:65%;height:100%;object-fit:contain;object-position:right bottom;z-index:1;filter:drop-shadow(0 7px 11px #050a12a8);}
+.card-jogo .card-arena .v6-hero-label{position:absolute;top:10px;left:10px;z-index:2;max-width:62%;padding:7px 9px;font:800 10px/1.35 var(--corpo);border-radius:8px;background:#121d2ad9;border:1px solid #fa984f88;color:#ffd2aa;}
+.v6-controls{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:12px 0 16px;}
+.v6-controls p{margin:0;color:#b3c1d0;font-size:13px;}
+.v6-controls button,.v6-tabs button,.v6-picks button,.v6-focus-picks button{border:1px solid #3e4e62;color:#e8f0f8;background:#1b2736;border-radius:10px;padding:10px 13px;font-weight:700;font-size:12px;cursor:pointer;}
+.v6-controls button[aria-pressed=true],.v6-tabs button[aria-selected=true],.v6-picks button[aria-pressed=true],.v6-focus-picks button[aria-pressed=true]{background:#ff7a1a;color:#141921;border-color:#ff7a1a;}
+.v6-controls button:focus-visible,.v6-tabs button:focus-visible,.v6-picks button:focus-visible,.v6-focus-picks button:focus-visible,.v6-zone select:focus-visible{outline:3px solid #ffbc82;outline-offset:3px;}
+.v6-hidden{display:none!important;}
+.v6-zone,.v6-focus{margin:22px 0;padding:22px;border-radius:20px;border:1px solid #324255;background:linear-gradient(145deg,#182738,#111923);overflow:hidden;}
+.v6-eyebrow{font-size:11px;font-weight:800;letter-spacing:1.6px;color:#ffad71;}
+.v6-zone h2,.v6-focus h2{font:800 clamp(30px,4vw,49px)/1.04 var(--titulo);color:#fff;margin:9px 0;}
+.v6-zone p,.v6-focus p{color:#bdcad9;font-size:13px;line-height:1.5;}
+.v6-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0;}
+.v6-pane[hidden]{display:none!important;}
+.v6-watch{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(220px,.85fr);gap:15px;}
+.v6-feature{min-height:250px;padding:23px;display:flex;flex-direction:column;justify-content:center;gap:12px;background:linear-gradient(145deg,#372b3a,#172539);border:1px solid #48556c;border-radius:16px;}
+.v6-feature strong{color:#fff;font:800 clamp(26px,3.5vw,42px)/1.08 var(--titulo);}
+.v6-feature a,.v6-focus a{color:#ffc08c;font-weight:800;}
+.v6-picks{display:grid;gap:8px;align-content:start;max-height:340px;overflow:auto;}
+.v6-picks button{text-align:left;display:flex;justify-content:space-between;gap:8px;align-items:center;}
+.v6-picks button small{display:block;font-weight:400;opacity:.78;margin-top:4px;}
+.v6-selects{display:flex;gap:12px;align-items:end;margin:16px 0;}
+.v6-selects label{flex:1;color:#c5d1de;font-weight:700;font-size:12px;}
+.v6-selects select{display:block;width:100%;margin-top:6px;padding:12px;border-radius:9px;background:#121d2a;color:#fff;border:1px solid #45556a;}
+.v6-versus{font:800 24px var(--titulo);color:#ff8e35;}
+.v6-duel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.v6-duel-card{position:relative;overflow:hidden;min-height:200px;padding:15px;background:linear-gradient(135deg,#30435f,#111824);border:1px solid #3d506a;border-radius:14px;}
+.v6-duel-card img{position:absolute;right:0;bottom:0;width:52%;height:96%;object-fit:contain;object-position:right bottom;}
+.v6-duel-card strong,.v6-duel-card span{display:block;position:relative;z-index:1;max-width:67%;text-shadow:0 2px 7px #08111f;}
+.v6-duel-card strong{font:800 28px/1.1 var(--titulo);color:#fff;}
+.v6-duel-card span{font-size:12px;color:#c4d4e5;margin-top:8px;}
+.v6-bars{grid-column:1/-1;background:#0e1723;border-radius:12px;padding:13px;}
+.v6-barrow{display:grid;grid-template-columns:30px 1fr 44px 1fr 30px;align-items:center;gap:8px;margin:12px 0;}
+.v6-barrow label{font-size:11px;font-weight:800;color:#acbdd0;text-align:center;}
+.v6-bar{height:9px;border-radius:6px;background:#2c3b4f;overflow:hidden;}
+.v6-bar i{display:block;height:100%;border-radius:6px;background:#ff8732;}
+.v6-bar.right i{background:#90aaff;}
+.v6-focus{display:grid;grid-template-columns:1fr 1fr;position:relative;min-height:325px;}
+.v6-focus .v6-focus-image{position:absolute;right:5%;bottom:0;width:40%;height:95%;object-fit:contain;object-position:center bottom;}
+.v6-focus-content{z-index:1;position:relative;}
+.v6-focus-name{font:800 41px/1.1 var(--titulo);color:#fff;display:block;}
+.v6-focus-stats{display:flex;flex-wrap:wrap;gap:6px;margin:15px 0;}
+.v6-focus-stats span{background:#28394e;color:#fff;border-radius:8px;padding:8px 10px;font-weight:800;font-size:12px;}
+.v6-focus-picks{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px;}
+body.sem-spoiler .v6-feature strong,body.sem-spoiler .v6-feature p,body.sem-spoiler .v6-picks small,body.sem-spoiler .v6-duel,body.sem-spoiler .v6-focus-stats{filter:blur(8px);}
+@media(max-width:730px){.v6-watch{grid-template-columns:1fr}.v6-focus{grid-template-columns:1fr;min-height:280px}.v6-focus .v6-focus-image{width:46%;right:-2%}.carta .carta-arte{min-height:183px;padding-top:17px}.carta .carta-arte .v6-carta-foto{height:175px}.card-jogo .card-arena{height:155px}.lider{min-height:110px;padding-right:78px}.lider .v6-lider-foto{height:100px;width:78px}}
+@media(max-width:440px){.v6-zone,.v6-focus{padding:14px}.v6-selects{gap:6px}.v6-duel-card{min-height:158px;padding:10px}.v6-duel-card strong{font-size:21px}.v6-barrow{grid-template-columns:25px 1fr 35px 1fr 25px;gap:5px}.v6-focus .v6-focus-image{opacity:.8}}

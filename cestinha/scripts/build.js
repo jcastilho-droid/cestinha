@@ -108,6 +108,8 @@ ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonica
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${raiz}/assets/estilo.css?v=${VERSAO}">
 <script src="${raiz}/assets/efeitos.js?v=${VERSAO}" defer></script>
+<link rel="stylesheet" href="${raiz}/assets/visual-v6.css?v=${VERSAO}">
+<script src="${raiz}/assets/visual-v6.js?v=${VERSAO}" defer></script>
 </head>
 <body${tema ? ` style="${tema}"` : ''}>
 <div class="fundo-deco" aria-hidden="true">
@@ -212,8 +214,9 @@ function cardJogo(j, raiz) {
   const tag = temPagina ? 'a' : 'div';
   const href = temPagina ? ` href="${raiz}/jogo/${j.id}.html"` : '';
   const epico = selos.some((s) => s.epico);
+  const protagonista = protagonistaJogo(j);
   return `<${tag} class="card-jogo${epico ? ' epico' : ''}"${href} data-luz data-times="${esc(j.visitante.sigla)} ${esc(j.casa.sigla)}" style="--c1:${cor(j.visitante)};--c2:${cor(j.casa)}">
-    ${j.arena?.foto ? `<div class="card-arena" style="--foto:url('${esc(j.arena.foto)}')"><span>${icone('arena')} ${esc(j.arena.nome)}</span></div>` : ''}
+    ${j.arena?.foto ? `<div class="card-arena" style="--foto:url('${esc(j.arena.foto)}')"><span>${icone('arena')} ${esc(j.arena.nome)}</span>${protagonista ? `${fotoPessoa(protagonista.nome, 'v6-jogo-foto')}<b class="v6-hero-label">EM DESTAQUE · ${esc(protagonista.nome)}</b>` : ''} </div>` : ''}
     <div class="card-topo"><span class="situacao">${esc(situacao(j))}<em>${esc(dataHoraCurta(j.inicio_utc))}</em></span><span class="tags">${selosEpicos(selos, 2)}</span></div>
     ${linhaTime(j.visitante, final)}
     ${linhaTime(j.casa, final)}
@@ -226,7 +229,7 @@ function cardDestaque(lideres, raiz) {
   return `<a class="destaque-noite" data-tilt href="${raiz}/jogo/${p.jogo}.html" style="--c1:${cor(p.time)}">
     <div class="dn-rotulo">${icone('coroa')} Destaque da noite</div>
     <div class="dn-corpo">
-      ${logo(p.time, 56)}
+      ${fotoPessoa(p.nome, 'v6-destaque-foto') || logo(p.time, 56)}
       <div><p class="dn-nome">${esc(p.nome)}</p><p class="dn-time">${esc(p.time.nome)}</p></div>
     </div>
     <div class="dn-numeros">
@@ -236,6 +239,24 @@ function cardDestaque(lideres, raiz) {
       <div class="dn-fg"><b>${esc(p.fg)}</b><span>ARREM.</span></div>
     </div>
   </a>`;
+}
+
+function fotoPessoa(nome, classe = 'v6-foto') {
+  const normalizar = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+  const alvo = normalizar(nome);
+  let id = '';
+  if (typeof times !== 'undefined') for (const time of times.values()) {
+    const pessoa = (time.elenco || []).find(p => normalizar(p.nome) === alvo);
+    if (pessoa && /^\d+$/.test(String(pessoa.id))) { id = String(pessoa.id); break; }
+  }
+  return id ? `<img class="${classe}" src="https://a.espncdn.com/i/headshots/nba/players/full/${id}.png" alt="Retrato de ${esc(nome)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : '';
+}
+
+function protagonistaJogo(j) {
+  const candidatos = [...(j.casa?.jogadores || []), ...(j.visitante?.jogadores || [])]
+    .filter(p => Number.isFinite(Number(p.pts)) && fotoPessoa(p.nome))
+    .sort((a, b) => Number(b.pts) - Number(a.pts));
+  return candidatos[0] || null;
 }
 
 function numeroDaCamisa(timeId, nome) {
@@ -266,7 +287,7 @@ function blocoDecisivos(lideres, raiz) {
       return `<a class="carta" href="${raiz}/jogo/${p.jogo}.html" style="--c1:${c1};--c2:${c2}" data-tilt>
         <span class="carta-pos">#${i + 1}</span>
         <span class="carta-gs"><b>${p.gs.toFixed(1)}</b><small>GAME SCORE</small></span>
-        <div class="carta-arte">${camisaSvg(c1, c2, numeroDaCamisa(t.id, p.nome))}<span class="carta-logo">${logo(t, 34)}</span></div>
+        <div class="carta-arte">${fotoPessoa(p.nome, 'v6-carta-foto') || camisaSvg(c1, c2, numeroDaCamisa(t.id, p.nome))}<span class="carta-logo">${logo(t, 34)}</span></div>
         <div class="carta-info">
           <b class="carta-nome">${esc(p.nome)}</b>
           <span class="carta-time">${esc(t.nome_curto)}</span>
@@ -287,6 +308,7 @@ function blocoLideres(lideres, raiz) {
       <span class="lider-cat">${esc(c.rotulo)}</span>
       <span class="lider-valor">${esc(c.valor(c.p))}</span>
       <span class="lider-nome">${logo(c.p.time, 18)}${esc(c.p.nome)}</span>
+      ${fotoPessoa(c.p.nome, 'v6-lider-foto')}
     </a>`).join('')}
   </div>
 </section>`;
@@ -678,6 +700,7 @@ function paginaTime(t) {
     const m = p.medias;
     const les = p.lesao?.status ? `<span class="lesao">${esc(STATUS_LESAO[p.lesao.status] || p.lesao.status)}</span>` : '';
     return `<div class="atleta" data-luz>
+      ${fotoPessoa(p.nome, 'v6-elenco-foto')}
       <span class="camisa">${esc(p.numero ?? '–')}</span>
       <div class="at-info">
         <b>${esc(p.nome)}</b>
