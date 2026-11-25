@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "7",
     "sigla": "DEN",
-    "posicao": 6,
+    "posicao": 7,
     "v": 10,
-    "d": 5,
-    "pct": ".667",
-    "atras": "3.5",
-    "sequencia": "W3",
-    "casa": "4-3",
+    "d": 6,
+    "pct": ".625",
+    "atras": "4",
+    "sequencia": "L1",
+    "casa": "4-4",
     "fora": "5-2",
     "ultimos10": "7-3",
-    "pontos_pro": "117.0",
-    "pontos_contra": "115.2",
-    "saldo": "+1.8"
+    "pontos_pro": "116.0",
+    "pontos_contra": "115.5",
+    "saldo": "+0.5"
   },
   "divisao": null,
   "tecnico": "David Adelman",
@@ -770,9 +770,12 @@
         "sigla": "DAL",
         "nome_curto": "Mavericks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 101,
+        "adversario": 120
+      },
+      "resultado": "D"
     },
     {
       "id": "401909334",
@@ -1673,5 +1676,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/den",
-  "atualizado_em": "2026-11-25T00:01:16.740Z"
+  "atualizado_em": "2026-11-25T06:11:19.335Z"
 }

@@ -13,7 +13,7 @@
   "classificacao": {
     "id": "18",
     "sigla": "NY",
-    "posicao": 4,
+    "posicao": 5,
     "v": 11,
     "d": 6,
     "pct": ".647",
@@ -28,7 +28,7 @@
   },
   "divisao": {
     "nome": "Atlântico",
-    "posicao": 2
+    "posicao": 3
   },
   "tecnico": "Mike Brown",
   "estatisticas": {
@@ -1697,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-25T00:01:24.022Z"
+  "atualizado_em": "2026-11-25T06:11:24.327Z"
 }

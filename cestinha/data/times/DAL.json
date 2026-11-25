@@ -14,17 +14,17 @@
     "id": "6",
     "sigla": "DAL",
     "posicao": 8,
-    "v": 10,
+    "v": 11,
     "d": 7,
-    "pct": ".588",
-    "atras": "4.5",
-    "sequencia": "W3",
+    "pct": ".611",
+    "atras": "4",
+    "sequencia": "W4",
     "casa": "7-2",
-    "fora": "3-5",
-    "ultimos10": "6-4",
-    "pontos_pro": "112.4",
-    "pontos_contra": "112.5",
-    "saldo": "-0.1"
+    "fora": "4-5",
+    "ultimos10": "7-3",
+    "pontos_pro": "112.8",
+    "pontos_contra": "111.8",
+    "saldo": "+1.0"
   },
   "divisao": null,
   "tecnico": "Dusty May",
@@ -108,10 +108,7 @@
       "experiencia": 8,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 15,
         "min": "30.8",
@@ -834,9 +831,12 @@
         "sigla": "DEN",
         "nome_curto": "Nuggets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 120,
+        "adversario": 101
+      },
+      "resultado": "V"
     },
     {
       "id": "401909332",
@@ -1709,5 +1709,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/dal",
-  "atualizado_em": "2026-11-25T00:01:16.285Z"
+  "atualizado_em": "2026-11-25T06:11:18.924Z"
 }

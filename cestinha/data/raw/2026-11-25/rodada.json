@@ -1,0 +1,241 @@
+{
+  "data_rodada": "2026-11-25",
+  "coletado_em": "2026-11-25T06:11:15.673Z",
+  "fonte": "ESPN",
+  "jogos": [
+    {
+      "id": "401909317",
+      "inicio_utc": "2026-11-25T22:00Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "20",
+        "sigla": "PHI",
+        "nome": "Philadelphia 76ers",
+        "nome_curto": "76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "cor": "#1d428a",
+        "placar": 0,
+        "campanha": "14-4"
+      },
+      "visitante": {
+        "id": "14",
+        "sigla": "MIA",
+        "nome": "Miami Heat",
+        "nome_curto": "Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "cor": "#98002e",
+        "placar": 0,
+        "campanha": "10-6"
+      }
+    },
+    {
+      "id": "401909318",
+      "inicio_utc": "2026-11-26T00:00Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "30",
+        "sigla": "CHA",
+        "nome": "Charlotte Hornets",
+        "nome_curto": "Hornets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+        "cor": "#008ca8",
+        "placar": 0,
+        "campanha": "4-12"
+      },
+      "visitante": {
+        "id": "4",
+        "sigla": "CHI",
+        "nome": "Chicago Bulls",
+        "nome_curto": "Bulls",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+        "cor": "#ce1141",
+        "placar": 0,
+        "campanha": "5-12"
+      }
+    },
+    {
+      "id": "401909319",
+      "inicio_utc": "2026-11-26T00:30Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "18",
+        "sigla": "NY",
+        "nome": "New York Knicks",
+        "nome_curto": "Knicks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "cor": "#1d428a",
+        "placar": 0,
+        "campanha": "11-6"
+      },
+      "visitante": {
+        "id": "5",
+        "sigla": "CLE",
+        "nome": "Cleveland Cavaliers",
+        "nome_curto": "Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "cor": "#860038",
+        "placar": 0,
+        "campanha": "9-9"
+      }
+    },
+    {
+      "id": "401909320",
+      "inicio_utc": "2026-11-26T00:30Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "25",
+        "sigla": "OKC",
+        "nome": "Oklahoma City Thunder",
+        "nome_curto": "Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "cor": "#007ac1",
+        "placar": 0,
+        "campanha": "10-8"
+      },
+      "visitante": {
+        "id": "16",
+        "sigla": "MIN",
+        "nome": "Minnesota Timberwolves",
+        "nome_curto": "Timberwolves",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "cor": "#266092",
+        "placar": 0,
+        "campanha": "13-5"
+      }
+    },
+    {
+      "id": "401909321",
+      "inicio_utc": "2026-11-26T01:00Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "29",
+        "sigla": "MEM",
+        "nome": "Memphis Grizzlies",
+        "nome_curto": "Grizzlies",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "cor": "#5d76a9",
+        "placar": 0,
+        "campanha": "13-5"
+      },
+      "visitante": {
+        "id": "12",
+        "sigla": "LAC",
+        "nome": "LA Clippers",
+        "nome_curto": "Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "cor": "#12173f",
+        "placar": 0,
+        "campanha": "4-12"
+      }
+    },
+    {
+      "id": "401909322",
+      "inicio_utc": "2026-11-26T01:00Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "15",
+        "sigla": "MIL",
+        "nome": "Milwaukee Bucks",
+        "nome_curto": "Bucks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+        "cor": "#00471b",
+        "placar": 0,
+        "campanha": "2-16"
+      },
+      "visitante": {
+        "id": "17",
+        "sigla": "BKN",
+        "nome": "Brooklyn Nets",
+        "nome_curto": "Nets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+        "cor": "#000000",
+        "placar": 0,
+        "campanha": "3-13"
+      }
+    },
+    {
+      "id": "401909323",
+      "inicio_utc": "2026-11-26T01:30Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "10",
+        "sigla": "HOU",
+        "nome": "Houston Rockets",
+        "nome_curto": "Rockets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "cor": "#ce0e2d",
+        "placar": 0,
+        "campanha": "13-5"
+      },
+      "visitante": {
+        "id": "21",
+        "sigla": "PHX",
+        "nome": "Phoenix Suns",
+        "nome_curto": "Suns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+        "cor": "#29127a",
+        "placar": 0,
+        "campanha": "9-7"
+      }
+    },
+    {
+      "id": "401909324",
+      "inicio_utc": "2026-11-26T03:00Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "9",
+        "sigla": "GS",
+        "nome": "Golden State Warriors",
+        "nome_curto": "Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "cor": "#fdb927",
+        "placar": 0,
+        "campanha": "9-8"
+      },
+      "visitante": {
+        "id": "23",
+        "sigla": "SAC",
+        "nome": "Sacramento Kings",
+        "nome_curto": "Kings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+        "cor": "#5a2d81",
+        "placar": 0,
+        "campanha": "2-15"
+      }
+    },
+    {
+      "id": "401909325",
+      "inicio_utc": "2026-11-26T03:00Z",
+      "status": "agendado",
+      "periodo": 0,
+      "casa": {
+        "id": "22",
+        "sigla": "POR",
+        "nome": "Portland Trail Blazers",
+        "nome_curto": "Trail Blazers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+        "cor": "#e03a3e",
+        "placar": 0,
+        "campanha": "11-6"
+      },
+      "visitante": {
+        "id": "24",
+        "sigla": "SA",
+        "nome": "San Antonio Spurs",
+        "nome_curto": "Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "cor": "#000000",
+        "placar": 0,
+        "campanha": "15-3"
+      }
+    }
+  ]
+}

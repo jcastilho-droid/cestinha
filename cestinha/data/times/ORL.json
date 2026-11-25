@@ -15,16 +15,16 @@
     "sigla": "ORL",
     "posicao": 8,
     "v": 7,
-    "d": 9,
-    "pct": ".438",
-    "atras": "6",
-    "sequencia": "L1",
-    "casa": "1-5",
+    "d": 10,
+    "pct": ".412",
+    "atras": "6.5",
+    "sequencia": "L2",
+    "casa": "1-6",
     "fora": "6-4",
     "ultimos10": "5-5",
-    "pontos_pro": "108.8",
-    "pontos_contra": "112.9",
-    "saldo": "-4.1"
+    "pontos_pro": "107.4",
+    "pontos_contra": "112.4",
+    "saldo": "-5.0"
   },
   "divisao": null,
   "tecnico": "Sean Sweeney",
@@ -773,9 +773,12 @@
         "sigla": "DET",
         "nome_curto": "Pistons"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 86,
+        "adversario": 104
+      },
+      "resultado": "D"
     },
     {
       "id": "401910046",
@@ -1662,5 +1665,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/orl",
-  "atualizado_em": "2026-11-25T00:01:25.324Z"
+  "atualizado_em": "2026-11-25T06:11:25.150Z"
 }

@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "8",
     "sigla": "DET",
-    "posicao": 5,
-    "v": 10,
+    "posicao": 4,
+    "v": 11,
     "d": 6,
-    "pct": ".625",
-    "atras": "3",
-    "sequencia": "L2",
+    "pct": ".647",
+    "atras": "2.5",
+    "sequencia": "W1",
     "casa": "3-3",
-    "fora": "7-3",
+    "fora": "8-3",
     "ultimos10": "5-5",
-    "pontos_pro": "113.4",
-    "pontos_contra": "108.6",
-    "saldo": "+4.8"
+    "pontos_pro": "112.8",
+    "pontos_contra": "107.2",
+    "saldo": "+5.6"
   },
   "divisao": {
     "nome": "Central",
@@ -833,9 +833,12 @@
         "sigla": "ORL",
         "nome_curto": "Magic"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 104,
+        "adversario": 86
+      },
+      "resultado": "V"
     },
     {
       "id": "401909327",
@@ -1722,5 +1725,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/det",
-  "atualizado_em": "2026-11-25T00:01:17.448Z"
+  "atualizado_em": "2026-11-25T06:11:19.729Z"
 }
