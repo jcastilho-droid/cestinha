@@ -7,6 +7,7 @@
 .lider{position:relative;overflow:hidden;min-height:142px;padding-right:108px;}
 .lider .v6-lider-foto{position:absolute;right:1px;bottom:0;width:104px;height:130px;object-fit:contain;object-position:center bottom;pointer-events:none;}
 .lider .lider-cat,.lider .lider-valor,.lider .lider-nome{position:relative;z-index:2;text-shadow:0 2px 7px #070d18;}
+.atleta:has(.v6-elenco-foto){grid-template-columns:60px 52px minmax(0,1fr) auto;}
 .atleta .v6-elenco-foto{width:60px;height:65px;object-fit:contain;object-position:center bottom;flex:none;align-self:end;}
 .card-jogo .card-arena{height:186px;position:relative;overflow:hidden;}
 .card-jogo .card-arena .v6-jogo-foto{position:absolute;right:0;bottom:0;width:65%;height:100%;object-fit:contain;object-position:right bottom;z-index:1;filter:drop-shadow(0 7px 11px #050a12a8);}
