@@ -537,7 +537,10 @@
       "experiencia": 2,
       "universidade": "Maryland",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 6,
         "min": "5.3",
@@ -1735,5 +1738,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/no",
-  "atualizado_em": "2026-11-25T12:17:39.302Z"
+  "atualizado_em": "2026-11-25T19:09:26.877Z"
 }
