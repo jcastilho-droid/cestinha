@@ -208,7 +208,8 @@ export function normalizarJogo(jogoBase, detalhe, dataRodada) {
     }))
     .filter(im => typeof im.url === 'string' && /^https:\/\/a\.espncdn\.com\//i.test(im.url))
     .filter(im => !im.altura || !im.largura || im.largura >= im.altura);
-  jogo.foto_jogo = fotosValidas[0]?.url || null;
+  jogo.fotos_jogo = [...new Set(fotosValidas.map(im => im.url))].slice(0, 3);
+  jogo.foto_jogo = jogo.fotos_jogo[0] || null;
   jogo.foto_jogo_verificada = true;
 
   // Manchete da matéria da ESPN (em inglês, só como referência de fonte)

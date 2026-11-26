@@ -376,7 +376,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     add({
       tipo:'RESUMO DA RODADA', titulo:resumo.titulo,
       subtitulo:resumo.subtitulo || 'O que aconteceu na NBA enquanto você dormia.',
-      href:raiz + '/rodada/' + dia + '.html', foto:palco?.foto_jogo || palco?.arena?.foto || '', fotoAcao:!!palco?.foto_jogo,
+      href:raiz + '/rodada/' + dia + '.html', fotosAcao:palco?.fotos_jogo || (palco?.foto_jogo ? [palco.foto_jogo] : []), fotoArena:palco?.arena?.foto || '',
       jogador:p?.nome || '', visitante:palco?.visitante, casa:palco?.casa,
       placar:'Resumo e principais histórias', data:dataPorExtenso(dia)
     });
@@ -392,26 +392,57 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
       tipo: tags.some(t=>t.epico) ? 'JOGO IMPERDÍVEL' :
         noticias.length === 0 ? 'JOGO EM DESTAQUE' : 'NA RODADA',
       titulo:texto.titulo,subtitulo:texto.subtitulo || placar,
-      href:raiz + '/jogo/' + j.id + '.html',foto:j.foto_jogo || j.arena?.foto || '',fotoAcao:!!j.foto_jogo,
+      href:raiz + '/jogo/' + j.id + '.html',fotosAcao:j.fotos_jogo || (j.foto_jogo ? [j.foto_jogo] : []),fotoArena:j.arena?.foto || '',
       jogador:p?.nome || '',visitante:j.visitante,casa:j.casa,
       placar, data:dataHoraCurta(j.inicio_utc)
     });
   }
   if (!noticias.length) return '';
+  // Fotografias de arquivo CC BY-SA 4.0 por Michael Barera. São imagens
+  // ilustrativas: nunca sugerimos que representam a partida da manchete.
+  // Se a ESPN fornecer fotografias da própria partida, essas têm prioridade.
+  const arquivosAcoes = [
+    'Orlando Magic vs. Milwaukee Bucks December 2024 24 (in-game action).jpg',
+    'Orlando Magic vs. Milwaukee Bucks December 2024 15 (in-game action).jpg',
+    'Cleveland Cavaliers vs. Milwaukee Bucks January 2024 21 (in-game action).jpg',
+    'Orlando Magic vs. Milwaukee Bucks December 2024 11 (in-game action).jpg',
+    'Orlando Magic vs. Milwaukee Bucks December 2024 23 (in-game action).jpg',
+    'Los Angeles Clippers vs. Milwaukee Bucks March 2024 5 (in-game action).jpg'
+  ].map(name => 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(name) + '?width=1100');
   const slide = (item,i) => {
-    const foto = item.foto ?
-      '<img class="noticia-arena-foto' + (item.fotoAcao ? ' noticia-foto-acao' : '') + '" src="' + esc(item.foto) +
-      '" alt="" loading="' + (i===0?'eager':'lazy') + '" decoding="async"' +
-      (i===0?' fetchpriority="high"':'') + ' onerror="this.remove()">' : '';
-    const retrato = item.jogador ? fotoPessoa(item.jogador,'noticia-jogador-foto') : '';
+    const fotosReais = [...new Set((item.fotosAcao || []).filter(x =>
+      typeof x === 'string' && /^https:\/\/a\.espncdn\.com\//i.test(x)))].slice(0,3);
+    const principal = fotosReais[0] || arquivosAcoes[(i * 2) % arquivosAcoes.length];
+    const secundaria = fotosReais[1] || arquivosAcoes[(i * 2 + 1) % arquivosAcoes.length];
+    const arena = fotosReais[2] || item.fotoArena || arquivosAcoes[(i * 2 + 2) % arquivosAcoes.length];
+    const ilustrativo = fotosReais.length < 2;
+    const galImg = (src,classe,prioridade='lazy') => '<img class="' + classe +
+      '" src="' + esc(src) + '" alt="" loading="' + prioridade +
+      '" decoding="async" onerror="this.style.opacity=0">';
+    const galeria = '<div class="noticia-galeria" aria-hidden="true">' +
+      '<div class="noticia-galeria-tile noticia-galeria-main">' +
+        galImg(principal,'noticia-galeria-img',''+(i===0?'eager':'lazy')) +
+      '</div><div class="noticia-galeria-lado">' +
+      '<div class="noticia-galeria-tile noticia-galeria-top">' +
+        galImg(secundaria,'noticia-galeria-img') + '</div>' +
+      '<div class="noticia-galeria-tile noticia-galeria-bottom">' +
+        galImg(arena,'noticia-galeria-img') +
+        (item.visitante && item.casa ?
+          '<div class="noticia-galeria-escudos">' +
+          logo(item.visitante,26) + '<span>×</span>' + logo(item.casa,26) + '</div>' : '') +
+      '</div></div>' +
+      (ilustrativo ? '<span class="noticia-galeria-aviso">Fotos de arquivo · ilustrativas</span>' : '') +
+      '</div>';
+    const fundo = item.fotoArena ?
+      '<img class="noticia-arena-foto" src="' + esc(item.fotoArena) +
+      '" alt="" loading="lazy" decoding="async" onerror="this.remove()">' : '';
     const duelo = item.visitante && item.casa ?
       '<span class="noticia-duelo">' +
       logo(item.visitante,35) + '<span>×</span>' + logo(item.casa,35) +
       '<b>' + esc(item.placar) + '</b></span>' : '';
-    return '<article class="noticia-slide"'+(i>0?' hidden':'')+' style="--noticia-cor1:'+
-      cor(item.visitante)+';--noticia-cor2:'+cor(item.casa)+'">' +
-      '<div class="noticia-background" aria-hidden="true">'+foto+'</div>' +
-      '<div class="noticia-jogador" aria-hidden="true">'+retrato+'</div>' +
+    return '<article class="noticia-slide noticia-slide-galeria"'+(i>0?' hidden':'')+
+      ' style="--noticia-cor1:'+cor(item.visitante)+';--noticia-cor2:'+cor(item.casa)+'">' +
+      '<div class="noticia-background" aria-hidden="true">'+fundo+'</div>' + galeria +
       '<a class="noticia-conteudo" href="'+esc(item.href)+'" aria-label="'+esc(item.tipo+' — '+item.titulo)+'">' +
       '<span class="noticia-tipo">'+esc(item.tipo)+'</span>' +
       '<span class="noticia-data">'+esc(item.data)+'</span>' +
@@ -444,6 +475,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     noticias.length+' destaques</span></div>' +
     '<div class="noticias-carrossel" data-cestinha-carrossel aria-roledescription="carrossel">' +
     '<div class="noticia-lista">'+noticias.map(slide).join('')+'</div>'+controles+'</div>' +
+    '<p class="noticia-creditos">Fotografias de arquivo ilustrativas: <a href="https://commons.wikimedia.org/wiki/Category:Orlando_Magic_at_Milwaukee_Bucks_(December_10,_2024)" target="_blank" rel="noopener noreferrer">Michael Barera / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> (recortes e ajustes de cor). Fotos da partida: ESPN, quando disponíveis.</p>' +
     (destaques?'<div class="noticia-minis" aria-label="Mais histórias da rodada">'+destaques+'</div>':'')+'</section>';
 }
 
