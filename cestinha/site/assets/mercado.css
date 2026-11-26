@@ -106,3 +106,72 @@
  .mercado-nota{padding:18px}
 }
 @media(max-width:370px){.mercado-card{grid-template-columns:105px minmax(0,1fr)}.mercado-card-body{padding:10px}.mercado-card h3{font-size:21px}.mercado-heading h1{font-size:44px}}
+
+
+/* Mercado v2 — fotos de acao em quadros separados (sem jogadores sobrepostos).
+   Os estilos sao exclusivos de mercado.html; logo e home nao mudam. */
+.mercado-feature{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);min-height:410px}
+.mercado-feature-copy{padding:31px 24px 31px 35px;gap:17px}
+.mercado-feature h2{font-size:clamp(39px,4.35vw,57px);line-height:1.015}
+.mercado-feature-copy>p{max-width:430px}
+.mercado-action-gallery{
+  position:relative;display:flex;flex-direction:column;gap:7px;
+  padding:16px 16px 29px;margin:0;min-width:0;
+  background:radial-gradient(circle at 80% 15%,#ff8b3440,transparent 49%),
+    linear-gradient(145deg,#22253b,#152336 85%);
+}
+.mercado-action-grid{display:grid;grid-template-columns:1.28fr .92fr;gap:8px;min-width:0;flex:1}
+.mercado-action-aside{display:grid;grid-template-rows:1.07fr .93fr;gap:8px;min-width:0}
+.mercado-action-tile{
+  position:relative;overflow:hidden;border:1px solid #64738c75;
+  border-radius:13px;min-width:0;min-height:0;
+  background:linear-gradient(135deg,#523a47,#1d3248 65%,#0d1e2d);
+}
+.mercado-action-tile img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:contrast(1.08) saturate(.93)}
+.mercado-action-main img{object-position:41% center}
+.mercado-action-secondary img{object-position:center 30%}
+.mercado-action-tile::after{
+ content:"";position:absolute;inset:0;pointer-events:none;
+ background:linear-gradient(0deg,#09152565,transparent 48%);
+}
+.mercado-action-court{
+ position:relative;overflow:hidden;display:flex;flex-direction:column;
+ justify-content:center;gap:9px;padding:14px;
+ border-radius:13px;border:1px solid #64738c75;
+ background:
+   linear-gradient(90deg,transparent 49.6%,#b4cce726 49.7% 50.3%,transparent 50.4%),
+   radial-gradient(circle at 50% 50%,transparent 0 31px,#acc5de32 32px 33px,transparent 34px),
+   linear-gradient(135deg,#1c2b3d,#0b1928);
+}
+.mercado-action-eyebrow{font-size:9px;letter-spacing:1.1px;font-weight:900;color:#ffae73}
+.mercado-action-court strong{font:900 clamp(19px,2vw,27px)/1.06 'Barlow Condensed',Impact,sans-serif;color:#fff}
+.mercado-action-court strong span{color:#ff9c4f}
+.mercado-action-logos{display:flex;align-items:center;gap:10px;background:#0b1320bf;
+  border:1px solid #7c88934d;width:max-content;max-width:100%;padding:6px 9px;border-radius:10px}
+.mercado-action-logos img{width:27px;height:27px;object-fit:contain}
+.mercado-action-gallery figcaption{
+  position:absolute;bottom:9px;left:16px;right:16px;
+  color:#adc0d6;font-size:10px;line-height:1.2;text-align:right;
+}
+@media(max-width:930px){
+ .mercado-feature{grid-template-columns:minmax(0,1fr)}
+ .mercado-action-gallery{height:335px}
+}
+@media(max-width:650px){
+ .mercado-feature-copy{padding:23px 19px 22px}
+ .mercado-feature h2{font-size:clamp(35px,9vw,49px)}
+ .mercado-action-gallery{height:295px;padding:11px 11px 27px}
+ .mercado-action-grid{grid-template-columns:1.2fr 1fr;gap:6px}
+ .mercado-action-aside{gap:6px}
+ .mercado-action-tile,.mercado-action-court{border-radius:10px}
+ .mercado-action-court{padding:9px;gap:5px}
+ .mercado-action-eyebrow{font-size:8px}
+ .mercado-action-court strong{font-size:clamp(16px,5vw,21px)}
+ .mercado-action-logos{gap:5px;padding:5px}
+ .mercado-action-logos img{width:20px;height:20px}
+ .mercado-action-gallery figcaption{left:11px;right:11px;font-size:9px}
+}
+@media(max-width:360px){
+ .mercado-action-gallery{height:255px}
+ .mercado-action-court strong{font-size:16px}
+}
