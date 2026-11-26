@@ -999,7 +999,7 @@ function paginaClassificacao() {
   const conf = indiceTimes?.classificacao || {};
   const tabela = (nome) => `<section class="tabela-conf">
     <h2 class="titulo-secao"><span>${conferenciaNome(nome)}</span></h2>
-    <div class="rolagem"><table class="classif">
+    <div class="rolagem"><div class="classif-mobile-head" aria-hidden="true"><span>#</span><span>Time</span><span>V</span><span>D</span><span>%</span></div><table class="classif">
       <thead><tr><th scope="col">#</th><th scope="col" class="esq">Time</th><th>V</th><th>D</th><th>%</th><th>Atrás</th><th>Casa</th><th>Fora</th><th>Últ. 10</th><th>Seq.</th></tr></thead>
       <tbody>${(conf[nome] || []).map((l) => {
         const t = times.get(l.id);
@@ -1007,7 +1007,7 @@ function paginaClassificacao() {
         const zona = l.posicao <= 6 ? 'z-playoff' : l.posicao <= 10 ? 'z-playin' : 'z-fora';
         return `<tr class="${zona}" data-times="${esc(t.sigla)}"><td class="pos">${l.posicao ?? ''}</td>
           <th scope="row" class="esq"><a href="${raiz}/times/${slugTime(t)}.html">${logoTime(t, 22)}<span>${esc(t.nome_curto)}</span></a></th>
-          <td class="forte">${l.v}</td><td>${l.d}</td><td>${esc(l.pct)}</td><td>${esc(l.atras)}</td><td>${esc(l.casa)}</td><td>${esc(l.fora)}</td><td>${esc(l.ultimos10)}</td><td class="seq ${String(l.sequencia).startsWith('W') ? 'sv' : 'sd'}">${esc(sequenciaPt(l.sequencia))}</td></tr>`;
+          <td class="forte" data-label="Vitórias">${l.v}</td><td data-label="Derrotas">${l.d}</td><td data-label="Aproveitamento">${esc(l.pct)}</td><td>${esc(l.atras)}</td><td>${esc(l.casa)}</td><td>${esc(l.fora)}</td><td>${esc(l.ultimos10)}</td><td class="seq ${String(l.sequencia).startsWith('W') ? 'sv' : 'sd'}">${esc(sequenciaPt(l.sequencia))}</td><td class="classif-mobile-detalhes"><span><small>Atrás</small><b>${esc(l.atras)}</b></span><span><small>Casa</small><b>${esc(l.casa)}</b></span><span><small>Fora</small><b>${esc(l.fora)}</b></span><span><small>Últ. 10</small><b>${esc(l.ultimos10)}</b></span><span><small>Seq.</small><b>${esc(sequenciaPt(l.sequencia))}</b></span></td></tr>`;
       }).join('')}</tbody>
     </table></div>
   </section>`;
