@@ -49,9 +49,9 @@ export function gerarMercado({P,times,pagina}){
   '<p>Trocas, Draft, agência livre e contratos. Uma cobertura direta, visual e com fonte identificada.</p></div>'+
   '<div class="mercado-curadoria"><span class="mercado-dot"></span> Curadoria conferida em '+dataBR(data.revisado_em)+'</div></header>';
  const feature='<section class="mercado-feature" aria-label="Movimentação em destaque"><div class="mercado-feature-copy">'+
-   '<span class="mercado-tag">EM DESTAQUE · '+esc(feature.selo)+'</span>'+
-   '<h2>'+esc(feature.titulo)+'</h2><p>'+esc(feature.resumo)+'</p>'+
-   '<a href="#mercado-feed" class="mercado-action">Explorar movimentações ↗</a></div>'+blockVisual(feature,times,false)+'</section>';
+   '<span class="mercado-tag">EM DESTAQUE · '+esc(featured.selo)+'</span>'+
+   '<h2>'+esc(featured.titulo)+'</h2><p>'+esc(featured.resumo)+'</p>'+
+   '<a href="#mercado-feed" class="mercado-action">Explorar movimentações ↗</a></div>'+blockVisual(featured,times,false)+'</section>';
  const body='<section class="mercado-pagina">'+hero+feature+
    '<section id="mercado-feed" class="mercado-feed" aria-label="Movimentações da NBA">'+
    '<div class="mercado-section-title"><div><span>ACOMPANHE CADA MOVIMENTO</span><h2>O que acontece fora da quadra</h2></div>'+
