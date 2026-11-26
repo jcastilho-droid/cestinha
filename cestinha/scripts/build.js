@@ -113,6 +113,8 @@ ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonica
 <script src="${raiz}/assets/visual-v6.js?v=${VERSAO}" defer></script>
 <link rel="stylesheet" href="${raiz}/assets/stats.css?v=${VERSAO}">
 <script src="${raiz}/assets/stats.js?v=${VERSAO}" defer></script>
+<link rel="stylesheet" href="${raiz}/assets/carrossel-home.css?v=${VERSAO}">
+<script src="${raiz}/assets/carrossel-home.js?v=${VERSAO}" defer></script>
 </head>
 <body${tema ? ` style="${tema}"` : ''}>
 <div class="fundo-deco" aria-hidden="true">
@@ -352,6 +354,101 @@ function numerosDaRodada(jogos) {
   </div>`;
 }
 
+// Carrossel editorial exclusivo da home. Cada noticia aponta para uma pagina real:
+// resenha da rodada ou jogo com box score; nunca gera manchete inventada.
+function blocoCarrosselHome(dia, jogos, resumo, raiz) {
+  const comResenha = jogos.filter(j => j.status === 'final' && j.casa?.jogadores && textosJogo.has(String(j.id)));
+  comResenha.sort((a,b) =>
+    (Number(textosJogo.get(String(b.id))?.importancia) || 0) -
+    (Number(textosJogo.get(String(a.id))?.importancia) || 0) ||
+    String(a.inicio_utc).localeCompare(String(b.inicio_utc)));
+  const semRepetir = new Set();
+  const noticias = [];
+  const add = item => {
+    if (!item?.href || !item?.titulo || semRepetir.has(item.href)) return;
+    semRepetir.add(item.href); noticias.push(item);
+  };
+  if (resumo?.titulo) {
+    const palco = comResenha.find(j=>j.arena?.foto) || jogos.find(j=>j.arena?.foto);
+    const p = palco && protagonistaJogo(palco);
+    add({
+      tipo:'RESUMO DA RODADA', titulo:resumo.titulo,
+      subtitulo:resumo.subtitulo || 'O que aconteceu na NBA enquanto você dormia.',
+      href:raiz + '/rodada/' + dia + '.html', foto:palco?.arena?.foto || '',
+      jogador:p?.nome || '', visitante:palco?.visitante, casa:palco?.casa,
+      placar:'Resumo e principais histórias', data:dataPorExtenso(dia)
+    });
+  }
+  for (const j of comResenha) {
+    if (noticias.length >= 5) break;
+    const texto = textosJogo.get(String(j.id));
+    const p = protagonistaJogo(j);
+    const tags = selosDoJogo(j);
+    const placar = j.visitante.sigla + ' ' + j.visitante.placar + ' × ' +
+      j.casa.placar + ' ' + j.casa.sigla;
+    add({
+      tipo: tags.some(t=>t.epico) ? 'JOGO IMPERDÍVEL' :
+        noticias.length === 0 ? 'JOGO EM DESTAQUE' : 'NA RODADA',
+      titulo:texto.titulo,subtitulo:texto.subtitulo || placar,
+      href:raiz + '/jogo/' + j.id + '.html',foto:j.arena?.foto || '',
+      jogador:p?.nome || '',visitante:j.visitante,casa:j.casa,
+      placar, data:dataHoraCurta(j.inicio_utc)
+    });
+  }
+  if (!noticias.length) return '';
+  const slide = (item,i) => {
+    const foto = item.foto ?
+      '<img class="noticia-arena-foto" src="' + esc(item.foto) +
+      '" alt="" loading="' + (i===0?'eager':'lazy') + '" decoding="async"' +
+      (i===0?' fetchpriority="high"':'') + ' onerror="this.remove()">' : '';
+    const retrato = item.jogador ? fotoPessoa(item.jogador,'noticia-jogador-foto') : '';
+    const duelo = item.visitante && item.casa ?
+      '<span class="noticia-duelo">' +
+      logo(item.visitante,35) + '<span>×</span>' + logo(item.casa,35) +
+      '<b>' + esc(item.placar) + '</b></span>' : '';
+    return '<article class="noticia-slide"'+(i>0?' hidden':'')+' style="--noticia-cor1:'+
+      cor(item.visitante)+';--noticia-cor2:'+cor(item.casa)+'">' +
+      '<div class="noticia-background" aria-hidden="true">'+foto+'</div>' +
+      '<div class="noticia-jogador" aria-hidden="true">'+retrato+'</div>' +
+      '<a class="noticia-conteudo" href="'+esc(item.href)+'" aria-label="'+esc(item.tipo+' — '+item.titulo)+'">' +
+      '<span class="noticia-tipo">'+esc(item.tipo)+'</span>' +
+      '<span class="noticia-data">'+esc(item.data)+'</span>' +
+      '<h2>'+esc(item.titulo)+'</h2>' +
+      '<p class="noticia-subtitulo">'+esc(item.subtitulo)+'</p>' +
+      '<div class="noticia-rodape">'+duelo+'<span class="noticia-cta">Ler matéria <span aria-hidden="true">↗</span></span></div>' +
+      '</a></article>';
+  };
+  const controles = noticias.length>1 ?
+    '<div class="noticia-controles"><div class="noticia-navegacao">' +
+    '<button type="button" data-noticia-prev aria-label="Destaque anterior">‹</button>' +
+    '<span data-noticia-status aria-live="off">1 de '+noticias.length+'</span>' +
+    '<button type="button" data-noticia-next aria-label="Próximo destaque">›</button>' +
+    '</div><div class="noticia-pontos" aria-label="Selecionar notícia">' +
+    noticias.map((_,i)=>'<button type="button" data-noticia-indice="'+i+
+      '" aria-label="Mostrar destaque '+(i+1)+' de '+noticias.length+
+      '" aria-current="'+(i===0?'true':'false')+'"></button>').join('') +
+    '</div></div>' : '';
+  const destaques = comResenha.slice(0,3).map((j,i)=>{
+    const texto=textosJogo.get(String(j.id));
+    const p=protagonistaJogo(j);
+    return '<a href="'+raiz+'/jogo/'+j.id+'.html" class="noticia-mini" style="--noticia-cor1:'+
+      cor(j.visitante)+';--noticia-cor2:'+cor(j.casa)+'">' +
+      '<span class="noticia-mini-visual">'+
+      (j.arena?.foto?'<img class="noticia-mini-arena" src="'+esc(j.arena.foto)+'" alt="" loading="lazy" onerror="this.remove()">':'')+
+      (p?fotoPessoa(p.nome,'noticia-mini-jogador'):'')+'</span>' +
+      '<span class="noticia-mini-texto"><small>'+esc(i===0?'EM ALTA':i===1?'OUTRA HISTÓRIA':'MAIS DA RODADA')+
+      '</small><strong>'+esc(texto.titulo)+'</strong><span>'+esc(j.visitante.sigla+' '+
+      j.visitante.placar+' × '+j.casa.placar+' '+j.casa.sigla)+'</span></span></a>';
+  }).join('');
+  return '<section class="noticias-home" aria-label="Principais notícias da NBA">' +
+    '<div class="noticias-intro"><div><span class="noticias-selo">🏀 NA CESTINHA</span>' +
+    '<h2>O que movimentou a NBA</h2></div><span class="noticias-contagem">'+
+    noticias.length+' destaques</span></div>' +
+    '<div class="noticias-carrossel" data-cestinha-carrossel aria-roledescription="carrossel">' +
+    '<div class="noticia-lista">'+noticias.map(slide).join('')+'</div>'+controles+'</div>' +
+    (destaques?'<div class="noticia-minis" aria-label="Mais histórias da rodada">'+destaques+'</div>':'')+'</section>';
+}
+
 function blocoRodada(dia, rodada, raiz, home = false) {
   const resumo = textosRodada.get(dia);
   const jogos = rodada.jogos.map((b) => jogoDoDia(dia, b));
@@ -385,7 +482,7 @@ function blocoRodada(dia, rodada, raiz, home = false) {
   return `
 <section class="rodada">
   ${home ? `<section class="meu-cestinha" hidden data-v="${VERSAO}"></section>` : ''}
-  ${hero}
+  ${home ? (blocoCarrosselHome(dia, jogos, resumo, raiz) || hero) : hero}
   ${trintaSeg}
   ${home ? blocoJogoDaNoite(raiz) : ''}
   ${blocoHojeANoite(raiz)}
@@ -829,7 +926,7 @@ function transmissoesBR(j) {
 function canalBR(j, classe) {
   const tv = transmissoesBR(j);
   const nota = tv.confirmado ? 'Transmissao no Brasil' : 'Outros canais brasileiros: sem confirmacao';
-  return `<span class="${classe}" title="${esc(nota)}">${icone('tv')} <b>Brasil:</b> ${esc(tv.canais.join(' · '))}${tv.confirmado && tv.fonte ? ` <small>• grade verificada</small>` : ` <small>• outros canais a confirmar</small>`}</span>`;
+  return `<span class="${classe}" title="${esc(nota)}">${icone('tv')} ${esc(tv.canais.join(' · '))}${tv.confirmado && tv.fonte ? ` <small>• grade verificada</small>` : ` <small>• outros canais a confirmar</small>`}</span>`;
 }
 const TZ_BR = 'America/Sao_Paulo';
 const diaBR = (iso) => new Intl.DateTimeFormat('en-CA', { timeZone: TZ_BR }).format(new Date(iso));
