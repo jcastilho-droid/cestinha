@@ -12,7 +12,7 @@
   const current=()=>d.partidas.find(g=>g.id===$('#stats-partida').value)||d.partidas[0];
   const requested=new URLSearchParams(location.search).get('jogo');
   if(requested && d.partidas.some(g=>g.id===requested)) $('#stats-partida').value=requested;
-  let tab='confronto',metric='pts',index=0,historyPeriod=15,historyShowL5=true;
+  let tab='confronto',metric='pts',index=0,historyPeriod=15,historyShowL5=true,selectedHistoryGameId=null;
   const metricMap={pts:'Pontos',reb:'Rebotes',ast:'Assistências',rb:'Roubos',toco:'Tocos',min:'Minutos'};
   const logo=(t,size=35)=>t?.logo?'<img src="'+esc(t.logo)+'" alt="" width="'+size+'" height="'+size+'" loading="lazy">':'';
   const head=(name,note)=>'<div><h2>'+esc(name)+'</h2>'+(note?'<p class="stats-note">'+esc(note)+'</p>':'')+'</div>';
@@ -96,6 +96,9 @@
     };
     const validHistory=allHistory.filter(g=>Number.isFinite(metricValue(g,metric)));
     const windowGames=validHistory.slice(-historyPeriod);
+    // Seleção permanece enquanto o jogo estiver visível no intervalo filtrado.
+    const chosen=windowGames.find(g=>g.jogo_id===selectedHistoryGameId)||windowGames.at(-1)||null;
+    selectedHistoryGameId=chosen?.jogo_id||null;
     const valueList=(arr)=>arr.map(g=>metricValue(g,metric)).filter(v=>v!==null&&Number.isFinite(v));
     const average=arr=>arr.length?arr.reduce((a,b)=>a+b,0)/arr.length:null;
     const officialAverage=def.official();
@@ -123,14 +126,18 @@
       for(let k=0;k<=4;k++){const v=maxScale*k/4;chart+='<line class="gridline" x1="'+left+'" x2="858" y1="'+y(v)+'" y2="'+y(v)+'"/><text x="39" y="'+(y(v)+4)+'" text-anchor="end">'+Math.round(v)+'</text>';}
       windowGames.forEach((g,i)=>{
         const v=points[i],x=left+i*gap+(gap-bw)/2;
-        const selected=String(g.jogo_id)===String(jogo.id);
-        chart+='<rect class="bar'+(selected?' stats-bar-current':'')+'" x="'+x+'" y="'+y(v)+'" width="'+bw+'" height="'+Math.max(0,base-y(v))+'" rx="4"><title>'+esc(g.data?.slice(0,10))+' · '+esc(g.em_casa?'vs':'@')+esc(g.adversario)+' · '+v+' '+esc(def.label)+'</title></rect>';
+        const selected=String(g.jogo_id)===String(selectedHistoryGameId);
+        // SVG clicável também por teclado (Enter/Espaço), sem depender de hover.
+        chart+='<rect class="bar stats-season-bar'+(selected?' stats-bar-current':'')+'" data-history-id="'+esc(g.jogo_id)+'" role="button" tabindex="0" aria-label="'+esc(g.data?.slice(0,10))+' contra '+esc(g.adversario)+': '+dec(v)+' '+esc(def.label)+'; ver detalhes" x="'+x+'" y="'+y(v)+'" width="'+bw+'" height="'+Math.max(2,base-y(v))+'" rx="4"><title>'+esc(g.data?.slice(0,10))+' · '+esc(g.em_casa?'vs ':'@ ')+esc(g.adversario)+' · '+v+' '+esc(def.label)+'</title></rect>';
         if(windowGames.length<=15)chart+='<text x="'+(x+bw/2)+'" y="244" text-anchor="middle">'+esc(g.adversario)+'</text>';
       });
       if(officialAverage!==null)chart+='<line class="stats-average-line" x1="'+left+'" x2="858" y1="'+y(officialAverage)+'" y2="'+y(officialAverage)+'"><title>Média oficial da temporada: '+dec(officialAverage)+'</title></line>';
       if(historyShowL5&&last5!==null)chart+='<line class="stats-l5-line" x1="'+left+'" x2="858" y1="'+y(last5)+'" y2="'+y(last5)+'"><title>Média dos últimos 5 jogos: '+dec(last5)+'</title></line>';
       chart+='</svg>';
     }
+    const selectedValue=chosen?metricValue(chosen,metric):null;
+    const selectedDelta=(selectedValue!==null&&officialAverage!==null)?selectedValue-officialAverage:null;
+    const selectedDetail=chosen?'<div class="stats-season-detail" aria-live="polite"><div><span class="stats-kicker">PARTIDA SELECIONADA</span><h3>'+dec(selectedValue)+' <small>'+esc(def.label)+'</small></h3><p>'+esc(chosen.data?.slice(0,10))+' · '+(chosen.em_casa?'Casa':'Fora')+' · '+esc(chosen.adversario)+' · '+(chosen.venceu?'Vitória':'Derrota')+'</p></div><div class="stats-detail-delta"><strong class="'+(selectedDelta!==null&&selectedDelta>=0?'stats-positive':'stats-negative')+'">'+(selectedDelta===null?'—':(selectedDelta>=0?'+':'')+dec(selectedDelta))+'</strong><span>'+ (officialAverage===null?'Sem média oficial':'vs. média da temporada') +'</span></div><a href="./jogo/'+encodeURIComponent(chosen.jogo_id)+'.html">Abrir jogo ↗</a></div>':'<div class="stats-empty">Nenhuma partida disponível neste período.</div>';
     const meanLine='<div class="stats-season-legend"><span><i class="stats-legend-bar"></i> Jogos</span><span><i class="stats-legend-season"></i> Média oficial'+(officialAverage!==null?' '+dec(officialAverage):' indisponível')+'</span><label><input type="checkbox" id="stats-l5-line" '+(historyShowL5?'checked':'')+'> Média L5'+(last5!==null?' '+dec(last5):'')+'</label></div>';
     const sampleCount='<p class="stats-note">Amostra: '+validHistory.length+' partida(s) coletada(s). '+(validHistory.length<15?'Ainda não há 15 registros válidos para esta métrica. ':'')+'A média oficial pode considerar jogos que não estão no histórico local.</p>';
     const splits=[
@@ -144,7 +151,7 @@
     const diffText=difference===null?'Média oficial indisponível para esta métrica.':(difference>=0?'+':'')+dec(difference)+' em relação à média oficial ('+(officialAverage===0?'variação percentual indisponível':(difference>=0?'+':'')+dec(difference/officialAverage*100)+'%')+').';
     const insight='<p class="stats-season-insight">'+esc(diffText)+'</p>';
     return chooser+panel('Desempenho na temporada',hero+cards+insight)+
-      panel('Histórico por partida',metricButtons+'<div class="stats-season-chart-head">'+periods+meanLine+'</div>'+chart+sampleCount,'Cada barra é uma partida real. Passe o mouse ou toque na barra para conferir adversário e valor.')+
+      panel('Histórico por partida',metricButtons+'<div class="stats-season-chart-head">'+periods+meanLine+'</div>'+chart+selectedDetail+sampleCount,'Cada barra é uma partida real. Passe o mouse ou toque na barra para conferir adversário e valor.')+
       '<div class="stats-grid half">'+panel('Casa, fora e resultados',splitTable,'Médias calculadas apenas com partidas presentes na amostra local.')+
       panel('Histórico recente',gameTable,'Últimas 15 partidas disponíveis com esta estatística.')+'</div>';
   }
@@ -164,13 +171,15 @@
     const host=$('#stats-content');
     host.innerHTML=tab==='confronto'?showConfronto():tab==='jogadores'?showJogadores():tab==='tendencias'?showTendencias():showQuintetos();
   }
-  $('#stats-partida')?.addEventListener('change',()=>{index=0;paint()});
+  $('#stats-partida')?.addEventListener('change',()=>{index=0;selectedHistoryGameId=null;paint()});
   root.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>{tab=btn.dataset.tab;paint()}));
-  root.addEventListener('change',e=>{if(e.target.id==='stats-jogador'){index=Number(e.target.value);paint()}});
+  root.addEventListener('change',e=>{if(e.target.id==='stats-jogador'){index=Number(e.target.value);selectedHistoryGameId=null;paint()}});
   root.addEventListener('click',e=>{
+    const bar=e.target.closest('[data-history-id]');if(bar){selectedHistoryGameId=bar.dataset.historyId;paint();return;}
     const met=e.target.closest('[data-season-metric]');if(met){metric=met.dataset.seasonMetric;paint();return;}
     const period=e.target.closest('[data-period]');if(period){historyPeriod=Number(period.dataset.period);paint();return;}
   });
+  root.addEventListener('keydown',e=>{const bar=e.target.closest('[data-history-id]');if(bar&&(e.key==='Enter'||e.key===' ')){e.preventDefault();selectedHistoryGameId=bar.dataset.historyId;paint();const same=[...root.querySelectorAll('[data-history-id]')].find(x=>x.dataset.historyId===selectedHistoryGameId);same?.focus();}});
   root.addEventListener('change',e=>{if(e.target.id==='stats-l5-line'){historyShowL5=e.target.checked;paint()}});
   if(!d.partidas.length){$('#stats-content').innerHTML='<div class="stats-empty">Aguardando partidas com box score completo.</div>';return}
   paint();
