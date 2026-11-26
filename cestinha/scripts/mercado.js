@@ -35,7 +35,7 @@ function card(item,times,featured=false){
     '</div></article>';
 }
 export function gerarMercado({P,times,pagina}){
- const file=path.join(P.raiz,'data','mercado.json');
+ const file=path.join(path.dirname(P.site),'data','mercado.json');
  const data=JSON.parse(fs.readFileSync(file,'utf8'));
  const items=(data.items||[]).filter(i=>allowed.has(i.categoria)&&/^https:\/\/(www\.)?nba\.com\//.test(i.url)&&i.titulo&&i.data)
     .sort((a,b)=>b.data.localeCompare(a.data));
