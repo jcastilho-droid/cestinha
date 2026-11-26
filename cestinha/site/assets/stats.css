@@ -106,3 +106,21 @@
 .stats-history-scroll .stats-table{min-width:440px}
 @media(max-width:1100px){.stats-season-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:590px){.stats-season-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.stats-season-kpi{padding:10px 9px}.stats-season-hero img{height:140px;width:112px}.stats-season-metrics button{font-size:10px;padding:8px}.stats-season-chart-head{display:block}.stats-season-periods{margin-bottom:12px}}
+
+
+/* V3: verde escuro nas barras e detalhe de partida selecionada */
+.stats-season-chart .stats-season-bar{fill:#217c59;cursor:pointer;transition:fill .18s ease,opacity .18s ease;stroke:#64b998;stroke-width:.65}
+.stats-season-chart .stats-season-bar:hover,.stats-season-chart .stats-season-bar:focus{fill:#3ba879;opacity:1;outline:none;stroke:#e6f5eb;stroke-width:2}
+.stats-season-chart .stats-season-bar.stats-bar-current{fill:#51c190;stroke:#d9ffeb;stroke-width:2}
+.stats-season-legend .stats-legend-bar{background:#217c59}
+.stats-season-chart .stats-average-line{stroke:#9cc7e3}
+.stats-season-detail{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin:12px 0 17px;padding:14px 17px;background:linear-gradient(115deg,#183b31,#172734);border:1px solid #3a795d;border-radius:13px}
+.stats-season-detail h3{font:900 35px/1 var(--titulo);margin:6px 0;color:#e5fff0}
+.stats-season-detail h3 small{font:700 12px var(--corpo);color:#a9d4bf}
+.stats-season-detail p{color:#b3cebe;font-size:12px;margin:0}
+.stats-season-detail .stats-detail-delta{text-align:center}
+.stats-detail-delta strong{display:block;font:900 23px var(--titulo)}
+.stats-detail-delta span{font-size:11px;color:#b4c8c2}
+.stats-season-detail a{border:1px solid #5d9c7d;border-radius:8px;color:#c3f4db;padding:9px 11px;font-size:12px;font-weight:800}
+.stats-season-detail a:hover{background:#25543d}
+@media(max-width:550px){.stats-season-detail{padding:11px;gap:10px}.stats-season-detail h3{font-size:30px}.stats-season-detail .stats-detail-delta{text-align:left}}
