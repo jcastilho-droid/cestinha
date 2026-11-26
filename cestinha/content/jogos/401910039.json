@@ -1,0 +1,46 @@
+{
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "titulo": "Tyler Herro faz 32 e Bucks vencem o Raptors fora de casa",
+  "subtitulo": "Bucks 116 a 111 Raptors em Toronto",
+  "importancia": 2,
+  "times": [
+    "Bucks",
+    "Raptors"
+  ],
+  "jogadores": [
+    "Tyler Herro",
+    "Myles Turner",
+    "Kyle Kuzma",
+    "Scottie Barnes"
+  ],
+  "corpo": "Vitória rara para o Bucks. Milwaukee bateu o Raptors por 116 a 111 em Toronto, num jogo com 15 trocas de liderança decidido no último quarto.\n\nTyler Herro foi o cestinha, com 32 pts, 6 reb, 8 ast e 10 de 16 nos arremessos. A bola de três dele a 1min03 do fim colocou o Bucks 10 pontos à frente. Myles Turner somou 27 pts, 11 reb, 1 ast, com 5 de 6 de três, e Kyle Kuzma fez 18 pts, 5 reb, 3 ast.\n\nNo Raptors, Scottie Barnes fez de tudo: 31 pts, 5 reb, 8 ast e 4 tocos. Não bastou.\n\n**E agora?** O Raptors fica com 6-10.",
+  "por_que_importa": "O Bucks consegue uma vitória rara fora de casa; o Raptors fica com 6-10.",
+  "notas": [
+    {
+      "jogador": "Tyler Herro",
+      "nota": 9,
+      "comentario": "32 pts, 8 ast e a bola que matou o jogo"
+    },
+    {
+      "jogador": "Myles Turner",
+      "nota": 8.5,
+      "comentario": "27 pts, 11 reb e 5 de 6 de três"
+    },
+    {
+      "jogador": "Scottie Barnes",
+      "nota": 8,
+      "comentario": "31 pts e 4 tocos na derrota"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401910039",
+    "data_rodada": "2026-11-23"
+  },
+  "escrito_em": "2026-11-26T13:16:03.620Z"
+}
