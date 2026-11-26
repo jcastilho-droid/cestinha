@@ -14,17 +14,17 @@
     "id": "17",
     "sigla": "BKN",
     "posicao": 14,
-    "v": 3,
+    "v": 4,
     "d": 13,
-    "pct": ".188",
-    "atras": "10.5",
-    "sequencia": "L5",
+    "pct": ".235",
+    "atras": "10",
+    "sequencia": "W1",
     "casa": "1-6",
-    "fora": "2-7",
-    "ultimos10": "2-8",
-    "pontos_pro": "111.2",
-    "pontos_contra": "120.3",
-    "saldo": "-9.1"
+    "fora": "3-7",
+    "ultimos10": "3-7",
+    "pontos_pro": "110.8",
+    "pontos_contra": "118.9",
+    "saldo": "-8.1"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -226,7 +226,10 @@
       "experiencia": 9,
       "universidade": "Michigan",
       "pais": "Germany",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 16,
         "min": "17.9",
@@ -821,9 +824,12 @@
         "sigla": "MIL",
         "nome_curto": "Bucks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 104,
+        "adversario": 97
+      },
+      "resultado": "V"
     },
     {
       "id": "401909329",
@@ -1710,5 +1716,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bkn",
-  "atualizado_em": "2026-11-26T01:33:00.539Z"
+  "atualizado_em": "2026-11-26T07:38:27.012Z"
 }

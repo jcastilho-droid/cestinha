@@ -14,14 +14,14 @@
     "id": "22",
     "sigla": "POR",
     "posicao": 6,
-    "v": 11,
+    "v": 12,
     "d": 6,
-    "pct": ".647",
-    "atras": "3.5",
-    "sequencia": "W1",
-    "casa": "3-2",
+    "pct": ".667",
+    "atras": "3",
+    "sequencia": "W2",
+    "casa": "4-2",
     "fora": "8-4",
-    "ultimos10": "5-5",
+    "ultimos10": "6-4",
     "pontos_pro": "116.8",
     "pontos_contra": "110.4",
     "saldo": "+6.4"
@@ -816,9 +816,12 @@
         "sigla": "SA",
         "nome_curto": "Spurs"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 116,
+        "adversario": 111
+      },
+      "resultado": "V"
     },
     {
       "id": "401909336",
@@ -1691,5 +1694,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/por",
-  "atualizado_em": "2026-11-26T01:33:12.992Z"
+  "atualizado_em": "2026-11-26T07:38:35.659Z"
 }

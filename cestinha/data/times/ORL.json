@@ -488,6 +488,21 @@
         "tipo": null
       },
       "medias": null
+    },
+    {
+      "id": "4397140",
+      "nome": "Kevin Porter Jr.",
+      "numero": "7",
+      "posicao": "Armador",
+      "posicao_sigla": "G",
+      "idade": 26,
+      "altura_m": "1.96",
+      "peso_kg": 92,
+      "experiencia": 7,
+      "universidade": "USC",
+      "pais": "USA",
+      "lesao": null,
+      "medias": null
     }
   ],
   "jogos": [
@@ -1665,5 +1680,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/orl",
-  "atualizado_em": "2026-11-26T01:33:11.165Z"
+  "atualizado_em": "2026-11-26T07:38:34.381Z"
 }

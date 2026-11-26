@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "24",
     "sigla": "SA",
-    "posicao": 1,
+    "posicao": 2,
     "v": 15,
-    "d": 3,
-    "pct": ".833",
-    "atras": "-",
-    "sequencia": "W3",
+    "d": 4,
+    "pct": ".789",
+    "atras": "0.5",
+    "sequencia": "L1",
     "casa": "7-3",
-    "fora": "8-0",
-    "ultimos10": "9-1",
-    "pontos_pro": "117.6",
-    "pontos_contra": "105.4",
-    "saldo": "+12.2"
+    "fora": "8-1",
+    "ultimos10": "8-2",
+    "pontos_pro": "117.3",
+    "pontos_contra": "106.0",
+    "saldo": "+11.3"
   },
   "divisao": null,
   "tecnico": "Mitch Johnson",
@@ -52,10 +52,7 @@
       "experiencia": 4,
       "universidade": null,
       "pais": "France",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 17,
         "min": "30.3",
@@ -823,9 +820,12 @@
         "sigla": "POR",
         "nome_curto": "Trail Blazers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 116
+      },
+      "resultado": "D"
     },
     {
       "id": "401909333",
@@ -1684,5 +1684,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sa",
-  "atualizado_em": "2026-11-26T01:33:14.127Z"
+  "atualizado_em": "2026-11-26T07:38:36.475Z"
 }

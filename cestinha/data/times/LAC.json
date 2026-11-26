@@ -15,16 +15,16 @@
     "sigla": "LAC",
     "posicao": 13,
     "v": 4,
-    "d": 12,
-    "pct": ".250",
-    "atras": "10",
-    "sequencia": "L4",
+    "d": 13,
+    "pct": ".235",
+    "atras": "10.5",
+    "sequencia": "L5",
     "casa": "4-4",
-    "fora": "0-8",
+    "fora": "0-9",
     "ultimos10": "3-7",
-    "pontos_pro": "110.7",
-    "pontos_contra": "117.5",
-    "saldo": "-6.8"
+    "pontos_pro": "109.9",
+    "pontos_contra": "117.4",
+    "saldo": "-7.5"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -839,9 +839,12 @@
         "sigla": "MEM",
         "nome_curto": "Grizzlies"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 97,
+        "adversario": 115
+      },
+      "resultado": "D"
     },
     {
       "id": "401909335",
@@ -1728,5 +1731,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lac",
-  "atualizado_em": "2026-11-26T01:33:06.259Z"
+  "atualizado_em": "2026-11-26T07:38:30.912Z"
 }

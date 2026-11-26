@@ -13,22 +13,22 @@
   "classificacao": {
     "id": "18",
     "sigla": "NY",
-    "posicao": 5,
-    "v": 11,
+    "posicao": 3,
+    "v": 12,
     "d": 6,
-    "pct": ".647",
-    "atras": "3",
-    "sequencia": "W5",
-    "casa": "6-3",
+    "pct": ".667",
+    "atras": "2.5",
+    "sequencia": "W6",
+    "casa": "7-3",
     "fora": "5-3",
     "ultimos10": "8-2",
-    "pontos_pro": "108.9",
+    "pontos_pro": "109.6",
     "pontos_contra": "103.2",
-    "saldo": "+5.7"
+    "saldo": "+6.4"
   },
   "divisao": {
     "nome": "Atlântico",
-    "posicao": 3
+    "posicao": 2
   },
   "tecnico": "Mike Brown",
   "estatisticas": {
@@ -199,7 +199,7 @@
       "universidade": "West Virginia",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -316,7 +316,10 @@
       "experiencia": 15,
       "universidade": "UConn",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 17,
         "min": "14.0",
@@ -816,9 +819,12 @@
         "sigla": "CLE",
         "nome_curto": "Cavaliers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 121,
+        "adversario": 102
+      },
+      "resultado": "V"
     },
     {
       "id": "401909326",
@@ -1691,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-26T01:33:09.975Z"
+  "atualizado_em": "2026-11-26T07:38:33.631Z"
 }

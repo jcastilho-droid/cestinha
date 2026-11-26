@@ -13,22 +13,22 @@
   "classificacao": {
     "id": "9",
     "sigla": "GS",
-    "posicao": 11,
-    "v": 9,
+    "posicao": 9,
+    "v": 10,
     "d": 8,
-    "pct": ".529",
-    "atras": "5.5",
-    "sequencia": "W1",
-    "casa": "7-1",
+    "pct": ".556",
+    "atras": "5",
+    "sequencia": "W2",
+    "casa": "8-1",
     "fora": "2-7",
     "ultimos10": "5-5",
-    "pontos_pro": "111.2",
-    "pontos_contra": "112.1",
-    "saldo": "-0.9"
+    "pontos_pro": "112.2",
+    "pontos_contra": "111.9",
+    "saldo": "+0.3"
   },
   "divisao": {
     "nome": "Pacífico",
-    "posicao": 3
+    "posicao": 2
   },
   "tecnico": "Steve Kerr",
   "estatisticas": {
@@ -821,9 +821,12 @@
         "sigla": "SAC",
         "nome_curto": "Kings"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 129,
+        "adversario": 110
+      },
+      "resultado": "V"
     },
     {
       "id": "401909336",
@@ -1696,5 +1699,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/gs",
-  "atualizado_em": "2026-11-26T01:33:04.631Z"
+  "atualizado_em": "2026-11-26T07:38:29.707Z"
 }

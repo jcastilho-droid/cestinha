@@ -15,16 +15,16 @@
     "sigla": "CLE",
     "posicao": 7,
     "v": 9,
-    "d": 9,
-    "pct": ".500",
-    "atras": "5.5",
-    "sequencia": "L1",
+    "d": 10,
+    "pct": ".474",
+    "atras": "6",
+    "sequencia": "L2",
     "casa": "7-3",
-    "fora": "2-6",
-    "ultimos10": "5-5",
-    "pontos_pro": "118.2",
-    "pontos_contra": "116.8",
-    "saldo": "+1.4"
+    "fora": "2-7",
+    "ultimos10": "4-6",
+    "pontos_pro": "117.4",
+    "pontos_contra": "117.0",
+    "saldo": "+0.4"
   },
   "divisao": {
     "nome": "Central",
@@ -819,9 +819,12 @@
         "sigla": "NY",
         "nome_curto": "Knicks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 102,
+        "adversario": 121
+      },
+      "resultado": "D"
     },
     {
       "id": "401910054",
@@ -1680,5 +1683,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cle",
-  "atualizado_em": "2026-11-26T01:33:02.300Z"
+  "atualizado_em": "2026-11-26T07:38:28.196Z"
 }

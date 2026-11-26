@@ -13,22 +13,22 @@
   "classificacao": {
     "id": "4",
     "sigla": "CHI",
-    "posicao": 12,
-    "v": 5,
+    "posicao": 11,
+    "v": 6,
     "d": 12,
-    "pct": ".294",
-    "atras": "9",
-    "sequencia": "W1",
+    "pct": ".333",
+    "atras": "8.5",
+    "sequencia": "W2",
     "casa": "2-6",
-    "fora": "3-6",
-    "ultimos10": "4-6",
-    "pontos_pro": "116.9",
-    "pontos_contra": "123.6",
-    "saldo": "-6.7"
+    "fora": "4-6",
+    "ultimos10": "5-5",
+    "pontos_pro": "116.4",
+    "pontos_contra": "122.6",
+    "saldo": "-6.2"
   },
   "divisao": {
     "nome": "Central",
-    "posicao": 4
+    "posicao": 3
   },
   "tecnico": "Tiago Splitter",
   "estatisticas": {
@@ -146,7 +146,7 @@
       "universidade": "Maryland",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -844,9 +844,12 @@
         "sigla": "CHA",
         "nome_curto": "Hornets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 107,
+        "adversario": 105
+      },
+      "resultado": "V"
     },
     {
       "id": "401910048",
@@ -1719,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-26T01:33:01.711Z"
+  "atualizado_em": "2026-11-26T07:38:27.811Z"
 }

@@ -14,17 +14,17 @@
     "id": "29",
     "sigla": "MEM",
     "posicao": 5,
-    "v": 13,
+    "v": 14,
     "d": 5,
-    "pct": ".722",
-    "atras": "2",
-    "sequencia": "W1",
-    "casa": "4-4",
+    "pct": ".737",
+    "atras": "1.5",
+    "sequencia": "W2",
+    "casa": "5-4",
     "fora": "9-1",
-    "ultimos10": "7-3",
-    "pontos_pro": "120.3",
-    "pontos_contra": "111.4",
-    "saldo": "+8.9"
+    "ultimos10": "8-2",
+    "pontos_pro": "120.1",
+    "pontos_contra": "110.7",
+    "saldo": "+9.4"
   },
   "divisao": null,
   "tecnico": "Tuomas Iisalo",
@@ -254,7 +254,10 @@
       "experiencia": 3,
       "universidade": "Purdue",
       "pais": "Canada",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "21.0",
@@ -864,9 +867,12 @@
         "sigla": "LAC",
         "nome_curto": "Clippers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 115,
+        "adversario": 97
+      },
+      "resultado": "V"
     },
     {
       "id": "401909331",
@@ -1725,5 +1731,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-26T01:33:07.274Z"
+  "atualizado_em": "2026-11-26T07:38:31.703Z"
 }

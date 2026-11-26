@@ -13,7 +13,7 @@
   "classificacao": {
     "id": "11",
     "sigla": "IND",
-    "posicao": 11,
+    "posicao": 12,
     "v": 6,
     "d": 12,
     "pct": ".333",
@@ -1700,5 +1700,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-26T01:33:05.711Z"
+  "atualizado_em": "2026-11-26T07:38:30.479Z"
 }

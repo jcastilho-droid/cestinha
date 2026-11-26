@@ -14,17 +14,17 @@
     "id": "16",
     "sigla": "MIN",
     "posicao": 3,
-    "v": 13,
+    "v": 14,
     "d": 5,
-    "pct": ".722",
-    "atras": "2",
-    "sequencia": "W2",
+    "pct": ".737",
+    "atras": "1.5",
+    "sequencia": "W3",
     "casa": "9-3",
-    "fora": "4-2",
+    "fora": "5-2",
     "ultimos10": "8-2",
-    "pontos_pro": "116.4",
+    "pontos_pro": "116.2",
     "pontos_contra": "105.8",
-    "saldo": "+10.6"
+    "saldo": "+10.4"
   },
   "divisao": null,
   "tecnico": "Chris Finch",
@@ -139,7 +139,10 @@
       "experiencia": 7,
       "universidade": null,
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 18,
         "min": "28.3",
@@ -830,9 +833,12 @@
         "sigla": "OKC",
         "nome_curto": "Thunder"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 113,
+        "adversario": 106
+      },
+      "resultado": "V"
     },
     {
       "id": "401909331",
@@ -1691,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-26T01:33:08.865Z"
+  "atualizado_em": "2026-11-26T07:38:32.875Z"
 }

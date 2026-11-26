@@ -15,16 +15,16 @@
     "sigla": "CHA",
     "posicao": 13,
     "v": 4,
-    "d": 12,
-    "pct": ".250",
-    "atras": "9.5",
-    "sequencia": "L5",
-    "casa": "3-5",
+    "d": 13,
+    "pct": ".235",
+    "atras": "10",
+    "sequencia": "L6",
+    "casa": "3-6",
     "fora": "1-7",
     "ultimos10": "1-9",
-    "pontos_pro": "100.6",
-    "pontos_contra": "110.9",
-    "saldo": "-10.3"
+    "pontos_pro": "100.9",
+    "pontos_contra": "110.6",
+    "saldo": "-9.7"
   },
   "divisao": null,
   "tecnico": "Charles Lee",
@@ -367,7 +367,7 @@
       "universidade": "Creighton",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -814,9 +814,12 @@
         "sigla": "CHI",
         "nome_curto": "Bulls"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 105,
+        "adversario": 107
+      },
+      "resultado": "D"
     },
     {
       "id": "401910047",
@@ -1703,5 +1706,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cha",
-  "atualizado_em": "2026-11-26T01:33:01.122Z"
+  "atualizado_em": "2026-11-26T07:38:27.414Z"
 }

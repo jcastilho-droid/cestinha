@@ -15,16 +15,16 @@
     "sigla": "MIL",
     "posicao": 15,
     "v": 2,
-    "d": 16,
-    "pct": ".111",
-    "atras": "12.5",
-    "sequencia": "W1",
-    "casa": "1-8",
+    "d": 17,
+    "pct": ".105",
+    "atras": "13",
+    "sequencia": "L1",
+    "casa": "1-9",
     "fora": "1-8",
     "ultimos10": "1-9",
-    "pontos_pro": "109.7",
-    "pontos_contra": "121.1",
-    "saldo": "-11.4"
+    "pontos_pro": "109.1",
+    "pontos_contra": "120.2",
+    "saldo": "-11.1"
   },
   "divisao": {
     "nome": "Central",
@@ -839,9 +839,12 @@
         "sigla": "BKN",
         "nome_curto": "Nets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 97,
+        "adversario": 104
+      },
+      "resultado": "D"
     },
     {
       "id": "401909327",
@@ -1700,5 +1703,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mil",
-  "atualizado_em": "2026-11-26T01:33:08.319Z"
+  "atualizado_em": "2026-11-26T07:38:32.469Z"
 }

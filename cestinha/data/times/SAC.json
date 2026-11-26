@@ -15,16 +15,16 @@
     "sigla": "SAC",
     "posicao": 15,
     "v": 2,
-    "d": 15,
-    "pct": ".118",
-    "atras": "12.5",
-    "sequencia": "L1",
+    "d": 16,
+    "pct": ".111",
+    "atras": "13",
+    "sequencia": "L2",
     "casa": "1-10",
-    "fora": "1-5",
+    "fora": "1-6",
     "ultimos10": "1-9",
-    "pontos_pro": "106.8",
-    "pontos_contra": "119.4",
-    "saldo": "-12.6"
+    "pontos_pro": "107.0",
+    "pontos_contra": "119.9",
+    "saldo": "-12.9"
   },
   "divisao": {
     "nome": "Pacífico",
@@ -84,7 +84,7 @@
       "universidade": "UCLA",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -818,9 +818,12 @@
         "sigla": "GS",
         "nome_curto": "Warriors"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 110,
+        "adversario": 129
+      },
+      "resultado": "D"
     },
     {
       "id": "401910060",
@@ -1693,5 +1696,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sac",
-  "atualizado_em": "2026-11-26T01:33:13.608Z"
+  "atualizado_em": "2026-11-26T07:38:36.049Z"
 }
