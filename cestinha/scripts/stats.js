@@ -23,11 +23,46 @@ export function gerarCestinhaStats({P,times,dias,jogoDoDia,pagina}){
       id:p.id,nome:p.nome,numero:p.numero,posicao:p.posicao_sigla||p.posicao||'—',medias:p.medias
     }))
   }));
+  // Historico individual: usa todos os box scores locais, nao apenas os exibidos no seletor.
+  // IDs sao associados ao elenco somente com nome unico; sem IDs usamos time + nome.
+  const nomes=new Map();
+  for(const t of times.values())for(const p of t.elenco||[]){
+    const k=norm(p.nome);if(!nomes.has(k))nomes.set(k,new Set());
+    if(p.id)nomes.get(k).add(String(p.id));
+  }
+  const identidade=(p,t)=>{
+    const ids=nomes.get(norm(p.nome));
+    return ids?.size===1?'espn:'+([...ids][0]):'time:'+String(t.id)+':'+norm(p.nome);
+  };
+  const historicos=new Map(),vistos=new Map();
+  const registro=(p,t,j,adversario,emCasa,venceu)=>{
+    // DNP nao deve ser contabilizado na media.
+    if(!Number.isFinite(Number(p.min))||num(p.min)<=0)return;
+    const key=identidade(p,t), game=String(j.id);
+    if(!vistos.has(key))vistos.set(key,new Set());
+    if(vistos.get(key).has(game))return;vistos.get(key).add(game);
+    const trest=String(p.tres||'').match(/^\s*(\d+)\s*-\s*(\d+)\s*$/);
+    if(!historicos.has(key))historicos.set(key,[]);
+    historicos.get(key).push({
+      jogo_id:game,data:j.inicio_utc,adversario,em_casa:emCasa,venceu:!!venceu,
+      min:num(p.min),pts:num(p.pts),reb:num(p.reb),ast:num(p.ast),
+      rb:num(p.rb),toco:num(p.toco),tres_convertidas:trest?Number(trest[1]):null
+    });
+  };
   const jogos=[];
   for(const item of dias.slice(-18))for(const base of item.rodada.jogos||[]){
     const j=jogoDoDia(item.dia,base);
     if(j.status==='final'&&Array.isArray(j.casa?.jogadores)&&Array.isArray(j.visitante?.jogadores))jogos.push(j);
   }
+  // A janela de historico e toda a coleta local, enquanto os jogos no menu sao limitados.
+  for(const item of dias)for(const base of item.rodada.jogos||[]){
+    const j=jogoDoDia(item.dia,base);
+    if(j.status!=='final'||!Array.isArray(j.casa?.jogadores)||!Array.isArray(j.visitante?.jogadores))continue;
+    for(const [t,adv,casa] of [[j.casa,j.visitante,true],[j.visitante,j.casa,false]]){
+      for(const p of t.jogadores)registro(p,t,j,adv.sigla,casa,!!t.vencedor);
+    }
+  }
+  const historicoJogadores=Object.fromEntries([...historicos].map(([k,arr])=>[k,arr.sort((a,b)=>String(a.data).localeCompare(String(b.data)))]));
   jogos.sort((a,b)=>String(b.inicio_utc).localeCompare(String(a.inicio_utc)));
   const partidas=jogos.slice(0,75).map(j=>({
     id:String(j.id),data:j.inicio_utc,local:j.local||j.arena?.nome||'',
@@ -38,11 +73,12 @@ export function gerarCestinhaStats({P,times,dias,jogoDoDia,pagina}){
         ast:num(p.ast),rb:num(p.rb),toco:num(p.toco),err:num(p.err),
         fg:p.fg||'',tres:p.tres||'',ll:p.ll||'',
         id:elenco.get(norm(p.nome))?.id||null,
+        historico_chave:identidade(p,t),
         posicao:elenco.get(norm(p.nome))?.posicao_sigla||'—'
       }))
     }))
   }));
-  const json=JSON.stringify({atualizado:new Date().toISOString(),equipes,partidas}).replace(/</g,'\\u003c');
+  const json=JSON.stringify({atualizado:new Date().toISOString(),equipes,partidas,historicoJogadores}).replace(/</g,'\\u003c');
   const opcoes=partidas.map(j=>'<option value="'+esc(j.id)+'">'+esc(j.times[0].sigla+' × '+j.times[1].sigla)+' · '+esc(j.data?.slice(0,10))+'</option>').join('');
   const corpo=[
     '<section class="stats-page"><header class="stats-heading">',
