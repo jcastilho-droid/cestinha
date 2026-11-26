@@ -1,0 +1,109 @@
+{
+  "descricao": "Transmissões selecionadas confirmadas para o Brasil, temporada 2026/27. Não inferir a grade brasileira do campo tv_eua da ESPN.",
+  "revisado_em": "2026-11-26",
+  "aviso": "Agenda de TV e streaming sujeita a alterações. NBA League Pass disponível para acompanhar os jogos no Brasil.",
+  "registros": [
+    {
+      "dia_br": "2026-11-27",
+      "times": [
+        "MIA",
+        "NY"
+      ],
+      "canais": [
+        "Prime Video"
+      ],
+      "fonte": "https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-do-prime-video/"
+    },
+    {
+      "dia_br": "2026-11-27",
+      "times": [
+        "LAL",
+        "SA"
+      ],
+      "canais": [
+        "Prime Video"
+      ],
+      "fonte": "https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-do-prime-video/"
+    },
+    {
+      "dia_br": "2026-11-28",
+      "times": [
+        "ORL",
+        "WSH"
+      ],
+      "canais": [
+        "ESPN 2",
+        "Disney+ Premium"
+      ],
+      "fonte": "https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-da-espn-e-disney/"
+    },
+    {
+      "dia_br": "2026-11-28",
+      "times": [
+        "OKC",
+        "MIL"
+      ],
+      "canais": [
+        "ESPN 2",
+        "Disney+ Premium"
+      ],
+      "fonte": "https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-da-espn-e-disney/"
+    },
+    {
+      "dia_br": "2026-11-29",
+      "times": [
+        "ATL",
+        "NY"
+      ],
+      "canais": [
+        "Prime Video"
+      ],
+      "fonte": "https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-do-prime-video/"
+    },
+    {
+      "dia_br": "2026-11-29",
+      "times": [
+        "LAC",
+        "GS"
+      ],
+      "canais": [
+        "Prime Video"
+      ],
+      "fonte": "https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-do-prime-video/"
+    },
+    {
+      "dia_br": "2026-11-30",
+      "times": [
+        "LAL",
+        "HOU"
+      ],
+      "canais": [
+        "ESPN 2",
+        "Disney+ Premium"
+      ],
+      "fonte": "https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-da-espn-e-disney/"
+    },
+    {
+      "dia_br": "2026-12-01",
+      "times": [
+        "NY",
+        "CHI"
+      ],
+      "canais": [
+        "Prime Video"
+      ],
+      "fonte": "https://www.terra.com.br/esportes/basquete/nba/saiba-quantos-jogos-do-seu-time-voce-vai-poder-ver-pela-nba-20262027-no-brasil,f61a7370e61c1bd257f801bf3ce24d737l5nosjb.html"
+    },
+    {
+      "dia_br": "2026-12-03",
+      "times": [
+        "WSH",
+        "MIA"
+      ],
+      "canais": [
+        "Prime Video"
+      ],
+      "fonte": "https://www.terra.com.br/esportes/basquete/nba/saiba-quantos-jogos-do-seu-time-voce-vai-poder-ver-pela-nba-20262027-no-brasil,f61a7370e61c1bd257f801bf3ce24d737l5nosjb.html"
+    }
+  ]
+}
