@@ -29,6 +29,8 @@ jobs:
           node --check scripts/cartoes.js
           node --check scripts/stats.js
           node --check site/assets/stats.js
+          node --check site/assets/carrossel-home.js
+          node --check scripts/test-home-carousel.js
       - name: Instalar gerador de imagens
         run: npm install --no-audit --no-fund --omit=dev
       - name: Gerar site completo
@@ -37,6 +39,8 @@ jobs:
         run: node scripts/test-stats-history.js
       - name: Conferir a TV brasileira e a tabela no celular
         run: node scripts/test-tv-br.js
+      - name: Conferir destaques editoriais e links da home
+        run: node scripts/test-home-carousel.js
       - name: Validar pagina e links
         run: |
           test -s _site/stats.html
