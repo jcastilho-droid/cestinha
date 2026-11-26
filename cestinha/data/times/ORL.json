@@ -34,7 +34,7 @@
     "ast": "26.3",
     "rb": "7.6",
     "toco": "4.2",
-    "err": "15.2",
+    "err": "15.3",
     "fg_pct": "45.2",
     "tres_pct": "35.3",
     "ll_pct": "77.0"
@@ -1680,5 +1680,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/orl",
-  "atualizado_em": "2026-11-26T07:38:34.381Z"
+  "atualizado_em": "2026-11-26T13:41:54.284Z"
 }
