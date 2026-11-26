@@ -31,10 +31,13 @@ jobs:
           node --check site/assets/stats.js
           node --check site/assets/carrossel-home.js
           node --check scripts/test-home-carousel.js
+          node --check scripts/test-stats-explorer.js
       - name: Instalar gerador de imagens
         run: npm install --no-audit --no-fund --omit=dev
       - name: Gerar site completo
         run: node scripts/build.js
+      - name: Validar explorador de jogos
+        run: node scripts/test-stats-explorer.js
       - name: Conferir historico individual consolidado
         run: node scripts/test-stats-history.js
       - name: Conferir a TV brasileira e a tabela no celular
