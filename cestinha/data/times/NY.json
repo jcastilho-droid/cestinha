@@ -17,7 +17,7 @@
     "v": 11,
     "d": 6,
     "pct": ".647",
-    "atras": "2.5",
+    "atras": "3",
     "sequencia": "W5",
     "casa": "6-3",
     "fora": "5-3",
@@ -55,10 +55,7 @@
       "experiencia": 9,
       "universidade": "Villanova",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 17,
         "min": "34.4",
@@ -86,10 +83,7 @@
       "experiencia": 12,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 16,
         "min": "32.6",
@@ -235,10 +229,7 @@
       "experiencia": 10,
       "universidade": "Villanova",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "30.8",
@@ -1700,5 +1691,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-25T19:09:27.805Z"
+  "atualizado_em": "2026-11-26T01:33:09.975Z"
 }

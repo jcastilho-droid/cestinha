@@ -14,17 +14,17 @@
     "id": "20",
     "sigla": "PHI",
     "posicao": 1,
-    "v": 14,
+    "v": 15,
     "d": 4,
-    "pct": ".778",
+    "pct": ".789",
     "atras": "-",
-    "sequencia": "L1",
-    "casa": "7-3",
+    "sequencia": "W1",
+    "casa": "8-3",
     "fora": "7-1",
     "ultimos10": "7-3",
-    "pontos_pro": "115.3",
-    "pontos_contra": "113.4",
-    "saldo": "+1.9"
+    "pontos_pro": "115.1",
+    "pontos_contra": "112.9",
+    "saldo": "+2.2"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -83,7 +83,10 @@
       "experiencia": 11,
       "universidade": "California",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "34.3",
@@ -830,9 +833,12 @@
         "sigla": "MIA",
         "nome_curto": "Heat"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 104
+      },
+      "resultado": "V"
     },
     {
       "id": "401909328",
@@ -1691,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-25T19:09:29.918Z"
+  "atualizado_em": "2026-11-26T01:33:11.678Z"
 }

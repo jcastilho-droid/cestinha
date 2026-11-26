@@ -17,7 +17,7 @@
     "v": 4,
     "d": 12,
     "pct": ".250",
-    "atras": "9",
+    "atras": "9.5",
     "sequencia": "L5",
     "casa": "3-5",
     "fora": "1-7",
@@ -282,10 +282,7 @@
       "experiencia": 2,
       "universidade": "Duke",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 16,
         "min": "27.3",
@@ -1706,5 +1703,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cha",
-  "atualizado_em": "2026-11-25T19:09:17.029Z"
+  "atualizado_em": "2026-11-26T01:33:01.122Z"
 }

@@ -17,7 +17,7 @@
     "v": 5,
     "d": 12,
     "pct": ".294",
-    "atras": "8.5",
+    "atras": "9",
     "sequencia": "W1",
     "casa": "2-6",
     "fora": "3-6",
@@ -146,7 +146,7 @@
       "universidade": "Maryland",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1719,5 +1719,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-25T19:09:17.677Z"
+  "atualizado_em": "2026-11-26T01:33:01.711Z"
 }
