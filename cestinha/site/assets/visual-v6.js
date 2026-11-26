@@ -60,7 +60,8 @@
   const section = document.createElement('section');
   section.className='v6-zone';
   section.innerHTML='<span class="v6-eyebrow">EXPLORE A RODADA</span><h2>A NBA do seu jeito.</h2><p>Descubra quais partidas foram mais disputadas e compare os destaques da noite.</p><div class="v6-tabs" role="tablist"><button type="button" role="tab" data-tab="watch" aria-controls="v6-watch" aria-selected="true">🔥 Vale assistir?</button><button type="button" role="tab" data-tab="compare" aria-controls="v6-compare" aria-selected="false">⚔ Comparar jogadores</button></div><div id="v6-watch" class="v6-pane" role="tabpanel"></div><div id="v6-compare" class="v6-pane" role="tabpanel" hidden></div>';
-  $('.sec-jogos',zone)?.before(section);
+  // Posiciona esta ferramenta depois das resenhas, lideres e jogos, sem interromper a leitura inicial.
+  zone.append(section);
   $$('button[data-tab]',section).forEach(b=>b.addEventListener('click',()=>{
     $$('button[data-tab]',section).forEach(x=>x.setAttribute('aria-selected',String(x===b)));
     $('#v6-watch',section).hidden=b.dataset.tab!=='watch';
@@ -73,19 +74,34 @@
     const extra=/prorroga/i.test(get(c,'.situacao'));
     const indice=Math.max(1,Math.min(100,Math.round(85-diferenca*2+(extra?18:0))));
     const nomes=$$('.linha-time .nome',c).map(el=>el.childNodes[0]?.textContent.trim()).filter(Boolean);
-    return {titulo:get(c,'.card-titulo')||'Resumo da partida',nome:nomes.join(' × ')||'Confronto da rodada',indice,href:c.getAttribute('href')};
+    const arena=$('.card-arena',c);
+    const foto=$('.v6-jogo-foto',c)?.getAttribute('src') || '';
+    const fundo=arena?.style.getPropertyValue('--foto')||'';
+    const escudo=$('.linha-time img',c)?.getAttribute('src')||'';
+    return {titulo:get(c,'.card-titulo')||'Resumo da partida',nome:nomes.join(' × ')||'Confronto da rodada',indice,href:c.getAttribute('href'),foto,fundo,escudo};
   }).filter(Boolean).sort((a,b)=>b.indice-a.indice);
 
   const watch=$('#v6-watch',section);
   if(partidas.length){
-    watch.innerHTML='<div class="v6-watch"><article class="v6-feature" aria-live="polite"><span class="v6-eyebrow">ÍNDICE EXPERIMENTAL DE EMOÇÃO</span><strong></strong><p></p><a href="#">Ver partida</a></article><div class="v6-picks"></div></div><p style="font-size:11px;color:#97a8bb">Índice ilustrativo: considera diferença final e prorrogação; não é uma avaliação oficial.</p>';
+    watch.innerHTML='<div class="v6-watch"><article class="v6-feature" aria-live="polite"><div class="v6-feature-copy"><span class="v6-eyebrow">PARTIDA EM DESTAQUE</span><strong></strong><p></p><a class="v6-feature-cta" href="#">Ver resenha <span aria-hidden="true">↗</span></a></div><img class="v6-feature-player" alt="" loading="lazy"></article><div class="v6-picks" aria-label="Selecionar partida"></div></div><p class="v6-index-note">Índice ilustrativo: considera diferença final e prorrogação; não é uma avaliação oficial.</p>';
     let atual=0;
     const paint=()=>{
       const p=partidas[atual];
-      $('.v6-feature strong',watch).textContent=p.nome+' · '+p.indice+'/100';
+      $('.v6-feature strong',watch).textContent=p.nome;
       $('.v6-feature p',watch).textContent=p.titulo;
       $('.v6-feature a',watch).href=p.href;
-      $('.v6-picks',watch).innerHTML=partidas.map((g,i)=>'<button type="button" data-i="'+i+'" aria-pressed="'+(i===atual)+'"><span>'+esc(g.nome)+'<small>'+esc(g.titulo)+'</small></span><b>'+g.indice+'</b></button>').join('');
+      const feature=$('.v6-feature',watch);
+      feature.style.setProperty('--v6-arena',p.fundo||'none');
+      const fotoEl=$('.v6-feature-player',watch);
+      if(p.foto){fotoEl.src=p.foto;fotoEl.hidden=false;}else{fotoEl.hidden=true;fotoEl.removeAttribute('src');}
+      $('.v6-feature .v6-eyebrow',watch).textContent='🔥 '+p.indice+'/100 · ÍNDICE DE EMOÇÃO';
+      $('.v6-picks',watch).innerHTML=partidas.map((g,i)=>{
+        const thumb=g.foto||g.escudo;
+        return '<button type="button" data-i="'+i+'" aria-pressed="'+(i===atual)+'">'+
+          '<span class="v6-pick-photo">'+(thumb?'<img src="'+esc(thumb)+'" alt="" loading="lazy" onerror="this.remove()">':'🏀')+'</span>'+
+          '<span class="v6-pick-info"><strong>'+esc(g.nome)+'</strong><small>'+esc(g.titulo)+'</small></span>'+
+          '<b class="v6-pick-score">'+g.indice+'</b></button>';
+      }).join('');
     };
     watch.addEventListener('click',e=>{const b=e.target.closest('button[data-i]');if(!b)return;atual=Number(b.dataset.i);paint();});
     paint();

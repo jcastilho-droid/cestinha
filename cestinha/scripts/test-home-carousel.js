@@ -37,3 +37,14 @@ const js=fs.readFileSync('_site/assets/carrossel-home.js','utf8');
 assert.ok(js.includes('INTERVALO = 6000'),'Autoplay deveria ocorrer a cada 6 segundos');
 const css=fs.readFileSync('_site/assets/carrossel-home.css','utf8');
 assert.ok(css.includes('Refinamento editorial'),'CSS de legibilidade nao aplicado');
+
+// Verificacoes de identidade editorial: sem mencao corporativa e modulo progressivo.
+for(const file of ['index.html','agenda.html','classificacao.html']){
+  const html=fs.readFileSync('_site/'+file,'utf8');
+  assert.ok(!html.includes('LiveMode'),'Rodape ainda contem LiveMode em '+file);
+}
+const visual=fs.readFileSync('_site/assets/visual-v6.js','utf8');
+assert.ok(visual.includes('zone.append(section)'),'Modulo Explore nao esta no final da rodada');
+assert.ok(visual.includes('v6-pick-photo'),'Mini-cards de exploracao sem area de foto');
+assert.ok(!visual.includes("$('.sec-jogos',zone)?.before(section)"),'Modulo Explore ainda precede jogos');
+console.log('Rodape e modulo Explore validados.');
