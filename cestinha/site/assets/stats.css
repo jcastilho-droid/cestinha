@@ -74,3 +74,35 @@
 .stats-empty{padding:40px 20px;text-align:center;color:#9baec4}
 @media(max-width:900px){.stats-grid,.stats-grid.half{grid-template-columns:1fr}.stats-heading{align-items:start;flex-direction:column}.stats-status{margin-top:-6px}}
 @media(max-width:600px){.stats-page{padding:12px 10px 55px}.stats-matchup{grid-template-columns:1fr auto 1fr;padding:13px 7px;gap:2px}.stats-team{flex-direction:column!important;text-align:center!important;gap:4px}.stats-team img{width:43px;height:43px}.stats-team strong{font-size:19px}.stats-score{min-width:90px}.stats-score b{font-size:31px}.stats-tabs button{flex:1;padding:9px;font-size:11px}.stats-panel{padding:13px}.stats-barline{grid-template-columns:63px 1fr 36px 1fr 63px;gap:4px;font-size:10px}.stats-player-hero img{width:110px;height:133px}.stats-lineups{gap:7px}.stats-lineup{gap:5px}.stats-athlete{padding:4px}.stats-athlete img{height:55px}.stats-athlete strong{font-size:10px}.stats-athlete span{font-size:9px}}
+
+
+/* Historico individual da temporada */
+.stats-season-hero{background:radial-gradient(circle at 15% 85%,#27384d,#151e2a 65%);border-radius:15px;padding:12px 18px;margin:4px 0 20px}
+.stats-season-hero img{width:168px;height:185px}
+.stats-season-kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px;margin:12px 0 7px}
+.stats-season-kpi{padding:15px 12px;border-radius:13px;background:#1e2b3c;border:1px solid #30445a;min-width:0}
+.stats-season-kpi small,.stats-season-kpi span{display:block;color:#a5b8cb;font-size:11px}
+.stats-season-kpi strong{font:800 clamp(26px,3vw,40px)/1.2 var(--titulo);display:block;color:#fff;margin:4px 0}
+.stats-season-kpi span{font-size:10px}
+.stats-season-insight{background:#2a2932;border-left:3px solid #ff893f;color:#e9d4bb;border-radius:5px;padding:10px 14px;font-size:13px}
+.stats-season-metrics{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.stats-season-metrics button{padding:9px 12px;font-size:11px}
+.stats-season-chart-head{display:flex;align-items:center;flex-wrap:wrap;gap:16px;justify-content:space-between;margin-bottom:14px}
+.stats-season-periods{display:flex;gap:6px;flex-wrap:wrap}
+.stats-season-periods button{cursor:pointer;background:#172333;color:#c4d4e5;border:1px solid #46566a;border-radius:9px;font-size:12px;font-weight:700;padding:8px 13px}
+.stats-season-periods button[aria-pressed=true]{background:#ff7a1a;border-color:#ff7a1a;color:#0b121b}
+.stats-season-legend{display:flex;align-items:center;gap:13px;flex-wrap:wrap;color:#acbdd0;font-size:11px}
+.stats-season-legend span{display:flex;align-items:center;gap:6px}
+.stats-season-legend i{display:inline-block;width:15px;height:3px;background:#ff8240}
+.stats-season-legend .stats-legend-season{background:#84c6e9}
+.stats-season-legend label{display:flex;align-items:center;gap:5px;cursor:pointer}
+.stats-season-chart{width:100%;height:auto;max-height:330px;min-height:170px}
+.stats-season-chart .bar{fill:#d96b3b}
+.stats-season-chart .stats-bar-current{fill:#ffbc64}
+.stats-season-chart .stats-average-line{stroke:#84c6e9;stroke-width:2.5;stroke-dasharray:8 5}
+.stats-season-chart .stats-l5-line{stroke:#d69bf1;stroke-width:2;stroke-dasharray:3 6}
+.stats-season-chart rect:hover{opacity:.7}
+.stats-history-scroll{overflow-x:auto}
+.stats-history-scroll .stats-table{min-width:440px}
+@media(max-width:1100px){.stats-season-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:590px){.stats-season-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.stats-season-kpi{padding:10px 9px}.stats-season-hero img{height:140px;width:112px}.stats-season-metrics button{font-size:10px;padding:8px}.stats-season-chart-head{display:block}.stats-season-periods{margin-bottom:12px}}
