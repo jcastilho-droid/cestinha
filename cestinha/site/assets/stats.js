@@ -13,6 +13,75 @@
   const requested=new URLSearchParams(location.search).get('jogo');
   if(requested && d.partidas.some(g=>g.id===requested)) $('#stats-partida').value=requested;
   let tab='confronto',metric='pts',index=0,historyPeriod=15,historyShowL5=true,selectedHistoryGameId=null;
+
+  // Explorador de jogos: selecao centralizada no <select> oculto para manter
+  // os graficos, os links, a URL ?jogo e as abas sincronizados.
+  let explorerLimit=6;
+  const sortedGames=[...d.partidas].sort((a,b)=>String(b.data).localeCompare(String(a.data)));
+  const shortDate=iso=>{
+    const stamp=String(iso||'').slice(0,10);
+    const [y,m,day]=stamp.split('-');
+    return y&&m&&day ? day+'/'+m+'/'+y : stamp;
+  };
+  const matchesPeriod=(g,period)=>{
+    if(period==='todos'||period==='recentes')return true;
+    const days=Number(period),newest=Date.parse(sortedGames[0]?.data||'');
+    const value=Date.parse(g.data||'');
+    return Number.isFinite(newest)&&Number.isFinite(value)&&(newest-value)<=(days-1)*86400000;
+  };
+  const normalizeSearch=t=>String(t||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  function prepareExplorer(){
+    const select=$('#stats-time-filtro');
+    if(!select)return;
+    const ids=new Set(sortedGames.flatMap(g=>g.times.map(t=>String(t.id))));
+    const available=d.equipes.filter(t=>ids.has(String(t.id))).sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'));
+    select.insertAdjacentHTML('beforeend',available.map(t=>'<option value="'+esc(t.id)+'">'+esc(t.nome)+'</option>').join(''));
+  }
+  function renderExplorer(){
+    const grid=$('#stats-explorer-grid');if(!grid)return;
+    const q=normalizeSearch($('#stats-busca')?.value);
+    const teamId=$('#stats-time-filtro')?.value||'';
+    const period=$('#stats-periodo-filtro')?.value||'recentes';
+    let filtered=sortedGames.filter(g=>{
+      if(teamId&&!g.times.some(t=>String(t.id)===teamId))return false;
+      if(!matchesPeriod(g,period))return false;
+      if(!q)return true;
+      const haystack=normalizeSearch([g.id,g.local,...g.times.flatMap(t=>[t.sigla,t.nome,team(t.id)?.nome||''])].join(' '));
+      return haystack.includes(q);
+    });
+    // O periodo "Mais recentes" conserva somente as seis ultimas partidas no
+    // primeiro bloco, enquanto filtros e pesquisa permitem explorar tudo.
+    if(period==='recentes'&&!q&&!teamId)filtered=filtered.slice(0,18);
+    const visible=filtered.slice(0,explorerLimit);
+    const selected=$('#stats-partida')?.value;
+    grid.innerHTML=visible.length?visible.map(g=>{
+      const a=g.times[0],b=g.times[1],picked=String(g.id)===String(selected);
+      return '<button type="button" class="stats-explorer-card" data-game-id="'+esc(g.id)+'" aria-pressed="'+picked+'"'+
+        ' aria-label="'+esc(a.nome)+' '+a.pts+' a '+b.pts+' '+esc(b.nome)+', '+shortDate(g.data)+'">'+
+        '<span class="stats-explorer-card-top"><span>'+shortDate(g.data)+'</span><span class="stats-explorer-status">FINAL</span></span>'+
+        '<span class="stats-explorer-teams"><span class="stats-explorer-team">'+logo(a,42)+'<b>'+esc(a.sigla)+'</b></span>'+
+        '<strong class="stats-explorer-score">'+a.pts+' <i>×</i> '+b.pts+'</strong>'+
+        '<span class="stats-explorer-team">'+logo(b,42)+'<b>'+esc(b.sigla)+'</b></span></span>'+
+        '<span class="stats-explorer-card-foot">'+esc(a.nome)+' × '+esc(b.nome)+'</span>'+
+        '</button>';
+    }).join(''):'<p class="stats-explorer-empty">Nenhuma partida encontrada. Tente outro time, período ou termo.</p>';
+    const more=$('#stats-ver-mais');
+    if(more){more.hidden=filtered.length<=explorerLimit;more.textContent='Mostrar mais partidas ('+(filtered.length-explorerLimit)+') ↓';}
+    const summary=$('#stats-explorer-summary');
+    if(summary)summary.textContent=filtered.length?filtered.length+' partidas encontradas · '+visible.length+' visíveis':'Nenhuma partida encontrada';
+  }
+  function selectGame(id){
+    const select=$('#stats-partida');
+    if(!select||!d.partidas.some(g=>String(g.id)===String(id)))return;
+    select.value=String(id);
+    index=0;selectedHistoryGameId=null;
+    paint();
+    const url=new URL(location.href);
+    url.searchParams.set('jogo',String(id));
+    history.replaceState(null,'',url.pathname+url.search+url.hash);
+    renderExplorer();
+  }
+
   const metricMap={pts:'Pontos',reb:'Rebotes',ast:'Assistências',rb:'Roubos',toco:'Tocos',min:'Minutos'};
   const logo=(t,size=35)=>t?.logo?'<img src="'+esc(t.logo)+'" alt="" width="'+size+'" height="'+size+'" loading="lazy">':'';
   const head=(name,note)=>'<div><h2>'+esc(name)+'</h2>'+(note?'<p class="stats-note">'+esc(note)+'</p>':'')+'</div>';
@@ -240,7 +309,19 @@
     const host=$('#stats-content');
     host.innerHTML=tab==='confronto'?showConfronto():tab==='jogadores'?showJogadores():tab==='tendencias'?showTendencias():showQuintetos();
   }
-  $('#stats-partida')?.addEventListener('change',()=>{index=0;selectedHistoryGameId=null;paint()});
+  prepareExplorer();
+  renderExplorer();
+  $('#stats-partida')?.addEventListener('change',()=>{
+    index=0;selectedHistoryGameId=null;paint();renderExplorer();
+  });
+  $('#stats-busca')?.addEventListener('input',()=>{explorerLimit=6;renderExplorer()});
+  $('#stats-time-filtro')?.addEventListener('change',()=>{explorerLimit=6;renderExplorer()});
+  $('#stats-periodo-filtro')?.addEventListener('change',()=>{explorerLimit=6;renderExplorer()});
+  $('#stats-ver-mais')?.addEventListener('click',()=>{explorerLimit+=6;renderExplorer()});
+  $('#stats-explorer-grid')?.addEventListener('click',e=>{
+    const card=e.target.closest('[data-game-id]');
+    if(card)selectGame(card.dataset.gameId);
+  });
   root.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>{tab=btn.dataset.tab;paint()}));
   root.addEventListener('change',e=>{if(e.target.id==='stats-jogador'){index=Number(e.target.value);selectedHistoryGameId=null;paint()}});
   root.addEventListener('click',e=>{
