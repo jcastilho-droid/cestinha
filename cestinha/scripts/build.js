@@ -7,9 +7,10 @@ import { P, RAIZ, lerJson, listarDiasRaw, horaBrasilia, dataPorExtenso, dataCurt
 import { lerRodada, lerJogo, selosDoJogo, lideresDaRodada, linhaEstatistica } from './lib/dados.js';
 import { icone, comIcones, LOGO_ARO } from './lib/icones.js';
 import { gerarCartoes } from './cartoes.js';
+import { gerarCestinhaStats } from './stats.js';
 import { VERBETES, CATEGORIAS, exemplosReais } from './lib/verbetes.js';
 
-const MENU = [['rodada', 'index.html', 'bola', 'Rodada'], ['agenda', 'agenda.html', 'calendario', 'Agenda'], ['classificacao', 'classificacao.html', 'trofeu', 'Tabela'], ['times', 'times/index.html', 'escudo', 'Times'], ['aprenda', 'aprenda.html', 'cesta', 'Aprenda']];
+const MENU = [['rodada', 'index.html', 'bola', 'Rodada'], ['agenda', 'agenda.html', 'calendario', 'Agenda'], ['classificacao', 'classificacao.html', 'trofeu', 'Tabela'], ['times', 'times/index.html', 'escudo', 'Times'], ['stats', 'stats.html', 'trofeu', 'Stats'], ['aprenda', 'aprenda.html', 'cesta', 'Aprenda']];
 
 // muda a cada publicação: força o navegador a baixar o visual novo
 const VERSAO = Date.now().toString(36);
@@ -110,6 +111,8 @@ ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonica
 <script src="${raiz}/assets/efeitos.js?v=${VERSAO}" defer></script>
 <link rel="stylesheet" href="${raiz}/assets/visual-v6.css?v=${VERSAO}">
 <script src="${raiz}/assets/visual-v6.js?v=${VERSAO}" defer></script>
+<link rel="stylesheet" href="${raiz}/assets/stats.css?v=${VERSAO}">
+<script src="${raiz}/assets/stats.js?v=${VERSAO}" defer></script>
 </head>
 <body${tema ? ` style="${tema}"` : ''}>
 <div class="fundo-deco" aria-hidden="true">
@@ -1258,5 +1261,7 @@ fs.writeFileSync(path.join(P.site, '404.html'), pagina({
   titulo: 'Não achei | Cestinha', descricao: 'Página não encontrada.',
   corpo: '<section class="rodada"><article class="hero"><p class="sobretitulo">Erro 404</p><h1>Airball!</h1><p class="subtitulo">Essa página não existe. Volte para a página inicial pelo logo lá em cima.</p></article></section>',
 }));
+
+gerarCestinhaStats({ P, times, dias, jogoDoDia, pagina });
 
 console.log(`Site gerado em _site/: ${dias.length} rodada(s), ${nJogos} página(s) de jogo, ${times.size} time(s), ${textosJogo.size} resenha(s), ${textosRodada.size} resumo(s) de rodada.`);
