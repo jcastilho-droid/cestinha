@@ -492,6 +492,7 @@ function paginaJogo(j, faixa, temCartao = false) {
 ${selos.length ? `<div class="tags tags-centro">${selosEpicos(selos, 5)}</div>` : ''}
 <p class="info-jogo">${esc(dataPorExtenso(j.data_rodada))}, ${esc(horaBrasilia(j.inicio_utc))} (Brasília)${j.local ? ` · ${esc(j.local)}` : ''}</p>
 ${parciais}
+<nav class="stats-link-jogo" aria-label="Estatísticas"><a href="${raiz}/stats.html?jogo=${esc(j.id)}">📊 Explorar estatísticas interativas deste jogo</a></nav>
 ${texto ? `<article class="resenha">
   <div class="selos">${selo(texto.status)}</div>
   <h1>${esc(texto.titulo)}</h1>
