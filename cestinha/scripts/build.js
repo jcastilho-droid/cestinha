@@ -810,6 +810,27 @@ function comGlossario(html) {
 
 // ---------- agenda ----------
 const agenda = lerJson(path.join(RAIZ, 'data', 'agenda.json'));
+const transmissoesBrasil = lerJson(path.join(RAIZ, 'data', 'transmissoes-br.json')) || {};
+function transmissoesBR(j) {
+  // A grade da ESPN americana nao e prova de onde ver o jogo no Brasil.
+  const dia = diaBR(j.inicio_utc);
+  const timesJogo = [j.casa?.sigla, j.visitante?.sigla].map(s => String(s || '').toUpperCase()).sort();
+  const confirmado = (transmissoesBrasil.registros || []).find(item =>
+    item.dia_br === dia &&
+    Array.isArray(item.times) &&
+    item.times.map(t => String(t).toUpperCase()).sort().join('/') === timesJogo.join('/')
+  );
+  return {
+    canais: confirmado ? [...confirmado.canais, 'NBA League Pass'] : ['NBA League Pass'],
+    confirmado: !!confirmado,
+    fonte: confirmado?.fonte || null
+  };
+}
+function canalBR(j, classe) {
+  const tv = transmissoesBR(j);
+  const nota = tv.confirmado ? 'Transmissao no Brasil' : 'Outros canais brasileiros: sem confirmacao';
+  return `<span class="${classe}" title="${esc(nota)}">${icone('tv')} <b>Brasil:</b> ${esc(tv.canais.join(' · '))}${tv.confirmado && tv.fonte ? ` <small>• grade verificada</small>` : ` <small>• outros canais a confirmar</small>`}</span>`;
+}
 const TZ_BR = 'America/Sao_Paulo';
 const diaBR = (iso) => new Intl.DateTimeFormat('en-CA', { timeZone: TZ_BR }).format(new Date(iso));
 const hojeBR = () => diaBR(new Date().toISOString());
@@ -833,7 +854,7 @@ function linhaAgenda(j, raiz) {
     <span class="ja-time">${logo({ logo: v.logo, sigla: v.sigla, nome_curto: v.nome_curto }, 30)}<b>${esc(v.nome_curto)}</b><small>${esc(j.visitante.campanha || '')}</small>${fim || vivo ? `<em class="pontos-ag">${j.visitante.placar ?? ''}</em>` : ''}</span>
     <span class="ja-x">@</span>
     <span class="ja-time">${logo({ logo: c.logo, sigla: c.sigla, nome_curto: c.nome_curto }, 30)}<b>${esc(c.nome_curto)}</b><small>${esc(j.casa.campanha || '')}</small>${fim || vivo ? `<em class="pontos-ag">${j.casa.placar ?? ''}</em>` : ''}</span>
-    ${j.tv_eua?.length ? `<span class="ja-tv">${icone('tv')} ${esc(j.tv_eua.slice(0, 2).join(' · '))} <small>(EUA)</small></span>` : '<span class="ja-tv"></span>'}
+    ${canalBR(j, 'ja-tv')}
   </${tag}>`;
 }
 function blocoHojeANoite(raiz) {
@@ -884,7 +905,7 @@ function blocoJogoDaNoite(raiz) {
   <div class="jn-grade">
     <div class="jn-confronto">
       ${ficha(v, j.visitante)}
-      <div class="jn-meio"><span class="jn-at">@</span><b class="jn-hora">${fim ? 'Final' : vivo ? 'Ao vivo' : esc(horaBrasilia(j.inicio_utc))}</b>${!fim && !vivo ? '<small>horário de Brasília</small>' : ''}<small class="contagem" data-inicio="${esc(j.inicio_utc)}"></small>${j.tv_eua?.length ? `<small class="jn-tv">${icone('tv')} ${esc(j.tv_eua.slice(0, 2).join(' · '))} (EUA)</small>` : ''}</div>
+      <div class="jn-meio"><span class="jn-at">@</span><b class="jn-hora">${fim ? 'Final' : vivo ? 'Ao vivo' : esc(horaBrasilia(j.inicio_utc))}</b>${!fim && !vivo ? '<small>horário de Brasília</small>' : ''}<small class="contagem" data-inicio="${esc(j.inicio_utc)}"></small>${canalBR(j, 'jn-tv')}</div>
       ${ficha(c, j.casa)}
     </div>
     <div class="jn-texto">
@@ -989,7 +1010,7 @@ ${[...porDia].map(([d, js]) => `<section class="dia-agenda">
   <h2 class="titulo-secao"><span>${esc(rotuloDia(d))}</span><small>${js.length} ${js.length === 1 ? 'jogo' : 'jogos'}</small></h2>
   <div class="lista-agenda">${js.map((j) => linhaAgenda(j, raiz)).join('')}</div>
 </section>`).join('')}
-<p class="legenda">TV: transmissão nos Estados Unidos, segundo a ESPN. Fonte: ESPN, atualizado em ${esc(dataHoraBrasilia(agenda.atualizado_em))}.</p>`;
+<p class="legenda">Transmissões para o Brasil: NBA League Pass e canais selecionados conferidos em <a href="https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-do-prime-video/" target="_blank" rel="noopener">Prime Video</a> e <a href="https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-da-espn-e-disney/" target="_blank" rel="noopener">ESPN/Disney+</a>. A programação está sujeita a alterações; outros canais podem transmitir jogos sem constar nesta lista. Horários e placares: ESPN, atualizados em ${esc(dataHoraBrasilia(agenda.atualizado_em))}.</p>`;
   return pagina({ titulo: 'Agenda da NBA em horário de Brasília | Cestinha', descricao: 'Todos os jogos da NBA dos próximos 7 dias, em horário de Brasília.', corpo, raiz, canonical: '/agenda.html', ativo: 'agenda' });
 }
 
@@ -1007,7 +1028,7 @@ function paginaClassificacao() {
         const zona = l.posicao <= 6 ? 'z-playoff' : l.posicao <= 10 ? 'z-playin' : 'z-fora';
         return `<tr class="${zona}" data-times="${esc(t.sigla)}"><td class="pos">${l.posicao ?? ''}</td>
           <th scope="row" class="esq"><a href="${raiz}/times/${slugTime(t)}.html">${logoTime(t, 22)}<span>${esc(t.nome_curto)}</span></a></th>
-          <td class="forte" data-label="Vitórias">${l.v}</td><td data-label="Derrotas">${l.d}</td><td data-label="Aproveitamento">${esc(l.pct)}</td><td>${esc(l.atras)}</td><td>${esc(l.casa)}</td><td>${esc(l.fora)}</td><td>${esc(l.ultimos10)}</td><td class="seq ${String(l.sequencia).startsWith('W') ? 'sv' : 'sd'}">${esc(sequenciaPt(l.sequencia))}</td><td class="classif-mobile-detalhes"><span><small>Atrás</small><b>${esc(l.atras)}</b></span><span><small>Casa</small><b>${esc(l.casa)}</b></span><span><small>Fora</small><b>${esc(l.fora)}</b></span><span><small>Últ. 10</small><b>${esc(l.ultimos10)}</b></span><span><small>Seq.</small><b>${esc(sequenciaPt(l.sequencia))}</b></span></td></tr>`;
+          <td class="forte" data-label="Vitórias">${l.v}</td><td data-label="Derrotas">${l.d}</td><td data-label="Aproveitamento">${esc(l.pct)}</td><td>${esc(l.atras)}</td><td>${esc(l.casa)}</td><td>${esc(l.fora)}</td><td>${esc(l.ultimos10)}</td><td class="seq ${String(l.sequencia).startsWith('W') ? 'sv' : 'sd'}">${esc(sequenciaPt(l.sequencia))}</td><td class="classif-mobile-detalhes"><details class="classif-expansivel"><summary><span>Mais estatísticas</span><span class="classif-extra-hint">Casa · Fora · sequência</span><span class="classif-chevron" aria-hidden="true">⌄</span></summary><div class="classif-extra-grade"><span><small>Atrás</small><b>${esc(l.atras)}</b></span><span><small>Casa</small><b>${esc(l.casa)}</b></span><span><small>Fora</small><b>${esc(l.fora)}</b></span><span><small>Últ. 10</small><b>${esc(l.ultimos10)}</b></span><span><small>Seq.</small><b>${esc(sequenciaPt(l.sequencia))}</b></span></div></details></td></tr>`;
       }).join('')}</tbody>
     </table></div>
   </section>`;
@@ -1015,7 +1036,7 @@ function paginaClassificacao() {
 <section class="hero hero-tabela">
   <p class="sobretitulo">${icone('trofeu')} Temporada ${esc(temporadaTexto())}</p>
   <h1>Classificação</h1>
-  <p class="subtitulo">Do 1º ao 6º vai direto para os playoffs. Do 7º ao 10º disputa o play-in. Do 11º para baixo, só no ano que vem.</p>
+  <p class="subtitulo">Veja a classificação em um olhar. Toque em “Mais estatísticas” para conferir casa, fora, últimos jogos e sequência.</p>
   <div class="legenda-zonas"><span class="z z-playoff">Playoffs</span><span class="z z-playin">Play-in</span><span class="z z-fora">Fora</span></div>
 </section>
 <div class="conferencias">${tabela('Leste')}${tabela('Oeste')}</div>
