@@ -40,7 +40,7 @@ export function gerarMercado({P,times,pagina}){
  const items=(data.items||[]).filter(i=>allowed.has(i.categoria)&&/^https:\/\/(www\.)?nba\.com\//.test(i.url)&&i.titulo&&i.data)
     .sort((a,b)=>b.data.localeCompare(a.data));
  const featured=items.find(i=>i.id==='tor-kawhi-2026')||items[0];
- const main=items.filter(i=>i.id!==featured.id);
+ const main=items;
  const counts=Object.fromEntries(Object.keys(categories).map(k=>[k,items.filter(i=>i.categoria===k).length]));
  const filters='<div class="mercado-filtros" role="group" aria-label="Filtrar notícias do mercado">'+
   '<button type="button" data-mercado-filtro="todos" aria-pressed="true">Tudo <b>'+items.length+'</b></button>'+
