@@ -197,6 +197,20 @@ export function normalizarJogo(jogoBase, detalhe, dataRodada) {
     }),
   }));
 
+  // Foto real associada a materia desta partida (quando a ESPN fornece).
+  // Nao usar fotos de outros confrontos nem imagens sem vinculo ao jogo.
+  const imagensDaMateria = Array.isArray(detalhe.article?.images) ? detalhe.article.images : [];
+  const fotosValidas = imagensDaMateria
+    .map(im => ({
+      url: typeof im === 'string' ? im : (im?.url || im?.href || im?.image?.url),
+      largura: Number(im?.width || im?.image?.width || 0),
+      altura: Number(im?.height || im?.image?.height || 0)
+    }))
+    .filter(im => typeof im.url === 'string' && /^https:\/\/a\.espncdn\.com\//i.test(im.url))
+    .filter(im => !im.altura || !im.largura || im.largura >= im.altura);
+  jogo.foto_jogo = fotosValidas[0]?.url || null;
+  jogo.foto_jogo_verificada = true;
+
   // Manchete da matéria da ESPN (em inglês, só como referência de fonte)
   if (detalhe.article?.headline) {
     jogo.materia_fonte = {
