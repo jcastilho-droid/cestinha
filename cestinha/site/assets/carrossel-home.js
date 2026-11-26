@@ -1,83 +1,72 @@
-/* Cestinha | destaques editoriais na home, sem dependencias externas */
+/* Cestinha — carrossel editorial: dots, swipe e reprodução automática 6s. */
 (() => {
-  const carousels = document.querySelectorAll('[data-cestinha-carrossel]');
-  for (const carousel of carousels) {
+  const INTERVALO = 6000;
+  document.querySelectorAll('[data-cestinha-carrossel]').forEach(carousel => {
     const slides = [...carousel.querySelectorAll('.noticia-slide')];
-    if (slides.length < 2) continue;
     const dots = [...carousel.querySelectorAll('[data-noticia-indice]')];
-    const prev = carousel.querySelector('[data-noticia-prev]');
-    const next = carousel.querySelector('[data-noticia-next]');
-    const status = carousel.querySelector('[data-noticia-status]');
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    let index = 0;
-    let timer = null;
-    let initialX = null;
-    let onScreen = true;
-    let userPaused = false;
-    let pointerOver = false;
-    let focusInside = false;
-    const sync = () => {
-      slides.forEach((slide, i) => {
-        slide.hidden = i !== index;
-        slide.setAttribute('aria-hidden', String(i !== index));
+    if (!slides.length) return;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let index = 0, timer = null, startX = null, visible = true;
+    let hovering = false, focused = false, touching = false;
+    const pause = () => { if (timer !== null) { clearTimeout(timer); timer = null; } };
+    const render = () => {
+      slides.forEach((s,i) => { s.hidden = i !== index; s.setAttribute('aria-hidden',String(i!==index)); });
+      dots.forEach((dot,i) => {
+        dot.setAttribute('aria-current',i===index?'true':'false');
+        dot.setAttribute('aria-label','Mostrar destaque '+(i+1)+' de '+slides.length);
       });
-      dots.forEach((dot, i) => {
-        dot.setAttribute('aria-current', i === index ? 'true' : 'false');
-        dot.setAttribute('aria-label', 'Mostrar destaque ' + (i + 1) + ' de ' + slides.length);
-      });
-      if (status) status.textContent = (index + 1) + ' de ' + slides.length;
     };
-    const stopTimer = () => {
-      if (timer !== null) { clearInterval(timer); timer = null; }
+    const allowed = () => slides.length>1 && visible && !document.hidden &&
+      !hovering && !focused && !touching && !reduced.matches;
+    const schedule = () => {
+      pause();
+      if (allowed()) timer = setTimeout(() => {
+        index = (index + 1) % slides.length;
+        render();
+        schedule();
+      }, INTERVALO);
     };
-    const canPlay = () => !userPaused && !pointerOver && !focusInside &&
-      !document.hidden && onScreen && !reducedMotion.matches;
-    const startTimer = () => {
-      stopTimer();
-      if (canPlay()) timer = setInterval(() => { index = (index + 1) % slides.length; sync(); }, 7500);
-    };
-    const go = (nextIndex, intentional = false) => {
-      index = (nextIndex + slides.length) % slides.length;
-      if (intentional) userPaused = true;
-      sync();
-      startTimer();
-    };
-    prev?.addEventListener('click', () => go(index - 1, true));
-    next?.addEventListener('click', () => go(index + 1, true));
-    dots.forEach((dot, i) => dot.addEventListener('click', () => go(i, true)));
-    carousel.addEventListener('keydown', e => {
-      if (!['ArrowLeft', 'ArrowRight'].includes(e.key)) return;
-      // So navegar com setas quando foco estiver nos controles do carrossel.
-      if (!(e.target.closest('.noticia-controles'))) return;
-      e.preventDefault();
-      go(index + (e.key === 'ArrowRight' ? 1 : -1), true);
+    const go = i => { index = (i+slides.length)%slides.length; render(); schedule(); };
+    dots.forEach((dot,i) => dot.addEventListener('click', () => {
+      go(i);
+      // O proximo ciclo recomeça quando o usuário sai dos controles.
+      if (document.activeElement === dot && !dot.matches(':focus-visible')) dot.blur();
+    }));
+    carousel.addEventListener('keydown',e => {
+      if (!e.target.closest('.noticia-pontos')) return;
+      if (e.key==='ArrowLeft'||e.key==='ArrowRight') {
+        e.preventDefault();
+        const next=(index+(e.key==='ArrowRight'?1:-1)+slides.length)%slides.length;
+        go(next); dots[next]?.focus();
+      }
     });
-    carousel.addEventListener('touchstart', e => {
-      if (e.touches.length === 1) initialX = e.touches[0].clientX;
-    }, { passive:true });
-    carousel.addEventListener('touchend', e => {
-      if (initialX === null || !e.changedTouches.length) return;
-      const dx = e.changedTouches[0].clientX - initialX;
-      initialX = null;
-      if (Math.abs(dx) >= 55) go(index + (dx < 0 ? 1 : -1), true);
-    }, { passive:true });
-    carousel.addEventListener('mouseenter', () => { pointerOver = true; startTimer(); });
-    carousel.addEventListener('mouseleave', () => { pointerOver = false; startTimer(); });
-    carousel.addEventListener('focusin', () => { focusInside = true; startTimer(); });
-    carousel.addEventListener('focusout', e => {
-      if (e.relatedTarget && carousel.contains(e.relatedTarget)) return;
-      focusInside = false; startTimer();
+    carousel.addEventListener('touchstart',e => {
+      if (e.touches.length!==1)return;
+      startX=e.touches[0].clientX; touching=true; schedule();
+    },{passive:true});
+    carousel.addEventListener('touchend',e => {
+      if(startX!==null&&e.changedTouches.length){
+        const dx=e.changedTouches[0].clientX-startX;
+        if(Math.abs(dx)>=55) go(index+(dx<0?1:-1));
+      }
+      startX=null;touching=false;schedule();
+    },{passive:true});
+    carousel.addEventListener('touchcancel',() => {startX=null;touching=false;schedule()},{passive:true});
+    carousel.addEventListener('mouseenter',()=>{hovering=true;schedule()});
+    carousel.addEventListener('mouseleave',()=>{hovering=false;schedule()});
+    carousel.addEventListener('focusin',()=>{focused=true;schedule()});
+    carousel.addEventListener('focusout',e=>{
+      if(e.relatedTarget&&carousel.contains(e.relatedTarget))return;
+      focused=false;schedule();
     });
-    document.addEventListener('visibilitychange', startTimer);
-    reducedMotion.addEventListener?.('change', startTimer);
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(entries => {
-        onScreen = entries[0]?.isIntersecting ?? false;
-        startTimer();
-      }, { threshold: .2 });
-      observer.observe(carousel);
+    document.addEventListener('visibilitychange',schedule);
+    reduced.addEventListener?.('change',schedule);
+    if('IntersectionObserver' in window){
+      const io=new IntersectionObserver(entries=>{
+        visible=!!entries[0]?.isIntersecting;
+        schedule();
+      },{threshold:.2});io.observe(carousel);
     }
-    sync();
-    startTimer();
-  }
+    render();schedule();
+  });
 })();
