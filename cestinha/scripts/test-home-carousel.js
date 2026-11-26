@@ -25,7 +25,7 @@ if (match) {
     assert.ok(fs.existsSync(path.join('_site',relative)),'Link interno quebrado: '+link);
   }
   assert.ok(html.includes('noticia-arena-foto')||html.includes('noticia-jogador-foto')||html.includes('noticia-duelo'),'Falta componente visual');
-  if(slides>1)assert.ok(html.includes('data-noticia-next'),'Carrossel sem controle');
+  if(slides>1)assert.ok(html.includes('data-noticia-indice'),'Carrossel sem dots');
   console.log('Carrossel validado: '+slides+' noticias, '+links.length+' links internos existentes.');
 } else {
   // Pode ocorrer em uma coleta inicial sem resenhas nem jogos.
