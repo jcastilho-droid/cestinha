@@ -1107,7 +1107,7 @@ ${[...porDia].map(([d, js]) => `<section class="dia-agenda">
   <h2 class="titulo-secao"><span>${esc(rotuloDia(d))}</span><small>${js.length} ${js.length === 1 ? 'jogo' : 'jogos'}</small></h2>
   <div class="lista-agenda">${js.map((j) => linhaAgenda(j, raiz)).join('')}</div>
 </section>`).join('')}
-<p class="legenda">Transmissões para o Brasil: NBA League Pass e canais selecionados conferidos em <a href="https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-do-prime-video/" target="_blank" rel="noopener">Prime Video</a> e <a href="https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-da-espn-e-disney/" target="_blank" rel="noopener">ESPN/Disney+</a>. A programação está sujeita a alterações; outros canais podem transmitir jogos sem constar nesta lista. Horários e placares: ESPN, atualizados em ${esc(dataHoraBrasilia(agenda.atualizado_em))}.</p>`;
+<p class="legenda">Onde assistir: NBA League Pass e canais selecionados conferidos em <a href="https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-do-prime-video/" target="_blank" rel="noopener">Prime Video</a> e <a href="https://hoopsbrasil.com.br/nba-2026-27-calendario-de-transmissoes-da-espn-e-disney/" target="_blank" rel="noopener">ESPN/Disney+</a>. A programação está sujeita a alterações; outros canais podem transmitir jogos sem constar nesta lista. Horários e placares: ESPN, atualizados em ${esc(dataHoraBrasilia(agenda.atualizado_em))}.</p>`;
   return pagina({ titulo: 'Agenda da NBA em horário de Brasília | Cestinha', descricao: 'Todos os jogos da NBA dos próximos 7 dias, em horário de Brasília.', corpo, raiz, canonical: '/agenda.html', ativo: 'agenda' });
 }
 
