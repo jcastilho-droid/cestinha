@@ -23,6 +23,70 @@ async function logoBase64(url) {
   return dado;
 }
 
+
+// Fotos embutidas nos SVGs para que a imagem PNG tambem tenha o fundo visual.
+// Restrito ao CDN usado pela coleta atual. Falhas e imagens ausentes usam quadra ilustrada.
+const cacheFotos = new Map();
+async function fotoBase64(url) {
+  if (!url || !/^https:\/\/a\.espncdn\.com\/i\/(?:venues\/nba\/|headshots\/nba\/players\/full\/)/.test(url)) return null;
+  if (cacheFotos.has(url)) return cacheFotos.get(url);
+  const promise = (async () => {
+    try {
+      const resp = await fetch(url, { signal: AbortSignal.timeout(6000), headers: { 'User-Agent': 'Cestinha/1.0' } });
+      if (!resp.ok) return null;
+      const type = (resp.headers.get('content-type') || '').split(';')[0].toLowerCase();
+      if (!['image/jpeg', 'image/png'].includes(type)) return null;
+      const bytes = Buffer.from(await resp.arrayBuffer());
+      if (!bytes.length || bytes.length > 5_000_000) return null;
+      return 'data:' + type + ';base64,' + bytes.toString('base64');
+    } catch { return null; }
+  })();
+  cacheFotos.set(url, promise);
+  return promise;
+}
+const normalizar = valor => String(valor || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+function retratoTime(t, times) {
+  const elenco = times.get(String(t.id))?.elenco || [];
+  const nomes = new Map();
+  for (const p of elenco) {
+    const chave = normalizar(p.nome);
+    if (!nomes.has(chave)) nomes.set(chave, []);
+    nomes.get(chave).push(p);
+  }
+  const candidatos = (t.jogadores || []).filter(p => Number(p.min) > 0).sort((a,b) => Number(b.pts) - Number(a.pts));
+  for (const p of candidatos) {
+    const referencias = nomes.get(normalizar(p.nome)) || [];
+    if (referencias.length === 1 && /^\d+$/.test(String(referencias[0].id))) {
+      return { nome: p.nome, url: 'https://a.espncdn.com/i/headshots/nba/players/full/' + referencias[0].id + '.png' };
+    }
+  }
+  return null;
+}
+function quadraSvg(w,h) {
+  const top = Math.round(h * .09), bottom = Math.round(h * .90);
+  return '<g fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="3">'
+    + '<rect x="14" y="' + top + '" width="' + (w-28) + '" height="' + (bottom-top) + '" rx="8"/>'
+    + '<line x1="' + (w/2) + '" y1="' + top + '" x2="' + (w/2) + '" y2="' + bottom + '"/>'
+    + '<circle cx="' + (w/2) + '" cy="' + (h/2) + '" r="' + (w*.085) + '"/>'
+    + '<rect x="14" y="' + (h*.32) + '" width="' + (w*.18) + '" height="' + (h*.36) + '"/>'
+    + '<rect x="' + (w*.82-14) + '" y="' + (h*.32) + '" width="' + (w*.18) + '" height="' + (h*.36) + '"/>'
+    + '</g>';
+}
+function fundoFotografico(foto, w, h, op = .55) {
+  if (!foto) return '';
+  return '<image href="' + foto + '" x="0" y="0" width="' + w + '" height="' + h
+    + '" preserveAspectRatio="xMidYMid slice" opacity="' + op + '"/>';
+}
+function retratosSvg(fotos, story = false) {
+  const altura = story ? 780 : 490;
+  const largura = story ? 450 : 350;
+  const y = story ? 500 : 120;
+  const positions = story ? [20, 610] : [-15, 865];
+  return fotos.map((im,i) => im ? '<image href="' + im + '" x="' + positions[i] + '" y="' + y
+    + '" width="' + largura + '" height="' + altura
+    + '" preserveAspectRatio="xMidYMax meet" opacity=".45"/>' : '').join('');
+}
+
 // quebra o título em linhas (aproximação pela largura média dos caracteres)
 function quebrar(texto, maxCar, maxLinhas) {
   const palavras = String(texto || '').split(/\s+/);
@@ -47,7 +111,7 @@ function escudo(t, logo, cx, cy, r) {
   return `<circle cx="${cx}" cy="${cy}" r="${r * 0.8}" fill="#2a3547"/><text x="${cx}" y="${cy + r * 0.22}" text-anchor="middle" font-family="Inter" font-weight="700" font-size="${r * 0.55}" fill="#fff">${esc(t.sigla)}</text>`;
 }
 
-function svgOg(j, texto, destaque, lv, lc, dataTxt) {
+function svgOg(j, texto, destaque, lv, lc, dataTxt, imagens = {}) {
   const v = j.visitante; const c = j.casa;
   const linhas = quebrar(texto?.titulo || `${v.nome_curto} x ${c.nome_curto}`, 46, 2);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -56,7 +120,11 @@ function svgOg(j, texto, destaque, lv, lc, dataTxt) {
     <linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".75"/></linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#f)"/>
+  ${fundoFotografico(imagens.arena,1200,630,.63)}
+  ${quadraSvg(1200,630)}
+  <rect width="1200" height="630" fill="#060b13" fill-opacity=".48"/>
   <rect width="1200" height="630" fill="url(#b)"/>
+  ${retratosSvg(imagens.retratos || [],false)}
   <g fill="none" stroke="#fff" stroke-opacity=".07" stroke-width="3"><circle cx="600" cy="270" r="120"/><line x1="600" y1="0" x2="600" y2="630"/></g>
   ${ARO(48, 34, 0.42)}<text x="98" y="78" font-family="Anton" font-size="40" fill="#fff" letter-spacing="2">CESTINHA</text>
   <text x="1152" y="74" text-anchor="end" font-family="Inter" font-weight="700" font-size="24" fill="#ffffff" fill-opacity=".75">${esc(dataTxt)}</text>
@@ -73,7 +141,7 @@ function svgOg(j, texto, destaque, lv, lc, dataTxt) {
 </svg>`;
 }
 
-function svgStory(j, texto, destaque, lv, lc, dataTxt) {
+function svgStory(j, texto, destaque, lv, lc, dataTxt, imagens = {}) {
   const v = j.visitante; const c = j.casa;
   const linhas = quebrar(texto?.titulo || `${v.nome_curto} x ${c.nome_curto}`, 26, 3);
   const sub = quebrar(texto?.subtitulo || '', 40, 2);
@@ -83,7 +151,10 @@ function svgStory(j, texto, destaque, lv, lc, dataTxt) {
     <linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${v.cor || '#333'}"/><stop offset=".38" stop-color="#0b0f15"/><stop offset=".62" stop-color="#0b0f15"/><stop offset="1" stop-color="${c.cor || '#333'}"/></linearGradient>
   </defs>
   <rect width="1080" height="1920" fill="url(#f)"/>
-  <rect width="1080" height="1920" fill="#000" fill-opacity=".25"/>
+  ${fundoFotografico(imagens.arena,1080,1920,.51)}
+  ${quadraSvg(1080,1920)}
+  <rect width="1080" height="1920" fill="#060b13" fill-opacity=".58"/>
+  ${retratosSvg(imagens.retratos || [],true)}
   <g fill="none" stroke="#fff" stroke-opacity=".06" stroke-width="4"><circle cx="540" cy="760" r="180"/><line x1="0" y1="760" x2="1080" y2="760"/></g>
   ${ARO(380, 110, 0.8)}<text x="470" y="200" font-family="Anton" font-size="76" fill="#fff" letter-spacing="3">CESTINHA</text>
   <text x="540" y="290" text-anchor="middle" font-family="Inter" font-weight="700" font-size="34" fill="#fff" fill-opacity=".75">${esc(dataTxt)}</text>
@@ -103,7 +174,7 @@ function svgStory(j, texto, destaque, lv, lc, dataTxt) {
 </svg>`;
 }
 
-export async function gerarCartoes(lista, pastaSite) {
+export async function gerarCartoes(lista, pastaSite, times = new Map()) {
   let Resvg;
   try {
     ({ Resvg } = await import('@resvg/resvg-js'));
@@ -117,10 +188,12 @@ export async function gerarCartoes(lista, pastaSite) {
   const opcoes = (w) => ({ fitTo: { mode: 'width', value: w }, font: { fontFiles: FONTES, loadSystemFonts: false, defaultFontFamily: 'Inter' } });
   for (const { jogo, texto, destaque, dataTxt } of lista) {
     try {
-      const lv = await logoBase64(jogo.visitante.logo);
-      const lc = await logoBase64(jogo.casa.logo);
-      fs.writeFileSync(path.join(pasta, `${jogo.id}.png`), new Resvg(svgOg(jogo, texto, destaque, lv, lc, dataTxt), opcoes(1200)).render().asPng());
-      fs.writeFileSync(path.join(pasta, `${jogo.id}-story.png`), new Resvg(svgStory(jogo, texto, destaque, lv, lc, dataTxt), opcoes(1080)).render().asPng());
+      const [lv, lc] = await Promise.all([logoBase64(jogo.visitante.logo), logoBase64(jogo.casa.logo)]);
+      const protagonistas = [retratoTime(jogo.visitante, times), retratoTime(jogo.casa, times)];
+      const [arena, ...retratos] = await Promise.all([fotoBase64(jogo.arena?.foto), ...protagonistas.map(p => fotoBase64(p?.url))]);
+      const imagens = { arena, retratos };
+      fs.writeFileSync(path.join(pasta, `${jogo.id}.png`), new Resvg(svgOg(jogo, texto, destaque, lv, lc, dataTxt, imagens), opcoes(1200)).render().asPng());
+      fs.writeFileSync(path.join(pasta, `${jogo.id}-story.png`), new Resvg(svgStory(jogo, texto, destaque, lv, lc, dataTxt, imagens), opcoes(1080)).render().asPng());
       feitos.add(jogo.id);
     } catch (e) {
       console.error(`[cartões] jogo ${jogo.id}: ${e.message}`);
