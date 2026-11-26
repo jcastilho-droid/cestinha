@@ -1,0 +1,53 @@
+{
+  "titulo": "Wembanyama faz 44 e perde; LeBron estreia triplo-duplo pelo 76ers",
+  "subtitulo": "O resumo dos 9 jogos de quarta-feira, 25 de novembro",
+  "corpo": "Noite cheia de NBA Cup. O assunto foi Victor Wembanyama, que fez 44 pontos e mesmo assim viu o Spurs cair em Portland.\n\n- **Trail Blazers 116 a 111 Spurs**: 25 trocas de liderança; Deni Avdija (33 pts, 12 reb, 7 ast) e Damian Lillard decidiram.\n- **76ers 111 a 104 Heat**: LeBron James fez o primeiro triplo-duplo pelo time (25 pts, 10 reb, 12 ast) e Tyrese Maxey somou 30.\n- **Timberwolves 113 a 106 Thunder**: Jaden McDaniels (32 pts, 10 reb, 5 ast) superou os 32 de Shai Gilgeous-Alexander em Oklahoma City.\n- **Knicks 121 a 102 Cavaliers**: sexta vitória seguida, com 21 de Jose Alvarado saindo do banco.\n- **Rockets 116 a 104 Suns**: triplo-duplo de Alperen Sengun (23 pts, 11 reb, 11 ast).\n- **Warriors 129 a 110 Kings**: 20 bolas de três, 8 delas de De'Anthony Melton; o brasileiro Gui Santos fez 22 pts, 3 reb, 1 ast.\n- **Grizzlies 115 a 97 Clippers**: Memphis nunca ficou atrás; o Clippers segue 0-9 fora de casa.\n- **Bulls 107 a 105 Hornets**: Matas Buzelis fez 24 e o Bulls segurou no fim, apesar dos 35 de Brandon Miller.\n- **Nets 104 a 97 Bucks**: Julius Randle fez 28 e o Nets quebrou a sequência de cinco derrotas.\n\n**Destaque da noite:** Victor Wembanyama, com 44 pts, 16 reb, 3 ast e 17 de 30 nos arremessos. Foi brabo, só faltou a vitória.",
+  "tipo": "resumo_rodada",
+  "status": "CONFIRMADO",
+  "importancia": 4,
+  "times": [
+    "Trail Blazers",
+    "Spurs",
+    "76ers",
+    "Heat",
+    "Timberwolves",
+    "Thunder",
+    "Knicks",
+    "Cavaliers",
+    "Rockets",
+    "Suns",
+    "Warriors",
+    "Kings",
+    "Grizzlies",
+    "Clippers",
+    "Bulls",
+    "Hornets",
+    "Nets",
+    "Bucks"
+  ],
+  "jogadores": [
+    "Victor Wembanyama",
+    "Deni Avdija",
+    "Damian Lillard",
+    "LeBron James",
+    "Tyrese Maxey",
+    "Jaden McDaniels",
+    "Shai Gilgeous-Alexander",
+    "Jose Alvarado",
+    "Alperen Sengun",
+    "De'Anthony Melton",
+    "Gui Santos",
+    "Matas Buzelis",
+    "Brandon Miller",
+    "Julius Randle"
+  ],
+  "fontes": [
+    "ESPN"
+  ],
+  "alertas": [],
+  "ref": {
+    "tipo": "rodada",
+    "data_rodada": "2026-11-25"
+  },
+  "escrito_em": "2026-11-26T11:50:29.727Z"
+}

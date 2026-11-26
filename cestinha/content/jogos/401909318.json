@@ -1,0 +1,53 @@
+{
+  "titulo": "Bulls seguram o Hornets no lance livre e vencem por 2",
+  "subtitulo": "Bulls 107 a 105 Hornets em Charlotte",
+  "corpo": "Jogo pegado do começo ao fim: foram 22 trocas de liderança. No fim, o Bulls venceu o Hornets por 107 a 105 em Charlotte e chegou à segunda vitória seguida.\n\nMatas Buzelis foi o nome do Bulls, com 24 pts, 5 reb, 0 ast, e 8 de 9 nos lances livres. Josh Giddey fez duplo-duplo: 12 pts, 11 reb, 7 ast.\n\nO cestinha do jogo foi Brandon Miller, do Hornets, com 35 pts, 3 reb, 1 ast. Moussa Diabate pegou 14 rebotes: 14 pts, 14 reb, 2 ast.\n\n**Momento-chave:** com 10 segundos no relógio, Buzelis converteu os dois lances livres e fez 106 a 103. Coby White ainda descontou na linha, mas Tre Jones fechou o placar.\n\n**E agora?** O Bulls vai a 6-12. O Hornets, com mais uma derrota, cai para 4-13 e é o lanterna da Divisão Sudeste.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Bulls",
+    "Hornets"
+  ],
+  "jogadores": [
+    "Matas Buzelis",
+    "Josh Giddey",
+    "Brandon Miller",
+    "Moussa Diabate",
+    "Coby White",
+    "Tre Jones"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Bulls emenda a segunda vitória seguida; o Hornets cai para 4-13, pior campanha da Divisão Sudeste.",
+  "notas": [
+    {
+      "jogador": "Matas Buzelis",
+      "nota": 8,
+      "comentario": "24 pts e frieza na linha no fim"
+    },
+    {
+      "jogador": "Josh Giddey",
+      "nota": 7.5,
+      "comentario": "Duplo-duplo e quase triplo"
+    },
+    {
+      "jogador": "Brandon Miller",
+      "nota": 8.5,
+      "comentario": "35 pts, cestinha da partida"
+    },
+    {
+      "jogador": "Moussa Diabate",
+      "nota": 7,
+      "comentario": "14 pts e 14 reb"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909318",
+    "data_rodada": "2026-11-25"
+  },
+  "escrito_em": "2026-11-26T11:50:29.719Z"
+}

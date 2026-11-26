@@ -1,0 +1,52 @@
+{
+  "titulo": "Randle faz 28 e Nets quebram jejum contra o Bucks",
+  "subtitulo": "Nets 104 a 97 Bucks, pela NBA Cup, em Milwaukee",
+  "corpo": "O Nets venceu o Bucks por 104 a 97 em Milwaukee, pela NBA Cup, e encerrou uma sequência de cinco derrotas. O time foi melhor em três dos quatro quartos e chegou a abrir 14.\n\nJulius Randle foi o cestinha, com 28 pts, 9 reb, 3 ast e 10 de 16 nos arremessos. Noah Clowney fez 17 pts, 5 reb, 1 ast, e Day'Ron Sharpe dominou o garrafão: 11 pts, 14 reb, 5 ast.\n\nNo Bucks, Tyler Herro também fez 28 pts, 2 reb, 5 ast, e Jaime Jaquez Jr. somou 21 pts, 5 reb, 4 ast. Faltou mira: o time acertou 11 de 44 de três.\n\n**E agora?** O Nets vai a 4-13. O Bucks cai para 2-17, a pior campanha da Divisão Central.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Nets",
+    "Bucks"
+  ],
+  "jogadores": [
+    "Julius Randle",
+    "Noah Clowney",
+    "Day'Ron Sharpe",
+    "Tyler Herro",
+    "Jaime Jaquez Jr."
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Nets encerra a sequência de cinco derrotas; o Bucks afunda para 2-17.",
+  "notas": [
+    {
+      "jogador": "Julius Randle",
+      "nota": 8.5,
+      "comentario": "28 pts com 10 de 16"
+    },
+    {
+      "jogador": "Day'Ron Sharpe",
+      "nota": 7.5,
+      "comentario": "Duplo-duplo com 14 reb"
+    },
+    {
+      "jogador": "Noah Clowney",
+      "nota": 7,
+      "comentario": "17 pts e +14 em quadra"
+    },
+    {
+      "jogador": "Tyler Herro",
+      "nota": 7,
+      "comentario": "28 pts, mas não bastou"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909322",
+    "data_rodada": "2026-11-25"
+  },
+  "escrito_em": "2026-11-26T11:50:29.722Z"
+}

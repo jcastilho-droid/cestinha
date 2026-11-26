@@ -1,0 +1,52 @@
+{
+  "titulo": "Chuva de três: Melton e Gui Santos comandam o Warriors contra o Kings",
+  "subtitulo": "Warriors 129 a 110 Kings, pela NBA Cup, em San Francisco",
+  "corpo": "O Warriors venceu o Kings por 129 a 110 em San Francisco, pela NBA Cup. O jogo foi resolvido cedo: 44 a 19 no primeiro quarto, com vantagem que chegou a 29. Foram 20 bolas de três.\n\nDe'Anthony Melton foi o cestinha do Warriors, com 24 pts, 4 reb, 7 ast, e igualou seu recorde na carreira com 8 bolas de três. O brasileiro Gui Santos foi brabo: 22 pts, 3 reb, 1 ast, com 8 de 11 nos arremessos. Yaxel Lendeborg somou 15 pts, 8 reb, 2 ast.\n\nNo Kings, Domantas Sabonis fez 27 pts, 10 reb, 6 ast, errando só um arremesso (8 de 9). Darius Acuff Jr. teve 22 pts, 4 reb, 9 ast.\n\n**E agora?** O Warriors vai a 10-8, com duas vitórias seguidas. O Kings cai para 2-16.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Warriors",
+    "Kings"
+  ],
+  "jogadores": [
+    "De'Anthony Melton",
+    "Gui Santos",
+    "Yaxel Lendeborg",
+    "Domantas Sabonis",
+    "Darius Acuff Jr."
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Warriors chega a 10-8 e assume o segundo lugar da Divisão Pacífico, com Gui Santos em destaque.",
+  "notas": [
+    {
+      "jogador": "De'Anthony Melton",
+      "nota": 9,
+      "comentario": "8 bolas de três, igualou recorde"
+    },
+    {
+      "jogador": "Gui Santos",
+      "nota": 8.5,
+      "comentario": "22 pts com 8 de 11, brasileiro voando"
+    },
+    {
+      "jogador": "Domantas Sabonis",
+      "nota": 8,
+      "comentario": "Duplo-duplo com 8 de 9"
+    },
+    {
+      "jogador": "Darius Acuff Jr.",
+      "nota": 6,
+      "comentario": "22 pts, mas 9 de 24"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909324",
+    "data_rodada": "2026-11-25"
+  },
+  "escrito_em": "2026-11-26T11:50:29.724Z"
+}

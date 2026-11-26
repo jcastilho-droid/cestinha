@@ -1,0 +1,52 @@
+{
+  "titulo": "Grizzlies passam fácil pelo Clippers, que segue sem vencer fora",
+  "subtitulo": "Grizzlies 115 a 97 Clippers, pela NBA Cup, em Memphis",
+  "corpo": "O Grizzlies venceu o Clippers por 115 a 97 em Memphis, em jogo da NBA Cup, sem nunca ficar atrás no placar. O primeiro quarto (32 a 15) já encaminhou tudo, e a vantagem chegou a 22.\n\nJaylen Wells foi o cestinha, com 19 pts, 6 reb, 1 ast, acertando 8 de 12. Ty Jerome fez 17 pts, 5 reb, 7 ast, e Cedric Coward teve duplo-duplo: 14 pts, 10 reb, 1 ast.\n\nNo Clippers, Brandon Ingram fez 18 pts, 5 reb, 4 ast, mas precisou de 19 arremessos. Rui Hachimura teve duplo-duplo com 14 pts, 12 reb, 5 ast. O time acertou só 6 de 30 de três.\n\n**E agora?** O Grizzlies vai a 14-5. O Clippers cai para 4-13 e soma 0-9 longe de casa.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Grizzlies",
+    "Clippers"
+  ],
+  "jogadores": [
+    "Jaylen Wells",
+    "Ty Jerome",
+    "Cedric Coward",
+    "Brandon Ingram",
+    "Rui Hachimura"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Grizzlies chega a 14-5, colado no topo do Sudoeste; o Clippers segue sem vencer fora (0-9).",
+  "notas": [
+    {
+      "jogador": "Jaylen Wells",
+      "nota": 8,
+      "comentario": "19 pts com 8 de 12"
+    },
+    {
+      "jogador": "Ty Jerome",
+      "nota": 7.5,
+      "comentario": "17 pts, 7 ast e 4 roubos"
+    },
+    {
+      "jogador": "Cedric Coward",
+      "nota": 7,
+      "comentario": "Duplo-duplo, mas 0 de 6 de três"
+    },
+    {
+      "jogador": "Brandon Ingram",
+      "nota": 5.5,
+      "comentario": "18 pts, mas 6 de 19"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909321",
+    "data_rodada": "2026-11-25"
+  },
+  "escrito_em": "2026-11-26T11:50:29.722Z"
+}

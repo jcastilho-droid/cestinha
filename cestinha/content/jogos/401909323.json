@@ -1,0 +1,53 @@
+{
+  "titulo": "Sengun faz triplo-duplo e Rockets vencem o Suns em Houston",
+  "subtitulo": "Rockets 116 a 104 Suns no Toyota Center",
+  "corpo": "O Rockets venceu o Suns por 116 a 104 em Houston. O segundo quarto, vencido por 37 a 23, virou o jogo, e o Suns não se recuperou: acertou só 5 de 32 de três.\n\nAlperen Sengun comandou com triplo-duplo: 23 pts, 11 reb, 11 ast. Kevin Durant fez 20 pts, 10 reb, 2 ast, e Amen Thompson somou 18 pts, 10 reb, 4 ast. Três duplos-duplos no mesmo time, que isso.\n\nNo Suns, Devin Booker foi o cestinha do jogo, com 25 pts, 0 reb, 5 ast, mas acertou só 6 de 18. Jalen Green fez 16 pts, 4 reb, 5 ast.\n\n**Momento-chave:** Fred VanVleet acertou uma bola de três a 1min45 do fim e fez 112 a 102.\n\n**E agora?** O Rockets vai a 14-5 e empata a série da temporada em 1 a 1. O Suns cai para 9-8.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Rockets",
+    "Suns"
+  ],
+  "jogadores": [
+    "Alperen Sengun",
+    "Kevin Durant",
+    "Amen Thompson",
+    "Fred VanVleet",
+    "Devin Booker",
+    "Jalen Green"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Rockets chega a 14-5 e segue na briga pela ponta do Sudoeste; o Suns cai para 9-8.",
+  "notas": [
+    {
+      "jogador": "Alperen Sengun",
+      "nota": 9,
+      "comentario": "Triplo-duplo comandando o ataque"
+    },
+    {
+      "jogador": "Kevin Durant",
+      "nota": 7.5,
+      "comentario": "Duplo-duplo e +24 em quadra"
+    },
+    {
+      "jogador": "Amen Thompson",
+      "nota": 7.5,
+      "comentario": "18 pts e 10 reb"
+    },
+    {
+      "jogador": "Devin Booker",
+      "nota": 6,
+      "comentario": "25 pts, mas 6 de 18"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909323",
+    "data_rodada": "2026-11-25"
+  },
+  "escrito_em": "2026-11-26T11:50:29.723Z"
+}

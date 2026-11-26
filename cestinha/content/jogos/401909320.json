@@ -1,0 +1,52 @@
+{
+  "titulo": "McDaniels faz 32 e Timberwolves derrubam o Thunder em Oklahoma City",
+  "subtitulo": "Timberwolves 113 a 106 Thunder no Paycom Center",
+  "corpo": "O Timberwolves venceu o Thunder por 113 a 106 fora de casa. O jogo virou no terceiro quarto, vencido pelo Timberwolves por 40 a 30, e o time acertou 17 bolas de três contra 11 do Thunder.\n\nJaden McDaniels foi gigante: 32 pts, 10 reb, 5 ast, com 11 de 15 nos arremessos. LaMelo Ball fez 19 pts, 7 reb, 8 ast, e Ayo Dosunmu somou 16 pts, 3 reb, 4 ast.\n\nDo outro lado, Shai Gilgeous-Alexander também fez 32 pts, 3 reb, 5 ast, mas acertou só 1 de 7 de três. Ajay Mitchell ajudou com 25 pts, 4 reb, 3 ast.\n\n**Momento-chave:** McDaniels fechou o placar com dois lances livres a 14 segundos do fim.\n\n**E agora?** O Timberwolves vai a 14-5. O Thunder cai para 10-9 e perde a terceira seguida.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Timberwolves",
+    "Thunder"
+  ],
+  "jogadores": [
+    "Jaden McDaniels",
+    "LaMelo Ball",
+    "Ayo Dosunmu",
+    "Shai Gilgeous-Alexander",
+    "Ajay Mitchell"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Timberwolves chega a 14-5 e segue no topo da Divisão Noroeste; o Thunder cai para 10-9.",
+  "notas": [
+    {
+      "jogador": "Jaden McDaniels",
+      "nota": 9.5,
+      "comentario": "32 pts e 10 reb, 11 de 15"
+    },
+    {
+      "jogador": "LaMelo Ball",
+      "nota": 7.5,
+      "comentario": "Cinco bolas de três e 8 ast"
+    },
+    {
+      "jogador": "Shai Gilgeous-Alexander",
+      "nota": 7.5,
+      "comentario": "32 pts, mas -15 em quadra"
+    },
+    {
+      "jogador": "Ajay Mitchell",
+      "nota": 7.5,
+      "comentario": "25 pts com 11 de 19"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909320",
+    "data_rodada": "2026-11-25"
+  },
+  "escrito_em": "2026-11-26T11:50:29.721Z"
+}

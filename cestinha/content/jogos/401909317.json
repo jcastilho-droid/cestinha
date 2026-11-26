@@ -1,0 +1,52 @@
+{
+  "titulo": "LeBron faz o primeiro triplo-duplo pelo 76ers e Maxey decide contra o Heat",
+  "subtitulo": "76ers 111 a 104 Heat, pela NBA Cup, na Filadélfia",
+  "corpo": "E aí, aqui é o Cestinha. O 76ers venceu o Heat por 111 a 104 em casa, em jogo da NBA Cup. O time controlou a partir do segundo quarto (33 a 21) e chegou a abrir 16 de vantagem, com 14 bolas de três contra só 8 do Heat.\n\nTyrese Maxey foi o cestinha, com 30 pts, 4 reb, 6 ast. LeBron James fez seu primeiro triplo-duplo com a camisa do 76ers: 25 pts, 10 reb, 12 ast. VJ Edgecombe somou 18 pts, 6 reb, 5 ast.\n\nNo Heat, Giannis Antetokounmpo foi brabo: 32 pts, 14 reb, 4 ast. Davion Mitchell fez 20 pts, 4 reb, 10 ast.\n\n**Momento-chave:** a 2min31 do fim, Maxey meteu uma bola de três de step back e fez 111 a 95.\n\n**E agora?** O 76ers vai a 15-4 e segue na ponta da Divisão Atlântico. O Heat cai para 10-7.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "76ers",
+    "Heat"
+  ],
+  "jogadores": [
+    "Tyrese Maxey",
+    "LeBron James",
+    "VJ Edgecombe",
+    "Giannis Antetokounmpo",
+    "Davion Mitchell"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O 76ers chega a 15-4 e segue líder da Divisão Atlântico, 2,5 jogos à frente de Celtics e Knicks.",
+  "notas": [
+    {
+      "jogador": "Tyrese Maxey",
+      "nota": 8.5,
+      "comentario": "30 pts e a bola de três que matou"
+    },
+    {
+      "jogador": "LeBron James",
+      "nota": 9,
+      "comentario": "Primeiro triplo-duplo pelo 76ers, 9 de 15"
+    },
+    {
+      "jogador": "Giannis Antetokounmpo",
+      "nota": 8,
+      "comentario": "32 pts e 14 reb, faltou ajuda"
+    },
+    {
+      "jogador": "Davion Mitchell",
+      "nota": 7,
+      "comentario": "Duplo-duplo com 10 ast"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909317",
+    "data_rodada": "2026-11-25"
+  },
+  "escrito_em": "2026-11-26T11:50:29.718Z"
+}

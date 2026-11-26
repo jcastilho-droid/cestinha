@@ -1,0 +1,51 @@
+{
+  "titulo": "Wembanyama faz 44, mas Avdija e Lillard levam o Trail Blazers à vitória",
+  "subtitulo": "Trail Blazers 116 a 111 Spurs, pela NBA Cup, em Portland",
+  "corpo": "Que jogo. Foram 25 trocas de liderança até o Trail Blazers vencer o Spurs por 116 a 111 em Portland, pela fase de grupos da NBA Cup. O último quarto (32 a 24) decidiu, com 19 bolas de três do time da casa.\n\nDeni Avdija foi o nome do Trail Blazers: 33 pts, 12 reb, 7 ast. Damian Lillard fez 29 pts, 3 reb, 7 ast, com 5 bolas de três.\n\nVictor Wembanyama foi o cestinha da noite, com 44 pts, 16 reb, 3 ast e 17 de 30 nos arremessos. Não bastou. Stephon Castle somou 20 pts, 6 reb, 9 ast.\n\n**Momento-chave:** a 38 segundos do fim, Avdija acertou um arremesso de tabela de longe, com passe de Lillard, e fez 114 a 109.\n\n**E agora?** O Trail Blazers vai a 12-6, com duas seguidas. O Spurs cai para 15-4 e vê acabar uma sequência de três vitórias.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 4,
+  "times": [
+    "Trail Blazers",
+    "Spurs"
+  ],
+  "jogadores": [
+    "Deni Avdija",
+    "Damian Lillard",
+    "Victor Wembanyama",
+    "Stephon Castle"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Trail Blazers chega a 12-6 e derruba um dos líderes do Oeste, mesmo com 44 pts de Wembanyama.",
+  "notas": [
+    {
+      "jogador": "Deni Avdija",
+      "nota": 9,
+      "comentario": "33 pts, 12 reb e a cesta decisiva"
+    },
+    {
+      "jogador": "Damian Lillard",
+      "nota": 8,
+      "comentario": "29 pts e 7 ast"
+    },
+    {
+      "jogador": "Victor Wembanyama",
+      "nota": 9,
+      "comentario": "44 pts e 16 reb, mas perdeu"
+    },
+    {
+      "jogador": "Stephon Castle",
+      "nota": 7,
+      "comentario": "Quase duplo-duplo, 6 de 18"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909325",
+    "data_rodada": "2026-11-25"
+  },
+  "escrito_em": "2026-11-26T11:50:29.725Z"
+}

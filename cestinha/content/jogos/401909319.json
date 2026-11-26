@@ -1,0 +1,52 @@
+{
+  "titulo": "Alvarado sai do banco, Knicks atropelam o Cavaliers e chegam a 6 seguidas",
+  "subtitulo": "Knicks 121 a 102 Cavaliers no Madison Square Garden",
+  "corpo": "O Knicks perdia o primeiro quarto por 34 a 23, mas reagiu e venceu o Cavaliers por 121 a 102 no Madison Square Garden. O último quarto foi um passeio: 39 a 17. O time acertou 17 bolas de três e deu 33 assistências.\n\nJose Alvarado foi o cestinha do Knicks em só 19 minutos: 21 pts, 1 reb, 3 ast, com 5 de 7 de três. Mikal Bridges fez 19 pts, 8 reb, 2 ast, e Josh Hart teve duplo-duplo com 15 pts, 7 reb, 11 ast.\n\nNo Cavaliers, Donovan Mitchell foi o cestinha da partida, com 30 pts, 4 reb, 4 ast. James Harden somou 28 pts, 1 reb, 5 ast.\n\n**E agora?** O Knicks vai a 12-6, com seis vitórias seguidas, e lidera a série da temporada por 2 a 1. O Cavaliers cai para 9-10.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Knicks",
+    "Cavaliers"
+  ],
+  "jogadores": [
+    "Jose Alvarado",
+    "Mikal Bridges",
+    "Josh Hart",
+    "Donovan Mitchell",
+    "James Harden"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Knicks emenda a sexta vitória seguida e encosta no 76ers na Divisão Atlântico; o Cavaliers fica abaixo de 50%.",
+  "notas": [
+    {
+      "jogador": "Jose Alvarado",
+      "nota": 9,
+      "comentario": "21 pts em 19 minutos, 8 de 10"
+    },
+    {
+      "jogador": "Josh Hart",
+      "nota": 8,
+      "comentario": "Duplo-duplo com 11 ast"
+    },
+    {
+      "jogador": "Mikal Bridges",
+      "nota": 7.5,
+      "comentario": "19 pts e +33 em quadra"
+    },
+    {
+      "jogador": "Donovan Mitchell",
+      "nota": 7,
+      "comentario": "30 pts, mas 1 de 7 de três"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909319",
+    "data_rodada": "2026-11-25"
+  },
+  "escrito_em": "2026-11-26T11:50:29.720Z"
+}
