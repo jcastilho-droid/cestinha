@@ -16,7 +16,7 @@ if (match) {
   assert.ok(!html.includes('data-noticia-prev'),'Setas antigas ainda presentes');
   assert.ok(!html.includes('data-noticia-status'),'Contador antigo ainda presente');
   assert.ok(html.includes('data-cestinha-carrossel'),'Carrossel nao inicializado');
-  const slides = [...html.matchAll(/class="noticia-slide"/g)].length;
+  const slides = [...html.matchAll(/class="noticia-slide(?:\s|\")/g)].length;
   assert.ok(slides>0&&slides<=5,'Quantidade de slides incorreta: '+slides);
   const links = [...html.matchAll(/href="([^"]+\/(?:jogo|rodada)\/[^"]+\.html)"/g)].map(m=>m[1]);
   assert.ok(links.length>=slides,'Slides sem destino valido');
@@ -24,7 +24,10 @@ if (match) {
     const relative=link.replace(/^\.\//,'');
     assert.ok(fs.existsSync(path.join('_site',relative)),'Link interno quebrado: '+link);
   }
-  assert.ok(html.includes('noticia-arena-foto')||html.includes('noticia-jogador-foto')||html.includes('noticia-duelo'),'Falta componente visual');
+  assert.ok(html.includes('noticia-galeria-main') && html.includes('noticia-galeria-top') && html.includes('noticia-galeria-bottom'),'Tres quadros da galeria ausentes');
+  assert.ok(!html.includes('class="noticia-jogador"'),'Retrato sobreposto ainda presente');
+  assert.ok(html.includes('noticia-galeria-aviso'),'Aviso de imagem ilustrativa ausente');
+  assert.ok(html.includes('noticia-creditos'),'Creditos das fotos de arquivo ausentes');
   if(slides>1)assert.ok(html.includes('data-noticia-indice'),'Carrossel sem dots');
   console.log('Carrossel validado: '+slides+' noticias, '+links.length+' links internos existentes.');
 } else {
@@ -48,3 +51,6 @@ assert.ok(visual.includes('zone.append(section)'),'Modulo Explore nao esta no fi
 assert.ok(visual.includes('v6-pick-photo'),'Mini-cards de exploracao sem area de foto');
 assert.ok(!visual.includes("$('.sec-jogos',zone)?.before(section)"),'Modulo Explore ainda precede jogos');
 console.log('Rodape e modulo Explore validados.');
+
+assert.ok(css.includes('.noticia-slide-galeria'),'Layout em paineis nao incluido no CSS');
+assert.ok(css.includes('@media(max-width:720px)'),'Layout mobile da galeria nao encontrado');
