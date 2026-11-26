@@ -55,9 +55,27 @@
     return '<table class="stats-table"><thead><tr><th>Jogador</th><th>Time</th><th>Status</th></tr></thead><tbody>'+rows.map(x=>'<tr><td>'+esc(x.nome)+'</td><td>'+esc(x.equipe)+'</td><td>'+esc(state(x.status))+'</td></tr>').join('')+'</tbody></table>';
   }
   function showConfronto(){
-    const g=current(),a=team(g.times[0].id),b=team(g.times[1].id);if(!a||!b)return '<p>Dados indisponíveis.</p>';
-    const comparison=[['pts','Pontos'],['reb','Rebotes'],['ast','Assistências'],['rb','Roubos'],['toco','Tocos']].map(([k,label])=>{let va=num(a.stats[k]),vb=num(b.stats[k]),mx=Math.max(va,vb,1);return '<div class="stats-barline"><b>'+esc(a.sigla)+' '+val(va)+'</b><div class="stats-bar"><i style="width:'+(va/mx*100)+'%"></i></div><span>'+esc(label)+'</span><div class="stats-bar right"><i style="width:'+(vb/mx*100)+'%"></i></div><b>'+val(vb)+' '+esc(b.sigla)+'</b></div>'}).join('');
-    return '<div class="stats-grid">'+panel('Comparativo do confronto',comparison,'Médias da temporada registradas no último levantamento dos times.')+panel('Médias lado a lado',tableMatch(a,b))+'</div><div class="stats-grid half">'+panel('Relatório de desfalques',injuries(a,b),'Status da última coleta; sem estimativas inventadas de impacto.')+panel('Forma recente',tableMatchRecent(a,b))+'</div>';
+    const g=current(),a=team(g.times[0].id),b=team(g.times[1].id);
+    if(!a||!b)return '<p>Dados indisponíveis.</p>';
+    const compare=[['pts','Pontos por jogo'],['reb','Rebotes por jogo'],['ast','Assistências por jogo'],['rb','Roubos por jogo'],['toco','Tocos por jogo']];
+    const comparison='<div class="stats-match-legend"><span><i class="stats-team-dot" style="background:#f28d52"></i>'+esc(a.sigla)+'</span><span><i class="stats-team-dot" style="background:#8da9ee"></i>'+esc(b.sigla)+'</span></div>'+
+      compare.map(([key,label])=>{
+        const v1=Number(a.stats[key]),v2=Number(b.stats[key]);
+        const has1=a.stats[key]!=null&&Number.isFinite(v1),has2=b.stats[key]!=null&&Number.isFinite(v2);
+        const max=Math.max(1,has1?v1:0,has2?v2:0);
+        const percent=v=>Math.max(0,Math.min(100,v/max*100));
+        return '<div class="stats-match-row"><div class="stats-match-row-head"><strong>'+esc(label)+'</strong><small>Média por jogo</small></div>'+
+          '<div class="stats-match-series"><span class="stats-match-team">'+esc(a.sigla)+'</span>'+
+          '<div class="stats-match-track"><i class="stats-match-fill first" style="width:'+(has1?percent(v1):0)+'%"></i></div>'+
+          '<b>'+ (has1?dec(v1):'—')+'</b></div>'+
+          '<div class="stats-match-series"><span class="stats-match-team">'+esc(b.sigla)+'</span>'+
+          '<div class="stats-match-track"><i class="stats-match-fill second" style="width:'+(has2?percent(v2):0)+'%"></i></div>'+
+          '<b>'+(has2?dec(v2):'—')+'</b></div></div>';
+      }).join('');
+    return '<div class="stats-grid">'+panel('Comparativo do confronto',comparison,'As duas barras de cada estatística usam a mesma escala. São médias por jogo, não números da partida.')+
+      panel('Números lado a lado',tableMatch(a,b))+'</div><div class="stats-grid half">'+
+      panel('Relatório de desfalques',injuries(a,b),'Status da última coleta; sem estimativas inventadas de impacto.')+
+      panel('Forma recente',tableMatchRecent(a,b))+'</div>';
   }
   function tableMatchRecent(a,b){return '<table class="stats-table"><thead><tr><th>Indicador</th><th>'+esc(a.sigla)+'</th><th>'+esc(b.sigla)+'</th></tr></thead><tbody>'+[['Últimos jogos',t=>t.recentes.length],['Vitórias no recorte',t=>t.recentes.filter(x=>x.resultado==='V').length],['Média de pontos',t=>t.recentes.length?dec(t.recentes.reduce((s,x)=>s+x.pts,0)/t.recentes.length):'—'],['Média sofrida',t=>t.recentes.length?dec(t.recentes.reduce((s,x)=>s+x.sofridos,0)/t.recentes.length):'—']].map(([name,fn])=>'<tr><td>'+name+'</td><td>'+fn(a)+'</td><td>'+fn(b)+'</td></tr>').join('')+'</tbody></table>'}
   function showJogadores(){
@@ -161,9 +179,60 @@
     return '<div class="stats-grid half">'+[a,b].map(t=>panel('Ataque · '+t.nome,lineChart(t.recentes,'pts','Pontos recentes do '+t.nome),'Últimos '+t.recentes.length+' jogos disponíveis no calendário da equipe.')).join('')+'</div><div class="stats-grid half">'+[a,b].map(t=>panel('Defesa · '+t.nome,lineChart(t.recentes,'sofridos','Pontos sofridos por '+t.nome),'Quanto menor a pontuação sofrida, melhor o resultado defensivo bruto.')).join('')+'</div>';
   }
   function showQuintetos(){
-    const g=current(),a=g.times[0],b=g.times[1];const starters=t=>t.jogadores.filter(p=>p.titular).slice(0,5);
-    const draw=t=>{const arr=starters(t);if(!arr.length)return '<p>Não há titulares identificados no box score.</p>';return '<div class="stats-lineup">'+arr.map(p=>'<div class="stats-athlete" style="--teamcolor:'+esc(t.cor||'#f3853e')+'">'+(p.id?'<img src="https://a.espncdn.com/i/headshots/nba/players/full/'+encodeURIComponent(p.id)+'.png" alt="" loading="lazy" onerror="this.remove()">':'')+'<strong>'+esc(p.nome)+'</strong><span>'+p.pts+' PTS · '+p.reb+' REB · '+p.ast+' AST</span></div>').join('')+'</div>'};
-    return '<div class="stats-court"><svg class="stats-court-lines" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><rect x="15" y="15" width="970" height="570" fill="none" stroke="#728092" stroke-width="3"/><line x1="500" y1="15" x2="500" y2="585" stroke="#728092" stroke-width="3"/><circle cx="500" cy="300" r="70" stroke="#728092" stroke-width="3" fill="none"/><rect x="15" y="185" width="160" height="230" stroke="#728092" stroke-width="3" fill="none"/><rect x="825" y="185" width="160" height="230" stroke="#728092" stroke-width="3" fill="none"/></svg><h2 class="stats-court-title">Titulares identificados no box score</h2><div class="stats-lineups"><div><h3>'+logo(a,22)+' '+esc(a.nome)+'</h3>'+draw(a)+'</div><div><h3>'+logo(b,22)+' '+esc(b.nome)+'</h3>'+draw(b)+'</div></div></div><p class="stats-note">Posicionamento ilustrativo. São titulares registrados na partida concluída, não uma escalação futura ou uma projeção tática.</p>';
+    const g=current(),a=g.times[0],b=g.times[1];
+    const posNames={PG:'Armador',SG:'Ala-armador',SF:'Ala',PF:'Ala-pivô',C:'Pivô'};
+    const asCode=value=>{
+      const raw=String(value||'').toUpperCase().trim().replace(/[^A-Z/]/g,'');
+      if(['PG','SG','SF','PF','C'].includes(raw))return raw;
+      if(raw==='G'||raw==='F'||raw==='G/F'||raw==='F/G'||raw==='F/C'||raw==='C/F')return raw;
+      return '';
+    };
+    // A ESPN frequentemente informa apenas G/F/C. A distribuicao em cinco
+    // papeis e visual e estimada: nao afirma ser a funcao oficial na partida.
+    const formation=t=>{
+      const arr=t.jogadores.filter(p=>p.titular).slice(0,5);
+      const slots=['C','PF','SF','SG','PG'],assigned=new Map(),taken=new Set();
+      const put=(slot,p)=>{assigned.set(slot,p);taken.add(p)};
+      const role=p=>asCode(p.posicao);
+      // Primeiro os titulares com funcoes especificas, depois as categorias amplas.
+      for(const slot of slots){
+        const p=arr.find(x=>!taken.has(x)&&role(x)===slot);
+        if(p)put(slot,p);
+      }
+      const possibilities={
+        C:['C','PF'], 'F/C':['C','PF','SF'],'C/F':['C','PF','SF'],
+        F:['PF','SF','C'],'G/F':['SF','SG','PG','PF'],'F/G':['SF','SG','PG','PF'],
+        G:['SG','PG','SF'], PG:['PG','SG'],SG:['SG','PG'],SF:['SF','PF'],PF:['PF','C']
+      };
+      for(const p of arr){
+        if(taken.has(p))continue;
+        const target=(possibilities[role(p)]||slots).find(slot=>!assigned.has(slot));
+        if(target)put(target,p);
+      }
+      return {slots,assigned,arr};
+    };
+    const draw=t=>{
+      const {slots,assigned,arr}=formation(t);
+      if(!arr.length)return '<div class="stats-empty">Não há titulares identificados no box score.</div>';
+      return '<div class="stats-position-formation" style="--teamcolor:'+esc(t.cor||'#f3853e')+'">'+
+        slots.map(slot=>{
+          const p=assigned.get(slot);if(!p)return '<div class="stats-position-slot stats-position-'+slot.toLowerCase()+'"><span class="stats-role">'+slot+' · '+posNames[slot]+'</span><p>Não identificado</p></div>';
+          const original=asCode(p.posicao)||'—';
+          const accurate=original===slot;
+          const note=accurate?'Posição informada':'Organização ilustrativa · ESPN: '+original;
+          return '<article class="stats-position-slot stats-position-'+slot.toLowerCase()+'" aria-label="'+esc(posNames[slot])+': '+esc(p.nome)+'">'+
+            '<div class="stats-role"><b>'+slot+'</b><span>'+posNames[slot]+'</span></div>'+
+            (p.id?'<img src="https://a.espncdn.com/i/headshots/nba/players/full/'+encodeURIComponent(p.id)+'.png" alt="" loading="lazy" onerror="this.remove()">':'')+
+            '<strong>'+esc(p.nome)+'</strong><span class="stats-position-numbers">'+p.pts+' PTS · '+p.reb+' REB · '+p.ast+' AST</span>'+
+            '<small title="'+esc(note)+'">'+esc(accurate?'Posição registrada':'Função visual estimada')+'</small></article>';
+        }).join('')+'</div>';
+    };
+    return '<div class="stats-position-head"><div><h2>Quintetos por posição</h2><p>PG · SG · SF · PF · C</p></div><div class="stats-position-key"><span>PG Armador</span><span>SG Ala-armador</span><span>SF Ala</span><span>PF Ala-pivô</span><span>C Pivô</span></div></div>'+
+      '<div class="stats-court stats-court-positions">'+
+        '<svg class="stats-court-lines" viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true"><rect x="16" y="16" width="968" height="668" fill="none" stroke="#65768b" stroke-width="3"/><line x1="500" x2="500" y1="16" y2="684" stroke="#65768b" stroke-width="3"/><circle cx="500" cy="350" r="78" stroke="#65768b" fill="none" stroke-width="3"/><path d="M16 150h170v400H16M984 150H814v400h170" fill="none" stroke="#65768b" stroke-width="3"/></svg>'+
+        '<div class="stats-court-sides"><section class="stats-court-team"><h3>'+logo(a,25)+' '+esc(a.nome)+'</h3>'+draw(a)+'</section>'+
+        '<section class="stats-court-team"><h3>'+logo(b,25)+' '+esc(b.nome)+'</h3>'+draw(b)+'</section></div></div>'+
+        '<p class="stats-note">Os cinco titulares são extraídos do box score. A ESPN muitas vezes classifica atletas apenas como G (armador), F (ala) ou C (pivô). A distribuição PG/SG/SF/PF/C é uma visualização aproximada, não a confirmação da função tática usada no jogo.</p>';
   }
   function paint(){
     matchup();
