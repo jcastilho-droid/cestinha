@@ -55,7 +55,10 @@
       filtered=filtered.slice(0,18);
       // Uma URL compartilhada com ?jogo= deve manter a partida escolhida nos cards.
       const deepLinked=sortedGames.find(g=>String(g.id)===String($('#stats-partida')?.value));
-      if(deepLinked&&!filtered.some(g=>String(g.id)===String(deepLinked.id)))filtered.unshift(deepLinked);
+      if(deepLinked){
+        filtered=filtered.filter(g=>String(g.id)!==String(deepLinked.id));
+        filtered.unshift(deepLinked);
+      }
     }
     const visible=filtered.slice(0,explorerLimit);
     const selected=$('#stats-partida')?.value;
