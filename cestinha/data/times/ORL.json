@@ -391,7 +391,10 @@
       "experiencia": 4,
       "universidade": "Florida",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 4,
         "min": "3.3",
@@ -1680,5 +1683,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/orl",
-  "atualizado_em": "2026-11-26T13:41:54.284Z"
+  "atualizado_em": "2026-11-26T20:19:38.982Z"
 }
