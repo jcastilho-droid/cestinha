@@ -37,8 +37,10 @@ Regras extras desta rotina:
 - Estatística sempre no formato `32 pts, 11 reb, 8 ast` (a checagem automática confere esses números).
 - Placar sempre como `112 a 108`.
 - Os campos `*_em_ingles` estão em inglês só como referência: traduza a ideia, não copie.
-- Se a entrada tiver contradição ou dado faltando que atrapalhe o texto, escreva mesmo assim
-  e explique em `alertas` (o texto vai para revisão em vez de ir ao site).
+- Se a entrada tiver contradição ou dado faltando, **cruze com outras fontes** antes de escrever
+  (busque na web: NBA.com, Basketball-Reference, página do jogo na ESPN, CBS Sports). Use só o
+  valor confirmado por pelo menos uma fonte além da entrada; se não confirmar, deixe o dado fora
+  do texto. Deixe `alertas` vazio: os textos são publicados sem aprovação manual.
 
 ## 4. Escrever os resumos de jogo
 Para cada item de `jogos`:
@@ -80,8 +82,19 @@ node scripts/finalizar.js
 ```
 Esse script confere cada rascunho (formato, tamanho, placares, números `pts/reb/ast`
 e nomes contra os dados). Sem alertas, o texto vai para `content/jogos/`, `content/rodadas/`, `content/power-ranking/` ou `content/jogo-da-noite/`;
-com alertas, vai para `content/revisao/` e **não** é publicado. Ele também atualiza
-`data/processed.json`. Não corrija nem mova arquivos de `content/revisao/` por conta própria.
+com alertas, vai para `content/revisao/`. Ele também atualiza `data/processed.json`.
+
+## 6b. Corrigir e publicar o que foi para revisão (sem aprovação manual)
+Não existe mais aprovação manual: **nada pode ficar em `content/revisao/`** no fim da execução.
+Para cada arquivo em `content/revisao/` (deste dia ou de dias anteriores):
+1. Leia os alertas. Rode de novo `node scripts/entrada.js jogo <id>` (ou `rodada <data>`, `power`, `noite <data>`).
+2. Cruze o ponto do alerta com outras fontes na web (NBA.com, Basketball-Reference, página do jogo na ESPN, CBS Sports).
+3. Reescreva o texto: corrija o que estava errado ou **tire do texto** o dado que não bate com a entrada.
+   Números no texto continuam só os que existem na entrada (a checagem automática confere).
+4. Salve como rascunho novo em `content/rascunhos/` (mesmo nome: `jogo-<id>.json` etc.), com `alertas: []`,
+   apague o arquivo de `content/revisao/` e rode `node scripts/finalizar.js` de novo.
+5. Faça no máximo 2 tentativas por texto. Se ainda assim for barrado, publique uma versão mais curta,
+   só com placar, vencedor e os números que a checagem aceitou (sem os trechos problemáticos).
 
 Depois, garanta que o site monta sem erro:
 ```bash
@@ -99,6 +112,6 @@ O envio dispara o GitHub Actions, que monta e publica o site sozinho em 1 a 2 mi
 
 ## 8. Relatório final
 Responda em poucas linhas, em português:
-- quantos textos foram publicados e quais foram para revisão (com os alertas);
+- quantos textos foram publicados;
+- quais precisaram de correção no passo 6b, o que foi conferido e em quais fontes;
 - se algo falhou e em qual passo.
-Se houver item em revisão, comece o relatório com "ATENÇÃO: há texto em revisão".
