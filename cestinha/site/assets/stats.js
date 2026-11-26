@@ -51,7 +51,12 @@
     });
     // O periodo "Mais recentes" conserva somente as seis ultimas partidas no
     // primeiro bloco, enquanto filtros e pesquisa permitem explorar tudo.
-    if(period==='recentes'&&!q&&!teamId)filtered=filtered.slice(0,18);
+    if(period==='recentes'&&!q&&!teamId){
+      filtered=filtered.slice(0,18);
+      // Uma URL compartilhada com ?jogo= deve manter a partida escolhida nos cards.
+      const deepLinked=sortedGames.find(g=>String(g.id)===String($('#stats-partida')?.value));
+      if(deepLinked&&!filtered.some(g=>String(g.id)===String(deepLinked.id)))filtered.unshift(deepLinked);
+    }
     const visible=filtered.slice(0,explorerLimit);
     const selected=$('#stats-partida')?.value;
     grid.innerHTML=visible.length?visible.map(g=>{
