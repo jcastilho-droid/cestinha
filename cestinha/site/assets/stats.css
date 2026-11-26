@@ -184,3 +184,41 @@
   .stats-position-slot .stats-position-numbers{font-size:9px}
   .stats-position-slot small{font-size:8px}
 }
+
+
+/* Formacao vista de cima: cada equipe ataca o aro do seu lado.
+   Fixamos largura minima da quadra no celular, com rolagem horizontal. */
+.stats-court-scroll{width:100%;overflow-x:auto;overflow-y:hidden;border-radius:14px;scrollbar-color:#68849d #152333}
+.stats-court-scroll:focus-visible{outline:3px solid #ffb16a;outline-offset:3px}
+.stats-court-positions{width:100%;min-width:1040px;height:600px;min-height:600px;padding:0;position:relative;border-radius:14px}
+.stats-court-positions .stats-court-lines{inset:0;width:100%;height:100%;opacity:.72}
+.stats-court-positions .stats-court-sides{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;gap:0;z-index:2}
+.stats-court-positions .stats-court-team{position:relative;margin:0;padding:0;min-width:0}
+.stats-court-positions .stats-court-team h3{position:absolute;top:28px;left:24px;right:24px;z-index:3;display:flex;align-items:center;gap:8px;margin:0;font-size:24px}
+.stats-court-positions .stats-court-team h3 small{margin-left:auto;font:600 11px/1.2 var(--corpo);color:#acc0d4;text-align:right}
+.stats-court-positions .stats-team-right h3{justify-content:flex-end;text-align:right}
+.stats-court-positions .stats-team-right h3 small{order:-1;margin-left:0;margin-right:auto;text-align:left}
+.stats-court-positions .stats-position-formation{position:absolute;inset:0;display:block!important}
+.stats-court-positions .stats-position-slot{position:absolute;display:flex!important;max-width:none;width:150px;min-height:0;height:143px;padding:6px 7px;gap:2px;transform:translate(-50%,-50%);box-shadow:0 14px 25px #08101ab8}
+.stats-court-positions .stats-position-slot img{height:58px;width:100%;object-fit:contain;object-position:center bottom;flex:none}
+.stats-court-positions .stats-position-slot strong{font-size:11px;line-height:1.12;min-height:24px}
+.stats-court-positions .stats-position-slot .stats-role{font-size:10px;gap:5px}
+.stats-court-positions .stats-position-slot .stats-position-numbers{font-size:9px}
+.stats-court-positions .stats-position-slot small{font-size:8px;line-height:1.1}
+.stats-court-positions .stats-team-left .stats-position-c{left:17%;top:50%}
+.stats-court-positions .stats-team-left .stats-position-pf{left:43%;top:25%}
+.stats-court-positions .stats-team-left .stats-position-sf{left:43%;top:75%}
+.stats-court-positions .stats-team-left .stats-position-sg{left:78%;top:29%}
+.stats-court-positions .stats-team-left .stats-position-pg{left:78%;top:71%}
+.stats-court-positions .stats-team-right .stats-position-c{left:83%;top:50%}
+.stats-court-positions .stats-team-right .stats-position-pf{left:57%;top:25%}
+.stats-court-positions .stats-team-right .stats-position-sf{left:57%;top:75%}
+.stats-court-positions .stats-team-right .stats-position-sg{left:22%;top:29%}
+.stats-court-positions .stats-team-right .stats-position-pg{left:22%;top:71%}
+@media(max-width:720px){
+  .stats-court-positions{width:1040px;height:600px;min-height:600px}
+  .stats-court-positions .stats-position-slot{width:132px;height:137px;padding:6px 5px}
+  .stats-court-positions .stats-position-slot img{height:54px}
+  .stats-court-positions .stats-position-slot strong{font-size:10px}
+  .stats-court-positions .stats-court-team h3{font-size:20px;top:25px;left:15px;right:15px}
+}
