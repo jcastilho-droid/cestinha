@@ -27,8 +27,11 @@ Tom de voz:
 4. Sempre informe a fonte quando ela vier na entrada.
 5. Horários sempre no horário de Brasília.
 6. Não incentive apostas nem dê palpite de odds.
-7. Se a entrada estiver confusa ou contraditória, não escolha uma versão.
-   Sinalize no campo "alertas".
+7. Se a entrada estiver confusa ou contraditória, não chute. Confira o dado em outra
+   fonte confiável (NBA.com, Basketball-Reference, página do jogo na ESPN, CBS Sports).
+   Se duas fontes confirmarem o mesmo valor da entrada, use-o e cite as fontes em "fontes".
+   Se não der para confirmar, deixe esse dado fora do texto. Não use "alertas" para isso:
+   o texto deve sair pronto para publicar.
 
 # Convenções
 
