@@ -222,3 +222,104 @@
   .stats-court-positions .stats-position-slot strong{font-size:10px}
   .stats-court-positions .stats-court-team h3{font-size:20px;top:25px;left:15px;right:15px}
 }
+
+
+/* V4 RESPONSIVO: Quadra inteira em desktop; duas meias-quadras empilhadas
+   no mobile. Nunca forcar uma largura maior do que o viewport. */
+.stats-court-scroll{max-width:100%;overflow-x:clip;overflow-y:visible}
+.stats-court-positions{width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+.stats-court-positions .stats-court-sides{min-width:0}
+.stats-court-positions .stats-court-team{min-width:0}
+.stats-court-positions .stats-position-slot{width:clamp(94px,10vw,142px);max-width:36%}
+.stats-position-head,.stats-position-key{min-width:0}
+.stats-page,.stats-panel,#stats-content{min-width:0}
+.stats-matchup .stats-team{min-width:0}
+.stats-matchup .stats-team strong{overflow-wrap:anywhere}
+.stats-toolbar select{max-width:100%}
+@media (max-width:920px){
+  /* Uma meia-quadra por equipe: preserves 5 cartoes legiveis em telas estreitas. */
+  .stats-court-scroll{overflow:visible;border-radius:14px}
+  .stats-court-positions{width:100%;min-width:0!important;max-width:100%;height:auto;min-height:0;border:0;background:transparent;overflow:visible}
+  .stats-court-positions>.stats-court-lines{display:none}
+  .stats-court-positions .stats-court-sides{display:flex;flex-direction:column;position:relative;inset:auto;gap:16px}
+  .stats-court-positions .stats-court-team{
+    height:475px;min-height:475px;position:relative;overflow:hidden;
+    border:2px solid #536f83;border-radius:14px;
+    background:
+      radial-gradient(circle at 50% 12%,transparent 0 27px,#607c8f 28px 29px,transparent 30px),
+      linear-gradient(#576f82,#576f82) 50% 21%/42% 1.5px no-repeat,
+      linear-gradient(#576f82,#576f82) 50% 29%/42% 1.5px no-repeat,
+      linear-gradient(0deg,#152333,#1a2939);
+  }
+  .stats-court-positions .stats-court-team::before{
+    content:"";position:absolute;top:0;left:27%;right:27%;height:29%;
+    border:2px solid #567085;border-top:0;border-radius:0 0 8px 8px;
+    pointer-events:none;opacity:.75;
+  }
+  .stats-court-positions .stats-court-team::after{
+    content:"";position:absolute;left:11%;right:11%;bottom:-55px;height:125px;
+    border:2px solid #567085;border-radius:50%;
+    pointer-events:none;opacity:.65;
+  }
+  .stats-court-positions .stats-court-team h3{
+    top:10px;left:12px;right:12px;justify-content:center;
+    font-size:clamp(17px,4.8vw,23px);text-align:center;gap:7px;
+    text-shadow:0 2px 8px #09121b;
+  }
+  .stats-court-positions .stats-court-team h3 small{display:none}
+  .stats-court-positions .stats-team-right h3{justify-content:center}
+  .stats-court-positions .stats-court-team h3 img{width:24px;height:24px}
+  .stats-court-positions .stats-position-slot{
+    width:min(125px,39%);max-width:39%;height:116px;min-height:116px;
+    padding:5px 5px 6px;gap:1px;justify-content:flex-start;
+    border-radius:10px;transform:translate(-50%,-50%);
+    box-shadow:0 7px 16px #06101d8a;
+  }
+  .stats-court-positions .stats-position-slot img{height:45px;width:100%}
+  .stats-court-positions .stats-position-slot strong{font-size:10px;min-height:0;line-height:1.13}
+  .stats-court-positions .stats-position-slot .stats-role{font-size:9px;gap:4px}
+  .stats-court-positions .stats-position-slot .stats-role b{font-size:10px;padding:2px 5px}
+  .stats-court-positions .stats-position-slot .stats-position-numbers{font-size:9px}
+  .stats-court-positions .stats-position-slot small{display:none}
+  /* O aro fica no topo. C no garrafao; PF/SF meio; PG/SG no perimetro. */
+  .stats-court-positions .stats-team-left .stats-position-c,
+  .stats-court-positions .stats-team-right .stats-position-c{left:50%;top:23%}
+  .stats-court-positions .stats-team-left .stats-position-pf,
+  .stats-court-positions .stats-team-right .stats-position-pf{left:26%;top:52%}
+  .stats-court-positions .stats-team-left .stats-position-sf,
+  .stats-court-positions .stats-team-right .stats-position-sf{left:74%;top:52%}
+  .stats-court-positions .stats-team-left .stats-position-pg,
+  .stats-court-positions .stats-team-right .stats-position-pg{left:26%;top:81%}
+  .stats-court-positions .stats-team-left .stats-position-sg,
+  .stats-court-positions .stats-team-right .stats-position-sg{left:74%;top:81%}
+}
+@media(max-width:480px){
+  .stats-page{max-width:100%;padding:12px 9px 48px}
+  .stats-heading h1{font-size:clamp(42px,11vw,60px)}
+  .stats-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .stats-tabs button{min-width:0;font-size:12px;padding:11px 5px}
+  .stats-toolbar{padding:12px;gap:8px}
+  .stats-toolbar label{width:100%}
+  .stats-toolbar select{min-width:0;width:100%;flex:1 1 100%}
+  .stats-toolbar a{width:100%;text-align:center}
+  .stats-matchup{gap:4px;padding:13px 5px}
+  .stats-team strong{font-size:clamp(14px,4vw,19px)}
+  .stats-team img{width:39px;height:39px}
+  .stats-score{min-width:82px}
+  .stats-score b{font-size:clamp(24px,7vw,34px)}
+  .stats-score span{font-size:9px;letter-spacing:0}
+  .stats-position-head h2{font-size:27px}
+  .stats-position-key{gap:5px}
+  .stats-position-key span{font-size:10px;padding:6px 7px}
+  .stats-court-positions .stats-court-team{height:440px;min-height:440px}
+  .stats-court-positions .stats-position-slot{height:110px;min-height:110px;width:min(118px,39%)}
+  .stats-court-positions .stats-position-slot img{height:40px}
+  .stats-court-positions .stats-position-slot .stats-position-numbers{font-size:8px}
+}
+@media(max-width:360px){
+  .stats-court-positions .stats-court-team{height:420px;min-height:420px}
+  .stats-court-positions .stats-position-slot{height:106px;min-height:106px;width:39%}
+  .stats-court-positions .stats-position-slot img{height:34px}
+  .stats-court-positions .stats-position-slot strong{font-size:9px}
+  .stats-court-positions .stats-position-slot .stats-role span{font-size:8px}
+}
