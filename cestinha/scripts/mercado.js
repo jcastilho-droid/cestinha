@@ -25,6 +25,24 @@ function blockVisual(item,times,small=false){
       '<div class="mercado-ball">🏀</div>')+
     '<div class="mercado-team-logos">'+badges+'</div></div>';
 }
+
+/* Galeria de acao: arte editorial em quadros, sem retratos sobrepostos.
+ * Fotos de arquivo para ilustrar a historia, nunca um registro da troca.
+ * A arte de uma movimentacao so pode ser reutilizada na noticia correspondente. */
+function actionGallery(item,times){
+  if(item.id!=='tor-kawhi-2026')return blockVisual(item,times);
+  const escudos=(item.times||[]).slice(0,2).map(sigla=>logo(sigla,times)).join('<span class="mercado-swap" aria-hidden="true">↔</span>');
+  const main='https://cdn.nba.com/teams/uploads/sites/1610612746/2026/03/032526_TOR-12-2.jpg?im=Resize%3D%281280%29';
+  const secondary='https://www.mainbasket.com/uploads/post/2026/09/15/kawhi%20leonard.jpg';
+  return '<figure class="mercado-action-gallery" aria-label="Galeria ilustrativa de basquete, com fotografias de arquivo">'+
+    '<div class="mercado-action-grid">'+
+    '<div class="mercado-action-tile mercado-action-main"><img src="'+esc(main)+'" alt="Kawhi Leonard conduzindo a bola em uma partida anterior entre Clippers e Raptors" loading="eager" decoding="async" onerror="this.hidden=true"></div>'+
+    '<div class="mercado-action-aside">'+
+      '<div class="mercado-action-tile mercado-action-secondary"><img src="'+esc(secondary)+'" alt="Kawhi Leonard com a camisa do Toronto Raptors em imagem de arquivo" loading="lazy" decoding="async" onerror="this.hidden=true"></div>'+
+      '<div class="mercado-action-court"><span class="mercado-action-eyebrow">NEGOCIAÇÃO CONFIRMADA</span><strong>TORONTO <span>↔</span> LOS ANGELES</strong><span class="mercado-action-logos">'+escudos+'</span></div>'+
+    '</div></div>'+
+    '<figcaption>Fotografias de arquivo · não retratam a negociação</figcaption></figure>';
+}
 function card(item,times,featured=false){
   return '<article class="mercado-card'+(featured?' destaque':'')+'" data-market-category="'+esc(item.categoria)+'" data-market-search="'+esc(normalize([item.titulo,item.resumo,...item.times,...item.jogadores].join(' ')))+'">'+
     blockVisual(item,times,featured)+
@@ -51,7 +69,7 @@ export function gerarMercado({P,times,pagina}){
  const feature='<section class="mercado-feature" aria-label="Movimentação em destaque"><div class="mercado-feature-copy">'+
    '<span class="mercado-tag">EM DESTAQUE · '+esc(featured.selo)+'</span>'+
    '<h2>'+esc(featured.titulo)+'</h2><p>'+esc(featured.resumo)+'</p>'+
-   '<a href="#mercado-feed" class="mercado-action">Explorar movimentações ↗</a></div>'+blockVisual(featured,times,false)+'</section>';
+   '<a href="#mercado-feed" class="mercado-action">Explorar movimentações ↗</a></div>'+actionGallery(featured,times)+'</section>';
  const body='<section class="mercado-pagina">'+hero+feature+
    '<section id="mercado-feed" class="mercado-feed" aria-label="Movimentações da NBA">'+
    '<div class="mercado-section-title"><div><span>ACOMPANHE CADA MOVIMENTO</span><h2>O que acontece fora da quadra</h2></div>'+
