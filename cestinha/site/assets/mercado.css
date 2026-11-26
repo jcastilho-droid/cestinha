@@ -1,0 +1,108 @@
+/* CESTINHA MERCADO — estilos exclusivos da nova página.
+   Nenhum seletor global: home, logotipo, stats e demais páginas preservadas. */
+.mercado-pagina{max-width:1080px;margin:0 auto;padding:32px 16px 56px;--market-orange:#ff8728;--market-blue:#182739;color:#eff5fc}
+.mercado-pagina *{box-sizing:border-box}
+.mercado-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin:12px 0 28px}
+.mercado-kicker{font:800 11px/1.3 Inter,sans-serif;letter-spacing:2px;color:#ffa462}
+.mercado-heading h1{font:900 clamp(52px,9.3vw,105px)/.93 'Barlow Condensed',Impact,sans-serif;letter-spacing:0;margin:10px 0 15px;color:#fff}
+.mercado-heading h1 span{color:var(--market-orange)}
+.mercado-heading>div:first-child>p:last-child{max-width:620px;color:#aebed0;font-size:14px;line-height:1.6}
+.mercado-curadoria{display:flex;align-items:center;gap:9px;padding:12px 14px;border:1px solid #35485e;border-radius:12px;color:#b2c3d7;font-size:11px;white-space:nowrap}
+.mercado-dot{width:10px;height:10px;background:#31c987;border-radius:50%;box-shadow:0 0 12px #31c98755}
+.mercado-feature{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);min-height:390px;border:1px solid #495169;background:radial-gradient(650px 400px at 100% 100%,#66353f65,transparent),linear-gradient(125deg,#1d2639,#131e2d);border-radius:22px;overflow:hidden;isolation:isolate}
+.mercado-feature-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:18px;padding:34px 15px 38px 38px;position:relative;z-index:2}
+.mercado-tag{display:inline-block;padding:7px 10px;border-radius:6px;color:#ffbc8c;background:#743a252c;border:1px solid #ba6a3a66;font-size:10px;line-height:1.2;letter-spacing:.7px;font-weight:900;text-transform:uppercase}
+.mercado-feature h2{font:900 clamp(39px,4.9vw,59px)/.98 'Barlow Condensed',Impact,sans-serif;color:#fff;margin:0;text-wrap:balance}
+.mercado-feature-copy>p{font-size:14px;line-height:1.5;color:#bccadc;max-width:460px}
+.mercado-action{display:inline-flex;border:1px solid #ff8728;background:#ff8728;color:#141b26;padding:13px 18px;border-radius:11px;font-size:12px;font-weight:900;text-decoration:none}
+.mercado-action:hover{background:#ffb175;color:#111}
+.mercado-art{position:relative;min-height:320px;overflow:hidden;background:radial-gradient(circle at 48% 50%,#a651445b,transparent 68%),linear-gradient(138deg,#29253a,#152435)}
+.mercado-art-glow{position:absolute;inset:0;opacity:.46;background:repeating-linear-gradient(-65deg,transparent 0 90px,#ffffff06 91px 92px)}
+.mercado-portraits{height:100%;display:flex;align-items:flex-end;justify-content:center;gap:9px;padding:16px 5% 0}
+.mercado-photo{height:90%;max-width:48%;width:47%;display:grid;place-items:end center;border-radius:15px 15px 0 0;overflow:hidden;background:linear-gradient(0deg,#080e1c6e,#ffffff08);box-shadow:0 0 0 1px #ffffff13}
+.mercado-photo:first-child{height:94%}.mercado-photo:nth-child(2){height:76%}
+.mercado-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 12px 12px #07101cb2)}
+.mercado-team-logos{position:absolute;bottom:13px;left:13px;display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid #ffffff23;border-radius:12px;background:#0a1322cc;z-index:2}
+.mercado-team-logos img{width:29px;height:29px;object-fit:contain}
+.mercado-logo-texto{font:900 12px/1 Inter,sans-serif;color:white}
+.mercado-swap{font:900 13px Inter;color:#ffab67}
+.mercado-ball{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:90px;opacity:.38}
+.mercado-feed{margin-top:40px;scroll-margin-top:85px}
+.mercado-section-title{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:18px}
+.mercado-section-title div>span{font-size:11px;color:#ffae71;font-weight:900;letter-spacing:1.5px}
+.mercado-section-title h2{font:900 clamp(33px,4.8vw,50px)/1 'Barlow Condensed',Impact,sans-serif;margin-top:6px;color:white}
+.mercado-section-title>p{max-width:240px;font-size:11px;line-height:1.5;color:#aebed0;text-align:right}
+.mercado-filtro-area{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+.mercado-filtros{display:flex;gap:7px;flex-wrap:wrap}
+.mercado-filtros button{border:1px solid #44546a;background:#1c2a3a;color:#c2d0e0;border-radius:9px;padding:11px 12px;font-size:11px;font-weight:800;cursor:pointer}
+.mercado-filtros button b{font-size:10px;opacity:.7;margin-left:4px}
+.mercado-filtros button:hover{border-color:#ffa460}
+.mercado-filtros button[aria-pressed=true]{background:#ff8728;color:#111922;border-color:#ff8728}
+.mercado-busca{display:block}
+.mercado-busca input{width:min(230px,100%);min-height:41px;padding:10px 12px;border:1px solid #435773;background:#101b2a;border-radius:9px;font:600 12px Inter,sans-serif;color:#f3f7ff}
+.mercado-busca input:focus-visible,.mercado-filtros button:focus-visible{outline:3px solid #ffb97c;outline-offset:2px}
+.mercado-sr{position:absolute!important;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden}
+.mercado-contagem{font-size:11px;color:#9aacc1;margin:17px 0 11px}
+.mercado-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.mercado-card{background:#132032;border:1px solid #32475c;border-radius:17px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:border-color .18s,transform .18s}
+.mercado-card:hover{border-color:#ff9b52;transform:translateY(-2px)}
+.mercado-card[hidden]{display:none!important}
+.mercado-card .mercado-art{height:170px;min-height:170px}
+.mercado-card .mercado-photo{height:95%}
+.mercado-card .mercado-photo:nth-child(2){height:78%}
+.mercado-card .mercado-team-logos{padding:5px 8px;gap:6px;bottom:8px;left:10px}
+.mercado-card .mercado-team-logos img{width:22px;height:22px}
+.mercado-card .mercado-ball{font-size:60px}
+.mercado-card-body{padding:18px;display:flex;flex-direction:column;gap:11px;flex:1}
+.mercado-meta{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.mercado-meta time{color:#a0afc1;font-size:10px;white-space:nowrap}
+.mercado-card h3{font:900 26px/1.04 'Barlow Condensed',Impact,sans-serif;color:white}
+.mercado-card-body>p{font:500 12px/1.55 Inter,sans-serif;color:#b4c4d6;flex:1}
+.mercado-more{border-top:1px solid #364459;padding-top:10px;font-size:11px;color:#b9cce0}
+.mercado-more summary{cursor:pointer;color:#ffba85;font-weight:800}
+.mercado-more summary:focus-visible{outline:2px solid #ffab65;outline-offset:4px}
+.mercado-more p{margin:10px 0 0;color:#b6c7d8;line-height:1.55}
+.mercado-source{margin-top:auto;color:#ffb581;text-decoration:none;font-size:11px;font-weight:800;line-height:1.35}
+.mercado-source:hover{text-decoration:underline;color:#ffe0bf}
+.mercado-empty{padding:28px;border:1px dashed #415670;border-radius:12px;background:#152336;color:#b3c6d9;grid-column:1/-1}
+.mercado-empty[hidden]{display:none!important}
+.mercado-nota{margin-top:36px;padding:22px;background:#152334;border:1px solid #344a62;border-radius:16px}
+.mercado-nota>strong{font:900 26px/1 'Barlow Condensed',Impact,sans-serif;color:white}
+.mercado-nota>p{margin:11px 0;color:#abbed0;font-size:12px;line-height:1.6}
+.mercado-nota>div{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}
+.mercado-nota a{display:inline-block;padding:9px 10px;border:1px solid #48566a;border-radius:9px;color:#ffb37a;text-decoration:none;font-size:11px}
+.mercado-nota a:hover{border-color:#ff9b4e}
+@media(max-width:930px){.mercado-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mercado-heading h1{font-size:clamp(53px,8vw,78px)}}
+@media(max-width:650px){
+ .mercado-pagina{padding:20px 12px 40px}
+ .mercado-heading{align-items:start;flex-direction:column;gap:10px;margin-bottom:18px}
+ .mercado-heading h1{font-size:clamp(46px,13vw,67px);margin:8px 0 11px}
+ .mercado-heading>div:first-child>p:last-child{font-size:12px}
+ .mercado-curadoria{padding:8px 10px}
+ .mercado-feature{grid-template-columns:1fr}
+ .mercado-feature-copy{padding:23px 18px;gap:12px}
+ .mercado-feature h2{font-size:clamp(38px,10vw,51px)}
+ .mercado-feature-copy>p{font-size:12px}
+ .mercado-feature>.mercado-art{min-height:225px;height:225px}
+ .mercado-feature .mercado-portraits{max-height:235px}
+ .mercado-section-title{align-items:start;flex-direction:column}
+ .mercado-section-title>p{text-align:left;max-width:100%}
+ .mercado-filtro-area{flex-direction:column;align-items:stretch}
+ .mercado-filtros button{font-size:10px;padding:9px 10px}
+ .mercado-busca input{width:100%}
+ .mercado-grid{grid-template-columns:1fr;gap:11px}
+ .mercado-card{display:grid;grid-template-columns:minmax(105px,38%) minmax(0,1fr);min-height:210px}
+ .mercado-card .mercado-art{height:100%;min-height:210px}
+ .mercado-card .mercado-photo{max-width:100%;width:100%;height:70%;align-self:end}
+ .mercado-card .mercado-photo:nth-child(2){display:none}
+ .mercado-card .mercado-team-logos{max-width:90%;flex-wrap:wrap}
+ .mercado-card-body{padding:12px;gap:7px}
+ .mercado-card h3{font-size:clamp(21px,6vw,27px)}
+ .mercado-card-body>p{font-size:10px}
+ .mercado-meta{flex-direction:column;align-items:start;gap:6px}
+ .mercado-meta time{font-size:9px}
+ .mercado-source{font-size:10px}
+ .mercado-more{font-size:10px}
+ .mercado-nota{padding:18px}
+}
+@media(max-width:370px){.mercado-card{grid-template-columns:105px minmax(0,1fr)}.mercado-card-body{padding:10px}.mercado-card h3{font-size:21px}.mercado-heading h1{font-size:44px}}

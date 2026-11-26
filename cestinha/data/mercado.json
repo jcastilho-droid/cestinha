@@ -1,0 +1,173 @@
+{
+  "revisado_em": "2026-11-26",
+  "observacao": "Seleção editorial de movimentações verificadas em fontes oficiais. Não é um feed automático de notícias. Rumores sem fonte identificável não são publicados.",
+  "items": [
+    {
+      "id": "cha-dillingham-2026",
+      "categoria": "trocas",
+      "selo": "OFICIAL",
+      "data": "2026-09-27",
+      "titulo": "Hornets recebem Rob Dillingham em troca com os Bulls",
+      "resumo": "Chicago recebeu Buddy Hield e compensação financeira na negociação.",
+      "detalhe": "A operação aparece no rastreador oficial de trocas do período de offseason.",
+      "times": [
+        "CHA",
+        "CHI"
+      ],
+      "jogadores": [
+        "Rob Dillingham",
+        "Buddy Hield"
+      ],
+      "fonte": "NBA.com · Trade Tracker 2026",
+      "url": "https://www.nba.com/news/2026-offseason-trade-tracker",
+      "nota_data": "Data da movimentação"
+    },
+    {
+      "id": "atl-finney-smith-2026",
+      "categoria": "trocas",
+      "selo": "OFICIAL",
+      "data": "2026-09-22",
+      "titulo": "Dorian Finney-Smith é negociado para o Atlanta Hawks",
+      "resumo": "O ala foi para Atlanta em movimentação envolvendo Charlotte.",
+      "detalhe": "O rastreador oficial registra os jogadores e compensações envolvidos na negociação.",
+      "times": [
+        "ATL",
+        "CHA"
+      ],
+      "jogadores": [
+        "Dorian Finney-Smith"
+      ],
+      "fonte": "NBA.com · Trade Tracker 2026",
+      "url": "https://www.nba.com/news/2026-offseason-trade-tracker",
+      "nota_data": "Data da movimentação"
+    },
+    {
+      "id": "tor-kawhi-2026",
+      "categoria": "trocas",
+      "selo": "OFICIAL",
+      "data": "2026-09-14",
+      "titulo": "Kawhi Leonard retorna ao Toronto Raptors",
+      "resumo": "Uma das grandes negociações de 2026 levou Kawhi de volta ao time canadense.",
+      "detalhe": "Toronto recebeu Kawhi Leonard. Os Clippers receberam jogadores e escolhas futuras de Draft, conforme o rastreador da NBA.",
+      "times": [
+        "TOR",
+        "LAC"
+      ],
+      "jogadores": [
+        "Kawhi Leonard",
+        "Brandon Ingram"
+      ],
+      "fonte": "NBA.com · Trade Tracker 2026",
+      "url": "https://www.nba.com/news/2026-offseason-trade-tracker",
+      "nota_data": "Data da movimentação"
+    },
+    {
+      "id": "uta-lal-kessler-2026",
+      "categoria": "trocas",
+      "selo": "OFICIAL",
+      "data": "2026-07-08",
+      "titulo": "Lakers reforçam o garrafão com Walker Kessler",
+      "resumo": "Los Angeles recebeu o pivô em negociação sign-and-trade com Utah.",
+      "detalhe": "A negociação envolveu escolhas futuras e trocas de posição no Draft, documentadas pela NBA.",
+      "times": [
+        "LAL",
+        "UTA"
+      ],
+      "jogadores": [
+        "Walker Kessler"
+      ],
+      "fonte": "NBA.com · Trade Tracker 2026",
+      "url": "https://www.nba.com/news/2026-offseason-trade-tracker",
+      "nota_data": "Data da movimentação"
+    },
+    {
+      "id": "por-morant-2026",
+      "categoria": "trocas",
+      "selo": "OFICIAL",
+      "data": "2026-06-29",
+      "titulo": "Ja Morant vai para o Portland Trail Blazers",
+      "resumo": "Memphis recebeu Jerami Grant e Kris Murray na troca que levou Morant a Portland.",
+      "detalhe": "Operação registrada no rastreador oficial de trocas de 2026.",
+      "times": [
+        "POR",
+        "MEM"
+      ],
+      "jogadores": [
+        "Ja Morant",
+        "Jerami Grant"
+      ],
+      "fonte": "NBA.com · Trade Tracker 2026",
+      "url": "https://www.nba.com/news/2026-offseason-trade-tracker",
+      "nota_data": "Data da movimentação"
+    },
+    {
+      "id": "draft-dybantsa-2026",
+      "categoria": "draft",
+      "selo": "DRAFT 2026",
+      "data": "2026-06-24",
+      "titulo": "AJ Dybantsa é o primeiro escolhido do Draft 2026",
+      "resumo": "Washington Wizards selecionou o prospecto com a escolha número 1.",
+      "detalhe": "A página oficial do Draft permite consultar todas as 60 escolhas.",
+      "times": [
+        "WSH"
+      ],
+      "jogadores": [
+        "AJ Dybantsa"
+      ],
+      "fonte": "NBA.com · Draft 2026",
+      "url": "https://www.nba.com/draft/2026",
+      "nota_data": "Data da movimentação"
+    },
+    {
+      "id": "free-agency-2026",
+      "categoria": "agencia",
+      "selo": "PANORAMA",
+      "data": "2026-10-19",
+      "titulo": "Agência livre de 2026: veja os acordos dos 30 times",
+      "resumo": "Renovações, saídas, reforços e extensões reunidos no balanço oficial da NBA.",
+      "detalhe": "A página é um panorama oficial atualizado em 19 de outubro de 2026.",
+      "times": [],
+      "jogadores": [],
+      "fonte": "NBA.com · Offseason 2026",
+      "url": "https://www.nba.com/news/nba-offseason-deals-2026",
+      "nota_data": "Data da movimentação"
+    },
+    {
+      "id": "bos-george-2026",
+      "categoria": "trocas",
+      "selo": "OFICIAL",
+      "data": "2026-10-19",
+      "titulo": "Paul George chega ao Boston Celtics",
+      "resumo": "Boston aparece entre os times com grandes mudanças de elenco na offseason.",
+      "detalhe": "Notícia confirmada pelo balanço oficial NBA publicado em 19/10; esta data é da atualização da fonte, não necessariamente da operação.",
+      "times": [
+        "BOS",
+        "PHI"
+      ],
+      "jogadores": [
+        "Paul George"
+      ],
+      "fonte": "NBA.com · Offseason 2026",
+      "url": "https://www.nba.com/news/nba-offseason-deals-2026",
+      "nota_data": "Data da atualização da fonte"
+    },
+    {
+      "id": "fa-lakers-reaves-2026",
+      "categoria": "agencia",
+      "selo": "RENOVAÇÃO · RESUMO OFICIAL",
+      "data": "2026-10-19",
+      "titulo": "Lakers mantêm Austin Reaves por mais quatro anos",
+      "resumo": "O acordo aparece no balanço da offseason divulgado pela NBA em 19 de outubro.",
+      "detalhe": "Data de 19 de outubro corresponde à atualização da fonte, não necessariamente à assinatura do contrato.",
+      "times": [
+        "LAL"
+      ],
+      "jogadores": [
+        "Austin Reaves"
+      ],
+      "fonte": "NBA.com · Offseason 2026",
+      "url": "https://www.nba.com/news/nba-offseason-deals-2026",
+      "nota_data": "Data da atualização da fonte"
+    }
+  ]
+}

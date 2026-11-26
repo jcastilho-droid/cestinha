@@ -28,6 +28,9 @@ jobs:
           node --check scripts/build.js
           node --check scripts/cartoes.js
           node --check scripts/stats.js
+          node --check scripts/mercado.js
+          node --check site/assets/mercado.js
+          node --check scripts/test-mercado.js
           node --check site/assets/stats.js
           node --check site/assets/carrossel-home.js
           node --check scripts/test-home-carousel.js
@@ -36,6 +39,8 @@ jobs:
         run: npm install --no-audit --no-fund --omit=dev
       - name: Gerar site completo
         run: node scripts/build.js
+      - name: Validar Central do Mercado e preservacao da home
+        run: node scripts/test-mercado.js
       - name: Validar explorador de jogos
         run: node scripts/test-stats-explorer.js
       - name: Conferir historico individual consolidado

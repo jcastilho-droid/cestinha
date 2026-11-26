@@ -8,9 +8,10 @@ import { lerRodada, lerJogo, selosDoJogo, lideresDaRodada, linhaEstatistica } fr
 import { icone, comIcones, LOGO_ARO } from './lib/icones.js';
 import { gerarCartoes } from './cartoes.js';
 import { gerarCestinhaStats } from './stats.js';
+import { gerarMercado } from './mercado.js';
 import { VERBETES, CATEGORIAS, exemplosReais } from './lib/verbetes.js';
 
-const MENU = [['rodada', 'index.html', 'bola', 'Rodada'], ['agenda', 'agenda.html', 'calendario', 'Agenda'], ['classificacao', 'classificacao.html', 'trofeu', 'Tabela'], ['times', 'times/index.html', 'escudo', 'Times'], ['stats', 'stats.html', 'trofeu', 'Stats'], ['aprenda', 'aprenda.html', 'cesta', 'Aprenda']];
+const MENU = [['rodada', 'index.html', 'bola', 'Rodada'], ['agenda', 'agenda.html', 'calendario', 'Agenda'], ['classificacao', 'classificacao.html', 'trofeu', 'Tabela'], ['times', 'times/index.html', 'escudo', 'Times'], ['stats', 'stats.html', 'trofeu', 'Stats'], ['mercado', 'mercado.html', 'raio', 'Mercado'], ['aprenda', 'aprenda.html', 'cesta', 'Aprenda']];
 
 // muda a cada publicação: força o navegador a baixar o visual novo
 const VERSAO = Date.now().toString(36);
@@ -115,6 +116,7 @@ ${canonical && SITE.url ? `<link rel="canonical" href="${esc(SITE.url + canonica
 <script src="${raiz}/assets/stats.js?v=${VERSAO}" defer></script>
 <link rel="stylesheet" href="${raiz}/assets/carrossel-home.css?v=${VERSAO}">
 <script src="${raiz}/assets/carrossel-home.js?v=${VERSAO}" defer></script>
+${ativo === 'mercado' ? `<link rel="stylesheet" href="${raiz}/assets/mercado.css?v=${VERSAO}"><script src="${raiz}/assets/mercado.js?v=${VERSAO}" defer></script>` : ''}
 </head>
 <body${tema ? ` style="${tema}"` : ''}>
 <div class="fundo-deco" aria-hidden="true">
@@ -144,7 +146,7 @@ ${comIcones(corpo)}
       <p class="rodape-marca logo">${LOGO_ARO}<span class="logo-texto">CESTINHA</span></p>
       <p class="rodape-bordao">${esc(SITE.bordao)}</p>
     </div>
-    <p class="rodape-links"><a href="${raiz}/agenda.html">Agenda</a><a href="${raiz}/classificacao.html">Classificação</a><a href="${raiz}/times/index.html">Times</a><a href="${raiz}/brasileiros.html">Brasileiros na NBA</a><a href="${raiz}/aprenda.html">Me explica essa NBA</a>${powerRankings.length ? `<a href="${raiz}/power-ranking.html">Power ranking</a>` : ''}</p>
+    <p class="rodape-links"><a href="${raiz}/agenda.html">Agenda</a><a href="${raiz}/classificacao.html">Classificação</a><a href="${raiz}/times/index.html">Times</a><a href="${raiz}/mercado.html">Mercado NBA</a><a href="${raiz}/brasileiros.html">Brasileiros na NBA</a><a href="${raiz}/aprenda.html">Me explica essa NBA</a>${powerRankings.length ? `<a href="${raiz}/power-ranking.html">Power ranking</a>` : ''}</p>
     <p>${icone('grafico')} Placar e estatísticas: ESPN. ${icone('raio')} Textos: o Cestinha (IA), com checagem automática dos números.</p>
     <p>${icone('relogio')} Horários de Brasília. Atualizado em ${esc(dataHoraBrasilia(agoraIso()))}. Logos dos times exibidos só para identificação.</p>
     <p class="rodape-autor">Desenvolvido por <b>Jonathan Castilho</b></p>
@@ -1378,5 +1380,6 @@ fs.writeFileSync(path.join(P.site, '404.html'), pagina({
 }));
 
 gerarCestinhaStats({ P, times, dias, jogoDoDia, pagina });
+gerarMercado({ P, times, pagina });
 
 console.log(`Site gerado em _site/: ${dias.length} rodada(s), ${nJogos} página(s) de jogo, ${times.size} time(s), ${textosJogo.size} resenha(s), ${textosRodada.size} resumo(s) de rodada.`);
