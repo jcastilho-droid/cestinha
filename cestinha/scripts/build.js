@@ -1209,7 +1209,7 @@ for (const { dia, rodada } of dias) {
     paraCartao.push({ jogo: j, texto: textosJogo.get(j.id), destaque: top ? `${top.nome} (${top.t.sigla}): ${linhaEstatistica(top)}` : '', dataTxt: dataPorExtenso(dia) });
   }
 }
-const comCartao = await gerarCartoes(paraCartao, P.site);
+const comCartao = await gerarCartoes(paraCartao, P.site, times);
 for (const { dia, rodada } of dias) {
   const jogos = rodada.jogos.map((b) => jogoDoDia(dia, b));
   fs.writeFileSync(path.join(P.site, 'rodada', `${dia}.html`), pagina({

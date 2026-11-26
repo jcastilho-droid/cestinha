@@ -26,8 +26,11 @@ jobs:
       - name: Conferir sintaxe
         run: |
           node --check scripts/build.js
+          node --check scripts/cartoes.js
           node --check scripts/stats.js
           node --check site/assets/stats.js
+      - name: Instalar gerador de imagens
+        run: npm install --no-audit --no-fund --omit=dev
       - name: Gerar site completo
         run: node scripts/build.js
       - name: Conferir historico individual consolidado
@@ -41,3 +44,10 @@ jobs:
           grep -q 'stats.html' _site/index.html
           grep -q 'id="stats-dados"' _site/stats.html
           grep -q 'id="stats-partida"' _site/stats.html
+
+      - name: Validar imagens compartilháveis
+        run: |
+          test -d _site/cartoes
+          find _site/cartoes -name '*.png' -size +20k | grep -q .
+          find _site/cartoes -name '*-story.png' -size +20k | grep -q .
+          grep -R -q 'cartoes/' _site/jogo
