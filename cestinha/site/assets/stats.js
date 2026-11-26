@@ -12,7 +12,7 @@
   const current=()=>d.partidas.find(g=>g.id===$('#stats-partida').value)||d.partidas[0];
   const requested=new URLSearchParams(location.search).get('jogo');
   if(requested && d.partidas.some(g=>g.id===requested)) $('#stats-partida').value=requested;
-  let tab='confronto',metric='pts',index=0;
+  let tab='confronto',metric='pts',index=0,historyPeriod=15,historyShowL5=true;
   const metricMap={pts:'Pontos',reb:'Rebotes',ast:'Assistências',rb:'Roubos',toco:'Tocos',min:'Minutos'};
   const logo=(t,size=35)=>t?.logo?'<img src="'+esc(t.logo)+'" alt="" width="'+size+'" height="'+size+'" loading="lazy">':'';
   const head=(name,note)=>'<div><h2>'+esc(name)+'</h2>'+(note?'<p class="stats-note">'+esc(note)+'</p>':'')+'</div>';
@@ -61,21 +61,92 @@
   }
   function tableMatchRecent(a,b){return '<table class="stats-table"><thead><tr><th>Indicador</th><th>'+esc(a.sigla)+'</th><th>'+esc(b.sigla)+'</th></tr></thead><tbody>'+[['Últimos jogos',t=>t.recentes.length],['Vitórias no recorte',t=>t.recentes.filter(x=>x.resultado==='V').length],['Média de pontos',t=>t.recentes.length?dec(t.recentes.reduce((s,x)=>s+x.pts,0)/t.recentes.length):'—'],['Média sofrida',t=>t.recentes.length?dec(t.recentes.reduce((s,x)=>s+x.sofridos,0)/t.recentes.length):'—']].map(([name,fn])=>'<tr><td>'+name+'</td><td>'+fn(a)+'</td><td>'+fn(b)+'</td></tr>').join('')+'</tbody></table>'}
   function showJogadores(){
-    const g=current(),all=g.times.flatMap(t=>t.jogadores.map(p=>({...p,equipe:t.sigla})));
+    const jogo=current(),all=jogo.times.flatMap(t=>t.jogadores.map(p=>({...p,equipe:t.sigla,equipeId:t.id})));
     if(!all.length)return '<div class="stats-empty">Box score indisponível.</div>';
     if(index>=all.length)index=0;
-    const p=all[index],roster=d.equipes.flatMap(t=>t.jogadores).find(x=>x.nome===p.nome);
+    const p=all[index];
+    const equipe=d.equipes.find(t=>t.id===p.equipeId);
+    const roster=(equipe?.jogadores||[]).find(x=>String(x.id)===String(p.id)&&p.id)||
+      (equipe?.jogadores||[]).find(x=>x.nome===p.nome);
+    const avg=roster?.medias||{};
+    const allHistory=d.historicoJogadores?.[p.historico_chave]||[];
+    const metricDefs={
+      pts:{label:'Pontos',key:'pts',official:()=>official('pts')},
+      reb:{label:'Rebotes',key:'reb',official:()=>official('reb')},
+      ast:{label:'Assistências',key:'ast',official:()=>official('ast')},
+      tres_convertidas:{label:'Bolas de 3',key:'tres_convertidas',official:()=>null},
+      min:{label:'Minutos',key:'min',official:()=>official('min')},
+      pr:{label:'PTS+REB',key:'pr',official:()=>combo(['pts','reb'])},
+      pa:{label:'PTS+AST',key:'pa',official:()=>combo(['pts','ast'])},
+      ra:{label:'REB+AST',key:'ra',official:()=>combo(['reb','ast'])},
+      pra:{label:'PTS+REB+AST',key:'pra',official:()=>combo(['pts','reb','ast'])},
+      rb:{label:'Roubos',key:'rb',official:()=>official('rb')},
+      toco:{label:'Tocos',key:'toco',official:()=>official('toco')}
+    };
+    const official=k=>avg[k]!==null&&avg[k]!==undefined&&avg[k]!==''&&Number.isFinite(Number(avg[k]))?Number(avg[k]):null;
+    const combo=keys=>keys.every(k=>official(k)!==null)?keys.reduce((sum,k)=>sum+official(k),0):null;
+    if(!metricDefs[metric])metric='pts';
+    const def=metricDefs[metric];
+    const metricValue=(game,k)=>{
+      if(k==='pr')return num(game.pts)+num(game.reb);
+      if(k==='pa')return num(game.pts)+num(game.ast);
+      if(k==='ra')return num(game.reb)+num(game.ast);
+      if(k==='pra')return num(game.pts)+num(game.reb)+num(game.ast);
+      const raw=game[k];return raw===null||raw===undefined||raw===''?null:Number(raw);
+    };
+    const validHistory=allHistory.filter(g=>Number.isFinite(metricValue(g,metric)));
+    const windowGames=validHistory.slice(-historyPeriod);
+    const valueList=(arr)=>arr.map(g=>metricValue(g,metric)).filter(v=>v!==null&&Number.isFinite(v));
+    const average=arr=>arr.length?arr.reduce((a,b)=>a+b,0)/arr.length:null;
+    const officialAverage=def.official();
+    const last5=average(valueList(validHistory.slice(-5)));
+    const last10=average(valueList(validHistory.slice(-10)));
+    const last15=average(valueList(validHistory.slice(-15)));
+    const max=validHistory.length?Math.max(...valueList(validHistory)):null;
+    const min=validHistory.length?Math.min(...valueList(validHistory)):null;
+    const currentValue=metricValue({...p,tres_convertidas:(String(p.tres||'').match(/^\s*(\d+)\s*-\s*(\d+)\s*$/)||[])[1]},metric);
     const photo=p.id?'https://a.espncdn.com/i/headshots/nba/players/full/'+encodeURIComponent(p.id)+'.png':'';
     const chooser='<div class="stats-filter"><label for="stats-jogador">Atleta</label><select id="stats-jogador" class="stats-player-select">'+all.map((x,i)=>'<option value="'+i+'" '+(i===index?'selected':'')+'>'+esc(x.nome)+' · '+esc(x.equipe)+'</option>').join('')+'</select></div>';
-    const sums=[['Pontos',p.pts],['Rebotes',p.reb],['Assistências',p.ast],['Roubos',p.rb],['Tocos',p.toco],['Minutos',p.min]];
-    const hero='<div class="stats-player-hero">'+(photo?'<img src="'+photo+'" alt="Retrato de '+esc(p.nome)+'" onerror="this.remove()">':'')+'<div><h2>'+esc(p.nome)+'</h2><p class="stats-note">'+esc(p.equipe)+' · '+esc(p.posicao)+'</p><div class="stats-bigmetric">'+sums.slice(0,3).map(([l,v])=>'<div><span class="stats-number">'+v+'</span><div class="stats-caption">'+l.toUpperCase()+'</div></div>').join('')+'</div></div></div>';
-    const minmax=Math.max(...all.map(x=>num(x[metric])),1);
-    const row=all.filter(x=>x.min>0).sort((a,b)=>num(b[metric])-num(a[metric])).slice(0,12);
-    const chart=barChart(row.map(x=>({adversario:x.nome.split(' ').at(-1),valor:x[metric]})),'valor',metricMap[metric]);
-    const buttons='<div class="stats-buttons">'+Object.entries(metricMap).map(([k,v])=>'<button type="button" data-metric="'+k+'" aria-pressed="'+(metric===k)+'">'+v+'</button>').join('')+'</div>';
-    const avg=roster?.medias||{};
-    const recent='<table class="stats-table"><thead><tr><th>Estatística</th><th>Partida</th><th>Média da temporada</th></tr></thead><tbody>'+[['pts','Pontos'],['reb','Rebotes'],['ast','Assistências'],['min','Minutos'],['rb','Roubos'],['toco','Tocos']].map(([k,l])=>'<tr><td>'+l+'</td><td>'+p[k]+'</td><td>'+val(avg[k])+'</td></tr>').join('')+'</tbody></table>';
-    return chooser+'<div class="stats-grid">'+panel('Jogador em destaque',hero+recent,'Os números da partida são diferentes das médias sazonais.')+panel('Resumo da partida',panelCompact(sums))+'</div>'+panel('Ranking de atletas neste confronto',buttons+chart,'Clique em uma métrica para atualizar o gráfico. Não representa histórico dos últimos 15 jogos.');
+    const stats=[['Temporada',officialAverage,'Média oficial'],['Últimos 5',last5,'Média disponível'],['Últimos 10',last10,'Média disponível'],['Últimos 15',last15,'Média disponível'],['Último jogo',validHistory.length?metricValue(validHistory.at(-1),metric):null,'Último registro'],['Máxima',max,'Histórico coletado']];
+    const cards='<div class="stats-season-kpis">'+stats.map(([label,value,info])=>'<div class="stats-season-kpi"><small>'+label+'</small><strong>'+(value===null?'—':dec(value))+'</strong><span>'+info+'</span></div>').join('')+'</div>';
+    const hero='<div class="stats-player-hero stats-season-hero">'+(photo?'<img src="'+photo+'" alt="Retrato de '+esc(p.nome)+'" onerror="this.remove()">':'')+'<div><p class="stats-kicker">TEMPORADA · '+esc(p.equipe)+'</p><h2>'+esc(p.nome)+'</h2><p class="stats-note">'+esc(p.posicao)+' · '+esc(roster?.numero||'')+'</p><div class="stats-bigmetric"><div><span class="stats-number">'+(currentValue===null?'—':dec(currentValue))+'</span><div class="stats-caption">'+esc(def.label.toUpperCase())+' NA PARTIDA</div></div><div><span class="stats-number">'+(officialAverage===null?'—':dec(officialAverage))+'</span><div class="stats-caption">MÉDIA OFICIAL</div></div></div></div></div>';
+    const metricButtons='<div class="stats-buttons stats-season-metrics">'+Object.entries(metricDefs).map(([key,entry])=>'<button type="button" data-season-metric="'+key+'" aria-pressed="'+(key===metric)+'">'+esc(entry.label)+'</button>').join('')+'</div>';
+    const periods='<div class="stats-season-periods" role="group" aria-label="Quantidade de partidas">'+[5,10,15,99999].map(n=>'<button type="button" data-period="'+n+'" aria-pressed="'+(historyPeriod===n)+'">'+(n===99999?'Todos':'L'+n)+'</button>').join('')+'</div>';
+    let chart='';
+    if(!windowGames.length){
+      chart='<div class="stats-empty">Ainda não há jogos suficientes com esta métrica no histórico coletado. Experimente outra métrica.</div>';
+    }else{
+      const points=valueList(windowGames),base=226,top=30,w=880,left=48,gap=790/Math.max(1,points.length),bw=Math.max(8,Math.min(42,gap*.68));
+      const maxScale=Math.max(1,...points,officialAverage||0,last5||0)*1.16;
+      const y=v=>base-(v/maxScale)*(base-top);
+      chart='<svg class="stats-chart stats-season-chart" role="img" aria-label="Gráfico dos últimos '+windowGames.length+' jogos de '+esc(p.nome)+' em '+esc(def.label)+'" viewBox="0 0 880 275">';
+      for(let k=0;k<=4;k++){const v=maxScale*k/4;chart+='<line class="gridline" x1="'+left+'" x2="858" y1="'+y(v)+'" y2="'+y(v)+'"/><text x="39" y="'+(y(v)+4)+'" text-anchor="end">'+Math.round(v)+'</text>';}
+      windowGames.forEach((g,i)=>{
+        const v=points[i],x=left+i*gap+(gap-bw)/2;
+        const selected=String(g.jogo_id)===String(jogo.id);
+        chart+='<rect class="bar'+(selected?' stats-bar-current':'')+'" x="'+x+'" y="'+y(v)+'" width="'+bw+'" height="'+Math.max(0,base-y(v))+'" rx="4"><title>'+esc(g.data?.slice(0,10))+' · '+esc(g.em_casa?'vs':'@')+esc(g.adversario)+' · '+v+' '+esc(def.label)+'</title></rect>';
+        if(windowGames.length<=15)chart+='<text x="'+(x+bw/2)+'" y="244" text-anchor="middle">'+esc(g.adversario)+'</text>';
+      });
+      if(officialAverage!==null)chart+='<line class="stats-average-line" x1="'+left+'" x2="858" y1="'+y(officialAverage)+'" y2="'+y(officialAverage)+'"><title>Média oficial da temporada: '+dec(officialAverage)+'</title></line>';
+      if(historyShowL5&&last5!==null)chart+='<line class="stats-l5-line" x1="'+left+'" x2="858" y1="'+y(last5)+'" y2="'+y(last5)+'"><title>Média dos últimos 5 jogos: '+dec(last5)+'</title></line>';
+      chart+='</svg>';
+    }
+    const meanLine='<div class="stats-season-legend"><span><i class="stats-legend-bar"></i> Jogos</span><span><i class="stats-legend-season"></i> Média oficial'+(officialAverage!==null?' '+dec(officialAverage):' indisponível')+'</span><label><input type="checkbox" id="stats-l5-line" '+(historyShowL5?'checked':'')+'> Média L5'+(last5!==null?' '+dec(last5):'')+'</label></div>';
+    const sampleCount='<p class="stats-note">Amostra: '+validHistory.length+' partida(s) coletada(s). '+(validHistory.length<15?'Ainda não há 15 registros válidos para esta métrica. ':'')+'A média oficial pode considerar jogos que não estão no histórico local.</p>';
+    const splits=[
+      ['Todos',validHistory],['Em casa',validHistory.filter(g=>g.em_casa)],['Fora',validHistory.filter(g=>!g.em_casa)],
+      ['Vitórias',validHistory.filter(g=>g.venceu)],['Derrotas',validHistory.filter(g=>!g.venceu)]
+    ];
+    const splitTable='<table class="stats-table"><thead><tr><th>Recorte</th><th>Jogos</th><th>Média</th></tr></thead><tbody>'+splits.map(([label,arr])=>'<tr><td>'+label+'</td><td>'+arr.length+'</td><td>'+(arr.length?dec(average(valueList(arr))):'—')+'</td></tr>').join('')+'</tbody></table>';
+    const played=validHistory.slice(-15).reverse();
+    const gameTable='<div class="stats-history-scroll"><table class="stats-table"><thead><tr><th>Data</th><th>Adversário</th><th>Local</th><th>Resultado</th><th>'+esc(def.label)+'</th></tr></thead><tbody>'+played.map(g=>'<tr><td>'+esc(g.data?.slice(0,10))+'</td><td>'+esc(g.adversario)+'</td><td>'+(g.em_casa?'Casa':'Fora')+'</td><td class="'+(g.venceu?'stats-positive':'stats-negative')+'">'+(g.venceu?'Vitória':'Derrota')+'</td><td>'+dec(metricValue(g,metric))+'</td></tr>').join('')+'</tbody></table></div>';
+    const difference=currentValue!==null&&officialAverage!==null?currentValue-officialAverage:null;
+    const diffText=difference===null?'Média oficial indisponível para esta métrica.':(difference>=0?'+':'')+dec(difference)+' em relação à média oficial ('+(officialAverage===0?'variação percentual indisponível':(difference>=0?'+':'')+dec(difference/officialAverage*100)+'%')+').';
+    const insight='<p class="stats-season-insight">'+esc(diffText)+'</p>';
+    return chooser+panel('Desempenho na temporada',hero+cards+insight)+
+      panel('Histórico por partida',metricButtons+'<div class="stats-season-chart-head">'+periods+meanLine+'</div>'+chart+sampleCount,'Cada barra é uma partida real. Passe o mouse ou toque na barra para conferir adversário e valor.')+
+      '<div class="stats-grid half">'+panel('Casa, fora e resultados',splitTable,'Médias calculadas apenas com partidas presentes na amostra local.')+
+      panel('Histórico recente',gameTable,'Últimas 15 partidas disponíveis com esta estatística.')+'</div>';
   }
   function panelCompact(arr){return '<div class="stats-bigmetric">'+arr.map(([k,v])=>'<div><span class="stats-number">'+v+'</span><p class="stats-caption">'+esc(k)+'</p></div>').join('')+'</div>'}
   function showTendencias(){
@@ -96,7 +167,11 @@
   $('#stats-partida')?.addEventListener('change',()=>{index=0;paint()});
   root.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>{tab=btn.dataset.tab;paint()}));
   root.addEventListener('change',e=>{if(e.target.id==='stats-jogador'){index=Number(e.target.value);paint()}});
-  root.addEventListener('click',e=>{const btn=e.target.closest('[data-metric]');if(btn){metric=btn.dataset.metric;paint()}});
+  root.addEventListener('click',e=>{
+    const met=e.target.closest('[data-season-metric]');if(met){metric=met.dataset.seasonMetric;paint();return;}
+    const period=e.target.closest('[data-period]');if(period){historyPeriod=Number(period.dataset.period);paint();return;}
+  });
+  root.addEventListener('change',e=>{if(e.target.id==='stats-l5-line'){historyShowL5=e.target.checked;paint()}});
   if(!d.partidas.length){$('#stats-content').innerHTML='<div class="stats-empty">Aguardando partidas com box score completo.</div>';return}
   paint();
 })();

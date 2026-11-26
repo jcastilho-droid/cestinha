@@ -30,6 +30,8 @@ jobs:
           node --check site/assets/stats.js
       - name: Gerar site completo
         run: node scripts/build.js
+      - name: Conferir historico individual consolidado
+        run: node scripts/test-stats-history.js
       - name: Validar pagina e links
         run: |
           test -s _site/stats.html
