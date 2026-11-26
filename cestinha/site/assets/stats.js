@@ -10,6 +10,8 @@
   const nfmt=x=>Number.isFinite(Number(x))?dec(x):'—';
   const team=id=>d.equipes.find(t=>t.id===id)||null;
   const current=()=>d.partidas.find(g=>g.id===$('#stats-partida').value)||d.partidas[0];
+  const requested=new URLSearchParams(location.search).get('jogo');
+  if(requested && d.partidas.some(g=>g.id===requested)) $('#stats-partida').value=requested;
   let tab='confronto',metric='pts',index=0;
   const metricMap={pts:'Pontos',reb:'Rebotes',ast:'Assistências',rb:'Roubos',toco:'Tocos',min:'Minutos'};
   const logo=(t,size=35)=>t?.logo?'<img src="'+esc(t.logo)+'" alt="" width="'+size+'" height="'+size+'" loading="lazy">':'';
