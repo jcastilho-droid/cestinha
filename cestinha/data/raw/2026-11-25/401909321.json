@@ -2381,18 +2381,18 @@
           "sequencia": "W2"
         },
         {
+          "time": "Golden State",
+          "v": "10",
+          "d": "8",
+          "atras": "5",
+          "sequencia": "W2"
+        },
+        {
           "time": "Phoenix",
           "v": "9",
           "d": "8",
           "atras": "5.5",
           "sequencia": "L1"
-        },
-        {
-          "time": "Golden State",
-          "v": "9",
-          "d": "8",
-          "atras": "5.5",
-          "sequencia": "W1"
         },
         {
           "time": "LA Clippers",
@@ -2404,9 +2404,9 @@
         {
           "time": "Sacramento",
           "v": "2",
-          "d": "15",
-          "atras": "12.5",
-          "sequencia": "L1"
+          "d": "16",
+          "atras": "13",
+          "sequencia": "L2"
         }
       ]
     },
@@ -2416,41 +2416,43 @@
         {
           "time": "San Antonio",
           "v": "15",
-          "d": "3",
+          "d": "4",
           "atras": "-",
-          "sequencia": "W3"
+          "sequencia": "L1"
         },
         {
           "time": "Houston",
           "v": "14",
           "d": "5",
-          "atras": "1.5",
+          "atras": "1",
           "sequencia": "W2"
         },
         {
           "time": "Memphis",
           "v": "14",
           "d": "5",
-          "atras": "1.5",
+          "atras": "1",
           "sequencia": "W2"
         },
         {
           "time": "Dallas",
           "v": "11",
           "d": "7",
-          "atras": "4",
+          "atras": "3.5",
           "sequencia": "W4"
         },
         {
           "time": "New Orleans",
           "v": "5",
           "d": "14",
-          "atras": "10.5",
+          "atras": "10",
           "sequencia": "L4"
         }
       ]
     }
   ],
+  "foto_jogo": null,
+  "foto_jogo_verificada": true,
   "materia_fonte": {
     "titulo_en": "Wells and Jerome lead the Grizzlies to a 115-97 win over the Clippers, who fall to 0-9 on the road",
     "resumo_en": "Jaylen Wells scored 19 points, Ty Jerome added 17 points and seven assists, and the Memphis Grizzles beat the Clippers 115-70 on Wednesday night in an NBA Cup game, dropping Los Angeles to 0-9 on the road.",

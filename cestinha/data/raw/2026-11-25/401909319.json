@@ -2296,9 +2296,9 @@
         {
           "time": "Milwaukee",
           "v": "2",
-          "d": "16",
-          "atras": "9.5",
-          "sequencia": "W1"
+          "d": "17",
+          "atras": "10",
+          "sequencia": "L1"
         }
       ]
     },
@@ -2335,12 +2335,19 @@
         },
         {
           "time": "Brooklyn",
-          "v": "3",
+          "v": "4",
           "d": "13",
-          "atras": "10.5",
-          "sequencia": "L5"
+          "atras": "10",
+          "sequencia": "W1"
         }
       ]
     }
-  ]
+  ],
+  "foto_jogo": null,
+  "foto_jogo_verificada": true,
+  "materia_fonte": {
+    "titulo_en": "Knicks blow by the Cavaliers in the fourth, win 121-102 for sixth straight victory",
+    "resumo_en": "Jose Alvarado scored a season-high 21 points, Mikal Bridges had a season-best 19 and the New York Knicks rode a blitz by their bench to a 121-102 victory over the Cleveland Cavaliers on Wednesday night that extended their winning streak to six.",
+    "link": "http://www.espn.com/nba/recap?gameId=401909319"
+  }
 }

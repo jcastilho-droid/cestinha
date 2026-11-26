@@ -124,7 +124,7 @@
       {
         "nome": "Isaiah Crawford",
         "titular": false,
-        "min": null,
+        "min": 0,
         "pts": 0,
         "fg": "0-0",
         "tres": "0-0",
@@ -980,7 +980,7 @@
       6
     ],
     [
-      2464,
+      2463,
       8
     ],
     [
@@ -2337,18 +2337,18 @@
           "sequencia": "W2"
         },
         {
+          "time": "Golden State",
+          "v": "10",
+          "d": "8",
+          "atras": "5",
+          "sequencia": "W2"
+        },
+        {
           "time": "Phoenix",
           "v": "9",
           "d": "8",
           "atras": "5.5",
           "sequencia": "L1"
-        },
-        {
-          "time": "Golden State",
-          "v": "9",
-          "d": "8",
-          "atras": "5.5",
-          "sequencia": "W1"
         },
         {
           "time": "LA Clippers",
@@ -2360,9 +2360,9 @@
         {
           "time": "Sacramento",
           "v": "2",
-          "d": "15",
-          "atras": "12.5",
-          "sequencia": "L1"
+          "d": "16",
+          "atras": "13",
+          "sequencia": "L2"
         }
       ]
     },
@@ -2372,39 +2372,46 @@
         {
           "time": "San Antonio",
           "v": "15",
-          "d": "3",
+          "d": "4",
           "atras": "-",
-          "sequencia": "W3"
+          "sequencia": "L1"
         },
         {
           "time": "Houston",
           "v": "14",
           "d": "5",
-          "atras": "1.5",
+          "atras": "1",
           "sequencia": "W2"
         },
         {
           "time": "Memphis",
           "v": "14",
           "d": "5",
-          "atras": "1.5",
+          "atras": "1",
           "sequencia": "W2"
         },
         {
           "time": "Dallas",
           "v": "11",
           "d": "7",
-          "atras": "4",
+          "atras": "3.5",
           "sequencia": "W4"
         },
         {
           "time": "New Orleans",
           "v": "5",
           "d": "14",
-          "atras": "10.5",
+          "atras": "10",
           "sequencia": "L4"
         }
       ]
     }
-  ]
+  ],
+  "foto_jogo": null,
+  "foto_jogo_verificada": true,
+  "materia_fonte": {
+    "titulo_en": "Kevin Durant reaches 33,000 points as Rockets beat Suns",
+    "resumo_en": "Kevin Durant scored 20 points and became the fifth player in NBA history to reach 33,000 points, helping the Houston Rockets beat the Phoenix Suns 116-104 on Wednesday night.",
+    "link": "http://www.espn.com/nba/recap?gameId=401909323"
+  }
 }

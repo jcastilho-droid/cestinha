@@ -2257,9 +2257,9 @@
         {
           "time": "Charlotte",
           "v": "4",
-          "d": "12",
-          "atras": "6.5",
-          "sequencia": "L5"
+          "d": "13",
+          "atras": "7",
+          "sequencia": "L6"
         }
       ]
     },
@@ -2282,10 +2282,10 @@
         },
         {
           "time": "New York",
-          "v": "11",
+          "v": "12",
           "d": "6",
-          "atras": "3",
-          "sequencia": "W5"
+          "atras": "2.5",
+          "sequencia": "W6"
         },
         {
           "time": "Toronto",
@@ -2296,14 +2296,16 @@
         },
         {
           "time": "Brooklyn",
-          "v": "3",
+          "v": "4",
           "d": "13",
-          "atras": "10.5",
-          "sequencia": "L5"
+          "atras": "10",
+          "sequencia": "W1"
         }
       ]
     }
   ],
+  "foto_jogo": null,
+  "foto_jogo_verificada": true,
   "materia_fonte": {
     "titulo_en": "LeBron James has his 1st triple-double for the 76ers in a win over the Heat",
     "resumo_en": "LeBron James had 25 points, 12 assists and 10 rebounds for his first triple-double with Philadelphia, and Tyrese Maxey scored 30 points to lead the 76ers to a 111-104 victory over the Miami Heat in an NBA Cup game Wednesday night.",

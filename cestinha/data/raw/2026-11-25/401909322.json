@@ -326,7 +326,7 @@
         "reb": 14,
         "ast": 5,
         "err": 0,
-        "rb": 3,
+        "rb": 4,
         "toco": 2,
         "reb_of": 7,
         "reb_def": 7,
@@ -434,7 +434,7 @@
         "reb": 2,
         "ast": 3,
         "err": 0,
-        "rb": 2,
+        "rb": 1,
         "toco": 0,
         "reb_of": 0,
         "reb_def": 2,
@@ -2325,6 +2325,8 @@
       ]
     }
   ],
+  "foto_jogo": null,
+  "foto_jogo_verificada": true,
   "materia_fonte": {
     "titulo_en": "Randle scores 28 points to lead Nets past Bucks 104-97 in NBA Cup action",
     "resumo_en": "Julius Randle scored 28 points and Noah Clowney had 17 as the Brooklyn Nets beat the Milwaukee Bucks 104-97 to snap a five-game losing streak on Wednesday night in NBA Cup play.",

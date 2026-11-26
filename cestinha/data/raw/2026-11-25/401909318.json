@@ -2186,9 +2186,9 @@
         {
           "time": "Milwaukee",
           "v": "2",
-          "d": "16",
-          "atras": "9.5",
-          "sequencia": "W1"
+          "d": "17",
+          "atras": "10",
+          "sequencia": "L1"
         }
       ]
     },
@@ -2233,6 +2233,8 @@
       ]
     }
   ],
+  "foto_jogo": null,
+  "foto_jogo_verificada": true,
   "materia_fonte": {
     "titulo_en": "Matas Buzelis scores 24 as Bulls hold on to beat Hornets 107-105 for 2nd straight win",
     "resumo_en": "Matas Buzelis scored 24 points, Josh Giddey added 12 points, 11 rebounds and seven assists, and the Chicago Bulls handed the Charlotte Hornets their seventh straight loss 107-105 on Wednesday night.",
