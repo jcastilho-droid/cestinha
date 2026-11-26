@@ -95,3 +95,66 @@
 @media(prefers-reduced-motion:reduce){
  .noticia-pontos button,.noticia-mini{transition:none}
 }
+
+
+/* Refinamento editorial: texto com área segura, navegação apenas por dots. */
+.noticia-slide{height:460px;min-height:460px}
+.noticia-lista{min-height:460px}
+.noticia-conteudo{
+  box-sizing:border-box;
+  justify-content:flex-end;
+  gap:9px;
+  padding:25px clamp(24px,4.2vw,58px) 82px;
+}
+.noticia-conteudo h2{
+  max-width:min(710px,67%);
+  font-size:clamp(29px,3.45vw,48px);
+  line-height:1.065;
+  overflow-wrap:break-word;
+  text-wrap:pretty;
+  flex-shrink:0;
+}
+.noticia-subtitulo{
+  display:block;
+  flex:none;
+  max-width:min(640px,66%);
+  font-size:clamp(12px,1.25vw,15px);
+  line-height:1.5;
+  min-height:0;
+  overflow-wrap:break-word;
+  overflow:visible;
+  color:#e4eaf3;
+}
+.noticia-tipo,.noticia-data,.noticia-rodape{flex-shrink:0}
+.noticia-controles{
+  bottom:18px;
+  left:0;
+  right:0;
+  justify-content:center;
+  pointer-events:none;
+}
+.noticia-pontos{pointer-events:auto;gap:10px;padding:9px 13px;border-radius:30px;background:#07101cc4;border:1px solid #ffffff22}
+.noticia-pontos button{width:10px;height:10px;min-width:10px;border-radius:50%;background:#ffffff75;transition:width .18s ease,background .18s ease}
+.noticia-pontos button[aria-current=true]{width:28px;border-radius:12px;background:#ff902d}
+.noticia-slide .noticia-background .noticia-arena-foto{opacity:.53}
+.noticia-slide:has(.noticia-foto-acao) .noticia-background .noticia-foto-acao{opacity:.68;object-position:center 30%;filter:saturate(.88) contrast(1.06)}
+.noticia-slide:has(.noticia-foto-acao) .noticia-jogador-foto{opacity:.28}
+@media(max-width:980px){
+  .noticia-slide,.noticia-lista{height:460px;min-height:460px}
+  .noticia-conteudo h2{max-width:75%;font-size:clamp(28px,4.2vw,43px)}
+  .noticia-subtitulo{max-width:75%}
+}
+@media(max-width:680px){
+  .noticia-slide,.noticia-lista{height:490px;min-height:490px}
+  .noticia-conteudo{justify-content:flex-end;gap:8px;padding:17px 17px 68px}
+  .noticia-conteudo h2{max-width:100%;font-size:clamp(28px,7.8vw,39px);line-height:1.05}
+  .noticia-subtitulo{max-width:100%;font-size:12px;line-height:1.5}
+  .noticia-controles{bottom:12px}
+  .noticia-slide:has(.noticia-foto-acao) .noticia-jogador-foto{opacity:.18}
+  .noticia-slide:has(.noticia-foto-acao) .noticia-background .noticia-foto-acao{opacity:.55}
+}
+@media(max-width:390px){
+  .noticia-slide,.noticia-lista{height:515px;min-height:515px}
+  .noticia-conteudo h2{font-size:clamp(27px,8vw,33px)}
+  .noticia-rodape{margin-top:0}
+}

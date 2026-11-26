@@ -374,7 +374,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     add({
       tipo:'RESUMO DA RODADA', titulo:resumo.titulo,
       subtitulo:resumo.subtitulo || 'O que aconteceu na NBA enquanto você dormia.',
-      href:raiz + '/rodada/' + dia + '.html', foto:palco?.arena?.foto || '',
+      href:raiz + '/rodada/' + dia + '.html', foto:palco?.foto_jogo || palco?.arena?.foto || '', fotoAcao:!!palco?.foto_jogo,
       jogador:p?.nome || '', visitante:palco?.visitante, casa:palco?.casa,
       placar:'Resumo e principais histórias', data:dataPorExtenso(dia)
     });
@@ -390,7 +390,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
       tipo: tags.some(t=>t.epico) ? 'JOGO IMPERDÍVEL' :
         noticias.length === 0 ? 'JOGO EM DESTAQUE' : 'NA RODADA',
       titulo:texto.titulo,subtitulo:texto.subtitulo || placar,
-      href:raiz + '/jogo/' + j.id + '.html',foto:j.arena?.foto || '',
+      href:raiz + '/jogo/' + j.id + '.html',foto:j.foto_jogo || j.arena?.foto || '',fotoAcao:!!j.foto_jogo,
       jogador:p?.nome || '',visitante:j.visitante,casa:j.casa,
       placar, data:dataHoraCurta(j.inicio_utc)
     });
@@ -398,7 +398,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
   if (!noticias.length) return '';
   const slide = (item,i) => {
     const foto = item.foto ?
-      '<img class="noticia-arena-foto" src="' + esc(item.foto) +
+      '<img class="noticia-arena-foto' + (item.fotoAcao ? ' noticia-foto-acao' : '') + '" src="' + esc(item.foto) +
       '" alt="" loading="' + (i===0?'eager':'lazy') + '" decoding="async"' +
       (i===0?' fetchpriority="high"':'') + ' onerror="this.remove()">' : '';
     const retrato = item.jogador ? fotoPessoa(item.jogador,'noticia-jogador-foto') : '';
@@ -418,12 +418,8 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
       '<div class="noticia-rodape">'+duelo+'<span class="noticia-cta">Ler matéria <span aria-hidden="true">↗</span></span></div>' +
       '</a></article>';
   };
-  const controles = noticias.length>1 ?
-    '<div class="noticia-controles"><div class="noticia-navegacao">' +
-    '<button type="button" data-noticia-prev aria-label="Destaque anterior">‹</button>' +
-    '<span data-noticia-status aria-live="off">1 de '+noticias.length+'</span>' +
-    '<button type="button" data-noticia-next aria-label="Próximo destaque">›</button>' +
-    '</div><div class="noticia-pontos" aria-label="Selecionar notícia">' +
+  const controles = noticias.length > 1 ?
+    '<div class="noticia-controles"><div class="noticia-pontos" aria-label="Selecionar notícia">' +
     noticias.map((_,i)=>'<button type="button" data-noticia-indice="'+i+
       '" aria-label="Mostrar destaque '+(i+1)+' de '+noticias.length+
       '" aria-current="'+(i===0?'true':'false')+'"></button>').join('') +
@@ -434,7 +430,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     return '<a href="'+raiz+'/jogo/'+j.id+'.html" class="noticia-mini" style="--noticia-cor1:'+
       cor(j.visitante)+';--noticia-cor2:'+cor(j.casa)+'">' +
       '<span class="noticia-mini-visual">'+
-      (j.arena?.foto?'<img class="noticia-mini-arena" src="'+esc(j.arena.foto)+'" alt="" loading="lazy" onerror="this.remove()">':'')+
+      (j.foto_jogo||j.arena?.foto?'<img class="noticia-mini-arena" src="'+esc(j.foto_jogo||j.arena.foto)+'" alt="" loading="lazy" onerror="this.remove()">':'')+
       (p?fotoPessoa(p.nome,'noticia-mini-jogador'):'')+'</span>' +
       '<span class="noticia-mini-texto"><small>'+esc(i===0?'EM ALTA':i===1?'OUTRA HISTÓRIA':'MAIS DA RODADA')+
       '</small><strong>'+esc(texto.titulo)+'</strong><span>'+esc(j.visitante.sigla+' '+
