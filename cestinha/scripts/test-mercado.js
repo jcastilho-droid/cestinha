@@ -7,6 +7,12 @@ const data=JSON.parse(fs.readFileSync('data/mercado.json','utf8'));
 assert.ok(page.includes('CENTRAL DO <span>MERCADO</span>'),'Pagina de mercado nao foi montada');
 assert.ok(page.includes('class="marca logo"'),'Identidade e logo nao preservadas');
 assert.ok(page.includes('id="mercado-grid"'),'Cards nao criados');
+assert.ok(page.includes('mercado-action-gallery'),'Galeria esportiva nao foi aplicada ao destaque');
+assert.ok(page.includes('mercado-action-main')&&page.includes('mercado-action-secondary'),'Fotos de acao em paineis separados ausentes');
+assert.ok(page.includes('Fotografias de arquivo'),'Aviso editorial sobre imagem ausente');
+const hero=page.split('<section class="mercado-feature"')[1]?.split('</section>')[0]||'';
+assert.ok(!hero.includes('mercado-portraits'),'O destaque nao pode usar retratos sobrepostos');
+
 assert.ok(page.includes('data-mercado-filtro="trocas"'),'Filtros ausentes');
 assert.ok(page.includes('data-mercado-filtro="draft"'),'Draft ausente');
 assert.ok(page.includes('data-mercado-filtro="rumores"'),'Rumores ausentes');
