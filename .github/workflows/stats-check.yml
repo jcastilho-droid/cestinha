@@ -35,6 +35,8 @@ jobs:
         run: node scripts/build.js
       - name: Conferir historico individual consolidado
         run: node scripts/test-stats-history.js
+      - name: Conferir a TV brasileira e a tabela no celular
+        run: node scripts/test-tv-br.js
       - name: Validar pagina e links
         run: |
           test -s _site/stats.html

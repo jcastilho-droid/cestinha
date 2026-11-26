@@ -1181,3 +1181,106 @@ a.termo:hover { color: var(--laranja-2); text-decoration: none; }
   .tabela-conf table.classif tbody tr:nth-child(6){border-bottom:2px solid rgba(47,212,122,.55)}
   .tabela-conf table.classif tbody tr:nth-child(10){border-bottom:2px dashed rgba(255,197,61,.6)}
 }
+
+
+/* 2026-11-26 | Classificacao mobile: conteudo essencial, extras sob demanda. */
+@media(max-width:700px){
+  .tabela-conf .rolagem{
+    border:1px solid #334152;
+    overflow:hidden;
+    background:linear-gradient(180deg,#141e2a,#0e1620);
+  }
+  .tabela-conf .classif-mobile-head{
+    grid-template-columns:23px minmax(0,1fr) 30px 30px 47px;
+    column-gap:7px;
+    padding:12px 11px;
+    font-size:10px;letter-spacing:.04em;
+  }
+  .tabela-conf table.classif tbody tr{
+    grid-template-columns:23px minmax(0,1fr) 30px 30px 47px;
+    gap:0 7px;
+    padding:12px 11px 11px;
+    border-bottom:1px solid #273544;
+    background:transparent;
+  }
+  .tabela-conf table.classif tbody tr:nth-child(even){background:rgba(255,255,255,.018)}
+  .tabela-conf table.classif tbody tr>td.pos{
+    font:800 21px/1 var(--titulo);color:#f1f6fb;
+  }
+  .tabela-conf table.classif tbody tr>th.esq a{
+    font-size:clamp(12px,3.45vw,15px);
+    font-weight:750;letter-spacing:-.15px;
+    gap:7px;
+  }
+  .tabela-conf table.classif tbody tr>th.esq a img.logo{width:23px;height:23px}
+  .tabela-conf table.classif tbody tr>td:nth-child(3),
+  .tabela-conf table.classif tbody tr>td:nth-child(4),
+  .tabela-conf table.classif tbody tr>td:nth-child(5){
+    font-size:clamp(12px,3.6vw,15px);
+    font-weight:650;
+  }
+  .tabela-conf table.classif tbody tr>td.classif-mobile-detalhes{
+    display:block;
+    grid-column:1/-1;
+    border:0;
+    padding:0;margin:0;
+    min-width:0;max-width:100%;
+  }
+  .classif-expansivel{display:block;width:100%;margin:0}
+  .classif-expansivel summary{
+    list-style:none;display:flex;align-items:center;gap:6px;
+    padding:8px 0 0;margin-top:8px;
+    border-top:1px solid #293645;
+    cursor:pointer;
+    color:#aab9cc;font-size:10px;font-weight:750;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .classif-expansivel summary::-webkit-details-marker{display:none}
+  .classif-expansivel summary:focus-visible{outline:2px solid var(--laranja);outline-offset:3px}
+  .classif-expansivel .classif-extra-hint{
+    margin-left:auto;
+    color:#72889f;font-weight:500;font-size:10px;
+  }
+  .classif-chevron{
+    color:#ff963f;display:inline-block;font-size:17px;line-height:.7;
+    transition:transform .18s ease;transform-origin:center;
+  }
+  .classif-expansivel[open] .classif-chevron{transform:rotate(180deg)}
+  .tabela-conf table.classif tbody tr>td.classif-mobile-detalhes .classif-extra-grade{
+    display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:5px;margin-top:10px;
+    padding:10px 6px 7px;border-radius:9px;background:#1b2a3b;
+  }
+  .classif-extra-grade>span{
+    display:flex;align-items:center;flex-direction:column;
+    gap:4px;white-space:nowrap;text-align:center;min-width:0;
+  }
+  .classif-extra-grade small{font-size:9px;color:#8fa3b9}
+  .classif-extra-grade b{font-size:11px;font-weight:800;color:#f0f5fb}
+  .tabela-conf table.classif tbody tr.z-playoff,
+  .tabela-conf table.classif tbody tr.z-playin{
+    box-shadow:none;position:relative;
+  }
+  .tabela-conf table.classif tbody tr.z-playoff::before,
+  .tabela-conf table.classif tbody tr.z-playin::before{
+    content:"";position:absolute;top:9px;bottom:9px;left:0;width:3px;border-radius:0 4px 4px 0;
+    background:var(--verde);
+  }
+  .tabela-conf table.classif tbody tr.z-playin::before{background:var(--amarelo)}
+  .tabela-conf table.classif tbody tr:nth-child(6){border-bottom:2px solid rgba(47,212,122,.35)}
+  .tabela-conf table.classif tbody tr:nth-child(10){border-bottom:2px dashed rgba(255,197,61,.4)}
+}
+@media(max-width:370px){
+  .tabela-conf .classif-mobile-head,.tabela-conf table.classif tbody tr{
+    grid-template-columns:21px minmax(0,1fr) 26px 26px 41px;
+    gap:0 5px;padding-left:8px;padding-right:8px;
+  }
+  .classif-expansivel .classif-extra-hint{display:none}
+}
+/* A agenda exibe canais brasileiros, nunca o campo de TV americana da ESPN. */
+.ja-tv,.jn-tv{line-height:1.35}
+.ja-tv b,.jn-tv b{color:#ffae70;font-weight:800}
+.ja-tv small,.jn-tv small{font-size:10px;opacity:.85}
+@media(max-width:519px){
+  .ja-tv{flex-wrap:wrap;gap:3px 5px;padding-top:3px}
+}
