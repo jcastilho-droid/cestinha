@@ -1284,3 +1284,16 @@ a.termo:hover { color: var(--laranja-2); text-decoration: none; }
 @media(max-width:519px){
   .ja-tv{flex-wrap:wrap;gap:3px 5px;padding-top:3px}
 }
+
+
+/* Apenas o sétimo atalho Mercado: sem redesenhar nenhuma página existente.
+   Mantém a identidade da marca e os ícones atuais, sem "degrau" no celular. */
+@media(min-width:880px){
+  .topo .menu{gap:4px}
+  .topo .menu a{padding:8px 9px;font-size:clamp(11px,1.15vw,14px)}
+}
+@media(max-width:879px){
+  .barra-inferior{grid-template-columns:repeat(7,minmax(0,1fr));gap:0;min-width:0}
+  .barra-inferior a{font-size:clamp(8px,2.3vw,11px);padding:6px 0 5px;min-width:0}
+  .barra-inferior a .ic{width:clamp(17px,4.6vw,21px);height:clamp(17px,4.6vw,21px)}
+}
