@@ -38,7 +38,7 @@ for (const dia of dias) {
   for (const j of jogos.filter((x) => x.status === 'final')) {
     const arq = path.join(pasta, `${j.id}.json`);
     // já coletado: jogo final não muda (só recoleta se faltar algum campo novo, como o fluxo do placar)
-    if (fs.existsSync(arq) && lerJson(arq)?.fluxo) continue;
+    if (fs.existsSync(arq) && lerJson(arq)?.fluxo && lerJson(arq)?.foto_jogo_verificada) continue;
     try {
       const completo = fonte.normalizarJogo(j, await fonte.buscarDetalhe(j.id), dia);
       if (!completo.casa.jogadores.length) throw new Error('box score vazio, tento de novo na próxima');
