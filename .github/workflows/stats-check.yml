@@ -1,0 +1,41 @@
+name: Verificar Cestinha Stats
+
+on:
+  push:
+    branches: ['feature/cestinha-stats-v1']
+  pull_request:
+    paths:
+      - 'cestinha/scripts/**'
+      - 'cestinha/site/assets/**'
+      - '.github/workflows/stats-check.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cestinha
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Conferir sintaxe
+        run: |
+          node --check scripts/build.js
+          node --check scripts/stats.js
+          node --check site/assets/stats.js
+      - name: Gerar site completo
+        run: node scripts/build.js
+      - name: Validar pagina e links
+        run: |
+          test -s _site/stats.html
+          test -s _site/assets/stats.css
+          test -s _site/assets/stats.js
+          grep -q 'CESTINHA' _site/stats.html
+          grep -q 'stats.html' _site/index.html
+          grep -q 'id="stats-dados"' _site/stats.html
+          grep -q 'id="stats-partida"' _site/stats.html
