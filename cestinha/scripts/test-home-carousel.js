@@ -24,37 +24,20 @@ if (match) {
     const relative=link.replace(/^\.\//,'');
     assert.ok(fs.existsSync(path.join('_site',relative)),'Link interno quebrado: '+link);
   }
-  assert.ok(html.includes('noticia-galeria-editorial'),'Colagem vetorial do destaque ausente');
-  const artes = [...html.matchAll(/data-arte-id="([^"]+)"/g)].map(m=>m[1]);
-  assert.equal(artes.length,slides,'Todo slide deve conter sua propria arte editorial');
-  assert.equal(new Set(artes).size,artes.length,'Artes repetidas entre slides');
-  // Quando a colagem do jogo/rodada existe no repo, o HTML deve usar o
-  // arquivo publicado (sem desenhar o placeholder vetorial).
-  const galeriaPattern = /<div class="noticia-galeria noticia-galeria-editorial" data-arte-id="([^"]+)"[^>]*>([\s\S]*?)<\/div>/g;
-  const galerias = [...html.matchAll(galeriaPattern)];
-  assert.equal(galerias.length,slides,'Nem todos os slides renderizaram uma galeria editorial');
-  const publicadas = [];
-  for (const [ , id, conteudo ] of galerias){
-    const pasta = path.join('site','assets','colagens');
-    const caminho = path.join(pasta,id+'.webp');
-    if (fs.existsSync(caminho)){
-      assert.ok(conteudo.includes('class="noticia-arte-publicada"'),'Arte pronta nao foi usada no slide: '+id);
-      assert.ok(conteudo.includes('/assets/colagens/'+id+'.webp'),'Arquivo da colagem incorreto no slide: '+id);
-      assert.ok(!conteudo.includes('<svg'),'Slide usou fallback apesar da colagem existir: '+id);
-      assert.ok(fs.existsSync(path.join('_site','assets','colagens',id+'.webp')),'Imagem nao copiada para _site: '+id);
-      publicadas.push(id);
-    }
-  }
-  assert.equal(new Set(publicadas).size,publicadas.length,'Arquivo visual duplicado entre slides');
-  console.log('Colagens WebP publicadas e conferidas: '+publicadas.length+' de '+slides);
-  assert.ok(!html.includes('colagem-foto'),'Foto realista nao pode entrar na colagem');
-  assert.ok(!html.includes('noticia-arena-foto'),'Foto de arena nao pode entrar nos slides');
-  assert.ok(!html.includes('src="./assets/artes/'),'Arte realista antiga nao pode ser reutilizada');
-  assert.ok(!html.includes('class="noticia-jogador"'),'Retrato sobreposto ainda presente');
-  assert.ok(html.includes('Artes editoriais do Cestinha'),'Credito editorial ausente');
-  const svgSemCorte = [...html.matchAll(/<svg[^>]*viewBox=['"]0 0 780 650['"][^>]*preserveAspectRatio=['"]xMidYMid meet['"]/g)].length;
-  assert.ok(svgSemCorte>=slides || html.includes('noticia-arte-publicada'),
-    'SVG sem margem de seguranca ou arte pronta nao encontrada');
+  assert.ok(html.includes('noticia-galeria-editorial'),'Galeria editorial nao encontrada');
+  const artes=[...html.matchAll(/data-arte-id="([^"]+)"/g)].map(m=>m[1]);
+  assert.equal(artes.length,slides,'Todos os slides devem ter identificador de arte');
+  assert.equal(new Set(artes).size,artes.length,'Identificador repetido entre slides');
+  assert.equal((html.match(/class="acervo-composicao/g)||[]).length>=slides,true,
+    'Todos os slides devem usar o motor de colagens do acervo');
+  assert.ok(html.includes('acervo-equipe-a'),'Escudos de equipe nao encontrados no carrossel');
+  assert.ok(html.includes('acervo-escudo'),'Logos do acervo nao foram usados');
+  assert.ok(!html.includes('src="./assets/colagens/'),'Arte por noticia ainda ativa');
+  assert.ok(!html.includes('class="noticia-arte-publicada"'),'Nao deve usar WebPs antigos');
+  assert.ok(!html.includes('colagem-foto') && !html.includes('noticia-arena-foto'),
+    'Foto generica inserida indevidamente no carrossel');
+  assert.ok(html.includes('Colagens editoriais montadas a partir do acervo fixo'),
+    'Credito de imagens permanentes ausente');
   assert.ok(html.includes('noticia-creditos'),'Creditos editoriais ausentes');
   if(slides>1)assert.ok(html.includes('data-noticia-indice'),'Carrossel sem dots');
   console.log('Carrossel validado: '+slides+' noticias, '+links.length+' links internos existentes.');
@@ -80,6 +63,6 @@ assert.ok(visual.includes('v6-pick-photo'),'Mini-cards de exploracao sem area de
 assert.ok(!visual.includes("$('.sec-jogos',zone)?.before(section)"),'Modulo Explore ainda precede jogos');
 console.log('Rodape e modulo Explore validados.');
 
-assert.ok(css.includes('.noticia-galeria-editorial'),'Layout editorial nao encontrado');
-assert.ok(css.includes('.noticia-arte-publicada'),'Estilo para imagens de colagem ausente');
+assert.ok(css.includes('.acervo-composicao'),'Layout do acervo editorial nao encontrado');
+assert.ok(css.includes('.acervo-atleta') && css.includes('.acervo-escudo'),'Camadas de colagem ausentes');
 assert.ok(css.includes('@media(max-width:720px)'),'Layout mobile da galeria nao encontrado');
