@@ -503,7 +503,7 @@
       "numero": "00",
       "posicao": "Ala",
       "posicao_sigla": "F",
-      "idade": 23,
+      "idade": 24,
       "altura_m": "1.96",
       "peso_kg": 104,
       "experiencia": 3,
@@ -1725,5 +1725,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/utah",
-  "atualizado_em": "2026-11-27T09:25:52.963Z"
+  "atualizado_em": "2026-11-27T16:19:53.956Z"
 }
