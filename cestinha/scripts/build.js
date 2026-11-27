@@ -405,7 +405,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     if (!/^(?:jogo-\d+|rodada-\d{4}-\d{2}-\d{2})$/.test(id || '')) return '';
     for (const ext of ['webp', 'jpg', 'png']) {
       if (fs.existsSync(path.join('site', 'assets', 'artes', id + '.' + ext)))
-        return raiz + '/assets/artes/' + id + '.' + ext;
+        return raiz + '/assets/artes/' + id + '.' + ext + '?v=' + fs.statSync(path.join('site', 'assets', 'artes', id + '.' + ext)).size;
     }
     return '';
   };
