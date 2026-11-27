@@ -24,7 +24,7 @@ if (match) {
     const relative=link.replace(/^\.\//,'');
     assert.ok(fs.existsSync(path.join('_site',relative)),'Link interno quebrado: '+link);
   }
-  assert.ok(html.includes('noticia-galeria-main'),'Imagem principal do destaque ausente');
+  assert.ok(html.includes('noticia-galeria-main') && html.includes('noticia-galeria-colagem'),'Colagem editorial do destaque ausente');
   assert.ok(!html.includes('class="noticia-jogador"'),'Retrato sobreposto ainda presente');
   assert.ok(html.includes('noticia-galeria-aviso') || html.includes('a.espncdn.com'),'Imagem editorial sem origem identificada');
   assert.ok(html.includes('noticia-creditos'),'Creditos editoriais ausentes');
@@ -52,5 +52,5 @@ assert.ok(visual.includes('v6-pick-photo'),'Mini-cards de exploracao sem area de
 assert.ok(!visual.includes("$('.sec-jogos',zone)?.before(section)"),'Modulo Explore ainda precede jogos');
 console.log('Rodape e modulo Explore validados.');
 
-assert.ok(css.includes('.noticia-slide-galeria'),'Layout em paineis nao incluido no CSS');
+assert.ok(css.includes('.noticia-galeria-colagem'),'Layout de colagem editorial nao incluido no CSS');
 assert.ok(css.includes('@media(max-width:720px)'),'Layout mobile da galeria nao encontrado');

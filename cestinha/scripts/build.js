@@ -429,36 +429,35 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     }
     return '';
   };
+  // Linguagem visual: colagem editorial para TODAS as noticias.
+  // A foto base vem exclusivamente da propria noticia/arena ou de arte local.
   const slide = (item,i) => {
     const arte = arteLocal(item.arteId);
     const fotosReais = [...new Set((item.fotosAcao || []).filter(x =>
       typeof x === 'string' && /^https:\/\/a\.espncdn\.com\//i.test(x)))].slice(0,3);
-    // Sem arte local, usamos apenas fotos vinculadas a este jogo,
-    // ou a foto da arena sem fingir que mostra a partida da manchete.
-    const fotos = arte ? [arte] : fotosReais;
-    const principal = fotos[0] || item.fotoArena || '';
-    const secundaria = fotos[1] || '';
-    const arena = fotos[2] || '';
-    const galImg = (src,classe,prioridade='lazy') => src ?
+    const principal = arte || fotosReais[0] || item.fotoArena || '';
+    const secundaria = arte || fotosReais[1] || fotosReais[0] || item.fotoArena || '';
+    const img = (src, classe, prioridade='lazy') => src ?
       '<img class="' + classe + '" src="' + esc(src) + '" alt="" loading="' + prioridade +
       '" decoding="async" onerror="this.style.opacity=0">' : '';
-    const unico = !secundaria && !arena;
-    const galeria = '<div class="noticia-galeria' + (unico ? ' noticia-galeria-unica' : '') +
-      '" aria-hidden="true">' +
-      '<div class="noticia-galeria-tile noticia-galeria-main">' +
-      (principal ? galImg(principal,'noticia-galeria-img',''+(i===0?'eager':'lazy')) :
-        '<div class="noticia-galeria-vazia"></div>') +
-      '</div>' +
-      (unico ? '' : '<div class="noticia-galeria-lado">' +
-        '<div class="noticia-galeria-tile noticia-galeria-top">' +
-          galImg(secundaria || principal,'noticia-galeria-img') + '</div>' +
-        '<div class="noticia-galeria-tile noticia-galeria-bottom">' +
-          galImg(arena || item.fotoArena || principal,'noticia-galeria-img') +
-          '</div></div>') +
-      (item.visitante && item.casa ? '<div class="noticia-galeria-escudos">' +
-        logo(item.visitante,26) + '<span>×</span>' + logo(item.casa,26) + '</div>' : '') +
-      (arte ? '<span class="noticia-galeria-aviso">Arte ilustrativa gerada por IA</span>' :
-        fotosReais.length ? '' : '<span class="noticia-galeria-aviso">Imagem da arena · ilustrativa</span>') +
+    const siglas = [item.visitante?.sigla || '', item.casa?.sigla || ''].filter(Boolean).join(' / ');
+    const aviso = arte ? 'Colagem editorial · arte gerada por IA' :
+      fotosReais.length ? 'Colagem editorial · imagens do jogo' :
+      'Colagem editorial · imagem da arena';
+    const galeria = '<div class="noticia-galeria noticia-galeria-colagem" aria-hidden="true">' +
+      '<span class="colagem-papel"></span>' +
+      '<div class="colagem-fantasma">' + img(principal,'colagem-foto') + '</div>' +
+      '<div class="colagem-recorte noticia-galeria-main">' +
+        (principal ? img(principal,'colagem-foto',''+(i===0?'eager':'lazy')) :
+          '<div class="noticia-galeria-vazia"></div>') + '</div>' +
+      '<div class="colagem-miniatura">' + img(secundaria,'colagem-foto') + '</div>' +
+      '<span class="colagem-faixa"></span><span class="colagem-risco"></span>' +
+      '<span class="colagem-reticula"></span>' +
+      '<span class="colagem-typografia">CESTINHA</span>' +
+      (item.visitante && item.casa ? '<div class="colagem-chip">' +
+        logo(item.visitante,28) + '<b>×</b>' + logo(item.casa,28) + '</div>' : '') +
+      '<span class="colagem-siglas">' + esc(siglas) + '</span>' +
+      '<span class="noticia-galeria-aviso">' + esc(aviso) + '</span>' +
       '</div>';
     const fundo = item.fotoArena ?
       '<img class="noticia-arena-foto" src="' + esc(item.fotoArena) +
@@ -502,7 +501,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     noticias.length+' destaques</span></div>' +
     '<div class="noticias-carrossel" data-cestinha-carrossel aria-roledescription="carrossel">' +
     '<div class="noticia-lista">'+noticias.map(slide).join('')+'</div>'+controles+'</div>' +
-    '<p class="noticia-creditos">Artes geradas por IA são ilustrações editoriais, não fotografias dos jogos. Fotos reais e imagens de arena: ESPN, quando disponíveis.</p>' +
+    '<p class="noticia-creditos">Colagens editoriais: composições ilustrativas feitas com imagens associadas a cada notícia. Artes geradas por IA não representam fotografias reais dos jogos. Fotos de partidas e arenas: ESPN.</p>' +
     (destaques?'<div class="noticia-minis" aria-label="Mais histórias da rodada">'+destaques+'</div>':'')+'</section>';
 }
 
