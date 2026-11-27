@@ -376,7 +376,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     add({
       tipo:'RESUMO DA RODADA', titulo:resumo.titulo,
       subtitulo:resumo.subtitulo || 'O que aconteceu na NBA enquanto você dormia.',
-      href:raiz + '/rodada/' + dia + '.html', arteId:'rodada-' + dia, fotosAcao:palco?.fotos_jogo || (palco?.foto_jogo ? [palco.foto_jogo] : []), fotoArena:palco?.arena?.foto || '',
+      href:raiz + '/rodada/' + dia + '.html', arteId:palco ? 'jogo-' + palco.id : 'rodada-' + dia, fotosAcao:palco?.fotos_jogo || (palco?.foto_jogo ? [palco.foto_jogo] : []), fotoArena:palco?.arena?.foto || '',
       jogador:p?.nome || '', visitante:palco?.visitante, casa:palco?.casa,
       placar:'Resumo e principais histórias', data:dataPorExtenso(dia)
     });
