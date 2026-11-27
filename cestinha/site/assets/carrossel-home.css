@@ -329,3 +329,83 @@
 .noticia-mini-visual .noticia-arte-publicada{
   display:block;width:100%;height:100%;object-fit:cover;object-position:center;
 }
+
+
+/* CESTINHA / ACERVO FIXO 30 TIMES
+   Composicao editorial instantanea a partir de artes SVG locais.
+   Sem numeros, datas ou titulos dentro das artes reutilizaveis. */
+.noticia-slide-galeria .noticia-galeria-editorial.acervo-galeria{
+  display:block;position:absolute;overflow:hidden;isolation:isolate;
+  border-radius:16px;background:#141a26;border:1px solid #ece3d46b;
+  box-shadow:0 14px 38px #0205098c;
+}
+.acervo-composicao{position:relative;display:block;overflow:hidden;width:100%;height:100%;
+  background:linear-gradient(128deg,#10151e 8%,#22242c 53%,#141a25);
+  isolation:isolate}
+.acervo-composicao::before{content:"";position:absolute;inset:-30%;z-index:0;
+  transform:rotate(-15deg);
+  background:radial-gradient(ellipse at 24% 62%,var(--collage-a,#ef822c) 0%,transparent 35%),
+  radial-gradient(ellipse at 78% 45%,var(--collage-b,#405383) 0%,transparent 44%);opacity:.72}
+.acervo-composicao::after{content:"";position:absolute;inset:0;z-index:9;pointer-events:none;
+  background:linear-gradient(0deg,#060b1580 0%,transparent 22%,transparent 78%,#09121d52 100%);
+  box-shadow:inset 0 0 34px #01050b9b}
+.acervo-base{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.65;
+  background:repeating-linear-gradient(137deg,transparent 0 27px,#f4e9d50b 28px 31px,transparent 32px 51px)}
+.acervo-rasgo{position:absolute;z-index:1;top:-8%;left:24%;height:126%;width:53%;
+  transform:rotate(-16deg);
+  clip-path:polygon(7% 0,98% 0,96% 12%,100% 25%,97% 39%,100% 53%,96% 69%,100% 84%,98% 100%,4% 100%,0 86%,4% 69%,0 49%,5% 31%,0 14%);
+  background:#e3d6c2}
+.acervo-manchas{position:absolute;inset:0;z-index:7;opacity:.45;pointer-events:none;
+  background:linear-gradient(173deg,transparent 37%,var(--collage-a,#eb712c) 38%,transparent 49%),
+  linear-gradient(25deg,transparent 66%,var(--collage-b,#485b89) 69%,transparent 77%)}
+.acervo-reticula{position:absolute;inset:0;z-index:8;opacity:.33;pointer-events:none;
+  background:radial-gradient(circle,#f5ead9 0 1px,transparent 1.55px) 0 0/9px 9px;
+  mask-image:linear-gradient(90deg,#000 0%,transparent 35%,transparent 66%,#000 100%)}
+.acervo-equipe{position:absolute;z-index:3;width:55%;height:89%;
+  clip-path:polygon(6% 1%,25% 0,40% 2%,64% 0,97% 2%,100% 12%,97% 26%,100% 44%,97% 62%,100% 83%,94% 99%,72% 97%,48% 100%,19% 98%,0 93%,4% 76%,0 60%,3% 44%,0 27%);
+  box-shadow:0 12px 19px #030711af}
+.acervo-equipe-a{left:2%;top:10%;transform:rotate(-8deg)}
+.acervo-equipe-b{right:1%;top:4%;transform:rotate(7deg);z-index:4}
+.acervo-equipe-c{left:30%;top:4%;z-index:2;transform:rotate(4deg)}
+.acervo-papel{position:absolute;z-index:0;inset:0;
+  background:linear-gradient(144deg,#faf0dd,#dfcfb4 60%,#e5d8c4)}
+.acervo-equipe-b .acervo-papel{background:linear-gradient(120deg,#e5d8c4,#f8eddb 65%,#ddcdb5)}
+.acervo-escudo{position:absolute;z-index:5;width:43%;height:43%;object-fit:contain;object-position:center;
+  bottom:-5%;right:-5%;filter:drop-shadow(0 5px 7px #0006)}
+.acervo-equipe-b .acervo-escudo{left:-4%;right:auto;bottom:-3%}
+.acervo-atleta{position:absolute;z-index:3;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 27%;
+  filter:contrast(1.16) saturate(.89);mix-blend-mode:multiply}
+.acervo-equipe-a .acervo-atleta{transform:scale(1.06);transform-origin:bottom left}
+.acervo-equipe-b .acervo-atleta{transform:scale(1.07);transform-origin:bottom right}
+.acervo-traco{position:absolute;z-index:6;height:9%;width:116%;left:-7%;
+  pointer-events:none;opacity:.82;
+  clip-path:polygon(0 30%,13% 5%,32% 27%,48% 0,69% 31%,84% 11%,100% 54%,100% 71%,79% 56%,55% 99%,25% 69%,4% 88%)}
+.acervo-traco-1{top:23%;transform:rotate(-15deg);background:var(--collage-a,#ed772c);mix-blend-mode:screen}
+.acervo-traco-2{bottom:12%;transform:rotate(9deg);background:#f4e7d0;height:4%;opacity:.4}
+.acervo-var-1 .acervo-equipe-a{transform:rotate(-4deg) translateY(4%)}
+.acervo-var-1 .acervo-equipe-b{transform:rotate(11deg) translateY(-5%)}
+.acervo-var-2 .acervo-equipe-a{transform:rotate(-12deg) translateX(5%)}
+.acervo-var-2 .acervo-equipe-b{transform:rotate(4deg) translateY(5%)}
+.acervo-var-3 .acervo-equipe-a{transform:rotate(-3deg) translateY(-5%)}
+.acervo-var-3 .acervo-equipe-b{transform:rotate(13deg) translateX(-4%)}
+.acervo-resumo .acervo-equipe{width:42%;height:71%;top:13%}
+.acervo-resumo .acervo-equipe-a{left:0;transform:rotate(-12deg)}
+.acervo-resumo .acervo-equipe-b{left:29%;right:auto;top:0;transform:rotate(6deg);height:81%}
+.acervo-resumo .acervo-equipe-c{left:61%;top:21%;transform:rotate(12deg)}
+.acervo-resumo .acervo-equipe .acervo-escudo{width:83%;height:83%;bottom:8%;left:8%;right:auto}
+.acervo-resumo .acervo-rasgo{left:35%;width:31%;background:#e5d9c8}
+.acervo-indisponivel{width:100%;height:100%;background:
+  radial-gradient(circle at 33% 45%,#e6873944,transparent 33%),
+  linear-gradient(115deg,#171f2b,#101720)}
+.noticia-mini-visual .acervo-composicao{height:100%;width:100%}
+.noticia-mini-visual .acervo-atleta{object-fit:cover}
+@media(max-width:720px){
+ .noticia-slide-galeria .noticia-galeria-editorial.acervo-galeria{
+   top:12px;right:12px;left:12px;width:auto;height:260px;border-radius:12px
+ }
+ .acervo-equipe{height:92%}
+ .acervo-traco-1{top:27%}
+}
+@media(max-width:400px){
+ .noticia-slide-galeria .noticia-galeria-editorial.acervo-galeria{height:225px}
+}
