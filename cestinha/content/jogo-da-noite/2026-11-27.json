@@ -1,0 +1,33 @@
+{
+  "titulo": "Knicks embalado recebe o Heat no clássico do Leste",
+  "subtitulo": "Heat x Knicks, 21h00",
+  "corpo": "Sexta tem 11 jogos, e o papo reto é no Madison Square Garden. O Knicks vem de 6 vitórias seguidas, 12-6 na campanha e terceiro do Leste.\n\nO Heat chega com 10-7, sexto da conferência, 8-2 nos últimos dez, mas vindo de derrota. Rivalidade clássica e briga direta na tabela.\n\nNo duelo de estrelas, Giannis Antetokounmpo tem médias de 28.4 pts, 12.7 reb e 5.4 ast por jogo. Jalen Brunson responde com 26.1 pts e 5.9 ast. O Knicks joga sem OG Anunoby, lesionado. A sequência continua ou o Heat estraga a festa?",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "Heat",
+    "Knicks"
+  ],
+  "jogadores": [
+    "Giannis Antetokounmpo",
+    "Jalen Brunson",
+    "OG Anunoby"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401909326",
+  "motivos": [
+    "Rivalidade",
+    "Boa fase",
+    "Duelo de estrelas"
+  ],
+  "ficar_de_olho": "Giannis Antetokounmpo contra Jalen Brunson, com o Knicks sem OG Anunoby.",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-27"
+  },
+  "escrito_em": "2026-11-27T11:48:17.766Z"
+}
