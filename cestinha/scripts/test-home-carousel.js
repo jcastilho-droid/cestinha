@@ -28,6 +28,25 @@ if (match) {
   const artes = [...html.matchAll(/data-arte-id="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(artes.length,slides,'Todo slide deve conter sua propria arte editorial');
   assert.equal(new Set(artes).size,artes.length,'Artes repetidas entre slides');
+  // Quando a colagem do jogo/rodada existe no repo, o HTML deve usar o
+  // arquivo publicado (sem desenhar o placeholder vetorial).
+  const galeriaPattern = /<div class="noticia-galeria noticia-galeria-editorial" data-arte-id="([^"]+)"[^>]*>([\s\S]*?)<\/div>/g;
+  const galerias = [...html.matchAll(galeriaPattern)];
+  assert.equal(galerias.length,slides,'Nem todos os slides renderizaram uma galeria editorial');
+  const publicadas = [];
+  for (const [ , id, conteudo ] of galerias){
+    const pasta = path.join('site','assets','colagens');
+    const caminho = path.join(pasta,id+'.webp');
+    if (fs.existsSync(caminho)){
+      assert.ok(conteudo.includes('class="noticia-arte-publicada"'),'Arte pronta nao foi usada no slide: '+id);
+      assert.ok(conteudo.includes('/assets/colagens/'+id+'.webp'),'Arquivo da colagem incorreto no slide: '+id);
+      assert.ok(!conteudo.includes('<svg'),'Slide usou fallback apesar da colagem existir: '+id);
+      assert.ok(fs.existsSync(path.join('_site','assets','colagens',id+'.webp')),'Imagem nao copiada para _site: '+id);
+      publicadas.push(id);
+    }
+  }
+  assert.equal(new Set(publicadas).size,publicadas.length,'Arquivo visual duplicado entre slides');
+  console.log('Colagens WebP publicadas e conferidas: '+publicadas.length+' de '+slides);
   assert.ok(!html.includes('colagem-foto'),'Foto realista nao pode entrar na colagem');
   assert.ok(!html.includes('noticia-arena-foto'),'Foto de arena nao pode entrar nos slides');
   assert.ok(!html.includes('src="./assets/artes/'),'Arte realista antiga nao pode ser reutilizada');
