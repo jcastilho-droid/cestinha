@@ -10,6 +10,7 @@ import { gerarCartoes } from './cartoes.js';
 import { gerarCestinhaStats } from './stats.js';
 import { gerarMercado } from './mercado.js';
 import { VERBETES, CATEGORIAS, exemplosReais } from './lib/verbetes.js';
+import { colagemEditorial } from './lib/colagem.js';
 
 const MENU = [['rodada', 'index.html', 'bola', 'Rodada'], ['agenda', 'agenda.html', 'calendario', 'Agenda'], ['classificacao', 'classificacao.html', 'trofeu', 'Tabela'], ['times', 'times/index.html', 'escudo', 'Times'], ['stats', 'stats.html', 'grafico', 'Stats'], ['mercado', 'mercado.html', 'raio', 'Mercado'], ['aprenda', 'aprenda.html', 'cesta', 'Aprenda']];
 // Barra de baixo no celular: 4 itens fixos + "Mais" (o resto abre num painel)
@@ -396,7 +397,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     add({
       tipo:'RESUMO DA RODADA', titulo:resumo.titulo,
       subtitulo:resumo.subtitulo || 'O que aconteceu na NBA enquanto você dormia.',
-      href:raiz + '/rodada/' + dia + '.html', arteId:palco ? 'jogo-' + palco.id : 'rodada-' + dia, fotosAcao:palco?.fotos_jogo || (palco?.foto_jogo ? [palco.foto_jogo] : []), fotoArena:palco?.arena?.foto || '',
+      href:raiz + '/rodada/' + dia + '.html', arteId:'rodada-' + dia, fotosAcao:palco?.fotos_jogo || (palco?.foto_jogo ? [palco.foto_jogo] : []), fotoArena:palco?.arena?.foto || '',
       jogador:p?.nome || '', visitante:palco?.visitante, casa:palco?.casa,
       placar:'Resumo e principais histórias', data:dataPorExtenso(dia)
     });
@@ -418,57 +419,23 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     });
   }
   if (!noticias.length) return '';
-  // Artes editoriais IA por noticia, sem imagens de arquivo de jogos diferentes.
-  // Coloque o arquivo em site/assets/artes/<arteId>.webp (ou .jpg).
-  // Uma arte só é usada quando existe localmente no repositório no momento do build.
-  const arteLocal = id => {
-    if (!/^(?:jogo-\d+|rodada-\d{4}-\d{2}-\d{2})$/.test(id || '')) return '';
-    for (const ext of ['webp', 'jpg', 'png']) {
-      if (fs.existsSync(path.join('site', 'assets', 'artes', id + '.' + ext)))
-        return raiz + '/assets/artes/' + id + '.' + ext + '?v=' + fs.statSync(path.join('site', 'assets', 'artes', id + '.' + ext)).size;
-    }
-    return '';
-  };
-  // Linguagem visual: colagem editorial para TODAS as noticias.
-  // A foto base vem exclusivamente da propria noticia/arena ou de arte local.
-  const slide = (item,i) => {
-    const arte = arteLocal(item.arteId);
-    const fotosReais = [...new Set((item.fotosAcao || []).filter(x =>
-      typeof x === 'string' && /^https:\/\/a\.espncdn\.com\//i.test(x)))].slice(0,3);
-    const principal = arte || fotosReais[0] || item.fotoArena || '';
-    const secundaria = arte || fotosReais[1] || fotosReais[0] || item.fotoArena || '';
-    const img = (src, classe, prioridade='lazy') => src ?
-      '<img class="' + classe + '" src="' + esc(src) + '" alt="" loading="' + prioridade +
-      '" decoding="async" onerror="this.style.opacity=0">' : '';
-    const siglas = [item.visitante?.sigla || '', item.casa?.sigla || ''].filter(Boolean).join(' / ');
-    const aviso = arte ? 'Colagem editorial · arte gerada por IA' :
-      fotosReais.length ? 'Colagem editorial · imagens do jogo' :
-      'Colagem editorial · imagem da arena';
-    const galeria = '<div class="noticia-galeria noticia-galeria-colagem" aria-hidden="true">' +
-      '<span class="colagem-papel"></span>' +
-      '<div class="colagem-fantasma">' + img(principal,'colagem-foto') + '</div>' +
-      '<div class="colagem-recorte noticia-galeria-main">' +
-        (principal ? img(principal,'colagem-foto',''+(i===0?'eager':'lazy')) :
-          '<div class="noticia-galeria-vazia"></div>') + '</div>' +
-      '<div class="colagem-miniatura">' + img(secundaria,'colagem-foto') + '</div>' +
-      '<span class="colagem-faixa"></span><span class="colagem-risco"></span>' +
-      '<span class="colagem-reticula"></span>' +
-      '<span class="colagem-typografia">CESTINHA</span>' +
-      (item.visitante && item.casa ? '<div class="colagem-chip">' +
-        logo(item.visitante,28) + '<b>×</b>' + logo(item.casa,28) + '</div>' : '') +
-      '<span class="colagem-siglas">' + esc(siglas) + '</span>' +
-      '<span class="noticia-galeria-aviso">' + esc(aviso) + '</span>' +
-      '</div>';
-    const fundo = item.fotoArena ?
-      '<img class="noticia-arena-foto" src="' + esc(item.fotoArena) +
-      '" alt="" loading="lazy" decoding="async" onerror="this.remove()">' : '';
+  // Cada noticia recebe sua propria colagem vetorial com ID exclusivo.
+  // Nenhuma fotografia de partida, arena ou imagem realista e usada nos slides.
+  const slide = (item, i) => {
+    const arteId = item.arteId || ('noticia-' + i);
+    const galeria = '<div class="noticia-galeria noticia-galeria-editorial" data-arte-id="' +
+      esc(arteId) + '" aria-hidden="true">' + colagemEditorial({
+        ...item, arteId,
+        cor1:cor(item.visitante), cor2:cor(item.casa),
+        legenda:[item.visitante?.sigla, item.casa?.sigla].filter(Boolean).join(' / ') || 'NBA',
+      }, i) + '</div>';
     const duelo = item.visitante && item.casa ?
       '<span class="noticia-duelo">' +
       logo(item.visitante,35) + '<span>×</span>' + logo(item.casa,35) +
       '<b>' + esc(item.placar) + '</b></span>' : '';
     return '<article class="noticia-slide noticia-slide-galeria"'+(i>0?' hidden':'')+
       ' style="--noticia-cor1:'+cor(item.visitante)+';--noticia-cor2:'+cor(item.casa)+'">' +
-      '<div class="noticia-background" aria-hidden="true">'+fundo+'</div>' + galeria +
+      '<div class="noticia-background" aria-hidden="true"></div>' + galeria +
       '<a class="noticia-conteudo" href="'+esc(item.href)+'" aria-label="'+esc(item.tipo+' — '+item.titulo)+'">' +
       '<span class="noticia-tipo">'+esc(item.tipo)+'</span>' +
       '<span class="noticia-data">'+esc(item.data)+'</span>' +
@@ -489,8 +456,10 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     return '<a href="'+raiz+'/jogo/'+j.id+'.html" class="noticia-mini" style="--noticia-cor1:'+
       cor(j.visitante)+';--noticia-cor2:'+cor(j.casa)+'">' +
       '<span class="noticia-mini-visual">'+
-      (j.foto_jogo||j.arena?.foto?'<img class="noticia-mini-arena" src="'+esc(j.foto_jogo||j.arena.foto)+'" alt="" loading="lazy" onerror="this.remove()">':'')+
-      (p?fotoPessoa(p.nome,'noticia-mini-jogador'):'')+'</span>' +
+      colagemEditorial({
+        titulo:texto.titulo, tipo:'NA RODADA', arteId:'mini-jogo-'+j.id,
+        cor1:cor(j.visitante),cor2:cor(j.casa),legenda:j.visitante.sigla+' / '+j.casa.sigla,
+      },i) + '</span>' +
       '<span class="noticia-mini-texto"><small>'+esc(i===0?'EM ALTA':i===1?'OUTRA HISTÓRIA':'MAIS DA RODADA')+
       '</small><strong>'+esc(texto.titulo)+'</strong><span>'+esc(j.visitante.sigla+' '+
       j.visitante.placar+' × '+j.casa.placar+' '+j.casa.sigla)+'</span></span></a>';
@@ -501,7 +470,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     noticias.length+' destaques</span></div>' +
     '<div class="noticias-carrossel" data-cestinha-carrossel aria-roledescription="carrossel">' +
     '<div class="noticia-lista">'+noticias.map(slide).join('')+'</div>'+controles+'</div>' +
-    '<p class="noticia-creditos">Colagens editoriais: composições ilustrativas feitas com imagens associadas a cada notícia. Artes geradas por IA não representam fotografias reais dos jogos. Fotos de partidas e arenas: ESPN.</p>' +
+    '<p class="noticia-creditos">Colagens vetoriais originais do Cestinha: ilustrações editoriais, não fotografias das partidas. Cada notícia tem composição visual própria.</p>' +
     (destaques?'<div class="noticia-minis" aria-label="Mais histórias da rodada">'+destaques+'</div>':'')+'</section>';
 }
 
