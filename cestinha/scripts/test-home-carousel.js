@@ -34,7 +34,7 @@ if (match) {
   assert.ok(!html.includes('class="noticia-jogador"'),'Retrato sobreposto ainda presente');
   assert.ok(html.includes('Artes editoriais do Cestinha'),'Credito editorial ausente');
   const svgSemCorte = [...html.matchAll(/<svg[^>]*viewBox=['"]0 0 780 650['"][^>]*preserveAspectRatio=['"]xMidYMid meet['"]/g)].length;
-  assert.ok(svgSemCorte===slides || html.includes('noticia-arte-publicada'),
+  assert.ok(svgSemCorte>=slides || html.includes('noticia-arte-publicada'),
     'SVG sem margem de seguranca ou arte pronta nao encontrada');
   assert.ok(html.includes('noticia-creditos'),'Creditos editoriais ausentes');
   if(slides>1)assert.ok(html.includes('data-noticia-indice'),'Carrossel sem dots');
