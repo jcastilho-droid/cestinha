@@ -32,7 +32,10 @@ if (match) {
   assert.ok(!html.includes('noticia-arena-foto'),'Foto de arena nao pode entrar nos slides');
   assert.ok(!html.includes('src="./assets/artes/'),'Arte realista antiga nao pode ser reutilizada');
   assert.ok(!html.includes('class="noticia-jogador"'),'Retrato sobreposto ainda presente');
-  assert.ok(html.includes('Colagens vetoriais originais'),'Identificacao das artes vetoriais ausente');
+  assert.ok(html.includes('Artes editoriais do Cestinha'),'Credito editorial ausente');
+  const svgSemCorte = [...html.matchAll(/<svg[^>]*viewBox="0 0 780 650"[^>]*preserveAspectRatio="xMidYMid meet"/g)].length;
+  assert.ok(svgSemCorte===slides || html.includes('noticia-arte-publicada'),
+    'SVG sem margem de seguranca ou arte pronta nao encontrada');
   assert.ok(html.includes('noticia-creditos'),'Creditos editoriais ausentes');
   if(slides>1)assert.ok(html.includes('data-noticia-indice'),'Carrossel sem dots');
   console.log('Carrossel validado: '+slides+' noticias, '+links.length+' links internos existentes.');
@@ -58,5 +61,6 @@ assert.ok(visual.includes('v6-pick-photo'),'Mini-cards de exploracao sem area de
 assert.ok(!visual.includes("$('.sec-jogos',zone)?.before(section)"),'Modulo Explore ainda precede jogos');
 console.log('Rodape e modulo Explore validados.');
 
-assert.ok(css.includes('.noticia-galeria-editorial'),'Layout da colagem vetorial nao incluido no CSS');
+assert.ok(css.includes('.noticia-galeria-editorial'),'Layout editorial nao encontrado');
+assert.ok(css.includes('.noticia-arte-publicada'),'Estilo para imagens de colagem ausente');
 assert.ok(css.includes('@media(max-width:720px)'),'Layout mobile da galeria nao encontrado');
