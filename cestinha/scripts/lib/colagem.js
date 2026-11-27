@@ -16,6 +16,17 @@ const escolher = (titulo, resumo) => {
 };
 function atleta(x,y,scale,flip,camisa,pele,pose,selo,contorno) {
   const t = 'translate('+x+' '+y+') scale('+(flip ? -scale : scale)+' '+scale+')';
+  const cabelo = pose === 1 ?
+    "<path d='M91 63 Q89 20 121 16 Q157 5 182 39 L180 58 L160 35 L116 36 L102 68Z' fill='#15151b'/>" :
+    pose === 2 ?
+    "<path d='M88 66 Q76 30 105 18 Q158 -5 188 40 L182 61 L163 35 L112 39Z' fill='#161519'/><path d='M96 43 Q134 30 179 43' fill='none' stroke='#e6d6bf' stroke-width='8'/>" :
+    pose === 4 ?
+    "<path d='M89 68 Q83 23 121 11 Q161 2 183 43 L177 67Z' fill='#17161e'/><path d='M91 40 Q72 73 81 102 M106 29 Q97 77 106 99 M164 30 Q176 74 183 100' fill='none' stroke='#1a171c' stroke-width='13'/>" :
+    "<path d='M89 70 Q80 34 97 21 Q111 -7 152 6 Q179 0 189 30 L177 57 L165 28 L137 23 L114 34 L100 66Z' fill='#16161b'/>"+
+    "<circle cx='99' cy='18' r='13' fill='#1a1820'/><circle cx='123' cy='9' r='14' fill='#15151a'/><circle cx='144' cy='9' r='13' fill='#19181d'/><circle cx='167' cy='19' r='14' fill='#171519'/>";
+  const barba = pose === 1 ?
+    "<path d='M104 90 Q113 125 139 132 Q166 124 173 95 Q152 119 137 109 Q119 116 104 90Z' fill='#181619' opacity='.9'/>" :
+    pose === 2 ? "<path d='M114 108 Q136 123 161 108' stroke='#17151c' stroke-width='8' fill='none'/>" : "";
   const mao = pose === 2 ? 'M190 153 Q260 175 286 232' :
     pose === 4 ? 'M190 153 Q260 140 297 80' :
     pose === 1 ? 'M190 153 Q258 140 279 115' : 'M190 153 Q244 98 258 16';
@@ -33,8 +44,7 @@ function atleta(x,y,scale,flip,camisa,pele,pose,selo,contorno) {
     "<path d='M84 220 L186 208 M83 245 L197 232' fill='none' stroke='#000000' stroke-width='5' opacity='.25'/>"+
     "<path d='M113 136 L118 111 L154 109 L157 145' fill='"+pele+"' stroke='"+contorno+"' stroke-width='7'/>"+
     "<path d='M92 59 Q93 17 133 14 Q175 18 179 60 L171 103 Q149 133 120 117 Q95 101 92 59 Z' fill='"+pele+"' stroke='"+contorno+"' stroke-width='7'/>"+
-    "<path d='M89 70 Q80 34 97 21 Q111 -7 152 6 Q179 0 189 30 L177 57 L165 28 L137 23 L114 34 L100 66Z' fill='#16161b'/>"+
-    "<circle cx='99' cy='18' r='13' fill='#1a1820'/><circle cx='123' cy='9' r='14' fill='#15151a'/><circle cx='144' cy='9' r='13' fill='#19181d'/><circle cx='167' cy='19' r='14' fill='#171519'/>"+
+    cabelo+barba+
     "<path d='M116 70 L127 65 M148 64 L162 68' stroke='#211a19' stroke-width='5' fill='none'/>"+
     "<path d='M139 70 L133 88 L143 91 M123 100 Q139 107 159 100' stroke='#38241e' stroke-width='4' fill='none'/>"+
     "<path d='M105 62 Q104 80 114 98' stroke='#f1d0a0' stroke-width='5' opacity='.42' fill='none'/>"+
@@ -58,7 +68,9 @@ export function colagemEditorial(item, indice=0) {
   const second = resumo ? atleta(490,150,.64,true,'#153b79','#76482c',1,'NBA','#f1e9d8') : '';
   const fgX = resumo ? 286 : [334,339,304,352,310][p];
   const fgY = resumo ? 118 : [109,134,119,117,129][p];
-  const fig = atleta(fgX,fgY,resumo?.88:1.02,p===2,'#14181f',pele,p,'01','#f3eadb');
+  const camisa = resumo ? '#202027' : ['#202026','#284c9a','#17418b','#302f39','#173e59'][p];
+  const equipe = resumo ? 'NBA' : ['SA','PHI','NY','NBA','MIN'][p];
+  const fig = atleta(fgX,fgY,resumo ? .88 : 1.02,p===2,camisa,pele,p,equipe,'#f3eadb');
   const esquinas = [30,57,18,62,39][p];
   const team = e(item.legenda || info.esporte);
   return "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 780 520' preserveAspectRatio='xMidYMid slice' role='img' aria-label='Colagem editorial ilustrada de "+e(info.nome)+"'>"+
