@@ -88,6 +88,8 @@ jobs:
         run: node scripts/build.js
         env:
           SITE_URL: ${{ vars.SITE_URL }}
+      - name: Validar carrossel e artes exclusivas
+        run: node scripts/test-home-carousel.js
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
