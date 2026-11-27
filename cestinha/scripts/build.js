@@ -402,7 +402,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
   // Coloque o arquivo em site/assets/artes/<arteId>.webp (ou .jpg).
   // Uma arte só é usada quando existe localmente no repositório no momento do build.
   const arteLocal = id => {
-    if (!/^(?:jogo-\\d+|rodada-\\d{4}-\\d{2}-\\d{2})$/.test(id || '')) return '';
+    if (!/^(?:jogo-\d+|rodada-\d{4}-\d{2}-\d{2})$/.test(id || '')) return '';
     for (const ext of ['webp', 'jpg', 'png']) {
       if (fs.existsSync(path.join('site', 'assets', 'artes', id + '.' + ext)))
         return raiz + '/assets/artes/' + id + '.' + ext;
@@ -412,7 +412,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
   const slide = (item,i) => {
     const arte = arteLocal(item.arteId);
     const fotosReais = [...new Set((item.fotosAcao || []).filter(x =>
-      typeof x === 'string' && /^https:\\/\\/a\\.espncdn\\.com\\//i.test(x)))].slice(0,3);
+      typeof x === 'string' && /^https:\/\/a\.espncdn\.com\//i.test(x)))].slice(0,3);
     // Sem arte local, usamos apenas fotos vinculadas a este jogo,
     // ou a foto da arena sem fingir que mostra a partida da manchete.
     const fotos = arte ? [arte] : fotosReais;
