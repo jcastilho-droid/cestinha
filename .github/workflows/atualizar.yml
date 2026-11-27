@@ -25,7 +25,7 @@ concurrency:
 jobs:
   atualizar:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 35
     defaults:
       run:
         working-directory: cestinha
@@ -84,10 +84,56 @@ jobs:
             done
           fi
 
-      - name: Montar o site
+      # Primeiro build: captura os destaques REAIS da home em um manifesto temporario.
+      - name: Montar o site e identificar os destaques
         run: node scripts/build.js
         env:
           SITE_URL: ${{ vars.SITE_URL }}
+          CESTINHA_ART_MANIFEST: .cache/artes-home.json
+
+      - name: Validar manifesto e simular geracao (sem cobrar API)
+        run: |
+          node scripts/testar-geracao-colagens.js
+          node scripts/gerar-colagens.js --dry-run
+
+      # OPENAI_API_KEY deve ser um Repository Secret (nao fica no codigo).
+      # So cria artes para os 5 destaques atuais que ainda nao possuam arquivo.
+      - name: Gerar colagens editoriais novas por IA
+        run: node scripts/gerar-colagens.js
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CESTINHA_ART_MODEL: gpt-image-2.6-flare
+          CESTINHA_ART_MAX_PER_RUN: '5'
+
+      - name: Salvar colagens novas no repositorio
+        run: |
+          git config user.name "cestinha-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- site/assets/colagens
+          if git diff --cached --quiet; then
+            echo "Nenhuma colagem nova para salvar."
+          else
+            git commit -m "artes: colagens automaticas para destaques [skip ci]"
+            ok=0
+            for i in 1 2 3; do
+              if git pull --rebase --autostash origin main && git push origin HEAD:main; then
+                ok=1
+                break
+              fi
+              sleep 5
+            done
+            if [ "$ok" -ne 1 ]; then
+              echo "::error::Nao foi possivel salvar as colagens na main."
+              exit 1
+            fi
+          fi
+
+      # Refaz o HTML para trocar os placeholders pelas WebPs recem-geradas.
+      - name: Montar o site com as colagens novas
+        run: node scripts/build.js
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
       - name: Validar carrossel e artes exclusivas
         run: node scripts/test-home-carousel.js
 
