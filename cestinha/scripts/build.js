@@ -397,7 +397,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     add({
       tipo:'RESUMO DA RODADA', titulo:resumo.titulo,
       subtitulo:resumo.subtitulo || 'O que aconteceu na NBA enquanto você dormia.',
-      href:raiz + '/rodada/' + dia + '.html', arteId:'rodada-' + dia, fotosAcao:palco?.fotos_jogo || (palco?.foto_jogo ? [palco.foto_jogo] : []), fotoArena:palco?.arena?.foto || '',
+      href:raiz + '/rodada/' + dia + '.html', arteId:'rodada-' + dia, contexto:(resumo.corpo || '').slice(0,1600), jogadores:(resumo.jogadores || []).slice(0,4), fotosAcao:palco?.fotos_jogo || (palco?.foto_jogo ? [palco.foto_jogo] : []), fotoArena:palco?.arena?.foto || '',
       jogador:p?.nome || '', visitante:palco?.visitante, casa:palco?.casa,
       placar:'Resumo e principais histórias', data:dataPorExtenso(dia)
     });
@@ -413,12 +413,32 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
       tipo: tags.some(t=>t.epico) ? 'JOGO IMPERDÍVEL' :
         noticias.length === 0 ? 'JOGO EM DESTAQUE' : 'NA RODADA',
       titulo:texto.titulo,subtitulo:texto.subtitulo || placar,
-      href:raiz + '/jogo/' + j.id + '.html',arteId:'jogo-' + j.id,fotosAcao:j.fotos_jogo || (j.foto_jogo ? [j.foto_jogo] : []),fotoArena:j.arena?.foto || '',
+      href:raiz + '/jogo/' + j.id + '.html',arteId:'jogo-' + j.id,contexto:(texto.corpo || '').slice(0,1600),jogadores:(texto.jogadores || []).slice(0,4),fotosAcao:j.fotos_jogo || (j.foto_jogo ? [j.foto_jogo] : []),fotoArena:j.arena?.foto || '',
       jogador:p?.nome || '',visitante:j.visitante,casa:j.casa,
       placar, data:dataHoraCurta(j.inicio_utc)
     });
   }
   if (!noticias.length) return '';
+  // Manifesto temporario dos destaques reais da home, usado pelo GitHub Actions
+  // para criar so as artes que faltam. Nao e publicado nem salvo no git.
+  if (process.env.CESTINHA_ART_MANIFEST) {
+    const destino = path.resolve(RAIZ, process.env.CESTINHA_ART_MANIFEST);
+    fs.mkdirSync(path.dirname(destino), {recursive:true});
+    fs.writeFileSync(destino, JSON.stringify({
+      versao:1, rodada:dia, noticias:noticias.map((item,i)=>({
+        arteId:item.arteId, ordem:i, tipo:item.tipo,
+        titulo:item.titulo, subtitulo:item.subtitulo,
+        data:item.data, placar:item.placar,
+        jogador:item.jogador || '',
+        jogadores:item.jogadores || [],
+        times:[item.visitante?.nome || item.visitante?.nome_curto || '',
+               item.casa?.nome || item.casa?.nome_curto || ''].filter(Boolean),
+        siglas:[item.visitante?.sigla || '', item.casa?.sigla || ''].filter(Boolean),
+        cores:[cor(item.visitante),cor(item.casa)],
+        contexto:item.contexto || '',
+      }))
+    },null,2));
+  }
   // Colagem editorial por noticia. Arquivos publicados em site/assets/colagens
   // tem prioridade; fallback vetorial preserva layout quando ainda nao existem.
   const arteLocal = id => {
