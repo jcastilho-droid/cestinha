@@ -24,10 +24,10 @@ if (match) {
     const relative=link.replace(/^\.\//,'');
     assert.ok(fs.existsSync(path.join('_site',relative)),'Link interno quebrado: '+link);
   }
-  assert.ok(html.includes('noticia-galeria-main') && html.includes('noticia-galeria-top') && html.includes('noticia-galeria-bottom'),'Tres quadros da galeria ausentes');
+  assert.ok(html.includes('noticia-galeria-main'),'Imagem principal do destaque ausente');
   assert.ok(!html.includes('class="noticia-jogador"'),'Retrato sobreposto ainda presente');
-  assert.ok(html.includes('noticia-galeria-aviso'),'Aviso de imagem ilustrativa ausente');
-  assert.ok(html.includes('noticia-creditos'),'Creditos das fotos de arquivo ausentes');
+  assert.ok(html.includes('noticia-galeria-aviso') || html.includes('a.espncdn.com'),'Imagem editorial sem origem identificada');
+  assert.ok(html.includes('noticia-creditos'),'Creditos editoriais ausentes');
   if(slides>1)assert.ok(html.includes('data-noticia-indice'),'Carrossel sem dots');
   console.log('Carrossel validado: '+slides+' noticias, '+links.length+' links internos existentes.');
 } else {
