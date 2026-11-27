@@ -313,3 +313,19 @@
 @media(max-width:400px){
   .noticia-slide-galeria .noticia-galeria-editorial{height:225px}
 }
+
+/* Arte de colagem final: arquivo preparado exatamente na proporcao do painel. */
+.noticia-slide-galeria .noticia-galeria-editorial{
+  background:#111720;overflow:hidden;
+}
+.noticia-galeria-editorial .noticia-arte-publicada{
+  display:block;width:100%;height:100%;
+  object-fit:cover;object-position:center center;
+  filter:none;transform:none;
+}
+.noticia-galeria-editorial svg{
+  width:100%;height:100%;object-fit:contain;
+}
+.noticia-mini-visual .noticia-arte-publicada{
+  display:block;width:100%;height:100%;object-fit:cover;object-position:center;
+}
