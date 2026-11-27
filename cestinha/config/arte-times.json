@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "descricao": "Selecao editorial inicial baseada no elenco armazenado pelo proprio Cestinha em 27/11/2026. Antes de usar, o codigo confirma a permanencia do jogador no time; se sair, escolhe automaticamente outro integrante com base nas medias da fonte.",
+  "times": {
+    "ATL": {
+      "jogador": "Jalen Johnson",
+      "id": "4701230"
+    },
+    "BKN": {
+      "jogador": "Julius Randle",
+      "id": "3064514"
+    },
+    "BOS": {
+      "jogador": "Jayson Tatum",
+      "id": "4065648"
+    },
+    "CHA": {
+      "jogador": "Brandon Miller",
+      "id": "4433287"
+    },
+    "CHI": {
+      "jogador": "Matas Buzelis",
+      "id": "4711294"
+    },
+    "CLE": {
+      "jogador": "Donovan Mitchell",
+      "id": "3908809"
+    },
+    "DAL": {
+      "jogador": "Cooper Flagg",
+      "id": "5041939"
+    },
+    "DEN": {
+      "jogador": "Nikola Jokic",
+      "id": "3112335"
+    },
+    "DET": {
+      "jogador": "Cade Cunningham",
+      "id": "4432166"
+    },
+    "GS": {
+      "jogador": "Stephen Curry",
+      "id": "3975"
+    },
+    "HOU": {
+      "jogador": "Kevin Durant",
+      "id": "3202"
+    },
+    "IND": {
+      "jogador": "Tyrese Haliburton",
+      "id": "4396993"
+    },
+    "LAC": {
+      "jogador": "Darius Garland",
+      "id": "4396907"
+    },
+    "LAL": {
+      "jogador": "Luka Doncic",
+      "id": "3945274"
+    },
+    "MEM": {
+      "jogador": "Ty Jerome",
+      "id": "4065733"
+    },
+    "MIA": {
+      "jogador": "Giannis Antetokounmpo",
+      "id": "3032977"
+    },
+    "MIL": {
+      "jogador": "Tyler Herro",
+      "id": "4395725"
+    },
+    "MIN": {
+      "jogador": "Anthony Edwards",
+      "id": "4594268"
+    },
+    "NO": {
+      "jogador": "Zion Williamson",
+      "id": "4395628"
+    },
+    "NY": {
+      "jogador": "Jalen Brunson",
+      "id": "3934672"
+    },
+    "OKC": {
+      "jogador": "Shai Gilgeous-Alexander",
+      "id": "4278073"
+    },
+    "ORL": {
+      "jogador": "Paolo Banchero",
+      "id": "4432573"
+    },
+    "PHI": {
+      "jogador": "LeBron James",
+      "id": "1966"
+    },
+    "PHX": {
+      "jogador": "Devin Booker",
+      "id": "3136193"
+    },
+    "POR": {
+      "jogador": "Damian Lillard",
+      "id": "6606"
+    },
+    "SA": {
+      "jogador": "Victor Wembanyama",
+      "id": "5104157"
+    },
+    "SAC": {
+      "jogador": "Zach LaVine",
+      "id": "3064440"
+    },
+    "TOR": {
+      "jogador": "Scottie Barnes",
+      "id": "4433134"
+    },
+    "UTAH": {
+      "jogador": "Lauri Markkanen",
+      "id": "4066336"
+    },
+    "WSH": {
+      "jogador": "Anthony Davis",
+      "id": "6583"
+    }
+  }
+}
