@@ -245,3 +245,44 @@ document.querySelectorAll('.btn-compartilhar').forEach((b) => {
     filtrar();
   }));
 })();
+
+// ---------- Barra do celular: painel "Mais" e barra que se esconde ao rolar ----------
+(() => {
+  const barra = document.querySelector('.barra-inferior.barra-v2');
+  const botao = barra?.querySelector('.bi-mais');
+  const painel = document.getElementById('painel-mais');
+  const veu = document.querySelector('.painel-mais-veu');
+  if (!barra || !botao || !painel || !veu) return;
+  // "Meu time": vai direto para a página do time salvo, se houver
+  try {
+    const meu = JSON.parse(localStorage.getItem('cestinha-meu-time') || 'null');
+    const link = painel.querySelector('[data-meu-time-link]');
+    if (meu?.href && link) {
+      link.href = link.getAttribute('href').replace(/index\.html$/, meu.href);
+      const sub = link.querySelector('small'); if (sub) sub.textContent = meu.nome || 'seu time';
+    }
+  } catch { /* sem armazenamento */ }
+  const abrir = (on) => {
+    painel.classList.toggle('aberto', on);
+    painel.setAttribute('aria-hidden', String(!on));
+    botao.setAttribute('aria-expanded', String(on));
+    if (on) { veu.hidden = false; requestAnimationFrame(() => veu.classList.add('aberto')); barra.classList.remove('escondida'); }
+    else { veu.classList.remove('aberto'); setTimeout(() => { if (!painel.classList.contains('aberto')) veu.hidden = true; }, 260); }
+  };
+  botao.addEventListener('click', () => abrir(!painel.classList.contains('aberto')));
+  veu.addEventListener('click', () => abrir(false));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && painel.classList.contains('aberto')) { abrir(false); botao.focus(); } });
+  // esconde ao rolar para baixo, mostra ao rolar para cima
+  let ultimo = window.scrollY; let pendente = false;
+  window.addEventListener('scroll', () => {
+    if (pendente) return; pendente = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      if (!painel.classList.contains('aberto')) {
+        if (y > ultimo + 8 && y > 120) barra.classList.add('escondida');
+        else if (y < ultimo - 8 || y < 120) barra.classList.remove('escondida');
+      }
+      ultimo = y; pendente = false;
+    });
+  }, { passive: true });
+})();

@@ -1297,3 +1297,33 @@ a.termo:hover { color: var(--laranja-2); text-decoration: none; }
   .barra-inferior a{font-size:clamp(8px,2.3vw,11px);padding:6px 0 5px;min-width:0}
   .barra-inferior a .ic{width:clamp(17px,4.6vw,21px);height:clamp(17px,4.6vw,21px)}
 }
+
+/* ================= Barra do celular v2: 4 itens + "Mais" (painel que sobe) ================= */
+.painel-mais, .painel-mais-veu { display: none; }
+@media (max-width: 879px) {
+  .barra-inferior.barra-v2 { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; padding: 8px max(8px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left)); transition: transform .3s cubic-bezier(.2,.8,.2,1); will-change: transform; }
+  .barra-inferior.barra-v2.escondida { transform: translateY(110%); }
+  .barra-inferior.barra-v2 a, .barra-inferior.barra-v2 .bi-mais { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-width: 0; padding: 7px 0 5px; border: 0; background: none; color: var(--suave); font: 600 11px/1.1 var(--corpo); text-decoration: none; cursor: pointer; white-space: nowrap; -webkit-tap-highlight-color: transparent; }
+  .barra-inferior.barra-v2 .ic { width: 23px; height: 23px; flex: none; transition: transform .2s; }
+  .barra-inferior.barra-v2 a.ativo, .barra-inferior.barra-v2 .bi-mais.ativo { color: var(--laranja); }
+  .barra-inferior.barra-v2 a.ativo::before, .barra-inferior.barra-v2 .bi-mais.ativo::before { content: ""; position: absolute; top: -8px; left: 30%; right: 30%; height: 3px; border-radius: 0 0 3px 3px; background: var(--laranja); box-shadow: 0 0 12px var(--laranja); }
+  .barra-inferior.barra-v2 a.ativo .ic { transform: translateY(-1px) scale(1.08); }
+  .barra-inferior.barra-v2 .bi-mais[aria-expanded="true"] { color: var(--texto); }
+  body { padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+
+  .painel-mais-veu { display: block; position: fixed; inset: 0; z-index: 28; background: rgba(0,0,0,.55); opacity: 0; transition: opacity .25s; }
+  .painel-mais-veu.aberto { opacity: 1; }
+  .painel-mais { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 29; padding: 10px 16px calc(92px + env(safe-area-inset-bottom)); border-radius: 24px 24px 0 0; background: linear-gradient(180deg, #171e28, #0f141b); border-top: 1px solid #2c3747; box-shadow: 0 -20px 40px rgba(0,0,0,.45); transform: translateY(105%); visibility: hidden; transition: transform .32s cubic-bezier(.2,.8,.2,1), visibility 0s linear .32s; }
+  .painel-mais.aberto { transform: translateY(0); visibility: visible; transition: transform .32s cubic-bezier(.2,.8,.2,1); }
+  .pm-puxador { width: 40px; height: 4px; border-radius: 2px; background: #3a4556; margin: 0 auto 12px; }
+  .pm-titulo { margin: 0 0 10px; font: 800 11px/1 var(--corpo); letter-spacing: 1.4px; color: var(--suave); text-transform: uppercase; }
+  .pm-atalhos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .pm-atalhos a { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 6px; border-radius: 16px; background: var(--painel); border: 1px solid var(--borda); color: var(--texto); text-align: center; text-decoration: none; transition: border-color .2s, transform .2s; }
+  .pm-atalhos a:active, .pm-atalhos a:hover { border-color: var(--laranja); transform: translateY(-2px); text-decoration: none; }
+  .pm-atalhos a.ativo { border-color: var(--laranja); }
+  .pm-ic { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: rgba(255,122,26,.12); color: var(--laranja); }
+  .pm-ic .ic { width: 22px; height: 22px; }
+  .pm-atalhos b { font: 700 12.5px/1.15 var(--corpo); }
+  .pm-atalhos small { color: var(--suave); font-size: 10.5px; line-height: 1.2; }
+}
+@media (prefers-reduced-motion: reduce) { .barra-inferior.barra-v2, .painel-mais, .painel-mais-veu { transition: none !important; } }
