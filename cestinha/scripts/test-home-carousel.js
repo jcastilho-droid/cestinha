@@ -24,9 +24,15 @@ if (match) {
     const relative=link.replace(/^\.\//,'');
     assert.ok(fs.existsSync(path.join('_site',relative)),'Link interno quebrado: '+link);
   }
-  assert.ok(html.includes('noticia-galeria-main') && html.includes('noticia-galeria-colagem'),'Colagem editorial do destaque ausente');
+  assert.ok(html.includes('noticia-galeria-editorial'),'Colagem vetorial do destaque ausente');
+  const artes = [...html.matchAll(/data-arte-id="([^"]+)"/g)].map(m=>m[1]);
+  assert.equal(artes.length,slides,'Todo slide deve conter sua propria arte editorial');
+  assert.equal(new Set(artes).size,artes.length,'Artes repetidas entre slides');
+  assert.ok(!html.includes('colagem-foto'),'Foto realista nao pode entrar na colagem');
+  assert.ok(!html.includes('noticia-arena-foto'),'Foto de arena nao pode entrar nos slides');
+  assert.ok(!html.includes('src="./assets/artes/'),'Arte realista antiga nao pode ser reutilizada');
   assert.ok(!html.includes('class="noticia-jogador"'),'Retrato sobreposto ainda presente');
-  assert.ok(html.includes('noticia-galeria-aviso') || html.includes('a.espncdn.com'),'Imagem editorial sem origem identificada');
+  assert.ok(html.includes('Colagens vetoriais originais'),'Identificacao das artes vetoriais ausente');
   assert.ok(html.includes('noticia-creditos'),'Creditos editoriais ausentes');
   if(slides>1)assert.ok(html.includes('data-noticia-indice'),'Carrossel sem dots');
   console.log('Carrossel validado: '+slides+' noticias, '+links.length+' links internos existentes.');
@@ -52,5 +58,5 @@ assert.ok(visual.includes('v6-pick-photo'),'Mini-cards de exploracao sem area de
 assert.ok(!visual.includes("$('.sec-jogos',zone)?.before(section)"),'Modulo Explore ainda precede jogos');
 console.log('Rodape e modulo Explore validados.');
 
-assert.ok(css.includes('.noticia-galeria-colagem'),'Layout de colagem editorial nao incluido no CSS');
+assert.ok(css.includes('.noticia-galeria-editorial'),'Layout da colagem vetorial nao incluido no CSS');
 assert.ok(css.includes('@media(max-width:720px)'),'Layout mobile da galeria nao encontrado');
