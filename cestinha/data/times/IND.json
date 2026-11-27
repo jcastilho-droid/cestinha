@@ -142,7 +142,10 @@
       "experiencia": 12,
       "universidade": "Kansas",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 16,
         "min": "24.7",
@@ -226,10 +229,7 @@
       "experiencia": 7,
       "universidade": "Vanderbilt",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 15,
         "min": "27.3",
@@ -1700,5 +1700,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-26T20:19:33.188Z"
+  "atualizado_em": "2026-11-27T03:13:57.596Z"
 }

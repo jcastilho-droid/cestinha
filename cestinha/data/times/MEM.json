@@ -226,7 +226,10 @@
       "experiencia": 7,
       "universidade": "Washington",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "18.2",
@@ -1731,5 +1734,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-26T20:19:35.044Z"
+  "atualizado_em": "2026-11-27T03:13:59.022Z"
 }
