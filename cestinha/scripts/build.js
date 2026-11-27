@@ -419,16 +419,36 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     });
   }
   if (!noticias.length) return '';
-  // Cada noticia recebe sua propria colagem vetorial com ID exclusivo.
+  // Colagem editorial por noticia. Arquivos publicados em site/assets/artes
+  // tem prioridade; fallback vetorial preserva layout quando ainda nao existem.
+  const arteLocal = id => {
+    if (!/^(?:jogo-\d+|rodada-\d{4}-\d{2}-\d{2})$/.test(id || '')) return '';
+    const dir = path.join(RAIZ, 'site', 'assets', 'artes');
+    for (const ext of ['webp','jpg','png']) {
+      const nome = id + '.' + ext;
+      const arquivo = path.join(dir, nome);
+      if (fs.existsSync(arquivo)) {
+        const stat = fs.statSync(arquivo);
+        return raiz + '/assets/artes/' + nome + '?v=' + stat.size;
+      }
+    }
+    return '';
+  };
+  // Cada noticia recebe sua propria colagem com ID exclusivo.
   // Nenhuma fotografia de partida, arena ou imagem realista e usada nos slides.
   const slide = (item, i) => {
     const arteId = item.arteId || ('noticia-' + i);
     const galeria = '<div class="noticia-galeria noticia-galeria-editorial" data-arte-id="' +
-      esc(arteId) + '" aria-hidden="true">' + colagemEditorial({
-        ...item, arteId,
-        cor1:cor(item.visitante), cor2:cor(item.casa),
-        legenda:[item.visitante?.sigla, item.casa?.sigla].filter(Boolean).join(' / ') || 'NBA',
-      }, i) + '</div>';
+      esc(arteId) + '" aria-hidden="true">' +
+      (arteLocal(arteId)
+        ? '<img class="noticia-arte-publicada" src="' + esc(arteLocal(arteId)) +
+          '" loading="' + (i === 0 ? 'eager' : 'lazy') +
+          '" decoding="async" alt="" onerror="this.style.visibility=\'hidden\'">'
+        : colagemEditorial({
+            ...item, arteId,
+            cor1:cor(item.visitante), cor2:cor(item.casa),
+            legenda:[item.visitante?.sigla, item.casa?.sigla].filter(Boolean).join(' / ') || 'NBA',
+          }, i)) + '</div>';
     const duelo = item.visitante && item.casa ?
       '<span class="noticia-duelo">' +
       logo(item.visitante,35) + '<span>×</span>' + logo(item.casa,35) +
@@ -456,10 +476,12 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     return '<a href="'+raiz+'/jogo/'+j.id+'.html" class="noticia-mini" style="--noticia-cor1:'+
       cor(j.visitante)+';--noticia-cor2:'+cor(j.casa)+'">' +
       '<span class="noticia-mini-visual">'+
-      colagemEditorial({
-        titulo:texto.titulo, tipo:'NA RODADA', arteId:'mini-jogo-'+j.id,
-        cor1:cor(j.visitante),cor2:cor(j.casa),legenda:j.visitante.sigla+' / '+j.casa.sigla,
-      },i) + '</span>' +
+      (arteLocal('jogo-'+j.id)
+        ? '<img class="noticia-arte-publicada" src="'+esc(arteLocal('jogo-'+j.id))+'" alt="" loading="lazy" decoding="async">'
+        : colagemEditorial({
+          titulo:texto.titulo, tipo:'NA RODADA', arteId:'mini-jogo-'+j.id,
+          cor1:cor(j.visitante),cor2:cor(j.casa),legenda:j.visitante.sigla+' / '+j.casa.sigla,
+        },i)) + '</span>' +
       '<span class="noticia-mini-texto"><small>'+esc(i===0?'EM ALTA':i===1?'OUTRA HISTÓRIA':'MAIS DA RODADA')+
       '</small><strong>'+esc(texto.titulo)+'</strong><span>'+esc(j.visitante.sigla+' '+
       j.visitante.placar+' × '+j.casa.placar+' '+j.casa.sigla)+'</span></span></a>';
@@ -470,7 +492,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     noticias.length+' destaques</span></div>' +
     '<div class="noticias-carrossel" data-cestinha-carrossel aria-roledescription="carrossel">' +
     '<div class="noticia-lista">'+noticias.map(slide).join('')+'</div>'+controles+'</div>' +
-    '<p class="noticia-creditos">Colagens vetoriais originais do Cestinha: ilustrações editoriais, não fotografias das partidas. Cada notícia tem composição visual própria.</p>' +
+    '<p class="noticia-creditos">Artes editoriais do Cestinha: colagens ilustradas, não fotografias das partidas. Cada destaque tem composição própria.</p>' +
     (destaques?'<div class="noticia-minis" aria-label="Mais histórias da rodada">'+destaques+'</div>':'')+'</section>';
 }
 
