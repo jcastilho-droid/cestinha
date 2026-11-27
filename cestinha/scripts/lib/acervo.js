@@ -74,7 +74,7 @@ function imagem(arquivo,classe,alternativo,loading='lazy'){
   return arquivo ? '<img class="'+classe+'" src="'+esc(arquivo)+'" alt="'+esc(alternativo)+'" loading="'+loading+'" decoding="async" onerror="this.remove()">' : '';
 }
 export function montarAcervo({noticia,raiz='.',timesPorId}) {
-  const resumo=String(noticia.tipo||'').includes('RODADA');
+  const resumo=String(noticia.arteId||'').startsWith('rodada-') || noticia.tipo==='RESUMO DA RODADA';
   const timeDe=base=>{
     if(!base)return null;
     return timesPorId?.get(String(base.id)) ||
