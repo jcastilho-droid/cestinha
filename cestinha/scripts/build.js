@@ -376,7 +376,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     add({
       tipo:'RESUMO DA RODADA', titulo:resumo.titulo,
       subtitulo:resumo.subtitulo || 'O que aconteceu na NBA enquanto você dormia.',
-      href:raiz + '/rodada/' + dia + '.html', fotosAcao:palco?.fotos_jogo || (palco?.foto_jogo ? [palco.foto_jogo] : []), fotoArena:palco?.arena?.foto || '',
+      href:raiz + '/rodada/' + dia + '.html', arteId:'rodada-' + dia, fotosAcao:palco?.fotos_jogo || (palco?.foto_jogo ? [palco.foto_jogo] : []), fotoArena:palco?.arena?.foto || '',
       jogador:p?.nome || '', visitante:palco?.visitante, casa:palco?.casa,
       placar:'Resumo e principais histórias', data:dataPorExtenso(dia)
     });
@@ -392,46 +392,53 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
       tipo: tags.some(t=>t.epico) ? 'JOGO IMPERDÍVEL' :
         noticias.length === 0 ? 'JOGO EM DESTAQUE' : 'NA RODADA',
       titulo:texto.titulo,subtitulo:texto.subtitulo || placar,
-      href:raiz + '/jogo/' + j.id + '.html',fotosAcao:j.fotos_jogo || (j.foto_jogo ? [j.foto_jogo] : []),fotoArena:j.arena?.foto || '',
+      href:raiz + '/jogo/' + j.id + '.html',arteId:'jogo-' + j.id,fotosAcao:j.fotos_jogo || (j.foto_jogo ? [j.foto_jogo] : []),fotoArena:j.arena?.foto || '',
       jogador:p?.nome || '',visitante:j.visitante,casa:j.casa,
       placar, data:dataHoraCurta(j.inicio_utc)
     });
   }
   if (!noticias.length) return '';
-  // Fotografias de arquivo CC BY-SA 4.0 por Michael Barera. São imagens
-  // ilustrativas: nunca sugerimos que representam a partida da manchete.
-  // Se a ESPN fornecer fotografias da própria partida, essas têm prioridade.
-  const arquivosAcoes = [
-    'Orlando Magic vs. Milwaukee Bucks December 2024 24 (in-game action).jpg',
-    'Orlando Magic vs. Milwaukee Bucks December 2024 15 (in-game action).jpg',
-    'Cleveland Cavaliers vs. Milwaukee Bucks January 2024 21 (in-game action).jpg',
-    'Orlando Magic vs. Milwaukee Bucks December 2024 11 (in-game action).jpg',
-    'Orlando Magic vs. Milwaukee Bucks December 2024 23 (in-game action).jpg',
-    'Los Angeles Clippers vs. Milwaukee Bucks March 2024 5 (in-game action).jpg'
-  ].map(name => 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(name) + '?width=1100');
+  // Artes editoriais IA por noticia, sem imagens de arquivo de jogos diferentes.
+  // Coloque o arquivo em site/assets/artes/<arteId>.webp (ou .jpg).
+  // Uma arte só é usada quando existe localmente no repositório no momento do build.
+  const arteLocal = id => {
+    if (!/^(?:jogo-\\d+|rodada-\\d{4}-\\d{2}-\\d{2})$/.test(id || '')) return '';
+    for (const ext of ['webp', 'jpg', 'png']) {
+      if (fs.existsSync(path.join('site', 'assets', 'artes', id + '.' + ext)))
+        return raiz + '/assets/artes/' + id + '.' + ext;
+    }
+    return '';
+  };
   const slide = (item,i) => {
+    const arte = arteLocal(item.arteId);
     const fotosReais = [...new Set((item.fotosAcao || []).filter(x =>
-      typeof x === 'string' && /^https:\/\/a\.espncdn\.com\//i.test(x)))].slice(0,3);
-    const principal = fotosReais[0] || arquivosAcoes[(i * 2) % arquivosAcoes.length];
-    const secundaria = fotosReais[1] || arquivosAcoes[(i * 2 + 1) % arquivosAcoes.length];
-    const arena = fotosReais[2] || item.fotoArena || arquivosAcoes[(i * 2 + 2) % arquivosAcoes.length];
-    const ilustrativo = fotosReais.length < 2;
-    const galImg = (src,classe,prioridade='lazy') => '<img class="' + classe +
-      '" src="' + esc(src) + '" alt="" loading="' + prioridade +
-      '" decoding="async" onerror="this.style.opacity=0">';
-    const galeria = '<div class="noticia-galeria" aria-hidden="true">' +
+      typeof x === 'string' && /^https:\\/\\/a\\.espncdn\\.com\\//i.test(x)))].slice(0,3);
+    // Sem arte local, usamos apenas fotos vinculadas a este jogo,
+    // ou a foto da arena sem fingir que mostra a partida da manchete.
+    const fotos = arte ? [arte] : fotosReais;
+    const principal = fotos[0] || item.fotoArena || '';
+    const secundaria = fotos[1] || '';
+    const arena = fotos[2] || '';
+    const galImg = (src,classe,prioridade='lazy') => src ?
+      '<img class="' + classe + '" src="' + esc(src) + '" alt="" loading="' + prioridade +
+      '" decoding="async" onerror="this.style.opacity=0">' : '';
+    const unico = !secundaria && !arena;
+    const galeria = '<div class="noticia-galeria' + (unico ? ' noticia-galeria-unica' : '') +
+      '" aria-hidden="true">' +
       '<div class="noticia-galeria-tile noticia-galeria-main">' +
-        galImg(principal,'noticia-galeria-img',''+(i===0?'eager':'lazy')) +
-      '</div><div class="noticia-galeria-lado">' +
-      '<div class="noticia-galeria-tile noticia-galeria-top">' +
-        galImg(secundaria,'noticia-galeria-img') + '</div>' +
-      '<div class="noticia-galeria-tile noticia-galeria-bottom">' +
-        galImg(arena,'noticia-galeria-img') +
-        (item.visitante && item.casa ?
-          '<div class="noticia-galeria-escudos">' +
-          logo(item.visitante,26) + '<span>×</span>' + logo(item.casa,26) + '</div>' : '') +
-      '</div></div>' +
-      (ilustrativo ? '<span class="noticia-galeria-aviso">Fotos de arquivo · ilustrativas</span>' : '') +
+      (principal ? galImg(principal,'noticia-galeria-img',''+(i===0?'eager':'lazy')) :
+        '<div class="noticia-galeria-vazia"></div>') +
+      '</div>' +
+      (unico ? '' : '<div class="noticia-galeria-lado">' +
+        '<div class="noticia-galeria-tile noticia-galeria-top">' +
+          galImg(secundaria || principal,'noticia-galeria-img') + '</div>' +
+        '<div class="noticia-galeria-tile noticia-galeria-bottom">' +
+          galImg(arena || item.fotoArena || principal,'noticia-galeria-img') +
+          '</div></div>') +
+      (item.visitante && item.casa ? '<div class="noticia-galeria-escudos">' +
+        logo(item.visitante,26) + '<span>×</span>' + logo(item.casa,26) + '</div>' : '') +
+      (arte ? '<span class="noticia-galeria-aviso">Arte ilustrativa gerada por IA</span>' :
+        fotosReais.length ? '' : '<span class="noticia-galeria-aviso">Imagem da arena · ilustrativa</span>') +
       '</div>';
     const fundo = item.fotoArena ?
       '<img class="noticia-arena-foto" src="' + esc(item.fotoArena) +
@@ -475,7 +482,7 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     noticias.length+' destaques</span></div>' +
     '<div class="noticias-carrossel" data-cestinha-carrossel aria-roledescription="carrossel">' +
     '<div class="noticia-lista">'+noticias.map(slide).join('')+'</div>'+controles+'</div>' +
-    '<p class="noticia-creditos">Fotografias de arquivo ilustrativas: <a href="https://commons.wikimedia.org/wiki/Category:Orlando_Magic_at_Milwaukee_Bucks_(December_10,_2024)" target="_blank" rel="noopener noreferrer">Michael Barera / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> (recortes e ajustes de cor). Fotos da partida: ESPN, quando disponíveis.</p>' +
+    '<p class="noticia-creditos">Artes geradas por IA são ilustrações editoriais, não fotografias dos jogos. Fotos reais e imagens de arena: ESPN, quando disponíveis.</p>' +
     (destaques?'<div class="noticia-minis" aria-label="Mais histórias da rodada">'+destaques+'</div>':'')+'</section>';
 }
 
