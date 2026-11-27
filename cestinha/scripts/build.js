@@ -419,17 +419,17 @@ function blocoCarrosselHome(dia, jogos, resumo, raiz) {
     });
   }
   if (!noticias.length) return '';
-  // Colagem editorial por noticia. Arquivos publicados em site/assets/artes
+  // Colagem editorial por noticia. Arquivos publicados em site/assets/colagens
   // tem prioridade; fallback vetorial preserva layout quando ainda nao existem.
   const arteLocal = id => {
     if (!/^(?:jogo-\d+|rodada-\d{4}-\d{2}-\d{2})$/.test(id || '')) return '';
-    const dir = path.join(RAIZ, 'site', 'assets', 'artes');
+    const dir = path.join(RAIZ, 'site', 'assets', 'colagens');
     for (const ext of ['webp','jpg','png']) {
       const nome = id + '.' + ext;
       const arquivo = path.join(dir, nome);
       if (fs.existsSync(arquivo)) {
         const stat = fs.statSync(arquivo);
-        return raiz + '/assets/artes/' + nome + '?v=' + stat.size;
+        return raiz + '/assets/colagens/' + nome + '?v=' + stat.size;
       }
     }
     return '';
