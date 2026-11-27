@@ -11,7 +11,21 @@ import { gerarCestinhaStats } from './stats.js';
 import { gerarMercado } from './mercado.js';
 import { VERBETES, CATEGORIAS, exemplosReais } from './lib/verbetes.js';
 
-const MENU = [['rodada', 'index.html', 'bola', 'Rodada'], ['agenda', 'agenda.html', 'calendario', 'Agenda'], ['classificacao', 'classificacao.html', 'trofeu', 'Tabela'], ['times', 'times/index.html', 'escudo', 'Times'], ['stats', 'stats.html', 'trofeu', 'Stats'], ['mercado', 'mercado.html', 'raio', 'Mercado'], ['aprenda', 'aprenda.html', 'cesta', 'Aprenda']];
+const MENU = [['rodada', 'index.html', 'bola', 'Rodada'], ['agenda', 'agenda.html', 'calendario', 'Agenda'], ['classificacao', 'classificacao.html', 'trofeu', 'Tabela'], ['times', 'times/index.html', 'escudo', 'Times'], ['stats', 'stats.html', 'grafico', 'Stats'], ['mercado', 'mercado.html', 'raio', 'Mercado'], ['aprenda', 'aprenda.html', 'cesta', 'Aprenda']];
+// Barra de baixo no celular: 4 itens fixos + "Mais" (o resto abre num painel)
+const BARRA_FIXA = ['rodada', 'agenda', 'classificacao', 'times'];
+const ICONE_MAIS = '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.7" fill="currentColor"/><circle cx="12" cy="12" r="1.7" fill="currentColor"/><circle cx="19" cy="12" r="1.7" fill="currentColor"/></svg>';
+function painelMais(raiz, ativo) {
+  const itens = [
+    ['stats', 'stats.html', 'grafico', 'Stats', 'números da temporada'],
+    ['mercado', 'mercado.html', 'raio', 'Mercado', 'trocas e boatos'],
+    ['aprenda', 'aprenda.html', 'cesta', 'Aprenda', 'me explica a NBA'],
+    ...(typeof powerRankings !== 'undefined' && powerRankings.length ? [['power', 'power-ranking.html', 'coroa', 'Power ranking', 'toda segunda']] : []),
+    ['brasileiros', 'brasileiros.html', 'bandeira', 'Brasileiros', 'na NBA'],
+    ['meu-time', 'times/index.html', 'estrela', 'Meu time', 'escolher ou trocar'],
+  ];
+  return itens.map(([id, href, ic, rot, leg]) => `<a href="${raiz}/${href}"${id === 'meu-time' ? ' data-meu-time-link' : ''}${ativo === id ? ' class="ativo" aria-current="page"' : ''}><span class="pm-ic">${icone(ic)}</span><b>${rot}</b><small>${leg}</small></a>`).join('');
+}
 
 // muda a cada publicação: força o navegador a baixar o visual novo
 const VERSAO = Date.now().toString(36);
@@ -138,7 +152,13 @@ ${trilhoEscudos(raiz)}
 <main>
 ${comIcones(corpo)}
 </main>
-<nav class="barra-inferior" aria-label="Seções">${MENU.map(([id, href, ic, rot]) => `<a href="${raiz}/${href}"${ativo === id ? ' class="ativo"' : ''}>${icone(ic)}<span>${rot}</span></a>`).join('')}</nav>
+<nav class="barra-inferior barra-v2" aria-label="Seções">${MENU.filter(([id]) => BARRA_FIXA.includes(id)).map(([id, href, ic, rot]) => `<a href="${raiz}/${href}"${ativo === id ? ' class="ativo" aria-current="page"' : ''}>${icone(ic)}<span>${rot}</span></a>`).join('')}<button type="button" class="bi-mais${ativo && !BARRA_FIXA.includes(ativo) ? ' ativo' : ''}" aria-expanded="false" aria-controls="painel-mais">${ICONE_MAIS}<span>Mais</span></button></nav>
+<div class="painel-mais-veu" hidden></div>
+<div class="painel-mais" id="painel-mais" role="dialog" aria-label="Mais seções do Cestinha" aria-hidden="true">
+  <div class="pm-puxador" aria-hidden="true"></div>
+  <p class="pm-titulo">Mais do Cestinha</p>
+  <div class="pm-atalhos">${painelMais(raiz, ativo)}</div>
+</div>
 <div class="aviso-spoiler" hidden>${icone('olho')} Modo sem spoiler ligado: toque num bloco borrado para revelar.</div>
 <footer class="rodape">
   <div class="rodape-dentro">
