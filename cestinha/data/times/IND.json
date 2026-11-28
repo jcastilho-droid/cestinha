@@ -254,7 +254,10 @@
       "experiencia": 5,
       "universidade": "Texas A&M",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 19,
         "min": "21.6",
@@ -1725,5 +1728,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-28T13:02:00.950Z"
+  "atualizado_em": "2026-11-28T20:56:46.895Z"
 }

@@ -204,7 +204,10 @@
       "experiencia": 6,
       "universidade": null,
       "pais": null,
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 18,
         "min": "28.5",
@@ -1753,5 +1756,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-28T13:01:57.817Z"
+  "atualizado_em": "2026-11-28T20:56:43.350Z"
 }

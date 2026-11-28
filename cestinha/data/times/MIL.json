@@ -55,7 +55,10 @@
       "experiencia": 8,
       "universidade": "Kentucky",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 19,
         "min": "31.5",
@@ -83,7 +86,10 @@
       "experiencia": 4,
       "universidade": "UCLA",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 20,
         "min": "27.8",
@@ -111,7 +117,10 @@
       "experiencia": 10,
       "universidade": "Utah",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 19,
         "min": "28.0",
@@ -1737,5 +1746,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mil",
-  "atualizado_em": "2026-11-28T13:02:03.341Z"
+  "atualizado_em": "2026-11-28T20:56:49.789Z"
 }

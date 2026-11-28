@@ -305,7 +305,7 @@
       "universidade": "Pittsburgh",
       "pais": "New Zealand",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1703,5 +1703,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-28T13:02:00.487Z"
+  "atualizado_em": "2026-11-28T20:56:46.321Z"
 }

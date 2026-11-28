@@ -232,7 +232,10 @@
       "experiencia": 5,
       "universidade": null,
       "pais": null,
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 4,
         "min": "15.3",
@@ -288,7 +291,10 @@
       "experiencia": 14,
       "universidade": "Georgia",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 20,
         "min": "23.6",
@@ -1720,5 +1726,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-28T13:02:06.041Z"
+  "atualizado_em": "2026-11-28T20:56:52.827Z"
 }

@@ -174,7 +174,7 @@
       "universidade": "Baylor",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -484,10 +484,7 @@
       "experiencia": 0,
       "universidade": "Oregon",
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": null
     },
     {
@@ -1712,5 +1709,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/tor",
-  "atualizado_em": "2026-11-28T13:02:08.514Z"
+  "atualizado_em": "2026-11-28T20:56:55.369Z"
 }

@@ -56,7 +56,7 @@
       "universidade": "Oklahoma State",
       "pais": "USA",
       "lesao": {
-        "status": "Out",
+        "status": "Day-To-Day",
         "tipo": null
       },
       "medias": {
@@ -1742,5 +1742,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/det",
-  "atualizado_em": "2026-11-28T13:01:59.596Z"
+  "atualizado_em": "2026-11-28T20:56:45.366Z"
 }

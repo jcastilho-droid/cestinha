@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-28T13:01:55.282Z",
+  "atualizado_em": "2026-11-28T20:56:40.621Z",
   "fonte": "ESPN",
   "jogos": [
     {
@@ -29,7 +29,8 @@
       },
       "data_rodada": "2026-11-28",
       "tv_eua": [
-        "MNMT2"
+        "MNMT2",
+        "MNMT"
       ]
     },
     {
