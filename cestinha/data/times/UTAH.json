@@ -226,10 +226,7 @@
       "experiencia": 8,
       "universidade": "Texas",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 15,
         "min": "23.7",
@@ -257,7 +254,10 @@
       "experiencia": 9,
       "universidade": "Texas",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "21.3",
@@ -537,10 +537,7 @@
       "experiencia": 13,
       "universidade": null,
       "pais": "Bosnia & Herzegovina",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": null
     }
   ],
@@ -1725,5 +1722,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/utah",
-  "atualizado_em": "2026-11-27T16:19:53.956Z"
+  "atualizado_em": "2026-11-28T03:19:59.661Z"
 }

@@ -80,7 +80,10 @@
       "experiencia": 15,
       "universidade": "Duke",
       "pais": "Australia",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "30.9",
@@ -1709,5 +1712,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/dal",
-  "atualizado_em": "2026-11-27T16:19:44.787Z"
+  "atualizado_em": "2026-11-28T03:19:45.799Z"
 }

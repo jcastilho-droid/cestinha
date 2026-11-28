@@ -14,17 +14,17 @@
     "id": "20",
     "sigla": "PHI",
     "posicao": 1,
-    "v": 15,
+    "v": 16,
     "d": 4,
-    "pct": ".789",
+    "pct": ".800",
     "atras": "-",
-    "sequencia": "W1",
+    "sequencia": "W2",
     "casa": "8-3",
-    "fora": "7-1",
-    "ultimos10": "7-3",
-    "pontos_pro": "115.1",
-    "pontos_contra": "112.9",
-    "saldo": "+2.2"
+    "fora": "8-1",
+    "ultimos10": "8-2",
+    "pontos_pro": "114.9",
+    "pontos_contra": "111.7",
+    "saldo": "+3.1"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -114,10 +114,7 @@
       "experiencia": 11,
       "universidade": "Kansas",
       "pais": "Cameroon",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 14,
         "min": "32.1",
@@ -313,7 +310,10 @@
       "experiencia": 8,
       "universidade": "Kansas State",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 15,
         "min": "26.6",
@@ -850,9 +850,12 @@
         "sigla": "IND",
         "nome_curto": "Pacers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 111,
+        "adversario": 87
+      },
+      "resultado": "V"
     },
     {
       "id": "401910050",
@@ -1697,5 +1700,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/phi",
-  "atualizado_em": "2026-11-27T16:19:51.380Z"
+  "atualizado_em": "2026-11-28T03:19:55.888Z"
 }

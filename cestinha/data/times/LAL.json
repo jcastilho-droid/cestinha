@@ -83,10 +83,7 @@
       "experiencia": 6,
       "universidade": "Oklahoma",
       "pais": "USA",
-      "lesao": {
-        "status": "Out",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 12,
         "min": "35.3",
@@ -1731,5 +1728,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/lal",
-  "atualizado_em": "2026-11-27T16:19:47.606Z"
+  "atualizado_em": "2026-11-28T03:19:50.597Z"
 }

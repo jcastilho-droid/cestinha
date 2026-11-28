@@ -15,16 +15,16 @@
     "sigla": "MIL",
     "posicao": 15,
     "v": 2,
-    "d": 17,
-    "pct": ".105",
-    "atras": "13",
-    "sequencia": "L1",
+    "d": 18,
+    "pct": ".100",
+    "atras": "14",
+    "sequencia": "L2",
     "casa": "1-9",
-    "fora": "1-8",
+    "fora": "1-9",
     "ultimos10": "1-9",
-    "pontos_pro": "109.1",
-    "pontos_contra": "120.2",
-    "saldo": "-11.1"
+    "pontos_pro": "108.5",
+    "pontos_contra": "119.9",
+    "saldo": "-11.3"
   },
   "divisao": {
     "nome": "Central",
@@ -223,7 +223,10 @@
       "experiencia": 2,
       "universidade": "Illinois",
       "pais": "Lithuania",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 18,
         "min": "17.6",
@@ -856,9 +859,12 @@
         "sigla": "DET",
         "nome_curto": "Pistons"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 98,
+        "adversario": 113
+      },
+      "resultado": "D"
     },
     {
       "id": "401910049",
@@ -1703,5 +1709,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mil",
-  "atualizado_em": "2026-11-27T16:19:48.739Z"
+  "atualizado_em": "2026-11-28T03:19:52.332Z"
 }

@@ -15,20 +15,20 @@
     "sigla": "IND",
     "posicao": 12,
     "v": 6,
-    "d": 12,
-    "pct": ".333",
-    "atras": "8.5",
-    "sequencia": "W1",
-    "casa": "3-5",
+    "d": 13,
+    "pct": ".316",
+    "atras": "9.5",
+    "sequencia": "L1",
+    "casa": "3-6",
     "fora": "3-6",
-    "ultimos10": "4-6",
-    "pontos_pro": "112.4",
-    "pontos_contra": "115.7",
-    "saldo": "-3.3"
+    "ultimos10": "3-7",
+    "pontos_pro": "111.1",
+    "pontos_contra": "115.5",
+    "saldo": "-4.4"
   },
   "divisao": {
     "nome": "Central",
-    "posicao": 3
+    "posicao": 4
   },
   "tecnico": "Rick Carlisle",
   "estatisticas": {
@@ -142,10 +142,7 @@
       "experiencia": 12,
       "universidade": "Kansas",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 16,
         "min": "24.7",
@@ -286,7 +283,7 @@
       "universidade": "Arizona",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -428,10 +425,7 @@
       "experiencia": 12,
       "universidade": "Wyoming",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 17,
         "min": "12.8",
@@ -839,9 +833,12 @@
         "sigla": "PHI",
         "nome_curto": "76ers"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 87,
+        "adversario": 111
+      },
+      "resultado": "D"
     },
     {
       "id": "401910048",
@@ -1700,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ind",
-  "atualizado_em": "2026-11-27T16:19:46.794Z"
+  "atualizado_em": "2026-11-28T03:19:49.359Z"
 }

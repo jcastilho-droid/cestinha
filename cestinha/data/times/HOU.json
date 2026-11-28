@@ -304,7 +304,10 @@
       "experiencia": 14,
       "universidade": "Pittsburgh",
       "pais": "New Zealand",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 6,
         "min": "13.5",
@@ -1672,5 +1675,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-27T16:19:46.414Z"
+  "atualizado_em": "2026-11-28T03:19:48.576Z"
 }

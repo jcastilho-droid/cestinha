@@ -13,22 +13,22 @@
   "classificacao": {
     "id": "18",
     "sigla": "NY",
-    "posicao": 3,
+    "posicao": 5,
     "v": 12,
-    "d": 6,
-    "pct": ".667",
-    "atras": "2.5",
-    "sequencia": "W6",
-    "casa": "7-3",
+    "d": 7,
+    "pct": ".632",
+    "atras": "3.5",
+    "sequencia": "L1",
+    "casa": "7-4",
     "fora": "5-3",
-    "ultimos10": "8-2",
-    "pontos_pro": "109.6",
-    "pontos_contra": "103.2",
-    "saldo": "+6.4"
+    "ultimos10": "7-3",
+    "pontos_pro": "109.4",
+    "pontos_contra": "103.4",
+    "saldo": "+6.0"
   },
   "divisao": {
     "nome": "Atlântico",
-    "posicao": 2
+    "posicao": 3
   },
   "tecnico": "Mike Brown",
   "estatisticas": {
@@ -227,7 +227,7 @@
       "universidade": "West Virginia",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -849,9 +849,12 @@
         "sigla": "MIA",
         "nome_curto": "Heat"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 105,
+        "adversario": 108
+      },
+      "resultado": "D"
     },
     {
       "id": "401910056",
@@ -1710,5 +1713,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/ny",
-  "atualizado_em": "2026-11-27T16:19:49.961Z"
+  "atualizado_em": "2026-11-28T03:19:54.165Z"
 }

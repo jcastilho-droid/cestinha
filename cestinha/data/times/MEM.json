@@ -227,7 +227,7 @@
       "universidade": "Washington",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -257,10 +257,7 @@
       "experiencia": 3,
       "universidade": "Purdue",
       "pais": "Canada",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 15,
         "min": "20.2",
@@ -529,6 +526,34 @@
         "toco": "0.2",
         "fg_pct": "18.2",
         "tres_pct": "20.0",
+        "ll_pct": "0.0",
+        "duplos_duplos": 0,
+        "triplos_duplos": 0
+      }
+    },
+    {
+      "id": "4596528",
+      "nome": "Lawson Lovering",
+      "numero": "34",
+      "posicao": "Pivô",
+      "posicao_sigla": "C",
+      "idade": 23,
+      "altura_m": "2.16",
+      "peso_kg": 106,
+      "experiencia": null,
+      "universidade": "Utah",
+      "pais": "USA",
+      "lesao": null,
+      "medias": {
+        "jogos": 2,
+        "min": "1.5",
+        "pts": "0.0",
+        "reb": "0.5",
+        "ast": "0.0",
+        "rb": "0.0",
+        "toco": "0.5",
+        "fg_pct": "0.0",
+        "tres_pct": "0.0",
         "ll_pct": "0.0",
         "duplos_duplos": 0,
         "triplos_duplos": 0
@@ -1734,5 +1759,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mem",
-  "atualizado_em": "2026-11-27T16:19:47.968Z"
+  "atualizado_em": "2026-11-28T03:19:51.166Z"
 }

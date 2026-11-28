@@ -13,18 +13,18 @@
   "classificacao": {
     "id": "28",
     "sigla": "TOR",
-    "posicao": 10,
-    "v": 6,
+    "posicao": 9,
+    "v": 7,
     "d": 11,
-    "pct": ".353",
+    "pct": ".389",
     "atras": "8",
-    "sequencia": "L1",
-    "casa": "2-7",
+    "sequencia": "W1",
+    "casa": "3-7",
     "fora": "4-4",
-    "ultimos10": "2-8",
-    "pontos_pro": "111.5",
-    "pontos_contra": "111.6",
-    "saldo": "-0.1"
+    "ultimos10": "3-7",
+    "pontos_pro": "112.2",
+    "pontos_contra": "111.0",
+    "saldo": "+1.2"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -173,7 +173,10 @@
       "experiencia": 3,
       "universidade": "Baylor",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 17,
         "min": "31.6",
@@ -341,10 +344,7 @@
       "experiencia": 2,
       "universidade": "Florida",
       "pais": "USA",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 16,
         "min": "12.3",
@@ -806,9 +806,12 @@
         "sigla": "BKN",
         "nome_curto": "Nets"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 124,
+        "adversario": 100
+      },
+      "resultado": "V"
     },
     {
       "id": "401910057",
@@ -1681,5 +1684,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/tor",
-  "atualizado_em": "2026-11-27T16:19:53.533Z"
+  "atualizado_em": "2026-11-28T03:19:58.934Z"
 }

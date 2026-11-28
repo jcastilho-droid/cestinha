@@ -14,17 +14,17 @@
     "id": "14",
     "sigla": "MIA",
     "posicao": 6,
-    "v": 10,
+    "v": 11,
     "d": 7,
-    "pct": ".588",
+    "pct": ".611",
     "atras": "4",
-    "sequencia": "L1",
+    "sequencia": "W1",
     "casa": "6-3",
-    "fora": "4-4",
+    "fora": "5-4",
     "ultimos10": "8-2",
-    "pontos_pro": "119.7",
-    "pontos_contra": "118.9",
-    "saldo": "+0.8"
+    "pontos_pro": "119.1",
+    "pontos_contra": "118.2",
+    "saldo": "+0.9"
   },
   "divisao": null,
   "tecnico": "Erik Spoelstra",
@@ -52,10 +52,7 @@
       "experiencia": 14,
       "universidade": null,
       "pais": "Greece",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 16,
         "min": "32.4",
@@ -195,10 +192,7 @@
       "experiencia": 13,
       "universidade": "Kansas",
       "pais": "Canada",
-      "lesao": {
-        "status": "Day-To-Day",
-        "tipo": null
-      },
+      "lesao": null,
       "medias": {
         "jogos": 17,
         "min": "26.1",
@@ -810,9 +804,12 @@
         "sigla": "NY",
         "nome_curto": "Knicks"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 108,
+        "adversario": 105
+      },
+      "resultado": "V"
     },
     {
       "id": "401910054",
@@ -1685,5 +1682,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/mia",
-  "atualizado_em": "2026-11-27T16:19:48.371Z"
+  "atualizado_em": "2026-11-28T03:19:51.747Z"
 }

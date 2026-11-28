@@ -15,16 +15,16 @@
     "sigla": "BKN",
     "posicao": 14,
     "v": 4,
-    "d": 13,
-    "pct": ".235",
-    "atras": "10",
-    "sequencia": "W1",
+    "d": 14,
+    "pct": ".222",
+    "atras": "11",
+    "sequencia": "L1",
     "casa": "1-6",
-    "fora": "3-7",
-    "ultimos10": "3-7",
-    "pontos_pro": "110.8",
-    "pontos_contra": "118.9",
-    "saldo": "-8.1"
+    "fora": "3-8",
+    "ultimos10": "2-8",
+    "pontos_pro": "110.2",
+    "pontos_contra": "119.2",
+    "saldo": "-9.0"
   },
   "divisao": {
     "nome": "Atlântico",
@@ -841,9 +841,12 @@
         "sigla": "TOR",
         "nome_curto": "Raptors"
       },
-      "finalizado": false,
-      "placar": null,
-      "resultado": null
+      "finalizado": true,
+      "placar": {
+        "time": 100,
+        "adversario": 124
+      },
+      "resultado": "D"
     },
     {
       "id": "401910047",
@@ -1716,5 +1719,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/bkn",
-  "atualizado_em": "2026-11-27T16:19:42.836Z"
+  "atualizado_em": "2026-11-28T03:19:43.453Z"
 }

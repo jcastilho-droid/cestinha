@@ -17,7 +17,7 @@
     "v": 7,
     "d": 10,
     "pct": ".412",
-    "atras": "7",
+    "atras": "7.5",
     "sequencia": "L2",
     "casa": "1-6",
     "fora": "6-4",
@@ -139,7 +139,10 @@
       "experiencia": 4,
       "universidade": "Arkansas",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 14,
         "min": "32.7",
@@ -392,7 +395,7 @@
       "universidade": "Florida",
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -504,7 +507,10 @@
       "experiencia": 7,
       "universidade": "USC",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": null
     }
   ],
@@ -1683,5 +1689,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/orl",
-  "atualizado_em": "2026-11-27T16:19:50.830Z"
+  "atualizado_em": "2026-11-28T03:19:55.404Z"
 }

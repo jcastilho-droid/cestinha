@@ -17,7 +17,7 @@
     "v": 6,
     "d": 12,
     "pct": ".333",
-    "atras": "8.5",
+    "atras": "9",
     "sequencia": "W2",
     "casa": "2-6",
     "fora": "4-6",
@@ -400,7 +400,10 @@
       "experiencia": 2,
       "universidade": null,
       "pais": "France",
-      "lesao": null,
+      "lesao": {
+        "status": "Day-To-Day",
+        "tipo": null
+      },
       "medias": {
         "jogos": 17,
         "min": "12.3",
@@ -1722,5 +1725,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/chi",
-  "atualizado_em": "2026-11-27T16:19:43.768Z"
+  "atualizado_em": "2026-11-28T03:19:44.565Z"
 }

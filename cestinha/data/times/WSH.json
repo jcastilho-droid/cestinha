@@ -13,11 +13,11 @@
   "classificacao": {
     "id": "27",
     "sigla": "WSH",
-    "posicao": 9,
+    "posicao": 10,
     "v": 7,
     "d": 12,
     "pct": ".368",
-    "atras": "8",
+    "atras": "8.5",
     "sequencia": "L1",
     "casa": "3-6",
     "fora": "4-6",
@@ -1712,5 +1712,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/wsh",
-  "atualizado_em": "2026-11-27T16:19:54.407Z"
+  "atualizado_em": "2026-11-28T03:20:00.327Z"
 }

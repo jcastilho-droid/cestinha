@@ -80,7 +80,10 @@
       "experiencia": 15,
       "universidade": "Weber State",
       "pais": "USA",
-      "lesao": null,
+      "lesao": {
+        "status": "Out",
+        "tipo": null
+      },
       "medias": {
         "jogos": 18,
         "min": "29.9",
@@ -1694,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/por",
-  "atualizado_em": "2026-11-27T16:19:52.244Z"
+  "atualizado_em": "2026-11-28T03:19:57.018Z"
 }

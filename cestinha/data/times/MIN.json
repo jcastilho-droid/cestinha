@@ -140,7 +140,7 @@
       "universidade": null,
       "pais": "USA",
       "lesao": {
-        "status": "Day-To-Day",
+        "status": "Out",
         "tipo": null
       },
       "medias": {
@@ -1697,5 +1697,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/min",
-  "atualizado_em": "2026-11-27T16:19:49.141Z"
+  "atualizado_em": "2026-11-28T03:19:52.920Z"
 }
