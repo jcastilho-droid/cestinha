@@ -864,6 +864,34 @@
       "resultado": null
     },
     {
+      "id": "401937104",
+      "data_utc": "2026-12-08T00:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "28",
+        "sigla": "TOR",
+        "nome_curto": "Raptors"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401937107",
+      "data_utc": "2026-12-11T00:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "18",
+        "sigla": "NY",
+        "nome_curto": "Knicks"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
       "id": "401910091",
       "data_utc": "2026-12-13T00:00Z",
       "tipo": 2,
@@ -1706,5 +1734,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cha",
-  "atualizado_em": "2026-11-28T03:19:43.994Z"
+  "atualizado_em": "2026-11-28T13:01:57.383Z"
 }

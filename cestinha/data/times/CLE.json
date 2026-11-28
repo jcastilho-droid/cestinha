@@ -869,6 +869,34 @@
       "resultado": null
     },
     {
+      "id": "401937098",
+      "data_utc": "2026-12-06T23:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "19",
+        "sigla": "ORL",
+        "nome_curto": "Magic"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401937111",
+      "data_utc": "2026-12-11T00:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "14",
+        "sigla": "MIA",
+        "nome_curto": "Heat"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
       "id": "401910093",
       "data_utc": "2026-12-13T01:00Z",
       "tipo": 2,
@@ -1683,5 +1711,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/cle",
-  "atualizado_em": "2026-11-28T03:19:45.189Z"
+  "atualizado_em": "2026-11-28T13:01:58.298Z"
 }

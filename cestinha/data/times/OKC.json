@@ -13,7 +13,7 @@
   "classificacao": {
     "id": "25",
     "sigla": "OKC",
-    "posicao": 11,
+    "posicao": 9,
     "v": 10,
     "d": 9,
     "pct": ".526",
@@ -920,6 +920,34 @@
       "resultado": null
     },
     {
+      "id": "401937101",
+      "data_utc": "2026-12-07T00:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "13",
+        "sigla": "LAL",
+        "nome_curto": "Lakers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401937113",
+      "data_utc": "2026-12-11T02:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "21",
+        "sigla": "PHX",
+        "nome_curto": "Suns"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
       "id": "401910099",
       "data_utc": "2026-12-13T20:30Z",
       "tipo": 2,
@@ -1734,5 +1762,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/okc",
-  "atualizado_em": "2026-11-28T03:19:54.775Z"
+  "atualizado_em": "2026-11-28T13:02:05.134Z"
 }

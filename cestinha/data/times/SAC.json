@@ -868,6 +868,34 @@
       "resultado": null
     },
     {
+      "id": "401937102",
+      "data_utc": "2026-12-07T02:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "7",
+        "sigla": "DEN",
+        "nome_curto": "Nuggets"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401937116",
+      "data_utc": "2026-12-11T03:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "16",
+        "sigla": "MIN",
+        "nome_curto": "Timberwolves"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
       "id": "401910103",
       "data_utc": "2026-12-14T02:00Z",
       "tipo": 2,
@@ -1696,5 +1724,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/sac",
-  "atualizado_em": "2026-11-28T03:19:57.658Z"
+  "atualizado_em": "2026-11-28T13:02:07.501Z"
 }

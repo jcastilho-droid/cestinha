@@ -847,6 +847,34 @@
       "resultado": null
     },
     {
+      "id": "401937098",
+      "data_utc": "2026-12-06T23:00Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "5",
+        "sigla": "CLE",
+        "nome_curto": "Cavaliers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401937108",
+      "data_utc": "2026-12-11T00:00Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "4",
+        "sigla": "CHI",
+        "nome_curto": "Bulls"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
       "id": "401910092",
       "data_utc": "2026-12-13T00:30Z",
       "tipo": 2,
@@ -1689,5 +1717,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/orl",
-  "atualizado_em": "2026-11-28T03:19:55.404Z"
+  "atualizado_em": "2026-11-28T13:02:05.572Z"
 }

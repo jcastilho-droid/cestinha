@@ -861,6 +861,34 @@
       "resultado": null
     },
     {
+      "id": "401937096",
+      "data_utc": "2026-12-06T20:30Z",
+      "tipo": 2,
+      "em_casa": true,
+      "adversario": {
+        "id": "21",
+        "sigla": "PHX",
+        "nome_curto": "Suns"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
+      "id": "401937117",
+      "data_utc": "2026-12-11T03:30Z",
+      "tipo": 2,
+      "em_casa": false,
+      "adversario": {
+        "id": "12",
+        "sigla": "LAC",
+        "nome_curto": "Clippers"
+      },
+      "finalizado": false,
+      "placar": null,
+      "resultado": null
+    },
+    {
       "id": "401910101",
       "data_utc": "2026-12-13T23:00Z",
       "tipo": 2,
@@ -1675,5 +1703,5 @@
   ],
   "fonte": "ESPN",
   "link_fonte": "https://www.espn.com/nba/team/_/name/hou",
-  "atualizado_em": "2026-11-28T03:19:48.576Z"
+  "atualizado_em": "2026-11-28T13:02:00.487Z"
 }
