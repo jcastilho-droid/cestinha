@@ -1,0 +1,52 @@
+{
+  "titulo": "Quickley faz triplo-duplo, Barnes marca 34 e o Raptors atropela o Nets",
+  "subtitulo": "Raptors 124 a 100 Nets, em Toronto",
+  "corpo": "O Raptors venceu o Nets por 124 a 100 em Toronto. O jogo foi equilibrado no começo, mas o time da casa abriu no segundo e no terceiro quarto (39 a 24 no terceiro) e chegou a ter 26 de vantagem.\n\nScottie Barnes foi o cestinha da partida: 34 pts, 1 reb, 5 ast, com 10 de 10 nos lances livres e 3 tocos. Immanuel Quickley fez triplo-duplo, com 24 pts, 10 reb, 14 ast. Collin Murray-Boyles somou 19 pts, 7 reb, 1 ast.\n\nPelo Nets, Julius Randle e Mikel Brown Jr. fizeram 21 pts cada. Randle terminou com 21 pts, 5 reb, 5 ast.\n\n**E agora?** O Raptors vai a 7-11 e volta a vencer. O Nets cai para 4-14, na lanterna da Divisão do Atlântico.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Raptors",
+    "Nets"
+  ],
+  "jogadores": [
+    "Scottie Barnes",
+    "Immanuel Quickley",
+    "Collin Murray-Boyles",
+    "Julius Randle",
+    "Mikel Brown Jr."
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Raptors chega a 7-11 com vitória larga; o Nets segue na lanterna do Atlântico, com 4-14.",
+  "notas": [
+    {
+      "jogador": "Immanuel Quickley",
+      "nota": 9,
+      "comentario": "Triplo-duplo com 14 ast"
+    },
+    {
+      "jogador": "Scottie Barnes",
+      "nota": 9,
+      "comentario": "34 pts e 10 de 10 nos lances livres"
+    },
+    {
+      "jogador": "Collin Murray-Boyles",
+      "nota": 7.5,
+      "comentario": "19 pts e 10 de 11 nos lances livres"
+    },
+    {
+      "jogador": "Julius Randle",
+      "nota": 6,
+      "comentario": "21 pts, mas 0 de 5 de três"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909329",
+    "data_rodada": "2026-11-27"
+  },
+  "escrito_em": "2026-11-28T11:49:13.533Z"
+}

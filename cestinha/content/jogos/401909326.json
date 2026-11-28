@@ -1,0 +1,52 @@
+{
+  "titulo": "Giannis pega 23 rebotes e o Heat acaba com a sequência do Knicks no Garden",
+  "subtitulo": "Heat 108 a 105 Knicks, pela NBA Cup, em Nova York",
+  "corpo": "O Heat venceu o Knicks por 108 a 105 no Madison Square Garden e encerrou a sequência de seis vitórias dos donos da casa. O Heat chegou a abrir 23 de vantagem e foi para o intervalo ganhando de 60 a 44. O Knicks reagiu com 35 pontos no terceiro quarto, mas não completou a virada.\n\nBam Adebayo foi o cestinha do jogo: 25 pts, 7 reb, 0 ast, com 10 de 16 nos arremessos. Giannis Antetokounmpo fez 22 pts, 23 reb, 3 ast, recorde de rebotes na carreira, segundo a ESPN. Pelo Knicks, Jalen Brunson somou 27 pts, 3 reb, 8 ast.\n\n**Momento-chave:** com o Heat vencendo por 106 a 105, Pelle Larsson enterrou com passe de Davion Mitchell a 7,2 segundos do fim.\n\n**E agora?** O Heat vai a 11-7, meio jogo atrás do Hawks na Divisão Sudeste. O Knicks cai para 12-7.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "Heat",
+    "Knicks"
+  ],
+  "jogadores": [
+    "Bam Adebayo",
+    "Giannis Antetokounmpo",
+    "Jalen Brunson",
+    "Pelle Larsson",
+    "Davion Mitchell"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Heat quebra a sequência de seis vitórias do Knicks e encosta no Hawks na Divisão Sudeste.",
+  "notas": [
+    {
+      "jogador": "Giannis Antetokounmpo",
+      "nota": 9,
+      "comentario": "22 pts e 23 reb, recorde na carreira"
+    },
+    {
+      "jogador": "Bam Adebayo",
+      "nota": 8.5,
+      "comentario": "Cestinha do jogo, 10 de 16 nos arremessos"
+    },
+    {
+      "jogador": "Jalen Brunson",
+      "nota": 7.5,
+      "comentario": "27 pts e 8 ast, mas faltou a virada"
+    },
+    {
+      "jogador": "Davion Mitchell",
+      "nota": 7,
+      "comentario": "9 ast e o passe da enterrada final"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909326",
+    "data_rodada": "2026-11-27"
+  },
+  "escrito_em": "2026-11-28T11:49:13.531Z"
+}

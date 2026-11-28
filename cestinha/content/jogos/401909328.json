@@ -1,0 +1,52 @@
+{
+  "titulo": "76ers lidera de ponta a ponta e atropela o Pacers",
+  "subtitulo": "76ers 111 a 87 Pacers, em Indianápolis",
+  "corpo": "Passeio. O 76ers venceu o Pacers por 111 a 87 em Indianápolis sem ficar atrás no placar em nenhum momento. A vantagem chegou a 32 pontos. O Pacers acertou só 5 de 37 bolas de três e 35% nos arremessos.\n\nLeBron James foi o cestinha do jogo, com 21 pts, 7 reb, 6 ast em 27 minutos. Anfernee Simons fez 19 pts, 2 reb, 3 ast, com 5 bolas de três. Joel Embiid completou duplo-duplo: 14 pts, 11 reb, 3 ast.\n\nPelo Pacers, Jay Huff fez 18 pts, 1 reb, 0 ast. Pascal Siakam ficou em 11 pts, 2 reb, 2 ast, com 3 de 14 nos arremessos.\n\n**E agora?** O 76ers vai a 16-4, com duas vitórias seguidas, e lidera a Divisão do Atlântico. O Pacers cai para 6-13.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 3,
+  "times": [
+    "76ers",
+    "Pacers"
+  ],
+  "jogadores": [
+    "LeBron James",
+    "Anfernee Simons",
+    "Joel Embiid",
+    "Jay Huff",
+    "Pascal Siakam"
+  ],
+  "fontes": [
+    "ESPN (placar e box score)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O 76ers chega a 16-4 e abre 3 jogos de vantagem na liderança da Divisão do Atlântico.",
+  "notas": [
+    {
+      "jogador": "LeBron James",
+      "nota": 8.5,
+      "comentario": "21 pts, 7 reb e 6 ast em 27 minutos"
+    },
+    {
+      "jogador": "Anfernee Simons",
+      "nota": 8,
+      "comentario": "19 pts e 5 bolas de três"
+    },
+    {
+      "jogador": "Joel Embiid",
+      "nota": 7.5,
+      "comentario": "Duplo-duplo e +27 em quadra"
+    },
+    {
+      "jogador": "Pascal Siakam",
+      "nota": 4,
+      "comentario": "3 de 14 nos arremessos"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909328",
+    "data_rodada": "2026-11-27"
+  },
+  "escrito_em": "2026-11-28T11:49:13.533Z"
+}

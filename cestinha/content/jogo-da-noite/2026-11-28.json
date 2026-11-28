@@ -1,0 +1,31 @@
+{
+  "titulo": "Líder do Leste encara o embalado Rockets em Houston",
+  "subtitulo": "76ers x Rockets, 22h30",
+  "corpo": "Sábado tem 5 jogos, e o melhor é em Houston. O 76ers é o líder do Leste, com 16-4, 8-2 nos últimos dez e duas vitórias seguidas. Tyrese Maxey tem médias de 25.9 pts e 5.7 ast por jogo. O time joga sem Jaylen Brown, lesionado.\n\nDo outro lado, o Rockets tem 14-5, é quarto do Oeste e também vem de duas vitórias. O saldo de +8.1 pontos por jogo é o melhor entre os candidatos da noite. Alperen Sengun lidera com 22.0 pts, 9.3 reb e 7.2 ast por jogo.",
+  "tipo": "jogo_da_noite",
+  "status": "N/A",
+  "importancia": 3,
+  "times": [
+    "76ers",
+    "Rockets"
+  ],
+  "jogadores": [
+    "Tyrese Maxey",
+    "Jaylen Brown",
+    "Alperen Sengun"
+  ],
+  "fontes": [
+    "ESPN (agenda, classificação e médias da temporada)"
+  ],
+  "alertas": [],
+  "id_jogo": "401910050",
+  "motivos": [
+    "Boa fase"
+  ],
+  "ficar_de_olho": "Tyrese Maxey comandando o 76ers sem Jaylen Brown contra o jogo completo de Alperen Sengun.",
+  "ref": {
+    "tipo": "noite",
+    "data": "2026-11-28"
+  },
+  "escrito_em": "2026-11-28T11:49:13.550Z"
+}

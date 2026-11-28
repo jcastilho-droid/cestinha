@@ -1,0 +1,52 @@
+{
+  "titulo": "Pistons acorda no terceiro quarto e bate o Bucks pela NBA Cup",
+  "subtitulo": "Pistons 113 a 98 Bucks, pela NBA Cup, em Detroit",
+  "corpo": "O Pistons começou devagar, foi para o intervalo perdendo por 50 a 48, mas resolveu tudo no terceiro quarto: 42 a 26. No fim, vitória por 113 a 98 sobre o Bucks em Detroit, pela NBA Cup, com 16 bolas de três.\n\nO banco fez a diferença. Isaiah Joe foi o cestinha do Pistons, com 22 pts, 1 reb, 3 ast e 5 bolas de três. Elijah Harkless somou 14 pts, 4 reb, 8 ast, e Paul Reed fez 14 pts, 7 reb, 1 ast.\n\nPelo Bucks, Brayden Burries foi o cestinha da partida: 23 pts, 6 reb, 1 ast. Tyler Herro fez 20 pts, 3 reb, 4 ast.\n\n**E agora?** O Pistons vai a 12-6, com duas vitórias seguidas, e lidera a Divisão Central. O Bucks cai para 2-18.",
+  "tipo": "resumo_jogo",
+  "status": "CONFIRMADO",
+  "importancia": 2,
+  "times": [
+    "Pistons",
+    "Bucks"
+  ],
+  "jogadores": [
+    "Isaiah Joe",
+    "Elijah Harkless",
+    "Paul Reed",
+    "Brayden Burries",
+    "Tyler Herro"
+  ],
+  "fontes": [
+    "ESPN (placar, box score e resumo da partida)"
+  ],
+  "alertas": [],
+  "por_que_importa": "O Pistons chega a 12-6 e segue na liderança da Divisão Central; o Bucks afunda em 2-18.",
+  "notas": [
+    {
+      "jogador": "Isaiah Joe",
+      "nota": 8.5,
+      "comentario": "22 pts em 27 minutos, 5 bolas de três"
+    },
+    {
+      "jogador": "Elijah Harkless",
+      "nota": 7.5,
+      "comentario": "14 pts, 8 ast e +26 em quadra"
+    },
+    {
+      "jogador": "Paul Reed",
+      "nota": 7.5,
+      "comentario": "14 pts, 7 reb e +28"
+    },
+    {
+      "jogador": "Brayden Burries",
+      "nota": 7,
+      "comentario": "Cestinha do jogo, 23 pts na derrota"
+    }
+  ],
+  "ref": {
+    "tipo": "jogo",
+    "id_jogo": "401909327",
+    "data_rodada": "2026-11-27"
+  },
+  "escrito_em": "2026-11-28T11:49:13.532Z"
+}
